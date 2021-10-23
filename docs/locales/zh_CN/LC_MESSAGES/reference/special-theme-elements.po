@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../reference/special-theme-elements.md:17
 msgid "Theme-specific elements"
-msgstr ""
+msgstr "特定主题的元素"
 
 #: ../../reference/special-theme-elements.md:19
 msgid ""
@@ -28,22 +28,24 @@ msgid ""
 " this theme. The information is not meant to be easy to read or "
 "understand, just browse through and see how things look!"
 msgstr ""
+"这个页面包含一些参考元素，看看它们在这个主题中的样子。"
+"这些信息并不意味着容易阅读或理解，只需浏览一下，看看东西的样子！"
 
 #: ../../reference/special-theme-elements.md:23
 msgid "Blog post list"
-msgstr ""
+msgstr "博客帖子列表"
 
 #: ../../reference/special-theme-elements.md:25
 msgid "Here's a sample post list:"
-msgstr ""
+msgstr "这里有一个帖子列表的样本。"
 
 #: ../../reference/special-theme-elements.md:35
 msgid "Full-width elements"
-msgstr ""
+msgstr "全宽元素"
 
 #: ../../reference/special-theme-elements.md:36
 msgid "Code cells"
-msgstr ""
+msgstr "代码单元格"
 
 #: ../../reference/special-theme-elements.md:71
 msgid "Markdown"
@@ -51,11 +53,11 @@ msgstr ""
 
 #: ../../reference/special-theme-elements.md:75
 msgid "This is some markdown that should be shown at full width."
-msgstr ""
+msgstr "这是一些应该以全宽显示的标记。"
 
 #: ../../reference/special-theme-elements.md:77
 msgid "Here's the Jupyter logo:"
-msgstr ""
+msgstr "这是Jupyter的标志："
 
 #: ../../reference/special-theme-elements.md:79
 msgid ""
@@ -65,7 +67,7 @@ msgstr ""
 
 #: ../../reference/special-theme-elements.md:83
 msgid "Mathematics"
-msgstr ""
+msgstr "数学"
 
 #: ../../reference/special-theme-elements.md:85
 msgid ""
@@ -96,7 +98,7 @@ msgstr ""
 
 #: ../../reference/special-theme-elements.md:108
 msgid "Link to above: {eq}`my_label2`"
-msgstr ""
+msgstr "链接到上面：{eq}`my_label2`。"
 
 #: ../../reference/special-theme-elements.md:110
 msgid ""
@@ -111,7 +113,7 @@ msgstr ""
 
 #: ../../reference/special-theme-elements.md:118
 msgid "A really long math equation"
-msgstr ""
+msgstr "一个非常长的数学方程"
 
 #: ../../reference/special-theme-elements.md:120
 msgid ""
@@ -133,7 +135,7 @@ msgstr ""
 
 #: ../../reference/special-theme-elements.md:129
 msgid "Full width equations work"
-msgstr ""
+msgstr "全宽公式起作用"
 
 #: ../../reference/special-theme-elements.md:131
 msgid ""
@@ -154,69 +156,70 @@ msgstr ""
 
 #: ../../reference/special-theme-elements.md:144
 msgid "Margins"
-msgstr ""
+msgstr "页边距"
 
 #: ../../reference/special-theme-elements.md:148
 msgid "Margin content can include all kinds of things, such as code blocks:"
-msgstr ""
+msgstr "页边距内容可以包括各种各样的东西，如代码块："
 
 #: ../../reference/special-theme-elements.md:156
 msgid "as well as admonitions and images:"
-msgstr ""
+msgstr "以及告诫和图像："
 
 #: ../../reference/special-theme-elements.md:165
 msgid "Margin under lower level shouldn't have different left-alignment"
-msgstr ""
+msgstr "下层的页边距不应该有不同的左对齐方式"
 
 #: ../../reference/special-theme-elements.md:174
 msgid "Margins with toggle buttons"
-msgstr ""
+msgstr "带切换按钮的页边距"
 
 #: ../../reference/special-theme-elements.md:176
 msgid ""
 "Here's some margin content, let's see how it interacts w/ the toggle "
 "button"
 msgstr ""
+"这里有一些页边距内容，让我们看看它与切换按钮的交互情况"
 
 #: ../../reference/special-theme-elements.md:182
 msgid "Here's a toggleable note:"
-msgstr ""
+msgstr "这里有一个可切换的注解。"
 
 #: ../../reference/special-theme-elements.md:1
 msgid "My note"
-msgstr ""
+msgstr "我的注解"
 
 #: ../../reference/special-theme-elements.md:189
 msgid "Margins with full-width content"
-msgstr ""
+msgstr "有全宽内容的页边距"
 
 #: ../../reference/special-theme-elements.md:1
 msgid "This is my test"
-msgstr ""
+msgstr "这是文档测试"
 
 #: ../../reference/special-theme-elements.md:196
 msgid "Let's see what happens"
-msgstr ""
+msgstr "看看发生了什么"
 
 #: ../../reference/special-theme-elements.md:208
 msgid "Markdown cell with code in margin"
-msgstr ""
+msgstr "在页边距处有代码的 Markdown 单元格"
 
 #: ../../reference/special-theme-elements.md:216
 msgid "and now r"
-msgstr ""
+msgstr "而现在 r"
 
 #: ../../reference/special-theme-elements.md:224
 msgid "how does it look?"
-msgstr ""
+msgstr "看起来如何？"
 
 #: ../../reference/special-theme-elements.md:226
 msgid "Markdown cell with images in sidebar"
-msgstr ""
+msgstr "侧边栏中带有图像的 Markdown 单元"
 
 #: ../../reference/special-theme-elements.md:232
 msgid "More content after the popouts"
-msgstr ""
+msgstr "弹出后有更多内容"
 
 #: ../../reference/special-theme-elements.md:234
 msgid ""
@@ -225,6 +228,10 @@ msgid ""
 "is extra content after the popouts to see if cells overlap and such. Also"
 " to make sure you can still interact with the popout content."
 msgstr ""
+"这是弹出后的额外内容，看看单元格是否重叠之类的。"
+" 也是为了确保你仍然可以与弹出的内容互动。"
+"这是在弹出内容之后的额外内容，以查看单元格是否重叠等等。"
+"也是为了确保你仍然可以与弹出的内容进行互动。"
 
 #: ../../reference/special-theme-elements.md:243
 msgid ""
@@ -235,4 +242,10 @@ msgid ""
 "extra content after the popouts to see if cells overlap and such. Also to"
 " make sure you can still interact with the popout content."
 msgstr ""
+"这是弹出后的额外内容，看看单元格是否重叠之类的。"
+" 也是为了确保你仍然可以与弹出的内容互动。这个"
+"是弹出内容后的额外内容，以查看单元格是否重叠等。同时"
+"以确保你仍然可以与弹出的内容进行互动。这是"
+"是弹出内容后的额外内容，以查看单元格是否重叠等。也是为了"
+"确保你仍然可以与弹出的内容进行互动。"
 

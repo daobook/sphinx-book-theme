@@ -20,11 +20,12 @@ msgstr ""
 
 #: ../../reference/blog.md:1
 msgid "Reference for Blog"
-msgstr ""
+msgstr "博客的参考资料"
 
 #: ../../reference/blog.md:3
 msgid ""
 "This page will be replaced by ABlog. It's here to make sure it's in the "
 "TOC."
 msgstr ""
+"这个页面将被 ABlog 取代。它在这里是为了确保它在 TOC 中的位置。"
 

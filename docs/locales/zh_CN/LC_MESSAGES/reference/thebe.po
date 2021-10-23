@@ -27,12 +27,14 @@ msgid ""
 "Thebe uses CodeMirror in the background, which uses different styles than"
 " pygments, which is used for static code syntax highlighting."
 msgstr ""
+"Thebe 在后台使用 CodeMirror，它使用的样式与 pygments 不同，"
+"后者用于静态代码语法高亮。"
 
 #: ../../reference/thebe.md:17
 msgid "Static code:"
-msgstr ""
+msgstr "静态代码："
 
 #: ../../reference/thebe.md:39
 msgid "Runnable thebe code:"
-msgstr ""
+msgstr "可运行的代码："
 

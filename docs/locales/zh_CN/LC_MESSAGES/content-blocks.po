@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../content-blocks.md:15
 msgid "Special content blocks"
-msgstr ""
+msgstr "特殊内容块"
 
 #: ../../content-blocks.md:17
 msgid "There are a few content blocks that are unique to this theme."
