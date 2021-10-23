@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020
+# This file is distributed under the same license as the Sphinx Book Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Book Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-23 21:14+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../launch.md:2
+msgid "Launch buttons for interactivity"
+msgstr ""
+
+#: ../../launch.md:4
+msgid ""
+"You can automatically add buttons that allow users to interact with your "
+"book's content. This is either by directing them to a BinderHub or "
+"JupyterHub that runs in the cloud, or by making your page interactive "
+"using Thebe."
+msgstr ""
+
+#: ../../launch.md:8
+msgid ""
+"To use either Binder or JupyterHub links, you'll first need to configure "
+"your documentation's repository url:"
+msgstr ""
+
+#: ../../launch.md:29
+msgid "Binder / BinderHub"
+msgstr ""
+
+#: ../../launch.md:31
+msgid "To add Binder links your page, add the following configuration:"
+msgstr ""
+
+#: ../../launch.md:43
+msgid "JupyterHub"
+msgstr ""
+
+#: ../../launch.md:45
+msgid "To add JupyterHub links to your page, add the following configuration:"
+msgstr ""
+
+#: ../../launch.md:57
+msgid "Google Colab"
+msgstr ""
+
+#: ../../launch.md:59
+msgid "To add Google Colab links to your page, add the following configuration:"
+msgstr ""
+
+#: ../../launch.md:71
+msgid "Live code cells with Thebe"
+msgstr ""
+
+#: ../../launch.md:73
+msgid ""
+"[Thebe](http://thebe.readthedocs.org/) converts your static code blocks "
+"into *interactive* code blocks powered by a Jupyter kernel. It does this "
+"by asking for a BinderHub kernel *under the hood* and converts all of "
+"your code cells into *interactive* code cells. This allows users to run "
+"the code on your page without leaving the page."
+msgstr ""
+
+#: ../../launch.md:79
+msgid ""
+"You can use the Sphinx extension [`sphinx-thebe`](https://sphinx-"
+"thebe.readthedocs.io/en/latest/) to add live code functionality to your "
+"documentation. You can install `sphinx-thebe` from `pip`, then activate "
+"it by putting it in your `conf.py` extensions list:"
+msgstr ""
+
+#: ../../launch.md:92
+msgid ""
+"If you'd like to activate UI elements for `sphinx-thebe` in the `sphinx-"
+"book-theme`, add the following theme configuration:"
+msgstr ""
+
+#: ../../launch.md:105
+msgid ""
+"This will add a custom launch button and some UI elements will be added "
+"for Thebe."
+msgstr ""
+
+#: ../../launch.md:107
+msgid ""
+"If you also specify a `repository_url` with your theme configuration, "
+"`sphinx-thebe` will use this repository for its environment:"
+msgstr ""
+
+#: ../../launch.md:1
+msgid ""
+"You can also manually customize Thebe with the `thebe_config` dictionary."
+" This will over-ride any configuration that is pulled from your "
+"`html_theme_options` configuration. See the [`sphinx-thebe`](https"
+"://sphinx-thebe.readthedocs.io/en/latest/) documentation for what you can"
+" configure."
+msgstr ""
+
+#: ../../launch.md:125
+msgid "Configure a relative path to your source file"
+msgstr ""
+
+#: ../../launch.md:127
+msgid ""
+"To configure a relative path to your documentation, add the following "
+"configuration:"
+msgstr ""
+
+#: ../../launch.md:137
+msgid "Control the user interface that is opened"
+msgstr ""
+
+#: ../../launch.md:139
+msgid ""
+"You can control the interface that is opened when somebody clicks on a "
+"launch button. To do so, add the following configuration:"
+msgstr ""
+

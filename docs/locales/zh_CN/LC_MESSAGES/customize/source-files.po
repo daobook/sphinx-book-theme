@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020
+# This file is distributed under the same license as the Sphinx Book Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Book Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-23 21:17+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../customize/source-files.md:2
+msgid "Add buttons to link to your source"
+msgstr ""
+
+#: ../../customize/source-files.md:4
+msgid ""
+"There are a collection of buttons that you can use to link back to your "
+"source repository. This lets users browse the repository, or take actions"
+" like suggest an edit or open an issue. In each case, they require the "
+"following configuration to exist:"
+msgstr ""
+
+#: ../../customize/source-files.md:18
+msgid "Add a link to your repository"
+msgstr ""
+
+#: ../../customize/source-files.md:20
+msgid "To add a link to your repository, add the following configuration:"
+msgstr ""
+
+#: ../../customize/source-files.md:31
+msgid "Add a button to open issues"
+msgstr ""
+
+#: ../../customize/source-files.md:33
+msgid ""
+"To add a button to open an issue about the current page, use the "
+"following configuration:"
+msgstr ""
+
+#: ../../customize/source-files.md:45
+msgid "Add a button to suggest edits"
+msgstr ""
+
+#: ../../customize/source-files.md:47
+msgid ""
+"You can add a button to each page that will allow users to edit the page "
+"text directly and submit a pull request to update the documentation. To "
+"include this button, use the following configuration:"
+msgstr ""
+
+#: ../../customize/source-files.md:60
+msgid ""
+"By default, the edit button will point to the `master` branch, but if "
+"you'd like to change this, use the following configuration:"
+msgstr ""
+
+#: ../../customize/source-files.md:71
+msgid ""
+"By default, the edit button will point to the root of the repository. If "
+"your documentation is hosted in a sub-folder, use the following "
+"configuration:"
+msgstr ""
+

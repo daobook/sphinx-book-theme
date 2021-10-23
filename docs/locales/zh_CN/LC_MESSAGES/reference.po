@@ -1,0 +1,2168 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020
+# This file is distributed under the same license as the Sphinx Book Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Book Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-23 21:14+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../reference/blog.md:1
+msgid "Reference for Blog"
+msgstr ""
+
+#: ../../reference/blog.md:3
+msgid ""
+"This page will be replaced by ABlog. It's here to make sure it's in the "
+"TOC."
+msgstr ""
+
+#: ../../reference/blog/post1.md:5
+msgid "Post 1"
+msgstr ""
+
+#: ../../reference/blog/post1.md:7
+msgid "Some content"
+msgstr ""
+
+#: ../../reference/blog/post2.md:6
+msgid "Post 2"
+msgstr ""
+
+#: ../../reference/blog/post2.md:8
+msgid "Some sample content."
+msgstr ""
+
+#: ../../reference/kitchen-sink/api.rst:4
+msgid "API documentation"
+msgstr ""
+
+#: ../../reference/kitchen-sink/api.rst:7
+msgid "``asyncio``"
+msgstr ""
+
+#: asyncio:1 of
+msgid "The asyncio package, tracking PEP 3156."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop:1 of
+msgid "Abstract event loop."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.close:1 of
+msgid "Close the loop."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.close:3 of
+msgid "The loop should not be running."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.close:5 of
+msgid "This is idempotent and irreversible."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.close:7 of
+msgid "No other methods should be called after this one."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.connect_read_pipe:1 of
+msgid "Register read pipe in event loop. Set the pipe to non-blocking mode."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.connect_read_pipe:3 of
+msgid ""
+"protocol_factory should instantiate object with Protocol interface. pipe "
+"is a file-like object. Return pair (transport, protocol), where transport"
+" supports the ReadTransport interface."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.connect_write_pipe:1 of
+msgid "Register write pipe in event loop."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.connect_write_pipe:3 of
+msgid ""
+"protocol_factory should instantiate object with BaseProtocol interface. "
+"Pipe is file-like object already switched to nonblocking. Return pair "
+"(transport, protocol), where transport support WriteTransport interface."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_datagram_endpoint:1 of
+msgid "A coroutine which creates a datagram endpoint."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_datagram_endpoint:3 of
+msgid ""
+"This method will try to establish the endpoint in the background. When "
+"successful, the coroutine returns a (transport, protocol) pair."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_datagram_endpoint:6 of
+msgid "protocol_factory must be a callable returning a protocol instance."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_datagram_endpoint:8 of
+msgid ""
+"socket family AF_INET, socket.AF_INET6 or socket.AF_UNIX depending on "
+"host (or family if specified), socket type SOCK_DGRAM."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_datagram_endpoint:11 of
+msgid ""
+"reuse_address tells the kernel to reuse a local socket in TIME_WAIT "
+"state, without waiting for its natural timeout to expire. If not "
+"specified it will automatically be set to True on UNIX."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_datagram_endpoint:16 of
+msgid ""
+"reuse_port tells the kernel to allow this endpoint to be bound to the "
+"same port as other existing endpoints are bound to, so long as they all "
+"set this flag when being created. This option is not supported on Windows"
+" and some UNIX's. If the :py:data:`~socket.SO_REUSEPORT` constant is not "
+"defined then this capability is unsupported."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_datagram_endpoint:23 of
+msgid ""
+"allow_broadcast tells the kernel to allow this endpoint to send messages "
+"to the broadcast address."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_datagram_endpoint:26
+#: asyncio.events.AbstractEventLoop.create_server:17
+#: asyncio.events.AbstractEventLoop.create_unix_server:9 of
+msgid ""
+"sock can optionally be specified in order to use a preexisting socket "
+"object."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_server:1 of
+msgid "A coroutine which creates a TCP server bound to host and port."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_server:3 of
+msgid "The return value is a Server object which can be used to stop the service."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_server:6 of
+msgid ""
+"If host is an empty string or None all interfaces are assumed and a list "
+"of multiple sockets will be returned (most likely one for IPv4 and "
+"another one for IPv6). The host parameter can also be a sequence (e.g. "
+"list) of hosts to bind to."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_server:11 of
+msgid ""
+"family can be set to either AF_INET or AF_INET6 to force the socket to "
+"use IPv4 or IPv6. If not set it will be determined from host (defaults to"
+" AF_UNSPEC)."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_server:15 of
+msgid "flags is a bitmask for getaddrinfo()."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_server:20
+#: asyncio.events.AbstractEventLoop.create_unix_server:12 of
+msgid ""
+"backlog is the maximum number of queued connections passed to listen() "
+"(defaults to 100)."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_server:23
+#: asyncio.events.AbstractEventLoop.create_unix_server:15 of
+msgid ""
+"ssl can be set to an SSLContext to enable SSL over the accepted "
+"connections."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_server:26 of
+msgid ""
+"reuse_address tells the kernel to reuse a local socket in TIME_WAIT "
+"state, without waiting for its natural timeout to expire. If not "
+"specified will automatically be set to True on UNIX."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_server:31 of
+msgid ""
+"reuse_port tells the kernel to allow this endpoint to be bound to the "
+"same port as other existing endpoints are bound to, so long as they all "
+"set this flag when being created. This option is not supported on "
+"Windows."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_server:36 of
+msgid ""
+"ssl_handshake_timeout is the time in seconds that an SSL server will wait"
+" for completion of the SSL handshake before aborting the connection. "
+"Default is 60s."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_server:40
+#: asyncio.events.AbstractEventLoop.create_unix_server:21 of
+msgid ""
+"start_serving set to True (default) causes the created server to start "
+"accepting connections immediately.  When set to False, the user should "
+"await Server.start_serving() or Server.serve_forever() to make the server"
+" to start accepting connections."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_unix_server:1 of
+msgid "A coroutine which creates a UNIX Domain Socket server."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_unix_server:3 of
+msgid ""
+"The return value is a Server object, which can be used to stop the "
+"service."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_unix_server:6 of
+msgid ""
+"path is a str, representing a file system path to bind the server socket "
+"to."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_unix_server:18 of
+msgid ""
+"ssl_handshake_timeout is the time in seconds that an SSL server will wait"
+" for the SSL handshake to complete (defaults to 60s)."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.is_closed:1 of
+msgid "Returns True if the event loop was closed."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.is_running:1 of
+msgid "Return whether the event loop is currently running."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.run_forever:1 of
+msgid "Run the event loop until stop() is called."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.run_until_complete:1 of
+msgid "Run the event loop until a Future is done."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.run_until_complete:3 of
+msgid "Return the Future's result, or raise its exception."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.sendfile:1 of
+msgid "Send a file through a transport."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.sendfile:3 of
+msgid "Return an amount of sent bytes."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.shutdown_asyncgens:1 of
+msgid "Shutdown all active asynchronous generators."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.shutdown_default_executor:1 of
+msgid "Schedule the shutdown of the default executor."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.start_tls:1 of
+msgid "Upgrade a transport to TLS."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.start_tls:3 of
+msgid "Return a new transport that *protocol* should start using immediately."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.stop:1 of
+msgid "Stop the event loop as soon as reasonable."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.stop:3 of
+msgid ""
+"Exactly how soon that is may depend on the implementation, but no more "
+"I/O callbacks should be scheduled."
+msgstr ""
+
+#: asyncio.tasks.gather:1 of
+msgid "Return a future aggregating results from the given coroutines/futures."
+msgstr ""
+
+#: asyncio.tasks.gather:3 of
+msgid ""
+"Coroutines will be wrapped in a future and scheduled in the event loop. "
+"They will not necessarily be scheduled in the same order as passed in."
+msgstr ""
+
+#: asyncio.tasks.gather:7 of
+msgid ""
+"All futures must share the same event loop.  If all the tasks are done "
+"successfully, the returned future's result is the list of results (in the"
+" order of the original sequence, not necessarily the order of results "
+"arrival).  If *return_exceptions* is True, exceptions in the tasks are "
+"treated the same as successful results, and gathered in the result list; "
+"otherwise, the first raised exception will be immediately propagated to "
+"the returned future."
+msgstr ""
+
+#: asyncio.tasks.gather:16 of
+msgid ""
+"Cancellation: if the outer Future is cancelled, all children (that have "
+"not completed yet) are also cancelled.  If any child is cancelled, this "
+"is treated as if it raised CancelledError -- the outer Future is *not* "
+"cancelled in this case.  (This is to prevent the cancellation of one "
+"child to cause other children to be cancelled.)"
+msgstr ""
+
+#: asyncio.tasks.gather:23 of
+msgid ""
+"If *return_exceptions* is False, cancelling gather() after it has been "
+"marked done won't cancel any submitted awaitables. For instance, gather "
+"can be marked done after propagating an exception to the caller, "
+"therefore, calling ``gather.cancel()`` after catching an exception "
+"(raised by one of the awaitables) from gather won't cancel any other "
+"awaitables."
+msgstr ""
+
+#: asyncio.runners.run:1 of
+msgid "Execute the coroutine and return the result."
+msgstr ""
+
+#: asyncio.runners.run:3 of
+msgid ""
+"This function runs the passed coroutine, taking care of managing the "
+"asyncio event loop and finalizing asynchronous generators."
+msgstr ""
+
+#: asyncio.runners.run:7 of
+msgid ""
+"This function cannot be called when another asyncio event loop is running"
+" in the same thread."
+msgstr ""
+
+#: asyncio.runners.run:10 of
+msgid "If debug is True, the event loop will be run in debug mode."
+msgstr ""
+
+#: asyncio.runners.run:12 of
+msgid ""
+"This function always creates a new event loop and closes it at the end. "
+"It should be used as a main entry point for asyncio programs, and should "
+"ideally only be called once."
+msgstr ""
+
+#: asyncio.runners.run:16 of
+msgid "Example:"
+msgstr ""
+
+#: asyncio.runners.run:20 of
+msgid "async def main():"
+msgstr ""
+
+#: asyncio.runners.run:19 of
+msgid "await asyncio.sleep(1) print('hello')"
+msgstr ""
+
+#: asyncio.runners.run:22 of
+msgid "asyncio.run(main())"
+msgstr ""
+
+#: ../../reference/kitchen-sink/index.rst:4
+msgid "Kitchen Sink"
+msgstr ""
+
+#: ../../reference/kitchen-sink/index.rst:6
+msgid ""
+"This section showcases the various elements that Sphinx supports out-of-"
+"the-box."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:4
+msgid "Lists & Tables"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:7
+msgid "Lists"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:10
+msgid "Enumerated Lists"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:12
+msgid "Arabic numerals."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:14
+msgid "lower alpha)"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:16
+msgid "(lower roman)"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:18
+msgid "upper alpha."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:20
+msgid "upper roman)"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:22
+msgid "Lists that don't start at 1:"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:24
+msgid "Three"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:26
+msgid "Four"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:28
+msgid "C"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:30
+msgid "D"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:32
+msgid "iii"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:34
+msgid "iv"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:36
+msgid "List items may also be auto-enumerated."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:39
+msgid "Definition Lists"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:41
+#: ../../reference/kitchen-sink/lists-and-tables.rst:45
+#: ../../reference/kitchen-sink/lists-and-tables.rst:48
+msgid "Term"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:42
+#: ../../reference/kitchen-sink/lists-and-tables.rst:48
+msgid "Definition"
+msgstr ""
+
+msgid "classifier"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:44
+msgid "Definition paragraph 1."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:46
+msgid "Definition paragraph 2."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:50
+msgid ""
+"I have no clue why the definition list below is classified as a different"
+" style of definition list than the one above."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:55
+msgid "Is it the spaces in the term?"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:54
+msgid ""
+"Maybe it was the multiple line paragraph in the line below that caused "
+"this?"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:58
+msgid "Is it the paragraph above the list maybe?"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:58
+msgid "I guess a lot of these lists don't have leading paragraphs?"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:61
+msgid "Is it everything all at once?"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:61
+msgid "Who knows?!"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:64
+msgid "Option Lists"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:66
+msgid "For listing command-line options:"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:68
+msgid "command-line option \"a\""
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:69
+msgid "options can have arguments and long descriptions"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:71
+msgid "options can be long also"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:72
+msgid "long options can also have arguments"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:76
+msgid "The description can also start on the next line."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:78
+msgid ""
+"The description may contain multiple body elements, regardless of where "
+"it starts."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:81
+msgid "Multiple options are an \"option group\"."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:82
+msgid "Commonly-seen: short & long options."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:84
+msgid "Multiple options with arguments."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:85
+msgid "DOS/VMS-style options too"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:87
+msgid "There must be at least two spaces between the option and the description."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:90
+msgid "Field list"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst
+msgid "Author"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:94
+msgid "David Goodger"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst
+msgid "Address"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:95
+msgid "123 Example Street Example, EX  Canada A1B 2C3"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst
+msgid "Contact"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:98
+msgid "docutils-develop@lists.sourceforge.net"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst
+msgid "Authors"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:99
+msgid "Me; Myself; I"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst
+msgid "organization"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:100
+msgid "humankind"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst
+msgid "date"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:101
+msgid "$Date: 2012-01-03 19:23:53 +0000 (Tue, 03 Jan 2012) $"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst
+msgid "status"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:102
+msgid "This is a \"work in progress\""
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst
+msgid "revision"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:103
+msgid "$Revision: 7302 $"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst
+msgid "version"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:104
+msgid "1"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst
+msgid "copyright"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:105
+msgid ""
+"This document has been placed in the public domain. You may do with it as"
+" you wish. You may copy, modify, redistribute, reattribute, sell, buy, "
+"rent, lease, destroy, or improve it, quote it at length, excerpt, "
+"incorporate, collate, fold, staple, or mutilate it, or do anything else "
+"to it that your or anyone else's heart desires."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst
+msgid "field name"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:112
+msgid "This is a generic bibliographic field."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst
+msgid "field name 2"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:114
+msgid "Generic bibliographic fields may contain multiple body elements."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:116
+msgid "Like this."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst
+msgid "Dedication"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:120
+msgid "For Docutils users & co-developers."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst
+msgid "abstract"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:124
+msgid ""
+"This document is a demonstration of the reStructuredText markup language,"
+" containing examples of all basic reStructuredText constructs and many "
+"advanced constructs."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:129
+msgid "Bullet Lists"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:137
+msgid "Simple"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:139
+msgid "A simple list."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:140
+msgid "There are no margins between list items."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:141
+msgid "Simple lists do not contain multiple paragraphs. That's a complex list."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:142
+msgid "In the case of a nested list"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:144
+msgid "There are no margins between elements"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:146
+#: ../../reference/kitchen-sink/lists-and-tables.rst:148
+msgid "Still no margins"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:151
+msgid "Complex"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:153
+msgid "A bullet list"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:155
+#: ../../reference/kitchen-sink/lists-and-tables.rst:162
+msgid "Nested bullet list."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:156
+#: ../../reference/kitchen-sink/lists-and-tables.rst:163
+msgid "Nested item 2."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:158
+#: ../../reference/kitchen-sink/lists-and-tables.rst:166
+msgid "Item 2."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:160
+msgid "Paragraph 2 of item 2."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:165
+msgid "Third level."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:168
+msgid "Nested item 3."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:170
+#: ../../reference/kitchen-sink/lists-and-tables.rst:171
+#: ../../reference/kitchen-sink/lists-and-tables.rst:172
+msgid "``inline literall``"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:173
+#: ../../reference/kitchen-sink/lists-and-tables.rst:175
+#: ../../reference/kitchen-sink/lists-and-tables.rst:176
+#: ../../reference/kitchen-sink/lists-and-tables.rst:178
+msgid "This item has multiple paragraphs."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:182
+msgid "Second list level"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:184
+msgid "here is a list in a second-level section."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:185
+#: ../../reference/kitchen-sink/lists-and-tables.rst:186
+#: ../../reference/kitchen-sink/lists-and-tables.rst:188
+#: ../../reference/kitchen-sink/lists-and-tables.rst:200
+#: ../../reference/kitchen-sink/lists-and-tables.rst:218
+msgid "`yahoo <http://www.yahoo.com>`_"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:189
+msgid "here is an inner bullet ``oh``"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:191
+msgid "one more ``with an inline literally``. `yahoo <http://www.yahoo.com>`_"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:193
+msgid "heh heh. child. try to beat this embed:"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:199
+msgid "and another. `yahoo <http://www.yahoo.com>`_"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:201
+msgid "``hi``"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:202
+msgid "how about an admonition?"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:205
+msgid "This is a note nested in a list."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:207
+msgid "and hehe"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:210
+msgid "But deeper down the rabbit hole"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:212
+msgid ""
+"I kept saying that, \"deeper down the rabbit hole\". `yahoo "
+"<http://www.yahoo.com>`_"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:214
+msgid "I cackle at night `yahoo <http://www.yahoo.com>`_."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:215
+msgid "I'm so lonely here in GZ ``guangzhou``"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:216
+msgid "A man of python destiny, hopes and dreams. `yahoo <http://www.yahoo.com>`_"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:220
+msgid "`yahoo <http://www.yahoo.com>`_ ``hi``"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:221
+msgid "``destiny``"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:224
+msgid "Hlists"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:229
+msgid "First item"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:230
+msgid "Second item"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:231
+msgid "Third item"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:232
+msgid "Forth item"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:233
+msgid "Fifth item"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:234
+msgid "Sixths item"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:237
+msgid "Hlist with images"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:243
+#: ../../reference/kitchen-sink/lists-and-tables.rst:341
+msgid "This is a short caption for a figure."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:247
+#: ../../reference/kitchen-sink/lists-and-tables.rst:345
+msgid ""
+"This is a long caption for a figure. Lorem ipsum dolor sit amet, "
+"consectetur adipiscing elit. Donec porttitor dolor in odio posuere, vitae"
+" ornare libero mattis. In lobortis justo vestibulum nibh aliquet, non."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:251
+msgid "Numbered List"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:253
+msgid "One,"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:254
+msgid "Two."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:255
+msgid ""
+"Three with long text. Lorem ipsum dolor sit amet, consectetur adipiscing "
+"elit. Sed feugiat sagittis neque quis eleifend. Duis rutrum lectus sit "
+"amet mattis suscipit."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:258
+msgid "Using bullets and letters. (A)"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:259
+msgid "Using bullets and letters. (B)"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:260
+msgid "Using bullets and letters. (C)"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:263
+msgid "Tables"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:266
+msgid "Grid Tables"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:268
+msgid "Here's a grid table followed by a simple table:"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:271
+msgid "Header row, column 1 (header rows optional)"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:271
+#: ../../reference/kitchen-sink/lists-and-tables.rst:301
+#: ../../reference/kitchen-sink/lists-and-tables.rst:322
+msgid "Header 2"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:271
+#: ../../reference/kitchen-sink/lists-and-tables.rst:301
+msgid "Header 3"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:271
+msgid "Header 4"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:274
+msgid "body row 1, column 1"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:274
+#: ../../reference/kitchen-sink/lists-and-tables.rst:303
+#: ../../reference/kitchen-sink/lists-and-tables.rst:305
+#: ../../reference/kitchen-sink/lists-and-tables.rst:307
+#: ../../reference/kitchen-sink/lists-and-tables.rst:309
+msgid "column 2"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:274
+#: ../../reference/kitchen-sink/lists-and-tables.rst:303
+#: ../../reference/kitchen-sink/lists-and-tables.rst:305
+#: ../../reference/kitchen-sink/lists-and-tables.rst:307
+#: ../../reference/kitchen-sink/lists-and-tables.rst:309
+msgid "column 3"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:274
+msgid "column 4"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:276
+msgid "body row 2"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:276
+msgid "Cells may span columns."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:278
+msgid "body row 3"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:278
+msgid "Cells may span rows."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:278
+msgid "Table cells"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:279
+msgid "contain"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:280
+msgid "body elements."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:280
+msgid "body row 4"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:282
+msgid "body row 5"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:282
+msgid "Cells may also be empty: ``-->``"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:287
+msgid "Inputs"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:287
+msgid "Output"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:289
+msgid "A"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:289
+msgid "B"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:289
+msgid "A or B"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:291
+#: ../../reference/kitchen-sink/lists-and-tables.rst:292
+#: ../../reference/kitchen-sink/lists-and-tables.rst:293
+msgid "False"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:292
+#: ../../reference/kitchen-sink/lists-and-tables.rst:293
+#: ../../reference/kitchen-sink/lists-and-tables.rst:294
+msgid "True"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:298
+msgid "Giant Tables"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:301
+#: ../../reference/kitchen-sink/lists-and-tables.rst:321
+msgid "Header 1"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:303
+#: ../../reference/kitchen-sink/lists-and-tables.rst:305
+#: ../../reference/kitchen-sink/lists-and-tables.rst:307
+#: ../../reference/kitchen-sink/lists-and-tables.rst:309
+msgid "body row 1"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:313
+msgid "List Tables"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:315
+msgid "List tables can have captions like this one."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:320
+msgid "List table"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:323
+msgid ""
+"Header 3 long. Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+"Nam sit amet mauris arcu."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:324
+msgid "Stub Row 1"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:325
+msgid "Row 1"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:326
+#: ../../reference/kitchen-sink/lists-and-tables.rst:330
+#: ../../reference/kitchen-sink/lists-and-tables.rst:334
+msgid "Column 2"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:327
+#: ../../reference/kitchen-sink/lists-and-tables.rst:331
+#: ../../reference/kitchen-sink/lists-and-tables.rst:335
+msgid ""
+"Column 3 long. Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+"Nam sit amet mauris arcu."
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:328
+msgid "Stub Row 2"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:329
+msgid "Row 2"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:332
+msgid "Stub Row 3"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:333
+msgid "Row 3"
+msgstr ""
+
+#: ../../reference/kitchen-sink/lists-and-tables.rst:337
+msgid "This is a list table with images in it."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:7
+msgid "EXAMPLE"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:12
+msgid "Paragraph Level Markup"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:15
+msgid "Inline Markup"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:17
+msgid ""
+"Paragraphs contain text and may contain inline markup: *emphasis*, "
+"**strong emphasis**, ``inline literals``, standalone hyperlinks "
+"(http://www.python.org), external hyperlinks (Python_), internal cross-"
+"references (example_), external hyperlinks with embedded URIs (`Python "
+"web site <http://www.python.org>`__), footnote references (manually "
+"numbered [1]_, anonymous auto-numbered [#]_, labeled auto-numbered "
+"[#label]_, or symbolic [*]_), citation references ([12]_), substitution "
+"references (|example|), and _`inline hyperlink targets` (see Targets_ "
+"below for a reference back to here). Character-level inline markup is "
+"also possible (although exceedingly ugly!) in *re*\\ ``Structured``\\ "
+"*Text*. Problems are indicated by |problematic| text (generated by "
+"processing errors; this one is intentional)."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:26
+msgid ""
+"Also with ``sphinx.ext.autodoc``, which I use in the demo, I can link to "
+":class:`test_py_module.test.Foo`. It will link you right to my code "
+"documentation for it."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:29
+msgid ""
+"The default role for interpreted text is `Title Reference`.  Here are "
+"some explicit interpreted text roles: a PEP reference (:PEP:`287`); an "
+"RFC reference (:RFC:`2822`); a :sub:`subscript`; a :sup:`superscript`; "
+"and explicit roles for :emphasis:`standard` :strong:`inline` "
+":literal:`markup`."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:33
+msgid ""
+"GUI labels are a useful way to indicate that :guilabel:`Some action` is "
+"to be taken by the user. The GUI label should not run over ``line-"
+"height`` so as not to :guilabel:`interfere` with text from adjacent "
+"lines."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:36
+msgid ""
+"Key-bindings indicate that the read is to press a button on the keyboard "
+"or mouse, for example :kbd:`MMB` and :kbd:`Shift-MMB`. Another useful "
+"markup to indicate a user action is to use ``menuselection`` this can be "
+"used to show short and long menus in software. For example, and "
+"``menuselection`` can be seen here that breaks is too long to fit on this"
+" line. :menuselection:`My --> Software --> Some menu --> Some sub menu 1 "
+"--> sub menu 2`."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:44
+msgid ""
+"Let's test wrapping and whitespace significance in inline literals: "
+"``This is an example of --inline-literal --text, --including some-- "
+"strangely--hyphenated-words.  Adjust-the-width-of-your-browser-window to "
+"see how the text is wrapped.  -- ---- --------  Now note    the spacing"
+"    between the    words of    this sentence    (words should    be "
+"grouped    in pairs).``"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:51
+msgid ""
+"If the ``--pep-references`` option was supplied, there should be a live "
+"link to PEP 258 here."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:54
+#: ../../reference/notebooks.md:114
+msgid "Math"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:56
+msgid ""
+"This is a test. Here is an equation: :math:`X_{0:5} = (X_0, X_1, X_2, "
+"X_3, X_4)`. Here is another:"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:60
+msgid ""
+"\\nabla^2 f =\n"
+"\\frac{1}{r^2} \\frac{\\partial}{\\partial r}\n"
+"\\left( r^2 \\frac{\\partial f}{\\partial r} \\right) +\n"
+"\\frac{1}{r^2 \\sin \\theta} \\frac{\\partial f}{\\partial \\theta}\n"
+"\\left( \\sin \\theta \\, \\frac{\\partial f}{\\partial \\theta} \\right)"
+" +\n"
+"\\frac{1}{r^2 \\sin^2\\theta} \\frac{\\partial^2 f}{\\partial \\phi^2}"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:70
+msgid ""
+"You can add a link to equations like the one above :eq:`This is a label` "
+"by using ``:eq:``."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:73
+msgid "Meta"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:75
+msgid "reStructuredText, demonstration, demo, parser"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:75
+msgid ""
+"A demonstration of the reStructuredText markup language, containing "
+"examples of all basic constructs and many advanced constructs."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:82
+msgid "Blocks"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:85
+msgid "Literal Blocks"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:87
+msgid ""
+"Literal blocks are indicated with a double-colon (\"::\") at the end of "
+"the preceding paragraph (over there ``-->``).  They can be indented::"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:95
+msgid "Or they can be quoted without indentation::"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:102
+msgid "Line Blocks"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:104
+msgid "This is a line block.  It ends with a blank line."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:105
+msgid "Each new line begins with a vertical bar (\"|\")."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:106
+msgid "Line breaks and initial indents are preserved."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:108
+msgid ""
+"Continuation lines are wrapped portions of long lines; they begin with a "
+"space in place of the vertical bar."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:110
+msgid ""
+"The left edge of a continuation line need not be aligned with the left "
+"edge of the text above it."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:112
+msgid "This is a second line block."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:114
+msgid "Blank lines are permitted internally, but they must begin with a \"|\"."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:116
+msgid "Take it away, Eric the Orchestra Leader!"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst
+msgid "A one, two, a one two three four"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst
+msgid "Half a bee, philosophically,"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst
+msgid "must, *ipso facto*, half not be."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst
+msgid "But half the bee has got to be,"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst
+msgid "*vis a vis* its entity.  D'you see?"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst
+msgid "But can a bee be said to be"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst
+msgid "or not to be an entire bee,"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst
+msgid "when half the bee is not a bee,"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst
+msgid "due to some ancient injury?"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst
+msgid "Singing..."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:133
+msgid "Block Quotes"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:135
+msgid "Block quotes consist of indented body elements:"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:137
+msgid ""
+"My theory by A. Elk.  Brackets Miss, brackets.  This theory goes as "
+"follows and begins now.  All brontosauruses are thin at one end, much "
+"much thicker in the middle and then thin again at the far end.  That is "
+"my theory, it is mine, and belongs to me and I own it, and what it is "
+"too."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:150
+msgid "Anne Elk (Miss)"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:146
+msgid "Doctest Blocks"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:154
+msgid "Code Blocks"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:162
+msgid "Code Blocks can have captions."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:187
+msgid "Emphasized lines with line numbers"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:200
+msgid "Sidebar"
+msgstr ""
+
+msgid "Ch'ien / The Creative"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:206
+msgid "*Above* CH'IEN THE CREATIVE, HEAVEN"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:208
+msgid "*Below* CH'IEN THE CREATIVE, HEAVEN"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:210
+msgid ""
+"The first hexagram is made up of six unbroken lines. These unbroken lines"
+" stand for the primal power, which is light-giving, active, strong, and "
+"of the spirit. The hexagram is consistently strong in character, and "
+"since it is without weakness, its essence is power or energy. Its image "
+"is heaven. Its energy is represented as unrestricted by any fixed "
+"conditions in space and is therefore conceived of as motion. Time is "
+"regarded as the basis of this motion. Thus the hexagram includes also the"
+" power of time and the power of persisting in time, that is, duration."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:217
+msgid ""
+"The power represented by the hexagram is to be interpreted in a dual "
+"sense in terms of its action on the universe and of its action on the "
+"world of men. In relation to the universe, the hexagram expresses the "
+"strong, creative action of the Deity. In relation to the human world, it "
+"denotes the creative action of the holy man or sage, of the ruler or "
+"leader of men, who through his power awakens and develops their higher "
+"nature."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:223
+msgid "Code with Sidebar"
+msgstr ""
+
+msgid "A code example"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:227
+msgid "With a sidebar on the right."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:229
+msgid "Literal includes can also have captions."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:236
+msgid "References"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:239
+msgid "Footnotes"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:241
+msgid ""
+"A footnote contains body elements, consistently indented by at least 3 "
+"spaces."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:244
+msgid "This is the footnote's second paragraph."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:246
+msgid ""
+"Footnotes may be numbered, either manually (as in [1]_) or automatically "
+"using a \"#\"-prefixed label.  This footnote has a label so it can be "
+"referred to from multiple places, both as a footnote reference "
+"([#label]_) and as a hyperlink reference (label_)."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:252
+msgid ""
+"This footnote is numbered automatically and anonymously using a label of "
+"\"#\" only."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:255
+msgid ""
+"Footnotes may also use symbols, specified with a \"*\" label. Here's a "
+"reference to the next footnote: [*]_."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:258
+msgid "This footnote shows the next symbol in the sequence."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:260
+msgid ""
+"Here's an unreferenced footnote, with a reference to a nonexistent "
+"footnote: [5]_."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:264
+msgid "Citations"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:266
+msgid ""
+"This is the citation I made, let's make this extremely long so that we "
+"can tell that it doesn't follow the normal responsive table stuff."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:268
+msgid ""
+"This citation has some ``code blocks`` in it, maybe some **bold** and "
+"*italics* too. Heck, lets put a link to a meta citation [13]_ too."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:271
+msgid "This citation will have two backlinks."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:274
+msgid "Here's a reference to the above, [12]_, and a [nonexistent]_ citation."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:276
+msgid "Here is another type of citation: `citation`"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:279
+msgid "Glossary"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:281
+msgid "This is a glossary with definition terms for thing like :term:`Writing`:"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:284
+msgid "Documentation"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:286
+msgid "Provides users with the knowledge they need to use something."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:287
+msgid "Reading"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:289
+msgid "The process of taking information into ones mind through the use of eyes."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:290
+msgid "Writing"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:292
+msgid ""
+"The process of putting thoughts into a medium for other people to "
+":term:`read <Reading>`."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:295
+msgid "Targets"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:299
+msgid ""
+"This paragraph is pointed to by the explicit \"example\" target. A "
+"reference can be found under `Inline Markup`_, above. `Inline hyperlink "
+"targets`_ are also possible."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:303
+msgid ""
+"Section headers are implicit targets, referred to by name. See Targets_, "
+"which is a subsection of `Body Elements`_."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:306
+msgid ""
+"Explicit external targets are interpolated into references such as "
+"\"Python_\"."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:310
+msgid ""
+"Targets may be indirect and anonymous.  Thus `this phrase`__ may also "
+"refer to the Targets_ section."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:315
+msgid ""
+"Here's a `hyperlink reference without a target`_, which generates an "
+"error."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:319
+msgid "Directives"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:324
+msgid ""
+"Above mini table of contents is generated by the ``.. contents::`` "
+"directive. It and all the other directives presented here are just a "
+"sample of the many reStructuredText Directives. For others, please see: "
+"http://docutils.sourceforge.net/docs/ref/rst/directives.html."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:331
+msgid "Centered text"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:333
+msgid "You can create a statement with centered text with ``.. centered::``"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:336
+msgid "This is centered text!"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:338
+msgid "Images & Figures"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:341
+msgid "Images"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:343
+msgid "An image directive (also clickable -- a hyperlink reference):"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:349
+msgid "Figures"
+msgstr ""
+
+msgid "reStructuredText, the markup syntax"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:354
+msgid "A figure is an image with a caption and/or a legend:"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:357
+msgid "re"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:357
+msgid "Revised, revisited, based on 're' module."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:359
+msgid "Structured"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:359
+msgid "Structure-enhanced text, structuredtext."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:361
+msgid "Text"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:361
+msgid "Well it is, isn't it?"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:364
+msgid "This paragraph is also part of the legend."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:366
+msgid "A figure directive with center alignment"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:371
+msgid "This caption should be centered."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:374
+msgid "Admonitions"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:376
+msgid "Directives at large."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:378
+msgid "Don't take any wooden nickels."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:380
+msgid "Mad scientist at work!"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:382
+msgid "Does not compute."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:384
+msgid "It's bigger than a bread box."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:387
+msgid "Wash behind your ears."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:388
+msgid "Clean up your room."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:390
+msgid "Including the closet."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:391
+msgid "The bathroom too."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:393
+msgid "Take the trash out of the bathroom."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:394
+msgid "Clean the sink."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:395
+msgid "Call your mother."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:396
+msgid "Back up your data."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:398
+msgid ""
+"This is a note. Equations within a note: :math:`G_{\\mu\\nu} = 8 \\pi G "
+"(T_{\\mu\\nu}  + \\rho_\\Lambda g_{\\mu\\nu})`."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:402
+#, python-format
+msgid "15% if the service is good."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:405
+msgid "Example"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:407
+msgid "Thing1"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:409
+msgid "Thing2"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:411
+msgid "Thing3"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:414
+msgid ""
+"Strong prose may provoke extreme mental exertion. Reader discretion is "
+"strongly advised."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:417
+msgid "And, by the way..."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:419
+msgid "You can make up your own admonition too."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:422
+msgid "Topics, Sidebars, and Rubrics"
+msgstr ""
+
+msgid "Sidebar Title"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:427
+msgid "This is a sidebar.  It is for text outside the flow of the main text."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst
+msgid "This is a rubric inside a sidebar"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:432
+msgid ""
+"Sidebars often appears beside the main text with a border and background "
+"color."
+msgstr ""
+
+msgid "Topic Title"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:437
+msgid "This is a topic."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:440
+msgid "This is a rubric"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:442
+msgid "Target Footnotes"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:447
+msgid "Replacement Text"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:449
+msgid "I recommend you try |Python|_."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:454
+msgid "Compound Paragraph"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:458
+msgid "This paragraph contains a literal block::"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:464
+msgid ""
+"and thus consists of a simple paragraph, a literal block, and another "
+"simple paragraph.  Nonetheless it is semantically *one* paragraph."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:468
+msgid ""
+"This construct is called a *compound paragraph* and can be produced with "
+"the \"compound\" directive."
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:472
+msgid "Download Links"
+msgstr ""
+
+#: ../../reference/kitchen-sink/paragraph-markup.rst:474
+msgid ""
+":download:`This long long long long long long long long long long long "
+"long long long long download link should be blue, normal weight text with"
+" a leading icon, and should wrap white-spaces "
+"<https://source.unsplash.com/200x200/daily?cute+animals>`"
+msgstr ""
+
+#: ../../reference/notebooks.md:15
+msgid "Jupyter notebooks"
+msgstr ""
+
+#: ../../reference/notebooks.md:17
+msgid ""
+"This is a page to demonstrate the look and feel of Jupyter Notebook "
+"elements."
+msgstr ""
+
+#: ../../reference/notebooks.md:20
+msgid "Hiding elements"
+msgstr ""
+
+#: ../../reference/notebooks.md:22
+msgid "Hiding inputs"
+msgstr ""
+
+#: ../../reference/notebooks.md:49
+msgid "Hiding outputs"
+msgstr ""
+
+#: ../../reference/notebooks.md:65
+msgid "Hiding markdown"
+msgstr ""
+
+#: ../../reference/notebooks.md:1
+msgid "This is a hidden markdown cell"
+msgstr ""
+
+#: ../../reference/notebooks.md:3
+msgid "It should be hidden!"
+msgstr ""
+
+#: ../../reference/notebooks.md:75
+msgid "And here's a toggleable note"
+msgstr ""
+
+#: ../../reference/notebooks.md:1
+msgid "With a body!"
+msgstr ""
+
+#: ../../reference/notebooks.md:82
+msgid "Hiding both inputs and outputs"
+msgstr ""
+
+#: ../../reference/notebooks.md:97
+msgid "Hiding the whole cell"
+msgstr ""
+
+#: ../../reference/notebooks.md:112
+msgid "Enriched outputs"
+msgstr ""
+
+#: ../../reference/notebooks.md:122
+msgid "Pandas DataFrames"
+msgstr ""
+
+#: ../../reference/notebooks.md:132
+msgid ""
+"Styled DataFrames (see [the Pandas Styling "
+"docs](https://pandas.pydata.org/pandas-"
+"docs/stable/user_guide/style.html))."
+msgstr ""
+
+#: ../../reference/notebooks.md:168
+msgid "Interactive outputs"
+msgstr ""
+
+#: ../../reference/notebooks.md:170
+msgid "Folium"
+msgstr ""
+
+#: ../../reference/notebooks.md:205
+msgid "Stdout"
+msgstr ""
+
+#: ../../reference/notebooks.md:212
+msgid "Formatting code cells"
+msgstr ""
+
+#: ../../reference/notebooks.md:214
+msgid "Scrolling cell outputs"
+msgstr ""
+
+#: ../../reference/notebooks.md:222
+msgid "Scrolling cell inputs"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:17
+msgid "Theme-specific elements"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:19
+msgid ""
+"This page contains a number of reference elements to see how they look in"
+" this theme. The information is not meant to be easy to read or "
+"understand, just browse through and see how things look!"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:23
+msgid "Blog post list"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:25
+msgid "Here's a sample post list:"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:35
+msgid "Full-width elements"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:36
+msgid "Code cells"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:71
+msgid "Markdown"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:75
+msgid "This is some markdown that should be shown at full width."
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:77
+msgid "Here's the Jupyter logo:"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:79
+msgid ""
+"![](https://raw.githubusercontent.com/adebar/awesome-"
+"jupyter/master/logo.png)"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:83
+msgid "Mathematics"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:85
+msgid ""
+"\\begin{equation}   \\int_0^\\infty \\frac{x^3}{e^x-1}\\,dx = "
+"\\frac{\\pi^4}{15} \\end{equation}"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:89
+msgid ""
+"\n"
+"  \\int_0^\\infty \\frac{x^3}{e^x-1}\\,dx = \\frac{\\pi^4}{15}\n"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:94
+msgid "w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:99
+msgid "Link to above: {eq}`my_label`"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:101
+msgid ""
+"w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1} \\\\\n"
+"w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1} \\\\\n"
+"w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:108
+msgid "Link to above: {eq}`my_label2`"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:110
+msgid ""
+"\n"
+"\\mathcal{O}(f) = \\{ g |\n"
+"    \\exists c > 0,\n"
+"    \\exists n_0 \\in \\mathbb{N}_0,\n"
+"    \\forall n \\geq n_0\n"
+"        :\n"
+"    [g(n) \\leq c \\cdot f(n)]\\}"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:118
+msgid "A really long math equation"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:120
+msgid ""
+"\n"
+"\\begin{align}\n"
+"\\mathrm{SetConv} \\left( \\{(x^{c},y^{c})\\}_{c=1}^{C} \\right)(x) "
+"\\left( \\{(x^{c},y^{c})\\}_{c=1}^{C} \\right)(x) \\left( "
+"\\{(x^{c},y^{c})\\}_{c=1}^{C} \\right)(x)\n"
+"&= \\sum_{c=1}^{C} y^{(c)} w_{\\theta} \\left( x - x^{(c)} \\right)  "
+"\\sum_{c=1}^{C} y^{(c)} w_{\\theta} \\left( x - x^{(c)} \\right) "
+"\\sum_{c=1}^{C} y^{(c)} w_{\\theta} \\left( x - x^{(c)} \\right)\\\\\n"
+"&= \\left( y^{(c')} w_{\\theta} \\left( x - x^{(c')} \\right) \\right) + "
+"\\sum_{c \\neq c'}  y^{(c)} w_{\\theta} \\left( x - x^{(c)} \\right) \\\\"
+"\n"
+"&= 0 + \\sum_{c \\neq c'}  y^{(c)} w_{\\theta} \\left( x - x^{(c)} "
+"\\right)\n"
+"\\end{align}\n"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:129
+msgid "Full width equations work"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:131
+msgid ""
+"\\begin{align}\n"
+"\\mathrm{SetConv} \\left( \\{(x^{c},y^{c})\\}_{c=1}^{C} \\right)(x) "
+"\\left( \\{(x^{c},y^{c})\\}_{c=1}^{C} \\right)(x) \\left( "
+"\\{(x^{c},y^{c})\\}_{c=1}^{C} \\right)(x)\n"
+"&= \\sum_{c=1}^{C} y^{(c)} w_{\\theta} \\left( x - x^{(c)} \\right)  "
+"\\sum_{c=1}^{C} y^{(c)} w_{\\theta} \\left( x - x^{(c)} \\right) "
+"\\sum_{c=1}^{C} y^{(c)} w_{\\theta} \\left( x - x^{(c)} \\right)\\\\\n"
+"&= \\left( y^{(c')} w_{\\theta} \\left( x - x^{(c')} \\right) \\right) + "
+"\\sum_{c \\neq c'}  y^{(c)} w_{\\theta} \\left( x - x^{(c)} \\right) \\\\"
+"\n"
+"&= 0 + \\sum_{c \\neq c'}  y^{(c)} w_{\\theta} \\left( x - x^{(c)} "
+"\\right)\n"
+"\\end{align}"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:144
+msgid "Margins"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:148
+msgid "Margin content can include all kinds of things, such as code blocks:"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:156
+msgid "as well as admonitions and images:"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:165
+msgid "Margin under lower level shouldn't have different left-alignment"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:174
+msgid "Margins with toggle buttons"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:176
+msgid ""
+"Here's some margin content, let's see how it interacts w/ the toggle "
+"button"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:182
+msgid "Here's a toggleable note:"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:1
+msgid "My note"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:189
+msgid "Margins with full-width content"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:1
+msgid "This is my test"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:196
+msgid "Let's see what happens"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:208
+msgid "Markdown cell with code in margin"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:216
+msgid "and now r"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:224
+msgid "how does it look?"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:226
+msgid "Markdown cell with images in sidebar"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:232
+msgid "More content after the popouts"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:234
+msgid ""
+"This is extra content after the popouts to see if cells overlap and such."
+" Also to make sure you can still interact with the popout content. This "
+"is extra content after the popouts to see if cells overlap and such. Also"
+" to make sure you can still interact with the popout content."
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:243
+msgid ""
+"This is extra content after the popouts to see if cells overlap and such."
+" Also to make sure you can still interact with the popout content. This "
+"is extra content after the popouts to see if cells overlap and such. Also"
+" to make sure you can still interact with the popout content. This is "
+"extra content after the popouts to see if cells overlap and such. Also to"
+" make sure you can still interact with the popout content."
+msgstr ""
+
+#: ../../reference/thebe.md:13
+msgid "Thebe"
+msgstr ""
+
+#: ../../reference/thebe.md:15
+msgid ""
+"Thebe uses CodeMirror in the background, which uses different styles than"
+" pygments, which is used for static code syntax highlighting."
+msgstr ""
+
+#: ../../reference/thebe.md:17
+msgid "Static code:"
+msgstr ""
+
+#: ../../reference/thebe.md:39
+msgid "Runnable thebe code:"
+msgstr ""
+

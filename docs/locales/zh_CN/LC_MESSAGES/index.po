@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020
+# This file is distributed under the same license as the Sphinx Book Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Book Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-23 21:14+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../index.md:50
+msgid "Topic Areas"
+msgstr "专题区域"
+
+#: ../../index.md:65
+msgid "Reference"
+msgstr "参考"
+
+#: ../../index.md:77
+msgid "About the theme"
+msgstr "关于主题"
+
+#: ../../index.md:1
+msgid ""
+"A Sphinx theme with a clean design, support for interactive content, and "
+"a modern book-like look and feel."
+msgstr ""
+"一个设计简洁，支持交互内容，具有现代书籍外观和感觉的 Sphinx 主题"
+
+#: ../../index.md:27
+msgid "[Flexible content layout](reference/special-theme-elements.md)"
+msgstr "[灵活的内容布局](reference/special-theme-elements.md)"
+
+#: ../../index.md:28
+msgid ""
+"Inspired by beautiful online books, such as [the Edward Tufte CSS "
+"guide](https://edwardtufte.github.io/tufte-css/)"
+msgstr ""
+"受到美丽的在线书籍的启发，"
+"例如 [Edward Tufte CSS 指南](https://edwardtufte.github.io/tufte-css/)。"
+
+#: ../../index.md:30
+msgid "[Visual classes designed for Jupyter Notebooks](reference/notebooks)"
+msgstr "[专为 Jupyter 笔记本设计的可视化课程](reference/notebooks)"
+
+#: ../../index.md:31
+msgid "Cell inputs, outputs, and interactive functionality are all supported."
+msgstr "单元格输入、输出和交互功能都得到支持。"
+
+#: ../../index.md:33
+msgid "[Launch buttons for online interactivity](launch)"
+msgstr "[用于在线交互的启动按钮](launch)"
+
+#: ../../index.md:34
+msgid ""
+"For pages that are built with computational material, connect your site "
+"to an online BinderHub for interactive content."
+msgstr ""
+"对于用计算材料构建的页面，将你的网站连接到在线 BinderHub，以获得交互内容。"
+
+#: ../../index.md:36
+msgid ""
+"[Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-"
+"started/introduction/)"
+msgstr ""
+
+#: ../../index.md:37
+msgid "To style visual elements and add functionality."
+msgstr "塑造视觉元素并增加功能。"
+
+#: ../../index.md:39
+msgid "International"
+msgstr "国际化"
+
+#: ../../index.md:40
+msgid ""
+"All text integrated in the theme is translated to the specified [Sphinx "
+"language](https://www.sphinx-doc.org/en/master/usage/configuration.html"
+"#confval-language)."
+msgstr ""
+"所有集成在主题中的文本都被翻译成指定的 [Sphinx "
+"语言](https://www.sphinx-doc.org/en/master/usage/configuration.html"
+"#confval-language)."
+
+#: ../../index.md:1
+msgid "This is the default theme in [Jupyter Book](https://jupyterbook.org)."
+msgstr "这是 [Jupyter Book](https://jupyterbook.org) 的默认主题。"
+
+#: ../../index.md:46
+msgid "Topic areas"
+msgstr "专题区域"
+
+#: ../../index.md:48
+msgid "The following topic areas will help you understand and use the theme."
+msgstr "以下专题区域将帮助你理解和使用该主题。"
+
+#: ../../index.md:61
+msgid "Reference pages"
+msgstr "参考页面"
+
+#: ../../index.md:63
+msgid "Reference pages demonstrate the visual look of this theme."
+msgstr "参考页展示了这个主题的视觉外观。"
+
+#: ../../index.md:84
+msgid "Acknowledgements"
+msgstr "鸣谢"
+
+#: ../../index.md:86
+msgid ""
+"This theme is heavily inspired by (and dependent on) [PyData Sphinx "
+"Theme](https://pydata-sphinx-theme.readthedocs.io/) for its base "
+"structure and configuration."
+msgstr ""
+"这个主题在很大程度上受到 "
+"[PyData Sphinx Theme](https://pydata-sphinx-theme.readthedocs.io/) 的启发，"
+"并依赖于其基本结构和配置。"

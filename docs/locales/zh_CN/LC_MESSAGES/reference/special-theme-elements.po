@@ -1,0 +1,238 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020
+# This file is distributed under the same license as the Sphinx Book Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Book Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-23 21:17+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../reference/special-theme-elements.md:17
+msgid "Theme-specific elements"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:19
+msgid ""
+"This page contains a number of reference elements to see how they look in"
+" this theme. The information is not meant to be easy to read or "
+"understand, just browse through and see how things look!"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:23
+msgid "Blog post list"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:25
+msgid "Here's a sample post list:"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:35
+msgid "Full-width elements"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:36
+msgid "Code cells"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:71
+msgid "Markdown"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:75
+msgid "This is some markdown that should be shown at full width."
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:77
+msgid "Here's the Jupyter logo:"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:79
+msgid ""
+"![](https://raw.githubusercontent.com/adebar/awesome-"
+"jupyter/master/logo.png)"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:83
+msgid "Mathematics"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:85
+msgid ""
+"\\begin{equation}   \\int_0^\\infty \\frac{x^3}{e^x-1}\\,dx = "
+"\\frac{\\pi^4}{15} \\end{equation}"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:89
+msgid ""
+"\n"
+"  \\int_0^\\infty \\frac{x^3}{e^x-1}\\,dx = \\frac{\\pi^4}{15}\n"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:94
+msgid "w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:99
+msgid "Link to above: {eq}`my_label`"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:101
+msgid ""
+"w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1} \\\\\n"
+"w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1} \\\\\n"
+"w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:108
+msgid "Link to above: {eq}`my_label2`"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:110
+msgid ""
+"\n"
+"\\mathcal{O}(f) = \\{ g |\n"
+"    \\exists c > 0,\n"
+"    \\exists n_0 \\in \\mathbb{N}_0,\n"
+"    \\forall n \\geq n_0\n"
+"        :\n"
+"    [g(n) \\leq c \\cdot f(n)]\\}"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:118
+msgid "A really long math equation"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:120
+msgid ""
+"\n"
+"\\begin{align}\n"
+"\\mathrm{SetConv} \\left( \\{(x^{c},y^{c})\\}_{c=1}^{C} \\right)(x) "
+"\\left( \\{(x^{c},y^{c})\\}_{c=1}^{C} \\right)(x) \\left( "
+"\\{(x^{c},y^{c})\\}_{c=1}^{C} \\right)(x)\n"
+"&= \\sum_{c=1}^{C} y^{(c)} w_{\\theta} \\left( x - x^{(c)} \\right)  "
+"\\sum_{c=1}^{C} y^{(c)} w_{\\theta} \\left( x - x^{(c)} \\right) "
+"\\sum_{c=1}^{C} y^{(c)} w_{\\theta} \\left( x - x^{(c)} \\right)\\\\\n"
+"&= \\left( y^{(c')} w_{\\theta} \\left( x - x^{(c')} \\right) \\right) + "
+"\\sum_{c \\neq c'}  y^{(c)} w_{\\theta} \\left( x - x^{(c)} \\right) \\\\"
+"\n"
+"&= 0 + \\sum_{c \\neq c'}  y^{(c)} w_{\\theta} \\left( x - x^{(c)} "
+"\\right)\n"
+"\\end{align}\n"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:129
+msgid "Full width equations work"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:131
+msgid ""
+"\\begin{align}\n"
+"\\mathrm{SetConv} \\left( \\{(x^{c},y^{c})\\}_{c=1}^{C} \\right)(x) "
+"\\left( \\{(x^{c},y^{c})\\}_{c=1}^{C} \\right)(x) \\left( "
+"\\{(x^{c},y^{c})\\}_{c=1}^{C} \\right)(x)\n"
+"&= \\sum_{c=1}^{C} y^{(c)} w_{\\theta} \\left( x - x^{(c)} \\right)  "
+"\\sum_{c=1}^{C} y^{(c)} w_{\\theta} \\left( x - x^{(c)} \\right) "
+"\\sum_{c=1}^{C} y^{(c)} w_{\\theta} \\left( x - x^{(c)} \\right)\\\\\n"
+"&= \\left( y^{(c')} w_{\\theta} \\left( x - x^{(c')} \\right) \\right) + "
+"\\sum_{c \\neq c'}  y^{(c)} w_{\\theta} \\left( x - x^{(c)} \\right) \\\\"
+"\n"
+"&= 0 + \\sum_{c \\neq c'}  y^{(c)} w_{\\theta} \\left( x - x^{(c)} "
+"\\right)\n"
+"\\end{align}"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:144
+msgid "Margins"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:148
+msgid "Margin content can include all kinds of things, such as code blocks:"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:156
+msgid "as well as admonitions and images:"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:165
+msgid "Margin under lower level shouldn't have different left-alignment"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:174
+msgid "Margins with toggle buttons"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:176
+msgid ""
+"Here's some margin content, let's see how it interacts w/ the toggle "
+"button"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:182
+msgid "Here's a toggleable note:"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:1
+msgid "My note"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:189
+msgid "Margins with full-width content"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:1
+msgid "This is my test"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:196
+msgid "Let's see what happens"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:208
+msgid "Markdown cell with code in margin"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:216
+msgid "and now r"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:224
+msgid "how does it look?"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:226
+msgid "Markdown cell with images in sidebar"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:232
+msgid "More content after the popouts"
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:234
+msgid ""
+"This is extra content after the popouts to see if cells overlap and such."
+" Also to make sure you can still interact with the popout content. This "
+"is extra content after the popouts to see if cells overlap and such. Also"
+" to make sure you can still interact with the popout content."
+msgstr ""
+
+#: ../../reference/special-theme-elements.md:243
+msgid ""
+"This is extra content after the popouts to see if cells overlap and such."
+" Also to make sure you can still interact with the popout content. This "
+"is extra content after the popouts to see if cells overlap and such. Also"
+" to make sure you can still interact with the popout content. This is "
+"extra content after the popouts to see if cells overlap and such. Also to"
+" make sure you can still interact with the popout content."
+msgstr ""
+

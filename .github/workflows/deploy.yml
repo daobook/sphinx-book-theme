@@ -1,0 +1,46 @@
+name: deploy
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+
+      - uses: s-weigand/setup-conda@v1
+      - run: conda --version
+      - run: which python
+
+      - name: Install dependencies
+        run: |
+          python setup.py install
+          pip install sphinxcontrib-websupport 
+          pip install ablog myst-nb sphinx-copybutton 
+          pip install sphinx-design sphinx-thebe
+          pip install sphinxcontrib-bibtex
+          pip install sphinxext-opengraph sphinx-intl
+          sudo apt update
+          sudo apt install -y graphviz
+
+      - name: Build the book
+        run: |
+          cd doc
+          make gettext
+          make html
+          sphinx-build -D language=zh_CN -b html ./ _build/html/zh-CN
+
+
+      - name: GitHub Pages action
+        uses: peaceiris/actions-gh-pages@v3.6.1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: doc/_build/html
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"

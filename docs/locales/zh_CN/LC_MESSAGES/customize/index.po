@@ -1,0 +1,235 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020
+# This file is distributed under the same license as the Sphinx Book Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Book Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-23 21:17+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../customize/index.md:1
+msgid "Customization"
+msgstr ""
+
+#: ../../customize/index.md:3
+msgid ""
+"These sections describe a few ways that you may customize the look and "
+"feel of your theme."
+msgstr ""
+
+#: ../../customize/index.md:5
+msgid "Theme options"
+msgstr ""
+
+#: ../../customize/index.md:7
+msgid "The following options are available via `html_theme_options`"
+msgstr ""
+
+#: ../../customize/index.md:1
+msgid "Key"
+msgstr ""
+
+#: ../../customize/index.md:2
+msgid "Type"
+msgstr ""
+
+#: ../../customize/index.md:3
+msgid "Description"
+msgstr ""
+
+#: ../../customize/index.md:4
+msgid "`single_page`"
+msgstr ""
+
+#: ../../customize/index.md:5 ../../customize/index.md:17
+#: ../../customize/index.md:20 ../../customize/index.md:23
+#: ../../customize/index.md:26 ../../customize/index.md:29
+#: ../../customize/index.md:32 ../../customize/index.md:35
+#: ../../customize/index.md:50
+msgid "bool"
+msgstr ""
+
+#: ../../customize/index.md:6
+msgid ""
+"Remove the left sidebar and treat the site as a single page. See "
+"[](customize:single-page)."
+msgstr ""
+
+#: ../../customize/index.md:7
+msgid "`path_to_docs`"
+msgstr ""
+
+#: ../../customize/index.md:8 ../../customize/index.md:11
+#: ../../customize/index.md:14
+msgid "string"
+msgstr ""
+
+#: ../../customize/index.md:9
+msgid ""
+"Path to the documentation, relative to the repository root (e.g. "
+"`docs/`). See [](customize:source-files)."
+msgstr ""
+
+#: ../../customize/index.md:10
+msgid "`repository_url`"
+msgstr ""
+
+#: ../../customize/index.md:12
+msgid ""
+"URL of the repository for the documentation (e.g. the GitHub repository "
+"URL). See [](source-files:repository)."
+msgstr ""
+
+#: ../../customize/index.md:13
+msgid "`repository_branch`"
+msgstr ""
+
+#: ../../customize/index.md:15
+msgid ""
+"Branch of the repository for the documentation (e.g., `master`, `main`, "
+"`docs`). See [](source-files:repository)."
+msgstr ""
+
+#: ../../customize/index.md:16
+msgid "`use_issues_button`"
+msgstr ""
+
+#: ../../customize/index.md:18
+msgid ""
+"Add an button in the topbar with a link to issues for the repository "
+"(used in conjunction with `repository_url` and `repository_branch`). See"
+"  [](source-files:repository)."
+msgstr ""
+
+#: ../../customize/index.md:19
+msgid "`use_download_button`"
+msgstr ""
+
+#: ../../customize/index.md:21
+msgid ""
+"Add a button in the topbar to download the source file of the page. See "
+"[](customize:source-files)."
+msgstr ""
+
+#: ../../customize/index.md:22
+msgid "`use_fullscreen_button`"
+msgstr ""
+
+#: ../../customize/index.md:24
+msgid "Add a button in the topbar to trigger full-screen mode."
+msgstr ""
+
+#: ../../customize/index.md:25
+msgid "`use_repository_button`"
+msgstr ""
+
+#: ../../customize/index.md:27
+msgid ""
+"Add a button in the topbar that links to the repository of the "
+"documentation.See [](source-files:repository)."
+msgstr ""
+
+#: ../../customize/index.md:28
+msgid "`launch_buttons`"
+msgstr ""
+
+#: ../../customize/index.md:30
+msgid ""
+"Include Binder launch buttons for pages that were built from Jupyter "
+"Notebooks. See [](customize:launch)."
+msgstr ""
+
+#: ../../customize/index.md:31
+msgid "`home_page_in_toc`"
+msgstr ""
+
+#: ../../customize/index.md:33
+msgid ""
+"Whether to put the home page in the Navigation Bar (at the top). See "
+"[](sidebar-primary:home-page)."
+msgstr ""
+
+#: ../../customize/index.md:34
+msgid "`logo_only`"
+msgstr ""
+
+#: ../../customize/index.md:36
+msgid "Only display the logo, not `html_title` if it exists."
+msgstr ""
+
+#: ../../customize/index.md:37
+msgid "`show_navbar_depth`"
+msgstr ""
+
+#: ../../customize/index.md:38
+msgid "int"
+msgstr ""
+
+#: ../../customize/index.md:39
+msgid ""
+"Show children in the navigation bar down to the depth listed here. See "
+"[](sidebar:navbar-depth)."
+msgstr ""
+
+#: ../../customize/index.md:40
+msgid "`extra_navbar`"
+msgstr ""
+
+#: ../../customize/index.md:41 ../../customize/index.md:44
+#: ../../customize/index.md:47
+msgid "str"
+msgstr ""
+
+#: ../../customize/index.md:42
+msgid ""
+"Extra HTML to add below the sidebar footer (if `sbt-sidebar-footer.html` "
+"is used in `html_sidebars`). See [](custom-footer)."
+msgstr ""
+
+#: ../../customize/index.md:43
+msgid "`extra_footer`"
+msgstr ""
+
+#: ../../customize/index.md:45
+msgid "Extra HTML to add in the footer of each page."
+msgstr ""
+
+#: ../../customize/index.md:46
+msgid "`toc_title`"
+msgstr ""
+
+#: ../../customize/index.md:48
+msgid "The text to be displayed with the in-page TOC (`Contents` is default)"
+msgstr ""
+
+#: ../../customize/index.md:49
+msgid "`theme_dev_mode`"
+msgstr ""
+
+#: ../../customize/index.md:51
+msgid ""
+"(developers only) Trigger some features that make it easier to develop "
+"the theme."
+msgstr ""
+
+#: ../../customize/index.md:65
+msgid "Customization Topics"
+msgstr ""
+
+#: ../../customize/index.md:67
+msgid ""
+"The following sections describe a few ways to customize the theme in more"
+" depth."
+msgstr ""
+

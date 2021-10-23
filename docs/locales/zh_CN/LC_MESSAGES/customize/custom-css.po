@@ -1,0 +1,43 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020
+# This file is distributed under the same license as the Sphinx Book Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Book Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-23 21:17+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../customize/custom-css.md:1
+msgid "Add your own CSS rules"
+msgstr ""
+
+#: ../../customize/custom-css.md:3
+msgid ""
+"To customize the look of your site further, you can customize your CSS "
+"stylesheets, as described in the [ReadTheDocs "
+"Docs](https://docs.readthedocs.io/en/stable/guides/adding-custom-css.html"
+"#adding-custom-css-or-javascript-to-sphinx-documentation)."
+msgstr ""
+
+#: ../../customize/custom-css.md:6
+msgid ""
+"First, create a CSS file and place it in `_static/custom.css`. An example"
+" CSS file to change the color of the top-level headers might look like "
+"this."
+msgstr ""
+
+#: ../../customize/custom-css.md:15
+msgid "You also need these two lines in your `conf.py` file"
+msgstr ""
+

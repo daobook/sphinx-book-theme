@@ -1,0 +1,273 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020
+# This file is distributed under the same license as the Sphinx Book Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Book Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-23 21:14+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../content-blocks.md:15
+msgid "Special content blocks"
+msgstr ""
+
+#: ../../content-blocks.md:17
+msgid "There are a few content blocks that are unique to this theme."
+msgstr ""
+
+#: ../../content-blocks.md:20
+msgid "Quotations and epigraphs"
+msgstr ""
+
+#: ../../content-blocks.md:22
+msgid "Here is what quotations and epigraphs look like in `sphinx-book-theme`:"
+msgstr ""
+
+#: ../../content-blocks.md:24
+msgid "A quote with no attribution:"
+msgstr ""
+
+#: ../../content-blocks.md:1 ../../content-blocks.md:26
+msgid ""
+"Here's my quote, it's pretty neat. I wonder how many lines I can create "
+"with a single stream-of-consciousness quote. I could try to add a list of"
+" ideas to talk about. I suppose I could just keep going on forever, but "
+"I'll stop here."
+msgstr ""
+
+#: ../../content-blocks.md:33
+msgid ""
+"Sometimes you'd like to draw more attention to a quote. To do so, use the"
+" `{epigraph}` directive. Below is an epigraph, click the button to the "
+"right of it to show the code that was used to generate it:"
+msgstr ""
+
+#: ../../content-blocks.md:59
+msgid ""
+"You can also add an attribution to epigraphs by adding a blank line, "
+"followed by a line that starts with `--`. This will be renderered like "
+"so:"
+msgstr ""
+
+#: ../../content-blocks.md:69
+msgid "Jo the Jovyan, *[the jupyter book docs](https://beta.jupyterbook.org)*"
+msgstr ""
+
+#: ../../content-blocks.md:88
+msgid "Sidebars"
+msgstr ""
+
+#: ../../content-blocks.md:90
+msgid ""
+"There are two different kinds of sidebar-like content in `sphinx-book-"
+"theme`, typical `{sidebar}` directives, as well as a theme-specific "
+"`{margin}` directive. This section covers both. Both allow you to place "
+"extra content separately from your main content."
+msgstr ""
+
+#: ../../content-blocks.md:1
+msgid ""
+"Sidebar content will generally overlap with the white space where your "
+"site's table of contents lives. When the reader scrolls sidebar content "
+"into view, the right TOC should hide itself automatically."
+msgstr ""
+
+#: ../../content-blocks.md:101
+msgid "Margin content"
+msgstr ""
+
+#: ../../content-blocks.md:103
+msgid ""
+"You can specify content that should exist in the right margin. This will "
+"behave like a regular sidebar until the screen hits a certain width, at "
+"which point this content will \"pop out\" to the right white space."
+msgstr ""
+
+#: ../../content-blocks.md:107
+msgid ""
+"There are two ways to add content to the margin: via the `{margin}` "
+"directive, and via adding CSS classes to your own content."
+msgstr ""
+
+#: ../../content-blocks.md:109
+msgid "Use a `{margin}` directive to add margin content"
+msgstr ""
+
+#: ../../content-blocks.md:111
+msgid ""
+"The `{margin}` directive allows you to create margin content with your "
+"own title and content block. It is a wrapper around the Sphinx "
+"`{sidebar}` directive, and largely does its magic via CSS classes (see "
+"below)."
+msgstr ""
+
+#: ../../content-blocks.md:114
+msgid "Here's how you can use the `{margin}` directive:"
+msgstr ""
+
+#: ../../content-blocks.md:126
+msgid "Use CSS classes to add margin content"
+msgstr ""
+
+#: ../../content-blocks.md:128
+msgid ""
+"You may also directly add CSS classes to elements on your page in order "
+"to make them behave like margin content. To do so, add the `margin` CSS "
+"class to any element on the page. Many Sphinx directives allow you to "
+"directly add classes. For example, here's the syntax to add a `margin` "
+"class to a `{note}` directive:"
+msgstr ""
+
+#: ../../content-blocks.md:1
+msgid "This note will be in the margin!"
+msgstr ""
+
+#: ../../content-blocks.md:145
+msgid ""
+"This works for most elements on the page, but in general this works best "
+"for \"parent containers\" that are the top-most element of a bundle of "
+"content."
+msgstr ""
+
+#: ../../content-blocks.md:147
+msgid "For example, we can even put a whole figure in the margin like so:"
+msgstr ""
+
+#: ../../content-blocks.md:150
+msgid ""
+"You can also put the whole figure in the margin if you like. Here is a "
+"figure with a caption below. We'll add a note below to create some "
+"vertical space to see better."
+msgstr ""
+
+#: ../../content-blocks.md:1
+msgid "My figure text"
+msgstr ""
+
+#: ../../content-blocks.md:1
+msgid "And here is my figure caption"
+msgstr ""
+
+#: ../../content-blocks.md:174
+msgid ""
+"We can reference the figure with {ref}`myfig4`. Or a numbered reference "
+"like {numref}`myfig4`."
+msgstr ""
+
+#: ../../content-blocks.md:177
+msgid "Figure captions in the margin"
+msgstr ""
+
+#: ../../content-blocks.md:179
+msgid ""
+"You can configure figures to use the margin for captions. Here is a "
+"figure with a caption to the right."
+msgstr ""
+
+#: ../../content-blocks.md:1
+msgid ""
+"And here is my figure caption, if you look to the left, you can see that "
+"COOL is in big red letters. But you probably already noticed that, really"
+" I am just taking up space to see how the margin caption looks like when "
+"it is really long :-)."
+msgstr ""
+
+#: ../../content-blocks.md:192
+msgid "And the text that produced it:"
+msgstr ""
+
+#: ../../content-blocks.md:206
+msgid ""
+"We can reference the figure with {ref}`this reference <myfig5>`. Or a "
+"numbered reference like {numref}`myfig5`."
+msgstr ""
+
+#: ../../content-blocks.md:209
+msgid "Content sidebars"
+msgstr ""
+
+#: ../../content-blocks.md:211
+msgid ""
+"Content sidebars exist in-line with your text, but allow the rest of the "
+"page to flow around them, rather than moving to the right margin. To add "
+"content sidebars, use this syntax:"
+msgstr ""
+
+#: ../../content-blocks.md:1
+msgid "**My sidebar title**"
+msgstr ""
+
+#: ../../content-blocks.md:1
+msgid "Here is my sidebar content, it is pretty cool!"
+msgstr ""
+
+#: ../../content-blocks.md:4
+msgid "![](images/cool.jpg)"
+msgstr ""
+
+#: ../../content-blocks.md:222
+msgid ""
+"Note how the content wraps around the sidebar to the right. However, the "
+"sidebar text will still be in line with your content. There are certain "
+"kinds of elements, such as \"note\" blocks and code cells, that may clash"
+" with your sidebar. If this happens, try using a `{margin}` instead."
+msgstr ""
+
+#: ../../content-blocks.md:233
+msgid "Adding content to margins and sidebars"
+msgstr ""
+
+#: ../../content-blocks.md:235
+msgid ""
+"Sidebar/margin content can include all kinds of things, such as code "
+"blocks:"
+msgstr ""
+
+#: ../../content-blocks.md:251
+msgid "as well as admonitions and images:"
+msgstr ""
+
+#: ../../content-blocks.md:269
+msgid "Full-width content"
+msgstr ""
+
+#: ../../content-blocks.md:271
+msgid ""
+"Full-width content extends into the right margin, making it stand out "
+"against the rest of your book's content. To add full-width content to "
+"your page, add the class `full-width` to any of the elements in your "
+"documentation. For example, you can add a `full-width` tag to a note "
+"element like this:"
+msgstr ""
+
+#: ../../content-blocks.md:283
+msgid "This code results in the following output:"
+msgstr ""
+
+#: ../../content-blocks.md:1
+msgid "This content will be full-width"
+msgstr ""
+
+#: ../../content-blocks.md:290
+msgid "A note for ipynb users"
+msgstr ""
+
+#: ../../content-blocks.md:1
+msgid ""
+"If you are using a Jupyter Notebook as inputs to your documentation using"
+" the [MyST-NB extension](https://myst-nb.readthedocs.io/en/latest/), you "
+"can trigger this behavior with a code cell by adding a `full-width` tag "
+"to the cell."
+msgstr ""
+
