@@ -31,7 +31,7 @@ jobs:
 
       - name: Build the book
         run: |
-          cd doc
+          cd docs
           make gettext
           make html
           sphinx-build -D language=zh_CN -b html ./ _build/html/zh-CN
@@ -41,6 +41,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3.6.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: doc/_build/html
+          publish_dir: docs/_build/html
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
