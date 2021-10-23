@@ -8,7 +8,7 @@
   <meta property="og:title" content="贡献指南" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="contributing.html" />
-  <meta property="og:description" content="感谢你有兴趣为 sphinx-book-theme 做出贡献! 你真了不起✨。 本项目遵循 Executable Books Project 贡献指南 。它包含了关于我们在编码风格、拉去请求工作流程、提交信息等方面的惯例。 这个页面包含的信息可以帮助你开始这个项目的开发。 储存库的结构: 这个资源库被分割成几个关键的文件夹： sphinx-book-theme/, Sphinx 插件包，包含..." />
+  <meta property="og:description" content="感谢你有兴趣为 sphinx-book-theme 做出贡献! 你真了不起✨。 本项目遵循 Executable Books Project 贡献指南 。它包含了关于我们在编码风格、拉取请求工作流程、提交信息等方面的惯例。 这个页面包含的信息可以帮助你开始这个项目的开发。 储存库的结构: 这个资源库被分割成几个关键的文件夹： sphinx-book-theme/, Sphinx 插件包，包含..." />
   
     <title>贡献指南 &#8212; Sphinx Book Theme</title>
     
@@ -207,7 +207,7 @@
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="reference/kitchen-sink/index.html">
-   Kitchen Sink
+   厨房的水槽
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -217,17 +217,17 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="reference/kitchen-sink/paragraph-markup.html">
-     Paragraph Level Markup
+     示例
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="reference/kitchen-sink/api.html">
-     API documentation
+     API 文档
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="reference/kitchen-sink/lists-and-tables.html">
-     Lists &amp; Tables
+     列表和表格
     </a>
    </li>
   </ul>
@@ -393,7 +393,7 @@
                  <div class="tex2jax_ignore mathjax_ignore section" id="contributing-guide">
 <h1>贡献指南<a class="headerlink" href="#contributing-guide" title="永久链接至标题">¶</a></h1>
 <p>感谢你有兴趣为 <code class="docutils literal notranslate"><span class="pre">sphinx-book-theme</span></code> 做出贡献! 你真了不起✨。</p>
-<p>本项目遵循 Executable Books Project <a class="reference external" href="https://executablebooks.org/en/latest/contributing.html">贡献指南</a>。它包含了关于我们在编码风格、拉去请求工作流程、提交信息等方面的惯例。</p>
+<p>本项目遵循 Executable Books Project <a class="reference external" href="https://executablebooks.org/en/latest/contributing.html">贡献指南</a>。它包含了关于我们在编码风格、拉取请求工作流程、提交信息等方面的惯例。</p>
 <p>这个页面包含的信息可以帮助你开始这个项目的开发。</p>
 <div class="section" id="repository-structure">
 <h2>储存库的结构<a class="headerlink" href="#repository-structure" title="永久链接至标题">¶</a></h2>
@@ -444,7 +444,7 @@
 <p>每一个都对应着一个测试环境或一个建立文档的任务，并有自己的虚拟环境”</p>
 <p>参见 <code class="docutils literal notranslate"><span class="pre">sphinx-book-theme/tox.ini</span></code>，了解所有可用的开发环境的细节。</p>
 </li>
-<li><p>安装<code class="docutils literal notranslate"><span class="pre">pre-commit'。我们使用pre-commit来确保任何时候提交的代码都符合某些标准。首先，[按照</span> </code>pre-commit` 的安装说明](https://pre-commit.com/#install)。然后，在与版本库相同的文件夹中运行以下命令：</p>
+<li><p>安装<code class="docutils literal notranslate"><span class="pre">pre-commit</span></code>。我们使用 pre-commit 来确保任何时候提交的代码都符合某些标准。首先，<a class="reference external" href="https://pre-commit.com/#install">按照 <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code> 的安装说明</a>。然后，在与版本库相同的文件夹中运行以下命令：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pre-commit install
 </pre></div>
 </div>
@@ -467,7 +467,7 @@
 <p>预览你对这个主题所做的修改的最简单的方法是通过使用 <code class="docutils literal notranslate"><span class="pre">tox</span></code> 在本地建立这个主题的文档。</p>
 <p>要做到这一点，请遵循以下步骤：</p>
 <ol>
-<li><p>**在 <code class="docutils literal notranslate"><span class="pre">src/</span></code> <strong>中进行修改</strong>。这个文件夹包含了本网站中使用的所有 SCSS 和 Javascript。你应该在这里编辑这些文件，它们将在网站建立时被包含在 <code class="docutils literal notranslate"><span class="pre">sphinx_book_theme/</span></code> 文件夹中。</p></li>
+<li><p><strong>在 <code class="docutils literal notranslate"><span class="pre">src/</span></code> 中进行修改</strong>。这个文件夹包含了本网站中使用的所有 SCSS 和 Javascript。你应该在这里编辑这些文件，它们将在网站建立时被包含在 <code class="docutils literal notranslate"><span class="pre">sphinx_book_theme/</span></code> 文件夹中。</p></li>
 <li><p><strong>安装 <code class="docutils literal notranslate"><span class="pre">tox</span></code>。</strong></p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip install tox
 </pre></div>
@@ -497,7 +497,7 @@
 </div>
 <div class="section" id="use-different-sphinx-builders">
 <h3>使用不同的 Sphinx 构建器<a class="headerlink" href="#use-different-sphinx-builders" title="永久链接至标题">¶</a></h3>
-<p>在本地构建文档时，你可以通过向 <code class="docutils literal notranslate"><span class="pre">tox</span></code> 提供参数来使用不同的Sphinx构建器。比如说：</p>
+<p>在本地构建文档时，你可以通过向 <code class="docutils literal notranslate"><span class="pre">tox</span></code> 提供参数来使用不同的 Sphinx 构建器。比如说：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>tox -e docs-update -- singlehtml
 <span class="gp">$ </span>tox -e docs-live -- singlehtml
 </pre></div>
@@ -516,7 +516,7 @@
 </div>
 <div class="admonition tip">
 <p class="admonition-title">小技巧</p>
-<p>要 “re-build” 一个环境，并更新依赖版本，请使用：</p>
+<p>要 “重建” 一个环境，并更新依赖版本，请使用：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>tox -r -e py38-sphinx2
 </pre></div>
 </div>
