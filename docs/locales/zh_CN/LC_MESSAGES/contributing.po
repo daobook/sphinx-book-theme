@@ -38,7 +38,7 @@ msgid ""
 msgstr ""
 "本项目遵循 Executable Books Project [贡献指南]"
 "(https://executablebooks.org/en/latest/contributing.html)。"
-"它包含了关于我们在编码风格、拉去请求工作流程、提交信息等方面的惯例。"
+"它包含了关于我们在编码风格、拉取请求工作流程、提交信息等方面的惯例。"
 
 #: ../../contributing.md:9
 msgid ""
@@ -208,7 +208,7 @@ msgid ""
 "commit` installation instructions](https://pre-commit.com/#install). "
 "Then, run the following command in the same folder as the repository:"
 msgstr ""
-"安装`pre-commit'。我们使用pre-commit来确保任何时候提交的代码都符合某些标准。"
+"安装`pre-commit`。我们使用 pre-commit 来确保任何时候提交的代码都符合某些标准。"
 "首先，[按照 `pre-commit` 的安装说明](https://pre-commit.com/#install)。"
 "然后，在与版本库相同的文件夹中运行以下命令："
 
@@ -242,7 +242,7 @@ msgid ""
 "and they will be built and included with the site in the "
 "`sphinx_book_theme/` folder at build time."
 msgstr ""
-"**在 `src/` **中进行修改**。这个文件夹包含了本网站中使用的所有 SCSS 和 Javascript。"
+"**在 `src/` 中进行修改**。这个文件夹包含了本网站中使用的所有 SCSS 和 Javascript。"
 "你应该在这里编辑这些文件，它们将在网站建立时被包含在 `sphinx_book_theme/` 文件夹中。"
 
 #: ../../contributing.md:99
@@ -320,7 +320,7 @@ msgid ""
 "When building documentation locally, you may use different Sphinx "
 "builders by providing them as arguments to `tox`. For example:"
 msgstr ""
-"在本地构建文档时，你可以通过向 `tox` 提供参数来使用不同的Sphinx构建器。比如说："
+"在本地构建文档时，你可以通过向 `tox` 提供参数来使用不同的 Sphinx 构建器。比如说："
 
 #: ../../contributing.md:142
 msgid "Run Tests"
@@ -342,5 +342,5 @@ msgstr ""
 
 #: ../../contributing.md:1
 msgid "To \"re-build\" an environment, wih updated dependancy versions, use:"
-msgstr "要 “re-build” 一个环境，并更新依赖版本，请使用："
+msgstr "要 “重建” 一个环境，并更新依赖版本，请使用："
 

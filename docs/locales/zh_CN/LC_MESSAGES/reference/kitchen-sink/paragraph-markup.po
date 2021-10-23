@@ -24,7 +24,7 @@ msgstr ""
 
 #: ../../reference/kitchen-sink/paragraph-markup.rst:12
 msgid "Paragraph Level Markup"
-msgstr ""
+msgstr "示例"
 
 #: ../../reference/kitchen-sink/paragraph-markup.rst:15
 msgid "Inline Markup"

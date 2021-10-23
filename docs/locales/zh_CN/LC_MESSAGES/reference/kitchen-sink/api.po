@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../reference/kitchen-sink/api.rst:4
 msgid "API documentation"
-msgstr ""
+msgstr "API 文档"
 
 #: ../../reference/kitchen-sink/api.rst:7
 msgid "``asyncio``"

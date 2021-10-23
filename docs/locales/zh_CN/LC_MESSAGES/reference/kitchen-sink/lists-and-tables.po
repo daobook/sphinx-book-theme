@@ -20,47 +20,47 @@ msgstr ""
 
 #: ../../reference/kitchen-sink/lists-and-tables.rst:4
 msgid "Lists & Tables"
-msgstr ""
+msgstr "列表和表格"
 
 #: ../../reference/kitchen-sink/lists-and-tables.rst:7
 msgid "Lists"
-msgstr ""
+msgstr "列表"
 
 #: ../../reference/kitchen-sink/lists-and-tables.rst:10
 msgid "Enumerated Lists"
-msgstr ""
+msgstr "有序列表"
 
 #: ../../reference/kitchen-sink/lists-and-tables.rst:12
 msgid "Arabic numerals."
-msgstr ""
+msgstr "阿拉伯数字。"
 
 #: ../../reference/kitchen-sink/lists-and-tables.rst:14
 msgid "lower alpha)"
-msgstr ""
+msgstr "小写字母)"
 
 #: ../../reference/kitchen-sink/lists-and-tables.rst:16
 msgid "(lower roman)"
-msgstr ""
+msgstr "小写罗马字母"
 
 #: ../../reference/kitchen-sink/lists-and-tables.rst:18
 msgid "upper alpha."
-msgstr ""
+msgstr "大写字母。"
 
 #: ../../reference/kitchen-sink/lists-and-tables.rst:20
 msgid "upper roman)"
-msgstr ""
+msgstr "大写罗马字母"
 
 #: ../../reference/kitchen-sink/lists-and-tables.rst:22
 msgid "Lists that don't start at 1:"
-msgstr ""
+msgstr "不从 1 开始的列表。"
 
 #: ../../reference/kitchen-sink/lists-and-tables.rst:24
 msgid "Three"
-msgstr ""
+msgstr "三"
 
 #: ../../reference/kitchen-sink/lists-and-tables.rst:26
 msgid "Four"
-msgstr ""
+msgstr "四"
 
 #: ../../reference/kitchen-sink/lists-and-tables.rst:28
 msgid "C"
@@ -80,85 +80,86 @@ msgstr ""
 
 #: ../../reference/kitchen-sink/lists-and-tables.rst:36
 msgid "List items may also be auto-enumerated."
-msgstr ""
+msgstr "列表中的项目也可以是自动枚举的。"
 
 #: ../../reference/kitchen-sink/lists-and-tables.rst:39
 msgid "Definition Lists"
-msgstr ""
+msgstr "定义列表"
 
 #: ../../reference/kitchen-sink/lists-and-tables.rst:41
 #: ../../reference/kitchen-sink/lists-and-tables.rst:45
 #: ../../reference/kitchen-sink/lists-and-tables.rst:48
 msgid "Term"
-msgstr ""
+msgstr "术语"
 
 #: ../../reference/kitchen-sink/lists-and-tables.rst:42
 #: ../../reference/kitchen-sink/lists-and-tables.rst:48
 msgid "Definition"
-msgstr ""
+msgstr "定义"
 
 msgid "classifier"
-msgstr ""
+msgstr "分类器"
 
 #: ../../reference/kitchen-sink/lists-and-tables.rst:44
 msgid "Definition paragraph 1."
-msgstr ""
+msgstr "定义的第 1 段。"
 
 #: ../../reference/kitchen-sink/lists-and-tables.rst:46
 msgid "Definition paragraph 2."
-msgstr ""
+msgstr "定义的第 2 段。"
 
 #: ../../reference/kitchen-sink/lists-and-tables.rst:50
 msgid ""
 "I have no clue why the definition list below is classified as a different"
 " style of definition list than the one above."
 msgstr ""
+"我不知道为什么下面的定义列表被归类为与上面的定义列表不同的风格。"
 
 #: ../../reference/kitchen-sink/lists-and-tables.rst:55
 msgid "Is it the spaces in the term?"
-msgstr ""
+msgstr "是术语中的空格吗？"
 
 #: ../../reference/kitchen-sink/lists-and-tables.rst:54
 msgid ""
 "Maybe it was the multiple line paragraph in the line below that caused "
 "this?"
-msgstr ""
+msgstr "也许是下面这行的多行段落造成的？"
 
 #: ../../reference/kitchen-sink/lists-and-tables.rst:58
 msgid "Is it the paragraph above the list maybe?"
-msgstr ""
+msgstr "也许是清单上面的那段话？"
 
 #: ../../reference/kitchen-sink/lists-and-tables.rst:58
 msgid "I guess a lot of these lists don't have leading paragraphs?"
-msgstr ""
+msgstr "我猜这些清单中很多都没有前导段？"
 
 #: ../../reference/kitchen-sink/lists-and-tables.rst:61
 msgid "Is it everything all at once?"
-msgstr ""
+msgstr "是不是一下子就把所有的事情都做完了？"
 
 #: ../../reference/kitchen-sink/lists-and-tables.rst:61
 msgid "Who knows?!"
-msgstr ""
+msgstr "谁知道呢！？"
 
 #: ../../reference/kitchen-sink/lists-and-tables.rst:64
 msgid "Option Lists"
-msgstr ""
+msgstr "选项列表"
 
 #: ../../reference/kitchen-sink/lists-and-tables.rst:66
 msgid "For listing command-line options:"
-msgstr ""
+msgstr "用于列举命令行选项："
 
 #: ../../reference/kitchen-sink/lists-and-tables.rst:68
 msgid "command-line option \"a\""
-msgstr ""
+msgstr "命令行选项  \"a\""
 
 #: ../../reference/kitchen-sink/lists-and-tables.rst:69
 msgid "options can have arguments and long descriptions"
-msgstr ""
+msgstr "选项可以有参数和很长的描述"
 
 #: ../../reference/kitchen-sink/lists-and-tables.rst:71
 msgid "options can be long also"
-msgstr ""
+msgstr "选项也可以是长的"
 
 #: ../../reference/kitchen-sink/lists-and-tables.rst:72
 msgid "long options can also have arguments"

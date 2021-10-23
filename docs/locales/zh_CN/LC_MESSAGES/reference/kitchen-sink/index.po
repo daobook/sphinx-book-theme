@@ -20,11 +20,12 @@ msgstr ""
 
 #: ../../reference/kitchen-sink/index.rst:4
 msgid "Kitchen Sink"
-msgstr ""
+msgstr "厨房的水槽"
 
 #: ../../reference/kitchen-sink/index.rst:6
 msgid ""
 "This section showcases the various elements that Sphinx supports out-of-"
 "the-box."
 msgstr ""
+"这部分展示了 Sphinx 支持的各种开箱即用的元素。"
 
