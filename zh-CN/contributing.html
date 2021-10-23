@@ -5,12 +5,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:title" content="Contributing Guide" />
+  <meta property="og:title" content="贡献指南" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="contributing.html" />
-  <meta property="og:description" content="Thank you for being interested in contributing to the sphinx-book-theme! You are awesome ✨. This project follows the Executable Books Project contribution guidelines. It contains information about ..." />
+  <meta property="og:description" content="感谢你有兴趣为 sphinx-book-theme 做出贡献! 你真了不起✨。 本项目遵循 Executable Books Project 贡献指南 。它包含了关于我们在编码风格、拉去请求工作流程、提交信息等方面的惯例。 这个页面包含的信息可以帮助你开始这个项目的开发。 储存库的结构: 这个资源库被分割成几个关键的文件夹： sphinx-book-theme/, Sphinx 插件包，包含..." />
   
-    <title>Contributing Guide &#8212; Sphinx Book Theme</title>
+    <title>贡献指南 &#8212; Sphinx Book Theme</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -58,7 +58,7 @@
     <link rel="shortcut icon" href="_static/logo-square.svg"/>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
-    <link rel="prev" title="博客的参考资料" href="reference/blog.html" /> 
+    <link rel="prev" title="博客的参考" href="reference/blog.html" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="zh_CN">
     
@@ -185,12 +185,12 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="notebooks.html">
-   Jupyter notebooks
+   Jupyter 笔记本
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="launch.html">
-   Launch buttons for interactivity
+   用于交互的启动按钮
   </a>
  </li>
 </ul>
@@ -234,7 +234,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="reference/notebooks.html">
-   Jupyter notebooks
+   Jupyter 笔记本
   </a>
  </li>
  <li class="toctree-l1">
@@ -244,7 +244,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="reference/blog.html">
-   博客的参考资料
+   博客的参考
   </a>
  </li>
 </ul>
@@ -256,7 +256,7 @@
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Contributing Guide
+   贡献指南
   </a>
  </li>
 </ul>
@@ -350,34 +350,34 @@
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#repository-structure">
-   Repository structure
+   储存库的结构
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#set-up-your-development-environment">
-   Set up your development environment
+   设置开发环境
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#preview-changes-you-make-to-the-theme">
-   Preview changes you make to the theme
+   预览你对主题所做的改动
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#auto-build-the-docs-when-you-make-changes">
-     Auto-build the docs when you make changes
+     当你进行修改时，自动构建文档
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#use-different-sphinx-builders">
-     Use different Sphinx builders
+     使用不同的 Sphinx 构建器
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#run-tests">
-   Run Tests
+   运行测试
   </a>
  </li>
 </ul>
@@ -391,81 +391,70 @@
         
               <div>
                  <div class="tex2jax_ignore mathjax_ignore section" id="contributing-guide">
-<h1>Contributing Guide<a class="headerlink" href="#contributing-guide" title="永久链接至标题">¶</a></h1>
-<p>Thank you for being interested in contributing to the <code class="docutils literal notranslate"><span class="pre">sphinx-book-theme</span></code>! You
-are awesome ✨.</p>
-<p>This project follows the Executable Books Project <a class="reference external" href="https://executablebooks.org/en/latest/contributing.html">contribution guidelines</a>.
-It contains information about our conventions around coding style, pull request workflow, commit messages and more.</p>
-<p>This page contains information to help you get started with development on this
-project.</p>
+<h1>贡献指南<a class="headerlink" href="#contributing-guide" title="永久链接至标题">¶</a></h1>
+<p>感谢你有兴趣为 <code class="docutils literal notranslate"><span class="pre">sphinx-book-theme</span></code> 做出贡献! 你真了不起✨。</p>
+<p>本项目遵循 Executable Books Project <a class="reference external" href="https://executablebooks.org/en/latest/contributing.html">贡献指南</a>。它包含了关于我们在编码风格、拉去请求工作流程、提交信息等方面的惯例。</p>
+<p>这个页面包含的信息可以帮助你开始这个项目的开发。</p>
 <div class="section" id="repository-structure">
-<h2>Repository structure<a class="headerlink" href="#repository-structure" title="永久链接至标题">¶</a></h2>
-<p>This repository is a split into a few critical folders:</p>
+<h2>储存库的结构<a class="headerlink" href="#repository-structure" title="永久链接至标题">¶</a></h2>
+<p>这个资源库被分割成几个关键的文件夹：</p>
 <dl class="simple myst">
-<dt><code class="docutils literal notranslate"><span class="pre">sphinx-book-theme/</span></code></dt><dd><p>The Sphinx extension package, containing the Python code, Jinja templates and (compiled) assets (HTML/CSS/JS etc).</p>
+<dt><code class="docutils literal notranslate"><span class="pre">sphinx-book-theme/</span></code></dt><dd><p>Sphinx 插件包，包含 Python 代码、Jinja 模板和（编译的）assets（HTML/CSS/JS 等）。</p>
 </dd>
-<dd><p>These are used to generate the HTML page for every file in your site whenever the site is built using Sphinx.</p>
+<dd><p>只要网站是用 Sphinx 建立的，这些都是用来为你的网站中的每个文件生成 HTML 页面。</p>
 </dd>
-<dd><p><strong>NOTE</strong>: Do not alter the compiled CSS/JS directly (alter in <code class="docutils literal notranslate"><span class="pre">src/</span></code>).</p>
+<dd><p><strong>注意</strong>：不要直接改变已编译的 CSS/JS（在 <code class="docutils literal notranslate"><span class="pre">src/</span></code> 中改变）。</p>
 </dd>
-<dt><code class="docutils literal notranslate"><span class="pre">src/</span></code></dt><dd><p>Contains the source SCSS and JS, which will be compiled and written to <code class="docutils literal notranslate"><span class="pre">sphinx-book-theme/static</span></code>, as configured by <code class="docutils literal notranslate"><span class="pre">web-compile-config.yml</span></code> (see <a class="reference external" href="https://github.com/executablebooks/web-compile">executablebooks/web-compile</a> for details).</p>
+<dt><code class="docutils literal notranslate"><span class="pre">src/</span></code></dt><dd><p>包含源码 SCSS 和 JS，将被编译并写入 <code class="docutils literal notranslate"><span class="pre">sphinx-book-theme/static</span></code>，由 <code class="docutils literal notranslate"><span class="pre">web-compile-config.yml</span></code> 配置（详见 <a class="reference external" href="https://github.com/executablebooks/web-compile">executablebooks/web-compile</a>）。</p>
 </dd>
-<dd><p>This compilation is called by default, during development commands (see below).</p>
+<dd><p>默认情况下，在开发命令期间，该编译被调用（见下文）。</p>
 </dd>
-<dt><code class="docutils literal notranslate"><span class="pre">docs/</span></code></dt><dd><p>The documentation for the theme, which aims to include all of the core Sphinx “components” (lists, admonitions, etc), to check/show how they are represented in this theme.</p>
+<dt><code class="docutils literal notranslate"><span class="pre">docs/</span></code></dt><dd><p>主题的文档，旨在包括所有核心的 Sphinx “组件”（列表、训诫等），以检查/显示它们在这个主题中是如何表现的。</p>
 </dd>
-<dd><p>The build configuration is contained in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>.</p>
+<dd><p>包含在 <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>中的 build 配置。</p>
 </dd>
-<dt><code class="docutils literal notranslate"><span class="pre">docs/reference</span></code></dt><dd><p>The reference section of the documentation contains reference material for the look and feel of the theme.
-The “kitchen sink” is pulled directly <a class="reference external" href="https://github.com/sphinx-themes/sphinx-themes.org/tree/master/sample-docs/kitchen-sink">from the <code class="docutils literal notranslate"><span class="pre">sphinx-themes</span></code> website</a>.
-There are also other sections for theme-specific elements.</p>
+<dt><code class="docutils literal notranslate"><span class="pre">docs/reference</span></code></dt><dd><p>文档的参考部分包含了主题的外观和感觉的参考材料。“kitchen sink”是直接从 <a class="reference external" href="https://github.com/sphinx-themes/sphinx-themes.org/tree/master/sample-docs/kitchen-sink"><code class="docutils literal notranslate"><span class="pre">sphinx-themes</span></code> 网站</a>提取的。还有其他部分是关于主题的特定元素”</p>
 </dd>
-<dt><code class="docutils literal notranslate"><span class="pre">tests/</span></code></dt><dd><p>Testing infrastructure that uses <code class="docutils literal notranslate"><span class="pre">pytest</span></code> along with <code class="docutils literal notranslate"><span class="pre">beautifulsoup</span></code> to validate
-that the generated HTML is what we expect it to be.</p>
+<dt><code class="docutils literal notranslate"><span class="pre">tests/</span></code></dt><dd><p>测试基础设施，使用 <code class="docutils literal notranslate"><span class="pre">pytest</span></code> 和 <code class="docutils literal notranslate"><span class="pre">beautifulsoup</span></code> 来验证生成的 HTML 是否为我们所期望的。</p>
 </dd>
-<dd><p>Much of these tests also use <code class="docutils literal notranslate"><span class="pre">pytest-regressions</span></code>, to check whether newly-generated HTML differs from previously-generated HTML.</p>
+<dd><p>这些测试大多也使用 <code class="docutils literal notranslate"><span class="pre">pytest-regressions</span></code>，以检查新生成的 HTML 是否与以前生成的 HTML 不同。</p>
 </dd>
-<dt><code class="docutils literal notranslate"><span class="pre">.github/workflows/</span></code></dt><dd><p>Contains Continuous-integration (CI) workflows, run on commits/PRs to the GitHub repository.</p>
+<dt><code class="docutils literal notranslate"><span class="pre">.github/workflows/</span></code></dt><dd><p>包含持续集成（CI）工作流程，在提交/PR 到 GitHub 仓库时运行。</p>
 </dd>
 </dl>
 </div>
 <div class="section" id="set-up-your-development-environment">
-<h2>Set up your development environment<a class="headerlink" href="#set-up-your-development-environment" title="永久链接至标题">¶</a></h2>
+<h2>设置开发环境<a class="headerlink" href="#set-up-your-development-environment" title="永久链接至标题">¶</a></h2>
 <ol>
-<li><p>Get the source code of this project using git:</p>
+<li><p>使用 git 获取这个项目的源代码：</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/executablebooks/sphinx-book-theme
 <span class="nb">cd</span> sphinx-book-theme
 </pre></div>
 </div>
 </li>
-<li><p>Ensure you have Python 3.6 or newer!</p></li>
-<li><p>Install <code class="docutils literal notranslate"><span class="pre">tox</span></code>.
-<code class="docutils literal notranslate"><span class="pre">tox</span></code> is a tool for managing virtual environments for test suites or common jobs that are run with a repository.
-It ensures that your environment is consistent each time you build the docs.</p>
+<li><p>确保你有 Python 3.6 或更新的版本！</p></li>
+<li><p>安装 <code class="docutils literal notranslate"><span class="pre">tox</span></code>。<code class="docutils literal notranslate"><span class="pre">tox</span></code> 是一个工具，用于管理测试套件的虚拟环境或与版本库一起运行的普通作业。它可以确保你的环境在每次构建文档时都是一致的。</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip install tox
 </pre></div>
 </div>
-<p>You can list all of the <code class="docutils literal notranslate"><span class="pre">tox</span></code> environments like so:</p>
+<p>你可以这样列出所有的 <code class="docutils literal notranslate"><span class="pre">tox</span></code> 环境。</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>tox -a
 </pre></div>
 </div>
-<p>Each one corresponds to a test environment or a task to build the documentation, and has its own virtual environment.</p>
-<p>See the <code class="docutils literal notranslate"><span class="pre">sphinx-book-theme/tox.ini</span></code> for details of all available development environments.</p>
+<p>每一个都对应着一个测试环境或一个建立文档的任务，并有自己的虚拟环境”</p>
+<p>参见 <code class="docutils literal notranslate"><span class="pre">sphinx-book-theme/tox.ini</span></code>，了解所有可用的开发环境的细节。</p>
 </li>
-<li><p>Install <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code>.
-We use pre-commit to ensure that the code meets certain standards any time a commit is made.
-First, <a class="reference external" href="https://pre-commit.com/#install">follow the <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code> installation instructions</a>.
-Then, run the following command in the same folder as the repository:</p>
+<li><p>安装<code class="docutils literal notranslate"><span class="pre">pre-commit'。我们使用pre-commit来确保任何时候提交的代码都符合某些标准。首先，[按照</span> </code>pre-commit` 的安装说明](https://pre-commit.com/#install)。然后，在与版本库相同的文件夹中运行以下命令：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pre-commit install
 </pre></div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">注解</p>
-<p>You can also run pre-commit via <code class="docutils literal notranslate"><span class="pre">tox</span></code>:</p>
+<p>你也可以通过 <code class="docutils literal notranslate"><span class="pre">tox</span></code> 运行 pre-commit。</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>tox -e py38-pre-commit -- --all
 </pre></div>
 </div>
-<p>or manually run all <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code> jobs for this repository:</p>
+<p>或手动运行该版本库的所有 <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code> 工作。</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pre-commit run --all-files
 </pre></div>
 </div>
@@ -474,45 +463,41 @@ Then, run the following command in the same folder as the repository:</p>
 </ol>
 </div>
 <div class="section" id="preview-changes-you-make-to-the-theme">
-<h2>Preview changes you make to the theme<a class="headerlink" href="#preview-changes-you-make-to-the-theme" title="永久链接至标题">¶</a></h2>
-<p>The easiest way to preview the changes you make to this theme is by building the documentation of this theme locally using <code class="docutils literal notranslate"><span class="pre">tox</span></code>.</p>
-<p>To do so, follow these steps:</p>
+<h2>预览你对主题所做的改动<a class="headerlink" href="#preview-changes-you-make-to-the-theme" title="永久链接至标题">¶</a></h2>
+<p>预览你对这个主题所做的修改的最简单的方法是通过使用 <code class="docutils literal notranslate"><span class="pre">tox</span></code> 在本地建立这个主题的文档。</p>
+<p>要做到这一点，请遵循以下步骤：</p>
 <ol>
-<li><p><strong>Make your changes in <code class="docutils literal notranslate"><span class="pre">src/</span></code></strong>. This folder contains all of the SCSS and Javascript that are used in this site. You should edit the files here, and they will be built and included with the site in the <code class="docutils literal notranslate"><span class="pre">sphinx_book_theme/</span></code> folder at build time.</p></li>
-<li><p><strong>Install <code class="docutils literal notranslate"><span class="pre">tox</span></code></strong>.</p>
+<li><p>**在 <code class="docutils literal notranslate"><span class="pre">src/</span></code> <strong>中进行修改</strong>。这个文件夹包含了本网站中使用的所有 SCSS 和 Javascript。你应该在这里编辑这些文件，它们将在网站建立时被包含在 <code class="docutils literal notranslate"><span class="pre">sphinx_book_theme/</span></code> 文件夹中。</p></li>
+<li><p><strong>安装 <code class="docutils literal notranslate"><span class="pre">tox</span></code>。</strong></p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip install tox
 </pre></div>
 </div>
 </li>
-<li><p><strong>Build the documentation</strong>. You can use the following <code class="docutils literal notranslate"><span class="pre">tox</span></code> command:</p>
+<li><p><strong>建立文档</strong>。你可以使用下面的 <code class="docutils literal notranslate"><span class="pre">tox</span></code> 命令：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>tox -e docs-update
 </pre></div>
 </div>
 </li>
 </ol>
-<p>This will build the documentation using the latest version of the theme (including any changes you’ve made to the <code class="docutils literal notranslate"><span class="pre">src/</span></code> folder) and put the outputs in <code class="docutils literal notranslate"><span class="pre">docs/_build/html</span></code>.
-You may then preview them by opening one of the HTML files.</p>
+<p>这将使用最新版本的主题（包括你对 <code class="docutils literal notranslate"><span class="pre">src/</span></code> 文件夹所做的任何修改）构建文档，并将输出放在 <code class="docutils literal notranslate"><span class="pre">docs/_build/html</span></code> 中。然后你可以通过打开其中一个 HTML 文件来预览它们。</p>
 <div class="section" id="auto-build-the-docs-when-you-make-changes">
-<h3>Auto-build the docs when you make changes<a class="headerlink" href="#auto-build-the-docs-when-you-make-changes" title="永久链接至标题">¶</a></h3>
-<p>You can also use a live server to watch the theme’s folders, and automatically build/update the local documentation so that you can quickly preview changes.
-This uses the <code class="docutils literal notranslate"><span class="pre">sphinx-autobuild</span></code> package.
-To do so, use this <code class="docutils literal notranslate"><span class="pre">tox</span></code> command:</p>
+<h3>当你进行修改时，自动构建文档<a class="headerlink" href="#auto-build-the-docs-when-you-make-changes" title="永久链接至标题">¶</a></h3>
+<p>你也可以使用一个实时服务器来观察主题的文件夹，并自动构建/更新本地文档，以便你可以快速预览变化。这需要使用 <code class="docutils literal notranslate"><span class="pre">sphinx-autobuild</span></code> 软件包。要做到这一点，使用这个 <code class="docutils literal notranslate"><span class="pre">tox</span></code> 命令：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>tox -e docs-live
 </pre></div>
 </div>
-<p>This will do the following:</p>
+<p>这将做到以下几点：</p>
 <ul class="simple">
-<li><p>Generate the theme’s documentation (similar to running <code class="docutils literal notranslate"><span class="pre">tox</span> <span class="pre">-e</span> <span class="pre">docs-update</span></code>)</p></li>
-<li><p>Start a development server on an available port <code class="docutils literal notranslate"><span class="pre">localhost:xxxx</span></code></p></li>
-<li><p>Open it in your default browser</p></li>
-<li><p>Watch for changes and automagically regenerate the documentation and auto-reload your browser when a change is made.</p></li>
+<li><p>生成主题的文档（类似于运行 <code class="docutils literal notranslate"><span class="pre">tox</span> <span class="pre">-e</span> <span class="pre">docs-update</span></code>）</p></li>
+<li><p>在一个可用的端口 <code class="docutils literal notranslate"><span class="pre">localhost:xxxx</span></code>上启动一个开发服务器</p></li>
+<li><p>在你的默认浏览器中打开它</p></li>
+<li><p>观察变化并自动重新生成文档，在发生变化时自动重新加载浏览器。</p></li>
 </ul>
-<p>With this, you can modify the theme in an editor, and see how those modifications render on the browser.</p>
+<p>有了这个，你可以在编辑器中修改主题，并看到这些修改在浏览器上是如何呈现的。</p>
 </div>
 <div class="section" id="use-different-sphinx-builders">
-<h3>Use different Sphinx builders<a class="headerlink" href="#use-different-sphinx-builders" title="永久链接至标题">¶</a></h3>
-<p>When building documentation locally, you may use different Sphinx builders by providing them as arguments to <code class="docutils literal notranslate"><span class="pre">tox</span></code>.
-For example:</p>
+<h3>使用不同的 Sphinx 构建器<a class="headerlink" href="#use-different-sphinx-builders" title="永久链接至标题">¶</a></h3>
+<p>在本地构建文档时，你可以通过向 <code class="docutils literal notranslate"><span class="pre">tox</span></code> 提供参数来使用不同的Sphinx构建器。比如说：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>tox -e docs-update -- singlehtml
 <span class="gp">$ </span>tox -e docs-live -- singlehtml
 </pre></div>
@@ -520,19 +505,18 @@ For example:</p>
 </div>
 </div>
 <div class="section" id="run-tests">
-<h2>Run Tests<a class="headerlink" href="#run-tests" title="永久链接至标题">¶</a></h2>
-<p>This theme has a test suite to ensure that all the relevant user content is
-correctly handled. The tests can be run using:</p>
+<h2>运行测试<a class="headerlink" href="#run-tests" title="永久链接至标题">¶</a></h2>
+<p>这个主题有一个测试套件，以确保所有相关的用户内容被正确处理。测试可以通过以下方式运行：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>tox
 </pre></div>
 </div>
-<p>You can also run against different Python and sphinx versions, and supply arguments to pytest:</p>
+<p>你也可以针对不同的 Python 和 Sphinx 版本运行，并向 pytest 提供参数：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>tox -e py38-sphinx2 -- -x
 </pre></div>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">小技巧</p>
-<p>To “re-build” an environment, wih updated dependancy versions, use:</p>
+<p>要 “re-build” 一个环境，并更新依赖版本，请使用：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>tox -r -e py38-sphinx2
 </pre></div>
 </div>
@@ -572,7 +556,7 @@ correctly handled. The tests can be run using:</p>
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">上一页</p>
-            <p class="prev-next-title">博客的参考资料</p>
+            <p class="prev-next-title">博客的参考</p>
         </div>
     </a>
 </div>
