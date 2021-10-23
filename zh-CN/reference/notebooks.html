@@ -1,0 +1,790 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Jupyter notebooks" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="reference/notebooks.html" />
+  <meta property="og:description" content="This is a page to demonstrate the look and feel of Jupyter Notebook elements. Hiding elements: Hiding inputs:# Hide input square = np.random.randn(100, 100) wide = np.random.randn(100, 1000) fig, a..." />
+  
+    <title>Jupyter notebooks &#8212; Sphinx Book Theme</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.d53ab927f7bad3eaa42da95908504b10.min.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../_static/logo-square.svg"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Thebe" href="thebe.html" />
+    <link rel="prev" title="Lists &amp; Tables" href="kitchen-sink/lists-and-tables.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
+     
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="blog/atom.xml"
+  title="Blog"
+/>
+ 
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo-wide.svg" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  专题区域
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tutorials/get-started.html">
+   开始行动
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../customize/index.html">
+   Customization
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../customize/sidebar-primary.html">
+     Customize the primary sidebar
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../customize/sidebar-secondary.html">
+     Customize the secondary sidebar
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../customize/download.html">
+     Add a download page button
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../customize/source-files.html">
+     Add buttons to link to your source
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../customize/custom-css.html">
+     Add your own CSS rules
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../customize/single-page.html">
+     Use a single-page version of this theme
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../content-blocks.html">
+   Special content blocks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notebooks.html">
+   Jupyter notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../launch.html">
+   Launch buttons for interactivity
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  参考
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="special-theme-elements.html">
+   Theme-specific elements
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="kitchen-sink/index.html">
+   Kitchen Sink
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="kitchen-sink/paragraph-markup.html">
+     Paragraph Level Markup
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="kitchen-sink/api.html">
+     API documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="kitchen-sink/lists-and-tables.html">
+     Lists &amp; Tables
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Jupyter notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="thebe.html">
+   Thebe
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="blog.html">
+   Reference for Blog
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  关于主题
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../contributing.html">
+   Contributing Guide
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/reference/notebooks.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/reference/notebooks.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/sphinx-book-theme"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/sphinx-book-theme/issues/new?title=Issue%20on%20page%20%2Freference/notebooks.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/executablebooks/sphinx-book-theme/edit/master/docs/reference/notebooks.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/sphinx-book-theme/master?urlpath=lab/tree/docs/reference/notebooks.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hiding-elements">
+   Hiding elements
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hiding-inputs">
+     Hiding inputs
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hiding-outputs">
+     Hiding outputs
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hiding-markdown">
+     Hiding markdown
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hiding-both-inputs-and-outputs">
+     Hiding both inputs and outputs
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hiding-the-whole-cell">
+     Hiding the whole cell
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#enriched-outputs">
+   Enriched outputs
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#math">
+     Math
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pandas-dataframes">
+     Pandas DataFrames
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interactive-outputs">
+   Interactive outputs
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#folium">
+     Folium
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#stdout">
+   Stdout
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#formatting-code-cells">
+   Formatting code cells
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scrolling-cell-outputs">
+     Scrolling cell outputs
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scrolling-cell-inputs">
+     Scrolling cell inputs
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                 <div class="tex2jax_ignore mathjax_ignore section" id="jupyter-notebooks">
+<h1>Jupyter notebooks<a class="headerlink" href="#jupyter-notebooks" title="永久链接至标题">¶</a></h1>
+<p>This is a page to demonstrate the look and feel of Jupyter Notebook elements.</p>
+<div class="section" id="hiding-elements">
+<h2>Hiding elements<a class="headerlink" href="#hiding-elements" title="永久链接至标题">¶</a></h2>
+<div class="section" id="hiding-inputs">
+<h3>Hiding inputs<a class="headerlink" href="#hiding-inputs" title="永久链接至标题">¶</a></h3>
+<div class="cell tag_hide_input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Hide input</span>
+<span class="n">square</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">wide</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">square</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">wide</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="hiding-outputs">
+<h3>Hiding outputs<a class="headerlink" href="#hiding-outputs" title="永久链接至标题">¶</a></h3>
+<div class="cell tag_hide_output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Hide input</span>
+<span class="n">square</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">wide</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">square</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">wide</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="hiding-markdown">
+<h3>Hiding markdown<a class="headerlink" href="#hiding-markdown" title="永久链接至标题">¶</a></h3>
+<div class="toggle docutils container">
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>This is a hidden markdown cell</p>
+<p>It should be hidden!</p>
+</div>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">And here’s a toggleable note</p>
+<p>With a body!</p>
+</div>
+</div>
+<div class="section" id="hiding-both-inputs-and-outputs">
+<h3>Hiding both inputs and outputs<a class="headerlink" href="#hiding-both-inputs-and-outputs" title="永久链接至标题">¶</a></h3>
+<div class="cell tag_hide_output tag_hide_input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">square</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">wide</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">square</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">wide</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="hiding-the-whole-cell">
+<h3>Hiding the whole cell<a class="headerlink" href="#hiding-the-whole-cell" title="永久链接至标题">¶</a></h3>
+<div class="cell tag_hide_cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">square</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">wide</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">square</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">wide</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="enriched-outputs">
+<h2>Enriched outputs<a class="headerlink" href="#enriched-outputs" title="永久链接至标题">¶</a></h2>
+<div class="section" id="math">
+<h3>Math<a class="headerlink" href="#math" title="永久链接至标题">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># You can also include enriched outputs like Math</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Math</span>
+<span class="n">Math</span><span class="p">(</span><span class="s2">&quot;\sum_{i=0}^n i^2 = </span><span class="se">\f</span><span class="s2">rac{(n^2+n)(2n+1)}</span><span class="si">{6}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="pandas-dataframes">
+<h3>Pandas DataFrames<a class="headerlink" href="#pandas-dataframes" title="永久链接至标题">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([[</span><span class="s1">&#39;hi&#39;</span><span class="p">,</span> <span class="s1">&#39;there&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;this&#39;</span><span class="p">,</span> <span class="s1">&#39;is&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;DataFrame&#39;</span><span class="p">]],</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Word A&#39;</span><span class="p">,</span> <span class="s1">&#39;Word B&#39;</span><span class="p">])</span>
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Styled DataFrames (see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/user_guide/style.html">the Pandas Styling docs</a>).</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">24</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;A&#39;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">)})</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">columns</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="s1">&#39;BCDE&#39;</span><span class="p">))],</span>
+               <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+<span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+
+<span class="k">def</span> <span class="nf">color_negative_red</span><span class="p">(</span><span class="n">val</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Takes a scalar and returns a string with</span>
+<span class="sd">    the css property `&#39;color: red&#39;` for negative</span>
+<span class="sd">    strings, black otherwise.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;red&#39;</span> <span class="k">if</span> <span class="n">val</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="s1">&#39;black&#39;</span>
+    <span class="k">return</span> <span class="s1">&#39;color: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">color</span>
+
+<span class="k">def</span> <span class="nf">highlight_max</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    highlight the maximum in a Series yellow.</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="n">is_max</span> <span class="o">=</span> <span class="n">s</span> <span class="o">==</span> <span class="n">s</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+    <span class="k">return</span> <span class="p">[</span><span class="s1">&#39;background-color: yellow&#39;</span> <span class="k">if</span> <span class="n">v</span> <span class="k">else</span> <span class="s1">&#39;&#39;</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">is_max</span><span class="p">]</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">style</span><span class="o">.</span>\
+    <span class="n">applymap</span><span class="p">(</span><span class="n">color_negative_red</span><span class="p">)</span><span class="o">.</span>\
+    <span class="n">apply</span><span class="p">(</span><span class="n">highlight_max</span><span class="p">)</span><span class="o">.</span>\
+    <span class="n">set_table_attributes</span><span class="p">(</span><span class="s1">&#39;style=&quot;font-size: 10px&quot;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="interactive-outputs">
+<h2>Interactive outputs<a class="headerlink" href="#interactive-outputs" title="永久链接至标题">¶</a></h2>
+<div class="section" id="folium">
+<h3>Folium<a class="headerlink" href="#folium" title="永久链接至标题">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">folium</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span>
+    <span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">45.372</span><span class="p">,</span> <span class="o">-</span><span class="mf">121.6972</span><span class="p">],</span>
+    <span class="n">zoom_start</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span>
+    <span class="n">tiles</span><span class="o">=</span><span class="s1">&#39;Stamen Terrain&#39;</span>
+<span class="p">)</span>
+
+<span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">(</span>
+    <span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">45.3288</span><span class="p">,</span> <span class="o">-</span><span class="mf">121.6625</span><span class="p">],</span>
+    <span class="n">popup</span><span class="o">=</span><span class="s1">&#39;Mt. Hood Meadows&#39;</span><span class="p">,</span>
+    <span class="n">icon</span><span class="o">=</span><span class="n">folium</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="n">icon</span><span class="o">=</span><span class="s1">&#39;cloud&#39;</span><span class="p">)</span>
+<span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+
+<span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">(</span>
+    <span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">45.3311</span><span class="p">,</span> <span class="o">-</span><span class="mf">121.7113</span><span class="p">],</span>
+    <span class="n">popup</span><span class="o">=</span><span class="s1">&#39;Timberline Lodge&#39;</span><span class="p">,</span>
+    <span class="n">icon</span><span class="o">=</span><span class="n">folium</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">)</span>
+<span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+
+<span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">(</span>
+    <span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">45.3300</span><span class="p">,</span> <span class="o">-</span><span class="mf">121.6823</span><span class="p">],</span>
+    <span class="n">popup</span><span class="o">=</span><span class="s1">&#39;Some Other Location&#39;</span><span class="p">,</span>
+    <span class="n">icon</span><span class="o">=</span><span class="n">folium</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;info-sign&#39;</span><span class="p">)</span>
+<span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+
+
+<span class="n">m</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="stdout">
+<h2>Stdout<a class="headerlink" href="#stdout" title="永久链接至标题">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># The ! causes this to run as a shell command
+!jupyter -h
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="formatting-code-cells">
+<h2>Formatting code cells<a class="headerlink" href="#formatting-code-cells" title="永久链接至标题">¶</a></h2>
+<div class="section" id="scrolling-cell-outputs">
+<h3>Scrolling cell outputs<a class="headerlink" href="#scrolling-cell-outputs" title="永久链接至标题">¶</a></h3>
+<div class="cell tag_output_scroll docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">ii</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">40</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;this is output line </span><span class="si">{</span><span class="n">ii</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="scrolling-cell-inputs">
+<h3>Scrolling cell inputs<a class="headerlink" href="#scrolling-cell-inputs" title="永久链接至标题">¶</a></h3>
+<div class="cell tag_scroll-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;This line has no meaning&quot;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;This line has no meaning&quot;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;This line has no meaning&quot;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;This line has no meaning&quot;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;This line has no meaning&quot;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;This line has no meaning&quot;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;This line has no meaning&quot;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;This line has no meaning&quot;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;This line has no meaning&quot;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;This line has no meaning&quot;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;This line has no meaning&quot;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;This line has no meaning&quot;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;This line has no meaning&quot;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;This line has no meaning&quot;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;This line has no meaning&quot;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;This line has no meaning&quot;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;This line has no meaning&quot;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;This line has no meaning&quot;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;This line has no meaning&quot;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;This line has no meaning&quot;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;This line has no meaning&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./reference"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+<div class="section">
+   
+</div>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="kitchen-sink/lists-and-tables.html" title="上一页 页">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">Lists &amp; Tables</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="thebe.html" title="下一页 页">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">Thebe</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By the Executable Book Project<br/>
+        
+            &copy; Copyright 2020.<br/>
+          Last updated on 2021 年 10 月 23 日.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

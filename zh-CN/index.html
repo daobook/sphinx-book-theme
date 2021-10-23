@@ -1,0 +1,525 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="专题区域" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="index.html" />
+  <meta property="og:description" content="一个设计简洁，支持交互内容，具有现代书籍外观和感觉的 Sphinx 主题 灵活的内容布局, 受到美丽的在线书籍的启发，例如 Edward Tufte CSS 指南 。,, 专为 Jupyter 笔记本设计的可视化课程, 单元格输入、输出和交互功能都得到支持。,, 用于在线交互的启动按钮, 对于用计算材料构建的页面，将你的网站连接到在线 BinderHub，以获得交互内容。,, Bootstr..." />
+  
+    <title>专题区域 &#8212; Sphinx Book Theme</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.d53ab927f7bad3eaa42da95908504b10.min.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="_static/logo-square.svg"/>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="开始行动" href="tutorials/get-started.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
+     
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="reference/blog/atom.xml"
+  title="Blog"
+/>
+ 
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="#">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo-wide.svg" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  专题区域
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="tutorials/get-started.html">
+   开始行动
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="customize/index.html">
+   Customization
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="customize/sidebar-primary.html">
+     Customize the primary sidebar
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="customize/sidebar-secondary.html">
+     Customize the secondary sidebar
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="customize/download.html">
+     Add a download page button
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="customize/source-files.html">
+     Add buttons to link to your source
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="customize/custom-css.html">
+     Add your own CSS rules
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="customize/single-page.html">
+     Use a single-page version of this theme
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="content-blocks.html">
+   Special content blocks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="notebooks.html">
+   Jupyter notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="launch.html">
+   Launch buttons for interactivity
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  参考
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="reference/special-theme-elements.html">
+   Theme-specific elements
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="reference/kitchen-sink/index.html">
+   Kitchen Sink
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="reference/kitchen-sink/paragraph-markup.html">
+     Paragraph Level Markup
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="reference/kitchen-sink/api.html">
+     API documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="reference/kitchen-sink/lists-and-tables.html">
+     Lists &amp; Tables
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="reference/notebooks.html">
+   Jupyter notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="reference/thebe.html">
+   Thebe
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="reference/blog.html">
+   Reference for Blog
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  关于主题
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="contributing.html">
+   Contributing Guide
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/index.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/sphinx-book-theme"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/sphinx-book-theme/issues/new?title=Issue%20on%20page%20%2Findex.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/executablebooks/sphinx-book-theme/edit/master/docs/index.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   专题区域
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reference-pages">
+   参考页面
+  </a>
+  <ul class="visible nav section-nav flex-column">
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#acknowledgements">
+   鸣谢
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                 <div class="sd-container-fluid sd-sphinx-override sd-mt-4 sd-mb-4 sd-ml-1 sd-mr-1 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 sd-flex-row-reverse docutils">
+<div class="sd-col sd-d-flex-column sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<a class="reference internal image-reference" href="_images/logo-square.svg"><img alt="_images/logo-square.svg" src="_images/logo-square.svg" width="150px" /></a>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 sd-fs-3 docutils">
+<p>一个设计简洁，支持交互内容，具有现代书籍外观和感觉的 Sphinx 主题</p>
+</div>
+</div>
+</div>
+<dl class="simple myst">
+<dt><a class="reference internal" href="reference/special-theme-elements.html"><span class="doc std std-doc">灵活的内容布局</span></a></dt><dd><p>受到美丽的在线书籍的启发，例如 <a class="reference external" href="https://edwardtufte.github.io/tufte-css/">Edward Tufte CSS 指南</a>。</p>
+</dd>
+<dt><a class="reference internal" href="reference/notebooks.html"><span class="doc std std-doc">专为 Jupyter 笔记本设计的可视化课程</span></a></dt><dd><p>单元格输入、输出和交互功能都得到支持。</p>
+</dd>
+<dt><a class="reference internal" href="launch.html"><span class="doc std std-doc">用于在线交互的启动按钮</span></a></dt><dd><p>对于用计算材料构建的页面，将你的网站连接到在线 BinderHub，以获得交互内容。</p>
+</dd>
+<dt><a class="reference external" href="https://getbootstrap.com/docs/4.0/getting-started/introduction/">Bootstrap 4</a></dt><dd><p>塑造视觉元素并增加功能。</p>
+</dd>
+<dt>国际化</dt><dd><p>所有集成在主题中的文本都被翻译成指定的 <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language">Sphinx 语言</a>.</p>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<p>这是 <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a> 的默认主题。</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="topic-areas">
+<h1>专题区域<a class="headerlink" href="#topic-areas" title="永久链接至标题">¶</a></h1>
+<p>以下专题区域将帮助你理解和使用该主题。</p>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">专题区域</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/get-started.html">开始行动</a></li>
+<li class="toctree-l1"><a class="reference internal" href="customize/index.html">Customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="content-blocks.html">Special content blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Jupyter notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="launch.html">Launch buttons for interactivity</a></li>
+</ul>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="reference-pages">
+<h1>参考页面<a class="headerlink" href="#reference-pages" title="永久链接至标题">¶</a></h1>
+<p>参考页展示了这个主题的视觉外观。</p>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">参考</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="reference/special-theme-elements.html">Theme-specific elements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/special-theme-elements.html#blog-post-list">Blog post list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/special-theme-elements.html#full-width-elements">Full-width elements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/special-theme-elements.html#margins">Margins</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference/kitchen-sink/index.html">Kitchen Sink</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/kitchen-sink/paragraph-markup.html">Paragraph Level Markup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/kitchen-sink/api.html">API documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/kitchen-sink/lists-and-tables.html">Lists &amp; Tables</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference/notebooks.html">Jupyter notebooks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/notebooks.html#hiding-elements">Hiding elements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/notebooks.html#enriched-outputs">Enriched outputs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/notebooks.html#interactive-outputs">Interactive outputs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/notebooks.html#stdout">Stdout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/notebooks.html#formatting-code-cells">Formatting code cells</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference/thebe.html">Thebe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/blog.html">Reference for Blog</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">关于主题</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#repository-structure">Repository structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#set-up-your-development-environment">Set up your development environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#preview-changes-you-make-to-the-theme">Preview changes you make to the theme</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#run-tests">Run Tests</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="acknowledgements">
+<h1>鸣谢<a class="headerlink" href="#acknowledgements" title="永久链接至标题">¶</a></h1>
+<p>这个主题在很大程度上受到 <a class="reference external" href="https://pydata-sphinx-theme.readthedocs.io/">PyData Sphinx Theme</a> 的启发，并依赖于其基本结构和配置。</p>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+<div class="section">
+   
+</div>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='right-next' id="next-link" href="tutorials/get-started.html" title="下一页 页">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">开始行动</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By the Executable Book Project<br/>
+        
+            &copy; Copyright 2020.<br/>
+          Last updated on 2021 年 10 月 23 日.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

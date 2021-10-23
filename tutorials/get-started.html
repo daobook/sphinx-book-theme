@@ -1,0 +1,558 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Get started" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="tutorials/get-started.html" />
+  <meta property="og:description" content="This is a short step-by-step tutorial to get started with the Sphinx Book Theme. Prerequisites: You should be relatively familiar with the Sphinx ecosystem, and have it installed locally on your co..." />
+  
+    <title>Get started &#8212; Sphinx Book Theme</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.d53ab927f7bad3eaa42da95908504b10.min.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../_static/logo-square.svg"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Customization" href="../customize/index.html" />
+    <link rel="prev" title="Topic areas" href="../index.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+     
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../reference/blog/atom.xml"
+  title="Blog"
+/>
+ 
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo-wide.svg" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Topic Areas
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Get started
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../customize/index.html">
+   Customization
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../customize/sidebar-primary.html">
+     Customize the primary sidebar
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../customize/sidebar-secondary.html">
+     Customize the secondary sidebar
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../customize/download.html">
+     Add a download page button
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../customize/source-files.html">
+     Add buttons to link to your source
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../customize/custom-css.html">
+     Add your own CSS rules
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../customize/single-page.html">
+     Use a single-page version of this theme
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../content-blocks.html">
+   Special content blocks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notebooks.html">
+   Jupyter notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../launch.html">
+   Launch buttons for interactivity
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Reference
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../reference/special-theme-elements.html">
+   Theme-specific elements
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../reference/kitchen-sink/index.html">
+   Kitchen Sink
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../reference/kitchen-sink/paragraph-markup.html">
+     Paragraph Level Markup
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../reference/kitchen-sink/api.html">
+     API documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../reference/kitchen-sink/lists-and-tables.html">
+     Lists &amp; Tables
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../reference/notebooks.html">
+   Jupyter notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../reference/thebe.html">
+   Thebe
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../reference/blog.html">
+   Reference for Blog
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  About the theme
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../contributing.html">
+   Contributing Guide
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/tutorials/get-started.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/sphinx-book-theme"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/sphinx-book-theme/issues/new?title=Issue%20on%20page%20%2Ftutorials/get-started.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/executablebooks/sphinx-book-theme/edit/master/docs/tutorials/get-started.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#prerequisites">
+   Prerequisites
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#install-and-activate-the-theme">
+   Install and activate the theme
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#add-a-source-repository-button-to-your-theme">
+   Add a source repository button to your theme
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#customize-your-left-sidebar">
+   Customize your left sidebar
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#add-some-margin-content-to-a-page">
+   Add some margin content to a page
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                 <div class="tex2jax_ignore mathjax_ignore section" id="get-started">
+<h1>Get started<a class="headerlink" href="#get-started" title="Permalink to this headline">¶</a></h1>
+<p>This is a short step-by-step tutorial to get started with the Sphinx Book Theme.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This documentation and the examples below are written with MyST Markdown, a form
+of markdown that works with Sphinx. For more information about MyST markdown, and
+to use MyST markdown with your Sphinx website,
+see <a class="reference external" href="https://myst-parser.readthedocs.io/">the MyST-parser documentation</a></p>
+</div>
+<div class="section" id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+<p>You should be relatively familiar with <a class="reference external" href="http://www.sphinx-doc.org/">the Sphinx ecosystem</a>, and have it installed locally on your computer.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you don’t already have a Sphinx site ready to customize, you can create one with:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sphinx-quickstart
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="install-and-activate-the-theme">
+<h2>Install and activate the theme<a class="headerlink" href="#install-and-activate-the-theme" title="Permalink to this headline">¶</a></h2>
+<p>First install <code class="docutils literal notranslate"><span class="pre">sphinx-book-theme</span></code> with <code class="docutils literal notranslate"><span class="pre">pip</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx</span><span class="o">-</span><span class="n">book</span><span class="o">-</span><span class="n">theme</span>
+</pre></div>
+</div>
+<p>then, activate the theme in your Sphinx configuration (<code class="docutils literal notranslate"><span class="pre">conf.py</span></code>):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">...</span>
+<span class="n">html_theme</span> <span class="o">=</span> <span class="s2">&quot;sphinx_book_theme&quot;</span>
+<span class="o">...</span>
+</pre></div>
+</div>
+<p>This will activate the Sphinx Book Theme for your documentation.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You may need to comment-out your <code class="docutils literal notranslate"><span class="pre">html_theme_options</span></code> configuration depending on your previous theme.</p>
+</div>
+</div>
+<div class="section" id="add-a-source-repository-button-to-your-theme">
+<h2>Add a source repository button to your theme<a class="headerlink" href="#add-a-source-repository-button-to-your-theme" title="Permalink to this headline">¶</a></h2>
+<p>There are several ways that you can customize the Sphinx Book Theme.
+For this tutorial, we’ll add a pointer to a GitHub repository for our theme.</p>
+<p>To add a button that links to the repository for your documentation, add the following configuration in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="o">...</span>
+    <span class="s2">&quot;repository_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/{your-docs-url}&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;use_repository_button&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="o">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>When you build your documentation, your topbar should now include a small GitHub logo that has a link to the repository.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>See <a class="reference internal" href="../customize/source-files.html#source-files-repository"><span class="std std-ref">Add a link to your repository</span></a> for more information.</p>
+</div>
+</div>
+<div class="section" id="customize-your-left-sidebar">
+<h2>Customize your left sidebar<a class="headerlink" href="#customize-your-left-sidebar" title="Permalink to this headline">¶</a></h2>
+<p>There are a few major areas of the page that you can customize with the book theme.
+The most common is the <strong>primary sidebar</strong> (by default, on the left of the page).</p>
+<p>Sidebar elements are defined as HTML templates by Sphinx, Sphinx extensions, and the current theme.
+You may specify which pages should contain which sidebar elements using the <code class="docutils literal notranslate"><span class="pre">html_sidebars</span></code> configuration.
+We’ll skip this step in this tutorial, but if you’d like to learn more, see <a class="reference internal" href="../customize/sidebar-primary.html#sidebar-primary-items"><span class="std std-ref">Control the left sidebar items</span></a>.</p>
+<p>Let’s <strong>customize the logo of our site</strong>.
+To do so, we’ll edit the <code class="docutils literal notranslate"><span class="pre">html_logo</span></code> and <code class="docutils literal notranslate"><span class="pre">html_title</span></code> configuration options.</p>
+<p>To add a site logo, follow these steps:</p>
+<ol>
+<li><p>Put an image in your documentation’s root (e.g., <code class="docutils literal notranslate"><span class="pre">myimage.png</span></code>).</p></li>
+<li><p>Add a line to your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file that looks like this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_logo</span> <span class="o">=</span> <span class="s2">&quot;path/to/myimage.png&quot;</span>
+</pre></div>
+</div>
+<p>Where the path is relative to your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file.</p>
+</li>
+</ol>
+<p>Next we’ll <strong>customize the title of the site</strong>.
+To do so, add a line to your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file that looks like this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_title</span> <span class="o">=</span> <span class="s2">&quot;My site title&quot;</span>
+</pre></div>
+</div>
+<p>This title will now be placed underneath the logo.</p>
+</div>
+<div class="section" id="add-some-margin-content-to-a-page">
+<h2>Add some margin content to a page<a class="headerlink" href="#add-some-margin-content-to-a-page" title="Permalink to this headline">¶</a></h2>
+<p>There are a few special kinds of content that this theme supports, largely inspired by <a class="reference external" href="https://edwardtufte.github.io/tufte-css/">the Tufte CSS theme styles</a>.
+One kind of content is <strong>margin content</strong>.
+This allows you to “pop out” content to the side of the page, in the margins.
+Add some margin content to a page by adding the following directive (written with <a class="reference external" href="https://myst-parser.readthedocs.io">MyST Markdown</a>).</p>
+<div class="margin sidebar">
+<p class="sidebar-title">Look, some margin content!</p>
+<p>On wider screens, this content will pop out to the side!</p>
+</div>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>```{margin} Look, some margin content!
+On wider screens, this content will pop out to the side!
+```
+</pre></div>
+</div>
+<p>On wide screens, margin content will pop out to the side of the page and allow content underneath it to move upwards.
+This allows you to provide extra information without interrupting the flow of information.</p>
+<p>There are many other things that you can do with the Sphinx Book Theme.
+Now that you’ve gotten a start, check out the other sections to the left to learn more about how to use it.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./tutorials"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+<div class="section">
+   
+</div>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../index.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Topic areas</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../customize/index.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Customization</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By the Executable Book Project<br/>
+        
+            &copy; Copyright 2020.<br/>
+          Last updated on Oct 23, 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

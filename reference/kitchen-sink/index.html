@@ -1,0 +1,504 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Kitchen Sink" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="reference/kitchen-sink/index.html" />
+  <meta property="og:description" content="This section showcases the various elements that Sphinx supports out-of-the-box. Paragraph Level Markup- Inline Markup, Math, Meta, Blocks- Literal Blocks, Line Blocks, Block Quotes, Doctest Blocks..." />
+  
+    <title>Kitchen Sink &#8212; Sphinx Book Theme</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.d53ab927f7bad3eaa42da95908504b10.min.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../../_static/logo-square.svg"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Paragraph Level Markup" href="paragraph-markup.html" />
+    <link rel="prev" title="Theme-specific elements" href="../special-theme-elements.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+     
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../blog/atom.xml"
+  title="Blog"
+/>
+ 
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo-wide.svg" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Topic Areas
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../tutorials/get-started.html">
+   Get started
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../customize/index.html">
+   Customization
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../customize/sidebar-primary.html">
+     Customize the primary sidebar
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../customize/sidebar-secondary.html">
+     Customize the secondary sidebar
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../customize/download.html">
+     Add a download page button
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../customize/source-files.html">
+     Add buttons to link to your source
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../customize/custom-css.html">
+     Add your own CSS rules
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../customize/single-page.html">
+     Use a single-page version of this theme
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../content-blocks.html">
+   Special content blocks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../notebooks.html">
+   Jupyter notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../launch.html">
+   Launch buttons for interactivity
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Reference
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../special-theme-elements.html">
+   Theme-specific elements
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="current reference internal" href="#">
+   Kitchen Sink
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="paragraph-markup.html">
+     Paragraph Level Markup
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="api.html">
+     API documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lists-and-tables.html">
+     Lists &amp; Tables
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notebooks.html">
+   Jupyter notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../thebe.html">
+   Thebe
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../blog.html">
+   Reference for Blog
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  About the theme
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../contributing.html">
+   Contributing Guide
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/reference/kitchen-sink/index.rst"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.rst</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/sphinx-book-theme"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/sphinx-book-theme/issues/new?title=Issue%20on%20page%20%2Freference/kitchen-sink/index.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/executablebooks/sphinx-book-theme/edit/master/docs/reference/kitchen-sink/index.rst"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                 <div class="section" id="kitchen-sink">
+<h1>Kitchen Sink<a class="headerlink" href="#kitchen-sink" title="Permalink to this headline">¶</a></h1>
+<p>This section showcases the various elements that Sphinx supports out-of-the-box.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="paragraph-markup.html">Paragraph Level Markup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="paragraph-markup.html#inline-markup">Inline Markup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="paragraph-markup.html#math">Math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="paragraph-markup.html#meta">Meta</a></li>
+<li class="toctree-l2"><a class="reference internal" href="paragraph-markup.html#blocks">Blocks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="paragraph-markup.html#literal-blocks">Literal Blocks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="paragraph-markup.html#line-blocks">Line Blocks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="paragraph-markup.html#block-quotes">Block Quotes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="paragraph-markup.html#doctest-blocks">Doctest Blocks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="paragraph-markup.html#code-blocks">Code Blocks</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="paragraph-markup.html#emphasized-lines-with-line-numbers">Emphasized lines with line numbers</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="paragraph-markup.html#sidebar">Sidebar</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="paragraph-markup.html#code-with-sidebar">Code with Sidebar</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="paragraph-markup.html#references">References</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="paragraph-markup.html#footnotes">Footnotes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="paragraph-markup.html#citations">Citations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="paragraph-markup.html#glossary">Glossary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="paragraph-markup.html#targets">Targets</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="paragraph-markup.html#directives">Directives</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="paragraph-markup.html#centered-text">Centered text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="paragraph-markup.html#images-figures">Images &amp; Figures</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="paragraph-markup.html#images">Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="paragraph-markup.html#figures">Figures</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="paragraph-markup.html#admonitions">Admonitions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="paragraph-markup.html#topics-sidebars-and-rubrics">Topics, Sidebars, and Rubrics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="paragraph-markup.html#target-footnotes">Target Footnotes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="paragraph-markup.html#replacement-text">Replacement Text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="paragraph-markup.html#compound-paragraph">Compound Paragraph</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="paragraph-markup.html#download-links">Download Links</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api.html#module-asyncio"><code class="docutils literal notranslate"><span class="pre">asyncio</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lists-and-tables.html">Lists &amp; Tables</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lists-and-tables.html#lists">Lists</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="lists-and-tables.html#enumerated-lists">Enumerated Lists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lists-and-tables.html#definition-lists">Definition Lists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lists-and-tables.html#option-lists">Option Lists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lists-and-tables.html#field-list">Field list</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lists-and-tables.html#bullet-lists">Bullet Lists</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="lists-and-tables.html#simple">Simple</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lists-and-tables.html#complex">Complex</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lists-and-tables.html#second-list-level">Second list level</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="lists-and-tables.html#but-deeper-down-the-rabbit-hole">But deeper down the rabbit hole</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="lists-and-tables.html#hlists">Hlists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lists-and-tables.html#numbered-list">Numbered List</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="lists-and-tables.html#tables">Tables</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="lists-and-tables.html#grid-tables">Grid Tables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="lists-and-tables.html#giant-tables">Giant Tables</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="lists-and-tables.html#list-tables">List Tables</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./reference/kitchen-sink"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+<div class="section">
+   
+</div>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../special-theme-elements.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Theme-specific elements</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="paragraph-markup.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Paragraph Level Markup</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By the Executable Book Project<br/>
+        
+            &copy; Copyright 2020.<br/>
+          Last updated on Oct 23, 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
