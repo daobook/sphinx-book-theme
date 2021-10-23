@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sphinx Book Theme \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-23 21:17+0800\n"
+"POT-Creation-Date: 2021-10-23 23:20+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../customize/download.md:2
 msgid "Add a download page button"
-msgstr ""
+msgstr "添加一个下载页面的按钮"
 
 #: ../../customize/download.md:4
 msgid ""
@@ -28,4 +28,5 @@ msgid ""
 " in several formats: raw, pdf or ipynb if available. To include this "
 "button, use the following configuration:"
 msgstr ""
-
+"你可以添加一个按钮，允许用户以多种格式下载当前浏览的页面。"
+"原稿、pdf 或 ipynb（如果有的话）。要包括这个按钮，请使用以下配置："

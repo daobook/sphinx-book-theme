@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sphinx Book Theme \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-23 21:17+0800\n"
+"POT-Creation-Date: 2021-10-23 23:20+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,33 +20,34 @@ msgstr ""
 
 #: ../../customize/index.md:1
 msgid "Customization"
-msgstr ""
+msgstr "定制"
 
 #: ../../customize/index.md:3
 msgid ""
 "These sections describe a few ways that you may customize the look and "
 "feel of your theme."
 msgstr ""
+"这些部分描述了一些你可以定制你的主题的外观和感觉的方法。"
 
 #: ../../customize/index.md:5
 msgid "Theme options"
-msgstr ""
+msgstr "主题选项"
 
 #: ../../customize/index.md:7
 msgid "The following options are available via `html_theme_options`"
-msgstr ""
+msgstr "以下选项可通过 `html_theme_options` 使用"
 
 #: ../../customize/index.md:1
 msgid "Key"
-msgstr ""
+msgstr "键"
 
 #: ../../customize/index.md:2
 msgid "Type"
-msgstr ""
+msgstr "类型"
 
 #: ../../customize/index.md:3
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../customize/index.md:4
 msgid "`single_page`"
@@ -58,13 +59,14 @@ msgstr ""
 #: ../../customize/index.md:32 ../../customize/index.md:35
 #: ../../customize/index.md:50
 msgid "bool"
-msgstr ""
+msgstr "布尔值"
 
 #: ../../customize/index.md:6
 msgid ""
 "Remove the left sidebar and treat the site as a single page. See "
 "[](customize:single-page)."
 msgstr ""
+"去掉左边的侧边栏，把网站当作一个单页。见 [](customize:single-page)。"
 
 #: ../../customize/index.md:7
 msgid "`path_to_docs`"
@@ -73,13 +75,15 @@ msgstr ""
 #: ../../customize/index.md:8 ../../customize/index.md:11
 #: ../../customize/index.md:14
 msgid "string"
-msgstr ""
+msgstr "字符串"
 
 #: ../../customize/index.md:9
 msgid ""
 "Path to the documentation, relative to the repository root (e.g. "
 "`docs/`). See [](customize:source-files)."
 msgstr ""
+"文档的路径，相对于版本库根目录（例如：`docs/`）。"
+"参见 [](customize:source-files)。"
 
 #: ../../customize/index.md:10
 msgid "`repository_url`"
@@ -90,6 +94,8 @@ msgid ""
 "URL of the repository for the documentation (e.g. the GitHub repository "
 "URL). See [](source-files:repository)."
 msgstr ""
+"文档存储库的 URL（例如 GitHub 存储库的URL）。"
+"参见 [](source-files:repository)。"
 
 #: ../../customize/index.md:13
 msgid "`repository_branch`"
@@ -100,6 +106,7 @@ msgid ""
 "Branch of the repository for the documentation (e.g., `master`, `main`, "
 "`docs`). See [](source-files:repository)."
 msgstr ""
+"文档库的分支（例如：`master', `main', `docs'）。见 [](source-files:repository)。"
 
 #: ../../customize/index.md:16
 msgid "`use_issues_button`"
@@ -111,6 +118,9 @@ msgid ""
 "(used in conjunction with `repository_url` and `repository_branch`). See"
 "  [](source-files:repository)."
 msgstr ""
+"在导航条添加一个按钮，"
+"链接到版本库的议题（与 `repository_url` 和 `repository_branch` 一起使用）。"
+"见[](source-files:repository)。"
 
 #: ../../customize/index.md:19
 msgid "`use_download_button`"
@@ -121,6 +131,7 @@ msgid ""
 "Add a button in the topbar to download the source file of the page. See "
 "[](customize:source-files)."
 msgstr ""
+"在导航栏添加一个按钮，以下载页面的源文件。见 [](customize:source-files)。"
 
 #: ../../customize/index.md:22
 msgid "`use_fullscreen_button`"
@@ -128,7 +139,7 @@ msgstr ""
 
 #: ../../customize/index.md:24
 msgid "Add a button in the topbar to trigger full-screen mode."
-msgstr ""
+msgstr "在导航栏添加一个按钮来触发全屏模式。"
 
 #: ../../customize/index.md:25
 msgid "`use_repository_button`"
@@ -139,6 +150,7 @@ msgid ""
 "Add a button in the topbar that links to the repository of the "
 "documentation.See [](source-files:repository)."
 msgstr ""
+"在导航栏中添加一个链接到文档库的按钮。见 [](Source-files:repository)。"
 
 #: ../../customize/index.md:28
 msgid "`launch_buttons`"
@@ -149,6 +161,7 @@ msgid ""
 "Include Binder launch buttons for pages that were built from Jupyter "
 "Notebooks. See [](customize:launch)."
 msgstr ""
+"包含从 Jupyter 笔记本建立页面的 Binder 启动按钮。参见 [](customize:launch)。"
 
 #: ../../customize/index.md:31
 msgid "`home_page_in_toc`"
@@ -159,6 +172,7 @@ msgid ""
 "Whether to put the home page in the Navigation Bar (at the top). See "
 "[](sidebar-primary:home-page)."
 msgstr ""
+"是否将主页放在导航栏（顶部）。见 [](sidebar-primary:home-page)。"
 
 #: ../../customize/index.md:34
 msgid "`logo_only`"
@@ -166,7 +180,7 @@ msgstr ""
 
 #: ../../customize/index.md:36
 msgid "Only display the logo, not `html_title` if it exists."
-msgstr ""
+msgstr "只显示标识，不显示 `html_title`，如果它存在的话。"
 
 #: ../../customize/index.md:37
 msgid "`show_navbar_depth`"
@@ -174,13 +188,15 @@ msgstr ""
 
 #: ../../customize/index.md:38
 msgid "int"
-msgstr ""
+msgstr "整数"
 
 #: ../../customize/index.md:39
 msgid ""
 "Show children in the navigation bar down to the depth listed here. See "
 "[](sidebar:navbar-depth)."
 msgstr ""
+"在导航栏中显示子目录，向下到这里列出的深度。见"
+"[](sidebar:navbar-depth)."
 
 #: ../../customize/index.md:40
 msgid "`extra_navbar`"
@@ -189,13 +205,16 @@ msgstr ""
 #: ../../customize/index.md:41 ../../customize/index.md:44
 #: ../../customize/index.md:47
 msgid "str"
-msgstr ""
+msgstr "字符串"
 
 #: ../../customize/index.md:42
 msgid ""
 "Extra HTML to add below the sidebar footer (if `sbt-sidebar-footer.html` "
 "is used in `html_sidebars`). See [](custom-footer)."
 msgstr ""
+"在侧边栏页脚添加额外的 HTML"
+"（如果 `sbt-sidebar-footer.html` 在 `html_sidebars` 中被使用）。"
+"见 [](custom-footer)。"
 
 #: ../../customize/index.md:43
 msgid "`extra_footer`"
@@ -203,7 +222,7 @@ msgstr ""
 
 #: ../../customize/index.md:45
 msgid "Extra HTML to add in the footer of each page."
-msgstr ""
+msgstr "在每个页面的页脚添加额外的 HTML。"
 
 #: ../../customize/index.md:46
 msgid "`toc_title`"
@@ -211,7 +230,7 @@ msgstr ""
 
 #: ../../customize/index.md:48
 msgid "The text to be displayed with the in-page TOC (`Contents` is default)"
-msgstr ""
+msgstr "将与页内 TOC 一起显示的文本（默认为 `Contents`）。"
 
 #: ../../customize/index.md:49
 msgid "`theme_dev_mode`"
@@ -222,14 +241,15 @@ msgid ""
 "(developers only) Trigger some features that make it easier to develop "
 "the theme."
 msgstr ""
+"（仅限开发人员）触发一些功能，使开发主题更容易。"
 
 #: ../../customize/index.md:65
 msgid "Customization Topics"
-msgstr ""
+msgstr "定制专题"
 
 #: ../../customize/index.md:67
 msgid ""
 "The following sections describe a few ways to customize the theme in more"
 " depth."
 msgstr ""
-
+"以下各节描述了更深入地定制主题的几种方法。"

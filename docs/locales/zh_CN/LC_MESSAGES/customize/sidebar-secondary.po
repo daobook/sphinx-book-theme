@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sphinx Book Theme \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-23 21:17+0800\n"
+"POT-Creation-Date: 2021-10-23 23:20+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../customize/sidebar-secondary.md:1
 msgid "Customize the secondary sidebar"
-msgstr ""
+msgstr "定制二级侧边栏"
 
 #: ../../customize/sidebar-secondary.md:3
 msgid ""
@@ -29,24 +29,28 @@ msgid ""
 "default, from the right side of the page). This page describes ways to "
 "control and customize the secondary sidebar."
 msgstr ""
+"二级侧边栏包含关于当前页面的信息。"
+"它从页面的顶部开始（在顶栏），并向下延伸（默认情况下，从页面的右侧开始）。"
+"本页描述了控制和定制二级侧边栏的方法。"
 
 #: ../../customize/sidebar-secondary.md:7
 msgid "Rename the in-page Table of Contents"
-msgstr ""
+msgstr "重命名页内目录"
 
 #: ../../customize/sidebar-secondary.md:9
 msgid ""
 "You can rename the title of the in-page table of contents, in the right "
 "sidebar:"
 msgstr ""
+"你可以重新命名页面内目录的标题，在右侧边栏："
 
 #: ../../customize/sidebar-secondary.md:17
 msgid "The default value of the title is `Contents`."
-msgstr ""
+msgstr "标题的默认值是 `Contents`。"
 
 #: ../../customize/sidebar-secondary.md:19
 msgid "Show more levels of the in-page TOC by default"
-msgstr ""
+msgstr "默认显示更多层次的页内 TOC"
 
 #: ../../customize/sidebar-secondary.md:21
 msgid ""
@@ -54,16 +58,19 @@ msgid ""
 "page table of contents, and deeper levels are only shown when they are "
 "part of an active section (when it is scrolled on screen)."
 msgstr ""
+"通常情况下，在页内目录中只显示一个页面的第 2 级标题，"
+"更深的级别只有在它们是活动部分（在屏幕上滚动时）才会显示。"
 
 #: ../../customize/sidebar-secondary.md:23
 msgid ""
 "You can show deeper levels by default by using the following "
 "configuration, indicating how many levels should be displayed:"
 msgstr ""
+"你可以通过使用以下配置，默认显示更深的层次，表明应该显示多少个层次："
 
 #: ../../customize/sidebar-secondary.md:31
 msgid ""
 "All headings up to and including the level specified will now be shown "
 "regardless of what is displayed on the page."
 msgstr ""
-
+"现在，无论页面上显示的是什么，指定级别以下的所有标题都将被显示。"
