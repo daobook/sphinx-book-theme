@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../reference/blog.md:1
 msgid "Reference for Blog"
-msgstr "博客的参考资料"
+msgstr "博客的参考"
 
 #: ../../reference/blog.md:3
 msgid ""

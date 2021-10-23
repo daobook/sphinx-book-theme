@@ -20,65 +20,66 @@ msgstr ""
 
 #: ../../reference/notebooks.md:15
 msgid "Jupyter notebooks"
-msgstr ""
+msgstr "Jupyter 笔记本"
 
 #: ../../reference/notebooks.md:17
 msgid ""
 "This is a page to demonstrate the look and feel of Jupyter Notebook "
 "elements."
 msgstr ""
+"这是一个展示 Jupyter 笔记本元素的外观和感觉的页面。"
 
 #: ../../reference/notebooks.md:20
 msgid "Hiding elements"
-msgstr ""
+msgstr "隐藏的元素"
 
 #: ../../reference/notebooks.md:22
 msgid "Hiding inputs"
-msgstr ""
+msgstr "隐藏输入"
 
 #: ../../reference/notebooks.md:49
 msgid "Hiding outputs"
-msgstr ""
+msgstr "隐藏输出"
 
 #: ../../reference/notebooks.md:65
 msgid "Hiding markdown"
-msgstr ""
+msgstr "隐藏 Markdown"
 
 #: ../../reference/notebooks.md:1
 msgid "This is a hidden markdown cell"
-msgstr ""
+msgstr "这是一个隐藏的 Markdown 单元"
 
 #: ../../reference/notebooks.md:3
 msgid "It should be hidden!"
-msgstr ""
+msgstr "它应该被隐藏起来！"
 
 #: ../../reference/notebooks.md:75
 msgid "And here's a toggleable note"
-msgstr ""
+msgstr "这里有一个可切换的注解"
 
 #: ../../reference/notebooks.md:1
 msgid "With a body!"
-msgstr ""
+msgstr "带有 body！"
 
 #: ../../reference/notebooks.md:82
 msgid "Hiding both inputs and outputs"
-msgstr ""
+msgstr "隐藏输入与输出"
 
 #: ../../reference/notebooks.md:97
 msgid "Hiding the whole cell"
-msgstr ""
+msgstr "隐藏整个单元格"
 
 #: ../../reference/notebooks.md:112
 msgid "Enriched outputs"
-msgstr ""
+msgstr "富文本输出"
 
 #: ../../reference/notebooks.md:114
 msgid "Math"
-msgstr ""
+msgstr "数学"
 
 #: ../../reference/notebooks.md:122
 msgid "Pandas DataFrames"
-msgstr ""
+msgstr "Pandas 数据库"
 
 #: ../../reference/notebooks.md:132
 msgid ""
@@ -86,10 +87,13 @@ msgid ""
 "docs](https://pandas.pydata.org/pandas-"
 "docs/stable/user_guide/style.html))."
 msgstr ""
+"风格化的数据框架（见 [Pandas 风格化"
+"文档](https://pandas.pydata.org/pandas-"
+"docs/stable/user_guide/style.html))."
 
 #: ../../reference/notebooks.md:168
 msgid "Interactive outputs"
-msgstr ""
+msgstr "交互式输出"
 
 #: ../../reference/notebooks.md:170
 msgid "Folium"
@@ -97,17 +101,17 @@ msgstr ""
 
 #: ../../reference/notebooks.md:205
 msgid "Stdout"
-msgstr ""
+msgstr "标准输出"
 
 #: ../../reference/notebooks.md:212
 msgid "Formatting code cells"
-msgstr ""
+msgstr "格式化代码单元格"
 
 #: ../../reference/notebooks.md:214
 msgid "Scrolling cell outputs"
-msgstr ""
+msgstr "滚动单元格输出"
 
 #: ../../reference/notebooks.md:222
 msgid "Scrolling cell inputs"
-msgstr ""
+msgstr "滚动单元格输入"
 

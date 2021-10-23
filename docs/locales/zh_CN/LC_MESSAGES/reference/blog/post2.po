@@ -20,9 +20,9 @@ msgstr ""
 
 #: ../../reference/blog/post2.md:6
 msgid "Post 2"
-msgstr ""
+msgstr "帖子1"
 
 #: ../../reference/blog/post2.md:8
 msgid "Some sample content."
-msgstr ""
+msgstr "一些示例内容。"
 

@@ -20,19 +20,22 @@ msgstr ""
 
 #: ../../notebooks.md:15
 msgid "Jupyter notebooks"
-msgstr ""
+msgstr "Jupyter 笔记本"
 
 #: ../../notebooks.md:17
 msgid ""
 "You can also create content with Jupyter Notebooks, using the [MyST-NB "
 "Sphinx extension](https://myst-nb.readthedocs.io/en/latest/)."
 msgstr ""
+"你也可以用 Jupyter 笔记本创建内容，使用 [MyST-NB Sphinx 插件]"
+"(https://myst-nb.readthedocs.io/en/latest/)。"
 
 #: ../../notebooks.md:19
 msgid ""
 "This page demonstrates some extra functionality that works with this "
 "theme."
 msgstr ""
+"这个页面展示了与这个主题有关的一些额外功能。"
 
 #: ../../notebooks.md:21
 msgid "Markdown + notebooks"
@@ -40,7 +43,7 @@ msgstr ""
 
 #: ../../notebooks.md:23
 msgid "As it is markdown, you can embed images, HTML, etc into your posts!"
-msgstr ""
+msgstr "由于它是 Markdown，你可以在你的文章中嵌入图片、HTML 等。"
 
 #: ../../notebooks.md:25
 msgid "![](./images/cool.jpg)"
@@ -48,7 +51,7 @@ msgstr ""
 
 #: ../../notebooks.md:27
 msgid "You an also $add_{math}$ and"
-msgstr ""
+msgstr "你也可以用 $add_{math}$ 和"
 
 #: ../../notebooks.md:29
 msgid ""
@@ -58,7 +61,7 @@ msgstr ""
 
 #: ../../notebooks.md:33
 msgid "or"
-msgstr ""
+msgstr "或"
 
 #: ../../notebooks.md:35
 msgid ""
@@ -75,21 +78,23 @@ msgstr ""
 
 #: ../../notebooks.md:44
 msgid "Code blocks and image outputs"
-msgstr ""
+msgstr "代码块和图像输出"
 
 #: ../../notebooks.md:46
 msgid ""
 "Jupyter Book will also embed your code blocks and output in your book. "
 "For example, here's some sample Matplotlib code:"
 msgstr ""
+"Jupyter 笔记本还可以把代码块和输出嵌入到你的书中。"
+"例如，这里有一些 Matplotlib 代码样本："
 
 #: ../../notebooks.md:78
 msgid "Note that the image above is captured and displayed."
-msgstr ""
+msgstr "请注意，上面的图像是捕获并显示的。"
 
 #: ../../notebooks.md:121
 msgid "Removing content before publishing"
-msgstr ""
+msgstr "在发布之前删除内容"
 
 #: ../../notebooks.md:123
 msgid ""
@@ -97,12 +102,15 @@ msgid ""
 "For example, in {download}`./notebooks.md`, there used to be a cell "
 "below..."
 msgstr ""
+"你也可以在向网络发布你的书之前删除一些内容。"
+"例如，在 {download}`./notebooks.md` 中，下面曾经有一个单元格 ..."
 
 #: ../../notebooks.md:139
 msgid ""
 "You can also **remove only the code** so that images and other output "
 "still show up."
 msgstr ""
+"你也可以 **只删除代码**，这样图像和其他输出仍然显示出来。"
 
 #: ../../notebooks.md:141
 msgid ""
@@ -111,6 +119,10 @@ msgid ""
 "notebook](https://github.com/jupyter/jupyter-"
 "book/blob/master/jupyter_book/book_template/content/features/notebooks.ipynb)"
 msgstr ""
+"下面我们将显示一张图片。"
+"它是在一个单元格中用 Python 代码生成的，你可以 "
+"[在原始笔记本中看到](https://github.com/jupyter/jupyter-"
+"book/blob/master/jupyter_book/book_template/content/features/notebooks.ipynb)")
 
 #: ../../notebooks.md:157
 msgid ""
@@ -119,6 +131,9 @@ msgid ""
 "notebook](https://github.com/jupyter/textbooks-with-"
 "jupyter/blob/master/notebooks/introduction/notebooks.ipynb)."
 msgstr ""
+"而在这里，我们将只显示一个 Pandas 数据框架。"
+"同样，这是用 [这个原始笔记本](https://github.com/jupyter/textbooks-with-"
+"jupyter/blob/master/notebooks/introduction/notebooks.ipynb) 的 Python 代码生成的。"
 
 #: ../../notebooks.md:168
 msgid ""
@@ -126,14 +141,18 @@ msgid ""
 "docs](https://pandas.pydata.org/pandas-docs/stable/user_guide/style.html)"
 " for more information."
 msgstr ""
+"你甚至可以为 Pandas DataFrames 设计样式！"
+"参见 [Pandas 风格化文档]"
+"(https://pandas.pydata.org/pandas-docs/stable/user_guide/style.html)"
+"以了解更多信息。"
 
 #: ../../notebooks.md:207
 msgid "Testing popouts before headers"
-msgstr ""
+msgstr "测试标题前的弹出窗口"
 
 #: ../../notebooks.md:211
 msgid "Interactive outputs"
-msgstr ""
+msgstr "交互式输出"
 
 #: ../../notebooks.md:213
 msgid ""
@@ -142,6 +161,9 @@ msgid ""
 " the notebook is converted to Markdown, the code for creating the "
 "interactive map is retained."
 msgstr ""
+"我们甚至可以对交互材料做同样的处理。"
+"下面我们将用 [folium](https://python-visualization.github.io/folium/) "
+"来显示一张地图。当笔记本被转换为 Markdown 时，创建交互式地图的代码被保留下来"。
 
 #: ../../notebooks.md:216
 msgid ""
@@ -149,24 +171,27 @@ msgid ""
 " to output standalone HTML/Javascript, and not depend on an underlying "
 "Python kernel to work."
 msgstr ""
+"**注意，这只适用于某些软件包**。它们需要能够"
+"输出独立的 HTML/Javascript，而不是依赖底层的 Python 内核来工作。"
 
 #: ../../notebooks.md:252
 msgid "Rich outputs from notebook cells"
-msgstr ""
+msgstr "笔记本单元格的富文本输出"
 
 #: ../../notebooks.md:256
 msgid ""
 "Because notebooks have rich text outputs, you can store these in your "
 "Jupyter Book as well!"
 msgstr ""
+""因为笔记本有富文本输出，你也可以把这些存储在你的 Jupyter Book 中！""
 
 #: ../../notebooks.md:264
 msgid "Formatting code cells"
-msgstr ""
+msgstr "格式化代码单元格"
 
 #: ../../notebooks.md:266
 msgid "Scrolling cell outputs"
-msgstr ""
+msgstr "滚动单元格输出"
 
 #: ../../notebooks.md:268
 msgid ""
@@ -174,32 +199,38 @@ msgid ""
 "scrolling** for your cells. This allows you to visualize part of a long "
 "output without it taking up the entire page."
 msgstr ""
+"传统的 Jupyter 笔记本界面允许你为你的单元格切换**输出滚动**。"
+"这使你可以直观地看到一个长的输出的一部分，而不占用整个页面。"
 
 #: ../../notebooks.md:272
 msgid ""
 "You can trigger this behavior in Jupyter Book by adding the following tag"
 " to a cell's metadata:"
 msgstr ""
+"你可以在 Jupyter Book 中通过向单元格的元数据添加以下标签来触发这一行为："
 
 #: ../../notebooks.md:283
 msgid ""
 "For example, the following cell has a long output, but will be scrollable"
 " in the book:"
 msgstr ""
+"例如，下面的单元格有很长的输出，但在书中会有滚动显示："
 
 #: ../../notebooks.md:293
 msgid "Scrolling cell inputs"
-msgstr ""
+msgstr "滚动单元格的输入"
 
 #: ../../notebooks.md:295
 msgid ""
 "If your input code is long and takes up a lot of your page, you can make "
 "it scrollable as well by adding the following tag to a cell's metadata:"
 msgstr ""
+"如果你的输入代码很长，占据了页面的大部分空间，"
+"你可以通过在单元格的元数据中添加以下标签，使其也可以滚动："
 
 #: ../../notebooks.md:306
 msgid ""
 "For example, the following cell has a long input, but will be scrollable "
 "in the book:"
 msgstr ""
-
+"例如，下面的单元格有一个很长的输入，但在书中会有滚动的功能："

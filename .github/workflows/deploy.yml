@@ -24,7 +24,7 @@ jobs:
           pip install sphinxcontrib-websupport 
           pip install ablog myst-nb sphinx-copybutton 
           pip install sphinx-design sphinx-thebe
-          pip install sphinxcontrib-bibtex
+          pip install sphinxcontrib-bibtex folium
           pip install sphinxext-opengraph sphinx-intl
           sudo apt update
           sudo apt install -y graphviz

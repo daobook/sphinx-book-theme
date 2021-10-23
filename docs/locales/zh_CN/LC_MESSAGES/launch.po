@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../launch.md:2
 msgid "Launch buttons for interactivity"
-msgstr ""
+msgstr "用于交互的启动按钮"
 
 #: ../../launch.md:4
 msgid ""
@@ -29,12 +29,16 @@ msgid ""
 "JupyterHub that runs in the cloud, or by making your page interactive "
 "using Thebe."
 msgstr ""
+"你可以自动添加按钮，让用户与你的书的内容互动。"
+"这要么是通过引导他们到在云端运行的 BinderHub 或 JupyterHub，"
+"要么是通过使用 Thebe 使你的页面互动。"
 
 #: ../../launch.md:8
 msgid ""
 "To use either Binder or JupyterHub links, you'll first need to configure "
 "your documentation's repository url:"
 msgstr ""
+"要使用 Binder 或 JupyterHub 的链接，你首先需要配置你的文档库的网址："
 
 #: ../../launch.md:29
 msgid "Binder / BinderHub"
@@ -42,7 +46,7 @@ msgstr ""
 
 #: ../../launch.md:31
 msgid "To add Binder links your page, add the following configuration:"
-msgstr ""
+msgstr "要添加 Binder 链接你的页面，添加以下配置："
 
 #: ../../launch.md:43
 msgid "JupyterHub"
@@ -50,7 +54,7 @@ msgstr ""
 
 #: ../../launch.md:45
 msgid "To add JupyterHub links to your page, add the following configuration:"
-msgstr ""
+msgstr "要在你的页面上添加 JupyterHub 链接，请添加以下配置："
 
 #: ../../launch.md:57
 msgid "Google Colab"
@@ -58,11 +62,11 @@ msgstr ""
 
 #: ../../launch.md:59
 msgid "To add Google Colab links to your page, add the following configuration:"
-msgstr ""
+msgstr "要在你的页面上添加谷歌 Colab 链接，请添加以下配置："
 
 #: ../../launch.md:71
 msgid "Live code cells with Thebe"
-msgstr ""
+msgstr "Thebe 实时代码单元格"
 
 #: ../../launch.md:73
 msgid ""
@@ -72,6 +76,11 @@ msgid ""
 "your code cells into *interactive* code cells. This allows users to run "
 "the code on your page without leaving the page."
 msgstr ""
+"[Thebe](http://thebe.readthedocs.org/) 将你的静态代码块转换为"
+"由 Jupyter 内核驱动的 *交互式* 代码块。"
+"它通过要求一个 BinderHub 内核来做到这一点，*在 hood 下，"
+"将你所有的代码单元转换为 *交互式* 代码单元。"
+"这使得用户可以在不离开页面的情况下运行你页面上的代码。
 
 #: ../../launch.md:79
 msgid ""
@@ -80,24 +89,30 @@ msgid ""
 "documentation. You can install `sphinx-thebe` from `pip`, then activate "
 "it by putting it in your `conf.py` extensions list:"
 msgstr ""
+"你可以使用 Sphinx 插件 [`sphinx-thebe`]"
+"(https://sphinx-thebe.readthedocs.io/en/latest/) 来为你的文档添加实时代码功能。"
+"你可以从 `pip` 安装 `sphinx-thebe`，然后把它放在你的 `conf.py` 插件列表中激活它："
 
 #: ../../launch.md:92
 msgid ""
 "If you'd like to activate UI elements for `sphinx-thebe` in the `sphinx-"
 "book-theme`, add the following theme configuration:"
 msgstr ""
+"如果你想在 `sphinx-book-theme` 中激活 `sphinx-thebe` 的 UI 元素，请添加以下主题配置："
 
 #: ../../launch.md:105
 msgid ""
 "This will add a custom launch button and some UI elements will be added "
 "for Thebe."
 msgstr ""
+"这将增加一个自定义的启动按钮，并为 Thebe 增加一些 UI 元素。"
 
 #: ../../launch.md:107
 msgid ""
 "If you also specify a `repository_url` with your theme configuration, "
 "`sphinx-thebe` will use this repository for its environment:"
 msgstr ""
+"如果你在主题配置中还指定了一个 `repository_url'，`sphinx-thebe` 将使用这个仓库作为其环境："
 
 #: ../../launch.md:1
 msgid ""
@@ -107,24 +122,30 @@ msgid ""
 "://sphinx-thebe.readthedocs.io/en/latest/) documentation for what you can"
 " configure."
 msgstr ""
+"你也可以用 `thebe_config` 字典手动定制 Thebe。"
+"这将覆盖任何从你的`html_theme_options`配置中提取的配置。"
+"关于你可以配置的内容，请看 [`sphinx-thebe`]"
+"(https://sphinx-thebe.readthedocs.io/en/latest/) 文档。"
 
 #: ../../launch.md:125
 msgid "Configure a relative path to your source file"
-msgstr ""
+msgstr "配置你的源文件的相对路径"
 
 #: ../../launch.md:127
 msgid ""
 "To configure a relative path to your documentation, add the following "
 "configuration:"
 msgstr ""
+"要配置你的文档的相对路径，请添加以下配置："
 
 #: ../../launch.md:137
 msgid "Control the user interface that is opened"
-msgstr ""
+msgstr "控制被打开的用户界面"
 
 #: ../../launch.md:139
 msgid ""
 "You can control the interface that is opened when somebody clicks on a "
 "launch button. To do so, add the following configuration:"
 msgstr ""
+"你可以控制有人点击启动按钮时打开的界面。要做到这一点，请添加以下配置："
 
