@@ -81,5 +81,5 @@ msgstr "下篇"
 
 #: C:/Users/xinzo/anaconda3/envs/py39/lib/site-packages/ablog/templates/recentposts.html:3
 msgid "Recent Posts"
-msgstr "最近的帖子"
+msgstr "最近发表的文章"
 

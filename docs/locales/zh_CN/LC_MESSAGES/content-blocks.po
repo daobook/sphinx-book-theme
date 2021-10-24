@@ -36,7 +36,7 @@ msgstr "这是 `sphinx-book-theme` 中的引文和题记的样子。"
 
 #: ../../content-blocks.md:24
 msgid "A quote with no attribution:"
-msgstr "一句没有出处的引言："
+msgstr "一段没有出处的引言："
 
 #: ../../content-blocks.md:1 ../../content-blocks.md:26
 msgid ""
@@ -45,8 +45,6 @@ msgid ""
 " ideas to talk about. I suppose I could just keep going on forever, but "
 "I'll stop here."
 msgstr ""
-"这是我的引言，很整齐。我想知道我可以用一句意识流的名言创造多少行。"
-"我可以试着添加一个要谈的想法的清单。我想我可以一直说下去，但我要在这里停下来。"
 
 #: ../../content-blocks.md:33
 msgid ""
@@ -68,7 +66,7 @@ msgstr ""
 
 #: ../../content-blocks.md:69
 msgid "Jo the Jovyan, *[the jupyter book docs](https://beta.jupyterbook.org)*"
-msgstr "Jo the Jovyan，*[jupyter book 文档](https://beta.jupyterbook.org)*"
+msgstr ""
 
 #: ../../content-blocks.md:88
 msgid "Sidebars"

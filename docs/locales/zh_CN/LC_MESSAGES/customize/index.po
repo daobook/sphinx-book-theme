@@ -106,7 +106,7 @@ msgid ""
 "Branch of the repository for the documentation (e.g., `master`, `main`, "
 "`docs`). See [](source-files:repository)."
 msgstr ""
-"文档库的分支（例如：`master', `main', `docs'）。见 [](source-files:repository)。"
+"文档库的分支（例如：`master`, `main`, `docs`）。见 [](source-files:repository)。"
 
 #: ../../customize/index.md:16
 msgid "`use_issues_button`"
@@ -118,7 +118,7 @@ msgid ""
 "(used in conjunction with `repository_url` and `repository_branch`). See"
 "  [](source-files:repository)."
 msgstr ""
-"在导航条添加一个按钮，"
+"在导航栏目添加一个按钮，"
 "链接到版本库的议题（与 `repository_url` 和 `repository_branch` 一起使用）。"
 "见[](source-files:repository)。"
 
