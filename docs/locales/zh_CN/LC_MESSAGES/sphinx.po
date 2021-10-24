@@ -40,7 +40,7 @@ msgstr "语言"
 
 #: C:/Users/xinzo/anaconda3/envs/py39/lib/site-packages/ablog/templates/locations.html:3
 msgid "Locations"
-msgstr ""
+msgstr "区域"
 
 #: C:/Users/xinzo/anaconda3/envs/py39/lib/site-packages/ablog/templates/postcard2.html:5
 msgid "Update"
