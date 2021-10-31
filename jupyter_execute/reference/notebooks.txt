@@ -15,7 +15,7 @@ ax.imshow(square)
 fig, ax = plt.subplots()
 ax.imshow(wide)
 
-# Hide input
+# Hide output
 square = np.random.randn(100, 100)
 wide = np.random.randn(100, 1000)
 
