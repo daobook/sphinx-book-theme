@@ -90,7 +90,7 @@ msgid ""
 msgstr ""
 "所有集成在主题中的文本都被翻译成指定的 [Sphinx "
 "语言](https://www.sphinx-doc.org/en/master/usage/configuration.html"
-"#confval-language)."
+"#confval-language)。"
 
 #: ../../index.md:1
 msgid "This is the default theme in [Jupyter Book](https://jupyterbook.org)."
