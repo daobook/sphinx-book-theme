@@ -114,7 +114,7 @@ msgstr "参考页展示了这个主题的视觉外观。"
 
 #: ../../index.md:84
 msgid "Acknowledgements"
-msgstr "鸣谢"
+msgstr "致谢"
 
 #: ../../index.md:86
 msgid ""

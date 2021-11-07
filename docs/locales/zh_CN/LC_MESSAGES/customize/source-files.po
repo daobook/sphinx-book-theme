@@ -60,11 +60,11 @@ msgid ""
 msgstr "你可以在每个页面添加一个按钮，允许用户直接编辑页面文本，并提交拉动请求以更新文档。要包括这个按钮，请使用以下配置："
 
 #: ../../customize/source-files.md:60
-#, fuzzy
 msgid ""
 "By default, the edit button will point to the `master` branch, but if "
 "you'd like to change this, use the following configuration:"
-msgstr "默认情况下，编辑按钮将指向 `master` 分支，但如果你想改变这一点，请使用以下配置："
+msgstr ""
+"默认情况下，编辑按钮将指向 `master` 分支，但如果你想改变这一点，请使用以下配置："
 
 #: ../../customize/source-files.md:71
 msgid ""

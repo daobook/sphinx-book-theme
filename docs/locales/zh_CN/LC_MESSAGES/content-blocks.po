@@ -151,7 +151,7 @@ msgstr ""
 
 #: ../../content-blocks.md:1
 msgid "This note will be in the margin!"
-msgstr "这个注解将写在页边距！"
+msgstr ""
 
 #: ../../content-blocks.md:145
 msgid ""
@@ -163,7 +163,7 @@ msgstr ""
 
 #: ../../content-blocks.md:147
 msgid "For example, we can even put a whole figure in the margin like so:"
-msgstr "例如，我们甚至可以像这样把一个完整的数字放在页边距："
+msgstr "例如，我们甚至可以像这样把一个完整的图片放在页边距："
 
 #: ../../content-blocks.md:150
 msgid ""
@@ -171,8 +171,8 @@ msgid ""
 "figure with a caption below. We'll add a note below to create some "
 "vertical space to see better."
 msgstr ""
-"如果你愿意，你也可以把整个数字写在页边距。"
-"这里是一个数字，下面有一个标题。我们在下面加一个说明，创造一些垂直空间，以便看得更清楚。"
+"如果你愿意，你也可以把整个图片写在页边距。"
+"这里是一个图片，下面有一个标题。我们在下面加一个说明，创造一些垂直空间，以便看得更清楚。"
 
 #: ../../content-blocks.md:1
 msgid "My figure text"
