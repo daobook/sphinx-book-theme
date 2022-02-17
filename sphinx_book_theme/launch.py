@@ -55,7 +55,7 @@ def add_hub_urls(
         # Copy the notebook to `_sources` dir so it can be downloaded
         path_new_notebook.parent.mkdir(exist_ok=True, parents=True)
         copy2(path_ntbk, path_new_notebook)
-        context["ipynb_source"] = pagename + ".ipynb"
+        context["ipynb_source"] = f'{pagename}.ipynb'
 
     repo_url = _get_repo_url(config_theme)
 

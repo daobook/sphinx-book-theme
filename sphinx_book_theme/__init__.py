@@ -27,8 +27,7 @@ MESSAGE_CATALOG_NAME = "booktheme"
 
 def get_html_theme_path():
     """Return list of HTML theme paths."""
-    theme_path = os.path.abspath(Path(__file__).parent)
-    return theme_path
+    return os.path.abspath(Path(__file__).parent)
 
 
 def add_static_paths(app):
@@ -51,12 +50,14 @@ def add_static_paths(app):
         # note sphinx treats theme css different to regular css
         # (it is specified in theme.conf), so we don't directly use app.add_css_file
         for fname in resources.contents(theme_static):
-            if fname.endswith(".css"):
-                if not (output_static_folder / fname).exists():
-                    (output_static_folder / fname).write_bytes(
-                        resources.read_binary(theme_static, fname)
-                    )
-                    app.env.book_theme_resources_changed = True
+            if (
+                fname.endswith(".css")
+                and not (output_static_folder / fname).exists()
+            ):
+                (output_static_folder / fname).write_bytes(
+                    resources.read_binary(theme_static, fname)
+                )
+                app.env.book_theme_resources_changed = True
 
     # add javascript
     for fname in resources.contents(theme_static):
@@ -108,7 +109,7 @@ def add_to_context(app, pagename, templatename, context, doctree):
             master_doctree = app.env.get_doctree(master_doc)
             master_url = context["pathto"](master_doc)
             master_title = list(master_doctree.traverse(nodes.title))
-            if len(master_title) == 0:
+            if not master_title:
                 raise ValueError(f"Landing page missing a title: {master_doc}")
             master_title = master_title[0].astext()
             li_class = "toctree-l1"
@@ -202,20 +203,19 @@ def add_to_context(app, pagename, templatename, context, doctree):
 def update_thebe_config(app, env, docnames):
     """Update thebe configuration with SBT-specific values"""
     theme_options = env.config.html_theme_options
-    if theme_options.get("launch_buttons", {}).get("thebe") is True:
-        if not hasattr(env.config, "thebe_config"):
-            SPHINX_LOGGER.warning(
-                (
-                    "Thebe is activated but not added to extensions list. "
-                    "Add `sphinx_thebe` to your site's extensions list."
-                )
-            )
-            return
-        # Will be empty if it doesn't exist
-        thebe_config = env.config.thebe_config
-    else:
+    if theme_options.get("launch_buttons", {}).get("thebe") is not True:
         return
 
+    if not hasattr(env.config, "thebe_config"):
+        SPHINX_LOGGER.warning(
+            (
+                "Thebe is activated but not added to extensions list. "
+                "Add `sphinx_thebe` to your site's extensions list."
+            )
+        )
+        return
+    # Will be empty if it doesn't exist
+    thebe_config = env.config.thebe_config
     if not theme_options.get("launch_buttons", {}).get("thebe"):
         return
 
