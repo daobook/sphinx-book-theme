@@ -1,0 +1,346 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020
+# This file is distributed under the same license as the Sphinx Book Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Book Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-23 23:20+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../contributing.md:1
+msgid "Contributing Guide"
+msgstr "贡献指南"
+
+#: ../../contributing.md:3
+msgid ""
+"Thank you for being interested in contributing to the `sphinx-book-"
+"theme`! You are awesome ✨."
+msgstr ""
+"感谢你有兴趣为 `sphinx-book-theme` 做出贡献! 你真了不起✨。"
+
+#: ../../contributing.md:6
+msgid ""
+"This project follows the Executable Books Project [contribution "
+"guidelines](https://executablebooks.org/en/latest/contributing.html). It "
+"contains information about our conventions around coding style, pull "
+"request workflow, commit messages and more."
+msgstr ""
+"本项目遵循 Executable Books Project [贡献指南]"
+"(https://executablebooks.org/en/latest/contributing.html)。"
+"它包含了关于我们在编码风格、拉取请求工作流程、提交信息等方面的惯例。"
+
+#: ../../contributing.md:9
+msgid ""
+"This page contains information to help you get started with development "
+"on this project."
+msgstr ""
+"这个页面包含的信息可以帮助你开始这个项目的开发。"
+
+#: ../../contributing.md:12
+msgid "Repository structure"
+msgstr "储存库的结构"
+
+#: ../../contributing.md:14
+msgid "This repository is a split into a few critical folders:"
+msgstr "这个资源库被分割成几个关键的文件夹："
+
+#: ../../contributing.md:16
+msgid "`sphinx-book-theme/`"
+msgstr ""
+
+#: ../../contributing.md:17
+msgid ""
+"The Sphinx extension package, containing the Python code, Jinja templates"
+" and (compiled) assets (HTML/CSS/JS etc)."
+msgstr ""
+"Sphinx 插件包，包含 Python 代码、Jinja 模板和（编译的）assets（HTML/CSS/JS 等）。"
+
+#: ../../contributing.md:18
+msgid ""
+"These are used to generate the HTML page for every file in your site "
+"whenever the site is built using Sphinx."
+msgstr ""
+"只要网站是用 Sphinx 建立的，这些都是用来为你的网站中的每个文件生成 HTML 页面。"
+
+#: ../../contributing.md:19
+msgid "**NOTE**: Do not alter the compiled CSS/JS directly (alter in `src/`)."
+msgstr "**注意**：不要直接改变已编译的 CSS/JS（在 `src/` 中改变）。"
+
+#: ../../contributing.md:21
+msgid "`src/`"
+msgstr ""
+
+#: ../../contributing.md:22
+msgid ""
+"Contains the source SCSS and JS, which will be compiled and written to "
+"`sphinx-book-theme/static`, as configured by `web-compile-config.yml` "
+"(see [executablebooks/web-compile](https://github.com/executablebooks"
+"/web-compile) for details)."
+msgstr ""
+"包含源码 SCSS 和 JS，将被编译并写入 `sphinx-book-theme/static`，"
+"由 `web-compile-config.yml` 配置（详见 [executablebooks/web-compile]"
+"(https://github.com/executablebooks/web-compile)）。"
+
+#: ../../contributing.md:23
+msgid ""
+"This compilation is called by default, during development commands (see "
+"below)."
+msgstr ""
+"默认情况下，在开发命令期间，该编译被调用（见下文）。"
+
+#: ../../contributing.md:25
+msgid "`docs/`"
+msgstr ""
+
+#: ../../contributing.md:26
+msgid ""
+"The documentation for the theme, which aims to include all of the core "
+"Sphinx \"components\" (lists, admonitions, etc), to check/show how they "
+"are represented in this theme."
+msgstr ""
+"主题的文档，旨在包括所有核心的 Sphinx “组件”（列表、训诫等），"
+"以检查/显示它们在这个主题中是如何表现的。"
+
+#: ../../contributing.md:27
+msgid "The build configuration is contained in `conf.py`."
+msgstr "包含在 `conf.py`中的 build 配置。"
+
+#: ../../contributing.md:29
+msgid "`docs/reference`"
+msgstr ""
+
+#: ../../contributing.md:30
+msgid ""
+"The reference section of the documentation contains reference material "
+"for the look and feel of the theme. The \"kitchen sink\" is pulled "
+"directly [from the `sphinx-themes` website](https://github.com/sphinx-"
+"themes/sphinx-themes.org/tree/master/sample-docs/kitchen-sink). There are"
+" also other sections for theme-specific elements."
+msgstr ""
+"文档的参考部分包含了主题的外观和感觉的参考材料。“kitchen sink”是直接从 "
+"[`sphinx-themes` 网站](https://github.com/sphinx-"
+"themes/sphinx-themes.org/tree/master/sample-docs/kitchen-sink)"
+"提取的。还有其他部分是关于主题的特定元素"。
+
+#: ../../contributing.md:34
+msgid "`tests/`"
+msgstr ""
+
+#: ../../contributing.md:35
+msgid ""
+"Testing infrastructure that uses `pytest` along with `beautifulsoup` to "
+"validate that the generated HTML is what we expect it to be."
+msgstr ""
+"测试基础设施，使用 `pytest` 和 `beautifulsoup` 来验证生成的 HTML 是否为我们所期望的。"
+
+#: ../../contributing.md:37
+msgid ""
+"Much of these tests also use `pytest-regressions`, to check whether "
+"newly-generated HTML differs from previously-generated HTML."
+msgstr ""
+"这些测试大多也使用 `pytest-regressions`，以检查新生成的 HTML 是否与以前生成的 HTML 不同。"
+
+#: ../../contributing.md:39
+msgid "`.github/workflows/`"
+msgstr ""
+
+#: ../../contributing.md:40
+msgid ""
+"Contains Continuous-integration (CI) workflows, run on commits/PRs to the"
+" GitHub repository."
+msgstr ""
+"包含持续集成（CI）工作流程，在提交/PR 到 GitHub 仓库时运行。"
+
+#: ../../contributing.md:43
+msgid "Set up your development environment"
+msgstr "设置开发环境"
+
+#: ../../contributing.md:45
+msgid "Get the source code of this project using git:"
+msgstr "使用 git 获取这个项目的源代码："
+
+#: ../../contributing.md:52
+msgid "Ensure you have Python 3.6 or newer!"
+msgstr "确保你有 Python 3.6 或更新的版本！"
+
+#: ../../contributing.md:53
+msgid ""
+"Install `tox`. `tox` is a tool for managing virtual environments for test"
+" suites or common jobs that are run with a repository. It ensures that "
+"your environment is consistent each time you build the docs."
+msgstr ""
+"安装 `tox`。`tox` 是一个工具，用于管理测试套件的虚拟环境或与版本库一起运行的普通作业。"
+"它可以确保你的环境在每次构建文档时都是一致的。"
+
+#: ../../contributing.md:61
+msgid "You can list all of the `tox` environments like so:"
+msgstr "你可以这样列出所有的 `tox` 环境。"
+
+#: ../../contributing.md:67
+msgid ""
+"Each one corresponds to a test environment or a task to build the "
+"documentation, and has its own virtual environment."
+msgstr ""
+"每一个都对应着一个测试环境或一个建立文档的任务，并有自己的虚拟环境"。
+
+#: ../../contributing.md:69
+msgid ""
+"See the `sphinx-book-theme/tox.ini` for details of all available "
+"development environments."
+msgstr ""
+"参见 `sphinx-book-theme/tox.ini`，了解所有可用的开发环境的细节。"
+
+#: ../../contributing.md:70
+msgid ""
+"Install `pre-commit`. We use pre-commit to ensure that the code meets "
+"certain standards any time a commit is made. First, [follow the `pre-"
+"commit` installation instructions](https://pre-commit.com/#install). "
+"Then, run the following command in the same folder as the repository:"
+msgstr ""
+"安装`pre-commit`。我们使用 pre-commit 来确保任何时候提交的代码都符合某些标准。"
+"首先，[按照 `pre-commit` 的安装说明](https://pre-commit.com/#install)。"
+"然后，在与版本库相同的文件夹中运行以下命令："
+
+#: ../../contributing.md:1
+msgid "You can also run pre-commit via `tox`:"
+msgstr "你也可以通过 `tox` 运行 pre-commit。"
+
+#: ../../contributing.md:5
+msgid "or manually run all `pre-commit` jobs for this repository:"
+msgstr "或手动运行该版本库的所有 `pre-commit` 工作。"
+
+#: ../../contributing.md:92
+msgid "Preview changes you make to the theme"
+msgstr "预览你对主题所做的改动"
+
+#: ../../contributing.md:94
+msgid ""
+"The easiest way to preview the changes you make to this theme is by "
+"building the documentation of this theme locally using `tox`."
+msgstr ""
+"预览你对这个主题所做的修改的最简单的方法是通过使用 `tox` 在本地建立这个主题的文档。"
+
+#: ../../contributing.md:96
+msgid "To do so, follow these steps:"
+msgstr "要做到这一点，请遵循以下步骤："
+
+#: ../../contributing.md:98
+msgid ""
+"**Make your changes in `src/`**. This folder contains all of the SCSS and"
+" Javascript that are used in this site. You should edit the files here, "
+"and they will be built and included with the site in the "
+"`sphinx_book_theme/` folder at build time."
+msgstr ""
+"**在 `src/` 中进行修改**。这个文件夹包含了本网站中使用的所有 SCSS 和 Javascript。"
+"你应该在这里编辑这些文件，它们将在网站建立时被包含在 `sphinx_book_theme/` 文件夹中。"
+
+#: ../../contributing.md:99
+msgid "**Install `tox`**."
+msgstr "**安装 `tox`。**"
+
+#: ../../contributing.md:104
+msgid "**Build the documentation**. You can use the following `tox` command:"
+msgstr "**建立文档**。你可以使用下面的 `tox` 命令："
+
+#: ../../contributing.md:110
+msgid ""
+"This will build the documentation using the latest version of the theme "
+"(including any changes you've made to the `src/` folder) and put the "
+"outputs in `docs/_build/html`. You may then preview them by opening one "
+"of the HTML files."
+msgstr ""
+"这将使用最新版本的主题（包括你对 `src/` 文件夹所做的任何修改）构建文档，"
+"并将输出放在 `docs/_build/html` 中。然后你可以通过打开其中一个 HTML 文件来预览它们。"
+
+#: ../../contributing.md:113
+msgid "Auto-build the docs when you make changes"
+msgstr "当你进行修改时，自动构建文档"
+
+#: ../../contributing.md:115
+msgid ""
+"You can also use a live server to watch the theme's folders, and "
+"automatically build/update the local documentation so that you can "
+"quickly preview changes. This uses the `sphinx-autobuild` package. To do "
+"so, use this `tox` command:"
+msgstr ""
+"你也可以使用一个实时服务器来观察主题的文件夹，并自动构建/更新本地文档，"
+"以便你可以快速预览变化。这需要使用 `sphinx-autobuild` 软件包。"
+"要做到这一点，使用这个 `tox` 命令："
+
+#: ../../contributing.md:123
+msgid "This will do the following:"
+msgstr "这将做到以下几点："
+
+#: ../../contributing.md:125
+msgid ""
+"Generate the theme's documentation (similar to running `tox -e docs-"
+"update`)"
+msgstr ""
+"生成主题的文档（类似于运行 `tox -e docs-update`）"
+
+#: ../../contributing.md:126
+msgid "Start a development server on an available port `localhost:xxxx`"
+msgstr "在一个可用的端口 `localhost:xxxx`上启动一个开发服务器"
+
+#: ../../contributing.md:127
+msgid "Open it in your default browser"
+msgstr "在你的默认浏览器中打开它"
+
+#: ../../contributing.md:128
+msgid ""
+"Watch for changes and automagically regenerate the documentation and "
+"auto-reload your browser when a change is made."
+msgstr ""
+"观察变化并自动重新生成文档，在发生变化时自动重新加载浏览器。"
+
+#: ../../contributing.md:130
+msgid ""
+"With this, you can modify the theme in an editor, and see how those "
+"modifications render on the browser."
+msgstr ""
+"有了这个，你可以在编辑器中修改主题，并看到这些修改在浏览器上是如何呈现的。"
+
+#: ../../contributing.md:132
+msgid "Use different Sphinx builders"
+msgstr "使用不同的 Sphinx 构建器"
+
+#: ../../contributing.md:134
+msgid ""
+"When building documentation locally, you may use different Sphinx "
+"builders by providing them as arguments to `tox`. For example:"
+msgstr ""
+"在本地构建文档时，你可以通过向 `tox` 提供参数来使用不同的 Sphinx 构建器。比如说："
+
+#: ../../contributing.md:142
+msgid "Run Tests"
+msgstr "运行测试"
+
+#: ../../contributing.md:144
+msgid ""
+"This theme has a test suite to ensure that all the relevant user content "
+"is correctly handled. The tests can be run using:"
+msgstr ""
+"这个主题有一个测试套件，以确保所有相关的用户内容被正确处理。测试可以通过以下方式运行："
+
+#: ../../contributing.md:151
+msgid ""
+"You can also run against different Python and sphinx versions, and supply"
+" arguments to pytest:"
+msgstr ""
+"你也可以针对不同的 Python 和 Sphinx 版本运行，并向 pytest 提供参数："
+
+#: ../../contributing.md:1
+msgid "To \"re-build\" an environment, wih updated dependancy versions, use:"
+msgstr "要 “重建” 一个环境，并更新依赖版本，请使用："
+

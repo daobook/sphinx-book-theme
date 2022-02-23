@@ -1,0 +1,198 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020
+# This file is distributed under the same license as the Sphinx Book Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Book Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-23 23:20+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../customize/sidebar-primary.md:1
+msgid "Customize the primary sidebar"
+msgstr "定制主侧栏"
+
+#: ../../customize/sidebar-primary.md:3
+msgid ""
+"The primary sidebar generally contains the site navigation and logo. By "
+"default it is on the left side of the site. This page describes ways that"
+" you can control and customize the primary sidebar."
+msgstr ""
+"主侧边栏一般包含网站导航和标志。"
+"默认情况下，它位于网站的左侧。本页描述了你可以控制和定制主侧边栏的方法。"
+
+#: ../../customize/sidebar-primary.md:8
+msgid "Control the left sidebar items"
+msgstr "控制左边的侧栏项目"
+
+#: ../../customize/sidebar-primary.md:10
+msgid ""
+"You can control what kind of content goes underneath the logo and name of"
+" your website in the top left."
+msgstr ""
+"你可以控制什么样的内容放在左上方你的网站的标志和名称下面。"
+
+#: ../../customize/sidebar-primary.md:12
+msgid ""
+"To do so, use the `html_sidebars` variable in your `conf.py` file. This "
+"takes a dictionary of filename patterns as keys, and a list of sidebar "
+"elements as values. Any files that match a key will have the "
+"corresponding sidebar elements placed in that page's sidebar."
+msgstr ""
+"要做到这一点，在你的 `conf.py` 文件中使用 `html_sidebars` 变量。"
+"这个变量以文件名模式的字典为键，以侧边栏元素的列表为值。"
+"任何与键相匹配的文件都会有相应的侧边栏元素放在该页面的侧边栏中。"
+
+#: ../../customize/sidebar-primary.md:14
+msgid ""
+"For example, the following configuration would include *only the footer* "
+"on pages under the `posts/` folder:"
+msgstr ""
+"例如，以下配置将在 `posts/` 文件夹下的页面上 *只包括页脚*："
+
+#: ../../customize/sidebar-primary.md:22
+msgid ""
+"You can also use `**` to apply a set of sidebars to **all** pages of your"
+" book. For example:"
+msgstr ""
+"你也可以使用 `**` 将一组侧边栏应用于你的书的所有页面。例如："
+
+#: ../../customize/sidebar-primary.md:30
+msgid ""
+"See the [Sphinx HTML sidebars documentation](https://www.sphinx-"
+"doc.org/en/master/usage/configuration.html#confval-html_sidebars) for "
+"more information."
+msgstr ""
+"更多信息请见 [Sphinx HTML 侧边栏文档]"
+"(https://www.sphinx-doc.org/en/master/usage/configuration.html"
+"#confval-html_sidebars)。"
+
+#: ../../customize/sidebar-primary.md:32
+msgid "Default sidebar elements"
+msgstr "默认的侧边栏元素"
+
+#: ../../customize/sidebar-primary.md:34
+msgid ""
+"By default, this theme comes with these three theme-specific sidebar "
+"elements enabled on all pages:"
+msgstr ""
+"默认情况下，该主题在所有页面上都启用了这三个特定主题的侧边栏元素："
+
+#: ../../customize/sidebar-primary.md:36
+msgid "`sidebar-logo.html`: Displays the logo and site title."
+msgstr "`sidebar-logo.html`：显示标志和网站标题。"
+
+#: ../../customize/sidebar-primary.md:37
+msgid ""
+"`search-field.html`: A bootstrap-based search bar (from the [PyData "
+"Sphinx Theme](https://pydata-sphinx-theme.readthedocs.io/))"
+msgstr ""
+"`search-field.html`: 一个基于 bootstrap 的搜索栏"
+"（来自 [PyData Sphinx Theme](https://pydata-sphinx-theme.readthedocs.io/)）"
+
+#: ../../customize/sidebar-primary.md:38
+msgid "`sbt-sidebar-nav.html`: A bootstrap-based navigation menu for your book."
+msgstr "`sbt-sidebar-nav.html`: 一个用于你的书基于 bootstrap 的导航菜单。"
+
+#: ../../customize/sidebar-primary.md:39
+msgid ""
+"`sbt-sidebar-footer`: A [configurable](custom-footer) snippet of HTML to "
+"add to the sidebar (by default it is placed at the bottom)."
+msgstr ""
+"`sbt-sidebar-footer`: 一个 [可配置的](custom-footer) HTML 片段，"
+"用于添加到侧边栏（默认情况下，它被放置在底部）。"
+
+#: ../../customize/sidebar-primary.md:42
+msgid "Customize the sidebar footer"
+msgstr "自定义侧边栏页脚"
+
+#: ../../customize/sidebar-primary.md:44
+msgid ""
+"You may choose your own HTML to include in the footer of your sidebar (or"
+" set it to be empty). To do so, set the following option in `conf.py`:"
+msgstr ""
+"你可以选择你自己的 HTML，包括在你的侧边栏的页脚（或将其设置为空）。"
+"要做到这一点，请在 `conf.py` 中设置以下选项："
+
+#: ../../customize/sidebar-primary.md:54
+msgid "This text will be placed at the bottom of the sidebar by default."
+msgstr "这段文字将被默认放置在侧边栏的底部。"
+
+#: ../../customize/sidebar-primary.md:57
+msgid "Add a header to your Table of Contents"
+msgstr "为你的目录添加一个标题"
+
+#: ../../customize/sidebar-primary.md:59
+msgid ""
+"If you'd like to add a header above a section of TOC links, use "
+"`:caption: My header text` in your `toctree` directive for that section."
+msgstr ""
+""如果你想在 TOC 链接的某一节上面添加一个标题，"
+"请在该节的 `toctree` 指令中使用 `:caption: 我的标题文本` 为该部分添加标题。"
+
+#: ../../customize/sidebar-primary.md:63
+msgid "Customize the logo, title, and favicon"
+msgstr "自定义标志、标题和 favicon"
+
+#: ../../customize/sidebar-primary.md:65
+msgid ""
+"You can customize the logo, title, and favicon of your site with the "
+"following Sphinx configuration in `conf.py`:"
+msgstr ""
+"你可以用 `conf.py` 中的以下 Sphinx 配置来定制你网站的标志、标题和 favicon："
+
+#: ../../customize/sidebar-primary.md:73
+msgid "These will be placed in the top-left of your page."
+msgstr "这些将被放置在你的页面的左上方。"
+
+#: ../../customize/sidebar-primary.md:75
+msgid "To **remove the site title** below the logo, add this line in `conf.py`:"
+msgstr "要想 **去掉标志下面的网站标题**，请在 `conf.py` 中添加这一行："
+
+#: ../../customize/sidebar-primary.md:86
+msgid "Add the home page to your table of contents"
+msgstr "将主页添加到你的目录中"
+
+#: ../../customize/sidebar-primary.md:88
+msgid ""
+"By default, your table of contents will begin with the first file that "
+"you add to a `toctree`. You can also configure the theme to show the "
+"**landing page** of the theme in your navigation bar as well."
+msgstr ""
+"默认情况下，你的目录将从你添加到 `toctree` 的第一个文件开始。"
+"你也可以配置主题，在你的导航栏中也显示主题的**登陆页**。"
+
+#: ../../customize/sidebar-primary.md:90
+msgid ""
+"To add the landing page of your site to the table of contents, use the "
+"following configuration:"
+msgstr ""
+"要将你的网站的登陆页添加到目录中，请使用以下配置："
+
+#: ../../customize/sidebar-primary.md:101
+msgid "Control the depth of the left sidebar lists to expand"
+msgstr "控制左侧侧边栏列表的展开深度"
+
+#: ../../customize/sidebar-primary.md:103
+msgid ""
+"You can control the level of toc items in the left sidebar to remain "
+"expanded, using the following configuration in `conf.py`:"
+msgstr ""
+"你可以使用 `conf.py` 中的以下配置，控制左侧边栏中的 toc 项目保持展开的程度："
+
+#: ../../customize/sidebar-primary.md:114
+msgid ""
+"The default value is `1`, which shows only top-level sections of the "
+"documentation (and is used in this documentation)."
+msgstr ""
+"默认值是 `1`，它只显示文档的顶层部分（在本文档中使用）。"

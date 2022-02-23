@@ -166,3 +166,6 @@ for ifile in kitchen_sink_files:
         )
         header = ".. DOWNLOADED FROM sphinx-themes.org, DO NOT MANUALLY EDIT\n"
         path_file.write_text(header + resp.read().decode())
+
+locale_dirs = ['locales/']  # path is example but recommended.
+gettext_compact = False  # optional.

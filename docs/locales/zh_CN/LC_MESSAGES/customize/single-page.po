@@ -1,0 +1,32 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020
+# This file is distributed under the same license as the Sphinx Book Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Book Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-23 23:20+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../customize/single-page.md:2
+msgid "Use a single-page version of this theme"
+msgstr "使用该主题的单页版本"
+
+#: ../../customize/single-page.md:4
+msgid ""
+"If your documentation only has a single page, and you don't need the left"
+" navigation bar, then you may configure `sphinx-book-theme` to run in "
+"**single page mode** with the following configuration:"
+msgstr ""
+"如果你的文档只有一个页面，而且你不需要左边的导航栏，"
+"那么你可以配置 `sphinx-book-theme` 在 **单页模式** 下运行，配置如下："
