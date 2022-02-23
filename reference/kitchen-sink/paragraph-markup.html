@@ -1,70 +1,80 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="zh_CN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta content="reStructuredText, demonstration, demo, parser" name="keywords" />
 <meta content="A demonstration of the reStructuredText markup language, containing examples of all basic constructs and many advanced constructs." lang="en" name="description" xml:lang="en" />
 
-  <meta property="og:title" content="Paragraph Level Markup" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="reference/kitchen-sink/paragraph-markup.html" />
-  <meta property="og:description" content="Inline Markup: Paragraphs contain text and may contain inline markup: emphasis, strong emphasis, inline literals, standalone hyperlinks ( http://www.python.org), external hyperlinks ( Python 5), in..." />
+<meta property="og:title" content="示例" />
   
-    <title>Paragraph Level Markup &#8212; Sphinx Book Theme</title>
+<meta property="og:type" content="website" />
+  
+<meta property="og:url" content="reference/kitchen-sink/paragraph-markup.html" />
+  
+<meta property="og:description" content="Inline Markup: Paragraphs contain text and may contain inline markup: emphasis, strong emphasis, inline literals, standalone hyperlinks ( http://www.python.org), external hyperlinks ( Python 5), in..." />
+  
+    <title>示例 &#8212; Sphinx Book Theme</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet">
-  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
-
     
-  <link rel="stylesheet"
-    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-
+    <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  
+    
+    <link rel="stylesheet"
+      href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
     
       
-
+  
     
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/tabs.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.59c74d8c95b765a7fd995ac71d459ebe.min.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+    <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  
+    
+  <link href="../../_static/styles/sphinx-book-theme.css?digest=d39d74a9f498dbb5016c" rel="stylesheet">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
-    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe,.cell"
-        const thebe_selector_input = "pre,.cell_input div.highlight"
-        const thebe_selector_output = ".output,.cell_output"
-    </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="shortcut icon" href="../../_static/logo-square.svg"/>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="API documentation" href="api.html" />
-    <link rel="prev" title="Kitchen Sink" href="index.html" /> 
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="API 文档" href="api.html" />
+    <link rel="prev" title="厨房的水槽" href="index.html" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
+    <meta name="docsearch:language" content="zh_CN">
     
 
     <!-- Google Analytics -->
@@ -103,6 +113,21 @@
 
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint">⚠️The latest release refactored our HTML, so double-check your custom CSS rules!⚠️</div>
+<div class="header header-item noprint"><!-- Uncomment the line below to show off a header! -->
+<!-- Hello world! --></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -111,9 +136,9 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="pl-4 pr-3 bd-sidebar site-navigation noprint " id="site-navigation">
+    <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -131,18 +156,18 @@
     <div class="bd-toc-item active">
         <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Topic Areas
+  专题区域
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../tutorials/get-started.html">
-   Get started
+   开始行动
   </a>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../../customize/index.html">
-   Customization
+   定制
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -152,93 +177,145 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../../customize/sidebar-primary.html">
-     Customize the primary sidebar
+     定制主侧栏
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../customize/sidebar-secondary.html">
-     Customize the secondary sidebar
+     定制二级侧边栏
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../customize/announcements.html">
+     Announcement banners
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../customize/header.html">
+     Header content
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../customize/download.html">
-     Add a download page button
+     添加一个下载页面的按钮
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../customize/source-files.html">
-     Add buttons to link to your source
+     添加按钮以链接到你的来源
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../customize/custom-css.html">
-     Add your own CSS rules
+     加入你自己的 CSS 规则
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../customize/single-page.html">
-     Use a single-page version of this theme
+     使用该主题的单页版本
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../content-blocks.html">
-   Special content blocks
+   特殊内容块
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../notebooks.html">
-   Jupyter notebooks
+   Jupyter 笔记本
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../launch.html">
-   Launch buttons for interactivity
+   用于交互的启动按钮
   </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../contributing/index.html">
+   Contribute to this theme
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../contributing/setup.html">
+     Set up your development workflow
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../contributing/architecture.html">
+     Architecture of the repository
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../contributing/style.html">
+     Style and design
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../contributing/tests.html">
+     Testing infrastructure
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../contributing/translate.html">
+     Translation workflow
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Reference
+  参考
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../special-theme-elements.html">
-   Theme-specific elements
-  </a>
- </li>
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="index.html">
-   Kitchen Sink
+   厨房的水槽
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul class="current">
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Paragraph Level Markup
+     示例
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="api.html">
-     API documentation
+     API 文档
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="lists-and-tables.html">
-     Lists &amp; Tables
+     列表和表格
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../special-theme-elements.html">
+   特定主题的元素
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../extensions.html">
+   Sphinx extension styles
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../notebooks.html">
-   Jupyter notebooks
+   Jupyter 笔记本
   </a>
  </li>
  <li class="toctree-l1">
@@ -248,19 +325,12 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../blog.html">
-   Reference for Blog
+   博客的参考
   </a>
  </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  About the theme
- </span>
-</p>
-<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../../contributing.html">
-   Contributing Guide
+  <a class="reference internal" href="../api-numpy.html">
+   NumPy docstrings
   </a>
  </li>
 </ul>
@@ -279,25 +349,56 @@
 
 
           
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+<!-- Main content -->
+<div class="col py-0 content-container">
     
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
+    <div class="header-article row sticky-top noprint">
+        
+
+
+<div class="col py-1 d-flex topbar-main">
+    <div class="topbar-left">
+        
+        <label class="nav-toggle-button topbarbtn" for="__navigation">
+            <div class="visually-hidden">Toggle navigation</div>
+            <i class="fas fa-bars"></i>
+        </label>
+        
+    </div>
+    <div class="topbar-right">
+        <!-- Launch buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+        <!-- Source interaction buttons -->
+
 <div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+    <button class="topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/sphinx-book-theme"><button type="button" class="topbarbtn--wide"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/sphinx-book-theme/issues/new?title=Issue%20on%20page%20%2Freference/kitchen-sink/paragraph-markup.html&body=Your%20issue%20content%20here."><button
+                type="button" class="topbarbtn--wide" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/executablebooks/sphinx-book-theme/edit/master/docs/reference/kitchen-sink/paragraph-markup.rst"><button
+                type="button" class="topbarbtn--wide" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+        
+<div class="dropdown-buttons-trigger sb-download-buttons">
+    <button class="topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
 
     <div class="dropdown-buttons">
@@ -305,53 +406,28 @@
         
         <!-- Download raw file -->
         <a class="dropdown-buttons" href="../../_sources/reference/kitchen-sink/paragraph-markup.rst"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                class="topbarbtn--wide" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.rst</button></a>
         <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+        <button type="button" id="download-print" class="topbarbtn--wide" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/daobook/sphinx-book-theme"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/daobook/sphinx-book-theme/issues/new?title=Issue%20on%20page%20%2Freference/kitchen-sink/paragraph-markup.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/daobook/sphinx-book-theme/edit/main/docs/reference/kitchen-sink/paragraph-markup.rst"><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+        <label class="d-block d-md-none nav-toggle-button topbarbtn" for="__page-toc">
+  <div class="visually-hidden">Toggle Table of Contents</div>
+  <i class="fas fa-list"></i>
+</label>
     </div>
 </div>
 
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#inline-markup">
    Inline Markup
@@ -506,30 +582,200 @@
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>示例</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#inline-markup">
+   Inline Markup
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#math">
+   Math
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#meta">
+   Meta
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#blocks">
+   Blocks
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#literal-blocks">
+     Literal Blocks
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#line-blocks">
+     Line Blocks
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#block-quotes">
+     Block Quotes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#doctest-blocks">
+     Doctest Blocks
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#code-blocks">
+     Code Blocks
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#emphasized-lines-with-line-numbers">
+       Emphasized lines with line numbers
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sidebar">
+   Sidebar
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#code-with-sidebar">
+     Code with Sidebar
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#footnotes">
+     Footnotes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#citations">
+     Citations
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#glossary">
+     Glossary
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#targets">
+     Targets
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#directives">
+   Directives
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#centered-text">
+     Centered text
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#images-figures">
+     Images &amp; Figures
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#images">
+       Images
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#figures">
+       Figures
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#admonitions">
+     Admonitions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#topics-sidebars-and-rubrics">
+     Topics, Sidebars, and Rubrics
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#target-footnotes">
+     Target Footnotes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#replacement-text">
+     Replacement Text
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#compound-paragraph">
+     Compound Paragraph
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#download-links">
+   Download Links
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
               <div>
                  <div class="section" id="paragraph-level-markup">
-<h1>Paragraph Level Markup<a class="headerlink" href="#paragraph-level-markup" title="Permalink to this headline">¶</a></h1>
+<h1>示例<a class="headerlink" href="#paragraph-level-markup" title="永久链接至标题">¶</a></h1>
 <div class="section" id="inline-markup">
-<h2>Inline Markup<a class="headerlink" href="#inline-markup" title="Permalink to this headline">¶</a></h2>
+<h2>Inline Markup<a class="headerlink" href="#inline-markup" title="永久链接至标题">¶</a></h2>
 <p>Paragraphs contain text and may contain inline markup: <em>emphasis</em>, <strong>strong emphasis</strong>, <code class="docutils literal notranslate"><span class="pre">inline</span> <span class="pre">literals</span></code>,
-standalone hyperlinks (<a class="reference external" href="http://www.python.org">http://www.python.org</a>), external hyperlinks (<a class="reference external" href="http://www.python.org/">Python</a> <a class="footnote-reference brackets" href="#id28" id="id29">5</a>), internal cross-references (<a class="reference internal" href="#example">example</a>),
+standalone hyperlinks (<a class="reference external" href="http://www.python.org">http://www.python.org</a>), external hyperlinks (<a class="reference external" href="http://www.python.org/">Python</a> <a class="footnote-reference brackets" href="#id29" id="id30">5</a>), internal cross-references (<a class="reference internal" href="#example">example</a>),
 external hyperlinks with embedded URIs (<a class="reference external" href="http://www.python.org">Python web site</a>), footnote references
 (manually numbered <a class="footnote-reference brackets" href="#id6" id="id1">1</a>, anonymous auto-numbered <a class="footnote-reference brackets" href="#id9" id="id2">3</a>, labeled auto-numbered <a class="footnote-reference brackets" href="#label" id="id3">2</a>, or symbolic <a class="footnote-reference brackets" href="#id10" id="id4">*</a>),
 citation references (<a class="footnote-reference brackets" href="#id16" id="id5">12</a>), substitution references (<a class="reference internal" href="https://source.unsplash.com/200x200/daily?cute+animals"><img alt="EXAMPLE" src="https://source.unsplash.com/200x200/daily?cute+animals" style="width: 1em;" /></a>), and <span class="target" id="inline-hyperlink-targets">inline hyperlink targets</span>
 (see <a class="reference internal" href="#targets">Targets</a> below for a reference back to here). Character-level inline markup is also possible
-(although exceedingly ugly!) in <em>re</em><code class="docutils literal notranslate"><span class="pre">Structured</span></code><em>Text</em>. Problems are indicated by <a href="#id26"><span class="problematic" id="id27">|problematic|</span></a>
+(although exceedingly ugly!) in <em>re</em><code class="docutils literal notranslate"><span class="pre">Structured</span></code><em>Text</em>. Problems are indicated by <a href="#id27"><span class="problematic" id="id28">|problematic|</span></a>
 text (generated by processing errors; this one is intentional).</p>
 <p>Also with <code class="docutils literal notranslate"><span class="pre">sphinx.ext.autodoc</span></code>, which I use in the demo, I can link to <code class="xref py py-class docutils literal notranslate"><span class="pre">test_py_module.test.Foo</span></code>.
 It will link you right to my code documentation for it.</p>
 <p>The default role for interpreted text is <cite>Title Reference</cite>.  Here are some explicit interpreted text roles:
-a PEP reference (<span class="target" id="index-0"></span><a class="pep reference external" href="https://www.python.org/dev/peps/pep-0287"><strong>PEP 287</strong></a>); an RFC reference (<span class="target" id="index-1"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc2822.html"><strong>RFC 2822</strong></a>); a <sub>subscript</sub>; a <sup>superscript</sup>;
+a PEP reference (<span class="target" id="index-0"></span><a class="pep reference external" href="https://www.python.org/dev/peps/pep-0287"><strong>PEP 287</strong></a>); an RFC reference (<span class="target" id="index-1"></span><a class="rfc reference external" href="https://datatracker.ietf.org/doc/html/rfc2822.html"><strong>RFC 2822</strong></a>); a <sub>subscript</sub>; a <sup>superscript</sup>;
 and explicit roles for <em>standard</em> <strong>inline</strong> <code class="docutils literal notranslate"><span class="pre">markup</span></code>.</p>
 <p>GUI labels are a useful way to indicate that <span class="guilabel">Some action</span> is to be taken by the user.
 The GUI label should not run over <code class="docutils literal notranslate"><span class="pre">line-height</span></code> so as not to <span class="guilabel">interfere</span> with text from adjacent lines.</p>
@@ -547,26 +793,26 @@ For example, and <code class="docutils literal notranslate"><span class="pre">me
 <p>If the <code class="docutils literal notranslate"><span class="pre">--pep-references</span></code> option was supplied, there should be a live link to PEP 258 here.</p>
 </div>
 <div class="section" id="math">
-<h2>Math<a class="headerlink" href="#math" title="Permalink to this headline">¶</a></h2>
+<h2>Math<a class="headerlink" href="#math" title="永久链接至标题">¶</a></h2>
 <p>This is a test. Here is an equation:
 <span class="math notranslate nohighlight">\(X_{0:5} = (X_0, X_1, X_2, X_3, X_4)\)</span>.
 Here is another:</p>
 <div class="math notranslate nohighlight" id="equation-this-is-a-label">
-<span class="eqno">(3)<a class="headerlink" href="#equation-this-is-a-label" title="Permalink to this equation">¶</a></span>\[\nabla^2 f =
+<span class="eqno">(1)<a class="headerlink" href="#equation-this-is-a-label" title="公式的永久链接">¶</a></span>\[\nabla^2 f =
 \frac{1}{r^2} \frac{\partial}{\partial r}
 \left( r^2 \frac{\partial f}{\partial r} \right) +
 \frac{1}{r^2 \sin \theta} \frac{\partial f}{\partial \theta}
 \left( \sin \theta \, \frac{\partial f}{\partial \theta} \right) +
 \frac{1}{r^2 \sin^2\theta} \frac{\partial^2 f}{\partial \phi^2}\]</div>
-<p>You can add a link to equations like the one above <a class="reference internal" href="#equation-this-is-a-label">(3)</a> by using <code class="docutils literal notranslate"><span class="pre">:eq:</span></code>.</p>
+<p>You can add a link to equations like the one above <a class="reference internal" href="#equation-this-is-a-label">(1)</a> by using <code class="docutils literal notranslate"><span class="pre">:eq:</span></code>.</p>
 </div>
 <div class="section" id="meta">
-<h2>Meta<a class="headerlink" href="#meta" title="Permalink to this headline">¶</a></h2>
+<h2>Meta<a class="headerlink" href="#meta" title="永久链接至标题">¶</a></h2>
 </div>
 <div class="section" id="blocks">
-<h2>Blocks<a class="headerlink" href="#blocks" title="Permalink to this headline">¶</a></h2>
+<h2>Blocks<a class="headerlink" href="#blocks" title="永久链接至标题">¶</a></h2>
 <div class="section" id="literal-blocks">
-<h3>Literal Blocks<a class="headerlink" href="#literal-blocks" title="Permalink to this headline">¶</a></h3>
+<h3>Literal Blocks<a class="headerlink" href="#literal-blocks" title="永久链接至标题">¶</a></h3>
 <p>Literal blocks are indicated with a double-colon (“::”) at the end of
 the preceding paragraph (over there <code class="docutils literal notranslate"><span class="pre">--&gt;</span></code>).  They can be indented:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">literal_block</span><span class="p">:</span>
@@ -583,7 +829,7 @@ the preceding paragraph (over there <code class="docutils literal notranslate"><
 </div>
 </div>
 <div class="section" id="line-blocks">
-<h3>Line Blocks<a class="headerlink" href="#line-blocks" title="Permalink to this headline">¶</a></h3>
+<h3>Line Blocks<a class="headerlink" href="#line-blocks" title="永久链接至标题">¶</a></h3>
 <div class="line-block">
 <div class="line">This is a line block.  It ends with a blank line.</div>
 <div class="line-block">
@@ -632,7 +878,7 @@ the left edge of the text above it.</div>
 </div></blockquote>
 </div>
 <div class="section" id="block-quotes">
-<h3>Block Quotes<a class="headerlink" href="#block-quotes" title="Permalink to this headline">¶</a></h3>
+<h3>Block Quotes<a class="headerlink" href="#block-quotes" title="永久链接至标题">¶</a></h3>
 <p>Block quotes consist of indented body elements:</p>
 <blockquote>
 <div><p>My theory by A. Elk.  Brackets Miss, brackets.  This theory goes
@@ -644,7 +890,7 @@ own it, and what it is too.</p>
 </div></blockquote>
 </div>
 <div class="section" id="doctest-blocks">
-<h3>Doctest Blocks<a class="headerlink" href="#doctest-blocks" title="Permalink to this headline">¶</a></h3>
+<h3>Doctest Blocks<a class="headerlink" href="#doctest-blocks" title="永久链接至标题">¶</a></h3>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s1">&#39;Python-specific usage examples; begun with &quot;&gt;&gt;&gt;&quot;&#39;</span>
 <span class="go">Python-specific usage examples; begun with &quot;&gt;&gt;&gt;&quot;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s1">&#39;(cut and pasted from interactive Python sessions)&#39;</span>
@@ -653,36 +899,36 @@ own it, and what it is too.</p>
 </div>
 </div>
 <div class="section" id="code-blocks">
-<h3>Code Blocks<a class="headerlink" href="#code-blocks" title="Permalink to this headline">¶</a></h3>
+<h3>Code Blocks<a class="headerlink" href="#code-blocks" title="永久链接至标题">¶</a></h3>
 <pre class="literal-block"># parsed-literal test
 curl -O <a class="reference external" href="http://someurl/release">http://someurl/release</a>-.tar-gz</pre>
-<div class="literal-block-wrapper docutils container" id="id22">
-<div class="code-block-caption"><span class="caption-number">Listing 1 </span><span class="caption-text">Code Blocks can have captions.</span><a class="headerlink" href="#id22" title="Permalink to this code">¶</a></div>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="nt">&quot;windows&quot;</span><span class="p">:</span> <span class="p">[</span>
-    <span class="p">{</span>
-    <span class="nt">&quot;panes&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="p">{</span>
-        <span class="nt">&quot;shell_command&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;echo &#39;did you know&#39;&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;echo &#39;you can inline&#39;&quot;</span>
-        <span class="p">]</span>
-        <span class="p">},</span>
-        <span class="p">{</span>
-        <span class="nt">&quot;shell_command&quot;</span><span class="p">:</span> <span class="s2">&quot;echo &#39;single commands&#39;&quot;</span>
-        <span class="p">},</span>
-        <span class="s2">&quot;echo &#39;for panes&#39;&quot;</span>
-    <span class="p">],</span>
-    <span class="nt">&quot;window_name&quot;</span><span class="p">:</span> <span class="s2">&quot;long form&quot;</span>
-    <span class="p">}</span>
-<span class="p">],</span>
-<span class="nt">&quot;session_name&quot;</span><span class="p">:</span> <span class="s2">&quot;shorthands&quot;</span>
-<span class="p">}</span>
+<div class="literal-block-wrapper docutils container" id="id23">
+<div class="code-block-caption"><span class="caption-number">列表 1 </span><span class="caption-text">Code Blocks can have captions.</span><a class="headerlink" href="#id23" title="永久链接至代码">¶</a></div>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="nt">&quot;windows&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;panes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;shell_command&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">            </span><span class="s2">&quot;echo &#39;did you know&#39;&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="s2">&quot;echo &#39;you can inline&#39;&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="p">]</span><span class="w"></span>
+<span class="w">        </span><span class="p">},</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;shell_command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;echo &#39;single commands&#39;&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="p">},</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;echo &#39;for panes&#39;&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">],</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;window_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;long form&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">],</span><span class="w"></span>
+<span class="nt">&quot;session_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;shorthands&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="emphasized-lines-with-line-numbers">
-<h4>Emphasized lines with line numbers<a class="headerlink" href="#emphasized-lines-with-line-numbers" title="Permalink to this headline">¶</a></h4>
+<h4>Emphasized lines with line numbers<a class="headerlink" href="#emphasized-lines-with-line-numbers" title="永久链接至标题">¶</a></h4>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">def</span> <span class="nf">some_function</span><span class="p">():</span>
 <span class="linenos">2</span>    <span class="n">interesting</span> <span class="o">=</span> <span class="kc">False</span>
 <span class="hll"><span class="linenos">3</span>    <span class="nb">print</span> <span class="s1">&#39;This line is highlighted.&#39;</span>
@@ -694,7 +940,7 @@ curl -O <a class="reference external" href="http://someurl/release">http://someu
 </div>
 </div>
 <div class="section" id="sidebar">
-<h2>Sidebar<a class="headerlink" href="#sidebar" title="Permalink to this headline">¶</a></h2>
+<h2>Sidebar<a class="headerlink" href="#sidebar" title="永久链接至标题">¶</a></h2>
 <div class="sidebar">
 <p class="sidebar-title">Ch’ien / The Creative</p>
 <img alt="https://source.unsplash.com/200x200/daily?cute+animals" src="https://source.unsplash.com/200x200/daily?cute+animals" />
@@ -712,13 +958,13 @@ on the universe and of its action on the world of men. In relation to the univer
 creative action of the Deity. In relation to the human world, it denotes the creative action of the holy man or sage,
 of the ruler or leader of men, who through his power awakens and develops their higher nature.</p>
 <div class="section" id="code-with-sidebar">
-<h3>Code with Sidebar<a class="headerlink" href="#code-with-sidebar" title="Permalink to this headline">¶</a></h3>
+<h3>Code with Sidebar<a class="headerlink" href="#code-with-sidebar" title="永久链接至标题">¶</a></h3>
 <div class="sidebar">
 <p class="sidebar-title">A code example</p>
 <p>With a sidebar on the right.</p>
 </div>
-<div class="literal-block-wrapper docutils container" id="id23">
-<div class="code-block-caption"><span class="caption-number">Listing 2 </span><span class="caption-text">Literal includes can also have captions.</span><a class="headerlink" href="#id23" title="Permalink to this code">¶</a></div>
+<div class="literal-block-wrapper docutils container" id="id24">
+<div class="code-block-caption"><span class="caption-number">列表 2 </span><span class="caption-text">Literal includes can also have captions.</span><a class="headerlink" href="#id24" title="永久链接至代码">¶</a></div>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="gh">``asyncio``</span>
 <span class="linenos">2</span><span class="gh">===========</span>
 <span class="linenos">3</span>
@@ -730,9 +976,9 @@ of the ruler or leader of men, who through his power awakens and develops their 
 </div>
 </div>
 <div class="section" id="references">
-<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<h2>References<a class="headerlink" href="#references" title="永久链接至标题">¶</a></h2>
 <div class="section" id="footnotes">
-<h3>Footnotes<a class="headerlink" href="#footnotes" title="Permalink to this headline">¶</a></h3>
+<h3>Footnotes<a class="headerlink" href="#footnotes" title="永久链接至标题">¶</a></h3>
 <dl class="footnote brackets">
 <dt class="label" id="id6"><span class="brackets">1</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id7">2</a>)</span></dt>
 <dd><p>A footnote contains body elements, consistently indented by at
@@ -759,12 +1005,12 @@ Here’s a reference to the next footnote: <a class="footnote-reference brackets
 </dd>
 <dt class="label" id="id13"><span class="brackets">4</span></dt>
 <dd><p>Here’s an unreferenced footnote, with a reference to a
-nonexistent footnote: <a href="#id41"><span class="problematic" id="id14">[5]_</span></a>.</p>
+nonexistent footnote: <a href="#id42"><span class="problematic" id="id14">[5]_</span></a>.</p>
 </dd>
 </dl>
 </div>
 <div class="section" id="citations">
-<h3>Citations<a class="headerlink" href="#citations" title="Permalink to this headline">¶</a></h3>
+<h3>Citations<a class="headerlink" href="#citations" title="永久链接至标题">¶</a></h3>
 <dl class="footnote brackets">
 <dt class="label" id="id15"><span class="brackets">11</span></dt>
 <dd><p>This is the citation I made, let’s make this extremely long so that we can tell that it doesn’t follow the normal responsive table stuff.</p>
@@ -781,7 +1027,7 @@ nonexistent footnote: <a href="#id41"><span class="problematic" id="id14">[5]_</
 <p>Here is another type of citation: <cite>citation</cite></p>
 </div>
 <div class="section" id="glossary">
-<h3>Glossary<a class="headerlink" href="#glossary" title="Permalink to this headline">¶</a></h3>
+<h3>Glossary<a class="headerlink" href="#glossary" title="永久链接至标题">¶</a></h3>
 <p>This is a glossary with definition terms for thing like <a class="reference internal" href="#term-Writing"><span class="xref std std-term">Writing</span></a>:</p>
 <dl class="glossary simple">
 <dt id="term-Documentation">Documentation<a class="headerlink" href="#term-Documentation" title="Permalink to this term">¶</a></dt><dd><p>Provides users with the knowledge they need to use something.</p>
@@ -793,34 +1039,34 @@ nonexistent footnote: <a href="#id41"><span class="problematic" id="id14">[5]_</
 </dl>
 </div>
 <div class="section" id="targets">
-<h3>Targets<a class="headerlink" href="#targets" title="Permalink to this headline">¶</a></h3>
+<h3>Targets<a class="headerlink" href="#targets" title="永久链接至标题">¶</a></h3>
 <p id="example">This paragraph is pointed to by the explicit “example” target.
 A reference can be found under <a class="reference internal" href="#inline-markup">Inline Markup</a>, above. <a class="reference internal" href="#inline-hyperlink-targets">Inline
 hyperlink targets</a> are also possible.</p>
 <p>Section headers are implicit targets, referred to by name. See
-<a class="reference internal" href="#targets">Targets</a>, which is a subsection of <a href="#id42"><span class="problematic" id="id43">`Body Elements`_</span></a>.</p>
-<p>Explicit external targets are interpolated into references such as “<a class="reference external" href="http://www.python.org/">Python</a> <a class="footnote-reference brackets" href="#id28" id="id30">5</a>”.</p>
+<a class="reference internal" href="#targets">Targets</a>, which is a subsection of <a href="#id43"><span class="problematic" id="id44">`Body Elements`_</span></a>.</p>
+<p>Explicit external targets are interpolated into references such as “<a class="reference external" href="http://www.python.org/">Python</a> <a class="footnote-reference brackets" href="#id29" id="id31">5</a>”.</p>
 <p>Targets may be indirect and anonymous.  Thus <a class="reference internal" href="#targets">this phrase</a> may also
 refer to the <a class="reference internal" href="#targets">Targets</a> section.</p>
-<p>Here’s a <a href="#id44"><span class="problematic" id="id45">`hyperlink reference without a target`_</span></a>, which generates an error.</p>
+<p>Here’s a <a href="#id45"><span class="problematic" id="id46">`hyperlink reference without a target`_</span></a>, which generates an error.</p>
 </div>
 </div>
 <div class="section" id="directives">
-<h2>Directives<a class="headerlink" href="#directives" title="Permalink to this headline">¶</a></h2>
-<div class="contents local topic" id="contents">
+<h2>Directives<a class="headerlink" href="#directives" title="永久链接至标题">¶</a></h2>
+<div class="contents local topic" id="id22">
 <ul class="simple">
-<li><p><a class="reference internal" href="#centered-text" id="id32">Centered text</a></p></li>
-<li><p><a class="reference internal" href="#images-figures" id="id33">Images &amp; Figures</a></p>
+<li><p><a class="reference internal" href="#centered-text" id="id33">Centered text</a></p></li>
+<li><p><a class="reference internal" href="#images-figures" id="id34">Images &amp; Figures</a></p>
 <ul>
-<li><p><a class="reference internal" href="#images" id="id34">Images</a></p></li>
-<li><p><a class="reference internal" href="#figures" id="id35">Figures</a></p></li>
+<li><p><a class="reference internal" href="#images" id="id35">Images</a></p></li>
+<li><p><a class="reference internal" href="#figures" id="id36">Figures</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#admonitions" id="id36">Admonitions</a></p></li>
-<li><p><a class="reference internal" href="#topics-sidebars-and-rubrics" id="id37">Topics, Sidebars, and Rubrics</a></p></li>
-<li><p><a class="reference internal" href="#target-footnotes" id="id38">Target Footnotes</a></p></li>
-<li><p><a class="reference internal" href="#replacement-text" id="id39">Replacement Text</a></p></li>
-<li><p><a class="reference internal" href="#compound-paragraph" id="id40">Compound Paragraph</a></p></li>
+<li><p><a class="reference internal" href="#admonitions" id="id37">Admonitions</a></p></li>
+<li><p><a class="reference internal" href="#topics-sidebars-and-rubrics" id="id38">Topics, Sidebars, and Rubrics</a></p></li>
+<li><p><a class="reference internal" href="#target-footnotes" id="id39">Target Footnotes</a></p></li>
+<li><p><a class="reference internal" href="#replacement-text" id="id40">Replacement Text</a></p></li>
+<li><p><a class="reference internal" href="#compound-paragraph" id="id41">Compound Paragraph</a></p></li>
 </ul>
 </div>
 <p>Above mini table of contents is generated by the <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">contents::</span></code> directive.
@@ -828,22 +1074,22 @@ It and all the other directives presented here are just a sample of the many
 reStructuredText Directives. For others, please see:
 <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html">http://docutils.sourceforge.net/docs/ref/rst/directives.html</a>.</p>
 <div class="section" id="centered-text">
-<h3><a class="toc-backref" href="#id32">Centered text</a><a class="headerlink" href="#centered-text" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id33">Centered text</a><a class="headerlink" href="#centered-text" title="永久链接至标题">¶</a></h3>
 <p>You can create a statement with centered text with <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">centered::</span></code></p>
 <p class="centered">
 <strong>This is centered text!</strong></p></div>
 <div class="section" id="images-figures">
-<h3><a class="toc-backref" href="#id33">Images &amp; Figures</a><a class="headerlink" href="#images-figures" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id34">Images &amp; Figures</a><a class="headerlink" href="#images-figures" title="永久链接至标题">¶</a></h3>
 <div class="section" id="images">
-<h4><a class="toc-backref" href="#id34">Images</a><a class="headerlink" href="#images" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id35">Images</a><a class="headerlink" href="#images" title="永久链接至标题">¶</a></h4>
 <p>An image directive (also clickable – a hyperlink reference):</p>
 <a class="reference internal image-reference" href="#directives"><img alt="https://source.unsplash.com/200x200/daily?cute+animals" src="https://source.unsplash.com/200x200/daily?cute+animals" /></a>
 </div>
 <div class="section" id="figures">
-<h4><a class="toc-backref" href="#id35">Figures</a><a class="headerlink" href="#figures" title="Permalink to this headline">¶</a></h4>
-<div class="figure align-default" id="id24">
+<h4><a class="toc-backref" href="#id36">Figures</a><a class="headerlink" href="#figures" title="永久链接至标题">¶</a></h4>
+<div class="figure align-default" id="id25">
 <img alt="reStructuredText, the markup syntax" src="https://source.unsplash.com/200x200/daily?cute+animals" />
-<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">A figure is an image with a caption and/or a legend:</span><a class="headerlink" href="#id24" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">图 3 </span><span class="caption-text">A figure is an image with a caption and/or a legend:</span><a class="headerlink" href="#id25" title="永久链接至图片">¶</a></p>
 <div class="legend">
 <table class="table">
 <colgroup>
@@ -866,36 +1112,36 @@ reStructuredText Directives. For others, please see:
 </div>
 </div>
 <p>A figure directive with center alignment</p>
-<div class="figure align-center" id="id25">
+<div class="figure align-center" id="id26">
 <img alt="https://source.unsplash.com/200x200/daily?cute+animals" src="https://source.unsplash.com/200x200/daily?cute+animals" />
-<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">This caption should be centered.</span><a class="headerlink" href="#id25" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">图 4 </span><span class="caption-text">This caption should be centered.</span><a class="headerlink" href="#id26" title="永久链接至图片">¶</a></p>
 </div>
 </div>
 </div>
 <div class="section" id="admonitions">
-<h3><a class="toc-backref" href="#id36">Admonitions</a><a class="headerlink" href="#admonitions" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id37">Admonitions</a><a class="headerlink" href="#admonitions" title="永久链接至标题">¶</a></h3>
 <div class="admonition attention">
-<p class="admonition-title">Attention</p>
+<p class="admonition-title">注意</p>
 <p>Directives at large.</p>
 </div>
 <div class="admonition caution">
-<p class="admonition-title">Caution</p>
+<p class="admonition-title">小心</p>
 <p>Don’t take any wooden nickels.</p>
 </div>
 <div class="admonition danger">
-<p class="admonition-title">Danger</p>
+<p class="admonition-title">危险</p>
 <p>Mad scientist at work!</p>
 </div>
 <div class="admonition error">
-<p class="admonition-title">Error</p>
+<p class="admonition-title">错误</p>
 <p>Does not compute.</p>
 </div>
 <div class="admonition hint">
-<p class="admonition-title">Hint</p>
+<p class="admonition-title">提示</p>
 <p>It’s bigger than a bread box.</p>
 </div>
 <div class="admonition important">
-<p class="admonition-title">Important</p>
+<p class="admonition-title">重要</p>
 <ul class="simple">
 <li><p>Wash behind your ears.</p></li>
 <li><p>Clean up your room.</p>
@@ -914,13 +1160,13 @@ reStructuredText Directives. For others, please see:
 </ul>
 </div>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">备注</p>
 <p>This is a note.
 Equations within a note:
 <span class="math notranslate nohighlight">\(G_{\mu\nu} = 8 \pi G (T_{\mu\nu}  + \rho_\Lambda g_{\mu\nu})\)</span>.</p>
 </div>
 <div class="admonition tip">
-<p class="admonition-title">Tip</p>
+<p class="admonition-title">小技巧</p>
 <p>15% if the service is good.</p>
 <table class="table">
 <colgroup>
@@ -941,7 +1187,7 @@ Equations within a note:
 </table>
 </div>
 <div class="admonition warning">
-<p class="admonition-title">Warning</p>
+<p class="admonition-title">警告</p>
 <p>Strong prose may provoke extreme mental exertion.
 Reader discretion is strongly advised.</p>
 </div>
@@ -951,7 +1197,7 @@ Reader discretion is strongly advised.</p>
 </div>
 </div>
 <div class="section" id="topics-sidebars-and-rubrics">
-<h3><a class="toc-backref" href="#id37">Topics, Sidebars, and Rubrics</a><a class="headerlink" href="#topics-sidebars-and-rubrics" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id38">Topics, Sidebars, and Rubrics</a><a class="headerlink" href="#topics-sidebars-and-rubrics" title="永久链接至标题">¶</a></h3>
 <div class="sidebar">
 <p class="sidebar-title">Sidebar Title</p>
 <p class="sidebar-subtitle">Optional Subtitle</p>
@@ -968,19 +1214,19 @@ background color.</p>
 <p class="rubric">This is a rubric</p>
 </div>
 <div class="section" id="target-footnotes">
-<h3><a class="toc-backref" href="#id38">Target Footnotes</a><a class="headerlink" href="#target-footnotes" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id39">Target Footnotes</a><a class="headerlink" href="#target-footnotes" title="永久链接至标题">¶</a></h3>
 <dl class="footnote brackets">
-<dt class="label" id="id28"><span class="brackets">5</span><span class="fn-backref">(<a href="#id29">1</a>,<a href="#id30">2</a>,<a href="#id31">3</a>)</span></dt>
+<dt class="label" id="id29"><span class="brackets">5</span><span class="fn-backref">(<a href="#id30">1</a>,<a href="#id31">2</a>,<a href="#id32">3</a>)</span></dt>
 <dd><p><a class="reference external" href="http://www.python.org/">http://www.python.org/</a></p>
 </dd>
 </dl>
 </div>
 <div class="section" id="replacement-text">
-<h3><a class="toc-backref" href="#id39">Replacement Text</a><a class="headerlink" href="#replacement-text" title="Permalink to this headline">¶</a></h3>
-<p>I recommend you try <a class="reference external" href="http://www.python.org/">Python, <em>the</em> best language around</a> <a class="footnote-reference brackets" href="#id28" id="id31">5</a>.</p>
+<h3><a class="toc-backref" href="#id40">Replacement Text</a><a class="headerlink" href="#replacement-text" title="永久链接至标题">¶</a></h3>
+<p>I recommend you try <a class="reference external" href="http://www.python.org/">Python, <em>the</em> best language around</a> <a class="footnote-reference brackets" href="#id29" id="id32">5</a>.</p>
 </div>
 <div class="section" id="compound-paragraph">
-<h3><a class="toc-backref" href="#id40">Compound Paragraph</a><a class="headerlink" href="#compound-paragraph" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id41">Compound Paragraph</a><a class="headerlink" href="#compound-paragraph" title="永久链接至标题">¶</a></h3>
 <div class="compound">
 <p class="compound-first">This paragraph contains a literal block:</p>
 <div class="compound-middle highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Connecting</span><span class="o">...</span> <span class="n">OK</span>
@@ -997,7 +1243,7 @@ with the “compound” directive.</p>
 </div>
 </div>
 <div class="section" id="download-links">
-<h2>Download Links<a class="headerlink" href="#download-links" title="Permalink to this headline">¶</a></h2>
+<h2>Download Links<a class="headerlink" href="#download-links" title="永久链接至标题">¶</a></h2>
 <p><a class="reference download external" download="" href="https://source.unsplash.com/200x200/daily?cute+animals"><code class="xref download docutils literal notranslate"><span class="pre">This</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">download</span> <span class="pre">link</span> <span class="pre">should</span> <span class="pre">be</span> <span class="pre">blue,</span> <span class="pre">normal</span> <span class="pre">weight</span> <span class="pre">text</span> <span class="pre">with</span> <span class="pre">a</span> <span class="pre">leading</span> <span class="pre">icon,</span> <span class="pre">and</span> <span class="pre">should</span> <span class="pre">wrap</span> <span class="pre">white-spaces</span></code></a></p>
 </div>
 </div>
@@ -1027,45 +1273,52 @@ with the “compound” directive.</p>
 
               </div>
               
-        
-            <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="index.html" title="previous page">
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="index.html" title="上一页 页">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Kitchen Sink</p>
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">厨房的水槽</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="api.html" title="next page">
+    <a class='right-next' id="next-link" href="api.html" title="下一页 页">
     <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">API documentation</p>
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">API 文档</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-        
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By the Executable Book Project<br/>
-        
-            &copy; Copyright 2020.<br/>
-          Last updated on Nov 07, 2021.<br/>
-      </p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By the Executable Book Project<br/>
+  
+      &copy; Copyright 2020.<br/>
+    Last updated on 2022 年 02 月 23 日.<br/>
+</p>
+        </footer>
     </div>
-  </footer>
-</main>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  
+    <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  
+  
+  <script src="../../_static/scripts/sphinx-book-theme.js?digest=d39d74a9f498dbb5016c"></script>
+
 
   </body>
 </html>

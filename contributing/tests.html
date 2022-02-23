@@ -1,0 +1,712 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta property="og:title" content="Testing infrastructure" />
+  
+<meta property="og:type" content="website" />
+  
+<meta property="og:url" content="contributing/tests.html" />
+  
+<meta property="og:description" content="Our testing infrastructure uses pytest Run the tests with a single environment: You can run the test suite with the default environment like so: You can specify a specific environment like so: List..." />
+  
+    <title>Testing infrastructure &#8212; Sphinx Book Theme</title>
+    
+    
+    <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  
+    
+    <link rel="stylesheet"
+      href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+    
+      
+  
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.59c74d8c95b765a7fd995ac71d459ebe.min.css" />
+    
+    <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  
+    
+  <link href="../_static/styles/sphinx-book-theme.css?digest=d39d74a9f498dbb5016c" rel="stylesheet">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../_static/logo-square.svg"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Translation workflow" href="translate.html" />
+    <link rel="prev" title="Style and design" href="style.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
+     
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../reference/blog/atom.xml"
+  title="Blog"
+/>
+ 
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint">⚠️The latest release refactored our HTML, so double-check your custom CSS rules!⚠️</div>
+<div class="header header-item noprint"><!-- Uncomment the line below to show off a header! -->
+<!-- Hello world! --></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="pl-4 pr-3 bd-sidebar site-navigation noprint " id="site-navigation">
+    <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo-wide.svg" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  专题区域
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tutorials/get-started.html">
+   开始行动
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../customize/index.html">
+   定制
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../customize/sidebar-primary.html">
+     定制主侧栏
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../customize/sidebar-secondary.html">
+     定制二级侧边栏
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../customize/announcements.html">
+     Announcement banners
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../customize/header.html">
+     Header content
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../customize/download.html">
+     添加一个下载页面的按钮
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../customize/source-files.html">
+     添加按钮以链接到你的来源
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../customize/custom-css.html">
+     加入你自己的 CSS 规则
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../customize/single-page.html">
+     使用该主题的单页版本
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../content-blocks.html">
+   特殊内容块
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notebooks.html">
+   Jupyter 笔记本
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../launch.html">
+   用于交互的启动按钮
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
+   Contribute to this theme
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="setup.html">
+     Set up your development workflow
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="architecture.html">
+     Architecture of the repository
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="style.html">
+     Style and design
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Testing infrastructure
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="translate.html">
+     Translation workflow
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  参考
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../reference/kitchen-sink/index.html">
+   厨房的水槽
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../reference/kitchen-sink/paragraph-markup.html">
+     示例
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../reference/kitchen-sink/api.html">
+     API 文档
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../reference/kitchen-sink/lists-and-tables.html">
+     列表和表格
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../reference/special-theme-elements.html">
+   特定主题的元素
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../reference/extensions.html">
+   Sphinx extension styles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../reference/notebooks.html">
+   Jupyter 笔记本
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../reference/thebe.html">
+   Thebe
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../reference/blog.html">
+   博客的参考
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../reference/api-numpy.html">
+   NumPy docstrings
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+<div class="col py-1 d-flex topbar-main">
+    <div class="topbar-left">
+        
+        <label class="nav-toggle-button topbarbtn" for="__navigation">
+            <div class="visually-hidden">Toggle navigation</div>
+            <i class="fas fa-bars"></i>
+        </label>
+        
+    </div>
+    <div class="topbar-right">
+        <!-- Launch buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button class="topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/sphinx-book-theme"><button type="button" class="topbarbtn--wide"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/sphinx-book-theme/issues/new?title=Issue%20on%20page%20%2Fcontributing/tests.html&body=Your%20issue%20content%20here."><button
+                type="button" class="topbarbtn--wide" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/executablebooks/sphinx-book-theme/edit/master/docs/contributing/tests.md"><button
+                type="button" class="topbarbtn--wide" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+        
+<div class="dropdown-buttons-trigger sb-download-buttons">
+    <button class="topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/contributing/tests.md"><button type="button"
+                class="topbarbtn--wide" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="topbarbtn--wide" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <label class="d-block d-md-none nav-toggle-button topbarbtn" for="__page-toc">
+  <div class="visually-hidden">Toggle Table of Contents</div>
+  <i class="fas fa-list"></i>
+</label>
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#run-the-tests-with-a-single-environment">
+   Run the tests with a single environment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#list-all-test-environments">
+   List all test environments
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#supply-arguments-to-pytest">
+   Supply arguments to pytest
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#re-build-an-environment-from-scratch">
+   Re-build an environment from scratch
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#test-audits-with-lighthouse">
+   Test audits with lighthouse
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#test-multiple-sphinx-versions">
+   Test multiple Sphinx versions
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#unit-tests">
+     Unit tests
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#regression-tests">
+     Regression tests
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Testing infrastructure</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#run-the-tests-with-a-single-environment">
+   Run the tests with a single environment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#list-all-test-environments">
+   List all test environments
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#supply-arguments-to-pytest">
+   Supply arguments to pytest
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#re-build-an-environment-from-scratch">
+   Re-build an environment from scratch
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#test-audits-with-lighthouse">
+   Test audits with lighthouse
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#test-multiple-sphinx-versions">
+   Test multiple Sphinx versions
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#unit-tests">
+     Unit tests
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#regression-tests">
+     Regression tests
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                 <div class="tex2jax_ignore mathjax_ignore section" id="testing-infrastructure">
+<span id="contribute-testing"></span><h1>Testing infrastructure<a class="headerlink" href="#testing-infrastructure" title="永久链接至标题">¶</a></h1>
+<p>Our testing infrastructure uses pytest</p>
+<div class="section" id="run-the-tests-with-a-single-environment">
+<h2>Run the tests with a single environment<a class="headerlink" href="#run-the-tests-with-a-single-environment" title="永久链接至标题">¶</a></h2>
+<p>You can run the test suite with the default environment like so:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>tox
+</pre></div>
+</div>
+<p>You can specify a specific environment like so:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp"># </span>Run the tests with Python <span class="m">3</span>.9, Sphinx <span class="m">4</span>
+<span class="gp">$ </span>tox -e py39-sphinx4
+</pre></div>
+</div>
+</div>
+<div class="section" id="list-all-test-environments">
+<h2>List all test environments<a class="headerlink" href="#list-all-test-environments" title="永久链接至标题">¶</a></h2>
+<p>To list all of the test environments to may choose from, run:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>tox -a
+</pre></div>
+</div>
+<p>Each one corresponds to a test environment or a task to build the documentation, and has its own virtual environment.</p>
+<p>See the <code class="docutils literal notranslate"><span class="pre">tox.ini</span></code> file in the repository’s root for details of all available development environments.</p>
+</div>
+<div class="section" id="supply-arguments-to-pytest">
+<h2>Supply arguments to pytest<a class="headerlink" href="#supply-arguments-to-pytest" title="永久链接至标题">¶</a></h2>
+<p>To supply arguments to pytest, use <code class="docutils literal notranslate"><span class="pre">--</span></code> and pass arguments after.
+For example:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>tox -- -x
+</pre></div>
+</div>
+</div>
+<div class="section" id="re-build-an-environment-from-scratch">
+<h2>Re-build an environment from scratch<a class="headerlink" href="#re-build-an-environment-from-scratch" title="永久链接至标题">¶</a></h2>
+<p>By default, <code class="docutils literal notranslate"><span class="pre">tox</span></code> will only install the necessary environment <strong>once</strong>.
+If you’d like to force a re-build, use the <code class="docutils literal notranslate"><span class="pre">-r</span></code> parameter. For example:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>tox -r -e py38-sphinx3
+</pre></div>
+</div>
+</div>
+<div class="section" id="test-audits-with-lighthouse">
+<h2>Test audits with lighthouse<a class="headerlink" href="#test-audits-with-lighthouse" title="永久链接至标题">¶</a></h2>
+<p>This theme uses the <a class="reference external" href="https://github.com/treosh/lighthouse-ci-action"><code class="docutils literal notranslate"><span class="pre">treosh/lighthouse-ci-action</span></code></a> to run some basic audits on our performance, accessibility, etc.</p>
+<p>To preview the output of these tests:</p>
+<ul class="simple">
+<li><p>Click on the <code class="docutils literal notranslate"><span class="pre">docs-audit</span></code> GitHub Action job from a Pull Request.</p></li>
+<li><p>Scroll to the “Audit with Lighthouse” section</p></li>
+<li><p>If there are errors, you should see them along with the link to preview the report at <code class="docutils literal notranslate"><span class="pre">report:</span> <span class="pre">&lt;URL</span> <span class="pre">TO</span> <span class="pre">PAGE&gt;</span></code>.</p></li>
+<li><p>If there are not errors, you can list them by clicking the <code class="docutils literal notranslate"><span class="pre">uploading</span></code> section, which will reveal links to the report for each page</p></li>
+</ul>
+</div>
+<div class="section" id="test-multiple-sphinx-versions">
+<h2>Test multiple Sphinx versions<a class="headerlink" href="#test-multiple-sphinx-versions" title="永久链接至标题">¶</a></h2>
+<p>This theme is tested against the latest two major versions of Sphinx.
+We try to set up our regression tests such that there are no differences between these two Sphinx versions.</p>
+<div class="section" id="unit-tests">
+<h3>Unit tests<a class="headerlink" href="#unit-tests" title="永久链接至标题">¶</a></h3>
+<p>Use the variable <code class="docutils literal notranslate"><span class="pre">sphinx_build.software_versions</span></code> to conditionally run tests based on the version of Sphinx.</p>
+<p>For example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">sphinx_build</span><span class="o">.</span><span class="n">software_versions</span> <span class="o">==</span> <span class="s2">&quot;.sphinx3&quot;</span><span class="p">:</span>
+   <span class="n">foo</span>
+<span class="k">elif</span> <span class="n">sphinx_build</span><span class="o">.</span><span class="n">software_versions</span> <span class="o">==</span> <span class="s2">&quot;.sphinx4&quot;</span><span class="p">:</span>
+   <span class="n">bar</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="regression-tests">
+<h3>Regression tests<a class="headerlink" href="#regression-tests" title="永久链接至标题">¶</a></h3>
+<p>Regression tests are trickier, because updating them generally requires re-running the tests, not hand-editing code.
+This is cumbersome for maintenance because we have to run the test suite two times for each regression that is updated.
+For this reason, we have a more lightweight approach:</p>
+<p><strong>If a regression test differs between Sphinx versions</strong>, decide if the difference is substantial.
+Do we gain something meaningful by testing both major versions of Sphinx, or is the difference unrelated to our theme’s functionality?</p>
+<ol>
+<li><p><strong>If not substantial</strong>, then add a conditional and only run the regression test on the latest Sphinx version we support.
+Add a note to explain why you’re only testing against one version of Sphinx.</p>
+<p>For example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">sphinx_build</span><span class="o">.</span><span class="n">software_versions</span> <span class="o">==</span> <span class="s2">&quot;.sphinx4&quot;</span><span class="p">:</span>
+    <span class="c1"># Only Sphinx4 because Sphinx3 adds an extra whitespace and isn&#39;t important</span>
+    <span class="n">file_regression</span><span class="o">.</span><span class="n">check</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>If it is substantial</strong>, follow these steps:</p>
+<p>To support multiple Sphinx versions with regression tests, use the <code class="docutils literal notranslate"><span class="pre">extension</span></code> key to create a different regression file for that version of Sphinx.
+For example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">file_regression</span><span class="o">.</span><span class="n">check</span><span class="p">(</span>
+  <span class="n">html</span><span class="o">.</span><span class="n">prettify</span><span class="p">(),</span>
+  <span class="n">basename</span><span class="o">=</span><span class="s2">&quot;foo&quot;</span><span class="p">,</span>
+  <span class="n">extension</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">sphinx_build</span><span class="o">.</span><span class="n">software_versions</span><span class="si">}</span><span class="s2">.html&quot;</span><span class="p">,</span>
+  <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf8&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./contributing"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+<div class="section">
+   
+</div>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="style.html" title="上一页 页">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">Style and design</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="translate.html" title="下一页 页">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">Translation workflow</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By the Executable Book Project<br/>
+  
+      &copy; Copyright 2020.<br/>
+    Last updated on 2022 年 02 月 23 日.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  
+    <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  
+  
+  <script src="../_static/scripts/sphinx-book-theme.js?digest=d39d74a9f498dbb5016c"></script>
+
+
+  </body>
+</html>

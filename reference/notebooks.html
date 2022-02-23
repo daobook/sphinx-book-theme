@@ -1,66 +1,78 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="zh_CN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:title" content="Jupyter notebooks" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="reference/notebooks.html" />
-  <meta property="og:description" content="This is a page to demonstrate the look and feel of Jupyter Notebook elements. Hiding elements: Hiding inputs:# Hide input square = np.random.randn(100, 100) wide = np.random.randn(100, 1000) fig, a..." />
+<meta property="og:title" content="Jupyter 笔记本" />
   
-    <title>Jupyter notebooks &#8212; Sphinx Book Theme</title>
+<meta property="og:type" content="website" />
+  
+<meta property="og:url" content="reference/notebooks.html" />
+  
+<meta property="og:description" content="这是一个展示 Jupyter 笔记本元素的外观和感觉的页面。 隐藏的元素: 隐藏输入: 隐藏输出: 隐藏 Markdown: 隐藏输入与输出: 隐藏整个单元格: 富文本输出: 数学:\displaystyle \sum_{i=0}^n i^2 = rac{(n^2+n)(2n+1)}{6} Pandas 数据库: 风格化的数据框架（见 Pandas 风格化文档). 交互式输出: Foliu..." />
+  
+    <title>Jupyter 笔记本 &#8212; Sphinx Book Theme</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
-
     
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-
+    <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  
+    
+    <link rel="stylesheet"
+      href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
     
       
-
+  
     
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.59c74d8c95b765a7fd995ac71d459ebe.min.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+    <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  
+    
+  <link href="../_static/styles/sphinx-book-theme.css?digest=d39d74a9f498dbb5016c" rel="stylesheet">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe,.cell"
-        const thebe_selector_input = "pre,.cell_input div.highlight"
-        const thebe_selector_output = ".output,.cell_output"
-    </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="shortcut icon" href="../_static/logo-square.svg"/>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
     <link rel="next" title="Thebe" href="thebe.html" />
-    <link rel="prev" title="Lists &amp; Tables" href="kitchen-sink/lists-and-tables.html" /> 
+    <link rel="prev" title="Sphinx extension styles" href="extensions.html" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
+    <meta name="docsearch:language" content="zh_CN">
     
 
     <!-- Google Analytics -->
@@ -99,6 +111,21 @@
 
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint">⚠️The latest release refactored our HTML, so double-check your custom CSS rules!⚠️</div>
+<div class="header header-item noprint"><!-- Uncomment the line below to show off a header! -->
+<!-- Hello world! --></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -107,9 +134,9 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="pl-4 pr-3 bd-sidebar site-navigation noprint " id="site-navigation">
+    <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -127,18 +154,18 @@
     <div class="bd-toc-item active">
         <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Topic Areas
+  专题区域
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/get-started.html">
-   Get started
+   开始行动
   </a>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../customize/index.html">
-   Customization
+   定制
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -148,66 +175,64 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../customize/sidebar-primary.html">
-     Customize the primary sidebar
+     定制主侧栏
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../customize/sidebar-secondary.html">
-     Customize the secondary sidebar
+     定制二级侧边栏
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../customize/announcements.html">
+     Announcement banners
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../customize/header.html">
+     Header content
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../customize/download.html">
-     Add a download page button
+     添加一个下载页面的按钮
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../customize/source-files.html">
-     Add buttons to link to your source
+     添加按钮以链接到你的来源
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../customize/custom-css.html">
-     Add your own CSS rules
+     加入你自己的 CSS 规则
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../customize/single-page.html">
-     Use a single-page version of this theme
+     使用该主题的单页版本
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../content-blocks.html">
-   Special content blocks
+   特殊内容块
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../notebooks.html">
-   Jupyter notebooks
+   Jupyter 笔记本
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../launch.html">
-   Launch buttons for interactivity
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Reference
- </span>
-</p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="special-theme-elements.html">
-   Theme-specific elements
+   用于交互的启动按钮
   </a>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="kitchen-sink/index.html">
-   Kitchen Sink
+  <a class="reference internal" href="../contributing/index.html">
+   Contribute to this theme
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -216,25 +241,79 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="kitchen-sink/paragraph-markup.html">
-     Paragraph Level Markup
+    <a class="reference internal" href="../contributing/setup.html">
+     Set up your development workflow
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="kitchen-sink/api.html">
-     API documentation
+    <a class="reference internal" href="../contributing/architecture.html">
+     Architecture of the repository
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="kitchen-sink/lists-and-tables.html">
-     Lists &amp; Tables
+    <a class="reference internal" href="../contributing/style.html">
+     Style and design
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../contributing/tests.html">
+     Testing infrastructure
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../contributing/translate.html">
+     Translation workflow
     </a>
    </li>
   </ul>
  </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  参考
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="kitchen-sink/index.html">
+   厨房的水槽
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="kitchen-sink/paragraph-markup.html">
+     示例
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="kitchen-sink/api.html">
+     API 文档
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="kitchen-sink/lists-and-tables.html">
+     列表和表格
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="special-theme-elements.html">
+   特定主题的元素
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="extensions.html">
+   Sphinx extension styles
+  </a>
+ </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Jupyter notebooks
+   Jupyter 笔记本
   </a>
  </li>
  <li class="toctree-l1">
@@ -244,19 +323,12 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="blog.html">
-   Reference for Blog
+   博客的参考
   </a>
  </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  About the theme
- </span>
-</p>
-<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../contributing.html">
-   Contributing Guide
+  <a class="reference internal" href="api-numpy.html">
+   NumPy docstrings
   </a>
  </li>
 </ul>
@@ -275,154 +347,167 @@
 
 
           
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+<!-- Main content -->
+<div class="col py-0 content-container">
     
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
+    <div class="header-article row sticky-top noprint">
+        
 
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="../_sources/reference/notebooks.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/reference/notebooks.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+
+<div class="col py-1 d-flex topbar-main">
+    <div class="topbar-left">
+        
+        <label class="nav-toggle-button topbarbtn" for="__navigation">
+            <div class="visually-hidden">Toggle navigation</div>
+            <i class="fas fa-bars"></i>
+        </label>
+        
     </div>
-</div>
+    <div class="topbar-right">
+        <!-- Launch buttons -->
 
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/daobook/sphinx-book-theme"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/daobook/sphinx-book-theme/issues/new?title=Issue%20on%20page%20%2Freference/notebooks.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/daobook/sphinx-book-theme/edit/main/docs/reference/notebooks.md"><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
-    </div>
-</div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
 
 <div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+    <button class="topbarbtn"
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/sphinx-book-theme/master?urlpath=lab/tree/docs/reference/notebooks.md">
+    <button type="button"
+        class="topbarbtn--wide"
+        title="Launch on Binder"
+        data-toggle="tooltip"
+        data-placement="left">
+    <img class="binder-button-logo"
+        src="../_static/images/logo_binder.svg"
+        alt="Launch on Binder">
+        Binder
+    </button>
+</a>
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/daobook/sphinx-book-theme/main?urlpath=lab/tree/docs/reference/notebooks.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
         
         
         
-        <button type="button" class="btn btn-secondary topbarbtn"
+        <button type="button" class="topbarbtn--wide"
             onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
                 class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
         
     </div>
 </div>
 
-        </div>
+        <!-- Full screen (wrap in <a> to have style consistency -->
 
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+<a class="full-screen-button"><button type="button" class="topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button class="topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/sphinx-book-theme"><button type="button" class="topbarbtn--wide"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/sphinx-book-theme/issues/new?title=Issue%20on%20page%20%2Freference/notebooks.html&body=Your%20issue%20content%20here."><button
+                type="button" class="topbarbtn--wide" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/executablebooks/sphinx-book-theme/edit/master/docs/reference/notebooks.md"><button
+                type="button" class="topbarbtn--wide" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+        
+<div class="dropdown-buttons-trigger sb-download-buttons">
+    <button class="topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/reference/notebooks.ipynb"><button type="button"
+                class="topbarbtn--wide" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/reference/notebooks.md"><button type="button"
+                class="topbarbtn--wide" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="topbarbtn--wide" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <label class="d-block d-md-none nav-toggle-button topbarbtn" for="__page-toc">
+  <div class="visually-hidden">Toggle Table of Contents</div>
+  <i class="fas fa-list"></i>
+</label>
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#hiding-elements">
-   Hiding elements
+   隐藏的元素
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#hiding-inputs">
-     Hiding inputs
+     隐藏输入
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#hiding-outputs">
-     Hiding outputs
+     隐藏输出
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#hiding-markdown">
-     Hiding markdown
+     隐藏 Markdown
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#hiding-both-inputs-and-outputs">
-     Hiding both inputs and outputs
+     隐藏输入与输出
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#hiding-the-whole-cell">
-     Hiding the whole cell
+     隐藏整个单元格
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#enriched-outputs">
-   Enriched outputs
+   富文本输出
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#math">
-     Math
+     数学
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#pandas-dataframes">
-     Pandas DataFrames
+     Pandas 数据库
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#interactive-outputs">
-   Interactive outputs
+   交互式输出
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -434,46 +519,147 @@
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#stdout">
-   Stdout
+   标准输出
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#formatting-code-cells">
-   Formatting code cells
+   格式化代码单元格
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#scrolling-cell-outputs">
-     Scrolling cell outputs
+     滚动单元格输出
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#scrolling-cell-inputs">
-     Scrolling cell inputs
+     滚动单元格输入
     </a>
    </li>
   </ul>
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Jupyter 笔记本</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hiding-elements">
+   隐藏的元素
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hiding-inputs">
+     隐藏输入
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hiding-outputs">
+     隐藏输出
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hiding-markdown">
+     隐藏 Markdown
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hiding-both-inputs-and-outputs">
+     隐藏输入与输出
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hiding-the-whole-cell">
+     隐藏整个单元格
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#enriched-outputs">
+   富文本输出
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#math">
+     数学
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pandas-dataframes">
+     Pandas 数据库
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interactive-outputs">
+   交互式输出
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#folium">
+     Folium
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#stdout">
+   标准输出
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#formatting-code-cells">
+   格式化代码单元格
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scrolling-cell-outputs">
+     滚动单元格输出
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scrolling-cell-inputs">
+     滚动单元格输入
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
               <div>
                  <div class="tex2jax_ignore mathjax_ignore section" id="jupyter-notebooks">
-<h1>Jupyter notebooks<a class="headerlink" href="#jupyter-notebooks" title="Permalink to this headline">¶</a></h1>
-<p>This is a page to demonstrate the look and feel of Jupyter Notebook elements.</p>
+<h1>Jupyter 笔记本<a class="headerlink" href="#jupyter-notebooks" title="永久链接至标题">¶</a></h1>
+<p>这是一个展示 Jupyter 笔记本元素的外观和感觉的页面。</p>
 <div class="section" id="hiding-elements">
-<h2>Hiding elements<a class="headerlink" href="#hiding-elements" title="Permalink to this headline">¶</a></h2>
+<h2>隐藏的元素<a class="headerlink" href="#hiding-elements" title="永久链接至标题">¶</a></h2>
 <div class="section" id="hiding-inputs">
-<h3>Hiding inputs<a class="headerlink" href="#hiding-inputs" title="Permalink to this headline">¶</a></h3>
+<h3>隐藏输入<a class="headerlink" href="#hiding-inputs" title="永久链接至标题">¶</a></h3>
 <div class="cell tag_hide_input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Hide input</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Hide input</span>
 <span class="n">square</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
 <span class="n">wide</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
 
@@ -484,14 +670,21 @@
 <span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">wide</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7fba4809fa90&gt;
+</pre></div>
+</div>
+<img alt="../_images/notebooks_2_1.png" src="../_images/notebooks_2_1.png" />
+<img alt="../_images/notebooks_2_2.png" src="../_images/notebooks_2_2.png" />
 </div>
 </div>
 </div>
 <div class="section" id="hiding-outputs">
-<h3>Hiding outputs<a class="headerlink" href="#hiding-outputs" title="Permalink to this headline">¶</a></h3>
+<h3>隐藏输出<a class="headerlink" href="#hiding-outputs" title="永久链接至标题">¶</a></h3>
 <div class="cell tag_hide_output docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Hide output</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Hide output</span>
 <span class="n">square</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
 <span class="n">wide</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
 
@@ -503,27 +696,34 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7fba41d569d0&gt;
+</pre></div>
+</div>
+<img alt="../_images/notebooks_4_1.png" src="../_images/notebooks_4_1.png" />
+<img alt="../_images/notebooks_4_2.png" src="../_images/notebooks_4_2.png" />
+</div>
 </div>
 </div>
 <div class="section" id="hiding-markdown">
-<h3>Hiding markdown<a class="headerlink" href="#hiding-markdown" title="Permalink to this headline">¶</a></h3>
+<h3>隐藏 Markdown<a class="headerlink" href="#hiding-markdown" title="永久链接至标题">¶</a></h3>
 <div class="toggle docutils container">
 <div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This is a hidden markdown cell</p>
-<p>It should be hidden!</p>
+<p class="admonition-title">备注</p>
+<p>这是一个隐藏的 Markdown 单元</p>
+<p>它应该被隐藏起来！</p>
 </div>
 </div>
 <div class="dropdown admonition">
-<p class="admonition-title">And here’s a toggleable note</p>
-<p>With a body!</p>
+<p class="admonition-title">这里有一个可切换的注解</p>
+<p>带有 body！</p>
 </div>
 </div>
 <div class="section" id="hiding-both-inputs-and-outputs">
-<h3>Hiding both inputs and outputs<a class="headerlink" href="#hiding-both-inputs-and-outputs" title="Permalink to this headline">¶</a></h3>
+<h3>隐藏输入与输出<a class="headerlink" href="#hiding-both-inputs-and-outputs" title="永久链接至标题">¶</a></h3>
 <div class="cell tag_hide_output tag_hide_input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">square</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">square</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
 <span class="n">wide</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
 
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
@@ -533,14 +733,21 @@
 <span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">wide</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7fba480e4820&gt;
+</pre></div>
+</div>
+<img alt="../_images/notebooks_7_1.png" src="../_images/notebooks_7_1.png" />
+<img alt="../_images/notebooks_7_2.png" src="../_images/notebooks_7_2.png" />
 </div>
 </div>
 </div>
 <div class="section" id="hiding-the-whole-cell">
-<h3>Hiding the whole cell<a class="headerlink" href="#hiding-the-whole-cell" title="Permalink to this headline">¶</a></h3>
+<h3>隐藏整个单元格<a class="headerlink" href="#hiding-the-whole-cell" title="永久链接至标题">¶</a></h3>
 <div class="cell tag_hide_cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">square</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">square</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
 <span class="n">wide</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
 
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
@@ -550,39 +757,92 @@
 <span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">wide</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7fba40c509d0&gt;
+</pre></div>
+</div>
+<img alt="../_images/notebooks_9_1.png" src="../_images/notebooks_9_1.png" />
+<img alt="../_images/notebooks_9_2.png" src="../_images/notebooks_9_2.png" />
 </div>
 </div>
 </div>
 </div>
 <div class="section" id="enriched-outputs">
-<h2>Enriched outputs<a class="headerlink" href="#enriched-outputs" title="Permalink to this headline">¶</a></h2>
+<h2>富文本输出<a class="headerlink" href="#enriched-outputs" title="永久链接至标题">¶</a></h2>
 <div class="section" id="math">
-<h3>Math<a class="headerlink" href="#math" title="Permalink to this headline">¶</a></h3>
+<h3>数学<a class="headerlink" href="#math" title="永久链接至标题">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># You can also include enriched outputs like Math</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># You can also include enriched outputs like Math</span>
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Math</span>
 <span class="n">Math</span><span class="p">(</span><span class="s2">&quot;\sum_{i=0}^n i^2 = </span><span class="se">\f</span><span class="s2">rac{(n^2+n)(2n+1)}</span><span class="si">{6}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \sum_{i=0}^n i^2 = rac{(n^2+n)(2n+1)}{6}\]</div>
+</div>
 </div>
 </div>
 <div class="section" id="pandas-dataframes">
-<h3>Pandas DataFrames<a class="headerlink" href="#pandas-dataframes" title="Permalink to this headline">¶</a></h3>
+<h3>Pandas 数据库<a class="headerlink" href="#pandas-dataframes" title="永久链接至标题">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([[</span><span class="s1">&#39;hi&#39;</span><span class="p">,</span> <span class="s1">&#39;there&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;this&#39;</span><span class="p">,</span> <span class="s1">&#39;is&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;DataFrame&#39;</span><span class="p">]],</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Word A&#39;</span><span class="p">,</span> <span class="s1">&#39;Word B&#39;</span><span class="p">])</span>
 <span class="n">df</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Word A</th>
+      <th>Word B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>hi</td>
+      <td>there</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>this</td>
+      <td>is</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>a</td>
+      <td>DataFrame</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
-<p>Styled DataFrames (see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/user_guide/style.html">the Pandas Styling docs</a>).</p>
+<p>风格化的数据框架（见 <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/user_guide/style.html">Pandas 风格化文档</a>).</p>
 <div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
 <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">24</span><span class="p">)</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;A&#39;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">)})</span>
@@ -614,23 +874,131 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style type="text/css">
+#T_c9f1a_row0_col0, #T_c9f1a_row0_col1, #T_c9f1a_row0_col2, #T_c9f1a_row1_col0, #T_c9f1a_row1_col3, #T_c9f1a_row1_col4, #T_c9f1a_row2_col0, #T_c9f1a_row2_col2, #T_c9f1a_row2_col3, #T_c9f1a_row3_col0, #T_c9f1a_row3_col1, #T_c9f1a_row3_col2, #T_c9f1a_row3_col3, #T_c9f1a_row3_col4, #T_c9f1a_row4_col0, #T_c9f1a_row4_col1, #T_c9f1a_row4_col2, #T_c9f1a_row4_col3, #T_c9f1a_row4_col4, #T_c9f1a_row5_col0, #T_c9f1a_row5_col2, #T_c9f1a_row5_col3, #T_c9f1a_row6_col0, #T_c9f1a_row6_col1, #T_c9f1a_row6_col4, #T_c9f1a_row7_col0, #T_c9f1a_row7_col1, #T_c9f1a_row7_col2, #T_c9f1a_row7_col4, #T_c9f1a_row8_col0, #T_c9f1a_row9_col2, #T_c9f1a_row9_col4 {
+  color: black;
+}
+#T_c9f1a_row0_col3, #T_c9f1a_row0_col4, #T_c9f1a_row1_col1, #T_c9f1a_row1_col2, #T_c9f1a_row2_col1, #T_c9f1a_row5_col1, #T_c9f1a_row5_col4, #T_c9f1a_row6_col3, #T_c9f1a_row7_col3, #T_c9f1a_row8_col2, #T_c9f1a_row8_col4, #T_c9f1a_row9_col1, #T_c9f1a_row9_col3 {
+  color: red;
+}
+#T_c9f1a_row2_col4, #T_c9f1a_row6_col2, #T_c9f1a_row8_col1, #T_c9f1a_row8_col3, #T_c9f1a_row9_col0 {
+  color: black;
+  background-color: yellow;
+}
+</style>
+<table id="T_c9f1a" style="font-size: 10px">
+  <thead>
+    <tr>
+      <th class="blank level0" >&nbsp;</th>
+      <th id="T_c9f1a_level0_col0" class="col_heading level0 col0" >A</th>
+      <th id="T_c9f1a_level0_col1" class="col_heading level0 col1" >B</th>
+      <th id="T_c9f1a_level0_col2" class="col_heading level0 col2" >C</th>
+      <th id="T_c9f1a_level0_col3" class="col_heading level0 col3" >D</th>
+      <th id="T_c9f1a_level0_col4" class="col_heading level0 col4" >E</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th id="T_c9f1a_level0_row0" class="row_heading level0 row0" >0</th>
+      <td id="T_c9f1a_row0_col0" class="data row0 col0" >1.000000</td>
+      <td id="T_c9f1a_row0_col1" class="data row0 col1" >1.329212</td>
+      <td id="T_c9f1a_row0_col2" class="data row0 col2" >nan</td>
+      <td id="T_c9f1a_row0_col3" class="data row0 col3" >-0.316280</td>
+      <td id="T_c9f1a_row0_col4" class="data row0 col4" >-0.990810</td>
+    </tr>
+    <tr>
+      <th id="T_c9f1a_level0_row1" class="row_heading level0 row1" >1</th>
+      <td id="T_c9f1a_row1_col0" class="data row1 col0" >2.000000</td>
+      <td id="T_c9f1a_row1_col1" class="data row1 col1" >-1.070816</td>
+      <td id="T_c9f1a_row1_col2" class="data row1 col2" >-1.438713</td>
+      <td id="T_c9f1a_row1_col3" class="data row1 col3" >0.564417</td>
+      <td id="T_c9f1a_row1_col4" class="data row1 col4" >0.295722</td>
+    </tr>
+    <tr>
+      <th id="T_c9f1a_level0_row2" class="row_heading level0 row2" >2</th>
+      <td id="T_c9f1a_row2_col0" class="data row2 col0" >3.000000</td>
+      <td id="T_c9f1a_row2_col1" class="data row2 col1" >-1.626404</td>
+      <td id="T_c9f1a_row2_col2" class="data row2 col2" >0.219565</td>
+      <td id="T_c9f1a_row2_col3" class="data row2 col3" >0.678805</td>
+      <td id="T_c9f1a_row2_col4" class="data row2 col4" >1.889273</td>
+    </tr>
+    <tr>
+      <th id="T_c9f1a_level0_row3" class="row_heading level0 row3" >3</th>
+      <td id="T_c9f1a_row3_col0" class="data row3 col0" >4.000000</td>
+      <td id="T_c9f1a_row3_col1" class="data row3 col1" >0.961538</td>
+      <td id="T_c9f1a_row3_col2" class="data row3 col2" >0.104011</td>
+      <td id="T_c9f1a_row3_col3" class="data row3 col3" >nan</td>
+      <td id="T_c9f1a_row3_col4" class="data row3 col4" >0.850229</td>
+    </tr>
+    <tr>
+      <th id="T_c9f1a_level0_row4" class="row_heading level0 row4" >4</th>
+      <td id="T_c9f1a_row4_col0" class="data row4 col0" >5.000000</td>
+      <td id="T_c9f1a_row4_col1" class="data row4 col1" >1.453425</td>
+      <td id="T_c9f1a_row4_col2" class="data row4 col2" >1.057737</td>
+      <td id="T_c9f1a_row4_col3" class="data row4 col3" >0.165562</td>
+      <td id="T_c9f1a_row4_col4" class="data row4 col4" >0.515018</td>
+    </tr>
+    <tr>
+      <th id="T_c9f1a_level0_row5" class="row_heading level0 row5" >5</th>
+      <td id="T_c9f1a_row5_col0" class="data row5 col0" >6.000000</td>
+      <td id="T_c9f1a_row5_col1" class="data row5 col1" >-1.336936</td>
+      <td id="T_c9f1a_row5_col2" class="data row5 col2" >0.562861</td>
+      <td id="T_c9f1a_row5_col3" class="data row5 col3" >1.392855</td>
+      <td id="T_c9f1a_row5_col4" class="data row5 col4" >-0.063328</td>
+    </tr>
+    <tr>
+      <th id="T_c9f1a_level0_row6" class="row_heading level0 row6" >6</th>
+      <td id="T_c9f1a_row6_col0" class="data row6 col0" >7.000000</td>
+      <td id="T_c9f1a_row6_col1" class="data row6 col1" >0.121668</td>
+      <td id="T_c9f1a_row6_col2" class="data row6 col2" >1.207603</td>
+      <td id="T_c9f1a_row6_col3" class="data row6 col3" >-0.002040</td>
+      <td id="T_c9f1a_row6_col4" class="data row6 col4" >1.627796</td>
+    </tr>
+    <tr>
+      <th id="T_c9f1a_level0_row7" class="row_heading level0 row7" >7</th>
+      <td id="T_c9f1a_row7_col0" class="data row7 col0" >8.000000</td>
+      <td id="T_c9f1a_row7_col1" class="data row7 col1" >0.354493</td>
+      <td id="T_c9f1a_row7_col2" class="data row7 col2" >1.037528</td>
+      <td id="T_c9f1a_row7_col3" class="data row7 col3" >-0.385684</td>
+      <td id="T_c9f1a_row7_col4" class="data row7 col4" >0.519818</td>
+    </tr>
+    <tr>
+      <th id="T_c9f1a_level0_row8" class="row_heading level0 row8" >8</th>
+      <td id="T_c9f1a_row8_col0" class="data row8 col0" >9.000000</td>
+      <td id="T_c9f1a_row8_col1" class="data row8 col1" >1.686583</td>
+      <td id="T_c9f1a_row8_col2" class="data row8 col2" >-1.325963</td>
+      <td id="T_c9f1a_row8_col3" class="data row8 col3" >1.428984</td>
+      <td id="T_c9f1a_row8_col4" class="data row8 col4" >-2.089354</td>
+    </tr>
+    <tr>
+      <th id="T_c9f1a_level0_row9" class="row_heading level0 row9" >9</th>
+      <td id="T_c9f1a_row9_col0" class="data row9 col0" >10.000000</td>
+      <td id="T_c9f1a_row9_col1" class="data row9 col1" >-0.129820</td>
+      <td id="T_c9f1a_row9_col2" class="data row9 col2" >0.631523</td>
+      <td id="T_c9f1a_row9_col3" class="data row9 col3" >-0.586538</td>
+      <td id="T_c9f1a_row9_col4" class="data row9 col4" >0.290720</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
 </div>
 </div>
 </div>
 <div class="section" id="interactive-outputs">
-<h2>Interactive outputs<a class="headerlink" href="#interactive-outputs" title="Permalink to this headline">¶</a></h2>
+<h2>交互式输出<a class="headerlink" href="#interactive-outputs" title="永久链接至标题">¶</a></h2>
 <div class="section" id="folium">
-<h3>Folium<a class="headerlink" href="#folium" title="Permalink to this headline">¶</a></h3>
+<h3>Folium<a class="headerlink" href="#folium" title="永久链接至标题">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">folium</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">folium</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span>
     <span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">45.372</span><span class="p">,</span> <span class="o">-</span><span class="mf">121.6972</span><span class="p">],</span>
     <span class="n">zoom_start</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span>
     <span class="n">tiles</span><span class="o">=</span><span class="s1">&#39;Stamen Terrain&#39;</span>
@@ -659,38 +1027,111 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe src="about:blank" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" data-html=%3C%21DOCTYPE%20html%3E%0A%3Chead%3E%20%20%20%20%0A%20%20%20%20%3Cmeta%20http-equiv%3D%22content-type%22%20content%3D%22text/html%3B%20charset%3DUTF-8%22%20/%3E%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%3Cscript%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20L_NO_TOUCH%20%3D%20false%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20L_DISABLE_3D%20%3D%20false%3B%0A%20%20%20%20%20%20%20%20%3C/script%3E%0A%20%20%20%20%0A%20%20%20%20%3Cstyle%3Ehtml%2C%20body%20%7Bwidth%3A%20100%25%3Bheight%3A%20100%25%3Bmargin%3A%200%3Bpadding%3A%200%3B%7D%3C/style%3E%0A%20%20%20%20%3Cstyle%3E%23map%20%7Bposition%3Aabsolute%3Btop%3A0%3Bbottom%3A0%3Bright%3A0%3Bleft%3A0%3B%7D%3C/style%3E%0A%20%20%20%20%3Cscript%20src%3D%22https%3A//cdn.jsdelivr.net/npm/leaflet%401.6.0/dist/leaflet.js%22%3E%3C/script%3E%0A%20%20%20%20%3Cscript%20src%3D%22https%3A//code.jquery.com/jquery-1.12.4.min.js%22%3E%3C/script%3E%0A%20%20%20%20%3Cscript%20src%3D%22https%3A//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js%22%3E%3C/script%3E%0A%20%20%20%20%3Cscript%20src%3D%22https%3A//cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js%22%3E%3C/script%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//cdn.jsdelivr.net/npm/leaflet%401.6.0/dist/leaflet.css%22/%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css%22/%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css%22/%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css%22/%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css%22/%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css%22/%3E%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20initial-scale%3D1.0%2C%20maximum-scale%3D1.0%2C%20user-scalable%3Dno%22%20/%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23map_103f6b098cbd44048b1a6074655c0e92%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20position%3A%20relative%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20width%3A%20100.0%25%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20height%3A%20100.0%25%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20left%3A%200.0%25%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20top%3A%200.0%25%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/style%3E%0A%20%20%20%20%20%20%20%20%0A%3C/head%3E%0A%3Cbody%3E%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22folium-map%22%20id%3D%22map_103f6b098cbd44048b1a6074655c0e92%22%20%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%0A%3C/body%3E%0A%3Cscript%3E%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20map_103f6b098cbd44048b1a6074655c0e92%20%3D%20L.map%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22map_103f6b098cbd44048b1a6074655c0e92%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20center%3A%20%5B45.372%2C%20-121.6972%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crs%3A%20L.CRS.EPSG3857%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20zoom%3A%2012%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20zoomControl%3A%20true%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20preferCanvas%3A%20false%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29%3B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20tile_layer_5cd0269f805240788da998904cef15dd%20%3D%20L.tileLayer%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22https%3A//stamen-tiles-%7Bs%7D.a.ssl.fastly.net/terrain/%7Bz%7D/%7Bx%7D/%7By%7D.jpg%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%22attribution%22%3A%20%22Map%20tiles%20by%20%5Cu003ca%20href%3D%5C%22http%3A//stamen.com%5C%22%5Cu003eStamen%20Design%5Cu003c/a%5Cu003e%2C%20under%20%5Cu003ca%20href%3D%5C%22http%3A//creativecommons.org/licenses/by/3.0%5C%22%5Cu003eCC%20BY%203.0%5Cu003c/a%5Cu003e.%20Data%20by%20%5Cu0026copy%3B%20%5Cu003ca%20href%3D%5C%22http%3A//openstreetmap.org%5C%22%5Cu003eOpenStreetMap%5Cu003c/a%5Cu003e%2C%20under%20%5Cu003ca%20href%3D%5C%22http%3A//creativecommons.org/licenses/by-sa/3.0%5C%22%5Cu003eCC%20BY%20SA%5Cu003c/a%5Cu003e.%22%2C%20%22detectRetina%22%3A%20false%2C%20%22maxNativeZoom%22%3A%2018%2C%20%22maxZoom%22%3A%2018%2C%20%22minZoom%22%3A%200%2C%20%22noWrap%22%3A%20false%2C%20%22opacity%22%3A%201%2C%20%22subdomains%22%3A%20%22abc%22%2C%20%22tms%22%3A%20false%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29.addTo%28map_103f6b098cbd44048b1a6074655c0e92%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20marker_d22686a8467e4bdab4d4c30d40a04b42%20%3D%20L.marker%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5B45.3288%2C%20-121.6625%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29.addTo%28map_103f6b098cbd44048b1a6074655c0e92%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20icon_d369965e5138473ab5205995e7b8446c%20%3D%20L.AwesomeMarkers.icon%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%22extraClasses%22%3A%20%22fa-rotate-0%22%2C%20%22icon%22%3A%20%22cloud%22%2C%20%22iconColor%22%3A%20%22white%22%2C%20%22markerColor%22%3A%20%22blue%22%2C%20%22prefix%22%3A%20%22glyphicon%22%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20marker_d22686a8467e4bdab4d4c30d40a04b42.setIcon%28icon_d369965e5138473ab5205995e7b8446c%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20var%20popup_4fa5d89777124e2e93343fb12713b363%20%3D%20L.popup%28%7B%22maxWidth%22%3A%20%22100%25%22%7D%29%3B%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20html_06172f9373054b85b4b57660140a791e%20%3D%20%24%28%60%3Cdiv%20id%3D%22html_06172f9373054b85b4b57660140a791e%22%20style%3D%22width%3A%20100.0%25%3B%20height%3A%20100.0%25%3B%22%3EMt.%20Hood%20Meadows%3C/div%3E%60%29%5B0%5D%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20popup_4fa5d89777124e2e93343fb12713b363.setContent%28html_06172f9373054b85b4b57660140a791e%29%3B%0A%20%20%20%20%20%20%20%20%0A%0A%20%20%20%20%20%20%20%20marker_d22686a8467e4bdab4d4c30d40a04b42.bindPopup%28popup_4fa5d89777124e2e93343fb12713b363%29%0A%20%20%20%20%20%20%20%20%3B%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20marker_7d050ab83a904071a26224c9879e78ff%20%3D%20L.marker%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5B45.3311%2C%20-121.7113%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29.addTo%28map_103f6b098cbd44048b1a6074655c0e92%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20icon_2fe77cf5d68048fe9a724e666212c20f%20%3D%20L.AwesomeMarkers.icon%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%22extraClasses%22%3A%20%22fa-rotate-0%22%2C%20%22icon%22%3A%20%22info-sign%22%2C%20%22iconColor%22%3A%20%22white%22%2C%20%22markerColor%22%3A%20%22green%22%2C%20%22prefix%22%3A%20%22glyphicon%22%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20marker_7d050ab83a904071a26224c9879e78ff.setIcon%28icon_2fe77cf5d68048fe9a724e666212c20f%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20var%20popup_f20a6aa5e7af44bab0cceb89ab187c51%20%3D%20L.popup%28%7B%22maxWidth%22%3A%20%22100%25%22%7D%29%3B%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20html_b6fab75091584b4f9e3e6051e2e4aabf%20%3D%20%24%28%60%3Cdiv%20id%3D%22html_b6fab75091584b4f9e3e6051e2e4aabf%22%20style%3D%22width%3A%20100.0%25%3B%20height%3A%20100.0%25%3B%22%3ETimberline%20Lodge%3C/div%3E%60%29%5B0%5D%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20popup_f20a6aa5e7af44bab0cceb89ab187c51.setContent%28html_b6fab75091584b4f9e3e6051e2e4aabf%29%3B%0A%20%20%20%20%20%20%20%20%0A%0A%20%20%20%20%20%20%20%20marker_7d050ab83a904071a26224c9879e78ff.bindPopup%28popup_f20a6aa5e7af44bab0cceb89ab187c51%29%0A%20%20%20%20%20%20%20%20%3B%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20marker_3e208f812bd74fa1ba460f740d593435%20%3D%20L.marker%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5B45.33%2C%20-121.6823%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29.addTo%28map_103f6b098cbd44048b1a6074655c0e92%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20icon_94ecd56455f64ac8bab094b64cbda862%20%3D%20L.AwesomeMarkers.icon%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%22extraClasses%22%3A%20%22fa-rotate-0%22%2C%20%22icon%22%3A%20%22info-sign%22%2C%20%22iconColor%22%3A%20%22white%22%2C%20%22markerColor%22%3A%20%22red%22%2C%20%22prefix%22%3A%20%22glyphicon%22%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20marker_3e208f812bd74fa1ba460f740d593435.setIcon%28icon_94ecd56455f64ac8bab094b64cbda862%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20var%20popup_887d0499c0b74cabafe8e02e527ebc70%20%3D%20L.popup%28%7B%22maxWidth%22%3A%20%22100%25%22%7D%29%3B%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20html_50ccd4bd55944e7ea6b2e0493acfb3dc%20%3D%20%24%28%60%3Cdiv%20id%3D%22html_50ccd4bd55944e7ea6b2e0493acfb3dc%22%20style%3D%22width%3A%20100.0%25%3B%20height%3A%20100.0%25%3B%22%3ESome%20Other%20Location%3C/div%3E%60%29%5B0%5D%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20popup_887d0499c0b74cabafe8e02e527ebc70.setContent%28html_50ccd4bd55944e7ea6b2e0493acfb3dc%29%3B%0A%20%20%20%20%20%20%20%20%0A%0A%20%20%20%20%20%20%20%20marker_3e208f812bd74fa1ba460f740d593435.bindPopup%28popup_887d0499c0b74cabafe8e02e527ebc70%29%0A%20%20%20%20%20%20%20%20%3B%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%3C/script%3E onload="this.contentDocument.open();this.contentDocument.write(    decodeURIComponent(this.getAttribute('data-html')));this.contentDocument.close();" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div></div>
 </div>
 </div>
 </div>
 <div class="section" id="stdout">
-<h2>Stdout<a class="headerlink" href="#stdout" title="Permalink to this headline">¶</a></h2>
+<h2>标准输出<a class="headerlink" href="#stdout" title="永久链接至标题">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># The ! causes this to run as a shell command
-!jupyter -h
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># The ! causes this to run as a shell command</span>
+<span class="o">!</span>jupyter -h
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>usage: jupyter [-h] [--version] [--config-dir] [--data-dir] [--runtime-dir]
+               [--paths] [--json] [--debug]
+               [subcommand]
+
+Jupyter: Interactive Computing
+
+positional arguments:
+  subcommand     the subcommand to launch
+
+optional arguments:
+  -h, --help     show this help message and exit
+  --version      show the versions of core jupyter packages and exit
+  --config-dir   show Jupyter config dir
+  --data-dir     show Jupyter data dir
+  --runtime-dir  show Jupyter runtime dir
+  --paths        show all Jupyter paths. Add --json for machine-readable
+                 format.
+  --json         output paths as machine-readable json
+  --debug        output debug information about paths
+
+Available subcommands: bundlerextension dejavu execute kernel kernelspec
+migrate nbconvert nbextension notebook run server serverextension troubleshoot
+trust
 </pre></div>
 </div>
 </div>
 </div>
 </div>
 <div class="section" id="formatting-code-cells">
-<h2>Formatting code cells<a class="headerlink" href="#formatting-code-cells" title="Permalink to this headline">¶</a></h2>
+<h2>格式化代码单元格<a class="headerlink" href="#formatting-code-cells" title="永久链接至标题">¶</a></h2>
 <div class="section" id="scrolling-cell-outputs">
-<h3>Scrolling cell outputs<a class="headerlink" href="#scrolling-cell-outputs" title="Permalink to this headline">¶</a></h3>
+<h3>滚动单元格输出<a class="headerlink" href="#scrolling-cell-outputs" title="永久链接至标题">¶</a></h3>
 <div class="cell tag_output_scroll docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">ii</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">40</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">ii</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">40</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;this is output line </span><span class="si">{</span><span class="n">ii</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>this is output line 0
+this is output line 1
+this is output line 2
+this is output line 3
+this is output line 4
+this is output line 5
+this is output line 6
+this is output line 7
+this is output line 8
+this is output line 9
+this is output line 10
+this is output line 11
+this is output line 12
+this is output line 13
+this is output line 14
+this is output line 15
+this is output line 16
+this is output line 17
+this is output line 18
+this is output line 19
+this is output line 20
+this is output line 21
+this is output line 22
+this is output line 23
+this is output line 24
+this is output line 25
+this is output line 26
+this is output line 27
+this is output line 28
+this is output line 29
+this is output line 30
+this is output line 31
+this is output line 32
+this is output line 33
+this is output line 34
+this is output line 35
+this is output line 36
+this is output line 37
+this is output line 38
+this is output line 39
 </pre></div>
 </div>
 </div>
 </div>
 </div>
 <div class="section" id="scrolling-cell-inputs">
-<h3>Scrolling cell inputs<a class="headerlink" href="#scrolling-cell-inputs" title="Permalink to this headline">¶</a></h3>
+<h3>滚动单元格输入<a class="headerlink" href="#scrolling-cell-inputs" title="永久链接至标题">¶</a></h3>
 <div class="cell tag_scroll-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;This line has no meaning&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;This line has no meaning&quot;</span>
 <span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;This line has no meaning&quot;</span>
 <span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;This line has no meaning&quot;</span>
 <span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;This line has no meaning&quot;</span>
@@ -712,6 +1153,11 @@
 <span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;This line has no meaning&quot;</span>
 <span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;This line has no meaning&quot;</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>This line has no meaning
 </pre></div>
 </div>
 </div>
@@ -745,45 +1191,52 @@
 
               </div>
               
-        
-            <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="kitchen-sink/lists-and-tables.html" title="previous page">
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="extensions.html" title="上一页 页">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Lists &amp; Tables</p>
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">Sphinx extension styles</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="thebe.html" title="next page">
+    <a class='right-next' id="next-link" href="thebe.html" title="下一页 页">
     <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-subtitle">下一页</p>
         <p class="prev-next-title">Thebe</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-        
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By the Executable Book Project<br/>
-        
-            &copy; Copyright 2020.<br/>
-          Last updated on Nov 07, 2021.<br/>
-      </p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By the Executable Book Project<br/>
+  
+      &copy; Copyright 2020.<br/>
+    Last updated on 2022 年 02 月 23 日.<br/>
+</p>
+        </footer>
     </div>
-  </footer>
-</main>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  
+    <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  
+  
+  <script src="../_static/scripts/sphinx-book-theme.js?digest=d39d74a9f498dbb5016c"></script>
+
 
   </body>
 </html>

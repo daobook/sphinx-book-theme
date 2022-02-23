@@ -1,66 +1,76 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="zh_CN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:title" content="Customization" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="customize/index.html" />
-  <meta property="og:description" content="These sections describe a few ways that you may customize the look and feel of your theme. Theme options: The following options are available via html_theme_options,,, Key, Type, Description,,, sin..." />
+<meta property="og:title" content="定制" />
   
-    <title>Customization &#8212; Sphinx Book Theme</title>
+<meta property="og:type" content="website" />
+  
+<meta property="og:url" content="customize/index.html" />
+  
+<meta property="og:description" content="这些部分描述了一些你可以定制你的主题的外观和感觉的方法。 主题选项: 以下选项可通过 html_theme_options 使用,,, 键, 类型, 描述,,, single_page, 布尔值, 去掉左边的侧边栏，把网站当作一个单页。见 使用该主题的单页版本 。,, path_to_docs, 字符串, 文档的路径，相对于版本库根目录（例如： docs/ ）。参见 添加按钮以链接到你的来源..." />
+  
+    <title>定制 &#8212; Sphinx Book Theme</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
-
     
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-
+    <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  
+    
+    <link rel="stylesheet"
+      href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
     
       
-
+  
     
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.59c74d8c95b765a7fd995ac71d459ebe.min.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+    <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  
+    
+  <link href="../_static/styles/sphinx-book-theme.css?digest=d39d74a9f498dbb5016c" rel="stylesheet">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe,.cell"
-        const thebe_selector_input = "pre,.cell_input div.highlight"
-        const thebe_selector_output = ".output,.cell_output"
-    </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="shortcut icon" href="../_static/logo-square.svg"/>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Customize the primary sidebar" href="sidebar-primary.html" />
-    <link rel="prev" title="Get started" href="../tutorials/get-started.html" /> 
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="定制主侧栏" href="sidebar-primary.html" />
+    <link rel="prev" title="开始行动" href="../tutorials/get-started.html" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
+    <meta name="docsearch:language" content="zh_CN">
     
 
     <!-- Google Analytics -->
@@ -99,6 +109,21 @@
 
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint">⚠️The latest release refactored our HTML, so double-check your custom CSS rules!⚠️</div>
+<div class="header header-item noprint"><!-- Uncomment the line below to show off a header! -->
+<!-- Hello world! --></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -107,9 +132,9 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="pl-4 pr-3 bd-sidebar site-navigation noprint " id="site-navigation">
+    <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -127,18 +152,18 @@
     <div class="bd-toc-item active">
         <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Topic Areas
+  专题区域
  </span>
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/get-started.html">
-   Get started
+   开始行动
   </a>
  </li>
  <li class="toctree-l1 current active has-children">
   <a class="current reference internal" href="#">
-   Customization
+   定制
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -148,66 +173,64 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="sidebar-primary.html">
-     Customize the primary sidebar
+     定制主侧栏
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="sidebar-secondary.html">
-     Customize the secondary sidebar
+     定制二级侧边栏
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="announcements.html">
+     Announcement banners
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="header.html">
+     Header content
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="download.html">
-     Add a download page button
+     添加一个下载页面的按钮
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="source-files.html">
-     Add buttons to link to your source
+     添加按钮以链接到你的来源
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="custom-css.html">
-     Add your own CSS rules
+     加入你自己的 CSS 规则
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="single-page.html">
-     Use a single-page version of this theme
+     使用该主题的单页版本
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../content-blocks.html">
-   Special content blocks
+   特殊内容块
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../notebooks.html">
-   Jupyter notebooks
+   Jupyter 笔记本
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../launch.html">
-   Launch buttons for interactivity
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Reference
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../reference/special-theme-elements.html">
-   Theme-specific elements
+   用于交互的启动按钮
   </a>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../reference/kitchen-sink/index.html">
-   Kitchen Sink
+  <a class="reference internal" href="../contributing/index.html">
+   Contribute to this theme
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -216,25 +239,79 @@
   </label>
   <ul>
    <li class="toctree-l2">
+    <a class="reference internal" href="../contributing/setup.html">
+     Set up your development workflow
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../contributing/architecture.html">
+     Architecture of the repository
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../contributing/style.html">
+     Style and design
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../contributing/tests.html">
+     Testing infrastructure
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../contributing/translate.html">
+     Translation workflow
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  参考
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../reference/kitchen-sink/index.html">
+   厨房的水槽
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
     <a class="reference internal" href="../reference/kitchen-sink/paragraph-markup.html">
-     Paragraph Level Markup
+     示例
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../reference/kitchen-sink/api.html">
-     API documentation
+     API 文档
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../reference/kitchen-sink/lists-and-tables.html">
-     Lists &amp; Tables
+     列表和表格
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../reference/special-theme-elements.html">
+   特定主题的元素
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../reference/extensions.html">
+   Sphinx extension styles
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../reference/notebooks.html">
-   Jupyter notebooks
+   Jupyter 笔记本
   </a>
  </li>
  <li class="toctree-l1">
@@ -244,19 +321,12 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../reference/blog.html">
-   Reference for Blog
+   博客的参考
   </a>
  </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  About the theme
- </span>
-</p>
-<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../contributing.html">
-   Contributing Guide
+  <a class="reference internal" href="../reference/api-numpy.html">
+   NumPy docstrings
   </a>
  </li>
 </ul>
@@ -275,25 +345,56 @@
 
 
           
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+<!-- Main content -->
+<div class="col py-0 content-container">
     
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
+    <div class="header-article row sticky-top noprint">
+        
+
+
+<div class="col py-1 d-flex topbar-main">
+    <div class="topbar-left">
+        
+        <label class="nav-toggle-button topbarbtn" for="__navigation">
+            <div class="visually-hidden">Toggle navigation</div>
+            <i class="fas fa-bars"></i>
+        </label>
+        
+    </div>
+    <div class="topbar-right">
+        <!-- Launch buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+        <!-- Source interaction buttons -->
+
 <div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+    <button class="topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/sphinx-book-theme"><button type="button" class="topbarbtn--wide"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/sphinx-book-theme/issues/new?title=Issue%20on%20page%20%2Fcustomize/index.html&body=Your%20issue%20content%20here."><button
+                type="button" class="topbarbtn--wide" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/executablebooks/sphinx-book-theme/edit/master/docs/customize/index.md"><button
+                type="button" class="topbarbtn--wide" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+        
+<div class="dropdown-buttons-trigger sb-download-buttons">
+    <button class="topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
 
     <div class="dropdown-buttons">
@@ -301,79 +402,82 @@
         
         <!-- Download raw file -->
         <a class="dropdown-buttons" href="../_sources/customize/index.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                class="topbarbtn--wide" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+        <button type="button" id="download-print" class="topbarbtn--wide" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/daobook/sphinx-book-theme"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/daobook/sphinx-book-theme/issues/new?title=Issue%20on%20page%20%2Fcustomize/index.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/daobook/sphinx-book-theme/edit/main/docs/customize/index.md"><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+        <label class="d-block d-md-none nav-toggle-button topbarbtn" for="__page-toc">
+  <div class="visually-hidden">Toggle Table of Contents</div>
+  <i class="fas fa-list"></i>
+</label>
     </div>
 </div>
 
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#theme-options">
-   Theme options
+   主题选项
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#customization-topics">
-   Customization Topics
+   定制专题
   </a>
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>定制</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#theme-options">
+   主题选项
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#customization-topics">
+   定制专题
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
               <div>
                  <div class="tex2jax_ignore mathjax_ignore section" id="customization">
-<h1>Customization<a class="headerlink" href="#customization" title="Permalink to this headline">¶</a></h1>
-<p>These sections describe a few ways that you may customize the look and feel of your theme.</p>
+<h1>定制<a class="headerlink" href="#customization" title="永久链接至标题">¶</a></h1>
+<p>这些部分描述了一些你可以定制你的主题的外观和感觉的方法。</p>
 <div class="section" id="theme-options">
-<h2>Theme options<a class="headerlink" href="#theme-options" title="Permalink to this headline">¶</a></h2>
-<p>The following options are available via <code class="docutils literal notranslate"><span class="pre">html_theme_options</span></code></p>
+<h2>主题选项<a class="headerlink" href="#theme-options" title="永久链接至标题">¶</a></h2>
+<p>以下选项可通过 <code class="docutils literal notranslate"><span class="pre">html_theme_options</span></code> 使用</p>
 <table class="colwidths-given table">
 <colgroup>
 <col style="width: 18%" />
@@ -381,110 +485,111 @@
 <col style="width: 73%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p>Key</p></th>
-<th class="head"><p>Type</p></th>
-<th class="head"><p>Description</p></th>
+<tr class="row-odd"><th class="head"><p>键</p></th>
+<th class="head"><p>类型</p></th>
+<th class="head"><p>描述</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">single_page</span></code></p></td>
-<td><p>bool</p></td>
-<td><p>Remove the left sidebar and treat the site as a single page. See <a class="reference internal" href="single-page.html#customize-single-page"><span class="std std-ref">Use a single-page version of this theme</span></a>.</p></td>
+<td><p>布尔值</p></td>
+<td><p>去掉左边的侧边栏，把网站当作一个单页。见 <a class="reference internal" href="single-page.html#customize-single-page"><span class="std std-ref">使用该主题的单页版本</span></a>。</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">path_to_docs</span></code></p></td>
-<td><p>string</p></td>
-<td><p>Path to the documentation, relative to the repository root (e.g. <code class="docutils literal notranslate"><span class="pre">docs/</span></code>). See <a class="reference internal" href="source-files.html#customize-source-files"><span class="std std-ref">Add buttons to link to your source</span></a>.</p></td>
+<td><p>字符串</p></td>
+<td><p>文档的路径，相对于版本库根目录（例如：<code class="docutils literal notranslate"><span class="pre">docs/</span></code>）。参见 <a class="reference internal" href="source-files.html#customize-source-files"><span class="std std-ref">添加按钮以链接到你的来源</span></a>。</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">repository_url</span></code></p></td>
-<td><p>string</p></td>
-<td><p>URL of the repository for the documentation (e.g. the GitHub repository URL). See <a class="reference internal" href="source-files.html#source-files-repository"><span class="std std-ref">Add a link to your repository</span></a>.</p></td>
+<td><p>字符串</p></td>
+<td><p>文档存储库的 URL（例如 GitHub 存储库的URL）。参见 <a class="reference internal" href="source-files.html#source-files-repository"><span class="std std-ref">添加一个链接到你的存储库</span></a>。</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">repository_branch</span></code></p></td>
-<td><p>string</p></td>
-<td><p>Branch of the repository for the documentation (e.g., <code class="docutils literal notranslate"><span class="pre">master</span></code>, <code class="docutils literal notranslate"><span class="pre">main</span></code>, <code class="docutils literal notranslate"><span class="pre">docs</span></code>). See <a class="reference internal" href="source-files.html#source-files-repository"><span class="std std-ref">Add a link to your repository</span></a>.</p></td>
+<td><p>字符串</p></td>
+<td><p>文档库的分支（例如：<code class="docutils literal notranslate"><span class="pre">master</span></code>, <code class="docutils literal notranslate"><span class="pre">main</span></code>, <code class="docutils literal notranslate"><span class="pre">docs</span></code>）。见 <a class="reference internal" href="source-files.html#source-files-repository"><span class="std std-ref">添加一个链接到你的存储库</span></a>。</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">use_issues_button</span></code></p></td>
-<td><p>bool</p></td>
-<td><p>Add an button in the topbar with a link to issues for the repository (used in conjunction with <code class="docutils literal notranslate"><span class="pre">repository_url</span></code> and <code class="docutils literal notranslate"><span class="pre">repository_branch</span></code>). See  <a class="reference internal" href="source-files.html#source-files-repository"><span class="std std-ref">Add a link to your repository</span></a>.</p></td>
+<td><p>布尔值</p></td>
+<td><p>在导航栏目添加一个按钮，链接到版本库的议题（与 <code class="docutils literal notranslate"><span class="pre">repository_url</span></code> 和 <code class="docutils literal notranslate"><span class="pre">repository_branch</span></code> 一起使用）。见<a class="reference internal" href="source-files.html#source-files-repository"><span class="std std-ref">添加一个链接到你的存储库</span></a>。</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">use_download_button</span></code></p></td>
-<td><p>bool</p></td>
-<td><p>Add a button in the topbar to download the source file of the page. See <a class="reference internal" href="source-files.html#customize-source-files"><span class="std std-ref">Add buttons to link to your source</span></a>.</p></td>
+<td><p>布尔值</p></td>
+<td><p>在导航栏添加一个按钮，以下载页面的源文件。见 <a class="reference internal" href="source-files.html#customize-source-files"><span class="std std-ref">添加按钮以链接到你的来源</span></a>。</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">use_fullscreen_button</span></code></p></td>
-<td><p>bool</p></td>
-<td><p>Add a button in the topbar to trigger full-screen mode.</p></td>
+<td><p>布尔值</p></td>
+<td><p>在导航栏添加一个按钮来触发全屏模式。</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">use_repository_button</span></code></p></td>
-<td><p>bool</p></td>
-<td><p>Add a button in the topbar that links to the repository of the documentation.See <a class="reference internal" href="source-files.html#source-files-repository"><span class="std std-ref">Add a link to your repository</span></a>.</p></td>
+<td><p>布尔值</p></td>
+<td><p>在导航栏中添加一个链接到文档库的按钮。见 <a class="reference internal" href="source-files.html#source-files-repository"><span class="std std-ref">添加一个链接到你的存储库</span></a>。</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">launch_buttons</span></code></p></td>
-<td><p>bool</p></td>
-<td><p>Include Binder launch buttons for pages that were built from Jupyter Notebooks. See <a class="reference internal" href="../launch.html#customize-launch"><span class="std std-ref">Launch buttons for interactivity</span></a>.</p></td>
+<td><p>布尔值</p></td>
+<td><p>包含从 Jupyter 笔记本建立页面的 Binder 启动按钮。参见 <a class="reference internal" href="../launch.html#customize-launch"><span class="std std-ref">用于交互的启动按钮</span></a>。</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">home_page_in_toc</span></code></p></td>
-<td><p>bool</p></td>
-<td><p>Whether to put the home page in the Navigation Bar (at the top). See <a class="reference internal" href="sidebar-primary.html#sidebar-primary-home-page"><span class="std std-ref">Add the home page to your table of contents</span></a>.</p></td>
+<td><p>布尔值</p></td>
+<td><p>是否将主页放在导航栏（顶部）。见 <a class="reference internal" href="sidebar-primary.html#sidebar-primary-home-page"><span class="std std-ref">将主页添加到你的目录中</span></a>。</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">logo_only</span></code></p></td>
-<td><p>bool</p></td>
-<td><p>Only display the logo, not <code class="docutils literal notranslate"><span class="pre">html_title</span></code> if it exists.</p></td>
+<td><p>布尔值</p></td>
+<td><p>只显示标识，不显示 <code class="docutils literal notranslate"><span class="pre">html_title</span></code>，如果它存在的话。</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">show_navbar_depth</span></code></p></td>
-<td><p>int</p></td>
-<td><p>Show children in the navigation bar down to the depth listed here. See <a class="reference internal" href="sidebar-primary.html#sidebar-navbar-depth"><span class="std std-ref">Control the depth of the left sidebar lists to expand</span></a>.</p></td>
+<td><p>整数</p></td>
+<td><p>在导航栏中显示子目录，向下到这里列出的深度。见<a class="reference internal" href="sidebar-primary.html#sidebar-navbar-depth"><span class="std std-ref">控制左侧侧边栏列表的展开深度</span></a>.</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">extra_navbar</span></code></p></td>
-<td><p>str</p></td>
-<td><p>Extra HTML to add below the sidebar footer (if <code class="docutils literal notranslate"><span class="pre">sbt-sidebar-footer.html</span></code> is used in <code class="docutils literal notranslate"><span class="pre">html_sidebars</span></code>). See <a class="reference internal" href="sidebar-primary.html#custom-footer"><span class="std std-ref">Customize the sidebar footer</span></a>.</p></td>
+<td><p>字符串</p></td>
+<td><p>在侧边栏页脚添加额外的 HTML（如果 <code class="docutils literal notranslate"><span class="pre">sbt-sidebar-footer.html</span></code> 在 <code class="docutils literal notranslate"><span class="pre">html_sidebars</span></code> 中被使用）。见 <a class="reference internal" href="sidebar-primary.html#custom-footer"><span class="std std-ref">自定义侧边栏页脚</span></a>。</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">extra_footer</span></code></p></td>
-<td><p>str</p></td>
-<td><p>Extra HTML to add in the footer of each page.</p></td>
+<td><p>字符串</p></td>
+<td><p>在每个页面的页脚添加额外的 HTML。</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">toc_title</span></code></p></td>
-<td><p>str</p></td>
-<td><p>The text to be displayed with the in-page TOC (<code class="docutils literal notranslate"><span class="pre">Contents</span></code> is default)</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">theme_dev_mode</span></code></p></td>
-<td><p>bool</p></td>
-<td><p>(developers only) Trigger some features that make it easier to develop the theme.</p></td>
+<td><p>字符串</p></td>
+<td><p>将与页内 TOC 一起显示的文本（默认为 <code class="docutils literal notranslate"><span class="pre">Contents</span></code>）。</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="section" id="customization-topics">
-<h2>Customization Topics<a class="headerlink" href="#customization-topics" title="Permalink to this headline">¶</a></h2>
-<p>The following sections describe a few ways to customize the theme in more depth.</p>
+<h2>定制专题<a class="headerlink" href="#customization-topics" title="永久链接至标题">¶</a></h2>
+<p>以下各节描述了更深入地定制主题的几种方法。</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="sidebar-primary.html">Customize the primary sidebar</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="sidebar-primary.html#control-the-left-sidebar-items">Control the left sidebar items</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="sidebar-primary.html#default-sidebar-elements">Default sidebar elements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sidebar-primary.html">定制主侧栏</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sidebar-primary.html#control-the-left-sidebar-items">控制左边的侧栏项目</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sidebar-primary.html#default-sidebar-elements">默认的侧边栏元素</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="sidebar-primary.html#customize-the-sidebar-footer">Customize the sidebar footer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sidebar-primary.html#add-a-header-to-your-table-of-contents">Add a header to your Table of Contents</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sidebar-primary.html#customize-the-logo-title-and-favicon">Customize the logo, title, and favicon</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sidebar-primary.html#add-the-home-page-to-your-table-of-contents">Add the home page to your table of contents</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sidebar-primary.html#control-the-depth-of-the-left-sidebar-lists-to-expand">Control the depth of the left sidebar lists to expand</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sidebar-primary.html#customize-the-sidebar-footer">自定义侧边栏页脚</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sidebar-primary.html#add-a-header-to-your-table-of-contents">为你的目录添加一个标题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sidebar-primary.html#customize-the-logo-title-and-favicon">自定义标志、标题和 favicon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sidebar-primary.html#add-the-home-page-to-your-table-of-contents">将主页添加到你的目录中</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sidebar-primary.html#control-the-depth-of-the-left-sidebar-lists-to-expand">控制左侧侧边栏列表的展开深度</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="sidebar-secondary.html">Customize the secondary sidebar</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="sidebar-secondary.html#rename-the-in-page-table-of-contents">Rename the in-page Table of Contents</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sidebar-secondary.html#show-more-levels-of-the-in-page-toc-by-default">Show more levels of the in-page TOC by default</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sidebar-secondary.html">定制二级侧边栏</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sidebar-secondary.html#rename-the-in-page-table-of-contents">重命名页内目录</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sidebar-secondary.html#show-more-levels-of-the-in-page-toc-by-default">默认显示更多层次的页内 TOC</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="download.html">Add a download page button</a></li>
-<li class="toctree-l1"><a class="reference internal" href="source-files.html">Add buttons to link to your source</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="source-files.html#add-a-link-to-your-repository">Add a link to your repository</a></li>
-<li class="toctree-l2"><a class="reference internal" href="source-files.html#add-a-button-to-open-issues">Add a button to open issues</a></li>
-<li class="toctree-l2"><a class="reference internal" href="source-files.html#add-a-button-to-suggest-edits">Add a button to suggest edits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="announcements.html">Announcement banners</a></li>
+<li class="toctree-l1"><a class="reference internal" href="header.html">Header content</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="header.html#style-the-header">Style the header</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="custom-css.html">Add your own CSS rules</a></li>
-<li class="toctree-l1"><a class="reference internal" href="single-page.html">Use a single-page version of this theme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="download.html">添加一个下载页面的按钮</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source-files.html">添加按钮以链接到你的来源</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="source-files.html#add-a-link-to-your-repository">添加一个链接到你的存储库</a></li>
+<li class="toctree-l2"><a class="reference internal" href="source-files.html#add-a-button-to-open-issues">添加一个按钮来打开议题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="source-files.html#add-a-button-to-suggest-edits">增加一个建议编辑的按钮</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="custom-css.html">加入你自己的 CSS 规则</a></li>
+<li class="toctree-l1"><a class="reference internal" href="single-page.html">使用该主题的单页版本</a></li>
 </ul>
 </div>
 </div>
@@ -515,45 +620,52 @@
 
               </div>
               
-        
-            <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../tutorials/get-started.html" title="previous page">
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="../tutorials/get-started.html" title="上一页 页">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Get started</p>
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">开始行动</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="sidebar-primary.html" title="next page">
+    <a class='right-next' id="next-link" href="sidebar-primary.html" title="下一页 页">
     <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Customize the primary sidebar</p>
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">定制主侧栏</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-        
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By the Executable Book Project<br/>
-        
-            &copy; Copyright 2020.<br/>
-          Last updated on Nov 07, 2021.<br/>
-      </p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By the Executable Book Project<br/>
+  
+      &copy; Copyright 2020.<br/>
+    Last updated on 2022 年 02 月 23 日.<br/>
+</p>
+        </footer>
     </div>
-  </footer>
-</main>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  
+    <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  
+  
+  <script src="../_static/scripts/sphinx-book-theme.js?digest=d39d74a9f498dbb5016c"></script>
+
 
   </body>
 </html>

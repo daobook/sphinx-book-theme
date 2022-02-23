@@ -20,19 +20,8 @@ This page contains a number of reference elements to see how they look in this
 theme. The information is not meant to be easy to read or understand, just browse
 through and see how things look!
 
-## Blog post list
-
-Here's a sample post list:
-
-```{postlist}
-:date: "%Y-%m-%d"
-:format: "{date} - {title}"
-:excerpts:
-```
-
-+++
-
 ## Full-width elements
+
 ### Code cells
 
 ```{code-cell} ipython3
@@ -229,7 +218,7 @@ Markdown cell with images in sidebar
 
 +++
 
-### More content after the popouts
+### More content after the margin content
 
 This is extra content after the popouts to see if cells overlap and such.
 Also to make sure you can still interact with the popout content.
@@ -246,3 +235,56 @@ This is extra content after the popouts to see if cells overlap and such.
 Also to make sure you can still interact with the popout content.
 This is extra content after the popouts to see if cells overlap and such.
 Also to make sure you can still interact with the popout content.
+
+### Figures with margin captions
+
+The `margin-caption` class should cause a figure's caption to pop out to the right.
+
+```{figure} ../images/cool.jpg
+---
+width: 60%
+figclass: margin-caption
+alt: My figure text
+name: reference-margin-fig
+---
+And here is my figure caption, if you look to the left, you can see that COOL is in big red letters. But you probably already noticed that, really I am just taking up space to see how the margin caption looks like when it is really long :-).
+```
+
+:::{note}
+:class: margin
+This note should not overlap with the margin caption!
+:::
+
+## Nested admonitions
+
+These aren't theme-specific, but we still show below to make sure they work.
+
+::::{note} Here's a note!
+:::{tip} And a tip!
+:::
+::::
+
+## MyST Markdown elements
+
+Here are a few design elements to show off MyST Markdown.
+
+### Table alignment
+
+To ensure that markdown alignment is rendered properly.
+
+| Default Header | Left Align | Right Align | Center Align |
+| -------------- | :--------- | ----------: | :----------: |
+| Cell 1 | Cell 2 | Cell 3 | Cell 4 |
+| Cell 1 | Cell 2 | Cell 3 | Cell 4 |
+
+### List table width
+
+Testing list tables take width as expected.
+
+```{list-table}
+:width: 100%
+* - a
+  - b
+* - c
+  - d
+```

@@ -1,19 +1,21 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh_CN">
   <id>https://sphinx-book-theme.readthedocs.io</id>
   <title>Blog</title>
-  <updated>2021-11-07T12:50:40.670507+00:00</updated>
+  <updated>2022-02-23T07:33:49.233491+00:00</updated>
   <link href="https://sphinx-book-theme.readthedocs.io"/>
   <link href="https://sphinx-book-theme.readthedocs.io/reference/blog/atom.xml" rel="self"/>
-  <generator uri="https://ablog.readthedocs.org/" version="0.10.20">ABlog</generator>
+  <generator uri="https://ablog.readthedocs.org/" version="0.10.23">ABlog</generator>
   <entry>
     <id>https://sphinx-book-theme.readthedocs.io/reference/blog/post1.html</id>
-    <title>Post 1</title>
+    <title>帖子1</title>
     <updated>2020-01-01T00:00:00+00:00</updated>
     <author>
       <name>Jo the Jovyan</name>
     </author>
-    <content type="html">&lt;p&gt;Some content&lt;/p&gt;
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;一些内容&lt;/p&gt;
+&lt;/div&gt;
 
     &lt;script type="text/x-thebe-config"&gt;
     {
@@ -35,17 +37,19 @@
     &lt;/script&gt;
     &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</content>
     <link href="https://sphinx-book-theme.readthedocs.io/reference/blog/post1.html" rel="alternate"/>
-    <summary>Some content</summary>
+    <summary>一些内容</summary>
     <published>2020-01-01T00:00:00+00:00</published>
   </entry>
   <entry>
     <id>https://sphinx-book-theme.readthedocs.io/reference/blog/post2.html</id>
-    <title>Post 2</title>
+    <title>帖子2</title>
     <updated>2020-02-01T00:00:00+00:00</updated>
     <author>
       <name>Jo the Jovyan</name>
     </author>
-    <content type="html">&lt;p&gt;Some sample content.&lt;/p&gt;
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;一些示例内容。&lt;/p&gt;
+&lt;/div&gt;
 
     &lt;script type="text/x-thebe-config"&gt;
     {
@@ -67,7 +71,7 @@
     &lt;/script&gt;
     &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</content>
     <link href="https://sphinx-book-theme.readthedocs.io/reference/blog/post2.html" rel="alternate"/>
-    <summary>Some sample content.</summary>
+    <summary>一些示例内容。</summary>
     <published>2020-02-01T00:00:00+00:00</published>
   </entry>
 </feed>

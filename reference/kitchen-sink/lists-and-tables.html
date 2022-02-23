@@ -1,66 +1,76 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="zh_CN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:title" content="Lists & Tables" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="reference/kitchen-sink/lists-and-tables.html" />
-  <meta property="og:description" content="Lists: Enumerated Lists: Arabic numerals.- lower alpha)-(lower roman)- upper alpha.- upper roman)...., Lists that don’t start at 1:- Three, Four.- C, D.- iii, iv., List items may also be auto-enume..." />
+<meta property="og:title" content="列表和表格" />
   
-    <title>Lists &amp; Tables &#8212; Sphinx Book Theme</title>
+<meta property="og:type" content="website" />
+  
+<meta property="og:url" content="reference/kitchen-sink/lists-and-tables.html" />
+  
+<meta property="og:description" content="列表: 有序列表: 阿拉伯数字。- 小写字母)- 小写罗马字母- 大写字母。- 大写罗马字母...., 不从 1 开始的列表。- 三, 四.- C, D.- iii, iv., 列表中的项目也可以是自动枚举的。. 定义列表: 术语, 定义,, 术语, 分类器, 定义的第 1 段。 定义的第 2 段。,, 术语, 定义,. 我不知道为什么下面的定义列表被归类为与上面的定义列表不同的风格。 是术..." />
+  
+    <title>列表和表格 &#8212; Sphinx Book Theme</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet">
-  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
-
     
-  <link rel="stylesheet"
-    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-
+    <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  
+    
+    <link rel="stylesheet"
+      href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
     
       
-
+  
     
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/tabs.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.59c74d8c95b765a7fd995ac71d459ebe.min.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+    <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  
+    
+  <link href="../../_static/styles/sphinx-book-theme.css?digest=d39d74a9f498dbb5016c" rel="stylesheet">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
-    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe,.cell"
-        const thebe_selector_input = "pre,.cell_input div.highlight"
-        const thebe_selector_output = ".output,.cell_output"
-    </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="shortcut icon" href="../../_static/logo-square.svg"/>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Jupyter notebooks" href="../notebooks.html" />
-    <link rel="prev" title="API documentation" href="api.html" /> 
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="特定主题的元素" href="../special-theme-elements.html" />
+    <link rel="prev" title="API 文档" href="api.html" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
+    <meta name="docsearch:language" content="zh_CN">
     
 
     <!-- Google Analytics -->
@@ -99,6 +109,21 @@
 
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint">⚠️The latest release refactored our HTML, so double-check your custom CSS rules!⚠️</div>
+<div class="header header-item noprint"><!-- Uncomment the line below to show off a header! -->
+<!-- Hello world! --></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -107,9 +132,9 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="pl-4 pr-3 bd-sidebar site-navigation noprint " id="site-navigation">
+    <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -127,18 +152,18 @@
     <div class="bd-toc-item active">
         <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Topic Areas
+  专题区域
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../tutorials/get-started.html">
-   Get started
+   开始行动
   </a>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../../customize/index.html">
-   Customization
+   定制
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -148,93 +173,145 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../../customize/sidebar-primary.html">
-     Customize the primary sidebar
+     定制主侧栏
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../customize/sidebar-secondary.html">
-     Customize the secondary sidebar
+     定制二级侧边栏
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../customize/announcements.html">
+     Announcement banners
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../customize/header.html">
+     Header content
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../customize/download.html">
-     Add a download page button
+     添加一个下载页面的按钮
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../customize/source-files.html">
-     Add buttons to link to your source
+     添加按钮以链接到你的来源
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../customize/custom-css.html">
-     Add your own CSS rules
+     加入你自己的 CSS 规则
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../customize/single-page.html">
-     Use a single-page version of this theme
+     使用该主题的单页版本
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../content-blocks.html">
-   Special content blocks
+   特殊内容块
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../notebooks.html">
-   Jupyter notebooks
+   Jupyter 笔记本
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../launch.html">
-   Launch buttons for interactivity
+   用于交互的启动按钮
   </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../contributing/index.html">
+   Contribute to this theme
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../contributing/setup.html">
+     Set up your development workflow
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../contributing/architecture.html">
+     Architecture of the repository
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../contributing/style.html">
+     Style and design
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../contributing/tests.html">
+     Testing infrastructure
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../contributing/translate.html">
+     Translation workflow
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Reference
+  参考
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../special-theme-elements.html">
-   Theme-specific elements
-  </a>
- </li>
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="index.html">
-   Kitchen Sink
+   厨房的水槽
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="paragraph-markup.html">
-     Paragraph Level Markup
+     示例
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="api.html">
-     API documentation
+     API 文档
     </a>
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Lists &amp; Tables
+     列表和表格
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../special-theme-elements.html">
+   特定主题的元素
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../extensions.html">
+   Sphinx extension styles
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../notebooks.html">
-   Jupyter notebooks
+   Jupyter 笔记本
   </a>
  </li>
  <li class="toctree-l1">
@@ -244,19 +321,12 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../blog.html">
-   Reference for Blog
+   博客的参考
   </a>
  </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  About the theme
- </span>
-</p>
-<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../../contributing.html">
-   Contributing Guide
+  <a class="reference internal" href="../api-numpy.html">
+   NumPy docstrings
   </a>
  </li>
 </ul>
@@ -275,25 +345,56 @@
 
 
           
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+<!-- Main content -->
+<div class="col py-0 content-container">
     
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
+    <div class="header-article row sticky-top noprint">
+        
+
+
+<div class="col py-1 d-flex topbar-main">
+    <div class="topbar-left">
+        
+        <label class="nav-toggle-button topbarbtn" for="__navigation">
+            <div class="visually-hidden">Toggle navigation</div>
+            <i class="fas fa-bars"></i>
+        </label>
+        
+    </div>
+    <div class="topbar-right">
+        <!-- Launch buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+        <!-- Source interaction buttons -->
+
 <div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+    <button class="topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/sphinx-book-theme"><button type="button" class="topbarbtn--wide"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/sphinx-book-theme/issues/new?title=Issue%20on%20page%20%2Freference/kitchen-sink/lists-and-tables.html&body=Your%20issue%20content%20here."><button
+                type="button" class="topbarbtn--wide" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/executablebooks/sphinx-book-theme/edit/master/docs/reference/kitchen-sink/lists-and-tables.rst"><button
+                type="button" class="topbarbtn--wide" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+        
+<div class="dropdown-buttons-trigger sb-download-buttons">
+    <button class="topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
 
     <div class="dropdown-buttons">
@@ -301,71 +402,46 @@
         
         <!-- Download raw file -->
         <a class="dropdown-buttons" href="../../_sources/reference/kitchen-sink/lists-and-tables.rst"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                class="topbarbtn--wide" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.rst</button></a>
         <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+        <button type="button" id="download-print" class="topbarbtn--wide" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/daobook/sphinx-book-theme"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/daobook/sphinx-book-theme/issues/new?title=Issue%20on%20page%20%2Freference/kitchen-sink/lists-and-tables.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/daobook/sphinx-book-theme/edit/main/docs/reference/kitchen-sink/lists-and-tables.rst"><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+        <label class="d-block d-md-none nav-toggle-button topbarbtn" for="__page-toc">
+  <div class="visually-hidden">Toggle Table of Contents</div>
+  <i class="fas fa-list"></i>
+</label>
     </div>
 </div>
 
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#lists">
-   Lists
+   列表
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#enumerated-lists">
-     Enumerated Lists
+     有序列表
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#definition-lists">
-     Definition Lists
+     定义列表
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#option-lists">
-     Option Lists
+     选项列表
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -440,30 +516,138 @@
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>列表和表格</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lists">
+   列表
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#enumerated-lists">
+     有序列表
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#definition-lists">
+     定义列表
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#option-lists">
+     选项列表
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#field-list">
+     Field list
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bullet-lists">
+     Bullet Lists
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#simple">
+       Simple
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#complex">
+       Complex
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#second-list-level">
+       Second list level
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#but-deeper-down-the-rabbit-hole">
+         But deeper down the rabbit hole
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hlists">
+     Hlists
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#numbered-list">
+     Numbered List
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tables">
+   Tables
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#grid-tables">
+     Grid Tables
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#giant-tables">
+       Giant Tables
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#list-tables">
+     List Tables
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
               <div>
                  <div class="section" id="lists-tables">
-<h1>Lists &amp; Tables<a class="headerlink" href="#lists-tables" title="Permalink to this headline">¶</a></h1>
+<h1>列表和表格<a class="headerlink" href="#lists-tables" title="永久链接至标题">¶</a></h1>
 <div class="section" id="lists">
-<h2>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h2>
+<h2>列表<a class="headerlink" href="#lists" title="永久链接至标题">¶</a></h2>
 <div class="section" id="enumerated-lists">
-<h3>Enumerated Lists<a class="headerlink" href="#enumerated-lists" title="Permalink to this headline">¶</a></h3>
+<h3>有序列表<a class="headerlink" href="#enumerated-lists" title="永久链接至标题">¶</a></h3>
 <ol class="arabic">
-<li><p>Arabic numerals.</p>
+<li><p>阿拉伯数字。</p>
 <ol class="loweralpha simple">
-<li><p>lower alpha)</p>
+<li><p>小写字母)</p>
 <ol class="lowerroman simple">
-<li><p>(lower roman)</p>
+<li><p>小写罗马字母</p>
 <ol class="upperalpha simple">
-<li><p>upper alpha.</p>
+<li><p>大写字母。</p>
 <ol class="upperroman simple">
-<li><p>upper roman)</p></li>
+<li><p>大写罗马字母</p></li>
 </ol>
 </li>
 </ol>
@@ -472,10 +656,10 @@
 </li>
 </ol>
 </li>
-<li><p>Lists that don’t start at 1:</p>
+<li><p>不从 1 开始的列表。</p>
 <ol class="arabic simple" start="3">
-<li><p>Three</p></li>
-<li><p>Four</p></li>
+<li><p>三</p></li>
+<li><p>四</p></li>
 </ol>
 <ol class="upperalpha simple" start="3">
 <li><p>C</p></li>
@@ -486,45 +670,42 @@
 <li><p>iv</p></li>
 </ol>
 </li>
-<li><p>List items may also be auto-enumerated.</p></li>
+<li><p>列表中的项目也可以是自动枚举的。</p></li>
 </ol>
 </div>
 <div class="section" id="definition-lists">
-<h3>Definition Lists<a class="headerlink" href="#definition-lists" title="Permalink to this headline">¶</a></h3>
+<h3>定义列表<a class="headerlink" href="#definition-lists" title="永久链接至标题">¶</a></h3>
 <dl>
-<dt>Term</dt><dd><p>Definition</p>
+<dt>术语</dt><dd><p>定义</p>
 </dd>
-<dt>Term<span class="classifier">classifier</span></dt><dd><p>Definition paragraph 1.</p>
-<p>Definition paragraph 2.</p>
+<dt>术语<span class="classifier">分类器</span></dt><dd><p>定义的第 1 段。</p>
+<p>定义的第 2 段。</p>
 </dd>
-<dt>Term</dt><dd><p>Definition</p>
+<dt>术语</dt><dd><p>定义</p>
 </dd>
 </dl>
-<p>I have no clue why the definition list below is classified as a different style
-of definition list than the one above.</p>
+<p>我不知道为什么下面的定义列表被归类为与上面的定义列表不同的风格。</p>
 <dl class="simple">
-<dt>Is it the spaces in the term?</dt><dd><p>Maybe it was the multiple line paragraph
-in the line below that caused this?</p>
+<dt>是术语中的空格吗？</dt><dd><p>也许是下面这行的多行段落造成的？</p>
 </dd>
-<dt>Is it the paragraph above the list maybe?</dt><dd><p>I guess a lot of these lists don’t have leading paragraphs?</p>
+<dt>也许是清单上面的那段话？</dt><dd><p>我猜这些清单中很多都没有前导段？</p>
 </dd>
-<dt>Is it everything all at once?</dt><dd><p>Who knows?!</p>
+<dt>是不是一下子就把所有的事情都做完了？</dt><dd><p>谁知道呢！？</p>
 </dd>
 </dl>
 </div>
 <div class="section" id="option-lists">
-<h3>Option Lists<a class="headerlink" href="#option-lists" title="Permalink to this headline">¶</a></h3>
-<p>For listing command-line options:</p>
+<h3>选项列表<a class="headerlink" href="#option-lists" title="永久链接至标题">¶</a></h3>
+<p>用于列举命令行选项：</p>
 <dl class="option-list">
 <dt><kbd><span class="option">-a</span></kbd></dt>
-<dd><p>command-line option “a”</p>
+<dd><p>命令行选项  “a”</p>
 </dd>
 <dt><kbd><span class="option">-b <var>file</var></span></kbd></dt>
-<dd><p>options can have arguments
-and long descriptions</p>
+<dd><p>选项可以有参数和很长的描述</p>
 </dd>
 <dt><kbd><span class="option">--long</span></kbd></dt>
-<dd><p>options can be long also</p>
+<dd><p>选项也可以是长的</p>
 </dd>
 <dt><kbd><span class="option">--input=<var>file</var></span></kbd></dt>
 <dd><p>long options can also have
@@ -551,7 +732,7 @@ regardless of where it starts.</p>
 <p>There must be at least two spaces between the option and the description.</p>
 </div>
 <div class="section" id="field-list">
-<h3>Field list<a class="headerlink" href="#field-list" title="Permalink to this headline">¶</a></h3>
+<h3>Field list<a class="headerlink" href="#field-list" title="永久链接至标题">¶</a></h3>
 <dl class="field-list">
 <dt class="field-odd">Author</dt>
 <dd class="field-odd"><p>David Goodger</p>
@@ -609,9 +790,9 @@ constructs and many advanced constructs.</p>
 </dl>
 </div>
 <div class="section" id="bullet-lists">
-<h3>Bullet Lists<a class="headerlink" href="#bullet-lists" title="Permalink to this headline">¶</a></h3>
+<h3>Bullet Lists<a class="headerlink" href="#bullet-lists" title="永久链接至标题">¶</a></h3>
 <div class="section" id="simple">
-<h4>Simple<a class="headerlink" href="#simple" title="Permalink to this headline">¶</a></h4>
+<h4>Simple<a class="headerlink" href="#simple" title="永久链接至标题">¶</a></h4>
 <ul class="simple">
 <li><p>A simple list.</p></li>
 <li><p>There are no margins between list items.</p></li>
@@ -632,7 +813,7 @@ constructs and many advanced constructs.</p>
 </ul>
 </div>
 <div class="section" id="complex">
-<h4>Complex<a class="headerlink" href="#complex" title="Permalink to this headline">¶</a></h4>
+<h4>Complex<a class="headerlink" href="#complex" title="永久链接至标题">¶</a></h4>
 <ul>
 <li><p>A bullet list</p>
 <ul class="simple">
@@ -665,7 +846,7 @@ constructs and many advanced constructs.</p>
 </ul>
 </div>
 <div class="section" id="second-list-level">
-<h4>Second list level<a class="headerlink" href="#second-list-level" title="Permalink to this headline">¶</a></h4>
+<h4>Second list level<a class="headerlink" href="#second-list-level" title="永久链接至标题">¶</a></h4>
 <ul>
 <li><p>here is a list in a second-level section.</p></li>
 <li><p><a class="reference external" href="http://www.yahoo.com">yahoo</a></p></li>
@@ -698,14 +879,14 @@ constructs and many advanced constructs.</p>
 </li>
 <li><p>how about an admonition?</p>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">备注</p>
 <p>This is a note nested in a list.</p>
 </div>
 </li>
 <li><p>and hehe</p></li>
 </ul>
 <div class="section" id="but-deeper-down-the-rabbit-hole">
-<h5>But deeper down the rabbit hole<a class="headerlink" href="#but-deeper-down-the-rabbit-hole" title="Permalink to this headline">¶</a></h5>
+<h5>But deeper down the rabbit hole<a class="headerlink" href="#but-deeper-down-the-rabbit-hole" title="永久链接至标题">¶</a></h5>
 <ul class="simple">
 <li><p>I kept saying that, “deeper down the rabbit hole”. <a class="reference external" href="http://www.yahoo.com">yahoo</a></p>
 <ul>
@@ -728,7 +909,7 @@ constructs and many advanced constructs.</p>
 </div>
 </div>
 <div class="section" id="hlists">
-<h3>Hlists<a class="headerlink" href="#hlists" title="Permalink to this headline">¶</a></h3>
+<h3>Hlists<a class="headerlink" href="#hlists" title="永久链接至标题">¶</a></h3>
 <table class="hlist"><tr><td><ul class="simple">
 <li><p>First item</p></li>
 <li><p>Second item</p></li>
@@ -744,22 +925,22 @@ constructs and many advanced constructs.</p>
 <table class="hlist"><tr><td><ul>
 <li><div class="figure align-default" id="id11">
 <img alt="https://source.unsplash.com/200x200/daily?cute+animals" src="https://source.unsplash.com/200x200/daily?cute+animals" />
-<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">This is a short caption for a figure.</span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">图 5 </span><span class="caption-text">This is a short caption for a figure.</span><a class="headerlink" href="#id11" title="永久链接至图片">¶</a></p>
 </div>
 </li>
 </ul>
 </td><td><ul>
 <li><div class="figure align-default" id="id12">
 <img alt="https://source.unsplash.com/200x200/daily?cute+animals" src="https://source.unsplash.com/200x200/daily?cute+animals" />
-<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">This is a long caption for a figure. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Donec porttitor dolor in odio posuere, vitae ornare libero mattis. In lobortis justo vestibulum nibh aliquet, non.</span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">图 6 </span><span class="caption-text">This is a long caption for a figure. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Donec porttitor dolor in odio posuere, vitae ornare libero mattis. In lobortis justo vestibulum nibh aliquet, non.</span><a class="headerlink" href="#id12" title="永久链接至图片">¶</a></p>
 </div>
 </li>
 </ul>
 </td></tr></table>
 </div>
 <div class="section" id="numbered-list">
-<h3>Numbered List<a class="headerlink" href="#numbered-list" title="Permalink to this headline">¶</a></h3>
+<h3>Numbered List<a class="headerlink" href="#numbered-list" title="永久链接至标题">¶</a></h3>
 <ol class="arabic simple">
 <li><p>One,</p></li>
 <li><p>Two.</p></li>
@@ -783,9 +964,9 @@ Sed feugiat sagittis neque quis eleifend. Duis rutrum lectus sit amet mattis sus
 </div>
 </div>
 <div class="section" id="tables">
-<h2>Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h2>
+<h2>Tables<a class="headerlink" href="#tables" title="永久链接至标题">¶</a></h2>
 <div class="section" id="grid-tables">
-<h3>Grid Tables<a class="headerlink" href="#grid-tables" title="Permalink to this headline">¶</a></h3>
+<h3>Grid Tables<a class="headerlink" href="#grid-tables" title="永久链接至标题">¶</a></h3>
 <p>Here’s a grid table followed by a simple table:</p>
 <table class="table">
 <colgroup>
@@ -865,7 +1046,7 @@ empty: <code class="docutils literal notranslate"><span class="pre">--&gt;</span
 </tbody>
 </table>
 <div class="section" id="giant-tables">
-<h4>Giant Tables<a class="headerlink" href="#giant-tables" title="Permalink to this headline">¶</a></h4>
+<h4>Giant Tables<a class="headerlink" href="#giant-tables" title="永久链接至标题">¶</a></h4>
 <table class="table">
 <colgroup>
 <col style="width: 9%" />
@@ -954,9 +1135,9 @@ empty: <code class="docutils literal notranslate"><span class="pre">--&gt;</span
 </div>
 </div>
 <div class="section" id="list-tables">
-<h3>List Tables<a class="headerlink" href="#list-tables" title="Permalink to this headline">¶</a></h3>
+<h3>List Tables<a class="headerlink" href="#list-tables" title="永久链接至标题">¶</a></h3>
 <table class="colwidths-given table" id="id13">
-<caption><span class="caption-number">Table 1 </span><span class="caption-text">List tables can have captions like this one.</span><a class="headerlink" href="#id13" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-number">表 1 </span><span class="caption-text">List tables can have captions like this one.</span><a class="headerlink" href="#id13" title="永久链接至表格">¶</a></caption>
 <colgroup>
 <col style="width: 13%" />
 <col style="width: 7%" />
@@ -989,7 +1170,7 @@ empty: <code class="docutils literal notranslate"><span class="pre">--&gt;</span
 </tbody>
 </table>
 <table class="table" id="id14">
-<caption><span class="caption-number">Table 2 </span><span class="caption-text">This is a list table with images in it.</span><a class="headerlink" href="#id14" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-number">表 2 </span><span class="caption-text">This is a list table with images in it.</span><a class="headerlink" href="#id14" title="永久链接至表格">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -997,13 +1178,13 @@ empty: <code class="docutils literal notranslate"><span class="pre">--&gt;</span
 <tbody>
 <tr class="row-odd"><td><div class="figure align-default" id="id15">
 <img alt="https://source.unsplash.com/200x200/daily?cute+animals" src="https://source.unsplash.com/200x200/daily?cute+animals" />
-<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">This is a short caption for a figure.</span><a class="headerlink" href="#id15" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">图 7 </span><span class="caption-text">This is a short caption for a figure.</span><a class="headerlink" href="#id15" title="永久链接至图片">¶</a></p>
 </div>
 </td>
 <td><div class="figure align-default" id="id16">
 <img alt="https://source.unsplash.com/200x200/daily?cute+animals" src="https://source.unsplash.com/200x200/daily?cute+animals" />
-<p class="caption"><span class="caption-number">Fig. 8 </span><span class="caption-text">This is a long caption for a figure. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Donec porttitor dolor in odio posuere, vitae ornare libero mattis. In lobortis justo vestibulum nibh aliquet, non.</span><a class="headerlink" href="#id16" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">图 8 </span><span class="caption-text">This is a long caption for a figure. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Donec porttitor dolor in odio posuere, vitae ornare libero mattis. In lobortis justo vestibulum nibh aliquet, non.</span><a class="headerlink" href="#id16" title="永久链接至图片">¶</a></p>
 </div>
 </td>
 </tr>
@@ -1038,45 +1219,52 @@ Donec porttitor dolor in odio posuere, vitae ornare libero mattis. In lobortis j
 
               </div>
               
-        
-            <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="api.html" title="previous page">
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="api.html" title="上一页 页">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">API documentation</p>
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">API 文档</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../notebooks.html" title="next page">
+    <a class='right-next' id="next-link" href="../special-theme-elements.html" title="下一页 页">
     <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Jupyter notebooks</p>
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">特定主题的元素</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-        
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By the Executable Book Project<br/>
-        
-            &copy; Copyright 2020.<br/>
-          Last updated on Nov 07, 2021.<br/>
-      </p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By the Executable Book Project<br/>
+  
+      &copy; Copyright 2020.<br/>
+    Last updated on 2022 年 02 月 23 日.<br/>
+</p>
+        </footer>
     </div>
-  </footer>
-</main>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  
+    <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  
+  
+  <script src="../../_static/scripts/sphinx-book-theme.js?digest=d39d74a9f498dbb5016c"></script>
+
 
   </body>
 </html>
