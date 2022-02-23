@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh_CN">
   <id>https://sphinx-book-theme.readthedocs.io</id>
   <title>Blog</title>
-  <updated>2022-02-23T07:33:49.233491+00:00</updated>
+  <updated>2022-02-23T07:36:21.902590+00:00</updated>
   <link href="https://sphinx-book-theme.readthedocs.io"/>
   <link href="https://sphinx-book-theme.readthedocs.io/reference/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.23">ABlog</generator>
