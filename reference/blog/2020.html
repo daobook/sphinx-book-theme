@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Posted in 2020 &#8212; Sphinx Book Theme</title>
     
-    
     <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 <link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
   
@@ -24,7 +23,7 @@
   
     
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=3e71fa63ecd7719e64b6668c6ad94fdbd645785a" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
@@ -34,9 +33,6 @@
     
     <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
   
-    
-  <link href="../../_static/styles/sphinx-book-theme.css?digest=d39d74a9f498dbb5016c" rel="stylesheet">
-
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
@@ -48,6 +44,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/tabs.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=4a2ab92203046145cabe39b99b7fdcd3c3c45e62"></script>
     <script src="../../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
@@ -284,6 +281,11 @@ const thebe_selector_output = ".output, .cell_output"
      Translation workflow
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../contributing/subthemes.html">
+     Creating sub-themes
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -366,6 +368,8 @@ const thebe_selector_output = ".output, .cell_output"
 
 
           
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
 <!-- Main content -->
 <div class="col py-0 content-container">
     
@@ -373,46 +377,86 @@ const thebe_selector_output = ".output, .cell_output"
         
 
 
-<div class="col py-1 d-flex topbar-main">
-    <div class="topbar-left">
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
         
-        <label class="nav-toggle-button topbarbtn" for="__navigation">
-            <div class="visually-hidden">Toggle navigation</div>
-            <i class="fas fa-bars"></i>
-        </label>
-        
-    </div>
-    <div class="topbar-right">
-        <!-- Launch buttons -->
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
 
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
 
-        <!-- Full screen (wrap in <a> to have style consistency -->
+</label>
 
-<a class="full-screen-button"><button type="button" class="topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-        <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button class="topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/executablebooks/sphinx-book-theme"><button type="button" class="topbarbtn--wide"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/executablebooks/sphinx-book-theme/issues/new?title=Issue%20on%20page%20%2Freference/blog/2020.html&body=Your%20issue%20content%20here."><button
-                type="button" class="topbarbtn--wide" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
     </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/sphinx-book-theme"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/sphinx-book-theme/issues/new?title=Issue%20on%20page%20%2Freference/blog/2020.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
 </div>
 
-        
-        
     </div>
 </div>
 
@@ -558,7 +602,7 @@ const thebe_selector_output = ".output, .cell_output"
     By the Executable Book Project<br/>
   
       &copy; Copyright 2020.<br/>
-    Last updated on 2022 年 02 月 23 日.<br/>
+    Last updated on 2022 年 03 月 11 日.<br/>
 </p>
         </footer>
     </div>
@@ -569,12 +613,8 @@ const thebe_selector_output = ".output, .cell_output"
       </div>
     </div>
   
-  
     <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
   
-  
-  <script src="../../_static/scripts/sphinx-book-theme.js?digest=d39d74a9f498dbb5016c"></script>
-
 
   </body>
 </html>

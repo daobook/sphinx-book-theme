@@ -4,7 +4,8 @@
 <html lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
 <meta property="og:title" content="厨房的水槽" />
   
 <meta property="og:type" content="website" />
@@ -14,7 +15,6 @@
 <meta property="og:description" content="这部分展示了 Sphinx 支持的各种开箱即用的元素。 示例- Inline Markup, Math, Meta, Blocks- Literal Blocks, Line Blocks, Block Quotes, Doctest Blocks, Code Blocks- Emphasized lines with line numbers.., Sidebar- Code with S..." />
   
     <title>厨房的水槽 &#8212; Sphinx Book Theme</title>
-    
     
     <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 <link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -32,7 +32,7 @@
   
     
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=3e71fa63ecd7719e64b6668c6ad94fdbd645785a" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
@@ -42,9 +42,6 @@
     
     <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
   
-    
-  <link href="../../_static/styles/sphinx-book-theme.css?digest=d39d74a9f498dbb5016c" rel="stylesheet">
-
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
@@ -55,6 +52,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=4a2ab92203046145cabe39b99b7fdcd3c3c45e62"></script>
     <script src="../../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
@@ -68,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
     <link rel="next" title="示例" href="paragraph-markup.html" />
-    <link rel="prev" title="Translation workflow" href="../../contributing/translate.html" /> 
+    <link rel="prev" title="Creating sub-themes" href="../../contributing/subthemes.html" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="zh_CN">
     
@@ -263,6 +261,11 @@ const thebe_selector_output = ".output, .cell_output"
      Translation workflow
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../contributing/subthemes.html">
+     Creating sub-themes
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -345,6 +348,8 @@ const thebe_selector_output = ".output, .cell_output"
 
 
           
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
 <!-- Main content -->
 <div class="col py-0 content-container">
     
@@ -352,65 +357,149 @@ const thebe_selector_output = ".output, .cell_output"
         
 
 
-<div class="col py-1 d-flex topbar-main">
-    <div class="topbar-left">
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
         
-        <label class="nav-toggle-button topbarbtn" for="__navigation">
-            <div class="visually-hidden">Toggle navigation</div>
-            <i class="fas fa-bars"></i>
-        </label>
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
         
     </div>
-    <div class="topbar-right">
-        <!-- Launch buttons -->
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
 
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
 
-        <!-- Full screen (wrap in <a> to have style consistency -->
+</button>
 
-<a class="full-screen-button"><button type="button" class="topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/sphinx-book-theme"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
 
-        <!-- Source interaction buttons -->
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
 
-<div class="dropdown-buttons-trigger">
-    <button class="topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/executablebooks/sphinx-book-theme"><button type="button" class="topbarbtn--wide"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/executablebooks/sphinx-book-theme/issues/new?title=Issue%20on%20page%20%2Freference/kitchen-sink/index.html&body=Your%20issue%20content%20here."><button
-                type="button" class="topbarbtn--wide" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/executablebooks/sphinx-book-theme/edit/master/docs/reference/kitchen-sink/index.rst"><button
-                type="button" class="topbarbtn--wide" data-toggle="tooltip" data-placement="left"
-                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
-    </div>
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/sphinx-book-theme/issues/new?title=Issue%20on%20page%20%2Freference/kitchen-sink/index.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/sphinx-book-theme/edit/master/docs/reference/kitchen-sink/index.rst"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
 </div>
 
-        
-<div class="dropdown-buttons-trigger sb-download-buttons">
-    <button class="topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/reference/kitchen-sink/index.rst"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
 
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
         
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/reference/kitchen-sink/index.rst"><button type="button"
-                class="topbarbtn--wide" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.rst</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="topbarbtn--wide" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
 </div>
 
-        
     </div>
 </div>
 
@@ -433,7 +522,7 @@ const thebe_selector_output = ".output, .cell_output"
             <main id="main-content" role="main">
                 
               <div>
-                 <div class="section" id="kitchen-sink">
+                 <section id="kitchen-sink">
 <h1>厨房的水槽<a class="headerlink" href="#kitchen-sink" title="永久链接至标题">¶</a></h1>
 <p>这部分展示了 Sphinx 支持的各种开箱即用的元素。</p>
 <div class="toctree-wrapper compound">
@@ -516,7 +605,7 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 </ul>
 </div>
-</div>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -548,11 +637,11 @@ const thebe_selector_output = ".output, .cell_output"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../../contributing/translate.html" title="上一页 页">
+    <a class='left-prev' id="prev-link" href="../../contributing/subthemes.html" title="上一页 页">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">上一页</p>
-            <p class="prev-next-title">Translation workflow</p>
+            <p class="prev-next-title">Creating sub-themes</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="paragraph-markup.html" title="下一页 页">
@@ -572,7 +661,7 @@ const thebe_selector_output = ".output, .cell_output"
     By the Executable Book Project<br/>
   
       &copy; Copyright 2020.<br/>
-    Last updated on 2022 年 02 月 23 日.<br/>
+    Last updated on 2022 年 03 月 11 日.<br/>
 </p>
         </footer>
     </div>
@@ -583,12 +672,8 @@ const thebe_selector_output = ".output, .cell_output"
       </div>
     </div>
   
-  
     <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
   
-  
-  <script src="../../_static/scripts/sphinx-book-theme.js?digest=d39d74a9f498dbb5016c"></script>
-
 
   </body>
 </html>

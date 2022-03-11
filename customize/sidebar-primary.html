@@ -4,7 +4,8 @@
 <html lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
 <meta property="og:title" content="定制主侧栏" />
   
 <meta property="og:type" content="website" />
@@ -14,7 +15,6 @@
 <meta property="og:description" content="主侧边栏一般包含网站导航和标志。默认情况下，它位于网站的左侧。本页描述了你可以控制和定制主侧边栏的方法。 控制左边的侧栏项目: 你可以控制什么样的内容放在左上方你的网站的标志和名称下面。 要做到这一点，在你的 conf.py 文件中使用 html_sidebars 变量。这个变量以文件名模式的字典为键，以侧边栏元素的列表为值。任何与键相匹配的文件都会有相应的侧边栏元素放在该页面的侧边栏中。 ..." />
   
     <title>定制主侧栏 &#8212; Sphinx Book Theme</title>
-    
     
     <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 <link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -32,7 +32,7 @@
   
     
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=3e71fa63ecd7719e64b6668c6ad94fdbd645785a" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
@@ -42,9 +42,6 @@
     
     <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
   
-    
-  <link href="../_static/styles/sphinx-book-theme.css?digest=d39d74a9f498dbb5016c" rel="stylesheet">
-
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
@@ -55,6 +52,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=4a2ab92203046145cabe39b99b7fdcd3c3c45e62"></script>
     <script src="../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
@@ -263,6 +261,11 @@ const thebe_selector_output = ".output, .cell_output"
      Translation workflow
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../contributing/subthemes.html">
+     Creating sub-themes
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -345,6 +348,8 @@ const thebe_selector_output = ".output, .cell_output"
 
 
           
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
 <!-- Main content -->
 <div class="col py-0 content-container">
     
@@ -352,68 +357,160 @@ const thebe_selector_output = ".output, .cell_output"
         
 
 
-<div class="col py-1 d-flex topbar-main">
-    <div class="topbar-left">
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
         
-        <label class="nav-toggle-button topbarbtn" for="__navigation">
-            <div class="visually-hidden">Toggle navigation</div>
-            <i class="fas fa-bars"></i>
-        </label>
-        
-    </div>
-    <div class="topbar-right">
-        <!-- Launch buttons -->
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
 
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
 
-        <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-        <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button class="topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/executablebooks/sphinx-book-theme"><button type="button" class="topbarbtn--wide"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/executablebooks/sphinx-book-theme/issues/new?title=Issue%20on%20page%20%2Fcustomize/sidebar-primary.html&body=Your%20issue%20content%20here."><button
-                type="button" class="topbarbtn--wide" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/executablebooks/sphinx-book-theme/edit/master/docs/customize/sidebar-primary.md"><button
-                type="button" class="topbarbtn--wide" data-toggle="tooltip" data-placement="left"
-                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
-    </div>
-</div>
-
-        
-<div class="dropdown-buttons-trigger sb-download-buttons">
-    <button class="topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/customize/sidebar-primary.md"><button type="button"
-                class="topbarbtn--wide" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="topbarbtn--wide" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-        <label class="d-block d-md-none nav-toggle-button topbarbtn" for="__page-toc">
-  <div class="visually-hidden">Toggle Table of Contents</div>
-  <i class="fas fa-list"></i>
 </label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/sphinx-book-theme"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/sphinx-book-theme/issues/new?title=Issue%20on%20page%20%2Fcustomize/sidebar-primary.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/sphinx-book-theme/edit/master/docs/customize/sidebar-primary.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/customize/sidebar-primary.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
     </div>
 </div>
 
@@ -526,10 +623,10 @@ const thebe_selector_output = ".output, .cell_output"
             <main id="main-content" role="main">
                 
               <div>
-                 <div class="tex2jax_ignore mathjax_ignore section" id="customize-the-primary-sidebar">
+                 <section class="tex2jax_ignore mathjax_ignore" id="customize-the-primary-sidebar">
 <h1>定制主侧栏<a class="headerlink" href="#customize-the-primary-sidebar" title="永久链接至标题">¶</a></h1>
 <p>主侧边栏一般包含网站导航和标志。默认情况下，它位于网站的左侧。本页描述了你可以控制和定制主侧边栏的方法。</p>
-<div class="section" id="control-the-left-sidebar-items">
+<section id="control-the-left-sidebar-items">
 <span id="sidebar-primary-items"></span><h2>控制左边的侧栏项目<a class="headerlink" href="#control-the-left-sidebar-items" title="永久链接至标题">¶</a></h2>
 <p>你可以控制什么样的内容放在左上方你的网站的标志和名称下面。</p>
 <p>要做到这一点，在你的 <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> 文件中使用 <code class="docutils literal notranslate"><span class="pre">html_sidebars</span></code> 变量。这个变量以文件名模式的字典为键，以侧边栏元素的列表为值。任何与键相匹配的文件都会有相应的侧边栏元素放在该页面的侧边栏中。</p>
@@ -546,7 +643,7 @@ const thebe_selector_output = ".output, .cell_output"
 </pre></div>
 </div>
 <p>更多信息请见 <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_sidebars">Sphinx HTML 侧边栏文档</a>。</p>
-<div class="section" id="default-sidebar-elements">
+<section id="default-sidebar-elements">
 <h3>默认的侧边栏元素<a class="headerlink" href="#default-sidebar-elements" title="永久链接至标题">¶</a></h3>
 <p>默认情况下，该主题在所有页面上都启用了这三个特定主题的侧边栏元素：</p>
 <ul class="simple">
@@ -555,9 +652,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p><code class="docutils literal notranslate"><span class="pre">sbt-sidebar-nav.html</span></code>: 一个用于你的书基于 bootstrap 的导航菜单。</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">sbt-sidebar-footer</span></code>: 一个 <a class="reference internal" href="#custom-footer"><span class="std std-ref">可配置的</span></a> HTML 片段，用于添加到侧边栏（默认情况下，它被放置在底部）。</p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="customize-the-sidebar-footer">
+</section>
+</section>
+<section id="customize-the-sidebar-footer">
 <span id="custom-footer"></span><h2>自定义侧边栏页脚<a class="headerlink" href="#customize-the-sidebar-footer" title="永久链接至标题">¶</a></h2>
 <p>你可以选择你自己的 HTML，包括在你的侧边栏的页脚（或将其设置为空）。要做到这一点，请在 <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> 中设置以下选项：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
@@ -568,12 +665,12 @@ const thebe_selector_output = ".output, .cell_output"
 </pre></div>
 </div>
 <p>这段文字将被默认放置在侧边栏的底部。</p>
-</div>
-<div class="section" id="add-a-header-to-your-table-of-contents">
+</section>
+<section id="add-a-header-to-your-table-of-contents">
 <h2>为你的目录添加一个标题<a class="headerlink" href="#add-a-header-to-your-table-of-contents" title="永久链接至标题">¶</a></h2>
 <p>“如果你想在 TOC 链接的某一节上面添加一个标题，请在该节的 <code class="docutils literal notranslate"><span class="pre">toctree</span></code> 指令中使用 <code class="docutils literal notranslate"><span class="pre">:caption:</span> <span class="pre">我的标题文本</span></code> 为该部分添加标题。</p>
-</div>
-<div class="section" id="customize-the-logo-title-and-favicon">
+</section>
+<section id="customize-the-logo-title-and-favicon">
 <span id="sidebar-primary-logo"></span><h2>自定义标志、标题和 favicon<a class="headerlink" href="#customize-the-logo-title-and-favicon" title="永久链接至标题">¶</a></h2>
 <p>你可以用 <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> 中的以下 Sphinx 配置来定制你网站的标志、标题和 favicon：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_title</span> <span class="o">=</span> <span class="s2">&quot;Your title&quot;</span>
@@ -590,8 +687,8 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="p">}</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="add-the-home-page-to-your-table-of-contents">
+</section>
+<section id="add-the-home-page-to-your-table-of-contents">
 <span id="sidebar-primary-home-page"></span><h2>将主页添加到你的目录中<a class="headerlink" href="#add-the-home-page-to-your-table-of-contents" title="永久链接至标题">¶</a></h2>
 <p>默认情况下，你的目录将从你添加到 <code class="docutils literal notranslate"><span class="pre">toctree</span></code> 的第一个文件开始。你也可以配置主题，在你的导航栏中也显示主题的<strong>登陆页</strong>。</p>
 <p>要将你的网站的登陆页添加到目录中，请使用以下配置：</p>
@@ -602,8 +699,8 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="p">}</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="control-the-depth-of-the-left-sidebar-lists-to-expand">
+</section>
+<section id="control-the-depth-of-the-left-sidebar-lists-to-expand">
 <span id="sidebar-navbar-depth"></span><h2>控制左侧侧边栏列表的展开深度<a class="headerlink" href="#control-the-depth-of-the-left-sidebar-lists-to-expand" title="永久链接至标题">¶</a></h2>
 <p>你可以使用 <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> 中的以下配置，控制左侧边栏中的 toc 项目保持展开的程度：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
@@ -614,8 +711,8 @@ const thebe_selector_output = ".output, .cell_output"
 </pre></div>
 </div>
 <p>默认值是 <code class="docutils literal notranslate"><span class="pre">1</span></code>，它只显示文档的顶层部分（在本文档中使用）。</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -671,7 +768,7 @@ const thebe_selector_output = ".output, .cell_output"
     By the Executable Book Project<br/>
   
       &copy; Copyright 2020.<br/>
-    Last updated on 2022 年 02 月 23 日.<br/>
+    Last updated on 2022 年 03 月 11 日.<br/>
 </p>
         </footer>
     </div>
@@ -682,12 +779,8 @@ const thebe_selector_output = ".output, .cell_output"
       </div>
     </div>
   
-  
     <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
   
-  
-  <script src="../_static/scripts/sphinx-book-theme.js?digest=d39d74a9f498dbb5016c"></script>
-
 
   </body>
 </html>

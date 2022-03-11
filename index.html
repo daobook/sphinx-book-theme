@@ -4,7 +4,8 @@
 <html lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
 <meta property="og:title" content="专题区域" />
   
 <meta property="og:type" content="website" />
@@ -14,7 +15,6 @@
 <meta property="og:description" content="一个设计简洁，支持交互内容，具有现代书籍外观和感觉的 Sphinx 主题 灵活的内容布局, 受到美丽的在线书籍的启发，例如 Edward Tufte CSS 指南 。,, 专为 Jupyter 笔记本设计的可视化课程, 单元格输入、输出和交互功能都得到支持。,, 用于在线交互的启动按钮, 对于用计算材料构建的页面，将你的网站连接到在线 BinderHub，以获得交互内容。,, Bootstr..." />
   
     <title>专题区域 &#8212; Sphinx Book Theme</title>
-    
     
     <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 <link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -32,7 +32,7 @@
   
     
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=3e71fa63ecd7719e64b6668c6ad94fdbd645785a" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
@@ -42,9 +42,6 @@
     
     <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
   
-    
-  <link href="_static/styles/sphinx-book-theme.css?digest=d39d74a9f498dbb5016c" rel="stylesheet">
-
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
@@ -55,6 +52,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=4a2ab92203046145cabe39b99b7fdcd3c3c45e62"></script>
     <script src="_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/design-tabs.js"></script>
@@ -262,6 +260,11 @@ const thebe_selector_output = ".output, .cell_output"
      Translation workflow
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="contributing/subthemes.html">
+     Creating sub-themes
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -344,6 +347,8 @@ const thebe_selector_output = ".output, .cell_output"
 
 
           
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
 <!-- Main content -->
 <div class="col py-0 content-container">
     
@@ -351,68 +356,160 @@ const thebe_selector_output = ".output, .cell_output"
         
 
 
-<div class="col py-1 d-flex topbar-main">
-    <div class="topbar-left">
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
         
-        <label class="nav-toggle-button topbarbtn" for="__navigation">
-            <div class="visually-hidden">Toggle navigation</div>
-            <i class="fas fa-bars"></i>
-        </label>
-        
-    </div>
-    <div class="topbar-right">
-        <!-- Launch buttons -->
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
 
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
 
-        <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-        <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button class="topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/executablebooks/sphinx-book-theme"><button type="button" class="topbarbtn--wide"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/executablebooks/sphinx-book-theme/issues/new?title=Issue%20on%20page%20%2Findex.html&body=Your%20issue%20content%20here."><button
-                type="button" class="topbarbtn--wide" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/executablebooks/sphinx-book-theme/edit/master/docs/index.md"><button
-                type="button" class="topbarbtn--wide" data-toggle="tooltip" data-placement="left"
-                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
-    </div>
-</div>
-
-        
-<div class="dropdown-buttons-trigger sb-download-buttons">
-    <button class="topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/index.md"><button type="button"
-                class="topbarbtn--wide" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="topbarbtn--wide" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-        <label class="d-block d-md-none nav-toggle-button topbarbtn" for="__page-toc">
-  <div class="visually-hidden">Toggle Table of Contents</div>
-  <i class="fas fa-list"></i>
 </label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/sphinx-book-theme"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/sphinx-book-theme/issues/new?title=Issue%20on%20page%20%2Findex.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/sphinx-book-theme/edit/master/docs/index.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/index.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
     </div>
 </div>
 
@@ -507,7 +604,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p class="admonition-title">参见</p>
 <p>这是 <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a> 的默认主题。</p>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="topic-areas">
+<section class="tex2jax_ignore mathjax_ignore" id="topic-areas">
 <h1>专题区域<a class="headerlink" href="#topic-areas" title="永久链接至标题">¶</a></h1>
 <p>以下专题区域将帮助你理解和使用该主题。</p>
 <div class="toctree-wrapper compound">
@@ -521,8 +618,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="contributing/index.html">Contribute to this theme</a></li>
 </ul>
 </div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="reference-pages">
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="reference-pages">
 <h1>参考页面<a class="headerlink" href="#reference-pages" title="永久链接至标题">¶</a></h1>
 <p>参考页展示了这个主题的视觉外观。</p>
 <div class="toctree-wrapper compound">
@@ -568,8 +665,8 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 </ul>
 </div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="inspiration">
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="inspiration">
 <h1>Inspiration<a class="headerlink" href="#inspiration" title="永久链接至标题">¶</a></h1>
 <p>This theme draws inspiration and borrows design elements from the following themes:</p>
 <ul class="simple">
@@ -579,7 +676,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p><a class="reference external" href="https://docs.gitbook.com/">GitBook</a></p></li>
 <li><p>The <a class="reference external" href="https://tailwindcss.com/docs/installation">Tailwind CSS docs</a></p></li>
 </ul>
-</div>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -628,7 +725,7 @@ const thebe_selector_output = ".output, .cell_output"
     By the Executable Book Project<br/>
   
       &copy; Copyright 2020.<br/>
-    Last updated on 2022 年 02 月 23 日.<br/>
+    Last updated on 2022 年 03 月 11 日.<br/>
 </p>
         </footer>
     </div>
@@ -639,12 +736,8 @@ const thebe_selector_output = ".output, .cell_output"
       </div>
     </div>
   
-  
     <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
   
-  
-  <script src="_static/scripts/sphinx-book-theme.js?digest=d39d74a9f498dbb5016c"></script>
-
 
   </body>
 </html>

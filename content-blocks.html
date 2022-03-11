@@ -4,7 +4,8 @@
 <html lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
 <meta property="og:title" content="特殊内容块" />
   
 <meta property="og:type" content="website" />
@@ -14,7 +15,6 @@
 <meta property="og:description" content="有几个内容块是这个主题所特有的。 语录和题记: 这是 sphinx-book-theme 中的引文和题记的样子。 一段没有出处的引言： Here’s my quote, it’s pretty neat. I wonder how many lines I can create with a single stream-of-consciousness quote. I could try ..." />
   
     <title>特殊内容块 &#8212; Sphinx Book Theme</title>
-    
     
     <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 <link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -32,7 +32,7 @@
   
     
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=3e71fa63ecd7719e64b6668c6ad94fdbd645785a" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
@@ -42,9 +42,6 @@
     
     <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
   
-    
-  <link href="_static/styles/sphinx-book-theme.css?digest=d39d74a9f498dbb5016c" rel="stylesheet">
-
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
@@ -55,6 +52,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=4a2ab92203046145cabe39b99b7fdcd3c3c45e62"></script>
     <script src="_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/design-tabs.js"></script>
@@ -263,6 +261,11 @@ const thebe_selector_output = ".output, .cell_output"
      Translation workflow
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="contributing/subthemes.html">
+     Creating sub-themes
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -345,6 +348,8 @@ const thebe_selector_output = ".output, .cell_output"
 
 
           
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
 <!-- Main content -->
 <div class="col py-0 content-container">
     
@@ -352,98 +357,260 @@ const thebe_selector_output = ".output, .cell_output"
         
 
 
-<div class="col py-1 d-flex topbar-main">
-    <div class="topbar-left">
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
         
-        <label class="nav-toggle-button topbarbtn" for="__navigation">
-            <div class="visually-hidden">Toggle navigation</div>
-            <i class="fas fa-bars"></i>
-        </label>
-        
-    </div>
-    <div class="topbar-right">
-        <!-- Launch buttons -->
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
 
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
 
-<div class="dropdown-buttons-trigger">
-    <button class="topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/sphinx-book-theme/master?urlpath=lab/tree/docs/content-blocks.md">
-    <button type="button"
-        class="topbarbtn--wide"
-        title="Launch on Binder"
-        data-toggle="tooltip"
-        data-placement="left">
-    <img class="binder-button-logo"
-        src="_static/images/logo_binder.svg"
-        alt="Launch on Binder">
-        Binder
-    </button>
-</a>
-        
-        
-        
-        
-        <button type="button" class="topbarbtn--wide"
-            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
-                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
-        
-    </div>
-</div>
-
-        <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-        <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button class="topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/executablebooks/sphinx-book-theme"><button type="button" class="topbarbtn--wide"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/executablebooks/sphinx-book-theme/issues/new?title=Issue%20on%20page%20%2Fcontent-blocks.html&body=Your%20issue%20content%20here."><button
-                type="button" class="topbarbtn--wide" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/executablebooks/sphinx-book-theme/edit/master/docs/content-blocks.md"><button
-                type="button" class="topbarbtn--wide" data-toggle="tooltip" data-placement="left"
-                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
-    </div>
-</div>
-
-        
-<div class="dropdown-buttons-trigger sb-download-buttons">
-    <button class="topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="_sources/content-blocks.ipynb"><button type="button"
-                class="topbarbtn--wide" title="Download notebook file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/content-blocks.md"><button type="button"
-                class="topbarbtn--wide" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="topbarbtn--wide" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-        <label class="d-block d-md-none nav-toggle-button topbarbtn" for="__page-toc">
-  <div class="visually-hidden">Toggle Table of Contents</div>
-  <i class="fas fa-list"></i>
 </label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/sphinx-book-theme/master?urlpath=lab/tree/docs/content-blocks.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://colab.research.google.com/github/executablebooks/sphinx-book-theme/blob/master/docs/content-blocks.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Colab"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_colab.png">
+  </span>
+<span class="headerbtn__text-container">Colab</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fexecutablebooks%2Fsphinx-book-theme%2Fblob%2Fmaster%2Fdocs/content-blocks.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Deepnote"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_deepnote.svg">
+  </span>
+<span class="headerbtn__text-container">Deepnote</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="initThebeSBT()"
+  class="headerbtn headerbtn-launch-thebe"
+  data-toggle="tooltip"
+data-placement="left"
+title="Launch Thebe"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="headerbtn__text-container">Live Code</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/sphinx-book-theme"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/sphinx-book-theme/issues/new?title=Issue%20on%20page%20%2Fcontent-blocks.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/sphinx-book-theme/edit/master/docs/content-blocks.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/content-blocks.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download notebook file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="_sources/content-blocks.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
     </div>
 </div>
 
@@ -592,10 +759,10 @@ const thebe_selector_output = ".output, .cell_output"
             <main id="main-content" role="main">
                 
               <div>
-                 <div class="tex2jax_ignore mathjax_ignore section" id="special-content-blocks">
+                 <section class="tex2jax_ignore mathjax_ignore" id="special-content-blocks">
 <h1>特殊内容块<a class="headerlink" href="#special-content-blocks" title="永久链接至标题">¶</a></h1>
 <p>有几个内容块是这个主题所特有的。</p>
-<div class="section" id="quotations-and-epigraphs">
+<section id="quotations-and-epigraphs">
 <h2>语录和题记<a class="headerlink" href="#quotations-and-epigraphs" title="永久链接至标题">¶</a></h2>
 <p>这是 <code class="docutils literal notranslate"><span class="pre">sphinx-book-theme</span></code> 中的引文和题记的样子。</p>
 <p>一段没有出处的引言：</p>
@@ -652,33 +819,33 @@ but I&#39;ll stop here.
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="sidebars">
+</section>
+<section id="sidebars">
 <h2>侧边栏<a class="headerlink" href="#sidebars" title="永久链接至标题">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">sphinx-book-theme</span></code> 中有两种不同的类似侧边栏的内容，典型的 <code class="docutils literal notranslate"><span class="pre">{sidebar}</span></code> 指令，以及一个特定主题的 <code class="docutils literal notranslate"><span class="pre">{margin}</span></code> 指令。本节涵盖这两种指令。两者都允许你将额外的内容与你的主要内容分开放置。</p>
 <div class="admonition tip">
 <p class="admonition-title">小技巧</p>
 <p>侧边栏内容一般会与你的网站目录所在的白色空间重叠。当读者滚动侧边栏内容进入视野时，右边的 TOC 应该自动隐藏起来。</p>
 </div>
-<div class="section" id="margin-content">
+<section id="margin-content">
 <h3>页边距内容<a class="headerlink" href="#margin-content" title="永久链接至标题">¶</a></h3>
 <p>你可以指定应该存在于右页边距的内容。这将表现得像一个普通的侧边栏，直到屏幕达到一定的宽度，在这一点上，这些内容将 “弹出” 到右边的页边距区域。</p>
 <p>有两种方法可以将内容添加到空白处：通过 <code class="docutils literal notranslate"><span class="pre">{margin}</span></code> 指令，以及通过向自己的内容添加 CSS 类。</p>
-<div class="section" id="use-a-margin-directive-to-add-margin-content">
+<section id="use-a-margin-directive-to-add-margin-content">
 <h4>使用 <code class="docutils literal notranslate"><span class="pre">{margin}</span></code> 指令来添加页边距内容<a class="headerlink" href="#use-a-margin-directive-to-add-margin-content" title="永久链接至标题">¶</a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">{margin}</span></code> 指令允许你用自己的标题和内容块来创建边缘内容。它是Sphinx <code class="docutils literal notranslate"><span class="pre">{sidebar}</span></code> 指令的一个封装器，主要通过 CSS 类来实现其魔力（见下文）。</p>
 <p>下面是如何使用 <code class="docutils literal notranslate"><span class="pre">{margin}</span></code> 指令的：</p>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title"><strong>Here is my margin content</strong></p>
 <p>It is pretty cool!</p>
-</div>
+</aside>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{margin} **My margin title**
 Here is my margin content, it is pretty cool!
 ```
 </pre></div>
 </div>
-</div>
-<div class="section" id="use-css-classes-to-add-margin-content">
+</section>
+<section id="use-css-classes-to-add-margin-content">
 <h4>使用 CSS 类来增加页边距内容<a class="headerlink" href="#use-css-classes-to-add-margin-content" title="永久链接至标题">¶</a></h4>
 <p>你也可以直接给你的页面上的元素添加 CSS 类，以使它们表现得像页边距内容。要做到这一点，请将 <code class="docutils literal notranslate"><span class="pre">margin</span></code> CSS 类添加到页面上的任何元素。许多 Sphinx 指令允许你直接添加类。例如，下面是在 <code class="docutils literal notranslate"><span class="pre">{note}</span></code> 指令中添加 <code class="docutils literal notranslate"><span class="pre">margin</span></code> 类的语法：</p>
 <div class="margin admonition note">
@@ -694,10 +861,12 @@ This note will be in the margin!
 <p>对页面上的大多数元素都有效，但一般来说，对作为内容束最顶端的元素的 “父容器” 效果最好。</p>
 <p>例如，我们甚至可以像这样把一个完整的图片放在页边距：</p>
 <p>如果你愿意，你也可以把整个图片写在页边距。这里是一个图片，下面有一个标题。我们在下面加一个说明，创造一些垂直空间，以便看得更清楚。</p>
-<div class="margin figure align-default" id="myfig4">
+<figure class="margin align-default" id="myfig4">
 <img alt="我的图片文本" src="_images/cool.jpg" />
-<p class="caption"><span class="caption-number">图 1 </span><span class="caption-text">这是我的图片说明</span><a class="headerlink" href="#myfig4" title="永久链接至图片">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">图 1 </span><span class="caption-text">这是我的图片说明</span><a class="headerlink" href="#myfig4" title="永久链接至图片">¶</a></p>
+</figcaption>
+</figure>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{figure} images/cool.jpg
 ---
 figclass: margin
@@ -709,14 +878,16 @@ And here is my figure caption
 </pre></div>
 </div>
 <p>我们可以用 <a class="reference internal" href="#myfig4"><span class="std std-ref">这是我的图片说明</span></a> 来引用该图。或者用 <a class="reference internal" href="#myfig4"><span class="std std-numref">图 1</span></a> 这样的编号引用。</p>
-</div>
-<div class="section" id="figure-captions-in-the-margin">
+</section>
+<section id="figure-captions-in-the-margin">
 <h4>页边距的图片说明<a class="headerlink" href="#figure-captions-in-the-margin" title="永久链接至标题">¶</a></h4>
 <p>你可以配置图片，使其使用页边距来做标题。这里是一个图片，其标题在右边。</p>
-<div class="margin-caption figure align-default" id="myfig5">
+<figure class="margin-caption align-default" id="myfig5">
 <a class="reference internal image-reference" href="_images/cool.jpg"><img alt="我的图片文本" src="_images/cool.jpg" style="width: 60%;" /></a>
-<p class="caption"><span class="caption-number">图 2 </span><span class="caption-text">这是我的图片说明，如果你看左边，你可以看到 COOL 是大红字。但你可能已经注意到了，其实我只是占用了一些空间，看看当标题真的很长时，边距是什么样子的：:-)。</span><a class="headerlink" href="#myfig5" title="永久链接至图片">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">图 2 </span><span class="caption-text">这是我的图片说明，如果你看左边，你可以看到 COOL 是大红字。但你可能已经注意到了，其实我只是占用了一些空间，看看当标题真的很长时，边距是什么样子的：:-)。</span><a class="headerlink" href="#myfig5" title="永久链接至图片">¶</a></p>
+</figcaption>
+</figure>
 <p>以及产生它的文本：</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{figure} images/cool.jpg
 ---
@@ -730,35 +901,35 @@ And here is my figure caption, if you look to the left, you can see that COOL is
 </pre></div>
 </div>
 <p>我们可以用 <a class="reference internal" href="#myfig5"><span class="std std-ref">这个引用</span></a> 来引用这个图。或者像 <a class="reference internal" href="#myfig5"><span class="std std-numref">图 2</span></a> 这样的编号引用。</p>
-</div>
-</div>
-<div class="section" id="content-sidebars">
+</section>
+</section>
+<section id="content-sidebars">
 <h3>内容侧栏<a class="headerlink" href="#content-sidebars" title="永久链接至标题">¶</a></h3>
 <p>内容侧栏与你的文本并列存在，但允许页面的其他部分围绕它们流动，而不是移动到右边的空白处。要添加内容侧边栏，请使用以下语法：</p>
-<div class="sidebar">
+<aside class="sidebar">
 <p class="sidebar-title">我的侧边栏标题</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>这是我的侧边栏内容，它是相当酷的！</p>
 </div>
 <p><img alt="" src="_images/cool.jpg" /></p>
-</div>
+</aside>
 <p>注意内容是如何围绕着侧边栏向右包裹的。然而，侧边栏的文字仍将与你的内容保持一致。有一些元素，如 “note” 块和代码单元，可能会与侧边栏发生冲突。如果发生这种情况，可以尝试使用 <code class="docutils literal notranslate"><span class="pre">{margin}</span></code> 来代替。</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{sidebar} **My sidebar title**
 Here is my sidebar content, it is pretty cool!
 ```
 </pre></div>
 </div>
-</div>
-<div class="section" id="adding-content-to-margins-and-sidebars">
+</section>
+<section id="adding-content-to-margins-and-sidebars">
 <h3>在页边距和侧边栏添加内容<a class="headerlink" href="#adding-content-to-margins-and-sidebars" title="永久链接至标题">¶</a></h3>
 <p>侧边栏/页边距内容可以包括各种东西，如代码块：</p>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title">Code blocks in margins</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;here is some python&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
+</aside>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````{margin} Code blocks in margins
 ```python
 print(&quot;here is some python&quot;)
@@ -767,14 +938,14 @@ print(&quot;here is some python&quot;)
 </pre></div>
 </div>
 <p>以及告诫和图像：</p>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title"><strong>Notes in margins</strong></p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>Wow, a note with an image in a margin!
 <img alt="" src="_images/cool.jpg" /></p>
 </div>
-</div>
+</aside>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````{margin} **Notes in margins**
 ```{note}
 Wow, a note with an image in a margin!
@@ -783,9 +954,9 @@ Wow, a note with an image in a margin!
 ````
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="full-width-content">
+</section>
+</section>
+<section id="full-width-content">
 <h2>全宽内容<a class="headerlink" href="#full-width-content" title="永久链接至标题">¶</a></h2>
 <p>全宽内容延伸到右边的空白处，使它在你的书的其他内容中脱颖而出。要在你的页面上添加全宽内容，请在文档中的任何元素上添加 <code class="docutils literal notranslate"><span class="pre">full-width</span></code> 类。例如，你可以像这样给笔记元素添加一个 <code class="docutils literal notranslate"><span class="pre">full-width</span></code> 标签：</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{note}
@@ -803,8 +974,8 @@ This content will be full-width
 <p class="admonition-title">给 ipynb 用户的说明</p>
 <p>如果你使用 <a class="reference external" href="https://myst-nb.readthedocs.io/en/latest/">MyST-NB 插件</a> 的 Jupyter 笔记本作为文档的输入，你可以通过在代码单元中添加 <code class="docutils literal notranslate"><span class="pre">full-width</span></code> 标签来触发这一行为。</p>
 </div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -860,7 +1031,7 @@ This content will be full-width
     By the Executable Book Project<br/>
   
       &copy; Copyright 2020.<br/>
-    Last updated on 2022 年 02 月 23 日.<br/>
+    Last updated on 2022 年 03 月 11 日.<br/>
 </p>
         </footer>
     </div>
@@ -871,12 +1042,8 @@ This content will be full-width
       </div>
     </div>
   
-  
     <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
   
-  
-  <script src="_static/scripts/sphinx-book-theme.js?digest=d39d74a9f498dbb5016c"></script>
-
 
   </body>
 </html>

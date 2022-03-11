@@ -4,7 +4,8 @@
 <html lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
 <meta property="og:title" content="NumPy docstrings" />
   
 <meta property="og:type" content="website" />
@@ -14,7 +15,6 @@
 <meta property="og:description" content="This page demonstrates NumPy docstrings for the theme, as well as some other common Sphinx directives for API documentation. NumPy: Provides,- An array object of arbitrary homogeneous items, Fast m..." />
   
     <title>NumPy docstrings &#8212; Sphinx Book Theme</title>
-    
     
     <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 <link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -32,7 +32,7 @@
   
     
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=3e71fa63ecd7719e64b6668c6ad94fdbd645785a" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
@@ -42,9 +42,6 @@
     
     <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
   
-    
-  <link href="../_static/styles/sphinx-book-theme.css?digest=d39d74a9f498dbb5016c" rel="stylesheet">
-
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
@@ -55,6 +52,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=4a2ab92203046145cabe39b99b7fdcd3c3c45e62"></script>
     <script src="../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
@@ -262,6 +260,11 @@ const thebe_selector_output = ".output, .cell_output"
      Translation workflow
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../contributing/subthemes.html">
+     Creating sub-themes
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -344,6 +347,8 @@ const thebe_selector_output = ".output, .cell_output"
 
 
           
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
 <!-- Main content -->
 <div class="col py-0 content-container">
     
@@ -351,68 +356,160 @@ const thebe_selector_output = ".output, .cell_output"
         
 
 
-<div class="col py-1 d-flex topbar-main">
-    <div class="topbar-left">
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
         
-        <label class="nav-toggle-button topbarbtn" for="__navigation">
-            <div class="visually-hidden">Toggle navigation</div>
-            <i class="fas fa-bars"></i>
-        </label>
-        
-    </div>
-    <div class="topbar-right">
-        <!-- Launch buttons -->
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
 
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
 
-        <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-        <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button class="topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/executablebooks/sphinx-book-theme"><button type="button" class="topbarbtn--wide"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/executablebooks/sphinx-book-theme/issues/new?title=Issue%20on%20page%20%2Freference/api-numpy.html&body=Your%20issue%20content%20here."><button
-                type="button" class="topbarbtn--wide" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/executablebooks/sphinx-book-theme/edit/master/docs/reference/api-numpy.md"><button
-                type="button" class="topbarbtn--wide" data-toggle="tooltip" data-placement="left"
-                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
-    </div>
-</div>
-
-        
-<div class="dropdown-buttons-trigger sb-download-buttons">
-    <button class="topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/reference/api-numpy.md"><button type="button"
-                class="topbarbtn--wide" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="topbarbtn--wide" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-        <label class="d-block d-md-none nav-toggle-button topbarbtn" for="__page-toc">
-  <div class="visually-hidden">Toggle Table of Contents</div>
-  <i class="fas fa-list"></i>
 </label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/sphinx-book-theme"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/sphinx-book-theme/issues/new?title=Issue%20on%20page%20%2Freference/api-numpy.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/sphinx-book-theme/edit/master/docs/reference/api-numpy.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/reference/api-numpy.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
     </div>
 </div>
 
@@ -515,13 +612,13 @@ const thebe_selector_output = ".output, .cell_output"
             <main id="main-content" role="main">
                 
               <div>
-                 <div class="tex2jax_ignore mathjax_ignore section" id="numpy-docstrings">
+                 <section class="tex2jax_ignore mathjax_ignore" id="numpy-docstrings">
 <h1>NumPy docstrings<a class="headerlink" href="#numpy-docstrings" title="永久链接至标题">¶</a></h1>
 <p>This page demonstrates NumPy docstrings for the theme, as well as some other common Sphinx directives for API documentation.</p>
 <div class="versionadded">
 <p><span class="versionmodified added">0.1.1 新版功能.</span></p>
 </div>
-<span class="target" id="module-numpy"></span><div class="section" id="numpy">
+<span class="target" id="module-numpy"></span><section id="numpy">
 <h2>NumPy<a class="headerlink" href="#numpy" title="永久链接至标题">¶</a></h2>
 <dl class="simple">
 <dt>Provides</dt><dd><ol class="arabic simple">
@@ -531,7 +628,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ol>
 </dd>
 </dl>
-<div class="section" id="how-to-use-the-documentation">
+<section id="how-to-use-the-documentation">
 <h3>How to use the documentation<a class="headerlink" href="#how-to-use-the-documentation" title="永久链接至标题">¶</a></h3>
 <p>Documentation is available in two forms: docstrings provided
 with the code, and a loose standing reference guide, available from
@@ -571,8 +668,8 @@ of numpy are available under the <code class="docutils literal notranslate"><spa
 <span class="gp">... </span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="available-subpackages">
+</section>
+<section id="available-subpackages">
 <h3>Available subpackages<a class="headerlink" href="#available-subpackages" title="永久链接至标题">¶</a></h3>
 <dl class="simple">
 <dt>doc</dt><dd><p>Topical documentation on broadcasting, indexing, etc.</p>
@@ -595,8 +692,8 @@ of numpy are available under the <code class="docutils literal notranslate"><spa
 Fortran compilers support and more.</p>
 </dd>
 </dl>
-</div>
-<div class="section" id="utilities">
+</section>
+<section id="utilities">
 <h3>Utilities<a class="headerlink" href="#utilities" title="永久链接至标题">¶</a></h3>
 <dl class="simple">
 <dt>test</dt><dd><p>Run numpy unittests</p>
@@ -612,8 +709,8 @@ directly instead of importing them from <cite>numpy.dual</cite>.</p>
 <dt>__version__</dt><dd><p>NumPy version string</p>
 </dd>
 </dl>
-</div>
-<div class="section" id="viewing-documentation-using-ipython">
+</section>
+<section id="viewing-documentation-using-ipython">
 <h3>Viewing documentation using IPython<a class="headerlink" href="#viewing-documentation-using-ipython" title="永久链接至标题">¶</a></h3>
 <p>Start IPython with the NumPy profile (<code class="docutils literal notranslate"><span class="pre">ipython</span> <span class="pre">-p</span> <span class="pre">numpy</span></code>), which will
 import <cite>numpy</cite> under the alias <cite>np</cite>.  Then, use the <code class="docutils literal notranslate"><span class="pre">cpaste</span></code> command to
@@ -623,8 +720,8 @@ paste examples into the shell.  To see which functions are available in
 down the list.  To view the docstring for a function, use
 <code class="docutils literal notranslate"><span class="pre">np.cos?&lt;ENTER&gt;</span></code> (to view the docstring) and <code class="docutils literal notranslate"><span class="pre">np.cos??&lt;ENTER&gt;</span></code> (to view
 the source code).</p>
-</div>
-<div class="section" id="copies-vs-in-place-operation">
+</section>
+<section id="copies-vs-in-place-operation">
 <h3>Copies vs. in-place operation<a class="headerlink" href="#copies-vs-in-place-operation" title="永久链接至标题">¶</a></h3>
 <p>Most of the functions in <cite>numpy</cite> return a copy of the array argument
 (e.g., <cite>np.sort</cite>).  In-place versions of these functions are often
@@ -849,9 +946,9 @@ when using the <cite>axes</cite> keyword argument.</p>
 </div>
 </dd></dl>
 
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -900,7 +997,7 @@ when using the <cite>axes</cite> keyword argument.</p>
     By the Executable Book Project<br/>
   
       &copy; Copyright 2020.<br/>
-    Last updated on 2022 年 02 月 23 日.<br/>
+    Last updated on 2022 年 03 月 11 日.<br/>
 </p>
         </footer>
     </div>
@@ -911,12 +1008,8 @@ when using the <cite>axes</cite> keyword argument.</p>
       </div>
     </div>
   
-  
     <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
   
-  
-  <script src="../_static/scripts/sphinx-book-theme.js?digest=d39d74a9f498dbb5016c"></script>
-
 
   </body>
 </html>

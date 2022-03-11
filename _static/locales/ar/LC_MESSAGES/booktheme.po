@@ -8,74 +8,74 @@ msgstr ""
 "Language: ar\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Download this page"
-msgstr "قم بتنزيل هذه الصفحة"
-
-msgid "Download notebook file"
-msgstr "تنزيل ملف دفتر الملاحظات"
-
-msgid "Open an issue"
-msgstr "افتح قضية"
-
-msgid "repository"
-msgstr "مخزن"
-
-msgid "Theme by the"
-msgstr "موضوع بواسطة"
+msgid "Copyright"
+msgstr "حقوق النشر"
 
 msgid "Contents"
 msgstr "محتويات"
 
+msgid "previous page"
+msgstr "الصفحة السابقة"
+
+msgid "By the"
+msgstr "بواسطة"
+
+msgid "Download notebook file"
+msgstr "تنزيل ملف دفتر الملاحظات"
+
 msgid "next page"
 msgstr "الصفحة التالية"
-
-msgid "Last updated on"
-msgstr "آخر تحديث في"
-
-msgid "Launch"
-msgstr "إطلاق"
 
 msgid "Edit this page"
 msgstr "قم بتحرير هذه الصفحة"
 
-msgid "Source repository"
-msgstr "مستودع المصدر"
-
-msgid "Download source file"
-msgstr "تنزيل ملف المصدر"
-
-msgid "Sphinx Book Theme"
-msgstr "موضوع كتاب أبو الهول"
-
-msgid "Copyright"
-msgstr "حقوق النشر"
-
-msgid "Fullscreen mode"
-msgstr "وضع ملء الشاشة"
-
 msgid "Search the docs ..."
 msgstr "ابحث في المستندات ..."
-
-msgid "suggest edit"
-msgstr "أقترح تحرير"
-
-msgid "Search this book..."
-msgstr "بحث في هذا الكتاب ..."
-
-msgid "By"
-msgstr "بواسطة"
 
 msgid "open issue"
 msgstr "قضية مفتوحة"
 
+msgid "Launch"
+msgstr "إطلاق"
+
+msgid "Source repository"
+msgstr "مستودع المصدر"
+
+msgid "repository"
+msgstr "مخزن"
+
+msgid "Last updated on"
+msgstr "آخر تحديث في"
+
 msgid "Print to PDF"
 msgstr "طباعة إلى PDF"
 
-msgid "previous page"
-msgstr "الصفحة السابقة"
+msgid "Open an issue"
+msgstr "افتح قضية"
+
+msgid "By"
+msgstr "بواسطة"
+
+msgid "Download source file"
+msgstr "تنزيل ملف المصدر"
 
 msgid "Toggle navigation"
 msgstr "تبديل التنقل"
 
-msgid "By the"
-msgstr "بواسطة"
+msgid "Search this book..."
+msgstr "بحث في هذا الكتاب ..."
+
+msgid "Theme by the"
+msgstr "موضوع بواسطة"
+
+msgid "Sphinx Book Theme"
+msgstr "موضوع كتاب أبو الهول"
+
+msgid "Fullscreen mode"
+msgstr "وضع ملء الشاشة"
+
+msgid "Download this page"
+msgstr "قم بتنزيل هذه الصفحة"
+
+msgid "suggest edit"
+msgstr "أقترح تحرير"

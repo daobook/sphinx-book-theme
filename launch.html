@@ -4,7 +4,8 @@
 <html lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
 <meta property="og:title" content="用于交互的启动按钮" />
   
 <meta property="og:type" content="website" />
@@ -14,7 +15,6 @@
 <meta property="og:description" content="你可以自动添加按钮，让用户与你的书的内容互动。这要么是通过引导他们到在云端运行的 BinderHub 或 JupyterHub，要么是通过使用 Thebe 使你的页面互动。 要使用 Binder 或 JupyterHub 的链接，你首先需要配置你的文档库的网址： Paired ipynb files: If you’re using Jupytext to pair an ipynb fil..." />
   
     <title>用于交互的启动按钮 &#8212; Sphinx Book Theme</title>
-    
     
     <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 <link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -32,7 +32,7 @@
   
     
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=3e71fa63ecd7719e64b6668c6ad94fdbd645785a" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
@@ -42,9 +42,6 @@
     
     <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
   
-    
-  <link href="_static/styles/sphinx-book-theme.css?digest=d39d74a9f498dbb5016c" rel="stylesheet">
-
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
@@ -55,6 +52,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=4a2ab92203046145cabe39b99b7fdcd3c3c45e62"></script>
     <script src="_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/design-tabs.js"></script>
@@ -263,6 +261,11 @@ const thebe_selector_output = ".output, .cell_output"
      Translation workflow
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="contributing/subthemes.html">
+     Creating sub-themes
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -345,6 +348,8 @@ const thebe_selector_output = ".output, .cell_output"
 
 
           
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
 <!-- Main content -->
 <div class="col py-0 content-container">
     
@@ -352,68 +357,160 @@ const thebe_selector_output = ".output, .cell_output"
         
 
 
-<div class="col py-1 d-flex topbar-main">
-    <div class="topbar-left">
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
         
-        <label class="nav-toggle-button topbarbtn" for="__navigation">
-            <div class="visually-hidden">Toggle navigation</div>
-            <i class="fas fa-bars"></i>
-        </label>
-        
-    </div>
-    <div class="topbar-right">
-        <!-- Launch buttons -->
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
 
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
 
-        <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-        <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button class="topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/executablebooks/sphinx-book-theme"><button type="button" class="topbarbtn--wide"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/executablebooks/sphinx-book-theme/issues/new?title=Issue%20on%20page%20%2Flaunch.html&body=Your%20issue%20content%20here."><button
-                type="button" class="topbarbtn--wide" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/executablebooks/sphinx-book-theme/edit/master/docs/launch.md"><button
-                type="button" class="topbarbtn--wide" data-toggle="tooltip" data-placement="left"
-                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
-    </div>
-</div>
-
-        
-<div class="dropdown-buttons-trigger sb-download-buttons">
-    <button class="topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/launch.md"><button type="button"
-                class="topbarbtn--wide" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="topbarbtn--wide" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-        <label class="d-block d-md-none nav-toggle-button topbarbtn" for="__page-toc">
-  <div class="visually-hidden">Toggle Table of Contents</div>
-  <i class="fas fa-list"></i>
 </label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/sphinx-book-theme"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/sphinx-book-theme/issues/new?title=Issue%20on%20page%20%2Flaunch.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/sphinx-book-theme/edit/master/docs/launch.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/launch.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
     </div>
 </div>
 
@@ -522,7 +619,7 @@ const thebe_selector_output = ".output, .cell_output"
             <main id="main-content" role="main">
                 
               <div>
-                 <div class="tex2jax_ignore mathjax_ignore section" id="launch-buttons-for-interactivity">
+                 <section class="tex2jax_ignore mathjax_ignore" id="launch-buttons-for-interactivity">
 <span id="customize-launch"></span><h1>用于交互的启动按钮<a class="headerlink" href="#launch-buttons-for-interactivity" title="永久链接至标题">¶</a></h1>
 <p>你可以自动添加按钮，让用户与你的书的内容互动。这要么是通过引导他们到在云端运行的 BinderHub 或 JupyterHub，要么是通过使用 Thebe 使你的页面互动。</p>
 <p>要使用 Binder 或 JupyterHub 的链接，你首先需要配置你的文档库的网址：</p>
@@ -535,14 +632,14 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="p">}</span>
 </pre></div>
 </div>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title">Paired ipynb files</p>
 <p>If you’re using <a class="reference external" href="https://jupytext.readthedocs.io/en/latest/">Jupytext</a> to
 pair an ipynb file with your text files, and that ipynb file is in the same
 folder as your content, then Binder/JupyterHub links will point to the ipynb
 file instead of the text file.</p>
-</div>
-<div class="section" id="binder-binderhub">
+</aside>
+<section id="binder-binderhub">
 <h2>Binder / BinderHub<a class="headerlink" href="#binder-binderhub" title="永久链接至标题">¶</a></h2>
 <p>要添加 Binder 链接你的页面，添加以下配置：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
@@ -554,8 +651,8 @@ file instead of the text file.</p>
 <span class="p">}</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="jupyterhub">
+</section>
+<section id="jupyterhub">
 <h2>JupyterHub<a class="headerlink" href="#jupyterhub" title="永久链接至标题">¶</a></h2>
 <p>要在你的页面上添加 JupyterHub 链接，请添加以下配置：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
@@ -567,8 +664,8 @@ file instead of the text file.</p>
 <span class="p">}</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="google-colab">
+</section>
+<section id="google-colab">
 <h2>Google Colab<a class="headerlink" href="#google-colab" title="永久链接至标题">¶</a></h2>
 <p>要在你的页面上添加谷歌 Colab 链接，请添加以下配置：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
@@ -580,8 +677,8 @@ file instead of the text file.</p>
 <span class="p">}</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="deepnote">
+</section>
+<section id="deepnote">
 <h2>Deepnote<a class="headerlink" href="#deepnote" title="永久链接至标题">¶</a></h2>
 <p>To add <a class="reference external" href="https://deepnote.com">Deepnote</a> links to your page, add the following configuration:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
@@ -597,8 +694,8 @@ file instead of the text file.</p>
 <p class="admonition-title">警告</p>
 <p>This will create a new Deepnote project every time you click the launch button.</p>
 </div>
-</div>
-<div class="section" id="live-code-cells-with-thebe">
+</section>
+<section id="live-code-cells-with-thebe">
 <h2>Thebe 实时代码单元格<a class="headerlink" href="#live-code-cells-with-thebe" title="永久链接至标题">¶</a></h2>
 <p><a class="reference external" href="http://thebe.readthedocs.org/">Thebe</a> 将你的静态代码块转换为由 Jupyter 内核驱动的 <em>交互式</em> 代码块。它通过要求一个 BinderHub 内核来做到这一点，*在 hood 下，将你所有的代码单元转换为 <em>交互式</em> 代码单元。这使得用户可以在不离开页面的情况下运行你页面上的代码</p>
 <p>你可以使用 Sphinx 插件 <a class="reference external" href="https://sphinx-thebe.readthedocs.io/en/latest/"><code class="docutils literal notranslate"><span class="pre">sphinx-thebe</span></code></a> 来为你的文档添加实时代码功能。你可以从 <code class="docutils literal notranslate"><span class="pre">pip</span></code> 安装 <code class="docutils literal notranslate"><span class="pre">sphinx-thebe</span></code>，然后把它放在你的 <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> 插件列表中激活它：</p>
@@ -632,8 +729,8 @@ file instead of the text file.</p>
 <p class="admonition-title">小技巧</p>
 <p>你也可以用 <code class="docutils literal notranslate"><span class="pre">thebe_config</span></code> 字典手动定制 Thebe。这将覆盖任何从你的<code class="docutils literal notranslate"><span class="pre">html_theme_options</span></code>配置中提取的配置。关于你可以配置的内容，请看 <a class="reference external" href="https://sphinx-thebe.readthedocs.io/en/latest/"><code class="docutils literal notranslate"><span class="pre">sphinx-thebe</span></code></a> 文档。</p>
 </div>
-</div>
-<div class="section" id="configure-a-relative-path-to-your-source-file">
+</section>
+<section id="configure-a-relative-path-to-your-source-file">
 <h2>配置你的源文件的相对路径<a class="headerlink" href="#configure-a-relative-path-to-your-source-file" title="永久链接至标题">¶</a></h2>
 <p>要配置你的文档的相对路径，请添加以下配置：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
@@ -643,8 +740,8 @@ file instead of the text file.</p>
 <span class="p">}</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="control-the-user-interface-that-is-opened">
+</section>
+<section id="control-the-user-interface-that-is-opened">
 <h2>控制被打开的用户界面<a class="headerlink" href="#control-the-user-interface-that-is-opened" title="永久链接至标题">¶</a></h2>
 <p>你可以控制有人点击启动按钮时打开的界面。要做到这一点，请添加以下配置：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
@@ -656,8 +753,8 @@ file instead of the text file.</p>
 <span class="p">}</span>
 </pre></div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -713,7 +810,7 @@ file instead of the text file.</p>
     By the Executable Book Project<br/>
   
       &copy; Copyright 2020.<br/>
-    Last updated on 2022 年 02 月 23 日.<br/>
+    Last updated on 2022 年 03 月 11 日.<br/>
 </p>
         </footer>
     </div>
@@ -724,12 +821,8 @@ file instead of the text file.</p>
       </div>
     </div>
   
-  
     <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
   
-  
-  <script src="_static/scripts/sphinx-book-theme.js?digest=d39d74a9f498dbb5016c"></script>
-
 
   </body>
 </html>

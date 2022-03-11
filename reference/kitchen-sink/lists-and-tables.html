@@ -4,7 +4,8 @@
 <html lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
 <meta property="og:title" content="列表和表格" />
   
 <meta property="og:type" content="website" />
@@ -14,7 +15,6 @@
 <meta property="og:description" content="列表: 有序列表: 阿拉伯数字。- 小写字母)- 小写罗马字母- 大写字母。- 大写罗马字母...., 不从 1 开始的列表。- 三, 四.- C, D.- iii, iv., 列表中的项目也可以是自动枚举的。. 定义列表: 术语, 定义,, 术语, 分类器, 定义的第 1 段。 定义的第 2 段。,, 术语, 定义,. 我不知道为什么下面的定义列表被归类为与上面的定义列表不同的风格。 是术..." />
   
     <title>列表和表格 &#8212; Sphinx Book Theme</title>
-    
     
     <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 <link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -32,7 +32,7 @@
   
     
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=3e71fa63ecd7719e64b6668c6ad94fdbd645785a" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
@@ -42,9 +42,6 @@
     
     <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
   
-    
-  <link href="../../_static/styles/sphinx-book-theme.css?digest=d39d74a9f498dbb5016c" rel="stylesheet">
-
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
@@ -55,6 +52,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=4a2ab92203046145cabe39b99b7fdcd3c3c45e62"></script>
     <script src="../../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
@@ -263,6 +261,11 @@ const thebe_selector_output = ".output, .cell_output"
      Translation workflow
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../contributing/subthemes.html">
+     Creating sub-themes
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -345,6 +348,8 @@ const thebe_selector_output = ".output, .cell_output"
 
 
           
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
 <!-- Main content -->
 <div class="col py-0 content-container">
     
@@ -352,68 +357,160 @@ const thebe_selector_output = ".output, .cell_output"
         
 
 
-<div class="col py-1 d-flex topbar-main">
-    <div class="topbar-left">
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
         
-        <label class="nav-toggle-button topbarbtn" for="__navigation">
-            <div class="visually-hidden">Toggle navigation</div>
-            <i class="fas fa-bars"></i>
-        </label>
-        
-    </div>
-    <div class="topbar-right">
-        <!-- Launch buttons -->
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
 
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
 
-        <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-        <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button class="topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/executablebooks/sphinx-book-theme"><button type="button" class="topbarbtn--wide"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/executablebooks/sphinx-book-theme/issues/new?title=Issue%20on%20page%20%2Freference/kitchen-sink/lists-and-tables.html&body=Your%20issue%20content%20here."><button
-                type="button" class="topbarbtn--wide" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/executablebooks/sphinx-book-theme/edit/master/docs/reference/kitchen-sink/lists-and-tables.rst"><button
-                type="button" class="topbarbtn--wide" data-toggle="tooltip" data-placement="left"
-                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
-    </div>
-</div>
-
-        
-<div class="dropdown-buttons-trigger sb-download-buttons">
-    <button class="topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/reference/kitchen-sink/lists-and-tables.rst"><button type="button"
-                class="topbarbtn--wide" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.rst</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="topbarbtn--wide" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-        <label class="d-block d-md-none nav-toggle-button topbarbtn" for="__page-toc">
-  <div class="visually-hidden">Toggle Table of Contents</div>
-  <i class="fas fa-list"></i>
 </label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/sphinx-book-theme"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/sphinx-book-theme/issues/new?title=Issue%20on%20page%20%2Freference/kitchen-sink/lists-and-tables.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/sphinx-book-theme/edit/master/docs/reference/kitchen-sink/lists-and-tables.rst"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/reference/kitchen-sink/lists-and-tables.rst"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
     </div>
 </div>
 
@@ -632,11 +729,11 @@ const thebe_selector_output = ".output, .cell_output"
             <main id="main-content" role="main">
                 
               <div>
-                 <div class="section" id="lists-tables">
+                 <section id="lists-tables">
 <h1>列表和表格<a class="headerlink" href="#lists-tables" title="永久链接至标题">¶</a></h1>
-<div class="section" id="lists">
+<section id="lists">
 <h2>列表<a class="headerlink" href="#lists" title="永久链接至标题">¶</a></h2>
-<div class="section" id="enumerated-lists">
+<section id="enumerated-lists">
 <h3>有序列表<a class="headerlink" href="#enumerated-lists" title="永久链接至标题">¶</a></h3>
 <ol class="arabic">
 <li><p>阿拉伯数字。</p>
@@ -672,8 +769,8 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li><p>列表中的项目也可以是自动枚举的。</p></li>
 </ol>
-</div>
-<div class="section" id="definition-lists">
+</section>
+<section id="definition-lists">
 <h3>定义列表<a class="headerlink" href="#definition-lists" title="永久链接至标题">¶</a></h3>
 <dl>
 <dt>术语</dt><dd><p>定义</p>
@@ -693,8 +790,8 @@ const thebe_selector_output = ".output, .cell_output"
 <dt>是不是一下子就把所有的事情都做完了？</dt><dd><p>谁知道呢！？</p>
 </dd>
 </dl>
-</div>
-<div class="section" id="option-lists">
+</section>
+<section id="option-lists">
 <h3>选项列表<a class="headerlink" href="#option-lists" title="永久链接至标题">¶</a></h3>
 <p>用于列举命令行选项：</p>
 <dl class="option-list">
@@ -730,8 +827,8 @@ regardless of where it starts.</p>
 </dd>
 </dl>
 <p>There must be at least two spaces between the option and the description.</p>
-</div>
-<div class="section" id="field-list">
+</section>
+<section id="field-list">
 <h3>Field list<a class="headerlink" href="#field-list" title="永久链接至标题">¶</a></h3>
 <dl class="field-list">
 <dt class="field-odd">Author</dt>
@@ -788,10 +885,10 @@ language, containing examples of all basic reStructuredText
 constructs and many advanced constructs.</p>
 </dd>
 </dl>
-</div>
-<div class="section" id="bullet-lists">
+</section>
+<section id="bullet-lists">
 <h3>Bullet Lists<a class="headerlink" href="#bullet-lists" title="永久链接至标题">¶</a></h3>
-<div class="section" id="simple">
+<section id="simple">
 <h4>Simple<a class="headerlink" href="#simple" title="永久链接至标题">¶</a></h4>
 <ul class="simple">
 <li><p>A simple list.</p></li>
@@ -811,8 +908,8 @@ constructs and many advanced constructs.</p>
 </ul>
 </li>
 </ul>
-</div>
-<div class="section" id="complex">
+</section>
+<section id="complex">
 <h4>Complex<a class="headerlink" href="#complex" title="永久链接至标题">¶</a></h4>
 <ul>
 <li><p>A bullet list</p>
@@ -844,8 +941,8 @@ constructs and many advanced constructs.</p>
 <p>This item has multiple paragraphs.</p>
 </li>
 </ul>
-</div>
-<div class="section" id="second-list-level">
+</section>
+<section id="second-list-level">
 <h4>Second list level<a class="headerlink" href="#second-list-level" title="永久链接至标题">¶</a></h4>
 <ul>
 <li><p>here is a list in a second-level section.</p></li>
@@ -885,7 +982,7 @@ constructs and many advanced constructs.</p>
 </li>
 <li><p>and hehe</p></li>
 </ul>
-<div class="section" id="but-deeper-down-the-rabbit-hole">
+<section id="but-deeper-down-the-rabbit-hole">
 <h5>But deeper down the rabbit hole<a class="headerlink" href="#but-deeper-down-the-rabbit-hole" title="永久链接至标题">¶</a></h5>
 <ul class="simple">
 <li><p>I kept saying that, “deeper down the rabbit hole”. <a class="reference external" href="http://www.yahoo.com">yahoo</a></p>
@@ -905,10 +1002,10 @@ constructs and many advanced constructs.</p>
 </ul>
 </li>
 </ul>
-</div>
-</div>
-</div>
-<div class="section" id="hlists">
+</section>
+</section>
+</section>
+<section id="hlists">
 <h3>Hlists<a class="headerlink" href="#hlists" title="永久链接至标题">¶</a></h3>
 <table class="hlist"><tr><td><ul class="simple">
 <li><p>First item</p></li>
@@ -923,23 +1020,27 @@ constructs and many advanced constructs.</p>
 </td></tr></table>
 <p class="rubric">Hlist with images</p>
 <table class="hlist"><tr><td><ul>
-<li><div class="figure align-default" id="id11">
+<li><figure class="align-default" id="id11">
 <img alt="https://source.unsplash.com/200x200/daily?cute+animals" src="https://source.unsplash.com/200x200/daily?cute+animals" />
-<p class="caption"><span class="caption-number">图 5 </span><span class="caption-text">This is a short caption for a figure.</span><a class="headerlink" href="#id11" title="永久链接至图片">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">图 5 </span><span class="caption-text">This is a short caption for a figure.</span><a class="headerlink" href="#id11" title="永久链接至图片">¶</a></p>
+</figcaption>
+</figure>
 </li>
 </ul>
 </td><td><ul>
-<li><div class="figure align-default" id="id12">
+<li><figure class="align-default" id="id12">
 <img alt="https://source.unsplash.com/200x200/daily?cute+animals" src="https://source.unsplash.com/200x200/daily?cute+animals" />
-<p class="caption"><span class="caption-number">图 6 </span><span class="caption-text">This is a long caption for a figure. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<figcaption>
+<p><span class="caption-number">图 6 </span><span class="caption-text">This is a long caption for a figure. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Donec porttitor dolor in odio posuere, vitae ornare libero mattis. In lobortis justo vestibulum nibh aliquet, non.</span><a class="headerlink" href="#id12" title="永久链接至图片">¶</a></p>
-</div>
+</figcaption>
+</figure>
 </li>
 </ul>
 </td></tr></table>
-</div>
-<div class="section" id="numbered-list">
+</section>
+<section id="numbered-list">
 <h3>Numbered List<a class="headerlink" href="#numbered-list" title="永久链接至标题">¶</a></h3>
 <ol class="arabic simple">
 <li><p>One,</p></li>
@@ -961,11 +1062,11 @@ Sed feugiat sagittis neque quis eleifend. Duis rutrum lectus sit amet mattis sus
 </ol>
 </li>
 </ul>
-</div>
-</div>
-<div class="section" id="tables">
+</section>
+</section>
+<section id="tables">
 <h2>Tables<a class="headerlink" href="#tables" title="永久链接至标题">¶</a></h2>
-<div class="section" id="grid-tables">
+<section id="grid-tables">
 <h3>Grid Tables<a class="headerlink" href="#grid-tables" title="永久链接至标题">¶</a></h3>
 <p>Here’s a grid table followed by a simple table:</p>
 <table class="table">
@@ -1045,7 +1146,7 @@ empty: <code class="docutils literal notranslate"><span class="pre">--&gt;</span
 </tr>
 </tbody>
 </table>
-<div class="section" id="giant-tables">
+<section id="giant-tables">
 <h4>Giant Tables<a class="headerlink" href="#giant-tables" title="永久链接至标题">¶</a></h4>
 <table class="table">
 <colgroup>
@@ -1132,9 +1233,9 @@ empty: <code class="docutils literal notranslate"><span class="pre">--&gt;</span
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-<div class="section" id="list-tables">
+</section>
+</section>
+<section id="list-tables">
 <h3>List Tables<a class="headerlink" href="#list-tables" title="永久链接至标题">¶</a></h3>
 <table class="colwidths-given table" id="id13">
 <caption><span class="caption-number">表 1 </span><span class="caption-text">List tables can have captions like this one.</span><a class="headerlink" href="#id13" title="永久链接至表格">¶</a></caption>
@@ -1176,23 +1277,27 @@ empty: <code class="docutils literal notranslate"><span class="pre">--&gt;</span
 <col style="width: 50%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><div class="figure align-default" id="id15">
+<tr class="row-odd"><td><figure class="align-default" id="id15">
 <img alt="https://source.unsplash.com/200x200/daily?cute+animals" src="https://source.unsplash.com/200x200/daily?cute+animals" />
-<p class="caption"><span class="caption-number">图 7 </span><span class="caption-text">This is a short caption for a figure.</span><a class="headerlink" href="#id15" title="永久链接至图片">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">图 7 </span><span class="caption-text">This is a short caption for a figure.</span><a class="headerlink" href="#id15" title="永久链接至图片">¶</a></p>
+</figcaption>
+</figure>
 </td>
-<td><div class="figure align-default" id="id16">
+<td><figure class="align-default" id="id16">
 <img alt="https://source.unsplash.com/200x200/daily?cute+animals" src="https://source.unsplash.com/200x200/daily?cute+animals" />
-<p class="caption"><span class="caption-number">图 8 </span><span class="caption-text">This is a long caption for a figure. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<figcaption>
+<p><span class="caption-number">图 8 </span><span class="caption-text">This is a long caption for a figure. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Donec porttitor dolor in odio posuere, vitae ornare libero mattis. In lobortis justo vestibulum nibh aliquet, non.</span><a class="headerlink" href="#id16" title="永久链接至图片">¶</a></p>
-</div>
+</figcaption>
+</figure>
 </td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1248,7 +1353,7 @@ Donec porttitor dolor in odio posuere, vitae ornare libero mattis. In lobortis j
     By the Executable Book Project<br/>
   
       &copy; Copyright 2020.<br/>
-    Last updated on 2022 年 02 月 23 日.<br/>
+    Last updated on 2022 年 03 月 11 日.<br/>
 </p>
         </footer>
     </div>
@@ -1259,12 +1364,8 @@ Donec porttitor dolor in odio posuere, vitae ornare libero mattis. In lobortis j
       </div>
     </div>
   
-  
     <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
   
-  
-  <script src="../../_static/scripts/sphinx-book-theme.js?digest=d39d74a9f498dbb5016c"></script>
-
 
   </body>
 </html>

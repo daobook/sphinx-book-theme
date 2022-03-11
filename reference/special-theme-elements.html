@@ -4,7 +4,8 @@
 <html lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
 <meta property="og:title" content="特定主题的元素" />
   
 <meta property="og:type" content="website" />
@@ -14,7 +15,6 @@
 <meta property="og:description" content="这个页面包含一些参考元素，看看它们在这个主题中的样子。这些信息并不意味着容易阅读或理解，只需浏览一下，看看东西的样子！ 全宽元素: 代码单元格: Markdown: 这是一些应该以全宽显示的标记。 这是Jupyter的标志： 数学:\begin{equation} \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15} \end{equa..." />
   
     <title>特定主题的元素 &#8212; Sphinx Book Theme</title>
-    
     
     <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 <link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -32,7 +32,7 @@
   
     
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=3e71fa63ecd7719e64b6668c6ad94fdbd645785a" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
@@ -42,9 +42,6 @@
     
     <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
   
-    
-  <link href="../_static/styles/sphinx-book-theme.css?digest=d39d74a9f498dbb5016c" rel="stylesheet">
-
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
@@ -55,6 +52,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=4a2ab92203046145cabe39b99b7fdcd3c3c45e62"></script>
     <script src="../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
@@ -265,6 +263,11 @@ const thebe_selector_output = ".output, .cell_output"
      Translation workflow
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../contributing/subthemes.html">
+     Creating sub-themes
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -347,6 +350,8 @@ const thebe_selector_output = ".output, .cell_output"
 
 
           
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
 <!-- Main content -->
 <div class="col py-0 content-container">
     
@@ -354,98 +359,260 @@ const thebe_selector_output = ".output, .cell_output"
         
 
 
-<div class="col py-1 d-flex topbar-main">
-    <div class="topbar-left">
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
         
-        <label class="nav-toggle-button topbarbtn" for="__navigation">
-            <div class="visually-hidden">Toggle navigation</div>
-            <i class="fas fa-bars"></i>
-        </label>
-        
-    </div>
-    <div class="topbar-right">
-        <!-- Launch buttons -->
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
 
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
 
-<div class="dropdown-buttons-trigger">
-    <button class="topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/sphinx-book-theme/master?urlpath=lab/tree/docs/reference/special-theme-elements.md">
-    <button type="button"
-        class="topbarbtn--wide"
-        title="Launch on Binder"
-        data-toggle="tooltip"
-        data-placement="left">
-    <img class="binder-button-logo"
-        src="../_static/images/logo_binder.svg"
-        alt="Launch on Binder">
-        Binder
-    </button>
-</a>
-        
-        
-        
-        
-        <button type="button" class="topbarbtn--wide"
-            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
-                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
-        
-    </div>
-</div>
-
-        <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-        <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button class="topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/executablebooks/sphinx-book-theme"><button type="button" class="topbarbtn--wide"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/executablebooks/sphinx-book-theme/issues/new?title=Issue%20on%20page%20%2Freference/special-theme-elements.html&body=Your%20issue%20content%20here."><button
-                type="button" class="topbarbtn--wide" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/executablebooks/sphinx-book-theme/edit/master/docs/reference/special-theme-elements.md"><button
-                type="button" class="topbarbtn--wide" data-toggle="tooltip" data-placement="left"
-                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
-    </div>
-</div>
-
-        
-<div class="dropdown-buttons-trigger sb-download-buttons">
-    <button class="topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="../_sources/reference/special-theme-elements.ipynb"><button type="button"
-                class="topbarbtn--wide" title="Download notebook file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/reference/special-theme-elements.md"><button type="button"
-                class="topbarbtn--wide" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="topbarbtn--wide" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-        <label class="d-block d-md-none nav-toggle-button topbarbtn" for="__page-toc">
-  <div class="visually-hidden">Toggle Table of Contents</div>
-  <i class="fas fa-list"></i>
 </label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/sphinx-book-theme/master?urlpath=lab/tree/docs/reference/special-theme-elements.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://colab.research.google.com/github/executablebooks/sphinx-book-theme/blob/master/docs/reference/special-theme-elements.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Colab"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_colab.png">
+  </span>
+<span class="headerbtn__text-container">Colab</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fexecutablebooks%2Fsphinx-book-theme%2Fblob%2Fmaster%2Fdocs/reference/special-theme-elements.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Deepnote"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_deepnote.svg">
+  </span>
+<span class="headerbtn__text-container">Deepnote</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="initThebeSBT()"
+  class="headerbtn headerbtn-launch-thebe"
+  data-toggle="tooltip"
+data-placement="left"
+title="Launch Thebe"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="headerbtn__text-container">Live Code</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/sphinx-book-theme"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/sphinx-book-theme/issues/new?title=Issue%20on%20page%20%2Freference/special-theme-elements.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/sphinx-book-theme/edit/master/docs/reference/special-theme-elements.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/reference/special-theme-elements.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download notebook file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="../_sources/reference/special-theme-elements.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
     </div>
 </div>
 
@@ -636,12 +803,12 @@ const thebe_selector_output = ".output, .cell_output"
             <main id="main-content" role="main">
                 
               <div>
-                 <div class="tex2jax_ignore mathjax_ignore section" id="theme-specific-elements">
+                 <section class="tex2jax_ignore mathjax_ignore" id="theme-specific-elements">
 <h1>特定主题的元素<a class="headerlink" href="#theme-specific-elements" title="永久链接至标题">¶</a></h1>
 <p>这个页面包含一些参考元素，看看它们在这个主题中的样子。这些信息并不意味着容易阅读或理解，只需浏览一下，看看东西的样子！</p>
-<div class="section" id="full-width-elements">
+<section id="full-width-elements">
 <h2>全宽元素<a class="headerlink" href="#full-width-elements" title="永久链接至标题">¶</a></h2>
-<div class="section" id="code-cells">
+<section id="code-cells">
 <h3>代码单元格<a class="headerlink" href="#code-cells" title="永久链接至标题">¶</a></h3>
 <div class="cell tag_full_width docutils container">
 <div class="cell_input docutils container">
@@ -652,7 +819,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7ff5d49e2df0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7fb91c4a78b0&gt;
 </pre></div>
 </div>
 <img alt="../_images/special-theme-elements_2_1.png" src="../_images/special-theme-elements_2_1.png" />
@@ -667,7 +834,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7ff5a47b05e0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7fb8f0200310&gt;
 </pre></div>
 </div>
 <img alt="../_images/special-theme-elements_3_1.png" src="../_images/special-theme-elements_3_1.png" />
@@ -682,23 +849,23 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7ff5a473d3d0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7fb8f01d31c0&gt;
 </pre></div>
 </div>
 <img alt="../_images/special-theme-elements_4_1.png" src="../_images/special-theme-elements_4_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="markdown">
+</section>
+<section id="markdown">
 <h3>Markdown<a class="headerlink" href="#markdown" title="永久链接至标题">¶</a></h3>
 <p>这是一些应该以全宽显示的标记。</p>
 <p>这是Jupyter的标志：</p>
 <p><img alt="" src="https://raw.githubusercontent.com/adebar/awesome-jupyter/master/logo.png" /></p>
-</div>
-<div class="section" id="mathematics">
+</section>
+<section id="mathematics">
 <h3>数学<a class="headerlink" href="#mathematics" title="永久链接至标题">¶</a></h3>
-<div class="amsmath math notranslate nohighlight" id="equation-0060eb6a-96c6-463c-acf6-e4e3f7fce286">
-<span class="eqno">(2)<a class="headerlink" href="#equation-0060eb6a-96c6-463c-acf6-e4e3f7fce286" title="公式的永久链接">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-8ed63754-d6c4-4b9a-9335-6df947081eeb">
+<span class="eqno">(2)<a class="headerlink" href="#equation-8ed63754-d6c4-4b9a-9335-6df947081eeb" title="公式的永久链接">¶</a></span>\[\begin{equation}
   \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
 \end{equation}\]</div>
 <div class="math notranslate nohighlight">
@@ -742,51 +909,51 @@ w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}\end{split}\]</div>
 &amp;= \left( y^{(c')} w_{\theta} \left( x - x^{(c')} \right) \right) + \sum_{c \neq c'}  y^{(c)} w_{\theta} \left( x - x^{(c)} \right) \\
 &amp;= 0 + \sum_{c \neq c'}  y^{(c)} w_{\theta} \left( x - x^{(c)} \right)
 \end{align}\end{split}\]</div>
-</div>
-</div>
-<div class="section" id="margins">
+</section>
+</section>
+<section id="margins">
 <h2>页边距<a class="headerlink" href="#margins" title="永久链接至标题">¶</a></h2>
 <p>页边距内容可以包括各种各样的东西，如代码块：</p>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title">Code blocks in margins</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;here is some python&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
+</aside>
 <p>以及告诫和图像：</p>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title"><strong>Notes in margins</strong></p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>Wow, a note with an image in a margin!
 <img alt="" src="../_images/cool.jpg" /></p>
 </div>
-</div>
-<div class="section" id="margin-under-lower-level-shouldn-t-have-different-left-alignment">
+</aside>
+<section id="margin-under-lower-level-shouldn-t-have-different-left-alignment">
 <h3>下层的页边距不应该有不同的左对齐方式<a class="headerlink" href="#margin-under-lower-level-shouldn-t-have-different-left-alignment" title="永久链接至标题">¶</a></h3>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title"><strong>Notes in margins</strong></p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>Wow, a note with an image in a margin!
 <img alt="" src="../_images/cool.jpg" /></p>
 </div>
-</div>
-</div>
-<div class="section" id="margins-with-toggle-buttons">
+</aside>
+</section>
+<section id="margins-with-toggle-buttons">
 <h3>带切换按钮的页边距<a class="headerlink" href="#margins-with-toggle-buttons" title="永久链接至标题">¶</a></h3>
 <p>这里有一些页边距内容，让我们看看它与切换按钮的交互情况</p>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title">My margin</p>
 <p>Here’s my margin content</p>
-</div>
+</aside>
 <p>这里有一个可切换的注解。</p>
 <div class="toggle admonition note">
 <p class="admonition-title">备注</p>
 <p>我的注解</p>
 </div>
-</div>
-<div class="section" id="margins-with-full-width-content">
+</section>
+<section id="margins-with-full-width-content">
 <h3>有全宽内容的页边距<a class="headerlink" href="#margins-with-full-width-content" title="永久链接至标题">¶</a></h3>
 <div class="tag-fullwidth admonition note">
 <p class="admonition-title">备注</p>
@@ -802,7 +969,7 @@ w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}\end{split}\]</div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7ff5a46f59a0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7fb8f01a5ac0&gt;
 </pre></div>
 </div>
 <img alt="../_images/special-theme-elements_10_1.png" src="../_images/special-theme-elements_10_1.png" />
@@ -823,29 +990,31 @@ w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}\end{split}\]</div>
 </div>
 <p>看起来如何？</p>
 <p>侧边栏中带有图像的 Markdown 单元</p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/883px-Jupyter_logo.svg.png" style="max-width:200px" /></div>
-<div class="section" id="more-content-after-the-margin-content">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/883px-Jupyter_logo.svg.png" style="max-width:200px" /></section>
+<section id="more-content-after-the-margin-content">
 <h3>More content after the margin content<a class="headerlink" href="#more-content-after-the-margin-content" title="永久链接至标题">¶</a></h3>
 <p>这是弹出后的额外内容，看看单元格是否重叠之类的。 也是为了确保你仍然可以与弹出的内容互动。这是在弹出内容之后的额外内容，以查看单元格是否重叠等等。也是为了确保你仍然可以与弹出的内容进行互动。</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
 </pre></div>
 </div>
 <p>这是弹出后的额外内容，看看单元格是否重叠之类的。 也是为了确保你仍然可以与弹出的内容互动。这是在弹出内容之后的额外内容，以查看单元格是否重叠等等。也是为了确保你仍然可以与弹出的内容进行互动。这是弹出内容后的额外内容，以查看单元格是否重叠等。也是为了确保你仍然可以与弹出的内容进行互动。</p>
-</div>
-<div class="section" id="figures-with-margin-captions">
+</section>
+<section id="figures-with-margin-captions">
 <h3>Figures with margin captions<a class="headerlink" href="#figures-with-margin-captions" title="永久链接至标题">¶</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">margin-caption</span></code> class should cause a figure’s caption to pop out to the right.</p>
-<div class="margin-caption figure align-default" id="reference-margin-fig">
+<figure class="margin-caption align-default" id="reference-margin-fig">
 <a class="reference internal image-reference" href="../_images/cool.jpg"><img alt="My figure text" src="../_images/cool.jpg" style="width: 60%;" /></a>
-<p class="caption"><span class="caption-number">图 9 </span><span class="caption-text">And here is my figure caption, if you look to the left, you can see that COOL is in big red letters. But you probably already noticed that, really I am just taking up space to see how the margin caption looks like when it is really long :-).</span><a class="headerlink" href="#reference-margin-fig" title="永久链接至图片">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">图 9 </span><span class="caption-text">And here is my figure caption, if you look to the left, you can see that COOL is in big red letters. But you probably already noticed that, really I am just taking up space to see how the margin caption looks like when it is really long :-).</span><a class="headerlink" href="#reference-margin-fig" title="永久链接至图片">¶</a></p>
+</figcaption>
+</figure>
 <div class="margin admonition note">
 <p class="admonition-title">备注</p>
 <p>This note should not overlap with the margin caption!</p>
 </div>
-</div>
-</div>
-<div class="section" id="nested-admonitions">
+</section>
+</section>
+<section id="nested-admonitions">
 <h2>Nested admonitions<a class="headerlink" href="#nested-admonitions" title="永久链接至标题">¶</a></h2>
 <p>These aren’t theme-specific, but we still show below to make sure they work.</p>
 <div class="admonition note">
@@ -856,11 +1025,11 @@ w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}\end{split}\]</div>
 <p>And a tip!</p>
 </div>
 </div>
-</div>
-<div class="section" id="myst-markdown-elements">
+</section>
+<section id="myst-markdown-elements">
 <h2>MyST Markdown elements<a class="headerlink" href="#myst-markdown-elements" title="永久链接至标题">¶</a></h2>
 <p>Here are a few design elements to show off MyST Markdown.</p>
-<div class="section" id="table-alignment">
+<section id="table-alignment">
 <h3>Table alignment<a class="headerlink" href="#table-alignment" title="永久链接至标题">¶</a></h3>
 <p>To ensure that markdown alignment is rendered properly.</p>
 <table class="colwidths-auto table">
@@ -884,8 +1053,8 @@ w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}\end{split}\]</div>
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="list-table-width">
+</section>
+<section id="list-table-width">
 <h3>List table width<a class="headerlink" href="#list-table-width" title="永久链接至标题">¶</a></h3>
 <p>Testing list tables take width as expected.</p>
 <table class="table">
@@ -902,9 +1071,9 @@ w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}\end{split}\]</div>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -960,7 +1129,7 @@ w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}\end{split}\]</div>
     By the Executable Book Project<br/>
   
       &copy; Copyright 2020.<br/>
-    Last updated on 2022 年 02 月 23 日.<br/>
+    Last updated on 2022 年 03 月 11 日.<br/>
 </p>
         </footer>
     </div>
@@ -971,12 +1140,8 @@ w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}\end{split}\]</div>
       </div>
     </div>
   
-  
     <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
   
-  
-  <script src="../_static/scripts/sphinx-book-theme.js?digest=d39d74a9f498dbb5016c"></script>
-
 
   </body>
 </html>
