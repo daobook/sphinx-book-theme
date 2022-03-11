@@ -13,7 +13,13 @@ $grey--medium: #aaa;
 $grey--light: #ccc;
 $non-content-grey: $grey--dark;
 
-$topbar-height: 3em;
+// Z-index stacking (from Bootstrap)
+// ref: https://getbootstrap.com/docs/5.0/layout/z-index/
+$zindex-sticky: 1020;
+$zindex-offcanvas: 1100; // We increase this to be over the tooltips
+
+// Spacing
+$header-article-height: 3em;
 $leftbar-width-mobile: 75%;
 $leftbar-width-wide: 275px;
 $toc-width-mobile: 75%;
@@ -58,7 +64,7 @@ $border-thin: 1px solid rgba(0, 0, 0, 0.1);
 
   // Variables for this theme
   --sbt-sidebar-font-size: var(--sbt-font-size-small-1);
-  --sbt-topbar-font-size: var(--sbt-font-size-small-1);
+  --sbt-header-article-font-size: var(--sbt-font-size-small-1);
   --sbt-prevnext-font-size: var(--sbt-font-size-small-1);
   --sbt-footer-font-size: var(--sbt-font-size-small-1);
 }

@@ -1,6 +1,8 @@
 """A lightweight book theme based on the pydata sphinx theme."""
+import hashlib
 import os
 from pathlib import Path
+from functools import lru_cache
 
 from docutils.parsers.rst.directives.body import Sidebar
 from docutils import nodes
@@ -8,9 +10,10 @@ from sphinx.application import Sphinx
 from sphinx.locale import get_translation
 from sphinx.util import logging
 
-from .launch import add_hub_urls
+from .header_buttons import prep_header_buttons, add_header_buttons
+from .header_buttons.launch import add_launch_buttons
 
-__version__ = "0.2.0"
+__version__ = "0.3.0.rc1"
 """sphinx-book-theme version"""
 
 SPHINX_LOGGER = logging.getLogger(__name__)
@@ -24,8 +27,8 @@ def get_html_theme_path():
     return theme_path
 
 
-def add_to_context(app, pagename, templatename, context, doctree):
-
+def add_metadata_to_page(app, pagename, templatename, context, doctree):
+    """Adds some metadata about the page that we re-use later."""
     # Add the site title to our context so it can be inserted into the navbar
     if not context.get("root_doc"):
         # TODO: Sphinx renamed master to root in 4.x, deprecate when we drop 3.x
@@ -49,49 +52,61 @@ def add_to_context(app, pagename, templatename, context, doctree):
     if app.config.author != "unknown":
         context["author"] = app.config.author
 
-    # Add HTML context variables that the pydata theme uses that we configure elsewhere
-    # For some reason the source_suffix sometimes isn't there even when doctree is
-    if doctree and context.get("page_source_suffix"):
-        config_theme = app.config.html_theme_options
-        repo_url = config_theme.get("repository_url", "")
-        # Only add the edit button if `repository_url` is given
-        if repo_url:
-            branch = config_theme.get("repository_branch")
-            if not branch:
-                # Explicitly check in cae branch is ""
-                branch = "master"
-            relpath = config_theme.get("path_to_docs", "")
-            org, repo = repo_url.strip("/").split("/")[-2:]
-            context.update(
-                {
-                    "github_user": org,
-                    "github_repo": repo,
-                    "github_version": branch,
-                    "doc_path": relpath,
-                }
-            )
-    else:
-        # Disable using the button so we don't get errors
-        context["theme_use_edit_page_button"] = False
-
-    # Make sure the context values are bool
-    btns = [
-        "theme_use_edit_page_button",
-        "theme_use_repository_button",
-        "theme_use_issues_button",
-        "theme_use_download_button",
-        "theme_use_fullscreen_button",
-    ]
-    for key in btns:
-        if key in context:
-            context[key] = _string_or_bool(context[key])
-
+    # Translations
     translation = get_translation(MESSAGE_CATALOG_NAME)
     context["translate"] = translation
     # this is set in the html_theme
     context["theme_search_bar_text"] = translation(
         context.get("theme_search_bar_text", "Search the docs ...")
     )
+
+
+@lru_cache(maxsize=None)
+def _gen_hash(path: str) -> str:
+    return hashlib.sha1(path.read_bytes()).hexdigest()
+
+
+def hash_assets_for_files(assets: list, theme_static: Path, context):
+    """Generate a hash for assets, and append to its entry in context.
+
+    assets: a list of assets to hash, each path should be relative to
+         the theme's static folder.
+
+    theme_static: a path to the theme's static folder.
+
+    context: the Sphinx context object where asset links are stored. These are:
+        `css_files` and `script_files` keys.
+    """
+    for asset in assets:
+        # CSS assets are stored in css_files, JS assets in script_files
+        asset_type = "css_files" if asset.endswith(".css") else "script_files"
+        if asset_type in context:
+            # Define paths to the original asset file, and its linked file in Sphinx
+            asset_sphinx_link = f"_static/{asset}"
+            asset_source_path = theme_static / asset
+            if not asset_source_path.exists():
+                SPHINX_LOGGER.warn(
+                    f"Asset {asset_source_path} does not exist, not linking."
+                )
+            # Find this asset in context, and update it to include the digest
+            if asset_sphinx_link in context[asset_type]:
+                hash = _gen_hash(asset_source_path)
+                ix = context[asset_type].index(asset_sphinx_link)
+                context[asset_type][ix] = asset_sphinx_link + "?digest=" + hash
+
+
+def hash_html_assets(app, pagename, templatename, context, doctree):
+    """Add ?digest={hash} to assets in order to bust cache when changes are made.
+
+    The source files are in `static` while the built HTML is in `_static`.
+    """
+    assets = ["scripts/sphinx-book-theme.js"]
+    # Only append the book theme CSS if it's explicitly this theme. Sub-themes
+    # will define their own CSS file, so if a sub-theme is used, this code is
+    # run but the book theme CSS file won't be linked in Sphinx.
+    if app.config.html_theme == "sphinx_book_theme":
+        assets.append("styles/sphinx-book-theme.css")
+    hash_assets_for_files(assets, get_html_theme_path() / "static", context)
 
 
 def update_thebe_config(app):
@@ -128,15 +143,6 @@ def update_thebe_config(app):
     app.env.config.thebe_config = thebe_config
 
 
-def _string_or_bool(var):
-    if isinstance(var, str):
-        return var.lower() == "true"
-    elif isinstance(var, bool):
-        return var
-    else:
-        return var is None
-
-
 class Margin(Sidebar):
     """Goes in the margin to the right of the page."""
 
@@ -157,19 +163,27 @@ class Margin(Sidebar):
 
 
 def setup(app: Sphinx):
-    app.connect("builder-inited", update_thebe_config)
-
-    # Configuration for Juypter Book
-    app.connect("html-page-context", add_hub_urls)
-
-    # add translations
+    # Register theme
     theme_dir = get_html_theme_path()
+    app.add_html_theme("sphinx_book_theme", theme_dir)
+    app.add_js_file("scripts/sphinx-book-theme.js")
+
+    # Translations
     locale_dir = os.path.join(theme_dir, "static", "locales")
     app.add_message_catalog(MESSAGE_CATALOG_NAME, locale_dir)
 
-    app.add_html_theme("sphinx_book_theme", theme_dir)
-    app.connect("html-page-context", add_to_context)
+    # Events
+    app.connect("builder-inited", update_thebe_config)
+    app.connect("html-page-context", add_metadata_to_page)
+    app.connect("html-page-context", hash_html_assets)
 
+    # Header buttons
+    app.connect("html-page-context", prep_header_buttons)
+    app.connect("html-page-context", add_launch_buttons)
+    # Bump priority by 1 so that it runs after the pydata theme sets up the edit URL.
+    app.connect("html-page-context", add_header_buttons, priority=501)
+
+    # Directives
     app.add_directive("margin", Margin)
 
     # Update templates for sidebar
