@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sphinx Book Theme \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-23 23:20+0800\n"
+"POT-Creation-Date: 2022-03-11 23:43+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,23 +18,38 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: ../../reference/thebe.md:13
+#: ../../../reference/thebe.md:13
 msgid "Thebe"
 msgstr ""
 
-#: ../../reference/thebe.md:15
+#: ../../../reference/thebe.md:15
+msgid ""
+"Thebe (via `sphinx-thebe`) is a special-case for this theme because it is"
+" particularly useful for interactive notebook use-cases. This page shows "
+"off major Thebe functionality and discusses some gotchas."
+msgstr ""
+
+#: ../../../reference/thebe.md:18
+msgid ""
+"When this page loads, activate Thebe by clicking the {guilabel}`Live "
+"Code` button at the top."
+msgstr ""
+
+#: ../../../reference/thebe.md:20
+msgid "Code style"
+msgstr ""
+
+#: ../../../reference/thebe.md:22
 msgid ""
 "Thebe uses CodeMirror in the background, which uses different styles than"
 " pygments, which is used for static code syntax highlighting."
-msgstr ""
-"Thebe 在后台使用 CodeMirror，它使用的样式与 pygments 不同，"
-"后者用于静态代码语法高亮。"
+msgstr "Thebe 在后台使用 CodeMirror，它使用的样式与 pygments 不同，后者用于静态代码语法高亮。"
 
-#: ../../reference/thebe.md:17
+#: ../../../reference/thebe.md:24
 msgid "Static code:"
 msgstr "静态代码："
 
-#: ../../reference/thebe.md:39
+#: ../../../reference/thebe.md:46
 msgid "Runnable thebe code:"
 msgstr "可运行的代码："
 

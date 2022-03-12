@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sphinx Book Theme \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-23 23:20+0800\n"
+"POT-Creation-Date: 2022-03-11 23:43+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,89 +18,80 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: ../../reference/special-theme-elements.md:17
+#: ../../../reference/special-theme-elements.md:17
 msgid "Theme-specific elements"
 msgstr "特定主题的元素"
 
-#: ../../reference/special-theme-elements.md:19
+#: ../../../reference/special-theme-elements.md:19
 msgid ""
 "This page contains a number of reference elements to see how they look in"
 " this theme. The information is not meant to be easy to read or "
 "understand, just browse through and see how things look!"
-msgstr ""
-"这个页面包含一些参考元素，看看它们在这个主题中的样子。"
-"这些信息并不意味着容易阅读或理解，只需浏览一下，看看东西的样子！"
+msgstr "这个页面包含一些参考元素，看看它们在这个主题中的样子。这些信息并不意味着容易阅读或理解，只需浏览一下，看看东西的样子！"
 
-#: ../../reference/special-theme-elements.md:23
-msgid "Blog post list"
-msgstr "博客帖子列表"
-
-#: ../../reference/special-theme-elements.md:25
-msgid "Here's a sample post list:"
-msgstr "这里有一个帖子列表的样本。"
-
-#: ../../reference/special-theme-elements.md:35
+#: ../../../reference/special-theme-elements.md:23
 msgid "Full-width elements"
 msgstr "全宽元素"
 
-#: ../../reference/special-theme-elements.md:36
+#: ../../../reference/special-theme-elements.md:25
 msgid "Code cells"
 msgstr "代码单元格"
 
-#: ../../reference/special-theme-elements.md:71
+#: ../../../reference/special-theme-elements.md:60
 msgid "Markdown"
 msgstr ""
 
-#: ../../reference/special-theme-elements.md:75
+#: ../../../reference/special-theme-elements.md:64
 msgid "This is some markdown that should be shown at full width."
 msgstr "这是一些应该以全宽显示的标记。"
 
-#: ../../reference/special-theme-elements.md:77
+#: ../../../reference/special-theme-elements.md:66
 msgid "Here's the Jupyter logo:"
 msgstr "这是Jupyter的标志："
 
-#: ../../reference/special-theme-elements.md:79
+#: ../../../reference/special-theme-elements.md:68
 msgid ""
 "![](https://raw.githubusercontent.com/adebar/awesome-"
 "jupyter/master/logo.png)"
 msgstr ""
 
-#: ../../reference/special-theme-elements.md:83
+#: ../../../reference/special-theme-elements.md:72
 msgid "Mathematics"
 msgstr "数学"
 
-#: ../../reference/special-theme-elements.md:85
+#: ../../../reference/special-theme-elements.md:74
 msgid ""
-"\\begin{equation}   \\int_0^\\infty \\frac{x^3}{e^x-1}\\,dx = "
-"\\frac{\\pi^4}{15} \\end{equation}"
+"\\begin{equation}\n"
+"  \\int_0^\\infty \\frac{x^3}{e^x-1}\\,dx = \\frac{\\pi^4}{15}\n"
+"\\end{equation}"
 msgstr ""
 
-#: ../../reference/special-theme-elements.md:89
+#: ../../../reference/special-theme-elements.md:78
 msgid ""
 "\n"
 "  \\int_0^\\infty \\frac{x^3}{e^x-1}\\,dx = \\frac{\\pi^4}{15}\n"
 msgstr ""
 
-#: ../../reference/special-theme-elements.md:94
+#: ../../../reference/special-theme-elements.md:83
 msgid "w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}"
 msgstr ""
 
-#: ../../reference/special-theme-elements.md:99
+#: ../../../reference/special-theme-elements.md:88
 msgid "Link to above: {eq}`my_label`"
 msgstr ""
 
-#: ../../reference/special-theme-elements.md:101
+#: ../../../reference/special-theme-elements.md:90
 msgid ""
 "w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1} \\\\\n"
 "w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1} \\\\\n"
 "w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}"
 msgstr ""
 
-#: ../../reference/special-theme-elements.md:108
+#: ../../../reference/special-theme-elements.md:97
 msgid "Link to above: {eq}`my_label2`"
 msgstr "链接到上面：{eq}`my_label2`。"
 
-#: ../../reference/special-theme-elements.md:110
+#: ../../../reference/special-theme-elements.md:99
 msgid ""
 "\n"
 "\\mathcal{O}(f) = \\{ g |\n"
@@ -111,11 +102,11 @@ msgid ""
 "    [g(n) \\leq c \\cdot f(n)]\\}"
 msgstr ""
 
-#: ../../reference/special-theme-elements.md:118
+#: ../../../reference/special-theme-elements.md:107
 msgid "A really long math equation"
 msgstr "一个非常长的数学方程"
 
-#: ../../reference/special-theme-elements.md:120
+#: ../../../reference/special-theme-elements.md:109
 msgid ""
 "\n"
 "\\begin{align}\n"
@@ -133,11 +124,11 @@ msgid ""
 "\\end{align}\n"
 msgstr ""
 
-#: ../../reference/special-theme-elements.md:129
+#: ../../../reference/special-theme-elements.md:118
 msgid "Full width equations work"
 msgstr "全宽公式起作用"
 
-#: ../../reference/special-theme-elements.md:131
+#: ../../../reference/special-theme-elements.md:120
 msgid ""
 "\\begin{align}\n"
 "\\mathrm{SetConv} \\left( \\{(x^{c},y^{c})\\}_{c=1}^{C} \\right)(x) "
@@ -154,86 +145,84 @@ msgid ""
 "\\end{align}"
 msgstr ""
 
-#: ../../reference/special-theme-elements.md:144
+#: ../../../reference/special-theme-elements.md:133
 msgid "Margins"
 msgstr "页边距"
 
-#: ../../reference/special-theme-elements.md:148
+#: ../../../reference/special-theme-elements.md:137
 msgid "Margin content can include all kinds of things, such as code blocks:"
 msgstr "页边距内容可以包括各种各样的东西，如代码块："
 
-#: ../../reference/special-theme-elements.md:156
+#: ../../../reference/special-theme-elements.md:145
 msgid "as well as admonitions and images:"
 msgstr "以及告诫和图像："
 
-#: ../../reference/special-theme-elements.md:165
+#: ../../../reference/special-theme-elements.md:154
 msgid "Margin under lower level shouldn't have different left-alignment"
 msgstr "下层的页边距不应该有不同的左对齐方式"
 
-#: ../../reference/special-theme-elements.md:174
+#: ../../../reference/special-theme-elements.md:163
 msgid "Margins with toggle buttons"
 msgstr "带切换按钮的页边距"
 
-#: ../../reference/special-theme-elements.md:176
+#: ../../../reference/special-theme-elements.md:165
 msgid ""
 "Here's some margin content, let's see how it interacts w/ the toggle "
 "button"
-msgstr ""
-"这里有一些页边距内容，让我们看看它与切换按钮的交互情况"
+msgstr "这里有一些页边距内容，让我们看看它与切换按钮的交互情况"
 
-#: ../../reference/special-theme-elements.md:182
+#: ../../../reference/special-theme-elements.md:171
 msgid "Here's a toggleable note:"
 msgstr "这里有一个可切换的注解。"
 
-#: ../../reference/special-theme-elements.md:1
+#: ../../../reference/special-theme-elements.md:1
 msgid "My note"
 msgstr "我的注解"
 
-#: ../../reference/special-theme-elements.md:189
+#: ../../../reference/special-theme-elements.md:178
 msgid "Margins with full-width content"
 msgstr "有全宽内容的页边距"
 
-#: ../../reference/special-theme-elements.md:1
+#: ../../../reference/special-theme-elements.md:1
 msgid "This is my test"
 msgstr "这是文档测试"
 
-#: ../../reference/special-theme-elements.md:196
+#: ../../../reference/special-theme-elements.md:185
 msgid "Let's see what happens"
 msgstr "看看发生了什么"
 
-#: ../../reference/special-theme-elements.md:208
+#: ../../../reference/special-theme-elements.md:197
 msgid "Markdown cell with code in margin"
 msgstr "在页边距处有代码的 Markdown 单元格"
 
-#: ../../reference/special-theme-elements.md:216
+#: ../../../reference/special-theme-elements.md:205
 msgid "and now r"
 msgstr "而现在 r"
 
-#: ../../reference/special-theme-elements.md:224
+#: ../../../reference/special-theme-elements.md:213
 msgid "how does it look?"
 msgstr "看起来如何？"
 
-#: ../../reference/special-theme-elements.md:226
+#: ../../../reference/special-theme-elements.md:215
 msgid "Markdown cell with images in sidebar"
 msgstr "侧边栏中带有图像的 Markdown 单元"
 
-#: ../../reference/special-theme-elements.md:232
-msgid "More content after the popouts"
+#: ../../../reference/special-theme-elements.md:221
+#, fuzzy
+msgid "More content after the margin content"
 msgstr "弹出后有更多内容"
 
-#: ../../reference/special-theme-elements.md:234
+#: ../../../reference/special-theme-elements.md:223
 msgid ""
 "This is extra content after the popouts to see if cells overlap and such."
 " Also to make sure you can still interact with the popout content. This "
 "is extra content after the popouts to see if cells overlap and such. Also"
 " to make sure you can still interact with the popout content."
 msgstr ""
-"这是弹出后的额外内容，看看单元格是否重叠之类的。"
-" 也是为了确保你仍然可以与弹出的内容互动。"
-"这是在弹出内容之后的额外内容，以查看单元格是否重叠等等。"
-"也是为了确保你仍然可以与弹出的内容进行互动。"
+"这是弹出后的额外内容，看看单元格是否重叠之类的。 "
+"也是为了确保你仍然可以与弹出的内容互动。这是在弹出内容之后的额外内容，以查看单元格是否重叠等等。也是为了确保你仍然可以与弹出的内容进行互动。"
 
-#: ../../reference/special-theme-elements.md:243
+#: ../../../reference/special-theme-elements.md:232
 msgid ""
 "This is extra content after the popouts to see if cells overlap and such."
 " Also to make sure you can still interact with the popout content. This "
@@ -242,10 +231,135 @@ msgid ""
 "extra content after the popouts to see if cells overlap and such. Also to"
 " make sure you can still interact with the popout content."
 msgstr ""
-"这是弹出后的额外内容，看看单元格是否重叠之类的。"
-" 也是为了确保你仍然可以与弹出的内容互动。"
-"这是在弹出内容之后的额外内容，以查看单元格是否重叠等等。"
-"也是为了确保你仍然可以与弹出的内容进行互动。"
-"这是弹出内容后的额外内容，以查看单元格是否重叠等。也是为了"
-"确保你仍然可以与弹出的内容进行互动。"
+"这是弹出后的额外内容，看看单元格是否重叠之类的。 "
+"也是为了确保你仍然可以与弹出的内容互动。这是在弹出内容之后的额外内容，以查看单元格是否重叠等等。也是为了确保你仍然可以与弹出的内容进行互动。这是弹出内容后的额外内容，以查看单元格是否重叠等。也是为了确保你仍然可以与弹出的内容进行互动。"
+
+#: ../../../reference/special-theme-elements.md:239
+msgid "Figures with margin captions"
+msgstr ""
+
+#: ../../../reference/special-theme-elements.md:241
+msgid ""
+"The `margin-caption` class should cause a figure's caption to pop out to "
+"the right."
+msgstr ""
+
+#: ../../../reference/special-theme-elements.md:1
+msgid "My figure text"
+msgstr ""
+
+#: ../../../reference/special-theme-elements.md:1
+msgid ""
+"And here is my figure caption, if you look to the left, you can see that "
+"COOL is in big red letters. But you probably already noticed that, really"
+" I am just taking up space to see how the margin caption looks like when "
+"it is really long :-)."
+msgstr ""
+
+#: ../../../reference/special-theme-elements.md:1
+msgid "This note should not overlap with the margin caption!"
+msgstr ""
+
+#: ../../../reference/special-theme-elements.md:258
+msgid "Nested admonitions"
+msgstr ""
+
+#: ../../../reference/special-theme-elements.md:260
+msgid ""
+"These aren't theme-specific, but we still show below to make sure they "
+"work."
+msgstr ""
+
+#: ../../../reference/special-theme-elements.md:1
+#, fuzzy
+msgid "Here's a note!"
+msgstr "这里有一个可切换的注解。"
+
+#: ../../../reference/special-theme-elements.md:1
+msgid "And a tip!"
+msgstr ""
+
+#: ../../../reference/special-theme-elements.md:267
+msgid "MyST Markdown elements"
+msgstr ""
+
+#: ../../../reference/special-theme-elements.md:269
+msgid "Here are a few design elements to show off MyST Markdown."
+msgstr ""
+
+#: ../../../reference/special-theme-elements.md:271
+msgid "Table alignment"
+msgstr ""
+
+#: ../../../reference/special-theme-elements.md:273
+msgid "To ensure that markdown alignment is rendered properly."
+msgstr ""
+
+#: ../../../reference/special-theme-elements.md:3
+msgid "Default Header"
+msgstr ""
+
+#: ../../../reference/special-theme-elements.md:3
+msgid "Left Align"
+msgstr ""
+
+#: ../../../reference/special-theme-elements.md:3
+msgid "Right Align"
+msgstr ""
+
+#: ../../../reference/special-theme-elements.md:3
+msgid "Center Align"
+msgstr ""
+
+#: ../../../reference/special-theme-elements.md:3
+msgid "Cell 1"
+msgstr ""
+
+#: ../../../reference/special-theme-elements.md:3
+msgid "Cell 2"
+msgstr ""
+
+#: ../../../reference/special-theme-elements.md:3
+msgid "Cell 3"
+msgstr ""
+
+#: ../../../reference/special-theme-elements.md:3
+msgid "Cell 4"
+msgstr ""
+
+#: ../../../reference/special-theme-elements.md:280
+msgid "List table width"
+msgstr ""
+
+#: ../../../reference/special-theme-elements.md:282
+msgid "Testing list tables take width as expected."
+msgstr ""
+
+#: ../../../reference/special-theme-elements.md:1
+msgid "a"
+msgstr ""
+
+#: ../../../reference/special-theme-elements.md:2
+msgid "b"
+msgstr ""
+
+#: ../../../reference/special-theme-elements.md:3
+msgid "c"
+msgstr ""
+
+#: ../../../reference/special-theme-elements.md:4
+msgid "d"
+msgstr ""
+
+#~ msgid "Blog post list"
+#~ msgstr "博客帖子列表"
+
+#~ msgid "Here's a sample post list:"
+#~ msgstr "这里有一个帖子列表的样本。"
+
+#~ msgid ""
+#~ "\\begin{equation}   \\int_0^\\infty "
+#~ "\\frac{x^3}{e^x-1}\\,dx = \\frac{\\pi^4}{15} "
+#~ "\\end{equation}"
+#~ msgstr ""
 

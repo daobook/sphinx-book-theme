@@ -1,0 +1,179 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020
+# This file is distributed under the same license as the Sphinx Book Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Book Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-11 23:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../../contributing/tests.md:2
+msgid "Testing infrastructure"
+msgstr ""
+
+#: ../../../contributing/tests.md:4
+msgid "Our testing infrastructure uses pytest"
+msgstr ""
+
+#: ../../../contributing/tests.md:6
+msgid "Run the tests with a single environment"
+msgstr ""
+
+#: ../../../contributing/tests.md:8
+msgid "You can run the test suite with the default environment like so:"
+msgstr ""
+
+#: ../../../contributing/tests.md:14
+msgid "You can specify a specific environment like so:"
+msgstr ""
+
+#: ../../../contributing/tests.md:21
+msgid "List all test environments"
+msgstr ""
+
+#: ../../../contributing/tests.md:23
+msgid "To list all of the test environments to may choose from, run:"
+msgstr ""
+
+#: ../../../contributing/tests.md:29
+msgid ""
+"Each one corresponds to a test environment or a task to build the "
+"documentation, and has its own virtual environment."
+msgstr ""
+
+#: ../../../contributing/tests.md:31
+msgid ""
+"See the `tox.ini` file in the repository's root for details of all "
+"available development environments."
+msgstr ""
+
+#: ../../../contributing/tests.md:33
+msgid "Supply arguments to pytest"
+msgstr ""
+
+#: ../../../contributing/tests.md:35
+msgid ""
+"To supply arguments to pytest, use `--` and pass arguments after. For "
+"example:"
+msgstr ""
+
+#: ../../../contributing/tests.md:43
+msgid "Re-build an environment from scratch"
+msgstr ""
+
+#: ../../../contributing/tests.md:45
+msgid ""
+"By default, `tox` will only install the necessary environment **once**. "
+"If you'd like to force a re-build, use the `-r` parameter. For example:"
+msgstr ""
+
+#: ../../../contributing/tests.md:52
+msgid "Test audits with lighthouse"
+msgstr ""
+
+#: ../../../contributing/tests.md:54
+msgid ""
+"This theme uses the [`treosh/lighthouse-ci-"
+"action`](https://github.com/treosh/lighthouse-ci-action) to run some "
+"basic audits on our performance, accessibility, etc."
+msgstr ""
+
+#: ../../../contributing/tests.md:56
+msgid "To preview the output of these tests:"
+msgstr ""
+
+#: ../../../contributing/tests.md:58
+msgid "Click on the `docs-audit` GitHub Action job from a Pull Request."
+msgstr ""
+
+#: ../../../contributing/tests.md:59
+msgid "Scroll to the \"Audit with Lighthouse\" section"
+msgstr ""
+
+#: ../../../contributing/tests.md:60
+msgid ""
+"If there are errors, you should see them along with the link to preview "
+"the report at `report: <URL TO PAGE>`."
+msgstr ""
+
+#: ../../../contributing/tests.md:61
+msgid ""
+"If there are not errors, you can list them by clicking the `uploading` "
+"section, which will reveal links to the report for each page"
+msgstr ""
+
+#: ../../../contributing/tests.md:64
+msgid "Test multiple Sphinx versions"
+msgstr ""
+
+#: ../../../contributing/tests.md:66
+msgid ""
+"This theme is tested against the latest two major versions of Sphinx. We "
+"try to set up our regression tests such that there are no differences "
+"between these two Sphinx versions."
+msgstr ""
+
+#: ../../../contributing/tests.md:69
+msgid "Unit tests"
+msgstr ""
+
+#: ../../../contributing/tests.md:71
+msgid ""
+"Use the variable `sphinx_build.software_versions` to conditionally run "
+"tests based on the version of Sphinx."
+msgstr ""
+
+#: ../../../contributing/tests.md:73 ../../../contributing/tests.md:94
+msgid "For example:"
+msgstr ""
+
+#: ../../../contributing/tests.md:82
+msgid "Regression tests"
+msgstr ""
+
+#: ../../../contributing/tests.md:84
+msgid ""
+"Regression tests are trickier, because updating them generally requires "
+"re-running the tests, not hand-editing code. This is cumbersome for "
+"maintenance because we have to run the test suite two times for each "
+"regression that is updated. For this reason, we have a more lightweight "
+"approach:"
+msgstr ""
+
+#: ../../../contributing/tests.md:88
+msgid ""
+"**If a regression test differs between Sphinx versions**, decide if the "
+"difference is substantial. Do we gain something meaningful by testing "
+"both major versions of Sphinx, or is the difference unrelated to our "
+"theme's functionality?"
+msgstr ""
+
+#: ../../../contributing/tests.md:91
+msgid ""
+"**If not substantial**, then add a conditional and only run the "
+"regression test on the latest Sphinx version we support. Add a note to "
+"explain why you're only testing against one version of Sphinx."
+msgstr ""
+
+#: ../../../contributing/tests.md:101
+msgid "**If it is substantial**, follow these steps:"
+msgstr ""
+
+#: ../../../contributing/tests.md:103
+msgid ""
+"To support multiple Sphinx versions with regression tests, use the "
+"`extension` key to create a different regression file for that version of"
+" Sphinx. For example:"
+msgstr ""
+

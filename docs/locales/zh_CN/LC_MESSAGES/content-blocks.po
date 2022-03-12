@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sphinx Book Theme \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-23 23:20+0800\n"
+"POT-Creation-Date: 2022-03-11 23:43+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,27 +18,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: ../../content-blocks.md:15
+#: ../../../content-blocks.md:15
 msgid "Special content blocks"
 msgstr "特殊内容块"
 
-#: ../../content-blocks.md:17
+#: ../../../content-blocks.md:17
 msgid "There are a few content blocks that are unique to this theme."
 msgstr "有几个内容块是这个主题所特有的。"
 
-#: ../../content-blocks.md:20
+#: ../../../content-blocks.md:20
 msgid "Quotations and epigraphs"
 msgstr "语录和题记"
 
-#: ../../content-blocks.md:22
+#: ../../../content-blocks.md:22
 msgid "Here is what quotations and epigraphs look like in `sphinx-book-theme`:"
 msgstr "这是 `sphinx-book-theme` 中的引文和题记的样子。"
 
-#: ../../content-blocks.md:24
+#: ../../../content-blocks.md:24
 msgid "A quote with no attribution:"
 msgstr "一段没有出处的引言："
 
-#: ../../content-blocks.md:1 ../../content-blocks.md:26
+#: ../../../content-blocks.md:1 ../../../content-blocks.md:26
 msgid ""
 "Here's my quote, it's pretty neat. I wonder how many lines I can create "
 "with a single stream-of-consciousness quote. I could try to add a list of"
@@ -46,97 +46,85 @@ msgid ""
 "I'll stop here."
 msgstr ""
 
-#: ../../content-blocks.md:33
+#: ../../../content-blocks.md:33
 msgid ""
 "Sometimes you'd like to draw more attention to a quote. To do so, use the"
 " `{epigraph}` directive. Below is an epigraph, click the button to the "
 "right of it to show the code that was used to generate it:"
-msgstr ""
-"有时你想让人们更多地注意到一句话。要做到这一点，请使用 `{epigraph}` 指令。"
-"下面是一个序言，点击它右边的按钮，显示用于生成该序言的代码："
+msgstr "有时你想让人们更多地注意到一句话。要做到这一点，请使用 `{epigraph}` 指令。下面是一个序言，点击它右边的按钮，显示用于生成该序言的代码："
 
-#: ../../content-blocks.md:59
+#: ../../../content-blocks.md:59
 msgid ""
 "You can also add an attribution to epigraphs by adding a blank line, "
 "followed by a line that starts with `--`. This will be renderered like "
 "so:"
-msgstr ""
-"你也可以通过添加一个空行，然后添加一个以 `--` 开头的行，来为书信添加署名。'
-'这将呈现出这样的效果："
+msgstr "你也可以通过添加一个空行，然后添加一个以 `--` 开头的行，来为书信添加署名。"
 
-#: ../../content-blocks.md:69
+#: ../../../content-blocks.md:69
 msgid "Jo the Jovyan, *[the jupyter book docs](https://beta.jupyterbook.org)*"
 msgstr ""
 
-#: ../../content-blocks.md:88
+#: ../../../content-blocks.md:88
 msgid "Sidebars"
 msgstr "侧边栏"
 
-#: ../../content-blocks.md:90
+#: ../../../content-blocks.md:90
 msgid ""
 "There are two different kinds of sidebar-like content in `sphinx-book-"
 "theme`, typical `{sidebar}` directives, as well as a theme-specific "
 "`{margin}` directive. This section covers both. Both allow you to place "
 "extra content separately from your main content."
 msgstr ""
-"`sphinx-book-theme` 中有两种不同的类似侧边栏的内容，典型的 `{sidebar}` 指令，"
-"以及一个特定主题的 `{margin}` 指令。本节涵盖这两种指令。"
-"两者都允许你将额外的内容与你的主要内容分开放置。"
+"`sphinx-book-theme` 中有两种不同的类似侧边栏的内容，典型的 `{sidebar}` 指令，以及一个特定主题的 "
+"`{margin}` 指令。本节涵盖这两种指令。两者都允许你将额外的内容与你的主要内容分开放置。"
 
-#: ../../content-blocks.md:1
+#: ../../../content-blocks.md:1
 msgid ""
 "Sidebar content will generally overlap with the white space where your "
 "site's table of contents lives. When the reader scrolls sidebar content "
 "into view, the right TOC should hide itself automatically."
-msgstr ""
-"侧边栏内容一般会与你的网站目录所在的白色空间重叠。"
-"当读者滚动侧边栏内容进入视野时，右边的 TOC 应该自动隐藏起来。"
+msgstr "侧边栏内容一般会与你的网站目录所在的白色空间重叠。当读者滚动侧边栏内容进入视野时，右边的 TOC 应该自动隐藏起来。"
 
-#: ../../content-blocks.md:101
+#: ../../../content-blocks.md:101
 msgid "Margin content"
 msgstr "页边距内容"
 
-#: ../../content-blocks.md:103
+#: ../../../content-blocks.md:103
 msgid ""
 "You can specify content that should exist in the right margin. This will "
 "behave like a regular sidebar until the screen hits a certain width, at "
 "which point this content will \"pop out\" to the right white space."
-msgstr ""
-"你可以指定应该存在于右页边距的内容。"
-"这将表现得像一个普通的侧边栏，直到屏幕达到一定的宽度，在这一点上，"
-"这些内容将 “弹出” 到右边的页边距区域。"
+msgstr "你可以指定应该存在于右页边距的内容。这将表现得像一个普通的侧边栏，直到屏幕达到一定的宽度，在这一点上，这些内容将 “弹出” 到右边的页边距区域。"
 
-#: ../../content-blocks.md:107
+#: ../../../content-blocks.md:107
 msgid ""
 "There are two ways to add content to the margin: via the `{margin}` "
 "directive, and via adding CSS classes to your own content."
-msgstr ""
-"有两种方法可以将内容添加到空白处：通过 `{margin}` 指令，"
-"以及通过向自己的内容添加 CSS 类。"
+msgstr "有两种方法可以将内容添加到空白处：通过 `{margin}` 指令，以及通过向自己的内容添加 CSS 类。"
 
-#: ../../content-blocks.md:109
+#: ../../../content-blocks.md:109
 msgid "Use a `{margin}` directive to add margin content"
 msgstr "使用 `{margin}` 指令来添加页边距内容"
 
-#: ../../content-blocks.md:111
+#: ../../../content-blocks.md:111
 msgid ""
 "The `{margin}` directive allows you to create margin content with your "
 "own title and content block. It is a wrapper around the Sphinx "
 "`{sidebar}` directive, and largely does its magic via CSS classes (see "
 "below)."
 msgstr ""
-"`{margin}` 指令允许你用自己的标题和内容块来创建边缘内容。"
-"它是Sphinx `{sidebar}` 指令的一个封装器，主要通过 CSS 类来实现其魔力（见下文）。"
+"`{margin}` 指令允许你用自己的标题和内容块来创建边缘内容。它是Sphinx `{sidebar}` 指令的一个封装器，主要通过 CSS "
+"类来实现其魔力（见下文）。"
 
-#: ../../content-blocks.md:114
+#: ../../../content-blocks.md:114
 msgid "Here's how you can use the `{margin}` directive:"
 msgstr "下面是如何使用 `{margin}` 指令的："
 
-#: ../../content-blocks.md:126
+#: ../../../content-blocks.md:126
 msgid "Use CSS classes to add margin content"
 msgstr "使用 CSS 类来增加页边距内容"
 
-#: ../../content-blocks.md:128
+#: ../../../content-blocks.md:128
 msgid ""
 "You may also directly add CSS classes to elements on your page in order "
 "to make them behave like margin content. To do so, add the `margin` CSS "
@@ -144,140 +132,127 @@ msgid ""
 "directly add classes. For example, here's the syntax to add a `margin` "
 "class to a `{note}` directive:"
 msgstr ""
-"你也可以直接给你的页面上的元素添加 CSS 类，以使它们表现得像页边距内容。"
-"要做到这一点，请将 `margin` CSS 类添加到页面上的任何元素。"
-"许多 Sphinx 指令允许你直接添加类。"
-"例如，下面是在 `{note}` 指令中添加 `margin` 类的语法："
+"你也可以直接给你的页面上的元素添加 CSS 类，以使它们表现得像页边距内容。要做到这一点，请将 `margin` CSS "
+"类添加到页面上的任何元素。许多 Sphinx 指令允许你直接添加类。例如，下面是在 `{note}` 指令中添加 `margin` 类的语法："
 
-#: ../../content-blocks.md:1
+#: ../../../content-blocks.md:1
 msgid "This note will be in the margin!"
 msgstr ""
 
-#: ../../content-blocks.md:145
+#: ../../../content-blocks.md:145
 msgid ""
 "This works for most elements on the page, but in general this works best "
 "for \"parent containers\" that are the top-most element of a bundle of "
 "content."
-msgstr ""
-"对页面上的大多数元素都有效，但一般来说，对作为内容束最顶端的元素的 “父容器” 效果最好。"
+msgstr "对页面上的大多数元素都有效，但一般来说，对作为内容束最顶端的元素的 “父容器” 效果最好。"
 
-#: ../../content-blocks.md:147
+#: ../../../content-blocks.md:147
 msgid "For example, we can even put a whole figure in the margin like so:"
 msgstr "例如，我们甚至可以像这样把一个完整的图片放在页边距："
 
-#: ../../content-blocks.md:150
+#: ../../../content-blocks.md:150
 msgid ""
 "You can also put the whole figure in the margin if you like. Here is a "
 "figure with a caption below. We'll add a note below to create some "
 "vertical space to see better."
+msgstr "如果你愿意，你也可以把整个图片写在页边距。这里是一个图片，下面有一个标题。我们在下面加一个说明，创造一些垂直空间，以便看得更清楚。"
+
+#: ../../../content-blocks.md:1
+msgid "我的图片文本"
 msgstr ""
-"如果你愿意，你也可以把整个图片写在页边距。"
-"这里是一个图片，下面有一个标题。我们在下面加一个说明，创造一些垂直空间，以便看得更清楚。"
 
-#: ../../content-blocks.md:1
-msgid "My figure text"
-msgstr "我的图片文本"
-
-#: ../../content-blocks.md:1
+#: ../../../content-blocks.md:1
 msgid "And here is my figure caption"
 msgstr "这是我的图片说明"
 
-#: ../../content-blocks.md:174
+#: ../../../content-blocks.md:174
 msgid ""
 "We can reference the figure with {ref}`myfig4`. Or a numbered reference "
 "like {numref}`myfig4`."
-msgstr ""
-"我们可以用 {ref}`myfig4` 来引用该图。或者用 {numref}`myfig4` 这样的编号引用。"
+msgstr "我们可以用 {ref}`myfig4` 来引用该图。或者用 {numref}`myfig4` 这样的编号引用。"
 
-#: ../../content-blocks.md:177
+#: ../../../content-blocks.md:177
 msgid "Figure captions in the margin"
 msgstr "页边距的图片说明"
 
-#: ../../content-blocks.md:179
+#: ../../../content-blocks.md:179
 msgid ""
 "You can configure figures to use the margin for captions. Here is a "
 "figure with a caption to the right."
-msgstr ""
-"你可以配置图片，使其使用页边距来做标题。这里是一个图片，其标题在右边。"
+msgstr "你可以配置图片，使其使用页边距来做标题。这里是一个图片，其标题在右边。"
 
-#: ../../content-blocks.md:1
+#: ../../../content-blocks.md:1
 msgid ""
 "And here is my figure caption, if you look to the left, you can see that "
 "COOL is in big red letters. But you probably already noticed that, really"
 " I am just taking up space to see how the margin caption looks like when "
 "it is really long :-)."
 msgstr ""
-"这是我的图片说明，如果你看左边，你可以看到 COOL 是大红字。"
-"但你可能已经注意到了，其实我只是占用了一些空间，看看当标题真的很长时，边距是什么样子的：:-)。"
+"这是我的图片说明，如果你看左边，你可以看到 COOL "
+"是大红字。但你可能已经注意到了，其实我只是占用了一些空间，看看当标题真的很长时，边距是什么样子的：:-)。"
 
-#: ../../content-blocks.md:192
+#: ../../../content-blocks.md:192
 msgid "And the text that produced it:"
 msgstr "以及产生它的文本："
 
-#: ../../content-blocks.md:206
+#: ../../../content-blocks.md:206
 msgid ""
 "We can reference the figure with {ref}`this reference <myfig5>`. Or a "
 "numbered reference like {numref}`myfig5`."
-msgstr ""
-"我们可以用 {ref}`这个引用 <myfig5>` 来引用这个图。"
-"或者像 {numref}`myfig5` 这样的编号引用。"
+msgstr "我们可以用 {ref}`这个引用 <myfig5>` 来引用这个图。或者像 {numref}`myfig5` 这样的编号引用。"
 
-#: ../../content-blocks.md:209
+#: ../../../content-blocks.md:209
 msgid "Content sidebars"
 msgstr "内容侧栏"
 
-#: ../../content-blocks.md:211
+#: ../../../content-blocks.md:211
 msgid ""
 "Content sidebars exist in-line with your text, but allow the rest of the "
 "page to flow around them, rather than moving to the right margin. To add "
 "content sidebars, use this syntax:"
-msgstr ""
-"内容侧栏与你的文本并列存在，但允许页面的其他部分围绕它们流动，"
-"而不是移动到右边的空白处。要添加内容侧边栏，请使用以下语法："
+msgstr "内容侧栏与你的文本并列存在，但允许页面的其他部分围绕它们流动，而不是移动到右边的空白处。要添加内容侧边栏，请使用以下语法："
 
-#: ../../content-blocks.md:1
+#: ../../../content-blocks.md:1
 msgid "**My sidebar title**"
 msgstr "我的侧边栏标题"
 
-#: ../../content-blocks.md:1
+#: ../../../content-blocks.md:1
 msgid "Here is my sidebar content, it is pretty cool!"
 msgstr "这是我的侧边栏内容，它是相当酷的！"
 
-#: ../../content-blocks.md:4
+#: ../../../content-blocks.md:4
 msgid "![](images/cool.jpg)"
 msgstr ""
 
-#: ../../content-blocks.md:222
+#: ../../../content-blocks.md:222
 msgid ""
 "Note how the content wraps around the sidebar to the right. However, the "
 "sidebar text will still be in line with your content. There are certain "
 "kinds of elements, such as \"note\" blocks and code cells, that may clash"
 " with your sidebar. If this happens, try using a `{margin}` instead."
 msgstr ""
-"注意内容是如何围绕着侧边栏向右包裹的。然而，侧边栏的文字仍将与你的内容保持一致。"
-"有一些元素，如 “note” 块和代码单元，可能会与侧边栏发生冲突。"
-"如果发生这种情况，可以尝试使用 `{margin}` 来代替。"
+"注意内容是如何围绕着侧边栏向右包裹的。然而，侧边栏的文字仍将与你的内容保持一致。有一些元素，如 “note” "
+"块和代码单元，可能会与侧边栏发生冲突。如果发生这种情况，可以尝试使用 `{margin}` 来代替。"
 
-#: ../../content-blocks.md:233
+#: ../../../content-blocks.md:233
 msgid "Adding content to margins and sidebars"
 msgstr "在页边距和侧边栏添加内容"
 
-#: ../../content-blocks.md:235
+#: ../../../content-blocks.md:235
 msgid ""
 "Sidebar/margin content can include all kinds of things, such as code "
 "blocks:"
-msgstr ""
-"侧边栏/页边距内容可以包括各种东西，如代码块："
+msgstr "侧边栏/页边距内容可以包括各种东西，如代码块："
 
-#: ../../content-blocks.md:251
+#: ../../../content-blocks.md:251
 msgid "as well as admonitions and images:"
 msgstr "以及告诫和图像："
 
-#: ../../content-blocks.md:269
+#: ../../../content-blocks.md:269
 msgid "Full-width content"
 msgstr "全宽内容"
 
-#: ../../content-blocks.md:271
+#: ../../../content-blocks.md:271
 msgid ""
 "Full-width content extends into the right margin, making it stand out "
 "against the rest of your book's content. To add full-width content to "
@@ -285,29 +260,31 @@ msgid ""
 "documentation. For example, you can add a `full-width` tag to a note "
 "element like this:"
 msgstr ""
-"全宽内容延伸到右边的空白处，使它在你的书的其他内容中脱颖而出。"
-"要在你的页面上添加全宽内容，请在文档中的任何元素上添加 `full-width` 类。"
-"例如，你可以像这样给笔记元素添加一个 `full-width` 标签："
+"全宽内容延伸到右边的空白处，使它在你的书的其他内容中脱颖而出。要在你的页面上添加全宽内容，请在文档中的任何元素上添加 `full-width` "
+"类。例如，你可以像这样给笔记元素添加一个 `full-width` 标签："
 
-#: ../../content-blocks.md:283
+#: ../../../content-blocks.md:283
 msgid "This code results in the following output:"
 msgstr "这段代码的输出结果如下："
 
-#: ../../content-blocks.md:1
+#: ../../../content-blocks.md:1
 msgid "This content will be full-width"
 msgstr "这个内容将是全宽的"
 
-#: ../../content-blocks.md:290
+#: ../../../content-blocks.md:290
 msgid "A note for ipynb users"
 msgstr "给 ipynb 用户的说明"
 
-#: ../../content-blocks.md:1
+#: ../../../content-blocks.md:1
 msgid ""
 "If you are using a Jupyter Notebook as inputs to your documentation using"
 " the [MyST-NB extension](https://myst-nb.readthedocs.io/en/latest/), you "
 "can trigger this behavior with a code cell by adding a `full-width` tag "
 "to the cell."
 msgstr ""
-"如果你使用 [MyST-NB 插件](https://myst-nb.readthedocs.io/en/latest/) "
-"的 Jupyter 笔记本作为文档的输入，"
-"你可以通过在代码单元中添加 `full-width` 标签来触发这一行为。"
+"如果你使用 [MyST-NB 插件](https://myst-nb.readthedocs.io/en/latest/) 的 Jupyter "
+"笔记本作为文档的输入，你可以通过在代码单元中添加 `full-width` 标签来触发这一行为。"
+
+#~ msgid "My figure text"
+#~ msgstr "我的图片文本"
+

@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020
+# This file is distributed under the same license as the Sphinx Book Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Book Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-11 23:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../../customize/header.md:1
+msgid "Header content"
+msgstr "Header 内容"
+
+#: ../../../customize/header.md:3
+msgid ""
+"By default, this theme does not contain any header content, it only has a"
+" sidebar and a main content window. However, you can define your own HTML"
+" in a header that will be inserted **above everything else**. To do so, "
+"you must define your own Sphinx Template in a specific location. The "
+"contents of this template will be inserted into the theme. Here is how to"
+" do this:"
+msgstr ""
+"默认情况下，这个主题不包含任何标题内容，它只有一个侧边栏和一个主内容窗口。"
+"然而，你可以在一个 header 中定义你自己的 HTML，这个 header 将被插入到其他所有内容之上。"
+"为此，您必须在特定的位置定义自己的 Sphinx Template。"
+"这个模板的内容将被插入到主题中。下面是如何做到这一点："
+
+#: ../../../customize/header.md:9
+msgid ""
+"Create a templates folder in your theme's root. Assuming your "
+"documentation is in the `docs/` folder:"
+msgstr ""
+"在你的主题根目录中创建模板文件夹。假设你的文档在 `docs/` 文件夹中："
+
+#: ../../../customize/header.md:15
+msgid "Add the `_templates/` folder to your Sphinx configuration templates:"
+msgstr "将 `_templates/` 文件夹添加到 Sphinx 配置模板中："
+
+#: ../../../customize/header.md:20
+msgid "Create the following template file and add HTML to id:"
+msgstr "创建以下模板文件，并将 HTML 添加到 id 中："
+
+#: ../../../customize/header.md:25
+msgid ""
+"Build your documentation, and you should see content of this file show up"
+" above your site."
+msgstr ""
+"建立你的文档，你应该看到这个文件的内容显示在你的网站上。"
+
+#: ../../../customize/header.md:27
+msgid "Style the header"
+msgstr "header 样式"
+
+#: ../../../customize/header.md:29
+msgid ""
+"Note that the header has very little styling applied to it by default. So"
+" you should [add custom styles to the theme](custom-css.md) in order to "
+"achieve the look and feel you want."
+msgstr ""
+"请注意，默认情况下，头部很少应用样式。"
+"所以你应该 [为主题添加自定义样式](custom-css.md)，以实现你想要的外观和感觉。"

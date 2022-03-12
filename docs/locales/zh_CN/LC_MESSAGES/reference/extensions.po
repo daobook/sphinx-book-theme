@@ -1,0 +1,164 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020
+# This file is distributed under the same license as the Sphinx Book Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Book Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-11 23:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../../reference/extensions.md:1
+msgid "Sphinx extension styles"
+msgstr ""
+
+#: ../../../reference/extensions.md:3
+msgid ""
+"This page shows of some special-case styling for various Sphinx "
+"extensions."
+msgstr ""
+
+#: ../../../reference/extensions.md:6
+msgid "`sphinxcontrib-bibtex` - References and bibliographies"
+msgstr ""
+
+#: ../../../reference/extensions.md:8
+msgid ""
+"[`sphinxcontrib-bibtex`](https://sphinxcontrib-"
+"bibtex.readthedocs.io/en/latest/) provides support for citations and "
+"bibliographies."
+msgstr ""
+
+#: ../../../reference/extensions.md:10
+msgid ""
+"Because this theme deals with scholarly and scientific communication, "
+"`sphinxcontrib-bibtex` should work particularly well."
+msgstr ""
+
+#: ../../../reference/extensions.md:12
+msgid "Here's are a few citations:"
+msgstr ""
+
+#: ../../../reference/extensions.md:14
+msgid ""
+"Default citation {cite}`project_jupyter-proc-scipy-2018`, "
+"{cite}`holdgraf_rapid_2016,project_jupyter-proc-scipy-2018`. (should be "
+"same as parenthetical)"
+msgstr ""
+
+#: ../../../reference/extensions.md:15
+msgid ""
+"Parenthetical citation {cite:p}`project_jupyter-proc-scipy-2018`, "
+"{cite:p}`holdgraf_rapid_2016,project_jupyter-proc-scipy-2018`."
+msgstr ""
+
+#: ../../../reference/extensions.md:16
+msgid ""
+"Textual citation {cite:t}`project_jupyter-proc-scipy-2018`, "
+"{cite:t}`holdgraf_rapid_2016,project_jupyter-proc-scipy-2018`."
+msgstr ""
+
+#: ../../../reference/extensions.md:18
+msgid "And here's a bibliography:"
+msgstr ""
+
+#: ../../../reference/extensions.md:1
+msgid ""
+"See the [paragraph markup page](kitchen-sink/paragraph-markup.rst) for "
+"more references styling."
+msgstr ""
+
+#: ../../../reference/extensions.md:27
+msgid "`ABlog` - Blog post list"
+msgstr ""
+
+#: ../../../reference/extensions.md:29
+msgid ""
+"[ABlog](https://ablog.readthedocs.io/en/latest/) is a Sphinx extension "
+"for blogging with Sphinx."
+msgstr ""
+
+#: ../../../reference/extensions.md:31
+msgid "Here's a sample post list:"
+msgstr ""
+
+#: ../../../reference/extensions.md:39
+msgid "`sphinx-togglebutton` - Toggle content with buttons"
+msgstr ""
+
+#: ../../../reference/extensions.md:41
+msgid "A block toggle:"
+msgstr ""
+
+#: ../../../reference/extensions.md:1
+msgid "This note is toggled!"
+msgstr ""
+
+#: ../../../reference/extensions.md:50
+msgid "A block toggle in the margin:"
+msgstr ""
+
+#: ../../../reference/extensions.md:63
+msgid "An admonition toggle:"
+msgstr ""
+
+#: ../../../reference/extensions.md:1
+msgid "This note will be toggled!"
+msgstr ""
+
+#: ../../../reference/extensions.md:72
+msgid "An admonition toggle in the margin"
+msgstr ""
+
+#: ../../../reference/extensions.md:1
+msgid "This toggle is in the margin!"
+msgstr ""
+
+#: ../../../reference/extensions.md:85
+msgid "`sphinx-tabs` - Tabbed content"
+msgstr ""
+
+#: ../../../reference/extensions.md:92
+msgid "Apples"
+msgstr ""
+
+#: ../../../reference/extensions.md:94
+msgid "Apples are green, or sometimes red."
+msgstr ""
+
+#: ../../../reference/extensions.md:96
+msgid "Pears"
+msgstr ""
+
+#: ../../../reference/extensions.md:98
+msgid "Pears are green."
+msgstr ""
+
+#: ../../../reference/extensions.md:100
+msgid "Oranges"
+msgstr ""
+
+#: ../../../reference/extensions.md:102
+msgid "Oranges are orange."
+msgstr ""
+
+#: ../../../reference/extensions.md:105
+msgid "`sphinxcontrib.youtube` for videos"
+msgstr ""
+
+#: ../../../reference/extensions.md:107
+msgid ""
+"[`sphinxcontrib.youtube`](https://github.com/sphinx-contrib/youtube) "
+"makes it possible to easily embed videos in your documentation."
+msgstr ""
+
