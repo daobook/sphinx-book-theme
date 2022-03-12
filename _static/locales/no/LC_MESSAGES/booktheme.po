@@ -8,74 +8,74 @@ msgstr ""
 "Language: no\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Copyright"
-msgstr "opphavsrett"
-
-msgid "Contents"
-msgstr "Innhold"
-
-msgid "previous page"
-msgstr "forrige side"
-
-msgid "By the"
-msgstr "Ved"
+msgid "Download this page"
+msgstr "Last ned denne siden"
 
 msgid "Download notebook file"
 msgstr "Last ned notatbokfilen"
 
-msgid "next page"
-msgstr "neste side"
-
-msgid "Edit this page"
-msgstr "Rediger denne siden"
-
-msgid "Search the docs ..."
-msgstr "Søk i dokumentene ..."
-
-msgid "open issue"
-msgstr "åpent nummer"
-
-msgid "Launch"
-msgstr "Start"
-
-msgid "Source repository"
-msgstr "Kildedepot"
+msgid "Open an issue"
+msgstr "Åpne et problem"
 
 msgid "repository"
 msgstr "oppbevaringssted"
 
+msgid "Theme by the"
+msgstr "Tema av"
+
+msgid "Contents"
+msgstr "Innhold"
+
+msgid "next page"
+msgstr "neste side"
+
 msgid "Last updated on"
 msgstr "Sist oppdatert den"
 
-msgid "Print to PDF"
-msgstr "Skriv ut til PDF"
+msgid "Launch"
+msgstr "Start"
 
-msgid "Open an issue"
-msgstr "Åpne et problem"
+msgid "Edit this page"
+msgstr "Rediger denne siden"
 
-msgid "By"
-msgstr "Av"
+msgid "Source repository"
+msgstr "Kildedepot"
 
 msgid "Download source file"
 msgstr "Last ned kildefilen"
 
-msgid "Toggle navigation"
-msgstr "Bytt navigasjon"
-
-msgid "Search this book..."
-msgstr "Søk i denne boken ..."
-
-msgid "Theme by the"
-msgstr "Tema av"
-
 msgid "Sphinx Book Theme"
 msgstr "Sphinx boktema"
+
+msgid "Copyright"
+msgstr "opphavsrett"
 
 msgid "Fullscreen mode"
 msgstr "Fullskjerm-modus"
 
-msgid "Download this page"
-msgstr "Last ned denne siden"
+msgid "Search the docs ..."
+msgstr "Søk i dokumentene ..."
 
 msgid "suggest edit"
 msgstr "foreslå redigering"
+
+msgid "Search this book..."
+msgstr "Søk i denne boken ..."
+
+msgid "By"
+msgstr "Av"
+
+msgid "open issue"
+msgstr "åpent nummer"
+
+msgid "Print to PDF"
+msgstr "Skriv ut til PDF"
+
+msgid "previous page"
+msgstr "forrige side"
+
+msgid "Toggle navigation"
+msgstr "Bytt navigasjon"
+
+msgid "By the"
+msgstr "Ved"

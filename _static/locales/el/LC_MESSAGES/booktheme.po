@@ -8,74 +8,74 @@ msgstr ""
 "Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Copyright"
-msgstr "Πνευματική ιδιοκτησία"
-
-msgid "Contents"
-msgstr "Περιεχόμενα"
-
-msgid "previous page"
-msgstr "προηγούμενη σελίδα"
-
-msgid "By the"
-msgstr "Από το"
+msgid "Download this page"
+msgstr "Λήψη αυτής της σελίδας"
 
 msgid "Download notebook file"
 msgstr "Λήψη αρχείου σημειωματάριου"
 
-msgid "next page"
-msgstr "επόμενη σελίδα"
-
-msgid "Edit this page"
-msgstr "Επεξεργαστείτε αυτήν τη σελίδα"
-
-msgid "Search the docs ..."
-msgstr "Αναζήτηση στα έγγραφα ..."
-
-msgid "open issue"
-msgstr "ανοιχτό ζήτημα"
-
-msgid "Launch"
-msgstr "Εκτόξευση"
-
-msgid "Source repository"
-msgstr "Αποθήκη πηγής"
+msgid "Open an issue"
+msgstr "Ανοίξτε ένα ζήτημα"
 
 msgid "repository"
 msgstr "αποθήκη"
 
+msgid "Theme by the"
+msgstr "Θέμα από το"
+
+msgid "Contents"
+msgstr "Περιεχόμενα"
+
+msgid "next page"
+msgstr "επόμενη σελίδα"
+
 msgid "Last updated on"
 msgstr "Τελευταία ενημέρωση στις"
 
-msgid "Print to PDF"
-msgstr "Εκτύπωση σε PDF"
+msgid "Launch"
+msgstr "Εκτόξευση"
 
-msgid "Open an issue"
-msgstr "Ανοίξτε ένα ζήτημα"
+msgid "Edit this page"
+msgstr "Επεξεργαστείτε αυτήν τη σελίδα"
 
-msgid "By"
-msgstr "Με"
+msgid "Source repository"
+msgstr "Αποθήκη πηγής"
 
 msgid "Download source file"
 msgstr "Λήψη αρχείου προέλευσης"
 
-msgid "Toggle navigation"
-msgstr "Εναλλαγή πλοήγησης"
-
-msgid "Search this book..."
-msgstr "Αναζήτηση σε αυτό το βιβλίο ..."
-
-msgid "Theme by the"
-msgstr "Θέμα από το"
-
 msgid "Sphinx Book Theme"
 msgstr "Θέμα βιβλίου Sphinx"
+
+msgid "Copyright"
+msgstr "Πνευματική ιδιοκτησία"
 
 msgid "Fullscreen mode"
 msgstr "ΛΕΙΤΟΥΡΓΙΑ ΠΛΗΡΟΥΣ ΟΘΟΝΗΣ"
 
-msgid "Download this page"
-msgstr "Λήψη αυτής της σελίδας"
+msgid "Search the docs ..."
+msgstr "Αναζήτηση στα έγγραφα ..."
 
 msgid "suggest edit"
 msgstr "προτείνω επεξεργασία"
+
+msgid "Search this book..."
+msgstr "Αναζήτηση σε αυτό το βιβλίο ..."
+
+msgid "By"
+msgstr "Με"
+
+msgid "open issue"
+msgstr "ανοιχτό ζήτημα"
+
+msgid "Print to PDF"
+msgstr "Εκτύπωση σε PDF"
+
+msgid "previous page"
+msgstr "προηγούμενη σελίδα"
+
+msgid "Toggle navigation"
+msgstr "Εναλλαγή πλοήγησης"
+
+msgid "By the"
+msgstr "Από το"

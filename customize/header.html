@@ -6,15 +6,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-<meta property="og:title" content="Header content" />
+<meta property="og:title" content="Header 内容" />
   
 <meta property="og:type" content="website" />
   
 <meta property="og:url" content="customize/header.html" />
   
-<meta property="og:description" content="By default, this theme does not contain any header content, it only has a sidebar and a main content window. However, you can define your own HTML in a header that will be inserted above everything..." />
+<meta property="og:description" content="默认情况下，这个主题不包含任何标题内容，它只有一个侧边栏和一个主内容窗口。然而，你可以在一个 header 中定义你自己的 HTML，这个 header 将被插入到其他所有内容之上。为此，您必须在特定的位置定义自己的 Sphinx Template。这个模板的内容将被插入到主题中。下面是如何做到这一点： 在你的主题根目录中创建模板文件夹。假设你的文档在 docs/ 文件夹中：, 将_temp..." />
   
-    <title>Header content &#8212; Sphinx Book Theme</title>
+    <title>Header 内容 &#8212; Sphinx Book Theme</title>
     
     <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 <link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -66,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
     <link rel="next" title="添加一个下载页面的按钮" href="download.html" />
-    <link rel="prev" title="Announcement banners" href="announcements.html" /> 
+    <link rel="prev" title="公告横幅" href="announcements.html" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="zh_CN">
     
@@ -181,12 +181,12 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="announcements.html">
-     Announcement banners
+     公告横幅
     </a>
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Header content
+     Header 内容
     </a>
    </li>
    <li class="toctree-l2">
@@ -523,7 +523,7 @@ title="Print to PDF"
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#style-the-header">
-   Style the header
+   header 样式
   </a>
  </li>
 </ul>
@@ -535,7 +535,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Header content</h1>
+                <h1>Header 内容</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -547,7 +547,7 @@ title="Print to PDF"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#style-the-header">
-   Style the header
+   header 样式
   </a>
  </li>
 </ul>
@@ -560,35 +560,30 @@ title="Print to PDF"
                 
               <div>
                  <section class="tex2jax_ignore mathjax_ignore" id="header-content">
-<h1>Header content<a class="headerlink" href="#header-content" title="永久链接至标题">¶</a></h1>
-<p>By default, this theme does not contain any header content, it only has a sidebar and a main content window.
-However, you can define your own HTML in a header that will be inserted <strong>above everything else</strong>.
-To do so, you must define your own Sphinx Template in a specific location.
-The contents of this template will be inserted into the theme.
-Here is how to do this:</p>
+<h1>Header 内容<a class="headerlink" href="#header-content" title="永久链接至标题">¶</a></h1>
+<p>默认情况下，这个主题不包含任何标题内容，它只有一个侧边栏和一个主内容窗口。然而，你可以在一个 header 中定义你自己的 HTML，这个 header 将被插入到其他所有内容之上。为此，您必须在特定的位置定义自己的 Sphinx Template。这个模板的内容将被插入到主题中。下面是如何做到这一点：</p>
 <ul>
-<li><p>Create a templates folder in your theme’s root. Assuming your documentation is in the <code class="docutils literal notranslate"><span class="pre">docs/</span></code> folder:</p>
+<li><p>在你的主题根目录中创建模板文件夹。假设你的文档在 <code class="docutils literal notranslate"><span class="pre">docs/</span></code> 文件夹中：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span> docs/
 <span class="gp">$ </span>mkdir _templates
 </pre></div>
 </div>
 </li>
-<li><p>Add the <code class="docutils literal notranslate"><span class="pre">_templates/</span></code> folder to your Sphinx configuration templates:</p>
+<li><p>将 <code class="docutils literal notranslate"><span class="pre">_templates/</span></code> 文件夹添加到 Sphinx 配置模板中：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">templates_path</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;_templates&quot;</span><span class="p">]</span>
 </pre></div>
 </div>
 </li>
-<li><p>Create the following template file and add HTML to id:</p>
+<li><p>创建以下模板文件，并将 HTML 添加到 id 中：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">echo</span> <span class="s2">&quot;&lt;p&gt;Some text!&lt;/p&gt;&quot;</span> &gt; _templates/sections/header.html
 </pre></div>
 </div>
 </li>
-<li><p>Build your documentation, and you should see content of this file show up above your site.</p></li>
+<li><p>建立你的文档，你应该看到这个文件的内容显示在你的网站上。</p></li>
 </ul>
 <section id="style-the-header">
-<h2>Style the header<a class="headerlink" href="#style-the-header" title="永久链接至标题">¶</a></h2>
-<p>Note that the header has very little styling applied to it by default.
-So you should <a class="reference internal" href="custom-css.html"><span class="doc std std-doc">add custom styles to the theme</span></a> in order to achieve the look and feel you want.</p>
+<h2>header 样式<a class="headerlink" href="#style-the-header" title="永久链接至标题">¶</a></h2>
+<p>请注意，默认情况下，头部很少应用样式。所以你应该 <a class="reference internal" href="custom-css.html"><span class="doc std std-doc">为主题添加自定义样式</span></a>，以实现你想要的外观和感觉。</p>
 </section>
 </section>
 
@@ -626,7 +621,7 @@ So you should <a class="reference internal" href="custom-css.html"><span class="
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">上一页</p>
-            <p class="prev-next-title">Announcement banners</p>
+            <p class="prev-next-title">公告横幅</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="download.html" title="下一页 页">
@@ -646,7 +641,7 @@ So you should <a class="reference internal" href="custom-css.html"><span class="
     By the Executable Book Project<br/>
   
       &copy; Copyright 2020.<br/>
-    Last updated on 2022 年 03 月 11 日.<br/>
+    Last updated on 2022 年 03 月 12 日.<br/>
 </p>
         </footer>
     </div>

@@ -8,74 +8,74 @@ msgstr ""
 "Language: hr\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Copyright"
-msgstr "Autorska prava"
-
-msgid "Contents"
-msgstr "Sadržaj"
-
-msgid "previous page"
-msgstr "Prethodna stranica"
-
-msgid "By the"
-msgstr "Od strane"
+msgid "Download this page"
+msgstr "Preuzmite ovu stranicu"
 
 msgid "Download notebook file"
 msgstr "Preuzmi datoteku bilježnice"
 
-msgid "next page"
-msgstr "sljedeća stranica"
-
-msgid "Edit this page"
-msgstr "Uredite ovu stranicu"
-
-msgid "Search the docs ..."
-msgstr "Pretražite dokumente ..."
-
-msgid "open issue"
-msgstr "otvoreno izdanje"
-
-msgid "Launch"
-msgstr "Pokrenite"
-
-msgid "Source repository"
-msgstr "Izvorno spremište"
+msgid "Open an issue"
+msgstr "Otvorite izdanje"
 
 msgid "repository"
 msgstr "spremište"
 
+msgid "Theme by the"
+msgstr "Tema autora"
+
+msgid "Contents"
+msgstr "Sadržaj"
+
+msgid "next page"
+msgstr "sljedeća stranica"
+
 msgid "Last updated on"
 msgstr "Posljednje ažuriranje:"
 
-msgid "Print to PDF"
-msgstr "Ispis u PDF"
+msgid "Launch"
+msgstr "Pokrenite"
 
-msgid "Open an issue"
-msgstr "Otvorite izdanje"
+msgid "Edit this page"
+msgstr "Uredite ovu stranicu"
 
-msgid "By"
-msgstr "Po"
+msgid "Source repository"
+msgstr "Izvorno spremište"
 
 msgid "Download source file"
 msgstr "Preuzmi izvornu datoteku"
 
-msgid "Toggle navigation"
-msgstr "Uključi / isključi navigaciju"
-
-msgid "Search this book..."
-msgstr "Pretražite ovu knjigu ..."
-
-msgid "Theme by the"
-msgstr "Tema autora"
-
 msgid "Sphinx Book Theme"
 msgstr "Tema knjige Sphinx"
+
+msgid "Copyright"
+msgstr "Autorska prava"
 
 msgid "Fullscreen mode"
 msgstr "Način preko cijelog zaslona"
 
-msgid "Download this page"
-msgstr "Preuzmite ovu stranicu"
+msgid "Search the docs ..."
+msgstr "Pretražite dokumente ..."
 
 msgid "suggest edit"
 msgstr "predloži uređivanje"
+
+msgid "Search this book..."
+msgstr "Pretražite ovu knjigu ..."
+
+msgid "By"
+msgstr "Po"
+
+msgid "open issue"
+msgstr "otvoreno izdanje"
+
+msgid "Print to PDF"
+msgstr "Ispis u PDF"
+
+msgid "previous page"
+msgstr "Prethodna stranica"
+
+msgid "Toggle navigation"
+msgstr "Uključi / isključi navigaciju"
+
+msgid "By the"
+msgstr "Od strane"
