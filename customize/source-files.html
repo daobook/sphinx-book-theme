@@ -6,15 +6,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-<meta property="og:title" content="添加按钮以链接到你的来源" />
+<meta property="og:title" content="Add buttons to link to your source" />
   
 <meta property="og:type" content="website" />
   
 <meta property="og:url" content="customize/source-files.html" />
   
-<meta property="og:description" content="有一系列的按钮，你可以用它们来链接到你的源码库。这可以让用户浏览版本库，或采取建议编辑或打开问题等行动。在每一种情况下，它们都需要以下配置的存在： 添加一个链接到你的存储库: 要添加链接到你的版本库，添加以下配置。 添加一个按钮来打开议题: 要添加一个按钮来打开关于当前页面的议题，使用以下配置： 增加一个建议编辑的按钮: 你可以在每个页面添加一个按钮，允许用户直接编辑页面文本，并提交拉动请求..." />
+<meta property="og:description" content="There are a collection of buttons that you can use to link back to your source repository. This lets users browse the repository, or take actions like suggest an edit or open an issue. In each case..." />
   
-    <title>添加按钮以链接到你的来源 &#8212; Sphinx Book Theme</title>
+    <title>Add buttons to link to your source &#8212; Sphinx Book Theme</title>
     
     <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 <link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -32,7 +32,7 @@
   
     
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=3e71fa63ecd7719e64b6668c6ad94fdbd645785a" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=19ed3e12f1edacfd9eb04555e6775b62fec4e1e9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
@@ -52,7 +52,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=4a2ab92203046145cabe39b99b7fdcd3c3c45e62"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
     <script src="../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
@@ -65,8 +65,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/logo-square.svg"/>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="加入你自己的 CSS 规则" href="custom-css.html" />
-    <link rel="prev" title="添加一个下载页面的按钮" href="download.html" /> 
+    <link rel="next" title="Add your own CSS rules" href="custom-css.html" />
+    <link rel="prev" title="Add a download page button" href="download.html" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="zh_CN">
     
@@ -131,8 +131,9 @@ const thebe_selector_output = ".output, .cell_output"
       <div class="row">
           
 <!-- Sidebar -->
-<div class="pl-4 pr-3 bd-sidebar site-navigation noprint " id="site-navigation">
-    <div class="navbar-brand-box">
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -156,12 +157,12 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/get-started.html">
-   开始行动
+   Get started
   </a>
  </li>
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="index.html">
-   定制
+   Customization
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -171,42 +172,42 @@ const thebe_selector_output = ".output, .cell_output"
   <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="sidebar-primary.html">
-     定制主侧栏
+     Customize the primary sidebar
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="sidebar-secondary.html">
-     定制二级侧边栏
+     Customize the secondary sidebar
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="announcements.html">
-     公告横幅
+     Announcement banners
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="header.html">
-     Header 内容
+     Header content
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="download.html">
-     添加一个下载页面的按钮
+     Add a download page button
     </a>
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     添加按钮以链接到你的来源
+     Add buttons to link to your source
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="custom-css.html">
-     加入你自己的 CSS 规则
+     Add your own CSS rules
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="single-page.html">
-     使用该主题的单页版本
+     Use a single-page version of this theme
     </a>
    </li>
   </ul>
@@ -277,7 +278,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../reference/kitchen-sink/index.html">
-   厨房的水槽
+   Kitchen Sink
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
@@ -287,24 +288,24 @@ const thebe_selector_output = ".output, .cell_output"
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../reference/kitchen-sink/paragraph-markup.html">
-     示例
+     Paragraph Level Markup
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../reference/kitchen-sink/api.html">
-     API 文档
+     API documentation
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../reference/kitchen-sink/lists-and-tables.html">
-     列表和表格
+     Lists &amp; Tables
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../reference/special-theme-elements.html">
-   特定主题的元素
+   Theme-specific elements
   </a>
  </li>
  <li class="toctree-l1">
@@ -314,7 +315,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../reference/notebooks.html">
-   Jupyter 笔记本
+   Jupyter notebooks
   </a>
  </li>
  <li class="toctree-l1">
@@ -324,7 +325,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../reference/blog.html">
-   博客的参考
+   Reference for Blog
   </a>
  </li>
  <li class="toctree-l1">
@@ -332,15 +333,25 @@ const thebe_selector_output = ".output, .cell_output"
    NumPy docstrings
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../reference/comments.html">
+   Comments
+  </a>
+ </li>
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
-</div>
-
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
 </div>
 
 
@@ -523,17 +534,17 @@ title="Print to PDF"
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#add-a-link-to-your-repository">
-   添加一个链接到你的存储库
+   Add a link to your repository
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#add-a-button-to-open-issues">
-   添加一个按钮来打开议题
+   Add a button to open issues
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#add-a-button-to-suggest-edits">
-   增加一个建议编辑的按钮
+   Add a button to suggest edits
   </a>
  </li>
 </ul>
@@ -545,7 +556,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>添加按钮以链接到你的来源</h1>
+                <h1>Add buttons to link to your source</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -557,17 +568,17 @@ title="Print to PDF"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#add-a-link-to-your-repository">
-   添加一个链接到你的存储库
+   Add a link to your repository
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#add-a-button-to-open-issues">
-   添加一个按钮来打开议题
+   Add a button to open issues
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#add-a-button-to-suggest-edits">
-   增加一个建议编辑的按钮
+   Add a button to suggest edits
   </a>
  </li>
 </ul>
@@ -580,8 +591,11 @@ title="Print to PDF"
                 
               <div>
                  <section class="tex2jax_ignore mathjax_ignore" id="add-buttons-to-link-to-your-source">
-<span id="customize-source-files"></span><h1>添加按钮以链接到你的来源<a class="headerlink" href="#add-buttons-to-link-to-your-source" title="永久链接至标题">¶</a></h1>
-<p>有一系列的按钮，你可以用它们来链接到你的源码库。这可以让用户浏览版本库，或采取建议编辑或打开问题等行动。在每一种情况下，它们都需要以下配置的存在：</p>
+<span id="customize-source-files"></span><h1>Add buttons to link to your source<a class="headerlink" href="#add-buttons-to-link-to-your-source" title="永久链接至标题">¶</a></h1>
+<p>There are a collection of buttons that you can use to link back to your source
+repository. This lets users browse the repository, or take actions like suggest
+an edit or open an issue. In each case, they require the following configuration
+to exist:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
     <span class="o">...</span>
     <span class="s2">&quot;repository_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/{your-docs-url}&quot;</span><span class="p">,</span>
@@ -590,8 +604,8 @@ title="Print to PDF"
 </pre></div>
 </div>
 <section id="add-a-link-to-your-repository">
-<span id="source-files-repository"></span><h2>添加一个链接到你的存储库<a class="headerlink" href="#add-a-link-to-your-repository" title="永久链接至标题">¶</a></h2>
-<p>要添加链接到你的版本库，添加以下配置。</p>
+<span id="source-files-repository"></span><h2>Add a link to your repository<a class="headerlink" href="#add-a-link-to-your-repository" title="永久链接至标题">¶</a></h2>
+<p>To add a link to your repository, add the following configuration:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
     <span class="o">...</span>
     <span class="s2">&quot;repository_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/{your-docs-url}&quot;</span><span class="p">,</span>
@@ -602,8 +616,9 @@ title="Print to PDF"
 </div>
 </section>
 <section id="add-a-button-to-open-issues">
-<h2>添加一个按钮来打开议题<a class="headerlink" href="#add-a-button-to-open-issues" title="永久链接至标题">¶</a></h2>
-<p>要添加一个按钮来打开关于当前页面的议题，使用以下配置：</p>
+<h2>Add a button to open issues<a class="headerlink" href="#add-a-button-to-open-issues" title="永久链接至标题">¶</a></h2>
+<p>To add a button to open an issue about the current page, use the following
+configuration:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
     <span class="o">...</span>
     <span class="s2">&quot;repository_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/{your-docs-url}&quot;</span><span class="p">,</span>
@@ -614,8 +629,10 @@ title="Print to PDF"
 </div>
 </section>
 <section id="add-a-button-to-suggest-edits">
-<h2>增加一个建议编辑的按钮<a class="headerlink" href="#add-a-button-to-suggest-edits" title="永久链接至标题">¶</a></h2>
-<p>你可以在每个页面添加一个按钮，允许用户直接编辑页面文本，并提交拉动请求以更新文档。要包括这个按钮，请使用以下配置：</p>
+<h2>Add a button to suggest edits<a class="headerlink" href="#add-a-button-to-suggest-edits" title="永久链接至标题">¶</a></h2>
+<p>You can add a button to each page that will allow users to edit the page text
+directly and submit a pull request to update the documentation. To include this
+button, use the following configuration:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
     <span class="o">...</span>
     <span class="s2">&quot;repository_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/{your-docs-url}&quot;</span><span class="p">,</span>
@@ -624,7 +641,8 @@ title="Print to PDF"
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>默认情况下，编辑按钮将指向 <code class="docutils literal notranslate"><span class="pre">master</span></code> 分支，但如果你想改变这一点，请使用以下配置：</p>
+<p>By default, the edit button will point to the <code class="docutils literal notranslate"><span class="pre">master</span></code> branch, but if you’d like
+to change this, use the following configuration:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
     <span class="o">...</span>
     <span class="s2">&quot;repository_branch&quot;</span><span class="p">:</span> <span class="s2">&quot;{your-branch}&quot;</span><span class="p">,</span>
@@ -632,7 +650,8 @@ title="Print to PDF"
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>默认情况下，编辑按钮将指向版本库的根。如果你的文档被托管在一个子文件夹中，请使用以下配置：</p>
+<p>By default, the edit button will point to the root of the repository. If your
+documentation is hosted in a sub-folder, use the following configuration:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
     <span class="o">...</span>
     <span class="s2">&quot;path_to_docs&quot;</span><span class="p">:</span> <span class="s2">&quot;{path-relative-to-site-root}&quot;</span><span class="p">,</span>
@@ -677,13 +696,13 @@ title="Print to PDF"
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">上一页</p>
-            <p class="prev-next-title">添加一个下载页面的按钮</p>
+            <p class="prev-next-title">Add a download page button</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="custom-css.html" title="下一页 页">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">下一页</p>
-        <p class="prev-next-title">加入你自己的 CSS 规则</p>
+        <p class="prev-next-title">Add your own CSS rules</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
@@ -697,7 +716,7 @@ title="Print to PDF"
     By the Executable Book Project<br/>
   
       &copy; Copyright 2020.<br/>
-    Last updated on 2022 年 03 月 12 日.<br/>
+    Last updated on 2022 年 03 月 15 日.<br/>
 </p>
         </footer>
     </div>

@@ -23,7 +23,7 @@
   
     
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=3e71fa63ecd7719e64b6668c6ad94fdbd645785a" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=19ed3e12f1edacfd9eb04555e6775b62fec4e1e9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
@@ -44,7 +44,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/tabs.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=4a2ab92203046145cabe39b99b7fdcd3c3c45e62"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
     <script src="../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
@@ -121,8 +121,9 @@ const thebe_selector_output = ".output, .cell_output"
       <div class="row">
           
 <!-- Sidebar -->
-<div class="pl-4 pr-3 bd-sidebar site-navigation noprint " id="site-navigation">
-    <div class="navbar-brand-box">
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -146,12 +147,12 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/get-started.html">
-   开始行动
+   Get started
   </a>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../customize/index.html">
-   定制
+   Customization
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -161,42 +162,42 @@ const thebe_selector_output = ".output, .cell_output"
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../customize/sidebar-primary.html">
-     定制主侧栏
+     Customize the primary sidebar
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../customize/sidebar-secondary.html">
-     定制二级侧边栏
+     Customize the secondary sidebar
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../customize/announcements.html">
-     公告横幅
+     Announcement banners
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../customize/header.html">
-     Header 内容
+     Header content
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../customize/download.html">
-     添加一个下载页面的按钮
+     Add a download page button
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../customize/source-files.html">
-     添加按钮以链接到你的来源
+     Add buttons to link to your source
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../customize/custom-css.html">
-     加入你自己的 CSS 规则
+     Add your own CSS rules
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../customize/single-page.html">
-     使用该主题的单页版本
+     Use a single-page version of this theme
     </a>
    </li>
   </ul>
@@ -267,7 +268,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="kitchen-sink/index.html">
-   厨房的水槽
+   Kitchen Sink
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
@@ -277,24 +278,24 @@ const thebe_selector_output = ".output, .cell_output"
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="kitchen-sink/paragraph-markup.html">
-     示例
+     Paragraph Level Markup
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="kitchen-sink/api.html">
-     API 文档
+     API documentation
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="kitchen-sink/lists-and-tables.html">
-     列表和表格
+     Lists &amp; Tables
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="special-theme-elements.html">
-   特定主题的元素
+   Theme-specific elements
   </a>
  </li>
  <li class="toctree-l1">
@@ -304,7 +305,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="notebooks.html">
-   Jupyter 笔记本
+   Jupyter notebooks
   </a>
  </li>
  <li class="toctree-l1">
@@ -314,7 +315,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   博客的参考
+   Reference for Blog
   </a>
  </li>
  <li class="toctree-l1">
@@ -322,15 +323,25 @@ const thebe_selector_output = ".output, .cell_output"
    NumPy docstrings
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="comments.html">
+   Comments
+  </a>
+ </li>
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
-</div>
-
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
 </div>
 
 
@@ -438,7 +449,7 @@ title="Open an issue"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>博客的参考</h1>
+                <h1>Reference for Blog</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -459,7 +470,7 @@ title="Open an issue"
   <div class="section ablog-post">
     <h2 class="ablog-post-title">
       <a href="blog/post2.html"
-        >帖子2</a
+        >Post 2</a
       >
     </h2>
 
@@ -478,7 +489,7 @@ title="Open an issue"
      
     </ul>
     <div class="ablog-post-excerpt docutils container">
-<p>一些示例内容。</p>
+<p>Some sample content.</p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -508,7 +519,7 @@ title="Open an issue"
   <div class="section ablog-post">
     <h2 class="ablog-post-title">
       <a href="blog/post1.html"
-        >帖子1</a
+        >Post 1</a
       >
     </h2>
 
@@ -527,7 +538,7 @@ title="Open an issue"
      
     </ul>
     <div class="ablog-post-excerpt docutils container">
-<p>一些内容</p>
+<p>Some content</p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -572,7 +583,7 @@ title="Open an issue"
     By the Executable Book Project<br/>
   
       &copy; Copyright 2020.<br/>
-    Last updated on 2022 年 03 月 12 日.<br/>
+    Last updated on 2022 年 03 月 15 日.<br/>
 </p>
         </footer>
     </div>

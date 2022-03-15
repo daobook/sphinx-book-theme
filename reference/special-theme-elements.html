@@ -6,15 +6,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-<meta property="og:title" content="特定主题的元素" />
+<meta property="og:title" content="Theme-specific elements" />
   
 <meta property="og:type" content="website" />
   
 <meta property="og:url" content="reference/special-theme-elements.html" />
   
-<meta property="og:description" content="这个页面包含一些参考元素，看看它们在这个主题中的样子。这些信息并不意味着容易阅读或理解，只需浏览一下，看看东西的样子！ 全宽元素: 代码单元格: Markdown: 这是一些应该以全宽显示的标记。 这是Jupyter的标志： 数学:\begin{equation} \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15} \end{equa..." />
+<meta property="og:description" content="This page contains a number of reference elements to see how they look in this theme. The information is not meant to be easy to read or understand, just browse through and see how things look! Ful..." />
   
-    <title>特定主题的元素 &#8212; Sphinx Book Theme</title>
+    <title>Theme-specific elements &#8212; Sphinx Book Theme</title>
     
     <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 <link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -32,7 +32,7 @@
   
     
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=3e71fa63ecd7719e64b6668c6ad94fdbd645785a" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=19ed3e12f1edacfd9eb04555e6775b62fec4e1e9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
@@ -52,7 +52,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=4a2ab92203046145cabe39b99b7fdcd3c3c45e62"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
     <script src="../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
@@ -68,7 +68,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
     <link rel="next" title="Sphinx extension styles" href="extensions.html" />
-    <link rel="prev" title="列表和表格" href="kitchen-sink/lists-and-tables.html" /> 
+    <link rel="prev" title="Lists &amp; Tables" href="kitchen-sink/lists-and-tables.html" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="zh_CN">
     
@@ -133,8 +133,9 @@ const thebe_selector_output = ".output, .cell_output"
       <div class="row">
           
 <!-- Sidebar -->
-<div class="pl-4 pr-3 bd-sidebar site-navigation noprint " id="site-navigation">
-    <div class="navbar-brand-box">
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -158,12 +159,12 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/get-started.html">
-   开始行动
+   Get started
   </a>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../customize/index.html">
-   定制
+   Customization
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -173,42 +174,42 @@ const thebe_selector_output = ".output, .cell_output"
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../customize/sidebar-primary.html">
-     定制主侧栏
+     Customize the primary sidebar
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../customize/sidebar-secondary.html">
-     定制二级侧边栏
+     Customize the secondary sidebar
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../customize/announcements.html">
-     公告横幅
+     Announcement banners
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../customize/header.html">
-     Header 内容
+     Header content
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../customize/download.html">
-     添加一个下载页面的按钮
+     Add a download page button
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../customize/source-files.html">
-     添加按钮以链接到你的来源
+     Add buttons to link to your source
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../customize/custom-css.html">
-     加入你自己的 CSS 规则
+     Add your own CSS rules
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../customize/single-page.html">
-     使用该主题的单页版本
+     Use a single-page version of this theme
     </a>
    </li>
   </ul>
@@ -279,7 +280,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="kitchen-sink/index.html">
-   厨房的水槽
+   Kitchen Sink
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
@@ -289,24 +290,24 @@ const thebe_selector_output = ".output, .cell_output"
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="kitchen-sink/paragraph-markup.html">
-     示例
+     Paragraph Level Markup
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="kitchen-sink/api.html">
-     API 文档
+     API documentation
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="kitchen-sink/lists-and-tables.html">
-     列表和表格
+     Lists &amp; Tables
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   特定主题的元素
+   Theme-specific elements
   </a>
  </li>
  <li class="toctree-l1">
@@ -316,7 +317,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="notebooks.html">
-   Jupyter 笔记本
+   Jupyter notebooks
   </a>
  </li>
  <li class="toctree-l1">
@@ -326,7 +327,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="blog.html">
-   博客的参考
+   Reference for Blog
   </a>
  </li>
  <li class="toctree-l1">
@@ -334,15 +335,25 @@ const thebe_selector_output = ".output, .cell_output"
    NumPy docstrings
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="comments.html">
+   Comments
+  </a>
+ </li>
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
-</div>
-
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
 </div>
 
 
@@ -625,12 +636,12 @@ title="Print to PDF"
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#full-width-elements">
-   全宽元素
+   Full-width elements
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#code-cells">
-     代码单元格
+     Code cells
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -640,29 +651,29 @@ title="Print to PDF"
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#mathematics">
-     数学
+     Mathematics
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#margins">
-   页边距
+   Margins
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#margin-under-lower-level-shouldn-t-have-different-left-alignment">
-     下层的页边距不应该有不同的左对齐方式
+     Margin under lower level shouldn’t have different left-alignment
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#margins-with-toggle-buttons">
-     带切换按钮的页边距
+     Margins with toggle buttons
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#margins-with-full-width-content">
-     有全宽内容的页边距
+     Margins with full-width content
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -708,7 +719,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>特定主题的元素</h1>
+                <h1>Theme-specific elements</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -720,12 +731,12 @@ title="Print to PDF"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#full-width-elements">
-   全宽元素
+   Full-width elements
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#code-cells">
-     代码单元格
+     Code cells
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -735,29 +746,29 @@ title="Print to PDF"
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#mathematics">
-     数学
+     Mathematics
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#margins">
-   页边距
+   Margins
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#margin-under-lower-level-shouldn-t-have-different-left-alignment">
-     下层的页边距不应该有不同的左对齐方式
+     Margin under lower level shouldn’t have different left-alignment
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#margins-with-toggle-buttons">
-     带切换按钮的页边距
+     Margins with toggle buttons
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#margins-with-full-width-content">
-     有全宽内容的页边距
+     Margins with full-width content
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -804,12 +815,14 @@ title="Print to PDF"
                 
               <div>
                  <section class="tex2jax_ignore mathjax_ignore" id="theme-specific-elements">
-<h1>特定主题的元素<a class="headerlink" href="#theme-specific-elements" title="永久链接至标题">¶</a></h1>
-<p>这个页面包含一些参考元素，看看它们在这个主题中的样子。这些信息并不意味着容易阅读或理解，只需浏览一下，看看东西的样子！</p>
+<h1>Theme-specific elements<a class="headerlink" href="#theme-specific-elements" title="永久链接至标题">¶</a></h1>
+<p>This page contains a number of reference elements to see how they look in this
+theme. The information is not meant to be easy to read or understand, just browse
+through and see how things look!</p>
 <section id="full-width-elements">
-<h2>全宽元素<a class="headerlink" href="#full-width-elements" title="永久链接至标题">¶</a></h2>
+<h2>Full-width elements<a class="headerlink" href="#full-width-elements" title="永久链接至标题">¶</a></h2>
 <section id="code-cells">
-<h3>代码单元格<a class="headerlink" href="#code-cells" title="永久链接至标题">¶</a></h3>
+<h3>Code cells<a class="headerlink" href="#code-cells" title="永久链接至标题">¶</a></h3>
 <div class="cell tag_full_width docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## A full-width square figure</span>
@@ -819,7 +832,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7fef8035aee0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7f8a848adfa0&gt;
 </pre></div>
 </div>
 <img alt="../_images/special-theme-elements_2_1.png" src="../_images/special-theme-elements_2_1.png" />
@@ -834,7 +847,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7fef4f0eefd0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7f8a505c2250&gt;
 </pre></div>
 </div>
 <img alt="../_images/special-theme-elements_3_1.png" src="../_images/special-theme-elements_3_1.png" />
@@ -849,7 +862,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7fef4c03bdc0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7f8a4d5838e0&gt;
 </pre></div>
 </div>
 <img alt="../_images/special-theme-elements_4_1.png" src="../_images/special-theme-elements_4_1.png" />
@@ -858,14 +871,14 @@ title="Print to PDF"
 </section>
 <section id="markdown">
 <h3>Markdown<a class="headerlink" href="#markdown" title="永久链接至标题">¶</a></h3>
-<p>这是一些应该以全宽显示的标记。</p>
-<p>这是Jupyter的标志：</p>
+<p>This is some markdown that should be shown at full width.</p>
+<p>Here’s the Jupyter logo:</p>
 <p><img alt="" src="https://raw.githubusercontent.com/adebar/awesome-jupyter/master/logo.png" /></p>
 </section>
 <section id="mathematics">
-<h3>数学<a class="headerlink" href="#mathematics" title="永久链接至标题">¶</a></h3>
-<div class="amsmath math notranslate nohighlight" id="equation-e8fc0f68-1262-4e83-a09e-44ff17e91f78">
-<span class="eqno">(2)<a class="headerlink" href="#equation-e8fc0f68-1262-4e83-a09e-44ff17e91f78" title="公式的永久链接">¶</a></span>\[\begin{equation}
+<h3>Mathematics<a class="headerlink" href="#mathematics" title="永久链接至标题">¶</a></h3>
+<div class="amsmath math notranslate nohighlight" id="equation-28d5fff3-2d28-41d9-9d36-e033740bebac">
+<span class="eqno">(2)<a class="headerlink" href="#equation-28d5fff3-2d28-41d9-9d36-e033740bebac" title="公式的永久链接">¶</a></span>\[\begin{equation}
   \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
 \end{equation}\]</div>
 <div class="math notranslate nohighlight">
@@ -879,7 +892,7 @@ title="Print to PDF"
 <span class="eqno">(4)<a class="headerlink" href="#equation-my-label2" title="公式的永久链接">¶</a></span>\[\begin{split}w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1} \\
 w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1} \\
 w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}\end{split}\]</div>
-<p>链接到上面：<a class="reference internal" href="#equation-my-label2">(4)</a>。</p>
+<p>Link to above: <a class="reference internal" href="#equation-my-label2">(4)</a></p>
 <ul>
 <li><div class="math notranslate nohighlight">
 \[
@@ -891,7 +904,7 @@ w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}\end{split}\]</div>
     [g(n) \leq c \cdot f(n)]\}\]</div>
 </li>
 </ul>
-<p>一个非常长的数学方程</p>
+<p>A really long math equation</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align}
@@ -901,7 +914,7 @@ w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}\end{split}\]</div>
 &amp;= 0 + \sum_{c \neq c'}  y^{(c)} w_{\theta} \left( x - x^{(c)} \right)
 \end{align}
 \end{split}\]</div>
-<p>全宽公式起作用</p>
+<p>Full width equations work</p>
 <div class="full-width math notranslate nohighlight">
 \[\begin{split}\begin{align}
 \mathrm{SetConv} \left( \{(x^{c},y^{c})\}_{c=1}^{C} \right)(x) \left( \{(x^{c},y^{c})\}_{c=1}^{C} \right)(x) \left( \{(x^{c},y^{c})\}_{c=1}^{C} \right)(x)
@@ -912,15 +925,15 @@ w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}\end{split}\]</div>
 </section>
 </section>
 <section id="margins">
-<h2>页边距<a class="headerlink" href="#margins" title="永久链接至标题">¶</a></h2>
-<p>页边距内容可以包括各种各样的东西，如代码块：</p>
+<h2>Margins<a class="headerlink" href="#margins" title="永久链接至标题">¶</a></h2>
+<p>Margin content can include all kinds of things, such as code blocks:</p>
 <aside class="margin sidebar">
 <p class="sidebar-title">Code blocks in margins</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;here is some python&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </aside>
-<p>以及告诫和图像：</p>
+<p>as well as admonitions and images:</p>
 <aside class="margin sidebar">
 <p class="sidebar-title"><strong>Notes in margins</strong></p>
 <div class="admonition note">
@@ -930,7 +943,7 @@ w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}\end{split}\]</div>
 </div>
 </aside>
 <section id="margin-under-lower-level-shouldn-t-have-different-left-alignment">
-<h3>下层的页边距不应该有不同的左对齐方式<a class="headerlink" href="#margin-under-lower-level-shouldn-t-have-different-left-alignment" title="永久链接至标题">¶</a></h3>
+<h3>Margin under lower level shouldn’t have different left-alignment<a class="headerlink" href="#margin-under-lower-level-shouldn-t-have-different-left-alignment" title="永久链接至标题">¶</a></h3>
 <aside class="margin sidebar">
 <p class="sidebar-title"><strong>Notes in margins</strong></p>
 <div class="admonition note">
@@ -941,25 +954,25 @@ w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}\end{split}\]</div>
 </aside>
 </section>
 <section id="margins-with-toggle-buttons">
-<h3>带切换按钮的页边距<a class="headerlink" href="#margins-with-toggle-buttons" title="永久链接至标题">¶</a></h3>
-<p>这里有一些页边距内容，让我们看看它与切换按钮的交互情况</p>
+<h3>Margins with toggle buttons<a class="headerlink" href="#margins-with-toggle-buttons" title="永久链接至标题">¶</a></h3>
+<p>Here’s some margin content, let’s see how it interacts w/ the toggle button</p>
 <aside class="margin sidebar">
 <p class="sidebar-title">My margin</p>
 <p>Here’s my margin content</p>
 </aside>
-<p>这里有一个可切换的注解。</p>
+<p>Here’s a toggleable note:</p>
 <div class="toggle admonition note">
 <p class="admonition-title">备注</p>
-<p>我的注解</p>
+<p>My note</p>
 </div>
 </section>
 <section id="margins-with-full-width-content">
-<h3>有全宽内容的页边距<a class="headerlink" href="#margins-with-full-width-content" title="永久链接至标题">¶</a></h3>
+<h3>Margins with full-width content<a class="headerlink" href="#margins-with-full-width-content" title="永久链接至标题">¶</a></h3>
 <div class="tag-fullwidth admonition note">
 <p class="admonition-title">备注</p>
-<p>这是文档测试</p>
+<p>This is my test</p>
 </div>
-<p>看看发生了什么</p>
+<p>Let’s see what happens</p>
 <div class="cell tag_popout docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## code cell in the margin with output</span>
@@ -969,35 +982,43 @@ w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}\end{split}\]</div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7fef47fecb50&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7f8a4d50f3d0&gt;
 </pre></div>
 </div>
 <img alt="../_images/special-theme-elements_10_1.png" src="../_images/special-theme-elements_10_1.png" />
 </div>
 </div>
-<p>在页边距处有代码的 Markdown 单元格</p>
+<p>Markdown cell with code in margin</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="k">def</span> <span class="nf">aplusb</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
 </pre></div>
 </div>
-<p>而现在 r</p>
+<p>and now r</p>
 <div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">&lt;-</span> <span class="m">2</span>
 <span class="n">b</span> <span class="o">&lt;-</span> <span class="m">4</span>
 <span class="n">a</span><span class="o">+</span><span class="n">b</span>
 </pre></div>
 </div>
-<p>看起来如何？</p>
-<p>侧边栏中带有图像的 Markdown 单元</p>
+<p>how does it look?</p>
+<p>Markdown cell with images in sidebar</p>
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/883px-Jupyter_logo.svg.png" style="max-width:200px" /></section>
 <section id="more-content-after-the-margin-content">
 <h3>More content after the margin content<a class="headerlink" href="#more-content-after-the-margin-content" title="永久链接至标题">¶</a></h3>
-<p>这是弹出后的额外内容，看看单元格是否重叠之类的。 也是为了确保你仍然可以与弹出的内容互动。这是在弹出内容之后的额外内容，以查看单元格是否重叠等等。也是为了确保你仍然可以与弹出的内容进行互动。</p>
+<p>This is extra content after the popouts to see if cells overlap and such.
+Also to make sure you can still interact with the popout content.
+This is extra content after the popouts to see if cells overlap and such.
+Also to make sure you can still interact with the popout content.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
 </pre></div>
 </div>
-<p>这是弹出后的额外内容，看看单元格是否重叠之类的。 也是为了确保你仍然可以与弹出的内容互动。这是在弹出内容之后的额外内容，以查看单元格是否重叠等等。也是为了确保你仍然可以与弹出的内容进行互动。这是弹出内容后的额外内容，以查看单元格是否重叠等。也是为了确保你仍然可以与弹出的内容进行互动。</p>
+<p>This is extra content after the popouts to see if cells overlap and such.
+Also to make sure you can still interact with the popout content.
+This is extra content after the popouts to see if cells overlap and such.
+Also to make sure you can still interact with the popout content.
+This is extra content after the popouts to see if cells overlap and such.
+Also to make sure you can still interact with the popout content.</p>
 </section>
 <section id="figures-with-margin-captions">
 <h3>Figures with margin captions<a class="headerlink" href="#figures-with-margin-captions" title="永久链接至标题">¶</a></h3>
@@ -1109,7 +1130,7 @@ w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}\end{split}\]</div>
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">上一页</p>
-            <p class="prev-next-title">列表和表格</p>
+            <p class="prev-next-title">Lists &amp; Tables</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="extensions.html" title="下一页 页">
@@ -1129,7 +1150,7 @@ w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}\end{split}\]</div>
     By the Executable Book Project<br/>
   
       &copy; Copyright 2020.<br/>
-    Last updated on 2022 年 03 月 12 日.<br/>
+    Last updated on 2022 年 03 月 15 日.<br/>
 </p>
         </footer>
     </div>

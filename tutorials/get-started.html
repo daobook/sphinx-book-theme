@@ -6,15 +6,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-<meta property="og:title" content="开始行动" />
+<meta property="og:title" content="Get started" />
   
 <meta property="og:type" content="website" />
   
 <meta property="og:url" content="tutorials/get-started.html" />
   
-<meta property="og:description" content="这是一个开始使用 Sphinx 图书主题的循序渐进的简短教程。 先决条件: 你应该比较熟悉 Sphinx 生态系统 ，并在你的电脑上本地安装了它。 安装并激活主题: 首先用 pip 安装 sphinx-book-theme 。 然后，在你的 Sphinx 配置（ conf.py ）中激活该主题。 这将为你的文档激活 Sphinx 图书主题。 在你的主题中添加一个源码库按钮: 有几种方法可以定..." />
+<meta property="og:description" content="This is a short step-by-step tutorial to get started with the Sphinx Book Theme. Prerequisites: You should be relatively familiar with the Sphinx ecosystem, and have it installed locally on your co..." />
   
-    <title>开始行动 &#8212; Sphinx Book Theme</title>
+    <title>Get started &#8212; Sphinx Book Theme</title>
     
     <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 <link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -32,7 +32,7 @@
   
     
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=3e71fa63ecd7719e64b6668c6ad94fdbd645785a" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=19ed3e12f1edacfd9eb04555e6775b62fec4e1e9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
@@ -52,7 +52,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=4a2ab92203046145cabe39b99b7fdcd3c3c45e62"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
     <script src="../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
@@ -65,7 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/logo-square.svg"/>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="定制" href="../customize/index.html" />
+    <link rel="next" title="Customization" href="../customize/index.html" />
     <link rel="prev" title="专题区域" href="../index.html" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="zh_CN">
@@ -131,8 +131,9 @@ const thebe_selector_output = ".output, .cell_output"
       <div class="row">
           
 <!-- Sidebar -->
-<div class="pl-4 pr-3 bd-sidebar site-navigation noprint " id="site-navigation">
-    <div class="navbar-brand-box">
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -156,12 +157,12 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   开始行动
+   Get started
   </a>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../customize/index.html">
-   定制
+   Customization
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -171,42 +172,42 @@ const thebe_selector_output = ".output, .cell_output"
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../customize/sidebar-primary.html">
-     定制主侧栏
+     Customize the primary sidebar
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../customize/sidebar-secondary.html">
-     定制二级侧边栏
+     Customize the secondary sidebar
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../customize/announcements.html">
-     公告横幅
+     Announcement banners
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../customize/header.html">
-     Header 内容
+     Header content
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../customize/download.html">
-     添加一个下载页面的按钮
+     Add a download page button
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../customize/source-files.html">
-     添加按钮以链接到你的来源
+     Add buttons to link to your source
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../customize/custom-css.html">
-     加入你自己的 CSS 规则
+     Add your own CSS rules
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../customize/single-page.html">
-     使用该主题的单页版本
+     Use a single-page version of this theme
     </a>
    </li>
   </ul>
@@ -277,7 +278,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../reference/kitchen-sink/index.html">
-   厨房的水槽
+   Kitchen Sink
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
@@ -287,24 +288,24 @@ const thebe_selector_output = ".output, .cell_output"
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../reference/kitchen-sink/paragraph-markup.html">
-     示例
+     Paragraph Level Markup
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../reference/kitchen-sink/api.html">
-     API 文档
+     API documentation
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../reference/kitchen-sink/lists-and-tables.html">
-     列表和表格
+     Lists &amp; Tables
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../reference/special-theme-elements.html">
-   特定主题的元素
+   Theme-specific elements
   </a>
  </li>
  <li class="toctree-l1">
@@ -314,7 +315,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../reference/notebooks.html">
-   Jupyter 笔记本
+   Jupyter notebooks
   </a>
  </li>
  <li class="toctree-l1">
@@ -324,7 +325,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../reference/blog.html">
-   博客的参考
+   Reference for Blog
   </a>
  </li>
  <li class="toctree-l1">
@@ -332,15 +333,25 @@ const thebe_selector_output = ".output, .cell_output"
    NumPy docstrings
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../reference/comments.html">
+   Comments
+  </a>
+ </li>
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
-</div>
-
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
 </div>
 
 
@@ -523,27 +534,27 @@ title="Print to PDF"
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#prerequisites">
-   先决条件
+   Prerequisites
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#install-and-activate-the-theme">
-   安装并激活主题
+   Install and activate the theme
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#add-a-source-repository-button-to-your-theme">
-   在你的主题中添加一个源码库按钮
+   Add a source repository button to your theme
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#customize-your-left-sidebar">
-   定制你的左侧边栏
+   Customize your left sidebar
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#add-some-margin-content-to-a-page">
-   在页面上添加一些外边距内容
+   Add some margin content to a page
   </a>
  </li>
 </ul>
@@ -555,7 +566,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>开始行动</h1>
+                <h1>Get started</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -567,27 +578,27 @@ title="Print to PDF"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#prerequisites">
-   先决条件
+   Prerequisites
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#install-and-activate-the-theme">
-   安装并激活主题
+   Install and activate the theme
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#add-a-source-repository-button-to-your-theme">
-   在你的主题中添加一个源码库按钮
+   Add a source repository button to your theme
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#customize-your-left-sidebar">
-   定制你的左侧边栏
+   Customize your left sidebar
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#add-some-margin-content-to-a-page">
-   在页面上添加一些外边距内容
+   Add some margin content to a page
   </a>
  </li>
 </ul>
@@ -600,45 +611,49 @@ title="Print to PDF"
                 
               <div>
                  <section class="tex2jax_ignore mathjax_ignore" id="get-started">
-<h1>开始行动<a class="headerlink" href="#get-started" title="永久链接至标题">¶</a></h1>
-<p>这是一个开始使用 Sphinx 图书主题的循序渐进的简短教程。</p>
+<h1>Get started<a class="headerlink" href="#get-started" title="永久链接至标题">¶</a></h1>
+<p>This is a short step-by-step tutorial to get started with the Sphinx Book Theme.</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>此文档和下面的例子是用 MyST Markdown 写的，这是一种可以和 Sphinx 一起使用的 Markdown 形式。关于 MyST markdown 以及在 Sphinx 网站如何使用 MyST Markdown 的更多信息，请看 <a class="reference external" href="https://myst-parser.readthedocs.io/">MyST-parser 文档</a>。</p>
+<p>This documentation and the examples below are written with MyST Markdown, a form
+of markdown that works with Sphinx. For more information about MyST markdown, and
+to use MyST markdown with your Sphinx website,
+see <a class="reference external" href="https://myst-parser.readthedocs.io/">the MyST-parser documentation</a></p>
 </div>
 <section id="prerequisites">
-<h2>先决条件<a class="headerlink" href="#prerequisites" title="永久链接至标题">¶</a></h2>
-<p>你应该比较熟悉 <a class="reference external" href="http://www.sphinx-doc.org/">Sphinx 生态系统</a>，并在你的电脑上本地安装了它。</p>
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="永久链接至标题">¶</a></h2>
+<p>You should be relatively familiar with <a class="reference external" href="http://www.sphinx-doc.org/">the Sphinx ecosystem</a>, and have it installed locally on your computer.</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>如果你还没有一个可供定制的 Sphinx 网站，可以用以下方法创建一个：</p>
+<p>If you don’t already have a Sphinx site ready to customize, you can create one with:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sphinx-quickstart
 </pre></div>
 </div>
 </div>
 </section>
 <section id="install-and-activate-the-theme">
-<h2>安装并激活主题<a class="headerlink" href="#install-and-activate-the-theme" title="永久链接至标题">¶</a></h2>
-<p>首先用 <code class="docutils literal notranslate"><span class="pre">pip</span></code> 安装 <code class="docutils literal notranslate"><span class="pre">sphinx-book-theme</span></code>。</p>
+<h2>Install and activate the theme<a class="headerlink" href="#install-and-activate-the-theme" title="永久链接至标题">¶</a></h2>
+<p>First install <code class="docutils literal notranslate"><span class="pre">sphinx-book-theme</span></code> with <code class="docutils literal notranslate"><span class="pre">pip</span></code>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx</span><span class="o">-</span><span class="n">book</span><span class="o">-</span><span class="n">theme</span>
 </pre></div>
 </div>
-<p>然后，在你的 Sphinx 配置（<code class="docutils literal notranslate"><span class="pre">conf.py</span></code>）中激活该主题。</p>
+<p>then, activate the theme in your Sphinx configuration (<code class="docutils literal notranslate"><span class="pre">conf.py</span></code>):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">...</span>
 <span class="n">html_theme</span> <span class="o">=</span> <span class="s2">&quot;sphinx_book_theme&quot;</span>
 <span class="o">...</span>
 </pre></div>
 </div>
-<p>这将为你的文档激活 Sphinx 图书主题。</p>
+<p>This will activate the Sphinx Book Theme for your documentation.</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>你可能需要注释关于 <code class="docutils literal notranslate"><span class="pre">html_theme_options</span></code> 的配置，这取决于你以前的主题。</p>
+<p>You may need to comment-out your <code class="docutils literal notranslate"><span class="pre">html_theme_options</span></code> configuration depending on your previous theme.</p>
 </div>
 </section>
 <section id="add-a-source-repository-button-to-your-theme">
-<h2>在你的主题中添加一个源码库按钮<a class="headerlink" href="#add-a-source-repository-button-to-your-theme" title="永久链接至标题">¶</a></h2>
-<p>有几种方法可以定制 Sphinx 图书主题。在本教程中，将为我们的主题添加一个指向 GitHub 仓库的指针。</p>
-<p>要添加一个链接到文档库的按钮，请在 <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> 中添加以下配置。</p>
+<h2>Add a source repository button to your theme<a class="headerlink" href="#add-a-source-repository-button-to-your-theme" title="永久链接至标题">¶</a></h2>
+<p>There are several ways that you can customize the Sphinx Book Theme.
+For this tutorial, we’ll add a pointer to a GitHub repository for our theme.</p>
+<p>To add a button that links to the repository for your documentation, add the following configuration in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
     <span class="o">...</span>
     <span class="s2">&quot;repository_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/{your-docs-url}&quot;</span><span class="p">,</span>
@@ -650,33 +665,41 @@ title="Print to PDF"
 <p>When you build your documentation, your header should now include a small GitHub logo that has a link to the repository.</p>
 <div class="admonition seealso">
 <p class="admonition-title">参见</p>
-<p>更多信息见 <a class="reference internal" href="../customize/source-files.html#source-files-repository"><span class="std std-ref">添加一个链接到你的存储库</span></a>。</p>
+<p>See <a class="reference internal" href="../customize/source-files.html#source-files-repository"><span class="std std-ref">Add a link to your repository</span></a> for more information.</p>
 </div>
 </section>
 <section id="customize-your-left-sidebar">
-<h2>定制你的左侧边栏<a class="headerlink" href="#customize-your-left-sidebar" title="永久链接至标题">¶</a></h2>
-<p>在页面上有几个主要的区域，你可以用图书主题进行定制。最常见的是 <strong>主侧边栏</strong>（默认情况下，在页面的左边）。</p>
-<p>侧边栏元素被 Sphinx、Sphinx 插件以及当前主题定义为 HTML 模板。你可以使用 <code class="docutils literal notranslate"><span class="pre">html_sidebars</span></code> 配置指定哪些页面应该包含哪些侧边栏元素。本教程中我们将跳过这一步，但如果你想了解更多，请看 <a class="reference internal" href="../customize/sidebar-primary.html#sidebar-primary-items"><span class="std std-ref">控制左边的侧栏项目</span></a>。</p>
-<p>让我们 <strong>定制网站的标志</strong>。为此，我们将编辑 <code class="docutils literal notranslate"><span class="pre">html_logo</span></code> 和 <code class="docutils literal notranslate"><span class="pre">html_title</span></code> 配置选项。</p>
-<p>要添加网站标识，请遵循以下步骤：</p>
+<h2>Customize your left sidebar<a class="headerlink" href="#customize-your-left-sidebar" title="永久链接至标题">¶</a></h2>
+<p>There are a few major areas of the page that you can customize with the book theme.
+The most common is the <strong>primary sidebar</strong> (by default, on the left of the page).</p>
+<p>Sidebar elements are defined as HTML templates by Sphinx, Sphinx extensions, and the current theme.
+You may specify which pages should contain which sidebar elements using the <code class="docutils literal notranslate"><span class="pre">html_sidebars</span></code> configuration.
+We’ll skip this step in this tutorial, but if you’d like to learn more, see <a class="reference internal" href="../customize/sidebar-primary.html#sidebar-primary-items"><span class="std std-ref">Control the left sidebar items</span></a>.</p>
+<p>Let’s <strong>customize the logo of our site</strong>.
+To do so, we’ll edit the <code class="docutils literal notranslate"><span class="pre">html_logo</span></code> and <code class="docutils literal notranslate"><span class="pre">html_title</span></code> configuration options.</p>
+<p>To add a site logo, follow these steps:</p>
 <ol>
-<li><p>在你的文档的根部放一张图片（例如，<code class="docutils literal notranslate"><span class="pre">myimage.png</span></code>）。</p></li>
-<li><p>在你的 <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> 文件中添加一行，看起来像这样。</p>
+<li><p>Put an image in your documentation’s root (e.g., <code class="docutils literal notranslate"><span class="pre">myimage.png</span></code>).</p></li>
+<li><p>Add a line to your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file that looks like this:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_logo</span> <span class="o">=</span> <span class="s2">&quot;path/to/myimage.png&quot;</span>
 </pre></div>
 </div>
-<p>其中路径是相对于你的 <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> 文件而言的。</p>
+<p>Where the path is relative to your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file.</p>
 </li>
 </ol>
-<p>接下来我们将 <strong>自定义网站的标题</strong>。要做到这一点，在你的 <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> 文件中添加一行，看起来像这样：</p>
+<p>Next we’ll <strong>customize the title of the site</strong>.
+To do so, add a line to your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file that looks like this:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_title</span> <span class="o">=</span> <span class="s2">&quot;My site title&quot;</span>
 </pre></div>
 </div>
-<p>这个标题现在将被放在标志的下面。</p>
+<p>This title will now be placed underneath the logo.</p>
 </section>
 <section id="add-some-margin-content-to-a-page">
-<h2>在页面上添加一些外边距内容<a class="headerlink" href="#add-some-margin-content-to-a-page" title="永久链接至标题">¶</a></h2>
-<p>这个主题支持几种特殊的内容，主要是受 <a class="reference external" href="https://edwardtufte.github.io/tufte-css/">Tufte CSS 主题样式</a> 的启发。一种内容是 <strong>外边距内容</strong>。这允许你把内容 “弹出” 到页面的页边距。通过添加以下指令（用 <a class="reference external" href="https://myst-parser.readthedocs.io">MyST Markdown</a> 编写）在页面上添加一些外边距内容。</p>
+<h2>Add some margin content to a page<a class="headerlink" href="#add-some-margin-content-to-a-page" title="永久链接至标题">¶</a></h2>
+<p>There are a few special kinds of content that this theme supports, largely inspired by <a class="reference external" href="https://edwardtufte.github.io/tufte-css/">the Tufte CSS theme styles</a>.
+One kind of content is <strong>margin content</strong>.
+This allows you to “pop out” content to the side of the page, in the margins.
+Add some margin content to a page by adding the following directive (written with <a class="reference external" href="https://myst-parser.readthedocs.io">MyST Markdown</a>).</p>
 <aside class="margin sidebar">
 <p class="sidebar-title">Look, some margin content!</p>
 <p>On wider screens, this content will pop out to the side!</p>
@@ -686,8 +709,10 @@ On wider screens, this content will pop out to the side!
 ```
 </pre></div>
 </div>
-<p>在宽屏上，外边距内容将弹出到页面的一侧，并允许它下面的内容向上移动。这允许你在不中断信息流的情况下提供额外的信息”</p>
-<p>你可以用 Sphinx 图书主题做很多其他事情。现在你已经有了一个开始，请查看左边的其他部分，了解关于如何使用它的更多信息。</p>
+<p>On wide screens, margin content will pop out to the side of the page and allow content underneath it to move upwards.
+This allows you to provide extra information without interrupting the flow of information.</p>
+<p>There are many other things that you can do with the Sphinx Book Theme.
+Now that you’ve gotten a start, check out the other sections to the left to learn more about how to use it.</p>
 </section>
 </section>
 
@@ -731,7 +756,7 @@ On wider screens, this content will pop out to the side!
     <a class='right-next' id="next-link" href="../customize/index.html" title="下一页 页">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">下一页</p>
-        <p class="prev-next-title">定制</p>
+        <p class="prev-next-title">Customization</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
@@ -745,7 +770,7 @@ On wider screens, this content will pop out to the side!
     By the Executable Book Project<br/>
   
       &copy; Copyright 2020.<br/>
-    Last updated on 2022 年 03 月 12 日.<br/>
+    Last updated on 2022 年 03 月 15 日.<br/>
 </p>
         </footer>
     </div>

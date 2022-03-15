@@ -32,7 +32,7 @@
   
     
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=3e71fa63ecd7719e64b6668c6ad94fdbd645785a" type="text/css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=19ed3e12f1edacfd9eb04555e6775b62fec4e1e9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
@@ -52,7 +52,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=4a2ab92203046145cabe39b99b7fdcd3c3c45e62"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
     <script src="_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/design-tabs.js"></script>
@@ -65,7 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="_static/logo-square.svg"/>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
-    <link rel="next" title="开始行动" href="tutorials/get-started.html" /> 
+    <link rel="next" title="Get started" href="tutorials/get-started.html" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="zh_CN">
     
@@ -130,8 +130,9 @@ const thebe_selector_output = ".output, .cell_output"
       <div class="row">
           
 <!-- Sidebar -->
-<div class="pl-4 pr-3 bd-sidebar site-navigation noprint " id="site-navigation">
-    <div class="navbar-brand-box">
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="#">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -155,12 +156,12 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="tutorials/get-started.html">
-   开始行动
+   Get started
   </a>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="customize/index.html">
-   定制
+   Customization
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -170,42 +171,42 @@ const thebe_selector_output = ".output, .cell_output"
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="customize/sidebar-primary.html">
-     定制主侧栏
+     Customize the primary sidebar
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="customize/sidebar-secondary.html">
-     定制二级侧边栏
+     Customize the secondary sidebar
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="customize/announcements.html">
-     公告横幅
+     Announcement banners
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="customize/header.html">
-     Header 内容
+     Header content
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="customize/download.html">
-     添加一个下载页面的按钮
+     Add a download page button
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="customize/source-files.html">
-     添加按钮以链接到你的来源
+     Add buttons to link to your source
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="customize/custom-css.html">
-     加入你自己的 CSS 规则
+     Add your own CSS rules
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="customize/single-page.html">
-     使用该主题的单页版本
+     Use a single-page version of this theme
     </a>
    </li>
   </ul>
@@ -276,7 +277,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="reference/kitchen-sink/index.html">
-   厨房的水槽
+   Kitchen Sink
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
@@ -286,24 +287,24 @@ const thebe_selector_output = ".output, .cell_output"
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="reference/kitchen-sink/paragraph-markup.html">
-     示例
+     Paragraph Level Markup
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="reference/kitchen-sink/api.html">
-     API 文档
+     API documentation
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="reference/kitchen-sink/lists-and-tables.html">
-     列表和表格
+     Lists &amp; Tables
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="reference/special-theme-elements.html">
-   特定主题的元素
+   Theme-specific elements
   </a>
  </li>
  <li class="toctree-l1">
@@ -313,7 +314,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="reference/notebooks.html">
-   Jupyter 笔记本
+   Jupyter notebooks
   </a>
  </li>
  <li class="toctree-l1">
@@ -323,7 +324,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="reference/blog.html">
-   博客的参考
+   Reference for Blog
   </a>
  </li>
  <li class="toctree-l1">
@@ -331,15 +332,25 @@ const thebe_selector_output = ".output, .cell_output"
    NumPy docstrings
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="reference/comments.html">
+   Comments
+  </a>
+ </li>
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
-</div>
-
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
 </div>
 
 
@@ -610,8 +621,8 @@ title="Print to PDF"
 <div class="toctree-wrapper compound">
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">专题区域</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/get-started.html">开始行动</a></li>
-<li class="toctree-l1"><a class="reference internal" href="customize/index.html">定制</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/get-started.html">Get started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="customize/index.html">Customization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="content-blocks.html">特殊内容块</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Jupyter 笔记本</a></li>
 <li class="toctree-l1"><a class="reference internal" href="launch.html">用于交互的启动按钮</a></li>
@@ -625,15 +636,15 @@ title="Print to PDF"
 <div class="toctree-wrapper compound">
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">参考</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="reference/kitchen-sink/index.html">厨房的水槽</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="reference/kitchen-sink/paragraph-markup.html">示例</a></li>
-<li class="toctree-l2"><a class="reference internal" href="reference/kitchen-sink/api.html">API 文档</a></li>
-<li class="toctree-l2"><a class="reference internal" href="reference/kitchen-sink/lists-and-tables.html">列表和表格</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/kitchen-sink/index.html">Kitchen Sink</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/kitchen-sink/paragraph-markup.html">Paragraph Level Markup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/kitchen-sink/api.html">API documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/kitchen-sink/lists-and-tables.html">Lists &amp; Tables</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="reference/special-theme-elements.html">特定主题的元素</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="reference/special-theme-elements.html#full-width-elements">全宽元素</a></li>
-<li class="toctree-l2"><a class="reference internal" href="reference/special-theme-elements.html#margins">页边距</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/special-theme-elements.html">Theme-specific elements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/special-theme-elements.html#full-width-elements">Full-width elements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/special-theme-elements.html#margins">Margins</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reference/special-theme-elements.html#nested-admonitions">Nested admonitions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reference/special-theme-elements.html#myst-markdown-elements">MyST Markdown elements</a></li>
 </ul>
@@ -646,21 +657,26 @@ title="Print to PDF"
 <li class="toctree-l2"><a class="reference internal" href="reference/extensions.html#sphinxcontrib-youtube-for-videos"><code class="docutils literal notranslate"><span class="pre">sphinxcontrib.youtube</span></code> for videos</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="reference/notebooks.html">Jupyter 笔记本</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="reference/notebooks.html#hiding-elements">隐藏的元素</a></li>
-<li class="toctree-l2"><a class="reference internal" href="reference/notebooks.html#enriched-outputs">富文本输出</a></li>
-<li class="toctree-l2"><a class="reference internal" href="reference/notebooks.html#interactive-outputs">交互式输出</a></li>
-<li class="toctree-l2"><a class="reference internal" href="reference/notebooks.html#stdout">标准输出</a></li>
-<li class="toctree-l2"><a class="reference internal" href="reference/notebooks.html#formatting-code-cells">格式化代码单元格</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/notebooks.html">Jupyter notebooks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/notebooks.html#hiding-elements">Hiding elements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/notebooks.html#enriched-outputs">Enriched outputs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/notebooks.html#interactive-outputs">Interactive outputs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/notebooks.html#stdout">Stdout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/notebooks.html#formatting-code-cells">Formatting code cells</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="reference/thebe.html">Thebe</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="reference/thebe.html#code-style">Code style</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="reference/blog.html">博客的参考</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/blog.html">Reference for Blog</a></li>
 <li class="toctree-l1"><a class="reference internal" href="reference/api-numpy.html">NumPy docstrings</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="reference/api-numpy.html#numpy">NumPy</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference/comments.html">Comments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/comments.html#hypothes-is">Hypothes.is</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/comments.html#utterances">Utterances</a></li>
 </ul>
 </li>
 </ul>
@@ -711,7 +727,7 @@ title="Print to PDF"
     <a class='right-next' id="next-link" href="tutorials/get-started.html" title="下一页 页">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">下一页</p>
-        <p class="prev-next-title">开始行动</p>
+        <p class="prev-next-title">Get started</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
@@ -725,7 +741,7 @@ title="Print to PDF"
     By the Executable Book Project<br/>
   
       &copy; Copyright 2020.<br/>
-    Last updated on 2022 年 03 月 12 日.<br/>
+    Last updated on 2022 年 03 月 15 日.<br/>
 </p>
         </footer>
     </div>
