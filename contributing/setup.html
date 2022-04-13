@@ -16,23 +16,20 @@
   
     <title>Set up your development workflow &#8212; Sphinx Book Theme</title>
     
-    <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 <link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-  
+
     
-    <link rel="stylesheet"
-      href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-      href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-      href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-  
-    
-      
-  
-    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=19ed3e12f1edacfd9eb04555e6775b62fec4e1e9" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
@@ -40,8 +37,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/tabs.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.59c74d8c95b765a7fd995ac71d459ebe.min.css" />
     
-    <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
-  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
@@ -106,7 +104,7 @@ const thebe_selector_output = ".output, .cell_output"
 </style>
 
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
 <!-- Checkboxes to toggle the left sidebar -->
 <input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
 <label class="overlay overlay-navbar" for="__navigation">
@@ -336,6 +334,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="../reference/comments.html">
    Comments
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../changelog.html">
+   Changelog
   </a>
  </li>
 </ul>
@@ -611,11 +614,11 @@ title="Print to PDF"
                 
               <div>
                  <section class="tex2jax_ignore mathjax_ignore" id="set-up-your-development-workflow">
-<h1>Set up your development workflow<a class="headerlink" href="#set-up-your-development-workflow" title="永久链接至标题">¶</a></h1>
+<h1>Set up your development workflow<a class="headerlink" href="#set-up-your-development-workflow" title="永久链接至标题">#</a></h1>
 <p>The following instructions will help you set up a basic development environment so that you can begin experimenting with changes.
 This covers the basics, and see the other sections of the Contributing Guide for more details.</p>
 <section id="set-up-your-development-environment">
-<h2>设置开发环境<a class="headerlink" href="#set-up-your-development-environment" title="永久链接至标题">¶</a></h2>
+<h2>设置开发环境<a class="headerlink" href="#set-up-your-development-environment" title="永久链接至标题">#</a></h2>
 <p>First we’ll install the necessary tools that you can use to begin making changes.
 Follow these steps:</p>
 <ol>
@@ -660,7 +663,7 @@ Run the following command in the same folder as the repository:</p>
 <p>The rest of these instructions use <code class="docutils literal notranslate"><span class="pre">tox</span></code> to automate the installation and commands necessary to do many common things.</p>
 </section>
 <section id="build-the-documentation">
-<h2>Build the documentation<a class="headerlink" href="#build-the-documentation" title="永久链接至标题">¶</a></h2>
+<h2>Build the documentation<a class="headerlink" href="#build-the-documentation" title="永久链接至标题">#</a></h2>
 <p>Now that you’ve installed the necessary tools, try building the documentation for this theme locally.
 To do so, run the following <code class="docutils literal notranslate"><span class="pre">tox</span></code> command:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>tox -e docs-update
@@ -670,7 +673,7 @@ To do so, run the following <code class="docutils literal notranslate"><span cla
 You may then preview them by opening one of the HTML files.</p>
 </section>
 <section id="update-the-theme-s-assets-css-js">
-<h2>Update the theme’s assets (CSS/JS)<a class="headerlink" href="#update-the-theme-s-assets-css-js" title="永久链接至标题">¶</a></h2>
+<h2>Update the theme’s assets (CSS/JS)<a class="headerlink" href="#update-the-theme-s-assets-css-js" title="永久链接至标题">#</a></h2>
 <p>Now that you’ve previewed the documentation, try making changes to this theme’s assets and see how they affect the documentation builds.
 This is an easy way to preview the effect that your changes will make.</p>
 <p>First, <strong>make your changes in <code class="docutils literal notranslate"><span class="pre">src/sphinx_book_theme/assets/</span></code></strong>.
@@ -691,7 +694,7 @@ These compiled assets are <strong>not included</strong> in our git repository, b
 <p>When you open the HTML files for the documentation, your changes should be reflected.</p>
 </section>
 <section id="auto-build-the-docs-when-you-make-changes">
-<h2>当你进行修改时，自动构建文档<a class="headerlink" href="#auto-build-the-docs-when-you-make-changes" title="永久链接至标题">¶</a></h2>
+<h2>当你进行修改时，自动构建文档<a class="headerlink" href="#auto-build-the-docs-when-you-make-changes" title="永久链接至标题">#</a></h2>
 <p>You can bundle both of the steps above into a single command, which also opens a live server that watches for changes to the theme’s assets and documentation, and automatically compiles changes + re-builds the theme.</p>
 <p>To do so, use this <code class="docutils literal notranslate"><span class="pre">tox</span></code> command:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>tox -e docs-live
@@ -707,7 +710,7 @@ These compiled assets are <strong>not included</strong> in our git repository, b
 <p>有了这个，你可以在编辑器中修改主题，并看到这些修改在浏览器上是如何呈现的。</p>
 </section>
 <section id="run-the-tests">
-<h2>Run the tests<a class="headerlink" href="#run-the-tests" title="永久链接至标题">¶</a></h2>
+<h2>Run the tests<a class="headerlink" href="#run-the-tests" title="永久链接至标题">#</a></h2>
 <p>Once you’ve made a change to the theme, you should confirm that the tests still pass, and potentially add or modify a test for your changes.</p>
 <p>To run the test suite with the default <code class="docutils literal notranslate"><span class="pre">tox</span></code> environment, simply run this command:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>tox
@@ -780,7 +783,7 @@ You can pass arguments to the <code class="docutils literal notranslate"><span c
     By the Executable Book Project<br/>
   
       &copy; Copyright 2020.<br/>
-    Last updated on 2022 年 03 月 15 日.<br/>
+    Last updated on 2022 年 04 月 13 日.<br/>
 </p>
         </footer>
     </div>
@@ -791,8 +794,9 @@ You can pass arguments to the <code class="docutils literal notranslate"><span c
       </div>
     </div>
   
-    <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
-  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>

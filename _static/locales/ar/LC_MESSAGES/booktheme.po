@@ -8,41 +8,23 @@ msgstr ""
 "Language: ar\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Download this page"
-msgstr "قم بتنزيل هذه الصفحة"
+msgid "Print to PDF"
+msgstr "طباعة إلى PDF"
 
-msgid "Download notebook file"
-msgstr "تنزيل ملف دفتر الملاحظات"
-
-msgid "Open an issue"
-msgstr "افتح قضية"
-
-msgid "repository"
-msgstr "مخزن"
+msgid "By"
+msgstr "بواسطة"
 
 msgid "Theme by the"
 msgstr "موضوع بواسطة"
 
-msgid "Contents"
-msgstr "محتويات"
+msgid "Search this book..."
+msgstr "بحث في هذا الكتاب ..."
 
-msgid "next page"
-msgstr "الصفحة التالية"
+msgid "Search the docs ..."
+msgstr "ابحث في المستندات ..."
 
 msgid "Last updated on"
 msgstr "آخر تحديث في"
-
-msgid "Launch"
-msgstr "إطلاق"
-
-msgid "Edit this page"
-msgstr "قم بتحرير هذه الصفحة"
-
-msgid "Source repository"
-msgstr "مستودع المصدر"
-
-msgid "Download source file"
-msgstr "تنزيل ملف المصدر"
 
 msgid "Sphinx Book Theme"
 msgstr "موضوع كتاب أبو الهول"
@@ -53,29 +35,47 @@ msgstr "حقوق النشر"
 msgid "Fullscreen mode"
 msgstr "وضع ملء الشاشة"
 
-msgid "Search the docs ..."
-msgstr "ابحث في المستندات ..."
+msgid "Download this page"
+msgstr "قم بتنزيل هذه الصفحة"
 
-msgid "suggest edit"
-msgstr "أقترح تحرير"
+msgid "Launch"
+msgstr "إطلاق"
 
-msgid "Search this book..."
-msgstr "بحث في هذا الكتاب ..."
+msgid "Contents"
+msgstr "محتويات"
 
-msgid "By"
+msgid "Download notebook file"
+msgstr "تنزيل ملف دفتر الملاحظات"
+
+msgid "repository"
+msgstr "مخزن"
+
+msgid "By the"
 msgstr "بواسطة"
 
-msgid "open issue"
-msgstr "قضية مفتوحة"
-
-msgid "Print to PDF"
-msgstr "طباعة إلى PDF"
-
-msgid "previous page"
-msgstr "الصفحة السابقة"
+msgid "next page"
+msgstr "الصفحة التالية"
 
 msgid "Toggle navigation"
 msgstr "تبديل التنقل"
 
-msgid "By the"
-msgstr "بواسطة"
+msgid "Open an issue"
+msgstr "افتح قضية"
+
+msgid "Source repository"
+msgstr "مستودع المصدر"
+
+msgid "open issue"
+msgstr "قضية مفتوحة"
+
+msgid "suggest edit"
+msgstr "أقترح تحرير"
+
+msgid "Edit this page"
+msgstr "قم بتحرير هذه الصفحة"
+
+msgid "previous page"
+msgstr "الصفحة السابقة"
+
+msgid "Download source file"
+msgstr "تنزيل ملف المصدر"

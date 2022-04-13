@@ -8,41 +8,23 @@ msgstr ""
 "Language: lv\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Download this page"
-msgstr "Lejupielādējiet šo lapu"
+msgid "Print to PDF"
+msgstr "Drukāt PDF formātā"
 
-msgid "Download notebook file"
-msgstr "Lejupielādēt piezīmju grāmatiņu"
-
-msgid "Open an issue"
-msgstr "Atveriet problēmu"
-
-msgid "repository"
-msgstr "krātuve"
+msgid "By"
+msgstr "Autors"
 
 msgid "Theme by the"
 msgstr "Autora tēma"
 
-msgid "Contents"
-msgstr "Saturs"
+msgid "Search this book..."
+msgstr "Meklēt šajā grāmatā ..."
 
-msgid "next page"
-msgstr "nākamā lapaspuse"
+msgid "Search the docs ..."
+msgstr "Meklēt dokumentos ..."
 
 msgid "Last updated on"
 msgstr "Pēdējoreiz atjaunināts"
-
-msgid "Launch"
-msgstr "Uzsākt"
-
-msgid "Edit this page"
-msgstr "Rediģēt šo lapu"
-
-msgid "Source repository"
-msgstr "Avota krātuve"
-
-msgid "Download source file"
-msgstr "Lejupielādēt avota failu"
 
 msgid "Sphinx Book Theme"
 msgstr "Sfinksa grāmatas tēma"
@@ -53,29 +35,47 @@ msgstr "Autortiesības"
 msgid "Fullscreen mode"
 msgstr "Pilnekrāna režīms"
 
-msgid "Search the docs ..."
-msgstr "Meklēt dokumentos ..."
+msgid "Download this page"
+msgstr "Lejupielādējiet šo lapu"
 
-msgid "suggest edit"
-msgstr "ieteikt rediģēt"
+msgid "Launch"
+msgstr "Uzsākt"
 
-msgid "Search this book..."
-msgstr "Meklēt šajā grāmatā ..."
+msgid "Contents"
+msgstr "Saturs"
 
-msgid "By"
-msgstr "Autors"
+msgid "Download notebook file"
+msgstr "Lejupielādēt piezīmju grāmatiņu"
 
-msgid "open issue"
-msgstr "atklāts jautājums"
+msgid "repository"
+msgstr "krātuve"
 
-msgid "Print to PDF"
-msgstr "Drukāt PDF formātā"
+msgid "By the"
+msgstr "Ar"
 
-msgid "previous page"
-msgstr "iepriekšējā lapa"
+msgid "next page"
+msgstr "nākamā lapaspuse"
 
 msgid "Toggle navigation"
 msgstr "Pārslēgt navigāciju"
 
-msgid "By the"
-msgstr "Ar"
+msgid "Open an issue"
+msgstr "Atveriet problēmu"
+
+msgid "Source repository"
+msgstr "Avota krātuve"
+
+msgid "open issue"
+msgstr "atklāts jautājums"
+
+msgid "suggest edit"
+msgstr "ieteikt rediģēt"
+
+msgid "Edit this page"
+msgstr "Rediģēt šo lapu"
+
+msgid "previous page"
+msgstr "iepriekšējā lapa"
+
+msgid "Download source file"
+msgstr "Lejupielādēt avota failu"

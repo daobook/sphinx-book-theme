@@ -16,23 +16,20 @@
   
     <title>Sphinx extension styles &#8212; Sphinx Book Theme</title>
     
-    <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 <link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-  
+
     
-    <link rel="stylesheet"
-      href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-      href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-      href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-  
-    
-      
-  
-    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=19ed3e12f1edacfd9eb04555e6775b62fec4e1e9" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
@@ -40,8 +37,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/tabs.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.59c74d8c95b765a7fd995ac71d459ebe.min.css" />
     
-    <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
-  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
@@ -107,7 +105,7 @@ const thebe_selector_output = ".output, .cell_output"
 </style>
 
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
 <!-- Checkboxes to toggle the left sidebar -->
 <input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
 <label class="overlay overlay-navbar" for="__navigation">
@@ -337,6 +335,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="comments.html">
    Comments
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../changelog.html">
+   Changelog
   </a>
  </li>
 </ul>
@@ -662,10 +665,10 @@ title="Print to PDF"
                 
               <div>
                  <section class="tex2jax_ignore mathjax_ignore" id="sphinx-extension-styles">
-<h1>Sphinx extension styles<a class="headerlink" href="#sphinx-extension-styles" title="永久链接至标题">¶</a></h1>
+<h1>Sphinx extension styles<a class="headerlink" href="#sphinx-extension-styles" title="永久链接至标题">#</a></h1>
 <p>This page shows of some special-case styling for various Sphinx extensions.</p>
 <section id="sphinxcontrib-bibtex-references-and-bibliographies">
-<h2><code class="docutils literal notranslate"><span class="pre">sphinxcontrib-bibtex</span></code> - References and bibliographies<a class="headerlink" href="#sphinxcontrib-bibtex-references-and-bibliographies" title="永久链接至标题">¶</a></h2>
+<h2><code class="docutils literal notranslate"><span class="pre">sphinxcontrib-bibtex</span></code> - References and bibliographies<a class="headerlink" href="#sphinxcontrib-bibtex-references-and-bibliographies" title="永久链接至标题">#</a></h2>
 <p><a class="reference external" href="https://sphinxcontrib-bibtex.readthedocs.io/en/latest/"><code class="docutils literal notranslate"><span class="pre">sphinxcontrib-bibtex</span></code></a> provides support for citations and bibliographies.</p>
 <p>Because this theme deals with scholarly and scientific communication, <code class="docutils literal notranslate"><span class="pre">sphinxcontrib-bibtex</span></code> should work particularly well.</p>
 <p>Here’s are a few citations:</p>
@@ -675,7 +678,8 @@ title="Print to PDF"
 <li><p>Textual citation <span id="id5">Project Jupyter <em>et al.</em> [<a class="reference internal" href="#id9" title="Project Jupyter, Matthias Bussonnier, Jessica Forde, Jeremy Freeman, Brian Granger, Tim Head, Chris Holdgraf, Kyle Kelley, Gladys Nalvarte, Andrew Osheroff, M Pacer, Yuvi Panda, Fernando Perez, Benjamin Ragan-Kelley, and Carol Willing. Binder 2.0 - Reproducible, interactive, sharable environments for science at scale. In Fatih Akici, David Lippa, Dillon Niederhut, and M Pacer, editors, Proceedings of the 17th Python in Science Conference, 113 - 120. 2018. doi:10.25080/Majora-4af1f417-011.">2018</a>]</span>, <span id="id6">Holdgraf <em>et al.</em> [<a class="reference internal" href="#id8" title="Christopher Ramsay Holdgraf, Wendy de Heer, Brian N. Pasley, Jochem W. Rieger, Nathan Crone, Jack J. Lin, Robert T. Knight, and Frédéric E. Theunissen. Rapid tuning shifts in human auditory cortex enhance speech intelligibility. Nature Communications, 7(May):13654, 2016. URL: http://www.nature.com/doifinder/10.1038/ncomms13654, doi:10.1038/ncomms13654.">2016</a>], Project Jupyter <em>et al.</em> [<a class="reference internal" href="#id9" title="Project Jupyter, Matthias Bussonnier, Jessica Forde, Jeremy Freeman, Brian Granger, Tim Head, Chris Holdgraf, Kyle Kelley, Gladys Nalvarte, Andrew Osheroff, M Pacer, Yuvi Panda, Fernando Perez, Benjamin Ragan-Kelley, and Carol Willing. Binder 2.0 - Reproducible, interactive, sharable environments for science at scale. In Fatih Akici, David Lippa, Dillon Niederhut, and M Pacer, editors, Proceedings of the 17th Python in Science Conference, 113 - 120. 2018. doi:10.25080/Majora-4af1f417-011.">2018</a>]</span>.</p></li>
 </ul>
 <p>And here’s a bibliography:</p>
-<p id="id7"><dl class="citation">
+<div class="docutils container" id="id7">
+<dl class="citation">
 <dt class="label" id="id8"><span class="brackets">1</span></dt>
 <dd><p>Christopher Ramsay Holdgraf, Wendy de Heer, Brian N. Pasley, Jochem W. Rieger, Nathan Crone, Jack J. Lin, Robert T. Knight, and Frédéric E. Theunissen. Rapid tuning shifts in human auditory cortex enhance speech intelligibility. <em>Nature Communications</em>, 7(May):13654, 2016. URL: <a class="reference external" href="http://www.nature.com/doifinder/10.1038/ncomms13654">http://www.nature.com/doifinder/10.1038/ncomms13654</a>, <a class="reference external" href="https://doi.org/10.1038/ncomms13654">doi:10.1038/ncomms13654</a>.</p>
 </dd>
@@ -683,14 +687,14 @@ title="Print to PDF"
 <dd><p>Project Jupyter, Matthias Bussonnier, Jessica Forde, Jeremy Freeman, Brian Granger, Tim Head, Chris Holdgraf, Kyle Kelley, Gladys Nalvarte, Andrew Osheroff, M Pacer, Yuvi Panda, Fernando Perez, Benjamin Ragan-Kelley, and Carol Willing. Binder 2.0 - Reproducible, interactive, sharable environments for science at scale. In Fatih Akici, David Lippa, Dillon Niederhut, and M Pacer, editors, <em>Proceedings of the 17th Python in Science Conference</em>, 113 – 120. 2018. <a class="reference external" href="https://doi.org/10.25080/Majora-4af1f417-011">doi:10.25080/Majora-4af1f417-011</a>.</p>
 </dd>
 </dl>
-</p>
+</div>
 <div class="admonition seealso">
 <p class="admonition-title">参见</p>
 <p>See the <a class="reference internal" href="kitchen-sink/paragraph-markup.html"><span class="doc std std-doc">paragraph markup page</span></a> for more references styling.</p>
 </div>
 </section>
 <section id="ablog-blog-post-list">
-<h2><code class="docutils literal notranslate"><span class="pre">ABlog</span></code> - Blog post list<a class="headerlink" href="#ablog-blog-post-list" title="永久链接至标题">¶</a></h2>
+<h2><code class="docutils literal notranslate"><span class="pre">ABlog</span></code> - Blog post list<a class="headerlink" href="#ablog-blog-post-list" title="永久链接至标题">#</a></h2>
 <p><a class="reference external" href="https://ablog.readthedocs.io/en/latest/">ABlog</a> is a Sphinx extension for blogging with Sphinx.</p>
 <p>Here’s a sample post list:</p>
 <ul class="postlist-style-none postlist">
@@ -741,7 +745,7 @@ title="Print to PDF"
 </ul>
 </section>
 <section id="sphinx-togglebutton-toggle-content-with-buttons">
-<h2><code class="docutils literal notranslate"><span class="pre">sphinx-togglebutton</span></code> - Toggle content with buttons<a class="headerlink" href="#sphinx-togglebutton-toggle-content-with-buttons" title="永久链接至标题">¶</a></h2>
+<h2><code class="docutils literal notranslate"><span class="pre">sphinx-togglebutton</span></code> - Toggle content with buttons<a class="headerlink" href="#sphinx-togglebutton-toggle-content-with-buttons" title="永久链接至标题">#</a></h2>
 <p>A block toggle:</p>
 <div class="toggle docutils container">
 <div class="admonition note">
@@ -772,7 +776,7 @@ title="Print to PDF"
 </div>
 </section>
 <section id="sphinx-tabs-tabbed-content">
-<h2><code class="docutils literal notranslate"><span class="pre">sphinx-tabs</span></code> - Tabbed content<a class="headerlink" href="#sphinx-tabs-tabbed-content" title="永久链接至标题">¶</a></h2>
+<h2><code class="docutils literal notranslate"><span class="pre">sphinx-tabs</span></code> - Tabbed content<a class="headerlink" href="#sphinx-tabs-tabbed-content" title="永久链接至标题">#</a></h2>
 <div class="sphinx-tabs docutils container">
 <div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">Apples</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">Pears</button><button aria-controls="panel-0-0-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-2" name="0-2" role="tab" tabindex="-1">Oranges</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><p>Apples are green, or sometimes red.</p>
 </div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><p>Pears are green.</p>
@@ -780,7 +784,7 @@ title="Print to PDF"
 </div></div>
 </section>
 <section id="sphinxcontrib-youtube-for-videos">
-<h2><code class="docutils literal notranslate"><span class="pre">sphinxcontrib.youtube</span></code> for videos<a class="headerlink" href="#sphinxcontrib-youtube-for-videos" title="永久链接至标题">¶</a></h2>
+<h2><code class="docutils literal notranslate"><span class="pre">sphinxcontrib.youtube</span></code> for videos<a class="headerlink" href="#sphinxcontrib-youtube-for-videos" title="永久链接至标题">#</a></h2>
 <p><a class="reference external" href="https://github.com/sphinx-contrib/youtube"><code class="docutils literal notranslate"><span class="pre">sphinxcontrib.youtube</span></code></a> makes it possible to easily embed videos in your documentation.</p>
 <div class="video_wrapper" style="">
 <iframe allowfullscreen="true" src="https://www.youtube.com/embed/2Z7wDaYt53Y" style="border: 0; height: 345px; width: 560px">
@@ -841,7 +845,7 @@ title="Print to PDF"
     By the Executable Book Project<br/>
   
       &copy; Copyright 2020.<br/>
-    Last updated on 2022 年 03 月 15 日.<br/>
+    Last updated on 2022 年 04 月 13 日.<br/>
 </p>
         </footer>
     </div>
@@ -852,8 +856,9 @@ title="Print to PDF"
       </div>
     </div>
   
-    <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
-  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>

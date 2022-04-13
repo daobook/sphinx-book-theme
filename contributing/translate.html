@@ -16,23 +16,20 @@
   
     <title>Translation workflow &#8212; Sphinx Book Theme</title>
     
-    <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 <link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-  
+
     
-    <link rel="stylesheet"
-      href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-      href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-      href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-  
-    
-      
-  
-    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=19ed3e12f1edacfd9eb04555e6775b62fec4e1e9" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
@@ -40,8 +37,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/tabs.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.59c74d8c95b765a7fd995ac71d459ebe.min.css" />
     
-    <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
-  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
@@ -106,7 +104,7 @@ const thebe_selector_output = ".output, .cell_output"
 </style>
 
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
 <!-- Checkboxes to toggle the left sidebar -->
 <input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
 <label class="overlay overlay-navbar" for="__navigation">
@@ -336,6 +334,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="../reference/comments.html">
    Comments
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../changelog.html">
+   Changelog
   </a>
  </li>
 </ul>
@@ -615,13 +618,13 @@ title="Print to PDF"
                 
               <div>
                  <section class="tex2jax_ignore mathjax_ignore" id="translation-workflow">
-<h1>Translation workflow<a class="headerlink" href="#translation-workflow" title="永久链接至标题">¶</a></h1>
+<h1>Translation workflow<a class="headerlink" href="#translation-workflow" title="永久链接至标题">#</a></h1>
 <p>This folder contains code and translations for supporting multiple languages with Sphinx.
 See <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-internationalization">the Sphinx internationalization documentation</a> for more details.</p>
 <section id="structure-of-translation-files">
-<h2>Structure of translation files<a class="headerlink" href="#structure-of-translation-files" title="永久链接至标题">¶</a></h2>
+<h2>Structure of translation files<a class="headerlink" href="#structure-of-translation-files" title="永久链接至标题">#</a></h2>
 <section id="translation-source-files">
-<h3>Translation source files<a class="headerlink" href="#translation-source-files" title="永久链接至标题">¶</a></h3>
+<h3>Translation source files<a class="headerlink" href="#translation-source-files" title="永久链接至标题">#</a></h3>
 <p>The source files for our translations are hand-edited, and contain the raw mapping of words onto various languages.
 They are checked in to <code class="docutils literal notranslate"><span class="pre">git</span></code> history with this repository.</p>
 <p><code class="docutils literal notranslate"><span class="pre">src/sphinx_book_theme/assets/translations/jsons</span></code> contains a collection of JSON files that define the translation for various phrases in this repository.
@@ -629,7 +632,7 @@ Each file is a different phrase, and its contents define language codes and tran
 They were originally created with <a class="reference external" href="https://smodin.me/translate-one-text-into-multiple-languages">the smodin.io language translator</a> (see below for how to update them).</p>
 </section>
 <section id="compiled-translation-files">
-<h3>Compiled translation files<a class="headerlink" href="#compiled-translation-files" title="永久链接至标题">¶</a></h3>
+<h3>Compiled translation files<a class="headerlink" href="#compiled-translation-files" title="永久链接至标题">#</a></h3>
 <p>The translation source files are compiled at build time (when we run <code class="docutils literal notranslate"><span class="pre">stb</span> <span class="pre">compile</span></code>) automatically.
 This is executed by the Python script at <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">src/sphinx_book_theme/_compile_translations.py</span></code> (more information on that below).</p>
 <p>These compiled files are <strong>not checked into <code class="docutils literal notranslate"><span class="pre">.git</span></code> history</strong>, but they <strong>are</strong> bundled with the theme when it is distributed in a package.
@@ -641,7 +644,7 @@ Here’s a brief explanation of each:</p>
 </section>
 </section>
 <section id="workflow-of-translations">
-<h2>Workflow of translations<a class="headerlink" href="#workflow-of-translations" title="永久链接至标题">¶</a></h2>
+<h2>Workflow of translations<a class="headerlink" href="#workflow-of-translations" title="永久链接至标题">#</a></h2>
 <p>Here’s a short workflow of how to add a new translation, assuming that you are translating using the <a class="reference external" href="https://smodin.io/translate-one-text-into-multiple-languages">smodin.io service</a>.</p>
 <ol>
 <li><p>Go to <a class="reference external" href="https://smodin.io/translate-one-text-into-multiple-languages">the smodin.io service</a></p></li>
@@ -662,7 +665,7 @@ So if the original phrase is <code class="docutils literal notranslate"><span cl
 <p>Sphinx should now know how to translate this message!</p>
 </section>
 <section id="to-update-a-translation">
-<h2>To update a translation<a class="headerlink" href="#to-update-a-translation" title="永久链接至标题">¶</a></h2>
+<h2>To update a translation<a class="headerlink" href="#to-update-a-translation" title="永久链接至标题">#</a></h2>
 <p>To update a translation, you may go to the phase you’d like to modify in <code class="docutils literal notranslate"><span class="pre">jsons/</span></code>, then find the entry for the language you’d like to update, and change its value.
 Finally, run <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">src/sphinx_book_theme/_compile_translations.py</span></code> and this will update the <code class="docutils literal notranslate"><span class="pre">.mo</span></code> files.</p>
 </section>
@@ -722,7 +725,7 @@ Finally, run <code class="docutils literal notranslate"><span class="pre">python
     By the Executable Book Project<br/>
   
       &copy; Copyright 2020.<br/>
-    Last updated on 2022 年 03 月 15 日.<br/>
+    Last updated on 2022 年 04 月 13 日.<br/>
 </p>
         </footer>
     </div>
@@ -733,8 +736,9 @@ Finally, run <code class="docutils literal notranslate"><span class="pre">python
       </div>
     </div>
   
-    <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
-  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>

@@ -16,23 +16,20 @@
   
     <title>用于交互的启动按钮 &#8212; Sphinx Book Theme</title>
     
-    <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 <link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-  
+
     
-    <link rel="stylesheet"
-      href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-      href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-      href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-  
-    
-      
-  
-    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=19ed3e12f1edacfd9eb04555e6775b62fec4e1e9" type="text/css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
@@ -40,8 +37,9 @@
     <link rel="stylesheet" type="text/css" href="_static/tabs.css" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.59c74d8c95b765a7fd995ac71d459ebe.min.css" />
     
-    <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
-  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
@@ -106,7 +104,7 @@ const thebe_selector_output = ".output, .cell_output"
 </style>
 
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
 <!-- Checkboxes to toggle the left sidebar -->
 <input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
 <label class="overlay overlay-navbar" for="__navigation">
@@ -336,6 +334,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="reference/comments.html">
    Comments
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="changelog.html">
+   Changelog
   </a>
  </li>
 </ul>
@@ -631,7 +634,7 @@ title="Print to PDF"
                 
               <div>
                  <section class="tex2jax_ignore mathjax_ignore" id="launch-buttons-for-interactivity">
-<span id="customize-launch"></span><h1>用于交互的启动按钮<a class="headerlink" href="#launch-buttons-for-interactivity" title="永久链接至标题">¶</a></h1>
+<span id="customize-launch"></span><h1>用于交互的启动按钮<a class="headerlink" href="#launch-buttons-for-interactivity" title="永久链接至标题">#</a></h1>
 <p>你可以自动添加按钮，让用户与你的书的内容互动。这要么是通过引导他们到在云端运行的 BinderHub 或 JupyterHub，要么是通过使用 Thebe 使你的页面互动。</p>
 <p>要使用 Binder 或 JupyterHub 的链接，你首先需要配置你的文档库的网址：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
@@ -651,7 +654,7 @@ folder as your content, then Binder/JupyterHub links will point to the ipynb
 file instead of the text file.</p>
 </aside>
 <section id="binder-binderhub">
-<h2>Binder / BinderHub<a class="headerlink" href="#binder-binderhub" title="永久链接至标题">¶</a></h2>
+<h2>Binder / BinderHub<a class="headerlink" href="#binder-binderhub" title="永久链接至标题">#</a></h2>
 <p>要添加 Binder 链接你的页面，添加以下配置：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
     <span class="o">...</span>
@@ -664,7 +667,7 @@ file instead of the text file.</p>
 </div>
 </section>
 <section id="jupyterhub">
-<h2>JupyterHub<a class="headerlink" href="#jupyterhub" title="永久链接至标题">¶</a></h2>
+<h2>JupyterHub<a class="headerlink" href="#jupyterhub" title="永久链接至标题">#</a></h2>
 <p>要在你的页面上添加 JupyterHub 链接，请添加以下配置：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
     <span class="o">...</span>
@@ -677,7 +680,7 @@ file instead of the text file.</p>
 </div>
 </section>
 <section id="google-colab">
-<h2>Google Colab<a class="headerlink" href="#google-colab" title="永久链接至标题">¶</a></h2>
+<h2>Google Colab<a class="headerlink" href="#google-colab" title="永久链接至标题">#</a></h2>
 <p>要在你的页面上添加谷歌 Colab 链接，请添加以下配置：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
     <span class="o">...</span>
@@ -690,7 +693,7 @@ file instead of the text file.</p>
 </div>
 </section>
 <section id="deepnote">
-<h2>Deepnote<a class="headerlink" href="#deepnote" title="永久链接至标题">¶</a></h2>
+<h2>Deepnote<a class="headerlink" href="#deepnote" title="永久链接至标题">#</a></h2>
 <p>To add <a class="reference external" href="https://deepnote.com">Deepnote</a> links to your page, add the following configuration:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
     <span class="o">...</span>
@@ -707,7 +710,7 @@ file instead of the text file.</p>
 </div>
 </section>
 <section id="live-code-cells-with-thebe">
-<h2>Thebe 实时代码单元格<a class="headerlink" href="#live-code-cells-with-thebe" title="永久链接至标题">¶</a></h2>
+<h2>Thebe 实时代码单元格<a class="headerlink" href="#live-code-cells-with-thebe" title="永久链接至标题">#</a></h2>
 <p><a class="reference external" href="http://thebe.readthedocs.org/">Thebe</a> 将你的静态代码块转换为由 Jupyter 内核驱动的 <em>交互式</em> 代码块。它通过要求一个 BinderHub 内核来做到这一点，*在 hood 下，将你所有的代码单元转换为 <em>交互式</em> 代码单元。这使得用户可以在不离开页面的情况下运行你页面上的代码</p>
 <p>你可以使用 Sphinx 插件 <a class="reference external" href="https://sphinx-thebe.readthedocs.io/en/latest/"><code class="docutils literal notranslate"><span class="pre">sphinx-thebe</span></code></a> 来为你的文档添加实时代码功能。你可以从 <code class="docutils literal notranslate"><span class="pre">pip</span></code> 安装 <code class="docutils literal notranslate"><span class="pre">sphinx-thebe</span></code>，然后把它放在你的 <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> 插件列表中激活它：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
@@ -742,7 +745,7 @@ file instead of the text file.</p>
 </div>
 </section>
 <section id="configure-a-relative-path-to-your-source-file">
-<h2>配置你的源文件的相对路径<a class="headerlink" href="#configure-a-relative-path-to-your-source-file" title="永久链接至标题">¶</a></h2>
+<h2>配置你的源文件的相对路径<a class="headerlink" href="#configure-a-relative-path-to-your-source-file" title="永久链接至标题">#</a></h2>
 <p>要配置你的文档的相对路径，请添加以下配置：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
     <span class="o">...</span>
@@ -753,7 +756,7 @@ file instead of the text file.</p>
 </div>
 </section>
 <section id="control-the-user-interface-that-is-opened">
-<h2>控制被打开的用户界面<a class="headerlink" href="#control-the-user-interface-that-is-opened" title="永久链接至标题">¶</a></h2>
+<h2>控制被打开的用户界面<a class="headerlink" href="#control-the-user-interface-that-is-opened" title="永久链接至标题">#</a></h2>
 <p>你可以控制有人点击启动按钮时打开的界面。要做到这一点，请添加以下配置：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
     <span class="o">...</span>
@@ -821,7 +824,7 @@ file instead of the text file.</p>
     By the Executable Book Project<br/>
   
       &copy; Copyright 2020.<br/>
-    Last updated on 2022 年 03 月 15 日.<br/>
+    Last updated on 2022 年 04 月 13 日.<br/>
 </p>
         </footer>
     </div>
@@ -832,8 +835,9 @@ file instead of the text file.</p>
       </div>
     </div>
   
-    <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
-  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>

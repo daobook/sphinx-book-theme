@@ -8,41 +8,23 @@ msgstr ""
 "Language: no\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Download this page"
-msgstr "Last ned denne siden"
+msgid "Print to PDF"
+msgstr "Skriv ut til PDF"
 
-msgid "Download notebook file"
-msgstr "Last ned notatbokfilen"
-
-msgid "Open an issue"
-msgstr "Åpne et problem"
-
-msgid "repository"
-msgstr "oppbevaringssted"
+msgid "By"
+msgstr "Av"
 
 msgid "Theme by the"
 msgstr "Tema av"
 
-msgid "Contents"
-msgstr "Innhold"
+msgid "Search this book..."
+msgstr "Søk i denne boken ..."
 
-msgid "next page"
-msgstr "neste side"
+msgid "Search the docs ..."
+msgstr "Søk i dokumentene ..."
 
 msgid "Last updated on"
 msgstr "Sist oppdatert den"
-
-msgid "Launch"
-msgstr "Start"
-
-msgid "Edit this page"
-msgstr "Rediger denne siden"
-
-msgid "Source repository"
-msgstr "Kildedepot"
-
-msgid "Download source file"
-msgstr "Last ned kildefilen"
 
 msgid "Sphinx Book Theme"
 msgstr "Sphinx boktema"
@@ -53,29 +35,47 @@ msgstr "opphavsrett"
 msgid "Fullscreen mode"
 msgstr "Fullskjerm-modus"
 
-msgid "Search the docs ..."
-msgstr "Søk i dokumentene ..."
+msgid "Download this page"
+msgstr "Last ned denne siden"
 
-msgid "suggest edit"
-msgstr "foreslå redigering"
+msgid "Launch"
+msgstr "Start"
 
-msgid "Search this book..."
-msgstr "Søk i denne boken ..."
+msgid "Contents"
+msgstr "Innhold"
 
-msgid "By"
-msgstr "Av"
+msgid "Download notebook file"
+msgstr "Last ned notatbokfilen"
 
-msgid "open issue"
-msgstr "åpent nummer"
+msgid "repository"
+msgstr "oppbevaringssted"
 
-msgid "Print to PDF"
-msgstr "Skriv ut til PDF"
+msgid "By the"
+msgstr "Ved"
 
-msgid "previous page"
-msgstr "forrige side"
+msgid "next page"
+msgstr "neste side"
 
 msgid "Toggle navigation"
 msgstr "Bytt navigasjon"
 
-msgid "By the"
-msgstr "Ved"
+msgid "Open an issue"
+msgstr "Åpne et problem"
+
+msgid "Source repository"
+msgstr "Kildedepot"
+
+msgid "open issue"
+msgstr "åpent nummer"
+
+msgid "suggest edit"
+msgstr "foreslå redigering"
+
+msgid "Edit this page"
+msgstr "Rediger denne siden"
+
+msgid "previous page"
+msgstr "forrige side"
+
+msgid "Download source file"
+msgstr "Last ned kildefilen"

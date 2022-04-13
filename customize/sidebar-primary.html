@@ -16,23 +16,20 @@
   
     <title>Customize the primary sidebar &#8212; Sphinx Book Theme</title>
     
-    <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 <link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-  
+
     
-    <link rel="stylesheet"
-      href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-      href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-      href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-  
-    
-      
-  
-    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=19ed3e12f1edacfd9eb04555e6775b62fec4e1e9" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
@@ -40,8 +37,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/tabs.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.59c74d8c95b765a7fd995ac71d459ebe.min.css" />
     
-    <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
-  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
@@ -106,7 +104,7 @@ const thebe_selector_output = ".output, .cell_output"
 </style>
 
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
 <!-- Checkboxes to toggle the left sidebar -->
 <input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
 <label class="overlay overlay-navbar" for="__navigation">
@@ -336,6 +334,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="../reference/comments.html">
    Comments
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../changelog.html">
+   Changelog
   </a>
  </li>
 </ul>
@@ -635,12 +638,12 @@ title="Print to PDF"
                 
               <div>
                  <section class="tex2jax_ignore mathjax_ignore" id="customize-the-primary-sidebar">
-<h1>Customize the primary sidebar<a class="headerlink" href="#customize-the-primary-sidebar" title="永久链接至标题">¶</a></h1>
+<h1>Customize the primary sidebar<a class="headerlink" href="#customize-the-primary-sidebar" title="永久链接至标题">#</a></h1>
 <p>The primary sidebar generally contains the site navigation and logo.
 By default it is on the left side of the site.
 This page describes ways that you can control and customize the primary sidebar.</p>
 <section id="control-the-left-sidebar-items">
-<span id="sidebar-primary-items"></span><h2>Control the left sidebar items<a class="headerlink" href="#control-the-left-sidebar-items" title="永久链接至标题">¶</a></h2>
+<span id="sidebar-primary-items"></span><h2>Control the left sidebar items<a class="headerlink" href="#control-the-left-sidebar-items" title="永久链接至标题">#</a></h2>
 <p>You can control what kind of content goes underneath the logo and name of your website in the top left.</p>
 <p>To do so, use the <code class="docutils literal notranslate"><span class="pre">html_sidebars</span></code> variable in your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file. This takes a dictionary of filename patterns as keys, and a list of sidebar elements as values. Any files that match a key will have the corresponding sidebar elements placed in that page’s sidebar.</p>
 <p>For example, the following configuration would include <em>only the footer</em> on pages under the <code class="docutils literal notranslate"><span class="pre">posts/</span></code> folder:</p>
@@ -657,7 +660,7 @@ This page describes ways that you can control and customize the primary sidebar.
 </div>
 <p>See the <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_sidebars">Sphinx HTML sidebars documentation</a> for more information.</p>
 <section id="default-sidebar-elements">
-<h3>Default sidebar elements<a class="headerlink" href="#default-sidebar-elements" title="永久链接至标题">¶</a></h3>
+<h3>Default sidebar elements<a class="headerlink" href="#default-sidebar-elements" title="永久链接至标题">#</a></h3>
 <p>By default, this theme comes with these three theme-specific sidebar elements enabled on all pages:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">sidebar-logo.html</span></code>: Displays the logo and site title.</p></li>
@@ -668,7 +671,7 @@ This page describes ways that you can control and customize the primary sidebar.
 </section>
 </section>
 <section id="customize-the-sidebar-footer">
-<span id="custom-footer"></span><h2>Customize the sidebar footer<a class="headerlink" href="#customize-the-sidebar-footer" title="永久链接至标题">¶</a></h2>
+<span id="custom-footer"></span><h2>Customize the sidebar footer<a class="headerlink" href="#customize-the-sidebar-footer" title="永久链接至标题">#</a></h2>
 <p>You may choose your own HTML to include in the footer of your sidebar (or set it to be empty). To do so, set the following option in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
     <span class="o">...</span>
@@ -680,12 +683,12 @@ This page describes ways that you can control and customize the primary sidebar.
 <p>This text will be placed at the bottom of the sidebar by default.</p>
 </section>
 <section id="add-a-header-to-your-table-of-contents">
-<h2>Add a header to your Table of Contents<a class="headerlink" href="#add-a-header-to-your-table-of-contents" title="永久链接至标题">¶</a></h2>
+<h2>Add a header to your Table of Contents<a class="headerlink" href="#add-a-header-to-your-table-of-contents" title="永久链接至标题">#</a></h2>
 <p>If you’d like to add a header above a section of TOC links, use <code class="docutils literal notranslate"><span class="pre">:caption:</span> <span class="pre">My</span> <span class="pre">header</span> <span class="pre">text</span></code>
 in your <code class="docutils literal notranslate"><span class="pre">toctree</span></code> directive for that section.</p>
 </section>
 <section id="customize-the-logo-title-and-favicon">
-<span id="sidebar-primary-logo"></span><h2>Customize the logo, title, and favicon<a class="headerlink" href="#customize-the-logo-title-and-favicon" title="永久链接至标题">¶</a></h2>
+<span id="sidebar-primary-logo"></span><h2>Customize the logo, title, and favicon<a class="headerlink" href="#customize-the-logo-title-and-favicon" title="永久链接至标题">#</a></h2>
 <p>You can customize the logo, title, and favicon of your site with the following Sphinx configuration in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_title</span> <span class="o">=</span> <span class="s2">&quot;Your title&quot;</span>
 <span class="n">html_logo</span> <span class="o">=</span> <span class="s2">&quot;path/to/logo.png&quot;</span>
@@ -703,7 +706,7 @@ in your <code class="docutils literal notranslate"><span class="pre">toctree</sp
 </div>
 </section>
 <section id="add-the-home-page-to-your-table-of-contents">
-<span id="sidebar-primary-home-page"></span><h2>Add the home page to your table of contents<a class="headerlink" href="#add-the-home-page-to-your-table-of-contents" title="永久链接至标题">¶</a></h2>
+<span id="sidebar-primary-home-page"></span><h2>Add the home page to your table of contents<a class="headerlink" href="#add-the-home-page-to-your-table-of-contents" title="永久链接至标题">#</a></h2>
 <p>By default, your table of contents will begin with the first file that you add to a <code class="docutils literal notranslate"><span class="pre">toctree</span></code>. You can also configure the theme to show the <strong>landing page</strong> of the theme in your navigation bar as well.</p>
 <p>To add the landing page of your site to the table of contents, use the following configuration:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
@@ -715,7 +718,7 @@ in your <code class="docutils literal notranslate"><span class="pre">toctree</sp
 </div>
 </section>
 <section id="control-the-depth-of-the-left-sidebar-lists-to-expand">
-<span id="sidebar-navbar-depth"></span><h2>Control the depth of the left sidebar lists to expand<a class="headerlink" href="#control-the-depth-of-the-left-sidebar-lists-to-expand" title="永久链接至标题">¶</a></h2>
+<span id="sidebar-navbar-depth"></span><h2>Control the depth of the left sidebar lists to expand<a class="headerlink" href="#control-the-depth-of-the-left-sidebar-lists-to-expand" title="永久链接至标题">#</a></h2>
 <p>You can control the level of toc items in the left sidebar to remain expanded,
 using the following configuration in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
@@ -783,7 +786,7 @@ using the following configuration in <code class="docutils literal notranslate">
     By the Executable Book Project<br/>
   
       &copy; Copyright 2020.<br/>
-    Last updated on 2022 年 03 月 15 日.<br/>
+    Last updated on 2022 年 04 月 13 日.<br/>
 </p>
         </footer>
     </div>
@@ -794,8 +797,9 @@ using the following configuration in <code class="docutils literal notranslate">
       </div>
     </div>
   
-    <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
-  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>

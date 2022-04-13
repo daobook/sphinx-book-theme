@@ -16,23 +16,20 @@
   
     <title>Theme-specific elements &#8212; Sphinx Book Theme</title>
     
-    <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 <link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-  
+
     
-    <link rel="stylesheet"
-      href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-      href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-      href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-  
-    
-      
-  
-    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=19ed3e12f1edacfd9eb04555e6775b62fec4e1e9" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
@@ -40,8 +37,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/tabs.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.59c74d8c95b765a7fd995ac71d459ebe.min.css" />
     
-    <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
-  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
@@ -108,7 +106,7 @@ const thebe_selector_output = ".output, .cell_output"
 </style>
 
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
 <!-- Checkboxes to toggle the left sidebar -->
 <input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
 <label class="overlay overlay-navbar" for="__navigation">
@@ -338,6 +336,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="comments.html">
    Comments
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../changelog.html">
+   Changelog
   </a>
  </li>
 </ul>
@@ -815,14 +818,14 @@ title="Print to PDF"
                 
               <div>
                  <section class="tex2jax_ignore mathjax_ignore" id="theme-specific-elements">
-<h1>Theme-specific elements<a class="headerlink" href="#theme-specific-elements" title="永久链接至标题">¶</a></h1>
+<h1>Theme-specific elements<a class="headerlink" href="#theme-specific-elements" title="永久链接至标题">#</a></h1>
 <p>This page contains a number of reference elements to see how they look in this
 theme. The information is not meant to be easy to read or understand, just browse
 through and see how things look!</p>
 <section id="full-width-elements">
-<h2>Full-width elements<a class="headerlink" href="#full-width-elements" title="永久链接至标题">¶</a></h2>
+<h2>Full-width elements<a class="headerlink" href="#full-width-elements" title="永久链接至标题">#</a></h2>
 <section id="code-cells">
-<h3>Code cells<a class="headerlink" href="#code-cells" title="永久链接至标题">¶</a></h3>
+<h3>Code cells<a class="headerlink" href="#code-cells" title="永久链接至标题">#</a></h3>
 <div class="cell tag_full_width docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## A full-width square figure</span>
@@ -832,7 +835,7 @@ through and see how things look!</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7f8a848adfa0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7f4bacf73fd0&gt;
 </pre></div>
 </div>
 <img alt="../_images/special-theme-elements_2_1.png" src="../_images/special-theme-elements_2_1.png" />
@@ -847,7 +850,7 @@ through and see how things look!</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7f8a505c2250&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7f4bacc5c0a0&gt;
 </pre></div>
 </div>
 <img alt="../_images/special-theme-elements_3_1.png" src="../_images/special-theme-elements_3_1.png" />
@@ -862,7 +865,7 @@ through and see how things look!</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7f8a4d5838e0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7f4bacb3c460&gt;
 </pre></div>
 </div>
 <img alt="../_images/special-theme-elements_4_1.png" src="../_images/special-theme-elements_4_1.png" />
@@ -870,15 +873,21 @@ through and see how things look!</p>
 </div>
 </section>
 <section id="markdown">
-<h3>Markdown<a class="headerlink" href="#markdown" title="永久链接至标题">¶</a></h3>
+<h3>Markdown<a class="headerlink" href="#markdown" title="永久链接至标题">#</a></h3>
+<div class="full-width docutils container">
 <p>This is some markdown that should be shown at full width.</p>
 <p>Here’s the Jupyter logo:</p>
 <p><img alt="" src="https://raw.githubusercontent.com/adebar/awesome-jupyter/master/logo.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Here’s a full-width admonition!</p>
+</div>
+</div>
 </section>
 <section id="mathematics">
-<h3>Mathematics<a class="headerlink" href="#mathematics" title="永久链接至标题">¶</a></h3>
-<div class="amsmath math notranslate nohighlight" id="equation-28d5fff3-2d28-41d9-9d36-e033740bebac">
-<span class="eqno">(2)<a class="headerlink" href="#equation-28d5fff3-2d28-41d9-9d36-e033740bebac" title="公式的永久链接">¶</a></span>\[\begin{equation}
+<h3>Mathematics<a class="headerlink" href="#mathematics" title="永久链接至标题">#</a></h3>
+<div class="amsmath math notranslate nohighlight" id="equation-f7c1ce27-667f-46eb-8875-a1344bf5ee68">
+<span class="eqno">(2)<a class="headerlink" href="#equation-f7c1ce27-667f-46eb-8875-a1344bf5ee68" title="公式的永久链接">#</a></span>\[\begin{equation}
   \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
 \end{equation}\]</div>
 <div class="math notranslate nohighlight">
@@ -886,10 +895,10 @@ through and see how things look!</p>
   \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
 \]</div>
 <div class="math notranslate nohighlight" id="equation-my-label">
-<span class="eqno">(3)<a class="headerlink" href="#equation-my-label" title="公式的永久链接">¶</a></span>\[w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}\]</div>
+<span class="eqno">(3)<a class="headerlink" href="#equation-my-label" title="公式的永久链接">#</a></span>\[w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}\]</div>
 <p>Link to above: <a class="reference internal" href="#equation-my-label">(3)</a></p>
 <div class="math notranslate nohighlight" id="equation-my-label2">
-<span class="eqno">(4)<a class="headerlink" href="#equation-my-label2" title="公式的永久链接">¶</a></span>\[\begin{split}w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1} \\
+<span class="eqno">(4)<a class="headerlink" href="#equation-my-label2" title="公式的永久链接">#</a></span>\[\begin{split}w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1} \\
 w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1} \\
 w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}\end{split}\]</div>
 <p>Link to above: <a class="reference internal" href="#equation-my-label2">(4)</a></p>
@@ -925,7 +934,7 @@ w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}\end{split}\]</div>
 </section>
 </section>
 <section id="margins">
-<h2>Margins<a class="headerlink" href="#margins" title="永久链接至标题">¶</a></h2>
+<h2>Margins<a class="headerlink" href="#margins" title="永久链接至标题">#</a></h2>
 <p>Margin content can include all kinds of things, such as code blocks:</p>
 <aside class="margin sidebar">
 <p class="sidebar-title">Code blocks in margins</p>
@@ -943,7 +952,7 @@ w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}\end{split}\]</div>
 </div>
 </aside>
 <section id="margin-under-lower-level-shouldn-t-have-different-left-alignment">
-<h3>Margin under lower level shouldn’t have different left-alignment<a class="headerlink" href="#margin-under-lower-level-shouldn-t-have-different-left-alignment" title="永久链接至标题">¶</a></h3>
+<h3>Margin under lower level shouldn’t have different left-alignment<a class="headerlink" href="#margin-under-lower-level-shouldn-t-have-different-left-alignment" title="永久链接至标题">#</a></h3>
 <aside class="margin sidebar">
 <p class="sidebar-title"><strong>Notes in margins</strong></p>
 <div class="admonition note">
@@ -954,7 +963,7 @@ w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}\end{split}\]</div>
 </aside>
 </section>
 <section id="margins-with-toggle-buttons">
-<h3>Margins with toggle buttons<a class="headerlink" href="#margins-with-toggle-buttons" title="永久链接至标题">¶</a></h3>
+<h3>Margins with toggle buttons<a class="headerlink" href="#margins-with-toggle-buttons" title="永久链接至标题">#</a></h3>
 <p>Here’s some margin content, let’s see how it interacts w/ the toggle button</p>
 <aside class="margin sidebar">
 <p class="sidebar-title">My margin</p>
@@ -967,7 +976,7 @@ w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}\end{split}\]</div>
 </div>
 </section>
 <section id="margins-with-full-width-content">
-<h3>Margins with full-width content<a class="headerlink" href="#margins-with-full-width-content" title="永久链接至标题">¶</a></h3>
+<h3>Margins with full-width content<a class="headerlink" href="#margins-with-full-width-content" title="永久链接至标题">#</a></h3>
 <div class="tag-fullwidth admonition note">
 <p class="admonition-title">备注</p>
 <p>This is my test</p>
@@ -982,10 +991,10 @@ w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}\end{split}\]</div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7f8a4d50f3d0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7f4bacb136d0&gt;
 </pre></div>
 </div>
-<img alt="../_images/special-theme-elements_10_1.png" src="../_images/special-theme-elements_10_1.png" />
+<img alt="../_images/special-theme-elements_8_1.png" src="../_images/special-theme-elements_8_1.png" />
 </div>
 </div>
 <p>Markdown cell with code in margin</p>
@@ -1005,7 +1014,7 @@ w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}\end{split}\]</div>
 <p>Markdown cell with images in sidebar</p>
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/883px-Jupyter_logo.svg.png" style="max-width:200px" /></section>
 <section id="more-content-after-the-margin-content">
-<h3>More content after the margin content<a class="headerlink" href="#more-content-after-the-margin-content" title="永久链接至标题">¶</a></h3>
+<h3>More content after the margin content<a class="headerlink" href="#more-content-after-the-margin-content" title="永久链接至标题">#</a></h3>
 <p>This is extra content after the popouts to see if cells overlap and such.
 Also to make sure you can still interact with the popout content.
 This is extra content after the popouts to see if cells overlap and such.
@@ -1021,22 +1030,29 @@ This is extra content after the popouts to see if cells overlap and such.
 Also to make sure you can still interact with the popout content.</p>
 </section>
 <section id="figures-with-margin-captions">
-<h3>Figures with margin captions<a class="headerlink" href="#figures-with-margin-captions" title="永久链接至标题">¶</a></h3>
+<h3>Figures with margin captions<a class="headerlink" href="#figures-with-margin-captions" title="永久链接至标题">#</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">margin-caption</span></code> class should cause a figure’s caption to pop out to the right.</p>
 <figure class="margin-caption align-default" id="reference-margin-fig">
 <a class="reference internal image-reference" href="../_images/cool.jpg"><img alt="My figure text" src="../_images/cool.jpg" style="width: 60%;" /></a>
 <figcaption>
-<p><span class="caption-number">图 9 </span><span class="caption-text">And here is my figure caption, if you look to the left, you can see that COOL is in big red letters. But you probably already noticed that, really I am just taking up space to see how the margin caption looks like when it is really long :-).</span><a class="headerlink" href="#reference-margin-fig" title="永久链接至图片">¶</a></p>
+<p><span class="caption-number">图 9 </span><span class="caption-text">And here is my figure caption, if you look to the left, you can see that COOL is in big red letters. But you probably already noticed that, really I am just taking up space to see how the margin caption looks like when it is really long :-).</span><a class="headerlink" href="#reference-margin-fig" title="永久链接至图片">#</a></p>
 </figcaption>
 </figure>
 <div class="margin admonition note">
 <p class="admonition-title">备注</p>
 <p>This note should not overlap with the margin caption!</p>
 </div>
+<p>Entire figures in the margin:</p>
+<figure class="margin align-default" id="id1">
+<a class="reference internal image-reference" href="../_images/cool.jpg"><img alt="My figure text" src="../_images/cool.jpg" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-number">图 10 </span><span class="caption-text">This figure should be entirely in the margin.</span><a class="headerlink" href="#id1" title="永久链接至图片">#</a></p>
+</figcaption>
+</figure>
 </section>
 </section>
 <section id="nested-admonitions">
-<h2>Nested admonitions<a class="headerlink" href="#nested-admonitions" title="永久链接至标题">¶</a></h2>
+<h2>Nested admonitions<a class="headerlink" href="#nested-admonitions" title="永久链接至标题">#</a></h2>
 <p>These aren’t theme-specific, but we still show below to make sure they work.</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
@@ -1048,10 +1064,10 @@ Also to make sure you can still interact with the popout content.</p>
 </div>
 </section>
 <section id="myst-markdown-elements">
-<h2>MyST Markdown elements<a class="headerlink" href="#myst-markdown-elements" title="永久链接至标题">¶</a></h2>
+<h2>MyST Markdown elements<a class="headerlink" href="#myst-markdown-elements" title="永久链接至标题">#</a></h2>
 <p>Here are a few design elements to show off MyST Markdown.</p>
 <section id="table-alignment">
-<h3>Table alignment<a class="headerlink" href="#table-alignment" title="永久链接至标题">¶</a></h3>
+<h3>Table alignment<a class="headerlink" href="#table-alignment" title="永久链接至标题">#</a></h3>
 <p>To ensure that markdown alignment is rendered properly.</p>
 <table class="colwidths-auto table">
 <thead>
@@ -1076,7 +1092,7 @@ Also to make sure you can still interact with the popout content.</p>
 </table>
 </section>
 <section id="list-table-width">
-<h3>List table width<a class="headerlink" href="#list-table-width" title="永久链接至标题">¶</a></h3>
+<h3>List table width<a class="headerlink" href="#list-table-width" title="永久链接至标题">#</a></h3>
 <p>Testing list tables take width as expected.</p>
 <table class="table">
 <colgroup>
@@ -1150,7 +1166,7 @@ Also to make sure you can still interact with the popout content.</p>
     By the Executable Book Project<br/>
   
       &copy; Copyright 2020.<br/>
-    Last updated on 2022 年 03 月 15 日.<br/>
+    Last updated on 2022 年 04 月 13 日.<br/>
 </p>
         </footer>
     </div>
@@ -1161,8 +1177,9 @@ Also to make sure you can still interact with the popout content.</p>
       </div>
     </div>
   
-    <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
-  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>

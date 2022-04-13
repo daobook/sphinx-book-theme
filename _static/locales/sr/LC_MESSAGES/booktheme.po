@@ -8,41 +8,23 @@ msgstr ""
 "Language: sr\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Download this page"
-msgstr "Преузмите ову страницу"
+msgid "Print to PDF"
+msgstr "Испис у ПДФ"
 
-msgid "Download notebook file"
-msgstr "Преузмите датотеку бележнице"
-
-msgid "Open an issue"
-msgstr "Отворите издање"
-
-msgid "repository"
-msgstr "спремиште"
+msgid "By"
+msgstr "Од стране"
 
 msgid "Theme by the"
 msgstr "Тхеме би"
 
-msgid "Contents"
-msgstr "Садржај"
+msgid "Search this book..."
+msgstr "Претражите ову књигу ..."
 
-msgid "next page"
-msgstr "Следећа страна"
+msgid "Search the docs ..."
+msgstr "Претражите документе ..."
 
 msgid "Last updated on"
 msgstr "Последње ажурирање"
-
-msgid "Launch"
-msgstr "Лансирање"
-
-msgid "Edit this page"
-msgstr "Уредите ову страницу"
-
-msgid "Source repository"
-msgstr "Изворно спремиште"
-
-msgid "Download source file"
-msgstr "Преузми изворну датотеку"
 
 msgid "Sphinx Book Theme"
 msgstr "Тема књиге Спхинк"
@@ -53,29 +35,47 @@ msgstr "Ауторско право"
 msgid "Fullscreen mode"
 msgstr "Режим целог екрана"
 
-msgid "Search the docs ..."
-msgstr "Претражите документе ..."
+msgid "Download this page"
+msgstr "Преузмите ову страницу"
 
-msgid "suggest edit"
-msgstr "предложи уређивање"
+msgid "Launch"
+msgstr "Лансирање"
 
-msgid "Search this book..."
-msgstr "Претражите ову књигу ..."
+msgid "Contents"
+msgstr "Садржај"
 
-msgid "By"
-msgstr "Од стране"
+msgid "Download notebook file"
+msgstr "Преузмите датотеку бележнице"
 
-msgid "open issue"
-msgstr "отворено издање"
+msgid "repository"
+msgstr "спремиште"
 
-msgid "Print to PDF"
-msgstr "Испис у ПДФ"
+msgid "By the"
+msgstr "Од"
 
-msgid "previous page"
-msgstr "Претходна страница"
+msgid "next page"
+msgstr "Следећа страна"
 
 msgid "Toggle navigation"
 msgstr "Укључи / искључи навигацију"
 
-msgid "By the"
-msgstr "Од"
+msgid "Open an issue"
+msgstr "Отворите издање"
+
+msgid "Source repository"
+msgstr "Изворно спремиште"
+
+msgid "open issue"
+msgstr "отворено издање"
+
+msgid "suggest edit"
+msgstr "предложи уређивање"
+
+msgid "Edit this page"
+msgstr "Уредите ову страницу"
+
+msgid "previous page"
+msgstr "Претходна страница"
+
+msgid "Download source file"
+msgstr "Преузми изворну датотеку"

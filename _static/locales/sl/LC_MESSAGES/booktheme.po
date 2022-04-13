@@ -8,41 +8,23 @@ msgstr ""
 "Language: sl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Download this page"
-msgstr "Prenesite to stran"
+msgid "Print to PDF"
+msgstr "Natisni v PDF"
 
-msgid "Download notebook file"
-msgstr "Prenesite datoteko zvezka"
-
-msgid "Open an issue"
-msgstr "Odprite številko"
-
-msgid "repository"
-msgstr "odlagališče"
+msgid "By"
+msgstr "Avtor"
 
 msgid "Theme by the"
 msgstr "Tema avtorja"
 
-msgid "Contents"
-msgstr "Vsebina"
+msgid "Search this book..."
+msgstr "Poiščite to knjigo ..."
 
-msgid "next page"
-msgstr "Naslednja stran"
+msgid "Search the docs ..."
+msgstr "Poiščite dokumente ..."
 
 msgid "Last updated on"
 msgstr "Nazadnje posodobljeno dne"
-
-msgid "Launch"
-msgstr "Kosilo"
-
-msgid "Edit this page"
-msgstr "Uredite to stran"
-
-msgid "Source repository"
-msgstr "Izvorno skladišče"
-
-msgid "Download source file"
-msgstr "Prenesite izvorno datoteko"
 
 msgid "Sphinx Book Theme"
 msgstr "Tema knjige Sphinx"
@@ -53,29 +35,47 @@ msgstr "avtorske pravice"
 msgid "Fullscreen mode"
 msgstr "Celozaslonski način"
 
-msgid "Search the docs ..."
-msgstr "Poiščite dokumente ..."
+msgid "Download this page"
+msgstr "Prenesite to stran"
 
-msgid "suggest edit"
-msgstr "predlagajte urejanje"
+msgid "Launch"
+msgstr "Kosilo"
 
-msgid "Search this book..."
-msgstr "Poiščite to knjigo ..."
+msgid "Contents"
+msgstr "Vsebina"
 
-msgid "By"
+msgid "Download notebook file"
+msgstr "Prenesite datoteko zvezka"
+
+msgid "repository"
+msgstr "odlagališče"
+
+msgid "By the"
 msgstr "Avtor"
 
-msgid "open issue"
-msgstr "odprto vprašanje"
-
-msgid "Print to PDF"
-msgstr "Natisni v PDF"
-
-msgid "previous page"
-msgstr "Prejšnja stran"
+msgid "next page"
+msgstr "Naslednja stran"
 
 msgid "Toggle navigation"
 msgstr "Preklopi navigacijo"
 
-msgid "By the"
-msgstr "Avtor"
+msgid "Open an issue"
+msgstr "Odprite številko"
+
+msgid "Source repository"
+msgstr "Izvorno skladišče"
+
+msgid "open issue"
+msgstr "odprto vprašanje"
+
+msgid "suggest edit"
+msgstr "predlagajte urejanje"
+
+msgid "Edit this page"
+msgstr "Uredite to stran"
+
+msgid "previous page"
+msgstr "Prejšnja stran"
+
+msgid "Download source file"
+msgstr "Prenesite izvorno datoteko"

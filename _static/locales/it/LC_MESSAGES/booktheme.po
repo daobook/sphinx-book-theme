@@ -8,41 +8,23 @@ msgstr ""
 "Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Download this page"
-msgstr "Scarica questa pagina"
+msgid "Print to PDF"
+msgstr "Stampa in PDF"
 
-msgid "Download notebook file"
-msgstr "Scarica il file del taccuino"
-
-msgid "Open an issue"
-msgstr "Apri un problema"
-
-msgid "repository"
-msgstr "repository"
+msgid "By"
+msgstr "Di"
 
 msgid "Theme by the"
 msgstr "Tema di"
 
-msgid "Contents"
-msgstr "Contenuti"
+msgid "Search this book..."
+msgstr "Cerca in questo libro ..."
 
-msgid "next page"
-msgstr "pagina successiva"
+msgid "Search the docs ..."
+msgstr "Cerca nei documenti ..."
 
 msgid "Last updated on"
 msgstr "Ultimo aggiornamento il"
-
-msgid "Launch"
-msgstr "Lanciare"
-
-msgid "Edit this page"
-msgstr "Modifica questa pagina"
-
-msgid "Source repository"
-msgstr "Repository di origine"
-
-msgid "Download source file"
-msgstr "Scarica il file sorgente"
 
 msgid "Sphinx Book Theme"
 msgstr "Tema del libro della Sfinge"
@@ -53,29 +35,47 @@ msgstr "Diritto d'autore"
 msgid "Fullscreen mode"
 msgstr "Modalità schermo intero"
 
-msgid "Search the docs ..."
-msgstr "Cerca nei documenti ..."
+msgid "Download this page"
+msgstr "Scarica questa pagina"
 
-msgid "suggest edit"
-msgstr "suggerisci modifica"
+msgid "Launch"
+msgstr "Lanciare"
 
-msgid "Search this book..."
-msgstr "Cerca in questo libro ..."
+msgid "Contents"
+msgstr "Contenuti"
 
-msgid "By"
-msgstr "Di"
+msgid "Download notebook file"
+msgstr "Scarica il file del taccuino"
 
-msgid "open issue"
-msgstr "questione aperta"
+msgid "repository"
+msgstr "repository"
 
-msgid "Print to PDF"
-msgstr "Stampa in PDF"
+msgid "By the"
+msgstr "Dal"
 
-msgid "previous page"
-msgstr "pagina precedente"
+msgid "next page"
+msgstr "pagina successiva"
 
 msgid "Toggle navigation"
 msgstr "Attiva / disattiva la navigazione"
 
-msgid "By the"
-msgstr "Dal"
+msgid "Open an issue"
+msgstr "Apri un problema"
+
+msgid "Source repository"
+msgstr "Repository di origine"
+
+msgid "open issue"
+msgstr "questione aperta"
+
+msgid "suggest edit"
+msgstr "suggerisci modifica"
+
+msgid "Edit this page"
+msgstr "Modifica questa pagina"
+
+msgid "previous page"
+msgstr "pagina precedente"
+
+msgid "Download source file"
+msgstr "Scarica il file sorgente"

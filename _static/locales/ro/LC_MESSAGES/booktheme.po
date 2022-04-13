@@ -8,41 +8,23 @@ msgstr ""
 "Language: ro\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Download this page"
-msgstr "Descarcă această pagină"
+msgid "Print to PDF"
+msgstr "Imprimați în PDF"
 
-msgid "Download notebook file"
-msgstr "Descărcați fișierul notebook"
-
-msgid "Open an issue"
-msgstr "Deschideți o problemă"
-
-msgid "repository"
-msgstr "repertoriu"
+msgid "By"
+msgstr "De"
 
 msgid "Theme by the"
 msgstr "Tema de"
 
-msgid "Contents"
-msgstr "Cuprins"
+msgid "Search this book..."
+msgstr "Căutați în această carte ..."
 
-msgid "next page"
-msgstr "pagina următoare"
+msgid "Search the docs ..."
+msgstr "Căutați documente ..."
 
 msgid "Last updated on"
 msgstr "Ultima actualizare la"
-
-msgid "Launch"
-msgstr "Lansa"
-
-msgid "Edit this page"
-msgstr "Editați această pagină"
-
-msgid "Source repository"
-msgstr "Depozit sursă"
-
-msgid "Download source file"
-msgstr "Descărcați fișierul sursă"
 
 msgid "Sphinx Book Theme"
 msgstr "Tema Sphinx Book"
@@ -53,29 +35,47 @@ msgstr "Drepturi de autor"
 msgid "Fullscreen mode"
 msgstr "Modul ecran întreg"
 
-msgid "Search the docs ..."
-msgstr "Căutați documente ..."
+msgid "Download this page"
+msgstr "Descarcă această pagină"
 
-msgid "suggest edit"
-msgstr "sugerează editare"
+msgid "Launch"
+msgstr "Lansa"
 
-msgid "Search this book..."
-msgstr "Căutați în această carte ..."
+msgid "Contents"
+msgstr "Cuprins"
 
-msgid "By"
-msgstr "De"
+msgid "Download notebook file"
+msgstr "Descărcați fișierul notebook"
 
-msgid "open issue"
-msgstr "problema deschisă"
+msgid "repository"
+msgstr "repertoriu"
 
-msgid "Print to PDF"
-msgstr "Imprimați în PDF"
+msgid "By the"
+msgstr "Langa"
 
-msgid "previous page"
-msgstr "pagina anterioară"
+msgid "next page"
+msgstr "pagina următoare"
 
 msgid "Toggle navigation"
 msgstr "Comutare navigare"
 
-msgid "By the"
-msgstr "Langa"
+msgid "Open an issue"
+msgstr "Deschideți o problemă"
+
+msgid "Source repository"
+msgstr "Depozit sursă"
+
+msgid "open issue"
+msgstr "problema deschisă"
+
+msgid "suggest edit"
+msgstr "sugerează editare"
+
+msgid "Edit this page"
+msgstr "Editați această pagină"
+
+msgid "previous page"
+msgstr "pagina anterioară"
+
+msgid "Download source file"
+msgstr "Descărcați fișierul sursă"

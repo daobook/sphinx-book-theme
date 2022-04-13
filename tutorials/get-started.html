@@ -16,23 +16,20 @@
   
     <title>Get started &#8212; Sphinx Book Theme</title>
     
-    <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 <link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-  
+
     
-    <link rel="stylesheet"
-      href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-      href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-      href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-  
-    
-      
-  
-    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=19ed3e12f1edacfd9eb04555e6775b62fec4e1e9" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
@@ -40,8 +37,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/tabs.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.59c74d8c95b765a7fd995ac71d459ebe.min.css" />
     
-    <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
-  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
@@ -106,7 +104,7 @@ const thebe_selector_output = ".output, .cell_output"
 </style>
 
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
 <!-- Checkboxes to toggle the left sidebar -->
 <input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
 <label class="overlay overlay-navbar" for="__navigation">
@@ -336,6 +334,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="../reference/comments.html">
    Comments
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../changelog.html">
+   Changelog
   </a>
  </li>
 </ul>
@@ -611,7 +614,7 @@ title="Print to PDF"
                 
               <div>
                  <section class="tex2jax_ignore mathjax_ignore" id="get-started">
-<h1>Get started<a class="headerlink" href="#get-started" title="永久链接至标题">¶</a></h1>
+<h1>Get started<a class="headerlink" href="#get-started" title="永久链接至标题">#</a></h1>
 <p>This is a short step-by-step tutorial to get started with the Sphinx Book Theme.</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
@@ -621,7 +624,7 @@ to use MyST markdown with your Sphinx website,
 see <a class="reference external" href="https://myst-parser.readthedocs.io/">the MyST-parser documentation</a></p>
 </div>
 <section id="prerequisites">
-<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="永久链接至标题">¶</a></h2>
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="永久链接至标题">#</a></h2>
 <p>You should be relatively familiar with <a class="reference external" href="http://www.sphinx-doc.org/">the Sphinx ecosystem</a>, and have it installed locally on your computer.</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
@@ -632,7 +635,7 @@ see <a class="reference external" href="https://myst-parser.readthedocs.io/">the
 </div>
 </section>
 <section id="install-and-activate-the-theme">
-<h2>Install and activate the theme<a class="headerlink" href="#install-and-activate-the-theme" title="永久链接至标题">¶</a></h2>
+<h2>Install and activate the theme<a class="headerlink" href="#install-and-activate-the-theme" title="永久链接至标题">#</a></h2>
 <p>First install <code class="docutils literal notranslate"><span class="pre">sphinx-book-theme</span></code> with <code class="docutils literal notranslate"><span class="pre">pip</span></code>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx</span><span class="o">-</span><span class="n">book</span><span class="o">-</span><span class="n">theme</span>
 </pre></div>
@@ -650,7 +653,7 @@ see <a class="reference external" href="https://myst-parser.readthedocs.io/">the
 </div>
 </section>
 <section id="add-a-source-repository-button-to-your-theme">
-<h2>Add a source repository button to your theme<a class="headerlink" href="#add-a-source-repository-button-to-your-theme" title="永久链接至标题">¶</a></h2>
+<h2>Add a source repository button to your theme<a class="headerlink" href="#add-a-source-repository-button-to-your-theme" title="永久链接至标题">#</a></h2>
 <p>There are several ways that you can customize the Sphinx Book Theme.
 For this tutorial, we’ll add a pointer to a GitHub repository for our theme.</p>
 <p>To add a button that links to the repository for your documentation, add the following configuration in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>.</p>
@@ -669,7 +672,7 @@ For this tutorial, we’ll add a pointer to a GitHub repository for our theme.</
 </div>
 </section>
 <section id="customize-your-left-sidebar">
-<h2>Customize your left sidebar<a class="headerlink" href="#customize-your-left-sidebar" title="永久链接至标题">¶</a></h2>
+<h2>Customize your left sidebar<a class="headerlink" href="#customize-your-left-sidebar" title="永久链接至标题">#</a></h2>
 <p>There are a few major areas of the page that you can customize with the book theme.
 The most common is the <strong>primary sidebar</strong> (by default, on the left of the page).</p>
 <p>Sidebar elements are defined as HTML templates by Sphinx, Sphinx extensions, and the current theme.
@@ -695,7 +698,7 @@ To do so, add a line to your <code class="docutils literal notranslate"><span cl
 <p>This title will now be placed underneath the logo.</p>
 </section>
 <section id="add-some-margin-content-to-a-page">
-<h2>Add some margin content to a page<a class="headerlink" href="#add-some-margin-content-to-a-page" title="永久链接至标题">¶</a></h2>
+<h2>Add some margin content to a page<a class="headerlink" href="#add-some-margin-content-to-a-page" title="永久链接至标题">#</a></h2>
 <p>There are a few special kinds of content that this theme supports, largely inspired by <a class="reference external" href="https://edwardtufte.github.io/tufte-css/">the Tufte CSS theme styles</a>.
 One kind of content is <strong>margin content</strong>.
 This allows you to “pop out” content to the side of the page, in the margins.
@@ -770,7 +773,7 @@ Now that you’ve gotten a start, check out the other sections to the left to le
     By the Executable Book Project<br/>
   
       &copy; Copyright 2020.<br/>
-    Last updated on 2022 年 03 月 15 日.<br/>
+    Last updated on 2022 年 04 月 13 日.<br/>
 </p>
         </footer>
     </div>
@@ -781,8 +784,9 @@ Now that you’ve gotten a start, check out the other sections to the left to le
       </div>
     </div>
   
-    <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
-  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>

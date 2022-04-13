@@ -16,23 +16,20 @@
   
     <title>特殊内容块 &#8212; Sphinx Book Theme</title>
     
-    <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 <link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-  
+
     
-    <link rel="stylesheet"
-      href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-      href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-      href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-  
-    
-      
-  
-    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=19ed3e12f1edacfd9eb04555e6775b62fec4e1e9" type="text/css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
@@ -40,8 +37,9 @@
     <link rel="stylesheet" type="text/css" href="_static/tabs.css" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.59c74d8c95b765a7fd995ac71d459ebe.min.css" />
     
-    <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
-  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
@@ -106,7 +104,7 @@ const thebe_selector_output = ".output, .cell_output"
 </style>
 
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
 <!-- Checkboxes to toggle the left sidebar -->
 <input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
 <label class="overlay overlay-navbar" for="__navigation">
@@ -336,6 +334,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="reference/comments.html">
    Comments
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="changelog.html">
+   Changelog
   </a>
  </li>
 </ul>
@@ -771,10 +774,10 @@ title="Print to PDF"
                 
               <div>
                  <section class="tex2jax_ignore mathjax_ignore" id="special-content-blocks">
-<h1>特殊内容块<a class="headerlink" href="#special-content-blocks" title="永久链接至标题">¶</a></h1>
+<h1>特殊内容块<a class="headerlink" href="#special-content-blocks" title="永久链接至标题">#</a></h1>
 <p>有几个内容块是这个主题所特有的。</p>
 <section id="quotations-and-epigraphs">
-<h2>语录和题记<a class="headerlink" href="#quotations-and-epigraphs" title="永久链接至标题">¶</a></h2>
+<h2>语录和题记<a class="headerlink" href="#quotations-and-epigraphs" title="永久链接至标题">#</a></h2>
 <p>这是 <code class="docutils literal notranslate"><span class="pre">sphinx-book-theme</span></code> 中的引文和题记的样子。</p>
 <p>一段没有出处的引言：</p>
 <blockquote>
@@ -832,18 +835,18 @@ but I&#39;ll stop here.
 </div>
 </section>
 <section id="sidebars">
-<h2>侧边栏<a class="headerlink" href="#sidebars" title="永久链接至标题">¶</a></h2>
+<h2>侧边栏<a class="headerlink" href="#sidebars" title="永久链接至标题">#</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">sphinx-book-theme</span></code> 中有两种不同的类似侧边栏的内容，典型的 <code class="docutils literal notranslate"><span class="pre">{sidebar}</span></code> 指令，以及一个特定主题的 <code class="docutils literal notranslate"><span class="pre">{margin}</span></code> 指令。本节涵盖这两种指令。两者都允许你将额外的内容与你的主要内容分开放置。</p>
 <div class="admonition tip">
 <p class="admonition-title">小技巧</p>
 <p>侧边栏内容一般会与你的网站目录所在的白色空间重叠。当读者滚动侧边栏内容进入视野时，右边的 TOC 应该自动隐藏起来。</p>
 </div>
 <section id="margin-content">
-<h3>页边距内容<a class="headerlink" href="#margin-content" title="永久链接至标题">¶</a></h3>
+<h3>页边距内容<a class="headerlink" href="#margin-content" title="永久链接至标题">#</a></h3>
 <p>你可以指定应该存在于右页边距的内容。这将表现得像一个普通的侧边栏，直到屏幕达到一定的宽度，在这一点上，这些内容将 “弹出” 到右边的页边距区域。</p>
 <p>有两种方法可以将内容添加到空白处：通过 <code class="docutils literal notranslate"><span class="pre">{margin}</span></code> 指令，以及通过向自己的内容添加 CSS 类。</p>
 <section id="use-a-margin-directive-to-add-margin-content">
-<h4>使用 <code class="docutils literal notranslate"><span class="pre">{margin}</span></code> 指令来添加页边距内容<a class="headerlink" href="#use-a-margin-directive-to-add-margin-content" title="永久链接至标题">¶</a></h4>
+<h4>使用 <code class="docutils literal notranslate"><span class="pre">{margin}</span></code> 指令来添加页边距内容<a class="headerlink" href="#use-a-margin-directive-to-add-margin-content" title="永久链接至标题">#</a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">{margin}</span></code> 指令允许你用自己的标题和内容块来创建边缘内容。它是Sphinx <code class="docutils literal notranslate"><span class="pre">{sidebar}</span></code> 指令的一个封装器，主要通过 CSS 类来实现其魔力（见下文）。</p>
 <p>下面是如何使用 <code class="docutils literal notranslate"><span class="pre">{margin}</span></code> 指令的：</p>
 <aside class="margin sidebar">
@@ -857,7 +860,7 @@ Here is my margin content, it is pretty cool!
 </div>
 </section>
 <section id="use-css-classes-to-add-margin-content">
-<h4>使用 CSS 类来增加页边距内容<a class="headerlink" href="#use-css-classes-to-add-margin-content" title="永久链接至标题">¶</a></h4>
+<h4>使用 CSS 类来增加页边距内容<a class="headerlink" href="#use-css-classes-to-add-margin-content" title="永久链接至标题">#</a></h4>
 <p>你也可以直接给你的页面上的元素添加 CSS 类，以使它们表现得像页边距内容。要做到这一点，请将 <code class="docutils literal notranslate"><span class="pre">margin</span></code> CSS 类添加到页面上的任何元素。许多 Sphinx 指令允许你直接添加类。例如，下面是在 <code class="docutils literal notranslate"><span class="pre">{note}</span></code> 指令中添加 <code class="docutils literal notranslate"><span class="pre">margin</span></code> 类的语法：</p>
 <div class="margin admonition note">
 <p class="admonition-title">备注</p>
@@ -875,7 +878,7 @@ This note will be in the margin!
 <figure class="margin align-default" id="myfig4">
 <img alt="My figure text" src="_images/cool.jpg" />
 <figcaption>
-<p><span class="caption-number">图 1 </span><span class="caption-text">这是我的图片说明</span><a class="headerlink" href="#myfig4" title="永久链接至图片">¶</a></p>
+<p><span class="caption-number">图 1 </span><span class="caption-text">这是我的图片说明</span><a class="headerlink" href="#myfig4" title="永久链接至图片">#</a></p>
 </figcaption>
 </figure>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{figure} images/cool.jpg
@@ -891,12 +894,12 @@ And here is my figure caption
 <p>我们可以用 <a class="reference internal" href="#myfig4"><span class="std std-ref">这是我的图片说明</span></a> 来引用该图。或者用 <a class="reference internal" href="#myfig4"><span class="std std-numref">图 1</span></a> 这样的编号引用。</p>
 </section>
 <section id="figure-captions-in-the-margin">
-<h4>页边距的图片说明<a class="headerlink" href="#figure-captions-in-the-margin" title="永久链接至标题">¶</a></h4>
+<h4>页边距的图片说明<a class="headerlink" href="#figure-captions-in-the-margin" title="永久链接至标题">#</a></h4>
 <p>你可以配置图片，使其使用页边距来做标题。这里是一个图片，其标题在右边。</p>
 <figure class="margin-caption align-default" id="myfig5">
 <a class="reference internal image-reference" href="_images/cool.jpg"><img alt="My figure text" src="_images/cool.jpg" style="width: 60%;" /></a>
 <figcaption>
-<p><span class="caption-number">图 2 </span><span class="caption-text">这是我的图片说明，如果你看左边，你可以看到 COOL 是大红字。但你可能已经注意到了，其实我只是占用了一些空间，看看当标题真的很长时，边距是什么样子的：:-)。</span><a class="headerlink" href="#myfig5" title="永久链接至图片">¶</a></p>
+<p><span class="caption-number">图 2 </span><span class="caption-text">这是我的图片说明，如果你看左边，你可以看到 COOL 是大红字。但你可能已经注意到了，其实我只是占用了一些空间，看看当标题真的很长时，边距是什么样子的：:-)。</span><a class="headerlink" href="#myfig5" title="永久链接至图片">#</a></p>
 </figcaption>
 </figure>
 <p>以及产生它的文本：</p>
@@ -915,7 +918,7 @@ And here is my figure caption, if you look to the left, you can see that COOL is
 </section>
 </section>
 <section id="content-sidebars">
-<h3>内容侧栏<a class="headerlink" href="#content-sidebars" title="永久链接至标题">¶</a></h3>
+<h3>内容侧栏<a class="headerlink" href="#content-sidebars" title="永久链接至标题">#</a></h3>
 <p>内容侧栏与你的文本并列存在，但允许页面的其他部分围绕它们流动，而不是移动到右边的空白处。要添加内容侧边栏，请使用以下语法：</p>
 <aside class="sidebar">
 <p class="sidebar-title">我的侧边栏标题</p>
@@ -933,7 +936,7 @@ Here is my sidebar content, it is pretty cool!
 </div>
 </section>
 <section id="adding-content-to-margins-and-sidebars">
-<h3>在页边距和侧边栏添加内容<a class="headerlink" href="#adding-content-to-margins-and-sidebars" title="永久链接至标题">¶</a></h3>
+<h3>在页边距和侧边栏添加内容<a class="headerlink" href="#adding-content-to-margins-and-sidebars" title="永久链接至标题">#</a></h3>
 <p>侧边栏/页边距内容可以包括各种东西，如代码块：</p>
 <aside class="margin sidebar">
 <p class="sidebar-title">Code blocks in margins</p>
@@ -968,7 +971,7 @@ Wow, a note with an image in a margin!
 </section>
 </section>
 <section id="full-width-content">
-<h2>全宽内容<a class="headerlink" href="#full-width-content" title="永久链接至标题">¶</a></h2>
+<h2>全宽内容<a class="headerlink" href="#full-width-content" title="永久链接至标题">#</a></h2>
 <p>全宽内容延伸到右边的空白处，使它在你的书的其他内容中脱颖而出。要在你的页面上添加全宽内容，请在文档中的任何元素上添加 <code class="docutils literal notranslate"><span class="pre">full-width</span></code> 类。例如，你可以像这样给笔记元素添加一个 <code class="docutils literal notranslate"><span class="pre">full-width</span></code> 标签：</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{note}
 :class: full-width
@@ -1042,7 +1045,7 @@ This content will be full-width
     By the Executable Book Project<br/>
   
       &copy; Copyright 2020.<br/>
-    Last updated on 2022 年 03 月 15 日.<br/>
+    Last updated on 2022 年 04 月 13 日.<br/>
 </p>
         </footer>
     </div>
@@ -1053,8 +1056,9 @@ This content will be full-width
       </div>
     </div>
   
-    <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
-  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>
