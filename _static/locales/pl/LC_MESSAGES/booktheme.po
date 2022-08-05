@@ -8,29 +8,26 @@ msgstr ""
 "Language: pl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "open issue"
+msgstr "otwarty problem"
+
+msgid "Search this book..."
+msgstr "Przeszukaj tę książkę ..."
+
+msgid "Sphinx Book Theme"
+msgstr "Motyw książki Sphinx"
+
 msgid "Print to PDF"
 msgstr "Drukuj do PDF"
 
 msgid "By"
 msgstr "Przez"
 
-msgid "Theme by the"
-msgstr "Motyw autorstwa"
+msgid "next page"
+msgstr "Następna strona"
 
-msgid "Search this book..."
-msgstr "Przeszukaj tę książkę ..."
-
-msgid "Search the docs ..."
-msgstr "Przeszukaj dokumenty ..."
-
-msgid "Last updated on"
-msgstr "Ostatnia aktualizacja"
-
-msgid "Sphinx Book Theme"
-msgstr "Motyw książki Sphinx"
-
-msgid "Copyright"
-msgstr "prawa autorskie"
+msgid "Launch"
+msgstr "Uruchomić"
 
 msgid "Fullscreen mode"
 msgstr "Pełny ekran"
@@ -38,44 +35,47 @@ msgstr "Pełny ekran"
 msgid "Download this page"
 msgstr "Pobierz tę stronę"
 
-msgid "Launch"
-msgstr "Uruchomić"
+msgid "repository"
+msgstr "magazyn"
 
 msgid "Contents"
 msgstr "Zawartość"
 
-msgid "Download notebook file"
-msgstr "Pobierz plik notatnika"
-
-msgid "repository"
-msgstr "magazyn"
-
-msgid "By the"
-msgstr "Przez"
-
-msgid "next page"
-msgstr "Następna strona"
-
-msgid "Toggle navigation"
-msgstr "Przełącz nawigację"
-
-msgid "Open an issue"
-msgstr "Otwórz problem"
-
-msgid "Source repository"
-msgstr "Repozytorium źródłowe"
-
-msgid "open issue"
-msgstr "otwarty problem"
+msgid "Edit this page"
+msgstr "Edytuj tę strone"
 
 msgid "suggest edit"
 msgstr "zaproponuj edycję"
 
-msgid "Edit this page"
-msgstr "Edytuj tę strone"
+msgid "Toggle navigation"
+msgstr "Przełącz nawigację"
+
+msgid "By the"
+msgstr "Przez"
 
 msgid "previous page"
 msgstr "Poprzednia strona"
 
+msgid "Source repository"
+msgstr "Repozytorium źródłowe"
+
 msgid "Download source file"
 msgstr "Pobierz plik źródłowy"
+
+msgid "Open an issue"
+msgstr "Otwórz problem"
+
+msgid "Theme by the"
+msgstr "Motyw autorstwa"
+
+msgid "Search the docs ..."
+msgstr "Przeszukaj dokumenty ..."
+
+msgid "Last updated on"
+msgstr "Ostatnia aktualizacja"
+
+msgid "Copyright"
+msgstr "prawa autorskie"
+
+msgid "Download notebook file"
+msgstr "Pobierz plik notatnika"

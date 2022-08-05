@@ -8,29 +8,26 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "open issue"
+msgstr "открытый вопрос"
+
+msgid "Search this book..."
+msgstr "Искать в этой книге ..."
+
+msgid "Sphinx Book Theme"
+msgstr "Тема книги Сфинкс"
+
 msgid "Print to PDF"
 msgstr "Распечатать в PDF"
 
 msgid "By"
 msgstr "По"
 
-msgid "Theme by the"
-msgstr "Тема от"
+msgid "next page"
+msgstr "Следующая страница"
 
-msgid "Search this book..."
-msgstr "Искать в этой книге ..."
-
-msgid "Search the docs ..."
-msgstr "Искать в документах ..."
-
-msgid "Last updated on"
-msgstr "Последнее обновление"
-
-msgid "Sphinx Book Theme"
-msgstr "Тема книги Сфинкс"
-
-msgid "Copyright"
-msgstr "авторское право"
+msgid "Launch"
+msgstr "Запуск"
 
 msgid "Fullscreen mode"
 msgstr "Полноэкранный режим"
@@ -38,44 +35,47 @@ msgstr "Полноэкранный режим"
 msgid "Download this page"
 msgstr "Загрузите эту страницу"
 
-msgid "Launch"
-msgstr "Запуск"
+msgid "repository"
+msgstr "хранилище"
 
 msgid "Contents"
 msgstr "Содержание"
 
-msgid "Download notebook file"
-msgstr "Скачать файл записной книжки"
-
-msgid "repository"
-msgstr "хранилище"
-
-msgid "By the"
-msgstr "Посредством"
-
-msgid "next page"
-msgstr "Следующая страница"
-
-msgid "Toggle navigation"
-msgstr "Переключить навигацию"
-
-msgid "Open an issue"
-msgstr "Открыть вопрос"
-
-msgid "Source repository"
-msgstr "Исходный репозиторий"
-
-msgid "open issue"
-msgstr "открытый вопрос"
+msgid "Edit this page"
+msgstr "Редактировать эту страницу"
 
 msgid "suggest edit"
 msgstr "предложить редактировать"
 
-msgid "Edit this page"
-msgstr "Редактировать эту страницу"
+msgid "Toggle navigation"
+msgstr "Переключить навигацию"
+
+msgid "By the"
+msgstr "Посредством"
 
 msgid "previous page"
 msgstr "Предыдущая страница"
 
+msgid "Source repository"
+msgstr "Исходный репозиторий"
+
 msgid "Download source file"
 msgstr "Скачать исходный файл"
+
+msgid "Open an issue"
+msgstr "Открыть вопрос"
+
+msgid "Theme by the"
+msgstr "Тема от"
+
+msgid "Search the docs ..."
+msgstr "Искать в документах ..."
+
+msgid "Last updated on"
+msgstr "Последнее обновление"
+
+msgid "Copyright"
+msgstr "авторское право"
+
+msgid "Download notebook file"
+msgstr "Скачать файл записной книжки"

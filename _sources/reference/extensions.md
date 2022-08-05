@@ -26,7 +26,7 @@ See the [paragraph markup page](kitchen-sink/paragraph-markup.rst) for more refe
 
 ## `ABlog` - Blog post list
 
-[ABlog](https://ablog.readthedocs.io/en/latest/) is a Sphinx extension for blogging with Sphinx.
+[ABlog](https://ablog.readthedocs.io/) is a Sphinx extension for blogging with Sphinx.
 
 Here's a sample post list:
 
@@ -108,3 +108,7 @@ This toggle is in the margin!
 
 ```{youtube} 2Z7wDaYt53Y
 ```
+
+## `sphinx-design` for UI components
+
+{bdg-primary}`Test badge`.

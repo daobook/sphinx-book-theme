@@ -12,7 +12,7 @@
   
 <meta property="og:url" content="content-blocks.html" />
   
-<meta property="og:description" content="有几个内容块是这个主题所特有的。 语录和题记: 这是 sphinx-book-theme 中的引文和题记的样子。 一段没有出处的引言： Here’s my quote, it’s pretty neat. I wonder how many lines I can create with a single stream-of-consciousness quote. I could try ..." />
+<meta property="og:description" content="有几个内容块是这个主题所特有的。 语录和题记: 这是 sphinx-book-theme 中的引文和题记的样子。 Default markdown quotes Here’s my quote, it’s pretty neat. I wonder how many lines I can create with a single stream-of-consciousness quote...." />
   
     <title>特殊内容块 &#8212; Sphinx Book Theme</title>
     
@@ -29,13 +29,15 @@
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-examples.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="_static/tabs.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.59c74d8c95b765a7fd995ac71d459ebe.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
@@ -50,7 +52,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=532d1baf3f03eb73f2f50828f8c27430120b156d"></script>
     <script src="_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/design-tabs.js"></script>
@@ -641,49 +643,59 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sidebars">
-   侧边栏
+  <a class="reference internal nav-link" href="#sidenotes-and-marginnotes">
+   Sidenotes and marginnotes
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#margin-content">
-     页边距内容
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#use-a-margin-directive-to-add-margin-content">
-       使用
-       <code class="docutils literal notranslate">
-        <span class="pre">
-         {margin}
-        </span>
-       </code>
-       指令来添加页边距内容
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#use-css-classes-to-add-margin-content">
-       使用 CSS 类来增加页边距内容
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#figure-captions-in-the-margin">
-       页边距的图片说明
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#content-sidebars">
-     内容侧栏
+    <a class="reference internal nav-link" href="#activate-sidenotes-and-marginnotes">
+     Activate sidenotes and marginnotes
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#adding-content-to-margins-and-sidebars">
-     在页边距和侧边栏添加内容
+    <a class="reference internal nav-link" href="#create-a-sidenote">
+     Create a sidenote
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#create-a-marginnote">
+     Create a marginnote
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#block-margin-content-with-the-margin-directive">
+   Block margin content with the
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     {margin}
+    </span>
+   </code>
+   directive
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#figure-captions-in-the-margin">
+     页边距的图片说明
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#css-classes-for-custom-margin-content">
+     CSS classes for custom margin content
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#content-examples-in-the-margin">
+     Content examples in the margin
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sidebars">
+   侧边栏
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#full-width-content">
@@ -715,49 +727,59 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sidebars">
-   侧边栏
+  <a class="reference internal nav-link" href="#sidenotes-and-marginnotes">
+   Sidenotes and marginnotes
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#margin-content">
-     页边距内容
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#use-a-margin-directive-to-add-margin-content">
-       使用
-       <code class="docutils literal notranslate">
-        <span class="pre">
-         {margin}
-        </span>
-       </code>
-       指令来添加页边距内容
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#use-css-classes-to-add-margin-content">
-       使用 CSS 类来增加页边距内容
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#figure-captions-in-the-margin">
-       页边距的图片说明
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#content-sidebars">
-     内容侧栏
+    <a class="reference internal nav-link" href="#activate-sidenotes-and-marginnotes">
+     Activate sidenotes and marginnotes
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#adding-content-to-margins-and-sidebars">
-     在页边距和侧边栏添加内容
+    <a class="reference internal nav-link" href="#create-a-sidenote">
+     Create a sidenote
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#create-a-marginnote">
+     Create a marginnote
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#block-margin-content-with-the-margin-directive">
+   Block margin content with the
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     {margin}
+    </span>
+   </code>
+   directive
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#figure-captions-in-the-margin">
+     页边距的图片说明
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#css-classes-for-custom-margin-content">
+     CSS classes for custom margin content
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#content-examples-in-the-margin">
+     Content examples in the margin
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sidebars">
+   侧边栏
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#full-width-content">
@@ -779,7 +801,23 @@ title="Print to PDF"
 <section id="quotations-and-epigraphs">
 <h2>语录和题记<a class="headerlink" href="#quotations-and-epigraphs" title="永久链接至标题">#</a></h2>
 <p>这是 <code class="docutils literal notranslate"><span class="pre">sphinx-book-theme</span></code> 中的引文和题记的样子。</p>
-<p>一段没有出处的引言：</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-title docutils">
+<p>Default markdown quotes</p>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="k">&gt; </span><span class="ge">Here&#39;s my quote, it&#39;s pretty neat.</span>
+<span class="k">&gt; </span><span class="ge">I wonder how many lines I can create with</span>
+<span class="k">&gt; </span><span class="ge">a single stream-of-consciousness quote.</span>
+<span class="k">&gt; </span><span class="ge">I could try to add a list of ideas to talk about.</span>
+<span class="k">&gt; </span><span class="ge">I suppose I could just keep going on forever,</span>
+<span class="k">&gt; </span><span class="ge">but I&#39;ll stop here.</span>
+</pre></div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
 <blockquote>
 <div><p>Here’s my quote, it’s pretty neat.
 I wonder how many lines I can create with
@@ -788,17 +826,18 @@ I could try to add a list of ideas to talk about.
 I suppose I could just keep going on forever,
 but I’ll stop here.</p>
 </div></blockquote>
+</div>
+</div>
+</div>
+</div>
 <p>有时你想让人们更多地注意到一句话。要做到这一点，请使用 <code class="docutils literal notranslate"><span class="pre">{epigraph}</span></code> 指令。下面是一个序言，点击它右边的按钮，显示用于生成该序言的代码：</p>
-<blockquote class="epigraph">
-<div><p>Here’s my quote, it’s pretty neat.
-I wonder how many lines I can create with
-a single stream-of-consciousness quote.
-I could try to add a list of ideas to talk about.
-I suppose I could just keep going on forever,
-but I’ll stop here.</p>
-</div></blockquote>
-<div class="toggle docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{epigraph}
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-title docutils">
+<p>A basic epigraph</p>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>```{epigraph}
 Here&#39;s my quote, it&#39;s pretty neat.
 I wonder how many lines I can create with
 a single stream-of-consciousness quote.
@@ -809,7 +848,8 @@ but I&#39;ll stop here.
 </pre></div>
 </div>
 </div>
-<p>你也可以通过添加一个空行，然后添加一个以 <code class="docutils literal notranslate"><span class="pre">--</span></code> 开头的行，来为书信添加署名。</p>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
 <blockquote class="epigraph">
 <div><p>Here’s my quote, it’s pretty neat.
 I wonder how many lines I can create with
@@ -817,10 +857,19 @@ a single stream-of-consciousness quote.
 I could try to add a list of ideas to talk about.
 I suppose I could just keep going on forever,
 but I’ll stop here.</p>
-<p class="attribution">—Jo the Jovyan, <em><a class="reference external" href="https://beta.jupyterbook.org">the jupyter book docs</a></em></p>
 </div></blockquote>
-<div class="toggle docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{epigraph}
+</div>
+</div>
+</div>
+</div>
+<p>你也可以通过添加一个空行，然后添加一个以 <code class="docutils literal notranslate"><span class="pre">--</span></code> 开头的行，来为书信添加署名。</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-title docutils">
+<p>Epigraphs with attribution</p>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>```{epigraph}
 Here&#39;s my quote, it&#39;s pretty neat.
 I wonder how many lines I can create with
 a single stream-of-consciousness quote.
@@ -828,139 +877,203 @@ I could try to add a list of ideas to talk about.
 I suppose I could just keep going on forever,
 but I&#39;ll stop here.
 
--- Jo the Jovyan, *[the jupyter book docs](https://beta.jupyterbook.org)*
+-- Jo the Jovyan, <span class="ge">*[the jupyter book docs](https://jupyterbook.org)*</span>
 ```
 </pre></div>
 </div>
 </div>
-</section>
-<section id="sidebars">
-<h2>侧边栏<a class="headerlink" href="#sidebars" title="永久链接至标题">#</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">sphinx-book-theme</span></code> 中有两种不同的类似侧边栏的内容，典型的 <code class="docutils literal notranslate"><span class="pre">{sidebar}</span></code> 指令，以及一个特定主题的 <code class="docutils literal notranslate"><span class="pre">{margin}</span></code> 指令。本节涵盖这两种指令。两者都允许你将额外的内容与你的主要内容分开放置。</p>
-<div class="admonition tip">
-<p class="admonition-title">小技巧</p>
-<p>侧边栏内容一般会与你的网站目录所在的白色空间重叠。当读者滚动侧边栏内容进入视野时，右边的 TOC 应该自动隐藏起来。</p>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+<blockquote class="epigraph">
+<div><p>Here’s my quote, it’s pretty neat.
+I wonder how many lines I can create with
+a single stream-of-consciousness quote.
+I could try to add a list of ideas to talk about.
+I suppose I could just keep going on forever,
+but I’ll stop here.</p>
+<p class="attribution">—Jo the Jovyan, <em><a class="reference external" href="https://jupyterbook.org">the jupyter book docs</a></em></p>
+</div></blockquote>
 </div>
-<section id="margin-content">
-<h3>页边距内容<a class="headerlink" href="#margin-content" title="永久链接至标题">#</a></h3>
-<p>你可以指定应该存在于右页边距的内容。这将表现得像一个普通的侧边栏，直到屏幕达到一定的宽度，在这一点上，这些内容将 “弹出” 到右边的页边距区域。</p>
-<p>有两种方法可以将内容添加到空白处：通过 <code class="docutils literal notranslate"><span class="pre">{margin}</span></code> 指令，以及通过向自己的内容添加 CSS 类。</p>
-<section id="use-a-margin-directive-to-add-margin-content">
-<h4>使用 <code class="docutils literal notranslate"><span class="pre">{margin}</span></code> 指令来添加页边距内容<a class="headerlink" href="#use-a-margin-directive-to-add-margin-content" title="永久链接至标题">#</a></h4>
-<p><code class="docutils literal notranslate"><span class="pre">{margin}</span></code> 指令允许你用自己的标题和内容块来创建边缘内容。它是Sphinx <code class="docutils literal notranslate"><span class="pre">{sidebar}</span></code> 指令的一个封装器，主要通过 CSS 类来实现其魔力（见下文）。</p>
+</div>
+</div>
+</div>
+</section>
+<section id="sidenotes-and-marginnotes">
+<span id="margin-sidenote"></span><h2>Sidenotes and marginnotes<a class="headerlink" href="#sidenotes-and-marginnotes" title="永久链接至标题">#</a></h2>
+<p>This theme has support for <a class="reference external" href="https://edwardtufte.github.io/tufte-css/">Tufte-style margin / side notes</a>, with a UX similar to <a class="reference external" href="https://github.com/jez/pandoc-sidenote">pandoc-sidenote</a>.</p>
+<p>Sidenotes are numbered, and behave like footnotes, except they live in the margin and don’t force the reader to jump their eye to the bottom of the page.
+For example, here is a sidenote<label for='sidenote-role-1' class='margin-toggle'><span id="id1">
+<sup>1</sup></span>
+
+</label><input type='checkbox' id='sidenote-role-1' name='sidenote-role-1' class='margin-toggle'><span class="sidenote"><sup>1</sup>Here’s my sidenote text!</span>.
+On narrow screens, sidenotes are hidden until a user clicks the number.
+If you’re on a mobile device, try clicking the sidenote number above.</p>
+<p>Marginnotes are not numbered, but behave the same way as sidenotes.
+On mobile devices you’ll see a symbol that will show the marginnote when clicked<label for='marginnote-role-2' class='margin-toggle marginnote-label'></label><input type='checkbox' id='marginnote-role-2' name='marginnote-role-2' class='margin-toggle'><span class="marginnote"> This is a margin note. Notice there isn’t a number preceding the note.</span>.
+For example, there’s a marginnote in the previous sentence, and you should see a symbol show to display it on mobile screens.</p>
+<div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<p>Sidenotes and marginnotes are inline content - you cannot use block-level content inside of these notes.
+If you’d like to use block-level content in the margins, see <a class="reference internal" href="#margin-block"><span class="std std-ref">Block margin content with the {margin} directive</span></a>.</p>
+</div>
+<section id="activate-sidenotes-and-marginnotes">
+<h3>Activate sidenotes and marginnotes<a class="headerlink" href="#activate-sidenotes-and-marginnotes" title="永久链接至标题">#</a></h3>
+<p>The theme activates sidenotes and marginnotes by over-riding footnote syntax to instead exist in the margin.</p>
+<p>To convert your footnotes to <em>instead</em> be sidenotes/marginnotes, use this configuration:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="o">...</span>
+  <span class="s2">&quot;use_sidenotes&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+  <span class="o">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>This will turn your <strong>footnotes</strong> into <strong>sidenotes</strong> or <strong>marginnotes</strong>.</p>
+</section>
+<section id="create-a-sidenote">
+<h3>Create a sidenote<a class="headerlink" href="#create-a-sidenote" title="永久链接至标题">#</a></h3>
+<p>The following sentence defines a sidenote and its respective content:</p>
+<span class="sidenote"><sup>3</sup>And here’s my sidenote content.</span><div class="docutils container">
+<p><strong>Result</strong></p>
+<p>Here’s my sentence and a sidenote<label for='sidenote-role-3' class='margin-toggle'><span id="id3">
+<sup>3</sup></span>
+
+</label><input type='checkbox' id='sidenote-role-3' name='sidenote-role-3' class='margin-toggle'><span class="sidenote d-n"><sup>3</sup>And here’s my sidenote content.</span>.</p>
+<p><strong>Source</strong></p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>Here&#39;s my sentence and a sidenote[^sn1].
+
+[<span class="nl">^sn1</span>]: <span class="na">And here&#39;s my sidenote content.</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="create-a-marginnote">
+<h3>Create a marginnote<a class="headerlink" href="#create-a-marginnote" title="永久链接至标题">#</a></h3>
+<p>Marginnotes are defined by adding <code class="docutils literal notranslate"><span class="pre">{-}</span></code> at the beginning of the content block.
+The following syntax defines a marginnote:</p>
+<span class="marginnote"> And here’s my marginnote content.</span><div class="docutils container">
+<p><strong>Result</strong></p>
+<p>Here’s my sentence and a marginnote<label for='marginnote-role-4' class='margin-toggle marginnote-label'></label><input type='checkbox' id='marginnote-role-4' name='marginnote-role-4' class='margin-toggle'><span class="marginnote d-n"> And here’s my marginnote content.</span>.</p>
+<p><strong>Source</strong></p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>Here&#39;s my sentence and a marginnote[^mn1].
+
+[<span class="nl">^mn1</span>]: <span class="na">{-} And here&#39;s my marginnote content.</span>
+</pre></div>
+</div>
+</div>
+</section>
+</section>
+<section id="block-margin-content-with-the-margin-directive">
+<span id="margin-block"></span><h2>Block margin content with the <code class="docutils literal notranslate"><span class="pre">{margin}</span></code> directive<a class="headerlink" href="#block-margin-content-with-the-margin-directive" title="永久链接至标题">#</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">{margin}</span></code> directive allows you to create block-level margin content with an optional title.
+It is a wrapper around the Sphinx <code class="docutils literal notranslate"><span class="pre">{sidebar}</span></code> directive, and largely does its magic via CSS classes (see below).</p>
+<div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<p>If you’d like in-line margin content with numbered references, see <a class="reference internal" href="#margin-sidenote"><span class="std std-ref">Sidenotes and marginnotes</span></a>.</p>
+</div>
 <p>下面是如何使用 <code class="docutils literal notranslate"><span class="pre">{margin}</span></code> 指令的：</p>
+<div class="docutils container">
+<p><strong>Result</strong></p>
 <aside class="margin sidebar">
 <p class="sidebar-title"><strong>Here is my margin content</strong></p>
 <p>It is pretty cool!</p>
 </aside>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{margin} **My margin title**
-Here is my margin content, it is pretty cool!
+<p><strong>Source</strong></p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>```{margin} <span class="gs">**Here is my margin content**</span>
+It is pretty cool!
 ```
 </pre></div>
 </div>
+</div>
+<section id="figure-captions-in-the-margin">
+<h3>页边距的图片说明<a class="headerlink" href="#figure-captions-in-the-margin" title="永久链接至标题">#</a></h3>
+<p>你可以配置图片，使其使用页边距来做标题。这里是一个图片，其标题在右边。</p>
+<div class="docutils container">
+<p><strong>Source</strong></p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gu">```{figure} images/cool.jpg</span>
+<span class="gu">---</span>
+width: 60%
+figclass: margin-caption
+alt: My figure text
+<span class="gu">name: myfig5</span>
+<span class="gu">---</span>
+And here is my figure caption, if you look to the left, you can see that COOL is in big red letters. But you probably already noticed that, really I am just taking up space to see how the margin caption looks like when it is really long :-).
+```
+</pre></div>
+</div>
+<p><strong>Result</strong></p>
+<figure class="margin-caption align-default" id="myfig5">
+<a class="reference internal image-reference" href="_images/cool.jpg"><img alt="My figure text" src="_images/cool.jpg" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-number">图 1 </span><span class="caption-text">这是我的图片说明，如果你看左边，你可以看到 COOL 是大红字。但你可能已经注意到了，其实我只是占用了一些空间，看看当标题真的很长时，边距是什么样子的：:-)。</span><a class="headerlink" href="#myfig5" title="永久链接至图片">#</a></p>
+</figcaption>
+</figure>
+</div>
+<p>我们可以用 <a class="reference internal" href="#myfig5"><span class="std std-ref">这个引用</span></a> 来引用这个图。或者像 <a class="reference internal" href="#myfig5"><span class="std std-numref">图 1</span></a> 这样的编号引用。</p>
 </section>
-<section id="use-css-classes-to-add-margin-content">
-<h4>使用 CSS 类来增加页边距内容<a class="headerlink" href="#use-css-classes-to-add-margin-content" title="永久链接至标题">#</a></h4>
+<section id="css-classes-for-custom-margin-content">
+<h3>CSS classes for custom margin content<a class="headerlink" href="#css-classes-for-custom-margin-content" title="永久链接至标题">#</a></h3>
 <p>你也可以直接给你的页面上的元素添加 CSS 类，以使它们表现得像页边距内容。要做到这一点，请将 <code class="docutils literal notranslate"><span class="pre">margin</span></code> CSS 类添加到页面上的任何元素。许多 Sphinx 指令允许你直接添加类。例如，下面是在 <code class="docutils literal notranslate"><span class="pre">{note}</span></code> 指令中添加 <code class="docutils literal notranslate"><span class="pre">margin</span></code> 类的语法：</p>
+<div class="docutils container">
+<p><strong>Result</strong></p>
 <div class="margin admonition note">
 <p class="admonition-title">备注</p>
 <p>This note will be in the margin!</p>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>:::{note}
+<p><strong>Source</strong></p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{note}
 :class: margin
 This note will be in the margin!
 :::
 </pre></div>
 </div>
-<p>对页面上的大多数元素都有效，但一般来说，对作为内容束最顶端的元素的 “父容器” 效果最好。</p>
-<p>例如，我们甚至可以像这样把一个完整的图片放在页边距：</p>
-<p>如果你愿意，你也可以把整个图片写在页边距。这里是一个图片，下面有一个标题。我们在下面加一个说明，创造一些垂直空间，以便看得更清楚。</p>
+</div>
+<p>This works for most elements on the page, but in general this works best for “parent containers” that are the top-most element of a bundle of content.
+For example, you can also put the whole figure in the margin if you like.
+Here is a figure with a caption below. We’ll add a note below to create
+some vertical space to see better.</p>
+<div class="docutils container">
+<p><strong>Result</strong></p>
 <figure class="margin align-default" id="myfig4">
 <img alt="My figure text" src="_images/cool.jpg" />
 <figcaption>
-<p><span class="caption-number">图 1 </span><span class="caption-text">这是我的图片说明</span><a class="headerlink" href="#myfig4" title="永久链接至图片">#</a></p>
+<p><span class="caption-number">图 2 </span><span class="caption-text">这是我的图片说明</span><a class="headerlink" href="#myfig4" title="永久链接至图片">#</a></p>
 </figcaption>
 </figure>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{figure} images/cool.jpg
----
+<p><strong>Source</strong></p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gu">```{figure} images/cool.jpg</span>
+<span class="gu">---</span>
 figclass: margin
 alt: My figure text
-name: myfig4
----
+<span class="gu">name: myfig4</span>
+<span class="gu">---</span>
 And here is my figure caption
 ```
 </pre></div>
 </div>
-<p>我们可以用 <a class="reference internal" href="#myfig4"><span class="std std-ref">这是我的图片说明</span></a> 来引用该图。或者用 <a class="reference internal" href="#myfig4"><span class="std std-numref">图 1</span></a> 这样的编号引用。</p>
-</section>
-<section id="figure-captions-in-the-margin">
-<h4>页边距的图片说明<a class="headerlink" href="#figure-captions-in-the-margin" title="永久链接至标题">#</a></h4>
-<p>你可以配置图片，使其使用页边距来做标题。这里是一个图片，其标题在右边。</p>
-<figure class="margin-caption align-default" id="myfig5">
-<a class="reference internal image-reference" href="_images/cool.jpg"><img alt="My figure text" src="_images/cool.jpg" style="width: 60%;" /></a>
-<figcaption>
-<p><span class="caption-number">图 2 </span><span class="caption-text">这是我的图片说明，如果你看左边，你可以看到 COOL 是大红字。但你可能已经注意到了，其实我只是占用了一些空间，看看当标题真的很长时，边距是什么样子的：:-)。</span><a class="headerlink" href="#myfig5" title="永久链接至图片">#</a></p>
-</figcaption>
-</figure>
-<p>以及产生它的文本：</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{figure} images/cool.jpg
----
-width: 60%
-figclass: margin-caption
-alt: My figure text
-name: myfig5
----
-And here is my figure caption, if you look to the left, you can see that COOL is in big red letters. But you probably already noticed that, really I am just taking up space to see how the margin caption looks like when it is really long :-)
-```
-</pre></div>
 </div>
-<p>我们可以用 <a class="reference internal" href="#myfig5"><span class="std std-ref">这个引用</span></a> 来引用这个图。或者像 <a class="reference internal" href="#myfig5"><span class="std std-numref">图 2</span></a> 这样的编号引用。</p>
+<p>我们可以用 <a class="reference internal" href="#myfig4"><span class="std std-ref">这是我的图片说明</span></a> 来引用该图。或者用 <a class="reference internal" href="#myfig4"><span class="std std-numref">图 2</span></a> 这样的编号引用。</p>
 </section>
-</section>
-<section id="content-sidebars">
-<h3>内容侧栏<a class="headerlink" href="#content-sidebars" title="永久链接至标题">#</a></h3>
-<p>内容侧栏与你的文本并列存在，但允许页面的其他部分围绕它们流动，而不是移动到右边的空白处。要添加内容侧边栏，请使用以下语法：</p>
-<aside class="sidebar">
-<p class="sidebar-title">我的侧边栏标题</p>
-<div class="admonition note">
-<p class="admonition-title">备注</p>
-<p>这是我的侧边栏内容，它是相当酷的！</p>
-</div>
-<p><img alt="" src="_images/cool.jpg" /></p>
-</aside>
-<p>注意内容是如何围绕着侧边栏向右包裹的。然而，侧边栏的文字仍将与你的内容保持一致。有一些元素，如 “note” 块和代码单元，可能会与侧边栏发生冲突。如果发生这种情况，可以尝试使用 <code class="docutils literal notranslate"><span class="pre">{margin}</span></code> 来代替。</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{sidebar} **My sidebar title**
-Here is my sidebar content, it is pretty cool!
-```
-</pre></div>
-</div>
-</section>
-<section id="adding-content-to-margins-and-sidebars">
-<h3>在页边距和侧边栏添加内容<a class="headerlink" href="#adding-content-to-margins-and-sidebars" title="永久链接至标题">#</a></h3>
-<p>侧边栏/页边距内容可以包括各种东西，如代码块：</p>
+<section id="content-examples-in-the-margin">
+<h3>Content examples in the margin<a class="headerlink" href="#content-examples-in-the-margin" title="永久链接至标题">#</a></h3>
+<p>Margin content can include all kinds of things, such as code blocks:</p>
 <aside class="margin sidebar">
 <p class="sidebar-title">Code blocks in margins</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;here is some python&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </aside>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````{margin} Code blocks in margins
-```python
-print(&quot;here is some python&quot;)
-```
-````
+<aside class="margin sidebar">
+<p class="sidebar-title">Code blocks in margins</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;here is some python&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>以及告诫和图像：</p>
-<aside class="margin sidebar">
-<p class="sidebar-title"><strong>Notes in margins</strong></p>
-<div class="admonition note">
-<p class="admonition-title">备注</p>
-<p>Wow, a note with an image in a margin!
-<img alt="" src="_images/cool.jpg" /></p>
-</div>
 </aside>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````{margin} **Notes in margins**
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+`````{example} Admonitions and images in the margin
+:no-container:
+:reverse:
+
+````{margin} **Notes in margins**
 ```{note}
 Wow, a note with an image in a margin!
 ![](images/cool.jpg)
@@ -970,24 +1083,55 @@ Wow, a note with an image in a margin!
 </div>
 </section>
 </section>
+<section id="sidebars">
+<h2>侧边栏<a class="headerlink" href="#sidebars" title="永久链接至标题">#</a></h2>
+<p>Sidebars exist in-line with your text, but allow the rest of the
+page to flow around them, rather than moving to the right margin.</p>
+<p>To add content sidebars, use this syntax:</p>
+<div class="docutils container">
+<p><strong>Source</strong></p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>````{sidebar} <span class="gs">**My sidebar title**</span>
+```{note}
+Here is my sidebar content, it is pretty cool!
+```
+![](images/cool.jpg)
+````
+</pre></div>
+</div>
+<p><strong>Result</strong></p>
+<aside class="sidebar">
+<p class="sidebar-title"><strong>My sidebar title</strong></p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>这是我的侧边栏内容，它是相当酷的！</p>
+</div>
+<p><img alt="" src="_images/cool.jpg" /></p>
+</aside>
+</div>
+<p>注意内容是如何围绕着侧边栏向右包裹的。然而，侧边栏的文字仍将与你的内容保持一致。有一些元素，如 “note” 块和代码单元，可能会与侧边栏发生冲突。如果发生这种情况，可以尝试使用 <code class="docutils literal notranslate"><span class="pre">{margin}</span></code> 来代替。</p>
+</section>
 <section id="full-width-content">
 <h2>全宽内容<a class="headerlink" href="#full-width-content" title="永久链接至标题">#</a></h2>
 <p>全宽内容延伸到右边的空白处，使它在你的书的其他内容中脱颖而出。要在你的页面上添加全宽内容，请在文档中的任何元素上添加 <code class="docutils literal notranslate"><span class="pre">full-width</span></code> 类。例如，你可以像这样给笔记元素添加一个 <code class="docutils literal notranslate"><span class="pre">full-width</span></code> 标签：</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{note}
+<div class="docutils container">
+<p><strong>Source</strong></p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>```{note}
 :class: full-width
 This content will be full-width
 ```
 </pre></div>
 </div>
-<p>这段代码的输出结果如下：</p>
+<p><strong>Result</strong></p>
 <div class="full-width admonition note">
 <p class="admonition-title">备注</p>
 <p>这个内容将是全宽的</p>
+</div>
 </div>
 <div class="admonition-a-note-for-ipynb-users admonition">
 <p class="admonition-title">给 ipynb 用户的说明</p>
 <p>如果你使用 <a class="reference external" href="https://myst-nb.readthedocs.io/en/latest/">MyST-NB 插件</a> 的 Jupyter 笔记本作为文档的输入，你可以通过在代码单元中添加 <code class="docutils literal notranslate"><span class="pre">full-width</span></code> 标签来触发这一行为。</p>
 </div>
+<hr class="footnotes docutils" />
 </section>
 </section>
 
@@ -1045,7 +1189,7 @@ This content will be full-width
     By the Executable Book Project<br/>
   
       &copy; Copyright 2020.<br/>
-    Last updated on 2022 年 04 月 13 日.<br/>
+    Last updated on 2022 年 08 月 05 日.<br/>
 </p>
         </footer>
     </div>

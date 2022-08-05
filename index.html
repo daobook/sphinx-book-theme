@@ -29,13 +29,15 @@
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-examples.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="_static/tabs.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.59c74d8c95b765a7fd995ac71d459ebe.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
@@ -50,7 +52,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=532d1baf3f03eb73f2f50828f8c27430120b156d"></script>
     <script src="_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/design-tabs.js"></script>
@@ -648,6 +650,7 @@ title="Print to PDF"
 <li class="toctree-l1"><a class="reference internal" href="reference/special-theme-elements.html">Theme-specific elements</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="reference/special-theme-elements.html#full-width-elements">Full-width elements</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reference/special-theme-elements.html#margins">Margins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/special-theme-elements.html#sidenotes-and-marginnotes">Sidenotes and marginnotes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reference/special-theme-elements.html#nested-admonitions">Nested admonitions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reference/special-theme-elements.html#myst-markdown-elements">MyST Markdown elements</a></li>
 </ul>
@@ -658,6 +661,7 @@ title="Print to PDF"
 <li class="toctree-l2"><a class="reference internal" href="reference/extensions.html#sphinx-togglebutton-toggle-content-with-buttons"><code class="docutils literal notranslate"><span class="pre">sphinx-togglebutton</span></code> - Toggle content with buttons</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reference/extensions.html#sphinx-tabs-tabbed-content"><code class="docutils literal notranslate"><span class="pre">sphinx-tabs</span></code> - Tabbed content</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reference/extensions.html#sphinxcontrib-youtube-for-videos"><code class="docutils literal notranslate"><span class="pre">sphinxcontrib.youtube</span></code> for videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/extensions.html#sphinx-design-for-ui-components"><code class="docutils literal notranslate"><span class="pre">sphinx-design</span></code> for UI components</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="reference/notebooks.html">Jupyter notebooks</a><ul>
@@ -683,6 +687,7 @@ title="Print to PDF"
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#v0-3-3-2022-07-17">v0.3.3 – 2022-07-17</a></li>
 <li class="toctree-l2"><a class="reference internal" href="changelog.html#v0-3-2-2022-03-28">v0.3.2 – 2022-03-28</a></li>
 <li class="toctree-l2"><a class="reference internal" href="changelog.html#v0-3-0-2022-03-25">v0.3.0 - 2022-03-25</a></li>
 <li class="toctree-l2"><a class="reference internal" href="changelog.html#v0-1-10-v0-2-0">v0.1.10…v0.2.0</a></li>
@@ -702,7 +707,7 @@ title="Print to PDF"
 <li class="toctree-l2"><a class="reference internal" href="changelog.html#v0-0-40-2021-02-27">v0.0.40 - 2021-02-27</a></li>
 <li class="toctree-l2"><a class="reference internal" href="changelog.html#v0-0-39-2020-11-08">v0.0.39 - 2020-11-08</a></li>
 <li class="toctree-l2"><a class="reference internal" href="changelog.html#v0-0-38">v0.0.38</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog.html#id16">Enhancements made</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#id17">Enhancements made</a></li>
 <li class="toctree-l2"><a class="reference internal" href="changelog.html#v0-0-37">v0.0.37</a></li>
 <li class="toctree-l2"><a class="reference internal" href="changelog.html#v0-0-36-2020-08-25">v0.0.36 2020-08-25</a></li>
 <li class="toctree-l2"><a class="reference internal" href="changelog.html#v0-0-34-v0-0-35">v0.0.34…v0.0.35</a></li>
@@ -770,7 +775,7 @@ title="Print to PDF"
     By the Executable Book Project<br/>
   
       &copy; Copyright 2020.<br/>
-    Last updated on 2022 年 04 月 13 日.<br/>
+    Last updated on 2022 年 08 月 05 日.<br/>
 </p>
         </footer>
     </div>

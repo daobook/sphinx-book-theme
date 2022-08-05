@@ -8,29 +8,26 @@ msgstr ""
 "Language: sv\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "open issue"
+msgstr "öppet problem"
+
+msgid "Search this book..."
+msgstr "Sök i den här boken ..."
+
+msgid "Sphinx Book Theme"
+msgstr "Sphinx boktema"
+
 msgid "Print to PDF"
 msgstr "Skriv ut till PDF"
 
 msgid "By"
 msgstr "Förbi"
 
-msgid "Theme by the"
-msgstr "Tema av"
+msgid "next page"
+msgstr "nästa sida"
 
-msgid "Search this book..."
-msgstr "Sök i den här boken ..."
-
-msgid "Search the docs ..."
-msgstr "Sök i dokumenten ..."
-
-msgid "Last updated on"
-msgstr "Senast uppdaterad den"
-
-msgid "Sphinx Book Theme"
-msgstr "Sphinx boktema"
-
-msgid "Copyright"
-msgstr "upphovsrätt"
+msgid "Launch"
+msgstr "Lansera"
 
 msgid "Fullscreen mode"
 msgstr "Fullskärmsläge"
@@ -38,44 +35,47 @@ msgstr "Fullskärmsläge"
 msgid "Download this page"
 msgstr "Ladda ner den här sidan"
 
-msgid "Launch"
-msgstr "Lansera"
+msgid "repository"
+msgstr "förvar"
 
 msgid "Contents"
 msgstr "Innehåll"
 
-msgid "Download notebook file"
-msgstr "Ladda ner anteckningsbokfilen"
-
-msgid "repository"
-msgstr "förvar"
-
-msgid "By the"
-msgstr "Vid"
-
-msgid "next page"
-msgstr "nästa sida"
-
-msgid "Toggle navigation"
-msgstr "Växla navigering"
-
-msgid "Open an issue"
-msgstr "Öppna ett problem"
-
-msgid "Source repository"
-msgstr "Källförvar"
-
-msgid "open issue"
-msgstr "öppet problem"
+msgid "Edit this page"
+msgstr "Redigera den här sidan"
 
 msgid "suggest edit"
 msgstr "föreslå redigering"
 
-msgid "Edit this page"
-msgstr "Redigera den här sidan"
+msgid "Toggle navigation"
+msgstr "Växla navigering"
+
+msgid "By the"
+msgstr "Vid"
 
 msgid "previous page"
 msgstr "föregående sida"
 
+msgid "Source repository"
+msgstr "Källförvar"
+
 msgid "Download source file"
 msgstr "Ladda ner källfil"
+
+msgid "Open an issue"
+msgstr "Öppna ett problem"
+
+msgid "Theme by the"
+msgstr "Tema av"
+
+msgid "Search the docs ..."
+msgstr "Sök i dokumenten ..."
+
+msgid "Last updated on"
+msgstr "Senast uppdaterad den"
+
+msgid "Copyright"
+msgstr "upphovsrätt"
+
+msgid "Download notebook file"
+msgstr "Ladda ner anteckningsbokfilen"

@@ -8,29 +8,26 @@ msgstr ""
 "Language: no\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "open issue"
+msgstr "åpent nummer"
+
+msgid "Search this book..."
+msgstr "Søk i denne boken ..."
+
+msgid "Sphinx Book Theme"
+msgstr "Sphinx boktema"
+
 msgid "Print to PDF"
 msgstr "Skriv ut til PDF"
 
 msgid "By"
 msgstr "Av"
 
-msgid "Theme by the"
-msgstr "Tema av"
+msgid "next page"
+msgstr "neste side"
 
-msgid "Search this book..."
-msgstr "Søk i denne boken ..."
-
-msgid "Search the docs ..."
-msgstr "Søk i dokumentene ..."
-
-msgid "Last updated on"
-msgstr "Sist oppdatert den"
-
-msgid "Sphinx Book Theme"
-msgstr "Sphinx boktema"
-
-msgid "Copyright"
-msgstr "opphavsrett"
+msgid "Launch"
+msgstr "Start"
 
 msgid "Fullscreen mode"
 msgstr "Fullskjerm-modus"
@@ -38,44 +35,47 @@ msgstr "Fullskjerm-modus"
 msgid "Download this page"
 msgstr "Last ned denne siden"
 
-msgid "Launch"
-msgstr "Start"
+msgid "repository"
+msgstr "oppbevaringssted"
 
 msgid "Contents"
 msgstr "Innhold"
 
-msgid "Download notebook file"
-msgstr "Last ned notatbokfilen"
-
-msgid "repository"
-msgstr "oppbevaringssted"
-
-msgid "By the"
-msgstr "Ved"
-
-msgid "next page"
-msgstr "neste side"
-
-msgid "Toggle navigation"
-msgstr "Bytt navigasjon"
-
-msgid "Open an issue"
-msgstr "Åpne et problem"
-
-msgid "Source repository"
-msgstr "Kildedepot"
-
-msgid "open issue"
-msgstr "åpent nummer"
+msgid "Edit this page"
+msgstr "Rediger denne siden"
 
 msgid "suggest edit"
 msgstr "foreslå redigering"
 
-msgid "Edit this page"
-msgstr "Rediger denne siden"
+msgid "Toggle navigation"
+msgstr "Bytt navigasjon"
+
+msgid "By the"
+msgstr "Ved"
 
 msgid "previous page"
 msgstr "forrige side"
 
+msgid "Source repository"
+msgstr "Kildedepot"
+
 msgid "Download source file"
 msgstr "Last ned kildefilen"
+
+msgid "Open an issue"
+msgstr "Åpne et problem"
+
+msgid "Theme by the"
+msgstr "Tema av"
+
+msgid "Search the docs ..."
+msgstr "Søk i dokumentene ..."
+
+msgid "Last updated on"
+msgstr "Sist oppdatert den"
+
+msgid "Copyright"
+msgstr "opphavsrett"
+
+msgid "Download notebook file"
+msgstr "Last ned notatbokfilen"
