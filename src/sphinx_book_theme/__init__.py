@@ -5,15 +5,17 @@ from pathlib import Path
 from functools import lru_cache
 
 from docutils.parsers.rst.directives.body import Sidebar
-from docutils import nodes
+from docutils import nodes as docutil_nodes
 from sphinx.application import Sphinx
 from sphinx.locale import get_translation
 from sphinx.util import logging
 
+from .nodes import SideNoteNode
 from .header_buttons import prep_header_buttons, add_header_buttons
 from .header_buttons.launch import add_launch_buttons
+from ._transforms import HandleFootnoteTransform
 
-__version__ = "0.3.2"
+__version__ = "0.3.3"
 """sphinx-book-theme version"""
 
 SPHINX_LOGGER = logging.getLogger(__name__)
@@ -43,7 +45,7 @@ def add_metadata_to_page(app, pagename, templatename, context, doctree):
     # Add a shortened page text to the context using the sections text
     if doctree:
         description = ""
-        for section in doctree.traverse(nodes.section):
+        for section in doctree.traverse(docutil_nodes.section):
             description += section.astext().replace("\n", " ")
         description = description[:160]
         context["page_description"] = description
@@ -162,6 +164,16 @@ class Margin(Sidebar):
         return nodes
 
 
+def update_general_config(app, config):
+    theme_dir = get_html_theme_path()
+    # Update templates for sidebar. Needed for jupyter-book builds as jb
+    # uses an instance of Sphinx class from sphinx.application to build the app.
+    # The __init__ function of which calls self.config.init_values() just
+    # before emitting `config-inited` event. The init_values function overwrites
+    # templates_path variable.
+    config.templates_path.append(os.path.join(theme_dir, "components"))
+
+
 def setup(app: Sphinx):
     # Register theme
     theme_dir = get_html_theme_path()
@@ -174,8 +186,12 @@ def setup(app: Sphinx):
 
     # Events
     app.connect("builder-inited", update_thebe_config)
+    app.connect("config-inited", update_general_config)
     app.connect("html-page-context", add_metadata_to_page)
     app.connect("html-page-context", hash_html_assets)
+
+    # Nodes
+    SideNoteNode.add_node(app)
 
     # Header buttons
     app.connect("html-page-context", prep_header_buttons)
@@ -186,7 +202,11 @@ def setup(app: Sphinx):
     # Directives
     app.add_directive("margin", Margin)
 
-    # Update templates for sidebar
+    # Post-transforms
+    app.add_post_transform(HandleFootnoteTransform)
+
+    # Update templates for sidebar, for builds where config-inited is not called
+    # (does not work in case of jupyter-book)
     app.config.templates_path.append(os.path.join(theme_dir, "components"))
 
     return {
