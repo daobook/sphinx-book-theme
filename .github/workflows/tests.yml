@@ -112,7 +112,7 @@ jobs:
           --exclude 'pathto\('
 
     - name: Audit with Lighthouse
-      uses: treosh/lighthouse-ci-action@9.3.0
+      uses: treosh/lighthouse-ci-action@12.1.0
       with:
         configPath: ".github/workflows/lighthouserc.json"
         temporaryPublicStorage: true
