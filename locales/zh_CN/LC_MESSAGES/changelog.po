@@ -1,0 +1,1805 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023
+# This file is distributed under the same license as the Sphinx Book Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Book Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-19 22:28+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../../CHANGELOG.md:2
+msgid "Changelog"
+msgstr ""
+
+#: ../../../CHANGELOG.md:4
+msgid "v1.1.2 -- 2024-02-13"
+msgstr ""
+
+#: ../../../CHANGELOG.md:6
+msgid ""
+"([full changelog](https://github.com/executablebooks/sphinx-book-"
+"theme/compare/v1.1.1...3da24da74f6042599fe6c9e2d612f5cbdef42280))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:8 ../../../CHANGELOG.md:26 ../../../CHANGELOG.md:50
+#: ../../../CHANGELOG.md:125 ../../../CHANGELOG.md:225
+#: ../../../CHANGELOG.md:286 ../../../CHANGELOG.md:296
+#: ../../../CHANGELOG.md:304 ../../../CHANGELOG.md:314
+#: ../../../CHANGELOG.md:342 ../../../CHANGELOG.md:359
+#: ../../../CHANGELOG.md:388 ../../../CHANGELOG.md:403
+#: ../../../CHANGELOG.md:422 ../../../CHANGELOG.md:427
+msgid "Enhancements made"
+msgstr ""
+
+#: ../../../CHANGELOG.md:10
+msgid ""
+"ENH: bump version [#818](https://github.com/executablebooks/sphinx-book-"
+"theme/pull/818) ([@agoose77](https://github.com/agoose77))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:12 ../../../CHANGELOG.md:30 ../../../CHANGELOG.md:56
+#: ../../../CHANGELOG.md:135 ../../../CHANGELOG.md:320
+#: ../../../CHANGELOG.md:348 ../../../CHANGELOG.md:363
+#: ../../../CHANGELOG.md:379 ../../../CHANGELOG.md:407
+msgid "Bugs fixed"
+msgstr ""
+
+#: ../../../CHANGELOG.md:14
+msgid ""
+"FIX: correct event-handler signature "
+"[#817](https://github.com/executablebooks/sphinx-book-theme/pull/817) "
+"([@agoose77](https://github.com/agoose77))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:16 ../../../CHANGELOG.md:39 ../../../CHANGELOG.md:106
+#: ../../../CHANGELOG.md:178 ../../../CHANGELOG.md:446
+#: ../../../CHANGELOG.md:458 ../../../CHANGELOG.md:482
+msgid "Contributors to this release"
+msgstr ""
+
+#: ../../../CHANGELOG.md:18
+msgid ""
+"([GitHub contributors page for this "
+"release](https://github.com/executablebooks/sphinx-book-"
+"theme/graphs/contributors?from=2024-02-13&to=2024-02-13&type=c))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:20
+#, python-format
+msgid ""
+"[@agoose77](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3Aagoose77+updated%3A2024-02-13..2024-02-13&type=Issues)"
+msgstr ""
+
+#: ../../../CHANGELOG.md:22
+msgid "v1.1.1 -- 2024-02-13"
+msgstr ""
+
+#: ../../../CHANGELOG.md:24
+msgid ""
+"([full changelog](https://github.com/executablebooks/sphinx-book-"
+"theme/compare/v1.1.0...9335ab99b0bc77b826cb2c5afcef3432f14e8780))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:28
+msgid ""
+"ENH: bump version for 1.1.1 [#815](https://github.com/executablebooks"
+"/sphinx-book-theme/pull/815) ([@agoose77](https://github.com/agoose77))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:32
+msgid ""
+"FIX: use `config-inited` event to register config "
+"[#814](https://github.com/executablebooks/sphinx-book-theme/pull/814) "
+"([@agoose77](https://github.com/agoose77))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:34 ../../../CHANGELOG.md:78
+msgid "Other merged PRs"
+msgstr ""
+
+#: ../../../CHANGELOG.md:36
+msgid ""
+"Build(deps): Bump actions/setup-python from 4 to 5 "
+"[#803](https://github.com/executablebooks/sphinx-book-theme/pull/803) "
+"([@dependabot](https://github.com/dependabot))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:37
+msgid ""
+"[pre-commit.ci] pre-commit autoupdate "
+"[#801](https://github.com/executablebooks/sphinx-book-theme/pull/801) "
+"([@pre-commit-ci](https://github.com/pre-commit-ci))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:41
+msgid ""
+"([GitHub contributors page for this "
+"release](https://github.com/executablebooks/sphinx-book-"
+"theme/graphs/contributors?from=2023-12-19&to=2024-02-13&type=c))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:43
+#, python-format
+msgid ""
+"[@agoose77](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3Aagoose77+updated%3A2023-12-19..2024-02-13&type=Issues) |"
+" [@choldgraf](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Acholdgraf+updated%3A2023-12-19..2024-02-13&type=Issues) "
+"| [@dependabot](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Adependabot+updated%3A2023-12-19..2024-02-13&type=Issues)"
+" | [@ghisvail](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Aghisvail+updated%3A2023-12-19..2024-02-13&type=Issues) |"
+" [@pre-commit-ci](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-theme+involves%3Apre-commit-"
+"ci+updated%3A2023-12-19..2024-02-13&type=Issues) | "
+"[@welcome](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3Awelcome+updated%3A2023-12-19..2024-02-13&type=Issues)"
+msgstr ""
+
+#: ../../../CHANGELOG.md:46
+msgid "v1.1.0 -- 2023-12-19"
+msgstr ""
+
+#: ../../../CHANGELOG.md:48
+msgid ""
+"([full changelog](https://github.com/executablebooks/sphinx-book-"
+"theme/compare/v1.0.1...v1.1.0))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:52
+msgid ""
+"ENH: prepare for 1.1.0rc2 [#793](https://github.com/executablebooks"
+"/sphinx-book-theme/pull/793) ([@agoose77](https://github.com/agoose77))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:53
+msgid ""
+"ENH: Add search field back to sidebar "
+"[#775](https://github.com/executablebooks/sphinx-book-theme/pull/775) "
+"([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:54
+msgid ""
+"ENH: Update Swedish translations "
+"[#724](https://github.com/executablebooks/sphinx-book-theme/pull/724) "
+"([@Kladdy](https://github.com/Kladdy))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:58
+msgid ""
+"FIX: don't include `_static` in css_files "
+"[#794](https://github.com/executablebooks/sphinx-book-theme/pull/794) "
+"([@agoose77](https://github.com/agoose77))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:59
+msgid ""
+"FIX: properly handle CSS objects in css_files "
+"[#791](https://github.com/executablebooks/sphinx-book-theme/pull/791) "
+"([@agoose77](https://github.com/agoose77))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:60
+msgid ""
+"FIX: builds on Windows and docs errors "
+"[#784](https://github.com/executablebooks/sphinx-book-theme/pull/784) "
+"([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:61
+msgid ""
+"FIX: Correctly disappear search button icon on wide screens "
+"[#781](https://github.com/executablebooks/sphinx-book-theme/pull/781) "
+"([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:62
+msgid ""
+"FIX: set bd-docs-nav as a class attribute instead of an id to restore "
+"compat with pydata-sphinx-theme JS "
+"[#754](https://github.com/executablebooks/sphinx-book-theme/pull/754) "
+"([@ogrisel](https://github.com/ogrisel))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:63
+msgid ""
+"FIX: typos in navbar documentation "
+"[#707](https://github.com/executablebooks/sphinx-book-theme/pull/707) "
+"([@CalMacCQ](https://github.com/CalMacCQ))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:65 ../../../CHANGELOG.md:142
+msgid "Maintenance and upkeep improvements"
+msgstr ""
+
+#: ../../../CHANGELOG.md:67
+msgid ""
+"MAINT: use codespell in pre-commit "
+"[#788](https://github.com/executablebooks/sphinx-book-theme/pull/788) "
+"([@agoose77](https://github.com/agoose77))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:68
+msgid ""
+"MAINT: use ruff instead of black "
+"[#776](https://github.com/executablebooks/sphinx-book-theme/pull/776) "
+"([@agoose77](https://github.com/agoose77))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:69
+msgid ""
+"MAINT: Fix tests with updated upstream "
+"[#766](https://github.com/executablebooks/sphinx-book-theme/pull/766) "
+"([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:71 ../../../CHANGELOG.md:151
+msgid "Documentation improvements"
+msgstr ""
+
+#: ../../../CHANGELOG.md:73
+msgid ""
+"DOCS: update CHANGELOG for deprecation "
+"[#790](https://github.com/executablebooks/sphinx-book-theme/pull/790) "
+"([@agoose77](https://github.com/agoose77))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:74
+msgid ""
+"DOCS: use `datetime` as kitchen-sink API module "
+"[#787](https://github.com/executablebooks/sphinx-book-theme/pull/787) "
+"([@agoose77](https://github.com/agoose77))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:75
+msgid ""
+"DOCS: Update required minimum Python version to 3.9 in docs "
+"[#767](https://github.com/executablebooks/sphinx-book-theme/pull/767) "
+"([@stevepiercy](https://github.com/stevepiercy))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:76
+msgid ""
+"DOCS: Typo correction [#730](https://github.com/executablebooks/sphinx-"
+"book-theme/pull/730) ([@Alex-JG3](https://github.com/Alex-JG3))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:80
+msgid ""
+"[pre-commit.ci] pre-commit autoupdate "
+"[#789](https://github.com/executablebooks/sphinx-book-theme/pull/789) "
+"([@pre-commit-ci](https://github.com/pre-commit-ci))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:81
+msgid ""
+"Build(deps): Bump pypa/gh-action-pypi-publish from 1.8.10 to 1.8.11 "
+"[#785](https://github.com/executablebooks/sphinx-book-theme/pull/785) "
+"([@dependabot](https://github.com/dependabot))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:82
+msgid ""
+"[pre-commit.ci] pre-commit autoupdate "
+"[#783](https://github.com/executablebooks/sphinx-book-theme/pull/783) "
+"([@pre-commit-ci](https://github.com/pre-commit-ci))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:83
+msgid ""
+"RLS: v1.1.0rc1 [#780](https://github.com/executablebooks/sphinx-book-"
+"theme/pull/780) ([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:84
+msgid ""
+"[pre-commit.ci] pre-commit autoupdate "
+"[#779](https://github.com/executablebooks/sphinx-book-theme/pull/779) "
+"([@pre-commit-ci](https://github.com/pre-commit-ci))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:85
+msgid ""
+"Update style.md [#774](https://github.com/executablebooks/sphinx-book-"
+"theme/pull/774) ([@callezenwaka](https://github.com/callezenwaka))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:86
+msgid ""
+"Update launch.md [#773](https://github.com/executablebooks/sphinx-book-"
+"theme/pull/773) ([@callezenwaka](https://github.com/callezenwaka))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:87
+msgid ""
+"[pre-commit.ci] pre-commit autoupdate "
+"[#772](https://github.com/executablebooks/sphinx-book-theme/pull/772) "
+"([@pre-commit-ci](https://github.com/pre-commit-ci))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:88
+msgid ""
+"Make article width take up whole page in absence of secondary sidebar "
+"[#771](https://github.com/executablebooks/sphinx-book-theme/pull/771) "
+"([@flying-sheep](https://github.com/flying-sheep))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:89
+msgid ""
+"Build(deps): Bump actions/checkout from 3 to 4 "
+"[#764](https://github.com/executablebooks/sphinx-book-theme/pull/764) "
+"([@dependabot](https://github.com/dependabot))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:90
+msgid ""
+"Update footer.md [#756](https://github.com/executablebooks/sphinx-book-"
+"theme/pull/756) ([@Sdaher21](https://github.com/Sdaher21))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:91
+msgid ""
+"Build(deps): Bump pypa/gh-action-pypi-publish from 1.8.7 to 1.8.10 "
+"[#755](https://github.com/executablebooks/sphinx-book-theme/pull/755) "
+"([@dependabot](https://github.com/dependabot))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:92
+msgid ""
+"[pre-commit.ci] pre-commit autoupdate "
+"[#748](https://github.com/executablebooks/sphinx-book-theme/pull/748) "
+"([@pre-commit-ci](https://github.com/pre-commit-ci))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:93
+msgid ""
+"Build(deps): Bump pypa/gh-action-pypi-publish from 1.8.6 to 1.8.7 "
+"[#747](https://github.com/executablebooks/sphinx-book-theme/pull/747) "
+"([@dependabot](https://github.com/dependabot))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:94
+msgid ""
+"Sphinx 7 support [#744](https://github.com/executablebooks/sphinx-book-"
+"theme/pull/744) ([@LecrisUT](https://github.com/LecrisUT))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:95
+msgid ""
+"update python requirements according to NEP 29 "
+"[#741](https://github.com/executablebooks/sphinx-book-theme/pull/741) "
+"([@akhmerov](https://github.com/akhmerov))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:96
+msgid ""
+"add support for gitlab issue button "
+"[#740](https://github.com/executablebooks/sphinx-book-theme/pull/740) "
+"([@akhmerov](https://github.com/akhmerov))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:97
+msgid ""
+"Build(deps): Bump pypa/gh-action-pypi-publish from 1.8.4 to 1.8.6 "
+"[#739](https://github.com/executablebooks/sphinx-book-theme/pull/739) "
+"([@dependabot](https://github.com/dependabot))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:98
+msgid ""
+"Build(deps): Bump codecov/codecov-action from 3.1.1 to 3.1.4 "
+"[#738](https://github.com/executablebooks/sphinx-book-theme/pull/738) "
+"([@dependabot](https://github.com/dependabot))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:99
+msgid ""
+"Build(deps): Bump treosh/lighthouse-ci-action from 9.3.1 to 10.1.0 "
+"[#725](https://github.com/executablebooks/sphinx-book-theme/pull/725) "
+"([@dependabot](https://github.com/dependabot))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:100
+msgid ""
+"Build(deps): Bump treosh/lighthouse-ci-action from 9.3.1 to 9.6.8 "
+"[#718](https://github.com/executablebooks/sphinx-book-theme/pull/718) "
+"([@dependabot](https://github.com/dependabot))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:101
+msgid ""
+"Build(deps): Bump pypa/gh-action-pypi-publish from 1.6.4 to 1.8.4 "
+"[#717](https://github.com/executablebooks/sphinx-book-theme/pull/717) "
+"([@dependabot](https://github.com/dependabot))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:102
+msgid ""
+"RLS: v1.0.1 [#716](https://github.com/executablebooks/sphinx-book-"
+"theme/pull/716) ([@AakashGfude](https://github.com/AakashGfude))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:103
+msgid ""
+"[pre-commit.ci] pre-commit autoupdate "
+"[#705](https://github.com/executablebooks/sphinx-book-theme/pull/705) "
+"([@pre-commit-ci](https://github.com/pre-commit-ci))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:104
+msgid ""
+"[ENH, DOC] Allow setting the `navbar_max_depth` and `collapse_navbar` "
+"[#605](https://github.com/executablebooks/sphinx-book-theme/pull/605) "
+"([@gilbertbw](https://github.com/gilbertbw))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:108
+msgid ""
+"([GitHub contributors page for this "
+"release](https://github.com/executablebooks/sphinx-book-"
+"theme/graphs/contributors?from=2023-03-31&to=2023-12-19&type=c))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:110
+#, python-format
+msgid ""
+"[@AakashGfude](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3AAakashGfude+updated%3A2023-03-31..2023-12-19&type=Issues)"
+" | [@adam-grant-"
+"hendry](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-book-"
+"theme+involves%3Aadam-grant-"
+"hendry+updated%3A2023-03-31..2023-12-19&type=Issues) | "
+"[@agoose77](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3Aagoose77+updated%3A2023-03-31..2023-12-19&type=Issues) |"
+" [@akhmerov](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3Aakhmerov+updated%3A2023-03-31..2023-12-19&type=Issues) |"
+" [@Alex-JG3](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-theme+involves%3AAlex-"
+"JG3+updated%3A2023-03-31..2023-12-19&type=Issues) | "
+"[@avivajpeyi](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Aavivajpeyi+updated%3A2023-03-31..2023-12-19&type=Issues)"
+" | [@bradbell](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Abradbell+updated%3A2023-03-31..2023-12-19&type=Issues) |"
+" [@callezenwaka](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Acallezenwaka+updated%3A2023-03-31..2023-12-19&type=Issues)"
+" | [@CalMacCQ](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3ACalMacCQ+updated%3A2023-03-31..2023-12-19&type=Issues) |"
+" [@choldgraf](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Acholdgraf+updated%3A2023-03-31..2023-12-19&type=Issues) "
+"| [@dependabot](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Adependabot+updated%3A2023-03-31..2023-12-19&type=Issues)"
+" | [@Eutropios](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3AEutropios+updated%3A2023-03-31..2023-12-19&type=Issues) "
+"| [@flying-sheep](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-theme+involves%3Aflying-"
+"sheep+updated%3A2023-03-31..2023-12-19&type=Issues) | "
+"[@gilbertbw](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3Agilbertbw+updated%3A2023-03-31..2023-12-19&type=Issues) "
+"| [@Gouvernathor](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3AGouvernathor+updated%3A2023-03-31..2023-12-19&type=Issues)"
+" | [@jackshiwl](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Ajackshiwl+updated%3A2023-03-31..2023-12-19&type=Issues) "
+"| [@jayaddison](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Ajayaddison+updated%3A2023-03-31..2023-12-19&type=Issues)"
+" | [@Kladdy](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3AKladdy+updated%3A2023-03-31..2023-12-19&type=Issues) | "
+"[@LecrisUT](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3ALecrisUT+updated%3A2023-03-31..2023-12-19&type=Issues) |"
+" [@Maetveis](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3AMaetveis+updated%3A2023-03-31..2023-12-19&type=Issues) |"
+" [@ogrisel](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3Aogrisel+updated%3A2023-03-31..2023-12-19&type=Issues) | "
+"[@pre-commit-ci](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-theme+involves%3Apre-commit-"
+"ci+updated%3A2023-03-31..2023-12-19&type=Issues) | "
+"[@Sdaher21](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3ASdaher21+updated%3A2023-03-31..2023-12-19&type=Issues) |"
+" [@stevepiercy](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Astevepiercy+updated%3A2023-03-31..2023-12-19&type=Issues)"
+" | [@welcome](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Awelcome+updated%3A2023-03-31..2023-12-19&type=Issues)"
+msgstr ""
+
+#: ../../../CHANGELOG.md:114
+msgid "v1.0.1 -- 2023-03-31"
+msgstr ""
+
+#: ../../../CHANGELOG.md:116
+msgid ""
+"This is a minor release supporting pydata>=0.13.3, with a few import "
+"changes from pydata."
+msgstr ""
+
+#: ../../../CHANGELOG.md:118
+msgid "v1.0.0 -- 2023-03-01"
+msgstr ""
+
+#: ../../../CHANGELOG.md:120
+msgid ""
+"This is a major release that brings in the latest PyData Sphinx Theme and"
+" a number of new features with it. It also overhauls and standardizes the"
+" HTML structure of the theme. Because of this large refactor, we are "
+"bumping the major version to `1.0`. Note that this doesn't imply any new "
+"long-term support or stability, we will continue to try not to make major"
+" breaking changes but will continue incrementing major versions if we "
+"must do so."
+msgstr ""
+
+#: ../../../CHANGELOG.md:127
+msgid ""
+"PyData Sphinx Theme `v0.13`. See [the PyData Sphinx Theme `v0.13` release"
+" notes](https://github.com/pydata/pydata-sphinx-"
+"theme/releases/tag/v0.13.0) for details."
+msgstr ""
+
+#: ../../../CHANGELOG.md:128
+msgid ""
+"Icon links, more source providers, and bug fixes "
+"[#691](https://github.com/executablebooks/sphinx-book-theme/pull/691) "
+"([@choldgraf](https://github.com/choldgraf), "
+"[@mmcky](https://github.com/mmcky))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:129
+msgid "**We now support GitHub, GitLab, and BitBucket source providers**."
+msgstr ""
+
+#: ../../../CHANGELOG.md:130
+msgid "**You can now include lists of icon links in your primary sidebar**."
+msgstr ""
+
+#: ../../../CHANGELOG.md:131
+msgid ""
+"Allowing inline elements in sidenotes and marginnotes "
+"[#641](https://github.com/executablebooks/sphinx-book-theme/pull/641) "
+"([@AakashGfude](https://github.com/AakashGfude))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:132
+msgid ""
+"Improve Chinese (Taiwan) and Chinese (China) translation "
+"[#585](https://github.com/executablebooks/sphinx-book-theme/pull/585) "
+"([@whyjz](https://github.com/whyjz))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:133
+msgid ""
+"sphinx >=4,<6 [#644](https://github.com/executablebooks/sphinx-book-"
+"theme/pull/644) ([@AakashGfude](https://github.com/AakashGfude))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:137
+msgid ""
+"FIX: Scroll padding on top for anchor links "
+"[#669](https://github.com/executablebooks/sphinx-book-theme/pull/669) "
+"([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:138
+msgid ""
+"🐛 FIX: Correcting a broken link in CHANGELOG.md "
+"[#623](https://github.com/executablebooks/sphinx-book-theme/pull/623) "
+"([@AakashGfude](https://github.com/AakashGfude))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:139
+msgid ""
+"FIX: Scroll to active navigation item "
+"[#609](https://github.com/executablebooks/sphinx-book-theme/pull/609) "
+"([@ksuess](https://github.com/ksuess))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:140
+msgid ""
+"[FIX] Use logo url as is to allow for web urls. "
+"[#661](https://github.com/executablebooks/sphinx-book-theme/pull/661) "
+"([@feanil](https://github.com/feanil))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:144
+msgid ""
+"MAINT: Update pre-commit versions and fix minor bugs in tests "
+"[#660](https://github.com/executablebooks/sphinx-book-theme/pull/660) "
+"([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:145
+msgid ""
+"MAINT: Move dependabot updates to monthly "
+"[#658](https://github.com/executablebooks/sphinx-book-theme/pull/658) "
+"([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:146
+msgid ""
+"MAINT: Factor publish to pypi workflow into dedicated file "
+"[#645](https://github.com/executablebooks/sphinx-book-theme/pull/645) "
+"([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:147
+msgid ""
+"MAINT: Remove duplication with pydata-sphinx-theme "
+"[#640](https://github.com/executablebooks/sphinx-book-theme/pull/640) "
+"([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:148
+msgid ""
+"MAINT: remove incorrect comment from sphinx pin. "
+"[#588](https://github.com/executablebooks/sphinx-book-theme/pull/588) "
+"([@rossbar](https://github.com/rossbar))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:149
+msgid ""
+"IntersectionObserver at 1/3 screen "
+"[#567](https://github.com/executablebooks/sphinx-book-theme/pull/567) "
+"([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:153
+msgid ""
+"DOCS: Minor typo correction [#649](https://github.com/executablebooks"
+"/sphinx-book-theme/pull/649) ([@bmorris3](https://github.com/bmorris3))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:154
+msgid ""
+"DOC: Update kitchen sink [#610](https://github.com/executablebooks"
+"/sphinx-book-theme/pull/610) ([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:156
+msgid "Breaking changes to structure and API"
+msgstr ""
+
+#: ../../../CHANGELOG.md:158
+msgid ""
+"UPGRADE/BREAKING: PyData v0.13 and HTML refactoring "
+"[#677](https://github.com/executablebooks/sphinx-book-theme/pull/677) "
+"([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:159
+msgid ""
+"Remove JQuery and update versions "
+"[#668](https://github.com/executablebooks/sphinx-book-theme/pull/668) "
+"([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:161
+msgid "Tips for migration"
+msgstr ""
+
+#: ../../../CHANGELOG.md:163
+msgid ""
+"**Long sidebar entries now wrap**. If you'd like to un-do this and revert"
+" to old behavior (where they are cut off if too long), then use the "
+"following CSS rule in your custom Sphinx CSS:"
+msgstr ""
+
+#: ../../../CHANGELOG.md:171
+msgid ""
+"**`single_page` is deprecated**. If you'd like to restore the old "
+"behavior (hiding sidebars), then use the following configuration in your "
+"`conf.py`:"
+msgstr ""
+
+#: ../../../CHANGELOG.md:180
+msgid ""
+"([GitHub contributors page for this "
+"release](https://github.com/executablebooks/sphinx-book-"
+"theme/graphs/contributors?from=2022-07-17&to=2023-02-19&type=c))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:183
+#, python-format
+msgid ""
+"@12rambau ([activity](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3A12rambau+updated%3A2022-07-17..2023-03-01&type=Issues)) "
+"| @AakashGfude "
+"([activity](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3AAakashGfude+updated%3A2022-07-17..2023-03-01&type=Issues))"
+" | @akhmerov "
+"([activity](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3Aakhmerov+updated%3A2022-07-17..2023-03-01&type=Issues)) "
+"| @AllenDowney "
+"([activity](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3AAllenDowney+updated%3A2022-07-17..2023-03-01&type=Issues))"
+" | @avivajpeyi "
+"([activity](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3Aavivajpeyi+updated%3A2022-07-17..2023-03-01&type=Issues))"
+" | @bmorris3 "
+"([activity](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3Abmorris3+updated%3A2022-07-17..2023-03-01&type=Issues)) "
+"| @choldgraf "
+"([activity](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3Acholdgraf+updated%3A2022-07-17..2023-03-01&type=Issues))"
+" | @chrisjsewell "
+"([activity](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3Achrisjsewell+updated%3A2022-07-17..2023-03-01&type=Issues))"
+" | @consideRatio "
+"([activity](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3AconsideRatio+updated%3A2022-07-17..2023-03-01&type=Issues))"
+" | @dependabot "
+"([activity](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3Adependabot+updated%3A2022-07-17..2023-03-01&type=Issues))"
+" | @feanil ([activity](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Afeanil+updated%3A2022-07-17..2023-03-01&type=Issues)) | "
+"@fm75 ([activity](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Afm75+updated%3A2022-07-17..2023-03-01&type=Issues)) | "
+"@ghutchis ([activity](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Aghutchis+updated%3A2022-07-17..2023-03-01&type=Issues)) "
+"| @guillaume-haerinck "
+"([activity](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-theme+involves%3Aguillaume-"
+"haerinck+updated%3A2022-07-17..2023-03-01&type=Issues)) | @haklc "
+"([activity](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3Ahaklc+updated%3A2022-07-17..2023-03-01&type=Issues)) | "
+"@iasbusi ([activity](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Aiasbusi+updated%3A2022-07-17..2023-03-01&type=Issues)) |"
+" @ivirshup ([activity](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Aivirshup+updated%3A2022-07-17..2023-03-01&type=Issues)) "
+"| @James11222 "
+"([activity](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3AJames11222+updated%3A2022-07-17..2023-03-01&type=Issues))"
+" | @kloczek "
+"([activity](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3Akloczek+updated%3A2022-07-17..2023-03-01&type=Issues)) |"
+" @ksuess ([activity](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Aksuess+updated%3A2022-07-17..2023-03-01&type=Issues)) | "
+"@martinfleis "
+"([activity](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3Amartinfleis+updated%3A2022-07-17..2023-03-01&type=Issues))"
+" | @mathbunnyru "
+"([activity](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3Amathbunnyru+updated%3A2022-07-17..2023-03-01&type=Issues))"
+" | @mcjulian1107 "
+"([activity](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3Amcjulian1107+updated%3A2022-07-17..2023-03-01&type=Issues))"
+" | @melund ([activity](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Amelund+updated%3A2022-07-17..2023-03-01&type=Issues)) | "
+"@mmcky ([activity](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Ammcky+updated%3A2022-07-17..2023-03-01&type=Issues)) | "
+"@paugier ([activity](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Apaugier+updated%3A2022-07-17..2023-03-01&type=Issues)) |"
+" @PhilipVinc "
+"([activity](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3APhilipVinc+updated%3A2022-07-17..2023-03-01&type=Issues))"
+" | @pradyunsg "
+"([activity](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3Apradyunsg+updated%3A2022-07-17..2023-03-01&type=Issues))"
+" | @pre-commit-ci "
+"([activity](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-theme+involves%3Apre-commit-"
+"ci+updated%3A2022-07-17..2023-03-01&type=Issues)) | @rkdarst "
+"([activity](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3Arkdarst+updated%3A2022-07-17..2023-03-01&type=Issues)) |"
+" @rossbar ([activity](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Arossbar+updated%3A2022-07-17..2023-03-01&type=Issues)) |"
+" @scmmmh ([activity](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Ascmmmh+updated%3A2022-07-17..2023-03-01&type=Issues)) | "
+"@sieler ([activity](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Asieler+updated%3A2022-07-17..2023-03-01&type=Issues)) | "
+"@SilverRainZ "
+"([activity](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3ASilverRainZ+updated%3A2022-07-17..2023-03-01&type=Issues))"
+" | @stevepiercy "
+"([activity](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3Astevepiercy+updated%3A2022-07-17..2023-03-01&type=Issues))"
+" | @trallard "
+"([activity](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3Atrallard+updated%3A2022-07-17..2023-03-01&type=Issues)) "
+"| @whyjz ([activity](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Awhyjz+updated%3A2022-07-17..2023-03-01&type=Issues)) | "
+"@yuvipanda ([activity](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Ayuvipanda+updated%3A2022-07-17..2023-03-01&type=Issues))"
+" | @ZedThree "
+"([activity](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3AZedThree+updated%3A2022-07-17..2023-03-01&type=Issues))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:186
+msgid "v0.3.3 -- 2022-07-17"
+msgstr ""
+
+#: ../../../CHANGELOG.md:188
+msgid "Fixes:"
+msgstr ""
+
+#: ../../../CHANGELOG.md:190
+msgid ""
+"Style edits for last-child zero-margin on dd's "
+"[#586](https://github.com/executablebooks/sphinx-book-theme/pull/586) "
+"([@benjaoming](https://github.com/benjaoming))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:191
+msgid ""
+"Escape colon in JupyterHub link to repo "
+"[#556](https://github.com/executablebooks/sphinx-book-theme/pull/556) "
+"([@matthew-brett](https://github.com/matthew-brett))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:192
+msgid ""
+"Myst-nb pinning to 0.13.2 [#560](https://github.com/executablebooks"
+"/sphinx-book-theme/pull/560) ([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:193
+msgid ""
+"Stylizing ReadTheDocs in `_readthedocs.scss` as per guidelines "
+"[#579](https://github.com/executablebooks/sphinx-book-theme/pull/579) "
+"([@pradyunsg](https://github.com/pradyunsg))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:194
+msgid ""
+"`templates_path` in config was overriding any value append to "
+"`templates_path` in this package. "
+"[#566](https://github.com/executablebooks/sphinx-book-theme/pull/566) "
+"([@AakashGfude](https://github.com/AakashGfude))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:196
+msgid "Enhancements made:"
+msgstr ""
+
+#: ../../../CHANGELOG.md:198
+msgid ""
+"Added sidenote and marginnote using footnote syntax "
+"[#546](https://github.com/executablebooks/sphinx-book-theme/pull/546) "
+"([@AakashGfude](https://github.com/AakashGfude))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:200
+msgid "Docs:"
+msgstr ""
+
+#: ../../../CHANGELOG.md:202
+msgid ""
+"Added Docs for sphinx-examples [#550](https://github.com/executablebooks"
+"/sphinx-book-theme/pull/550) ([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:203
+msgid ""
+"Lychee link fixes [#553](https://github.com/executablebooks/sphinx-book-"
+"theme/pull/553) ([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:204
+msgid ""
+"Beta and lychee link fix [#552](https://github.com/executablebooks"
+"/sphinx-book-theme/pull/552) ([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:207
+msgid "v0.3.2 -- 2022-03-28"
+msgstr ""
+
+#: ../../../CHANGELOG.md:209
+msgid "Two patch releases fixed two bugs for figure content in the margin."
+msgstr ""
+
+#: ../../../CHANGELOG.md:211
+msgid "v0.3.0 - 2022-03-25"
+msgstr ""
+
+#: ../../../CHANGELOG.md:213
+msgid ""
+"This is a significant change in the HTML and CSS of the site, with the "
+"goal of making it more standardized and robust. There are several design "
+"tweaks that have been made. Here is a short overview:"
+msgstr ""
+
+#: ../../../CHANGELOG.md:215
+msgid ""
+"The sidebars are now a slightly smaller font, with more padding, to give "
+"more attention to the page's content."
+msgstr ""
+
+#: ../../../CHANGELOG.md:216
+msgid ""
+"The HTML structure of the site has been re-worked to make `sticky` and "
+"other CSS behaviors more dependable."
+msgstr ""
+
+#: ../../../CHANGELOG.md:217
+msgid "The header buttons are now standardized and have an updated look and feel."
+msgstr ""
+
+#: ../../../CHANGELOG.md:218
+msgid "The in-page margin CSS is now more reliable"
+msgstr ""
+
+#: ../../../CHANGELOG.md:219
+msgid "Improvements to scrollbar style throughout the site"
+msgstr ""
+
+#: ../../../CHANGELOG.md:221
+msgid "See the PRs below for where most of these changes occurred."
+msgstr ""
+
+#: ../../../CHANGELOG.md:223
+msgid ""
+"([full changelog](https://github.com/executablebooks/sphinx-book-"
+"theme/compare/v0.2.0...d9c1abc4197445faab7892291520de448f363274))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:227
+msgid ""
+"‼️ REFACTOR: HTML and CSS restructuring "
+"[#472](https://github.com/executablebooks/sphinx-book-theme/pull/472) "
+"([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:228
+msgid ""
+"ENH: Standardize scrollbar behavior "
+"[#481](https://github.com/executablebooks/sphinx-book-theme/pull/481) "
+"([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:229
+msgid ""
+"ENH: Standardize header buttons [#490](https://github.com/executablebooks"
+"/sphinx-book-theme/pull/490) ([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:230
+msgid ""
+"ENH: Updating search page style [#491](https://github.com/executablebooks"
+"/sphinx-book-theme/pull/491) ([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:231
+msgid ""
+"ENH: Add CSS for comments libraries "
+"[#524](https://github.com/executablebooks/sphinx-book-theme/pull/524) "
+"([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:232
+msgid ""
+"ENH: Add support for ReadTheDocs popup "
+"[#518](https://github.com/executablebooks/sphinx-book-theme/pull/518) "
+"([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:233
+msgid ""
+"STYLE: Search color highlighting in-line with Jupyter orange "
+"[#532](https://github.com/executablebooks/sphinx-book-theme/pull/532) "
+"([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:235
+msgid "‼️ Breaking changes"
+msgstr ""
+
+#: ../../../CHANGELOG.md:237
+msgid ""
+"This release modifies the HTML structure of some of the major theme "
+"sections (in particular, the sidebar and top-bar). If you had custom CSS "
+"or JavaScript that assumed a particular HTML structure, double-check that"
+" it still behaves the same way, as you may need to adjust things for the "
+"new structure."
+msgstr ""
+
+#: ../../../CHANGELOG.md:240
+msgid "v0.1.10...v0.2.0"
+msgstr ""
+
+#: ../../../CHANGELOG.md:242
+msgid ""
+"This release includes a few under-the-hood and performance improvements "
+"to the CSS and HTML of the theme. While there are no major new features, "
+"some of these changes have restructured the HTML so double-check your "
+"documentation, especially if you had custom CSS rules the sidebar."
+msgstr ""
+
+#: ../../../CHANGELOG.md:244
+msgid "Here are a few improvements:"
+msgstr ""
+
+#: ../../../CHANGELOG.md:246
+msgid ""
+"The right Table of Contents is now hidden using the [Intersection "
+"Observer API](https://developer.mozilla.org/en-"
+"US/docs/Web/API/Intersection_Observer_API) which will reduce the number "
+"of JavaScript calls and improve reliability of this feature. "
+"[#448](https://github.com/executablebooks/sphinx-book-theme/pull/448) "
+"([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:248
+msgid ""
+"The left sidebar is now toggle-able **only with CSS**, which should make "
+"it less prone to failure due to other conflicting javascript on the page."
+" It now includes a \"sidebar drawer\" on mobile that gives more vertical "
+"space for the sidebar. [#454](https://github.com/executablebooks/sphinx-"
+"book-theme/pull/454) ([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:250
+msgid ""
+"You can now add Deepnote buttons for notebook launch buttons "
+"[#385](https://github.com/executablebooks/sphinx-book-theme/pull/385) "
+"([@jakubzitny](https://github.com/jakubzitny))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:252
+msgid "v0.1.9 .. v0.1.10"
+msgstr ""
+
+#: ../../../CHANGELOG.md:254
+msgid "Maintenance release, to remove the unused `click` dependency."
+msgstr ""
+
+#: ../../../CHANGELOG.md:256
+msgid "v0.1.8 .. v0.1.9"
+msgstr ""
+
+#: ../../../CHANGELOG.md:258
+msgid ""
+"This is a minor release to fix a bug that was introduced which broke the "
+"right sidebar anchor links."
+msgstr ""
+
+#: ../../../CHANGELOG.md:260
+msgid "v0.1.7 .. v0.1.8"
+msgstr ""
+
+#: ../../../CHANGELOG.md:262
+msgid ""
+"([full changelog](https://github.com/executablebooks/sphinx-book-"
+"theme/compare/v0.1.7...862632b892f6acd640aa080eb1f50ac6d3de7bc3))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:264
+msgid "This is a minor release that makes a few bugfixes and small enhancements."
+msgstr ""
+
+#: ../../../CHANGELOG.md:266
+msgid ""
+"Printing to PDF from HTML is now formatted more elegantly "
+"[#438](https://github.com/executablebooks/sphinx-book-theme/pull/438) "
+"([@AakashGfude](https://github.com/AakashGfude))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:267
+msgid "Minor stylistic bugfixes across the theme CSS"
+msgstr ""
+
+#: ../../../CHANGELOG.md:269
+msgid "v0.1.6 .. v0.1.7"
+msgstr ""
+
+#: ../../../CHANGELOG.md:271
+msgid ""
+"**Full Changelog**: https://github.com/executablebooks/sphinx-book-"
+"theme/compare/v0.1.6...v0.1.7"
+msgstr ""
+
+#: ../../../CHANGELOG.md:273
+msgid "Summary"
+msgstr ""
+
+#: ../../../CHANGELOG.md:275
+msgid ""
+"This release primarily updates the pydata theme to bring in a few new "
+"theme features and bug-fixes."
+msgstr ""
+
+#: ../../../CHANGELOG.md:277
+msgid "What's Changed"
+msgstr ""
+
+#: ../../../CHANGELOG.md:278
+msgid ""
+"UPDATE: pydata sphinx theme v0.7.2 by @ocefpaf in "
+"https://github.com/executablebooks/sphinx-book-theme/pull/406"
+msgstr ""
+
+#: ../../../CHANGELOG.md:279
+msgid ""
+"UPDATE: pydata-sphinx-theme 0.7.2 by @kousu in "
+"https://github.com/executablebooks/sphinx-book-theme/pull/429"
+msgstr ""
+
+#: ../../../CHANGELOG.md:280
+msgid ""
+"IMPROVE: translation in the footer for Japanese language by @KengoTODA in"
+" https://github.com/executablebooks/sphinx-book-theme/pull/426"
+msgstr ""
+
+#: ../../../CHANGELOG.md:282
+msgid "v0.1.5...v0.1.6"
+msgstr ""
+
+#: ../../../CHANGELOG.md:284
+msgid ""
+"([full changelog](https://github.com/executablebooks/sphinx-book-"
+"theme/compare/v0.1.5...1515334eec40575b0a80c51ce78453ced2ff2484))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:288
+msgid ""
+"Add pst prefix to variables [#413](https://github.com/executablebooks"
+"/sphinx-book-theme/pull/413) ([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:289
+msgid ""
+"Note TOC level auto-show [#410](https://github.com/executablebooks"
+"/sphinx-book-theme/pull/410) ([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:290
+msgid ""
+"Add note of margin CSS classes [#405](https://github.com/executablebooks"
+"/sphinx-book-theme/pull/405) ([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:292
+msgid "v0.1.5 - 2021-09-23"
+msgstr ""
+
+#: ../../../CHANGELOG.md:294
+msgid ""
+"([full changelog](https://github.com/executablebooks/sphinx-book-"
+"theme/compare/v0.1.4...c85925c0109a1038994947acb951d1d918a819f8))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:298
+msgid ""
+"Move CSS hash to GET parameter so downstream themes can bust CSS properly"
+" [#397](https://github.com/executablebooks/sphinx-book-theme/pull/397) "
+"([@jacobtomlinson](https://github.com/jacobtomlinson))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:300
+msgid "v0.1.4 - 2021-09-16"
+msgstr ""
+
+#: ../../../CHANGELOG.md:302
+msgid ""
+"([full changelog](https://github.com/executablebooks/sphinx-book-"
+"theme/compare/v0.1.3...28358bbc0dc2f1e6e9fff0ac64321685c9edfc00))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:306
+msgid ""
+"⬆️ UPGRADE: Sphinx v4.0.0 [#364](https://github.com/executablebooks"
+"/sphinx-book-theme/pull/364) ([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:307
+msgid ""
+"✨ IMPROVE: Harmonize themes between static and live code "
+"[#393](https://github.com/executablebooks/sphinx-book-theme/pull/393) "
+"([@patrickmineault](https://github.com/patrickmineault))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:308
+msgid ""
+"✨ IMPROVE: Minor tweaks to footer css "
+"[#389](https://github.com/executablebooks/sphinx-book-theme/pull/389) "
+"([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:310
+msgid "v0.1.3 - 2021-08-25"
+msgstr ""
+
+#: ../../../CHANGELOG.md:312
+msgid ""
+"([full changelog](https://github.com/executablebooks/sphinx-book-"
+"theme/compare/v0.1.2...9a2da30342ace86978ddbd345eb69f5b4479b31c))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:316
+msgid ""
+"✨ IMPROVE: Add chevrons to prev/next "
+"[#386](https://github.com/executablebooks/sphinx-book-theme/pull/386) "
+"([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:317
+msgid ""
+"✨ IMPROVE: Improving accessibility labeling "
+"[#375](https://github.com/executablebooks/sphinx-book-theme/pull/375) "
+"([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:318
+msgid ""
+"✨ IMPROVE: improve math styling [#369](https://github.com/executablebooks"
+"/sphinx-book-theme/pull/369) ([@akhmerov](https://github.com/akhmerov))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:322
+msgid ""
+"🐛 FIX: Fix translation for prev/next "
+"[#384](https://github.com/executablebooks/sphinx-book-theme/pull/384) "
+"([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:325
+msgid "v0.1.1...v0.1.2 - 2021-08-06"
+msgstr ""
+
+#: ../../../CHANGELOG.md:327
+msgid ""
+"([full changelog](https://github.com/executablebooks/sphinx-book-"
+"theme/compare/v0.1.1...v0.1.2))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:329
+msgid ""
+"🔧 MAINT: Reduce `full-width` from 136% to 134% "
+"[#357](https://github.com/executablebooks/sphinx-book-theme/pull/357): "
+"This avoid clipping full-width content on certain resolutions"
+msgstr ""
+
+#: ../../../CHANGELOG.md:331
+msgid ""
+"🐛 FIX: Dropdown menus on mobile [#367](https://github.com/executablebooks"
+"/sphinx-book-theme/pull/367): Menus are translated left, so that they are"
+" not clipped on small screens"
+msgstr ""
+
+#: ../../../CHANGELOG.md:334
+msgid "v0.1.0...v0.1.1"
+msgstr ""
+
+#: ../../../CHANGELOG.md:336
+msgid ""
+"([full changelog](https://github.com/executablebooks/sphinx-book-"
+"theme/compare/v0.1.0...e05def5b9a4fc777f702553a0bcaf7939440dbd3))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:338 ../../../CHANGELOG.md:397
+#: ../../../CHANGELOG.md:418
+msgid "New features added"
+msgstr ""
+
+#: ../../../CHANGELOG.md:340 ../../../CHANGELOG.md:345
+msgid ""
+"Add logo_only theme option [#349](https://github.com/executablebooks"
+"/sphinx-book-theme/pull/349) ([@djangoliv](https://github.com/djangoliv))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:344
+msgid ""
+"Add css to highlight searched for phrases "
+"[#350](https://github.com/executablebooks/sphinx-book-theme/pull/350) "
+"([@sanjayankur31](https://github.com/sanjayankur31))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:346
+msgid ""
+"Soften edges in admonitions and remove some ink "
+"[#352](https://github.com/executablebooks/sphinx-book-theme/pull/352) "
+"([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:350
+msgid ""
+"🐛 FIX: Path to custom output directory for _sources "
+"[#346](https://github.com/executablebooks/sphinx-book-theme/pull/346) "
+"([@dfm](https://github.com/dfm))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:351
+msgid ""
+"🐛 FIX: Fixing sidebar animation [#333](https://github.com/executablebooks"
+"/sphinx-book-theme/pull/333) ([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:353
+msgid "v0.0.42...v0.1.0"
+msgstr ""
+
+#: ../../../CHANGELOG.md:355
+msgid ""
+"([full changelog](https://github.com/executablebooks/sphinx-book-"
+"theme/compare/v0.0.42...6320ef6347a77eb91ed67c472b2336fd66d75724))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:357
+msgid ""
+"This updates to the latest PyData Sphinx Theme, which re-works some of "
+"the HTML structure (thus, the minor version bump). It also includes some "
+"minor fixes to the scrolling and TOC behavior."
+msgstr ""
+
+#: ../../../CHANGELOG.md:361
+msgid ""
+"✨ ENH: Adding fullscreen button optional "
+"[#328](https://github.com/executablebooks/sphinx-book-theme/pull/328) "
+"([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:365
+msgid ""
+"🐛 FIX: Fixing sidebar scroll [#311](https://github.com/executablebooks"
+"/sphinx-book-theme/pull/311) ([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:367
+msgid "API and Breaking Changes"
+msgstr ""
+
+#: ../../../CHANGELOG.md:369
+msgid ""
+"⬆ UPGRADE: Pydata Sphinx Theme v0.6.0 "
+"[#324](https://github.com/executablebooks/sphinx-book-theme/pull/324) "
+"([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:371
+msgid "Deprecated features"
+msgstr ""
+
+#: ../../../CHANGELOG.md:373
+msgid ""
+"DEPRECATE: Removing opengraph functionality "
+"[#316](https://github.com/executablebooks/sphinx-book-theme/pull/316) "
+"([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:375
+msgid "v0.0.42 2021-03-13"
+msgstr ""
+
+#: ../../../CHANGELOG.md:377
+msgid ""
+"([full changelog](https://github.com/executablebooks/sphinx-book-"
+"theme/compare/v0.0.41...458fe679ff482a623ec2dd6b13bdd19232069c50))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:381
+msgid ""
+"🐛 FIX: hover target bug on right TOC "
+"[#300](https://github.com/executablebooks/sphinx-book-theme/pull/300) "
+"([@DrDrij](https://github.com/DrDrij))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:384
+msgid "v0.0.41 2021-03-09"
+msgstr ""
+
+#: ../../../CHANGELOG.md:386
+msgid ""
+"([full changelog](https://github.com/executablebooks/sphinx-book-"
+"theme/compare/v0.0.40...3d9189d889a9be4096ca57859dadf8e11f246a4a))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:390
+msgid ""
+"The Table of Contents titles is now configurable. See "
+"[#299](https://github.com/executablebooks/sphinx-book-theme/pull/299) "
+"([@AakashGfude](https://github.com/AakashGfude))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:391
+msgid ""
+"The left sidebar has a drawer-style layout on mobile. See "
+"[#298](https://github.com/executablebooks/sphinx-book-theme/pull/298) "
+"([@DrDrij](https://github.com/DrDrij))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:393
+msgid "v0.0.40 - 2021-02-27"
+msgstr ""
+
+#: ../../../CHANGELOG.md:395
+msgid ""
+"([full changelog](https://github.com/executablebooks/sphinx-book-"
+"theme/compare/v0.0.39...4ab518e211163a52f01562912ce6e41548a734d1))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:399
+msgid ""
+"Added tag for cell-input [#259](https://github.com/executablebooks"
+"/sphinx-book-theme/pull/259) "
+"([@AakashGfude](https://github.com/AakashGfude))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:400
+msgid ""
+"Add a shadow to header, on scroll "
+"[#255](https://github.com/executablebooks/sphinx-book-theme/pull/255) "
+"([@pradyunsg](https://github.com/pradyunsg))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:401
+msgid ""
+"Add CSS to center align images with class "
+"[#292](https://github.com/executablebooks/sphinx-book-theme/pull/292) "
+"([@DrDrij](https://github.com/DrDrij))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:405
+msgid ""
+"Add footnote translations [#274](https://github.com/executablebooks"
+"/sphinx-book-theme/pull/274) "
+"([@chrisjsewell](https://github.com/chrisjsewell))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:409
+msgid ""
+"translation of suggest edit [#284](https://github.com/executablebooks"
+"/sphinx-book-theme/pull/284) "
+"([@chrisjsewell](https://github.com/chrisjsewell))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:410
+msgid ""
+"Pin bs4 and sphinx dependencies [#271](https://github.com/executablebooks"
+"/sphinx-book-theme/pull/271) "
+"([@chrisjsewell](https://github.com/chrisjsewell))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:411
+msgid ""
+"fixing right toc whitespace overlap "
+"[#268](https://github.com/executablebooks/sphinx-book-theme/pull/268) "
+"([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:412
+msgid ""
+"Fixing linenos style [#263](https://github.com/executablebooks/sphinx-"
+"book-theme/pull/263) ([@AakashGfude](https://github.com/AakashGfude))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:415
+msgid "v0.0.39 - 2020-11-08"
+msgstr ""
+
+#: ../../../CHANGELOG.md:416
+msgid ""
+"([full changelog](https://github.com/executablebooks/sphinx-book-"
+"theme/compare/v0.0.38...v0.0.39))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:419
+msgid ""
+"sphinx sidebars functionality [#233](https://github.com/executablebooks"
+"/sphinx-book-theme/pull/233) "
+"([@choldgraf](https://github.com/choldgraf)). You can now use the "
+"`html_sidebars` functionality that is native in Sphinx. [See the sidebars"
+" documentation](https://sphinx-book-"
+"theme.readthedocs.io/en/latest/sections/sidebar-primary.html)."
+msgstr ""
+
+#: ../../../CHANGELOG.md:420
+msgid ""
+"Collapsible lists in sidebars [#226](https://github.com/executablebooks"
+"/sphinx-book-theme/pull/226) "
+"([@AakashGfude](https://github.com/AakashGfude)). Sidebars that have "
+"nested sections will now have an arrow that allows you to reveal these "
+"sections without changing the current page. You can [control the "
+"depth](https://sphinx-book-theme.readthedocs.io/en/latest/sections"
+"/sidebar-primary.html#control-the-depth-of-the-left-sidebar-lists-to-"
+"expand) of expanded sections with `show_navbar_depth`."
+msgstr ""
+
+#: ../../../CHANGELOG.md:423
+msgid ""
+"Option for download button [#245](https://github.com/executablebooks"
+"/sphinx-book-theme/pull/245) ([@bknaepen](https://github.com/bknaepen)). "
+"The \"download\" button used to be automatically added, but can now be "
+"removed. See [the download button configuration](https://sphinx-book-"
+"theme.readthedocs.io/en/latest/components/download.html)."
+msgstr ""
+
+#: ../../../CHANGELOG.md:425
+msgid "v0.0.38"
+msgstr ""
+
+#: ../../../CHANGELOG.md:428
+msgid ""
+"👌 IMPROVE: Add missing aria-label to fullscreen button "
+"[#228](https://github.com/executablebooks/sphinx-book-theme/pull/228) "
+"([@foster999](https://github.com/foster999))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:430
+msgid ""
+"👌 IMPROVE: declare parallel read safe "
+"[#225](https://github.com/executablebooks/sphinx-book-theme/pull/225) "
+"([@rscohn2](https://github.com/rscohn2))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:432
+msgid ""
+"🐛 FIX: fixing dirhtml builds [#230](https://github.com/executablebooks"
+"/sphinx-book-theme/pull/230) ([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:434
+msgid ""
+"🐛 FIX: fixing margin for code blocks "
+"[#229](https://github.com/executablebooks/sphinx-book-theme/pull/229) "
+"([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:437
+msgid "v0.0.37"
+msgstr ""
+
+#: ../../../CHANGELOG.md:439
+msgid ""
+"✨ NEW: Sphinx translations for all buttons and tooltips in major UI "
+"elements. See [the Sphinx i18n documentation](https://www.sphinx-"
+"doc.org/en/master/usage/configuration.html#confval-language) for how to "
+"activate other languages. [#214](https://github.com/executablebooks"
+"/sphinx-book-theme/pull/214) "
+"([@chrisjsewell](https://github.com/chrisjsewell))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:441
+msgid ""
+"⬆️  UPGRADE: pydata-sphinx-theme v0.4.0. See [the `pydata-sphinx-theme` "
+"changelog](https://github.com/pandas-dev/pydata-sphinx-"
+"theme/releases/tag/v0.4.0) for more information."
+msgstr ""
+
+#: ../../../CHANGELOG.md:443
+msgid ""
+"⬆️ UPGRADE: Use pyScss instead of libsass for scss compilation. This "
+"should make the theme more lightweight to install and develop locally. "
+"[#200](https://github.com/executablebooks/sphinx-book-theme/pull/200) "
+"([@hason](https://github.com/hason))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:447
+msgid ""
+"([GitHub contributors page for this "
+"release](https://github.com/executablebooks/sphinx-book-"
+"theme/graphs/contributors?from=2020-08-25&to=2020-09-28&type=c))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:449
+#, python-format
+msgid ""
+"[@choldgraf](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3Acholdgraf+updated%3A2020-08-25..2020-09-28&type=Issues) "
+"| [@chrisjsewell](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Achrisjsewell+updated%3A2020-08-25..2020-09-28&type=Issues)"
+" | [@fm75](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-theme+involves%3Afm75+updated%3A2020-08-25..2020-09-28&type=Issues) "
+"| [@hason](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-theme+involves%3Ahason+updated%3A2020-08-25..2020-09-28&type=Issues)"
+" | [@najuzilu](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Anajuzilu+updated%3A2020-08-25..2020-09-28&type=Issues) |"
+" [@nathancarter](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Anathancarter+updated%3A2020-08-25..2020-09-28&type=Issues)"
+" | [@pauleveritt](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Apauleveritt+updated%3A2020-08-25..2020-09-28&type=Issues)"
+" | [@pradyunsg](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Apradyunsg+updated%3A2020-08-25..2020-09-28&type=Issues) "
+"|"
+msgstr ""
+
+#: ../../../CHANGELOG.md:451
+msgid "v0.0.36 2020-08-25"
+msgstr ""
+
+#: ../../../CHANGELOG.md:453
+msgid ""
+"👌 IMPROVED: The main theme change in this release, is the addition of CSS"
+" styling for definition lists, including those created by "
+"[sphinx.ext.autodoc](https://www.sphinx-"
+"doc.org/en/master/usage/extensions/autodoc.html). See [Definition and "
+"Field Lists](https://sphinx-book-theme.readthedocs.io/en/latest/reference"
+"/kitchen-sink/lists.html), and the [Python API documentation](https"
+"://sphinx-book-theme.readthedocs.io/en/latest/reference/kitchen-"
+"sink/api.html)."
+msgstr ""
+
+#: ../../../CHANGELOG.md:456
+msgid ""
+"🔧 MAINTENANCE: Under the hood, there has also been work undertaken to "
+"improve the development environment for working with the package. Thanks "
+"to [@pradyunsg](https://github.com/pradyunsg)."
+msgstr ""
+
+#: ../../../CHANGELOG.md:460
+msgid ""
+"[@chrisjsewell](https://github.com/chrisjsewell) | "
+"[@pradyunsg](https://github.com/pradyunsg)"
+msgstr ""
+
+#: ../../../CHANGELOG.md:462
+msgid "v0.0.34...v0.0.35"
+msgstr ""
+
+#: ../../../CHANGELOG.md:463
+msgid ""
+"([full changelog](https://github.com/executablebooks/sphinx-book-"
+"theme/compare/v0.0.34...v0.0.35))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:465
+msgid "Enhancements 👌"
+msgstr ""
+
+#: ../../../CHANGELOG.md:467
+msgid ""
+"Change \"On this page\" -> \"Contents\" "
+"[#159](https://github.com/executablebooks/sphinx-book-theme/pull/159) "
+"([@pradyunsg](https://github.com/pradyunsg))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:468
+msgid ""
+"Use consistent font size in toc [#157](https://github.com/executablebooks"
+"/sphinx-book-theme/pull/157) ([@pradyunsg](https://github.com/pradyunsg))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:469
+msgid ""
+"Consistent font size in navigation "
+"[#156](https://github.com/executablebooks/sphinx-book-theme/pull/156) "
+"([@pradyunsg](https://github.com/pradyunsg))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:471
+msgid "Bugs fixed 🐛"
+msgstr ""
+
+#: ../../../CHANGELOG.md:473
+msgid ""
+"backref superscript [#171](https://github.com/executablebooks/sphinx-"
+"book-theme/pull/171) ([@AakashGfude](https://github.com/AakashGfude))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:474
+msgid ""
+"Fixing sidebar overlap on narrow screens "
+"[#167](https://github.com/executablebooks/sphinx-book-theme/pull/167) "
+"([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:475
+msgid ""
+"Fixing jupyterhub urls [#166](https://github.com/executablebooks/sphinx-"
+"book-theme/pull/166) ([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:476
+msgid ""
+"Create parent folders, when adding notebook to sources "
+"[#152](https://github.com/executablebooks/sphinx-book-theme/pull/152) "
+"([@pradyunsg](https://github.com/pradyunsg))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:478
+msgid "Documentation improvements 📚"
+msgstr ""
+
+#: ../../../CHANGELOG.md:480
+msgid ""
+"Adding contributing docs [#163](https://github.com/executablebooks"
+"/sphinx-book-theme/pull/163) ([@choldgraf](https://github.com/choldgraf))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:484
+msgid ""
+"([GitHub contributors page for this "
+"release](https://github.com/executablebooks/sphinx-book-"
+"theme/graphs/contributors?from=2020-08-05&to=2020-08-10&type=c))"
+msgstr ""
+
+#: ../../../CHANGELOG.md:486
+#, python-format
+msgid ""
+"[@AakashGfude](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3AAakashGfude+updated%3A2020-08-05..2020-08-10&type=Issues)"
+" | [@choldgraf](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Acholdgraf+updated%3A2020-08-05..2020-08-10&type=Issues) "
+"| [@chrisjsewell](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Achrisjsewell+updated%3A2020-08-05..2020-08-10&type=Issues)"
+" | [@pradyunsg](https://github.com/search?q=repo%3Aexecutablebooks"
+"%2Fsphinx-book-"
+"theme+involves%3Apradyunsg+updated%3A2020-08-05..2020-08-10&type=Issues) "
+"| [@welcome](https://github.com/search?q=repo%3Aexecutablebooks%2Fsphinx-"
+"book-"
+"theme+involves%3Awelcome+updated%3A2020-08-05..2020-08-10&type=Issues)"
+msgstr ""
+
