@@ -1,0 +1,170 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023
+# This file is distributed under the same license as the Sphinx Book Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Book Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 15:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../../src/sphinx_book_theme/assets/translations/README.md:2
+msgid "Translation workflow"
+msgstr ""
+
+#: ../../../src/sphinx_book_theme/assets/translations/README.md:4
+msgid ""
+"This folder contains code and translations for supporting multiple "
+"languages with Sphinx. See [the Sphinx internationalization "
+"documentation](https://www.sphinx-"
+"doc.org/en/master/usage/configuration.html#options-for-"
+"internationalization) for more details."
+msgstr ""
+
+#: ../../../src/sphinx_book_theme/assets/translations/README.md:7
+msgid "Structure of translation files"
+msgstr ""
+
+#: ../../../src/sphinx_book_theme/assets/translations/README.md:9
+msgid "Translation source files"
+msgstr ""
+
+#: ../../../src/sphinx_book_theme/assets/translations/README.md:11
+msgid ""
+"The source files for our translations are hand-edited, and contain the "
+"raw mapping of words onto various languages. They are checked in to `git`"
+" history with this repository."
+msgstr ""
+
+#: ../../../src/sphinx_book_theme/assets/translations/README.md:14
+msgid ""
+"`src/sphinx_book_theme/assets/translations/jsons` contains a collection "
+"of JSON files that define the translation for various phrases in this "
+"repository. Each file is a different phrase, and its contents define "
+"language codes and translated phrases for each language we support. They "
+"were originally created with [the smodin.io language "
+"translator](https://smodin.me/translate-one-text-into-multiple-languages)"
+" (see below for how to update them)."
+msgstr ""
+
+#: ../../../src/sphinx_book_theme/assets/translations/README.md:18
+msgid "Compiled translation files"
+msgstr ""
+
+#: ../../../src/sphinx_book_theme/assets/translations/README.md:20
+msgid ""
+"The translation source files are compiled at build time (when we run `stb"
+" compile`) automatically. This is executed by the Python script at "
+"`python src/sphinx_book_theme/_compile_translations.py` (more information"
+" on that below)."
+msgstr ""
+
+#: ../../../src/sphinx_book_theme/assets/translations/README.md:23
+msgid ""
+"These compiled files are **not checked into `.git` history**, but they "
+"**are** bundled with the theme when it is distributed in a package. "
+"Here's a brief explanation of each:"
+msgstr ""
+
+#: ../../../src/sphinx_book_theme/assets/translations/README.md:26
+msgid ""
+"`src/sphinx_book_theme/theme/sphinx_book_theme/static/locales` contains "
+"Sphinx locale files that were auto-converted from the files in `jsons/` "
+"by the helper script below."
+msgstr ""
+
+#: ../../../src/sphinx_book_theme/assets/translations/README.md:27
+msgid ""
+"`src/sphinx_book_theme/_compile_translations.py` is a helper script to "
+"auto-generate Sphinx locale files from the JSONs in `jsons/`."
+msgstr ""
+
+#: ../../../src/sphinx_book_theme/assets/translations/README.md:29
+msgid "Workflow of translations"
+msgstr ""
+
+#: ../../../src/sphinx_book_theme/assets/translations/README.md:31
+msgid ""
+"Here's a short workflow of how to add a new translation, assuming that "
+"you are translating using the [smodin.io service](https://smodin.io"
+"/translate-one-text-into-multiple-languages)."
+msgstr ""
+
+#: ../../../src/sphinx_book_theme/assets/translations/README.md:33
+msgid ""
+"Go to [the smodin.io service](https://smodin.io/translate-one-text-into-"
+"multiple-languages)"
+msgstr ""
+
+#: ../../../src/sphinx_book_theme/assets/translations/README.md:34
+msgid "Select as many languages as you like."
+msgstr ""
+
+#: ../../../src/sphinx_book_theme/assets/translations/README.md:35
+msgid "Type in the phrase you'd like to translate."
+msgstr ""
+
+#: ../../../src/sphinx_book_theme/assets/translations/README.md:36
+msgid "Click `TRANSLATE` and then `Download JSON`."
+msgstr ""
+
+#: ../../../src/sphinx_book_theme/assets/translations/README.md:37
+msgid ""
+"This will download a JSON file with a bunch of `language-code: "
+"translated-phrase` mappings."
+msgstr ""
+
+#: ../../../src/sphinx_book_theme/assets/translations/README.md:38
+msgid ""
+"Put this JSON in the `jsons/` folder, and rename it to be the phrase "
+"you've translated in English. So if the original phrase is `My phrase`, "
+"you should name the file `My phrase.json`."
+msgstr ""
+
+#: ../../../src/sphinx_book_theme/assets/translations/README.md:40
+msgid ""
+"Run [the `prettier` formatter](https://prettier.io/) on this JSON to "
+"split it into multiple lines (this makes it easier to read and edit if "
+"translations should be updated)"
+msgstr ""
+
+#: ../../../src/sphinx_book_theme/assets/translations/README.md:46
+msgid "Run `python src/sphinx_book_theme/_compile_translations.py`"
+msgstr ""
+
+#: ../../../src/sphinx_book_theme/assets/translations/README.md:47
+msgid ""
+"This will generate the locale files (`.mo`) that Sphinx uses in its "
+"translation machinery, and put them in `locales/<language-"
+"code>/LC_MESSAGES/<msg>.mo`."
+msgstr ""
+
+#: ../../../src/sphinx_book_theme/assets/translations/README.md:49
+msgid "Sphinx should now know how to translate this message!"
+msgstr ""
+
+#: ../../../src/sphinx_book_theme/assets/translations/README.md:51
+msgid "To update a translation"
+msgstr ""
+
+#: ../../../src/sphinx_book_theme/assets/translations/README.md:53
+msgid ""
+"To update a translation, you may go to the phase you'd like to modify in "
+"`jsons/`, then find the entry for the language you'd like to update, and "
+"change its value. Finally, run `python "
+"src/sphinx_book_theme/_compile_translations.py` and this will update the "
+"`.mo` files."
+msgstr ""
+

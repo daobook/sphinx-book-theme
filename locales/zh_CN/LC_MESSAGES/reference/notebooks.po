@@ -1,0 +1,131 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023
+# This file is distributed under the same license as the Sphinx Book Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Book Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 15:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../reference/notebooks.md:15
+msgid "Jupyter notebooks"
+msgstr ""
+
+#: ../../reference/notebooks.md:17
+msgid ""
+"This is a page to demonstrate the look and feel of Jupyter Notebook "
+"elements."
+msgstr ""
+
+#: ../../reference/notebooks.md:19
+msgid "Hiding elements"
+msgstr ""
+
+#: ../../reference/notebooks.md:21
+msgid "Hide cells"
+msgstr ""
+
+#: ../../reference/notebooks.md:23
+msgid ""
+"The following cell is hidden. It also has a `thebe-init` tag which means "
+"it will be executed when you initialize Thebe."
+msgstr ""
+
+#: ../../reference/notebooks.md:34
+msgid "Hide inputs"
+msgstr ""
+
+#: ../../reference/notebooks.md:50
+msgid "Hide outputs"
+msgstr ""
+
+#: ../../reference/notebooks.md:66
+msgid "Hide markdown"
+msgstr ""
+
+#: ../../reference/notebooks.md:70
+msgid "This is a hidden markdown cell"
+msgstr ""
+
+#: ../../reference/notebooks.md:72
+msgid "It should be hidden!"
+msgstr ""
+
+#: ../../reference/notebooks.md:76
+msgid "And here's a toggleable note"
+msgstr ""
+
+#: ../../reference/notebooks.md:78
+msgid "With a body!"
+msgstr ""
+
+#: ../../reference/notebooks.md:83
+msgid "Hide both inputs and outputs"
+msgstr ""
+
+#: ../../reference/notebooks.md:98
+msgid "Hide the whole cell"
+msgstr ""
+
+#: ../../reference/notebooks.md:113
+msgid "Enriched outputs"
+msgstr ""
+
+#: ../../reference/notebooks.md:115
+msgid "Math"
+msgstr ""
+
+#: ../../reference/notebooks.md:119
+msgid ""
+"\\displaystyle \\sum_{i=0}^n i^2 = "
+"rac{(n^2+n)(2n+1)}{6}"
+msgstr ""
+
+#: ../../reference/notebooks.md:123
+msgid "Pandas DataFrames"
+msgstr ""
+
+#: ../../reference/notebooks.md:133
+msgid ""
+"Styled DataFrames (see [the Pandas Styling "
+"docs](https://pandas.pydata.org/pandas-"
+"docs/stable/user_guide/style.html))."
+msgstr ""
+
+#: ../../reference/notebooks.md:169
+msgid "Interactive outputs"
+msgstr ""
+
+#: ../../reference/notebooks.md:171
+msgid "Folium"
+msgstr ""
+
+#: ../../reference/notebooks.md:210
+msgid "Stdout"
+msgstr ""
+
+#: ../../reference/notebooks.md:217
+msgid "Formatting code cells"
+msgstr ""
+
+#: ../../reference/notebooks.md:219
+msgid "Scrolling cell outputs"
+msgstr ""
+
+#: ../../reference/notebooks.md:227
+msgid "Scrolling cell inputs"
+msgstr ""
+

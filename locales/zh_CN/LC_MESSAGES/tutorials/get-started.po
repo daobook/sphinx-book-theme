@@ -1,0 +1,204 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023
+# This file is distributed under the same license as the Sphinx Book Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Book Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-19 22:28+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../tutorials/get-started.md:1
+msgid "Get started"
+msgstr "快速上手"
+
+#: ../../tutorials/get-started.md:3
+msgid ""
+"This is a short step-by-step tutorial to get started with the Sphinx Book"
+" Theme."
+msgstr ""
+"简短的逐步教程，帮助您开始使用 Sphinx Book 主题。"
+
+#: ../../tutorials/get-started.md:6
+msgid ""
+"This documentation and the examples below are written with MyST Markdown,"
+" a form of markdown that works with Sphinx. For more information about "
+"MyST markdown, and to use MyST markdown with your Sphinx website, see "
+"[the MyST-parser documentation](https://myst-parser.readthedocs.io/)"
+msgstr ""
+"本文档和下面的示例使用 MyST Markdown 编写，这是一种与 Sphinx 一起使用的标记语言。"
+"有关 MyST markdown 的更多信息，以及如何将其与您的 Sphinx 网站一起使用，"
+"请参阅 [MyST-parser 文档](https://myst-parser.readthedocs.io/)。"
+
+#: ../../tutorials/get-started.md:12
+msgid "Prerequisites"
+msgstr "先决条件"
+
+#: ../../tutorials/get-started.md:14
+msgid ""
+"You should be relatively familiar with [the Sphinx ecosystem](http://www"
+".sphinx-doc.org/), and have it installed locally on your computer."
+msgstr ""
+"您应该对 [Sphinx 生态系统](http://www.sphinx-doc.org/) 有所了解，并且已经在本地计算机上安装了它。"
+
+#: ../../tutorials/get-started.md:17
+msgid ""
+"If you don't already have a Sphinx site ready to customize, you can "
+"create one with:"
+msgstr ""
+"如果您还没有准备好进行自定义的 Sphinx 站点，可以使用以下命令创建："
+
+#: ../../tutorials/get-started.md:24
+msgid "Install and activate the theme"
+msgstr "安装并激活主题"
+
+#: ../../tutorials/get-started.md:26
+msgid "First install `sphinx-book-theme` with `pip`:"
+msgstr "首先使用 `pip` 安装 `sphinx-book-theme`："
+
+#: ../../tutorials/get-started.md:32
+msgid "then, activate the theme in your Sphinx configuration (`conf.py`):"
+msgstr "然后，在您的 Sphinx 配置文件（ `conf.py` ）中激活主题："
+
+#: ../../tutorials/get-started.md:40
+msgid "This will activate the Sphinx Book Theme for your documentation."
+msgstr "这将为您的文档激活 Sphinx Book 主题。"
+
+#: ../../tutorials/get-started.md:43
+msgid ""
+"You may need to comment-out your `html_theme_options` configuration "
+"depending on your previous theme."
+msgstr ""
+"您可能需要根据您的先前的主题注释掉您的 `html_theme_options` 配置。"
+
+#: ../../tutorials/get-started.md:46
+msgid "Add a source repository button to your theme"
+msgstr "添加源存储库按钮到您的主题"
+
+#: ../../tutorials/get-started.md:48
+msgid ""
+"There are several ways that you can customize the Sphinx Book Theme. For "
+"this tutorial, we'll add a pointer to a GitHub repository for our theme."
+msgstr ""
+"有几种方法可以自定义 Sphinx Book Theme。对于本教程将添加指向主题的 GitHub 存储库的指针。"
+
+#: ../../tutorials/get-started.md:51
+msgid ""
+"To add a button that links to the repository for your documentation, add "
+"the following configuration in `conf.py`."
+msgstr ""
+"要向您的主题添加指向存储库的按钮，请在 `conf.py` 中添加以下配置。"
+
+#: ../../tutorials/get-started.md:62
+msgid ""
+"When you build your documentation, your header should now include a small"
+" GitHub logo that has a link to the repository."
+msgstr ""
+"当您构建文档时，您的页眉现在应该包含指向存储库的小 GitHub 徽标。"
+
+#: ../../tutorials/get-started.md:66
+msgid "See [](source-files:repository) for more information."
+msgstr "阅读 [](source-files:repository) 的更多信息。"
+
+#: ../../tutorials/get-started.md:69
+msgid "Customize your left sidebar"
+msgstr "自定义左侧边栏"
+
+#: ../../tutorials/get-started.md:71
+msgid ""
+"There are a few major areas of the page that you can customize with the "
+"book theme. The most common is the **primary sidebar** (by default, on "
+"the left of the page)."
+msgstr ""
+"您可以通过 Book 主题自定义页面的几个主要区域。最常见的是 **主侧边栏** （默认情况下，位于页面左侧）。"
+
+#: ../../tutorials/get-started.md:74
+msgid ""
+"Sidebar elements are defined as HTML templates by Sphinx, Sphinx "
+"extensions, and the current theme. You may specify which pages should "
+"contain which sidebar elements using the `html_sidebars` configuration. "
+"We'll skip this step in this tutorial, but if you'd like to learn more, "
+"see [](sidebar-primary:items)."
+msgstr ""
+"侧边栏元素由 Sphinx、Sphinx 插件和当前主题定义为 HTML 模板。"
+"您可以使用 `html_sidebars` 配置指定哪些页面应包含哪些侧边栏元素。在本教程中，将跳过此步骤，但如果您想了解更多信息，请参阅[](sidebar-primary:items)。"
+
+#: ../../tutorials/get-started.md:78
+msgid ""
+"Let's **customize the logo of our site**. To do so, we'll edit the "
+"`html_logo` and `html_title` configuration options."
+msgstr ""
+"**自定义站点的徽标**。为此，将编辑 `html_logo` 和 `html_title` 配置选项。"
+
+#: ../../tutorials/get-started.md:81
+msgid "To add a site logo, follow these steps:"
+msgstr "为了添加站点徽标，请按照以下步骤操作："
+
+#: ../../tutorials/get-started.md:83
+msgid "Put an image in your documentation's root (e.g., `myimage.png`)."
+msgstr "放置图像在您的文档根目录（例如，`myimage.png`）。"
+
+#: ../../tutorials/get-started.md:84
+msgid "Add a line to your `conf.py` file that looks like this:"
+msgstr "添加一行到您的 `conf.py` 文件，如下所示："
+
+#: ../../tutorials/get-started.md:90
+msgid "Where the path is relative to your `conf.py` file."
+msgstr "路径相对于 `conf.py` 文件。"
+
+#: ../../tutorials/get-started.md:92
+msgid ""
+"Next we'll **customize the title of the site**. To do so, add a line to "
+"your `conf.py` file that looks like this:"
+msgstr ""
+"接下来，将 **自定义站点标题**。为此，请在您的 `conf.py` 文件中添加一行，如下所示："
+
+#: ../../tutorials/get-started.md:99
+msgid "This title will now be placed underneath the logo."
+msgstr "此标题现在将放置在 logo 下方。"
+
+#: ../../tutorials/get-started.md:101
+msgid "Add some margin content to a page"
+msgstr "为页面添加一些边距内容"
+
+#: ../../tutorials/get-started.md:103
+msgid ""
+"There are a few special kinds of content that this theme supports, "
+"largely inspired by [the Tufte CSS theme "
+"styles](https://edwardtufte.github.io/tufte-css/). One kind of content is"
+" **margin content**. This allows you to \"pop out\" content to the side "
+"of the page, in the margins. Add some margin content to a page by adding "
+"the following directive (written with [MyST Markdown](https://myst-"
+"parser.readthedocs.io))."
+msgstr ""
+"本主题支持几种特殊类型的内容，主要受到 [Tufte CSS 主题样式](https://edwardtufte.github.io/tufte-css/) 的启发。其中一种内容是 **边距内容**。"
+"这允许您将内容“弹出”到页面侧边，即边距中。通过添加以下指令（使用 [MyST Markdown](https://myst-parser.readthedocs.io) 编写），为页面添加一些边距内容。"
+
+#: ../../tutorials/get-started.md:118
+msgid ""
+"On wide screens, margin content will pop out to the side of the page and "
+"allow content underneath it to move upwards. This allows you to provide "
+"extra information without interrupting the flow of information."
+msgstr ""
+"在宽屏幕上，边距内容将弹出到页面的侧边，并允许其下方的内容向上移动。"
+"这使您可以提供额外的信息，而不会中断信息的流动。"
+
+#: ../../tutorials/get-started.md:121
+msgid ""
+"There are many other things that you can do with the Sphinx Book Theme. "
+"Now that you've gotten a start, check out the other sections to the left "
+"to learn more about how to use it."
+msgstr ""
+"使用 Sphinx Book 主题还有许多其他事情可以做。现在您已经开始了，查看左侧的其他部分，了解如何使用它的更多信息。"

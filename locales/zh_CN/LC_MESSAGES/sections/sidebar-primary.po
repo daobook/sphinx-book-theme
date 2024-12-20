@@ -1,0 +1,169 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023
+# This file is distributed under the same license as the Sphinx Book Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Book Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 15:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../sections/sidebar-primary.md:1
+msgid "Primary sidebar and navigation"
+msgstr ""
+
+#: ../../sections/sidebar-primary.md:3
+msgid ""
+"The primary sidebar generally contains the site navigation and logo. By "
+"default it is on the left side of the site. This page describes ways that"
+" you can control and customize the primary sidebar."
+msgstr ""
+
+#: ../../sections/sidebar-primary.md:8
+msgid "Control the left sidebar items"
+msgstr ""
+
+#: ../../sections/sidebar-primary.md:10
+msgid ""
+"You can control what kind of content goes underneath the logo and name of"
+" your website in the top left."
+msgstr ""
+
+#: ../../sections/sidebar-primary.md:12
+msgid ""
+"To do so, use the `html_sidebars` variable in your `conf.py` file. This "
+"takes a dictionary of filename patterns as keys, and a list of sidebar "
+"elements as values. Any files that match a key will have the "
+"corresponding sidebar elements placed in that page's sidebar."
+msgstr ""
+
+#: ../../sections/sidebar-primary.md:14
+msgid ""
+"For example, the following configuration would include *only the footer* "
+"on pages under the `posts/` folder:"
+msgstr ""
+
+#: ../../sections/sidebar-primary.md:22
+msgid ""
+"You can also use `**` to apply a set of sidebars to **all** pages of your"
+" book. For example:"
+msgstr ""
+
+#: ../../sections/sidebar-primary.md:30
+msgid ""
+"See the [Sphinx HTML sidebars documentation](https://www.sphinx-"
+"doc.org/en/master/usage/configuration.html#confval-html_sidebars) for "
+"more information."
+msgstr ""
+
+#: ../../sections/sidebar-primary.md:32
+msgid "Default sidebar elements"
+msgstr ""
+
+#: ../../sections/sidebar-primary.md:34
+msgid ""
+"By default, this theme comes with these theme-specific sidebar elements "
+"enabled on all pages:"
+msgstr ""
+
+#: ../../sections/sidebar-primary.md:36
+msgid "`navbar-logo.html`: Displays the logo and site title."
+msgstr ""
+
+#: ../../sections/sidebar-primary.md:37
+msgid "`icon-links.html`: Displays [icon links](icon-links)"
+msgstr ""
+
+#: ../../sections/sidebar-primary.md:38
+msgid ""
+"`search-button-field.html`: A bootstrap-based search bar (from the "
+"[PyData Sphinx Theme](https://pydata-sphinx-theme.readthedocs.io/))"
+msgstr ""
+
+#: ../../sections/sidebar-primary.md:39
+msgid "`sbt-sidebar-nav.html`: A bootstrap-based navigation menu for your book."
+msgstr ""
+
+#: ../../sections/sidebar-primary.md:41
+msgid "Add a header to your Table of Contents"
+msgstr ""
+
+#: ../../sections/sidebar-primary.md:43
+msgid ""
+"If you'd like to add a header above a section of TOC links, use "
+"`:caption: My header text` in your `toctree` directive for that section."
+msgstr ""
+
+#: ../../sections/sidebar-primary.md:48
+msgid "Add the home page to your table of contents"
+msgstr ""
+
+#: ../../sections/sidebar-primary.md:50
+msgid ""
+"By default, your table of contents will begin with the first file that "
+"you add to a `toctree`. You can also configure the theme to show the "
+"**landing page** of the theme in your navigation bar as well."
+msgstr ""
+
+#: ../../sections/sidebar-primary.md:52
+msgid ""
+"To add the landing page of your site to the table of contents, use the "
+"following configuration:"
+msgstr ""
+
+#: ../../sections/sidebar-primary.md:63
+msgid "Control the depth of the left sidebar lists to expand"
+msgstr ""
+
+#: ../../sections/sidebar-primary.md:65
+msgid ""
+"You can control the level of toc items in the left sidebar to remain "
+"expanded, using the following configuration in `conf.py`:"
+msgstr ""
+
+#: ../../sections/sidebar-primary.md:76
+msgid ""
+"The default value is `1`, which shows only top-level sections of the "
+"documentation (and is used in this documentation)."
+msgstr ""
+
+#: ../../sections/sidebar-primary.md:80
+msgid "Control the maximum depth of the left sidebar lists"
+msgstr ""
+
+#: ../../sections/sidebar-primary.md:82
+msgid ""
+"You can control the level of toc items included in the left sidebar, "
+"using the following configuration in `conf.py`:"
+msgstr ""
+
+#: ../../sections/sidebar-primary.md:93
+msgid "The default value is `4`."
+msgstr ""
+
+#: ../../sections/sidebar-primary.md:96
+msgid "Turn off expandable left sidebar lists"
+msgstr ""
+
+#: ../../sections/sidebar-primary.md:98
+msgid ""
+"You can turn off the sidebar expanding, using the following configuration"
+" in `conf.py`:"
+msgstr ""
+
+#: ../../sections/sidebar-primary.md:109
+msgid "The default value is `False`, which allows the navbar to be expanded."
+msgstr ""
+

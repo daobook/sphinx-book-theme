@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023
+# This file is distributed under the same license as the Sphinx Book Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Book Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 15:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../sections/sidebar-secondary.md:1
+msgid "Secondary sidebar and table of contents"
+msgstr ""
+
+#: ../../sections/sidebar-secondary.md:3
+msgid ""
+"The secondary sidebar contains information about the current page. It "
+"begins at the top of the page (in the header), and extends downwards (by "
+"default, from the right side of the page). This page describes ways to "
+"control and customize the secondary sidebar."
+msgstr ""
+
+#: ../../sections/sidebar-secondary.md:7
+msgid "Rename the in-page Table of Contents"
+msgstr ""
+
+#: ../../sections/sidebar-secondary.md:9
+msgid ""
+"You can rename the title of the in-page table of contents, in the right "
+"sidebar:"
+msgstr ""
+
+#: ../../sections/sidebar-secondary.md:17
+msgid "The default value of the title is `Contents`."
+msgstr ""
+
+#: ../../sections/sidebar-secondary.md:19
+msgid "Show more levels of the in-page TOC by default"
+msgstr ""
+
+#: ../../sections/sidebar-secondary.md:21
+msgid ""
+"Normally only the 2nd-level headers of a page are shown in the within-"
+"page table of contents, and deeper levels are only shown when they are "
+"part of an active section (when it is scrolled on screen)."
+msgstr ""
+
+#: ../../sections/sidebar-secondary.md:23
+msgid ""
+"You can show deeper levels by default by using the following "
+"configuration, indicating how many levels should be displayed:"
+msgstr ""
+
+#: ../../sections/sidebar-secondary.md:31
+msgid ""
+"All headings up to and including the level specified will now be shown "
+"regardless of what is displayed on the page."
+msgstr ""
+

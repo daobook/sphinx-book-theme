@@ -1,0 +1,208 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023
+# This file is distributed under the same license as the Sphinx Book Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Book Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 15:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../content/notebooks.md:15
+msgid "Jupyter notebooks"
+msgstr ""
+
+#: ../../content/notebooks.md:17
+msgid ""
+"You can also create content with Jupyter Notebooks, using the [MyST-NB "
+"Sphinx extension](https://myst-nb.readthedocs.io/en/latest/)."
+msgstr ""
+
+#: ../../content/notebooks.md:19
+msgid ""
+"This page demonstrates some extra functionality that works with this "
+"theme."
+msgstr ""
+
+#: ../../content/notebooks.md:21
+msgid "Markdown + notebooks"
+msgstr ""
+
+#: ../../content/notebooks.md:23
+msgid "As it is markdown, you can embed images, HTML, etc into your posts!"
+msgstr ""
+
+#: ../../content/notebooks.md:25
+msgid "![](../images/cool.jpg)"
+msgstr ""
+
+#: ../../content/notebooks.md:27
+msgid "You an also $add_{math}$ and"
+msgstr ""
+
+#: ../../content/notebooks.md:29
+msgid ""
+"\n"
+"math^{blocks}\n"
+msgstr ""
+
+#: ../../content/notebooks.md:33
+msgid "or"
+msgstr ""
+
+#: ../../content/notebooks.md:35
+msgid ""
+"\n"
+"\\begin{align*}\n"
+"\\mbox{mean} la_{tex} \\\\ \\\\\n"
+"math blocks\n"
+"\\end{align*}\n"
+msgstr ""
+
+#: ../../content/notebooks.md:42
+msgid "But make sure you \\$Escape \\$your \\$dollar signs \\$you want to keep!"
+msgstr ""
+
+#: ../../content/notebooks.md:44
+msgid "Code blocks and image outputs"
+msgstr ""
+
+#: ../../content/notebooks.md:46
+msgid ""
+"Jupyter Book will also embed your code blocks and output in your book. "
+"For example, here's some sample Matplotlib code:"
+msgstr ""
+
+#: ../../content/notebooks.md:78
+msgid "Note that the image above is captured and displayed."
+msgstr ""
+
+#: ../../content/notebooks.md:117
+msgid ""
+"\\displaystyle \\sum_{i=0}^n i^2 = "
+"rac{(n^2+n)(2n+1)}{6}"
+msgstr ""
+
+#: ../../content/notebooks.md:121
+msgid "Removing content before publishing"
+msgstr ""
+
+#: ../../content/notebooks.md:123
+msgid ""
+"You can also remove some content before publishing your book to the web. "
+"For example, in {download}`./notebooks.md`, there used to be a cell "
+"below..."
+msgstr ""
+
+#: ../../content/notebooks.md:139
+msgid ""
+"You can also **remove only the code** so that images and other output "
+"still show up."
+msgstr ""
+
+#: ../../content/notebooks.md:141
+msgid ""
+"Below we'll *only* display an image. It was generated with Python code in"
+" a cell, which you can {download}`see in the original notebook "
+"<./notebooks.md>`."
+msgstr ""
+
+#: ../../content/notebooks.md:157
+msgid "And here we'll *only* display a Pandas DataFrame."
+msgstr ""
+
+#: ../../content/notebooks.md:167
+msgid ""
+"You can even style Pandas DataFrames! See [the Pandas Styling "
+"docs](https://pandas.pydata.org/pandas-docs/stable/user_guide/style.html)"
+" for more information."
+msgstr ""
+
+#: ../../content/notebooks.md:206
+msgid "Testing margins before headers"
+msgstr ""
+
+#: ../../content/notebooks.md:210
+msgid "Interactive outputs"
+msgstr ""
+
+#: ../../content/notebooks.md:212
+msgid ""
+"We can even do the same for *interactive* material. Below we'll display a"
+" map using [folium](https://python-visualization.github.io/folium/). When"
+" the notebook is converted to Markdown, the code for creating the "
+"interactive map is retained."
+msgstr ""
+
+#: ../../content/notebooks.md:215
+msgid ""
+"**Note that this will only work for some packages.** They need to be able"
+" to output standalone HTML/Javascript, and not depend on an underlying "
+"Python kernel to work."
+msgstr ""
+
+#: ../../content/notebooks.md:254
+msgid "Rich outputs from notebook cells"
+msgstr ""
+
+#: ../../content/notebooks.md:258
+msgid ""
+"Because notebooks have rich text outputs, you can store these in your "
+"Jupyter Book as well!"
+msgstr ""
+
+#: ../../content/notebooks.md:266
+msgid "Formatting code cells"
+msgstr ""
+
+#: ../../content/notebooks.md:268
+msgid "Scrolling cell outputs"
+msgstr ""
+
+#: ../../content/notebooks.md:270
+msgid ""
+"The traditional Jupyter Notebook interface allows you to toggle **output "
+"scrolling** for your cells. This allows you to visualize part of a long "
+"output without it taking up the entire page."
+msgstr ""
+
+#: ../../content/notebooks.md:274
+msgid ""
+"You can trigger this behavior in Jupyter Book by adding the following tag"
+" to a cell's metadata:"
+msgstr ""
+
+#: ../../content/notebooks.md:285
+msgid ""
+"For example, the following cell has a long output, but will be scrollable"
+" in the book:"
+msgstr ""
+
+#: ../../content/notebooks.md:295
+msgid "Scrolling cell inputs"
+msgstr ""
+
+#: ../../content/notebooks.md:297
+msgid ""
+"If your input code is long and takes up a lot of your page, you can make "
+"it scrollable as well by adding the following tag to a cell's metadata:"
+msgstr ""
+
+#: ../../content/notebooks.md:308
+msgid ""
+"For example, the following cell has a long input, but will be scrollable "
+"in the book:"
+msgstr ""
+

@@ -171,6 +171,7 @@ html_theme_options = {
 # sphinxext.opengraph
 ogp_social_cards = {
     "image": "_static/logo-square.png",
+    "font": "Noto Sans CJK JP", # 支持中文字体
 }
 
 # -- sphinx-copybutton config -------------------------------------

@@ -1,0 +1,593 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023
+# This file is distributed under the same license as the Sphinx Book Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Book Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 15:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../reference/api-numpy.md:1
+msgid "NumPy docstrings"
+msgstr ""
+
+#: ../../reference/api-numpy.md:3
+msgid ""
+"This page demonstrates NumPy docstrings for the theme, as well as some "
+"other common Sphinx directives for API documentation."
+msgstr ""
+
+#: numpy:2 of
+msgid "NumPy"
+msgstr ""
+
+#: numpy:4 of
+msgid "Provides"
+msgstr ""
+
+#: numpy:5 of
+msgid "An array object of arbitrary homogeneous items"
+msgstr ""
+
+#: numpy:6 of
+msgid "Fast mathematical operations over arrays"
+msgstr ""
+
+#: numpy:7 of
+msgid "Linear Algebra, Fourier Transforms, Random Number Generation"
+msgstr ""
+
+#: numpy:10 of
+msgid "How to use the documentation"
+msgstr ""
+
+#: numpy:11 of
+msgid ""
+"Documentation is available in two forms: docstrings provided with the "
+"code, and a loose standing reference guide, available from `the NumPy "
+"homepage <https://numpy.org>`_."
+msgstr ""
+
+#: numpy:15 of
+msgid ""
+"We recommend exploring the docstrings using `IPython "
+"<https://ipython.org>`_, an advanced Python shell with TAB-completion and"
+" introspection capabilities.  See below for further instructions."
+msgstr ""
+
+#: numpy:20 of
+msgid "The docstring examples assume that `numpy` has been imported as ``np``::"
+msgstr ""
+
+#: numpy:24 of
+msgid "Code snippets are indicated by three greater-than signs::"
+msgstr ""
+
+#: numpy:29 of
+msgid "Use the built-in ``help`` function to view a function's docstring::"
+msgstr ""
+
+#: numpy:34 of
+msgid ""
+"For some objects, ``np.info(obj)`` may provide additional help.  This is "
+"particularly true if you see the line \"Help on ufunc object:\" at the "
+"top of the help() page.  Ufuncs are implemented in C, not Python, for "
+"speed. The native Python help() does not know how to view their help, but"
+" our np.info() function does."
+msgstr ""
+
+#: numpy:40 of
+msgid "To search for documents containing a keyword, do::"
+msgstr ""
+
+#: numpy:45 of
+msgid ""
+"General-purpose documents like a glossary and help on the basic concepts "
+"of numpy are available under the ``doc`` sub-module::"
+msgstr ""
+
+#: numpy:53 of
+msgid "Available subpackages"
+msgstr ""
+
+#: numpy:54 of
+msgid "lib"
+msgstr ""
+
+#: numpy:55 of
+msgid "Basic functions used by several sub-packages."
+msgstr ""
+
+#: numpy:56 of
+msgid "random"
+msgstr ""
+
+#: numpy:57 of
+msgid "Core Random Tools"
+msgstr ""
+
+#: numpy:58 of
+msgid "linalg"
+msgstr ""
+
+#: numpy:59 of
+msgid "Core Linear Algebra Tools"
+msgstr ""
+
+#: numpy:60 of
+msgid "fft"
+msgstr ""
+
+#: numpy:61 of
+msgid "Core FFT routines"
+msgstr ""
+
+#: numpy:62 of
+msgid "polynomial"
+msgstr ""
+
+#: numpy:63 of
+msgid "Polynomial tools"
+msgstr ""
+
+#: numpy:64 of
+msgid "testing"
+msgstr ""
+
+#: numpy:65 of
+msgid "NumPy testing tools"
+msgstr ""
+
+#: numpy:66 of
+msgid "distutils"
+msgstr ""
+
+#: numpy:67 of
+msgid ""
+"Enhancements to distutils with support for Fortran compilers support and "
+"more  (for Python <= 3.11)."
+msgstr ""
+
+#: numpy:71 of
+msgid "Utilities"
+msgstr ""
+
+#: numpy:72 of
+msgid "test"
+msgstr ""
+
+#: numpy:73 of
+msgid "Run numpy unittests"
+msgstr ""
+
+#: numpy:74 of
+msgid "show_config"
+msgstr ""
+
+#: numpy:75 of
+msgid "Show numpy build configuration"
+msgstr ""
+
+#: numpy:76 of
+msgid "matlib"
+msgstr ""
+
+#: numpy:77 of
+msgid "Make everything matrices."
+msgstr ""
+
+#: numpy:78 of
+msgid "__version__"
+msgstr ""
+
+#: numpy:79 of
+msgid "NumPy version string"
+msgstr ""
+
+#: numpy:82 of
+msgid "Viewing documentation using IPython"
+msgstr ""
+
+#: numpy:84 of
+#, python-format
+msgid ""
+"Start IPython and import `numpy` usually under the alias ``np``: `import "
+"numpy as np`.  Then, directly past or use the ``%cpaste`` magic to paste "
+"examples into the shell.  To see which functions are available in "
+"`numpy`, type ``np.<TAB>`` (where ``<TAB>`` refers to the TAB key), or "
+"use ``np.*cos*?<ENTER>`` (where ``<ENTER>`` refers to the ENTER key) to "
+"narrow down the list.  To view the docstring for a function, use "
+"``np.cos?<ENTER>`` (to view the docstring) and ``np.cos??<ENTER>`` (to "
+"view the source code)."
+msgstr ""
+
+#: numpy:94 of
+msgid "Copies vs. in-place operation"
+msgstr ""
+
+#: numpy:95 of
+msgid ""
+"Most of the functions in `numpy` return a copy of the array argument "
+"(e.g., `np.sort`).  In-place versions of these functions are often "
+"available as array methods, i.e. ``x = np.array([1,2,3]); x.sort()``. "
+"Exceptions to this rule are documented."
+msgstr ""
+
+#: numpy.array:2 of
+msgid "Create an array."
+msgstr ""
+
+#: numpy.array numpy.transpose of
+msgid "Parameters"
+msgstr ""
+
+#: numpy.array:7 of
+msgid "**object**"
+msgstr ""
+
+#: numpy.array:-1 numpy.transpose:-1 of
+msgid "array_like"
+msgstr ""
+
+#: numpy.array:8 of
+msgid ""
+"An array, any object exposing the array interface, an object whose "
+"``__array__`` method returns an array, or any (nested) sequence. If "
+"object is a scalar, a 0-dimensional array containing object is returned."
+msgstr ""
+
+#: numpy.array:13 of
+msgid "**dtype**"
+msgstr ""
+
+#: numpy.array:-1 of
+msgid "data-type, optional"
+msgstr ""
+
+#: numpy.array:14 of
+msgid ""
+"The desired data-type for the array. If not given, NumPy will try to use "
+"a default ``dtype`` that can represent the values (by applying promotion "
+"rules when necessary.)"
+msgstr ""
+
+#: numpy.array:18 of
+msgid "**copy**"
+msgstr ""
+
+#: numpy.array:-1 of
+msgid "bool, optional"
+msgstr ""
+
+#: numpy.array:19 of
+msgid ""
+"If true (default), then the object is copied.  Otherwise, a copy will "
+"only be made if ``__array__`` returns a copy, if obj is a nested "
+"sequence, or if a copy is needed to satisfy any of the other requirements"
+" (``dtype``, ``order``, etc.)."
+msgstr ""
+
+#: numpy.array:24 of
+msgid "**order**"
+msgstr ""
+
+#: numpy.array:-1 of
+msgid "{'K', 'A', 'C', 'F'}, optional"
+msgstr ""
+
+#: numpy.array:25 of
+msgid ""
+"Specify the memory layout of the array. If object is not an array, the "
+"newly created array will be in C order (row major) unless 'F' is "
+"specified, in which case it will be in Fortran order (column major). If "
+"object is an array the following holds."
+msgstr ""
+
+#: numpy.array:31 of
+msgid "order"
+msgstr ""
+
+#: numpy.array:31 of
+msgid "no copy"
+msgstr ""
+
+#: numpy.array:31 of
+msgid "copy=True"
+msgstr ""
+
+#: numpy.array:33 of
+msgid "'K'"
+msgstr ""
+
+#: numpy.array:33 numpy.array:34 of
+msgid "unchanged"
+msgstr ""
+
+#: numpy.array:33 of
+msgid "F & C order preserved, otherwise most similar order"
+msgstr ""
+
+#: numpy.array:34 of
+msgid "'A'"
+msgstr ""
+
+#: numpy.array:34 of
+msgid "F order if input is F and not C, otherwise C order"
+msgstr ""
+
+#: numpy.array:35 of
+msgid "'C'"
+msgstr ""
+
+#: numpy.array:35 of
+msgid "C order"
+msgstr ""
+
+#: numpy.array:36 of
+msgid "'F'"
+msgstr ""
+
+#: numpy.array:36 of
+msgid "F order"
+msgstr ""
+
+#: numpy.array:39 of
+msgid ""
+"When ``copy=False`` and a copy is made for other reasons, the result is "
+"the same as if ``copy=True``, with some exceptions for 'A', see the Notes"
+" section. The default order is 'K'."
+msgstr ""
+
+#: numpy.array:43 of
+msgid "**subok**"
+msgstr ""
+
+#: numpy.array:44 of
+msgid ""
+"If True, then sub-classes will be passed-through, otherwise the returned "
+"array will be forced to be a base-class array (default)."
+msgstr ""
+
+#: numpy.array:47 of
+msgid "**ndmin**"
+msgstr ""
+
+#: numpy.array:-1 of
+msgid "int, optional"
+msgstr ""
+
+#: numpy.array:48 of
+msgid ""
+"Specifies the minimum number of dimensions that the resulting array "
+"should have.  Ones will be prepended to the shape as needed to meet this "
+"requirement."
+msgstr ""
+
+#: numpy.array:52 of
+msgid "**like**"
+msgstr ""
+
+#: numpy.array:-1 of
+msgid "array_like, optional"
+msgstr ""
+
+#: numpy.array:53 of
+msgid ""
+"Reference object to allow the creation of arrays which are not NumPy "
+"arrays. If an array-like passed in as ``like`` supports the "
+"``__array_function__`` protocol, the result will be defined by it. In "
+"this case, it ensures the creation of an array object compatible with "
+"that passed in via this argument."
+msgstr ""
+
+#: numpy.array numpy.transpose of
+msgid "Returns"
+msgstr ""
+
+#: numpy.array:65 of
+msgid "**out**"
+msgstr ""
+
+#: numpy.array:-1 numpy.transpose:-1 of
+msgid "ndarray"
+msgstr ""
+
+#: numpy.array:66 of
+msgid "An array object satisfying the specified requirements."
+msgstr ""
+
+#: numpy.array:77 of
+msgid ":obj:`empty_like`"
+msgstr ""
+
+#: numpy.array:78 of
+msgid "Return an empty array with shape and type of input."
+msgstr ""
+
+#: numpy.array:79 of
+msgid ":obj:`ones_like`"
+msgstr ""
+
+#: numpy.array:80 of
+msgid "Return an array of ones with shape and type of input."
+msgstr ""
+
+#: numpy.array:81 of
+msgid ":obj:`zeros_like`"
+msgstr ""
+
+#: numpy.array:82 of
+msgid "Return an array of zeros with shape and type of input."
+msgstr ""
+
+#: numpy.array:83 of
+msgid ":obj:`full_like`"
+msgstr ""
+
+#: numpy.array:84 of
+msgid "Return a new array with shape of input filled with value."
+msgstr ""
+
+#: numpy.array:85 of
+msgid ":obj:`empty`"
+msgstr ""
+
+#: numpy.array:86 of
+msgid "Return a new uninitialized array."
+msgstr ""
+
+#: numpy.array:87 of
+msgid ":obj:`ones`"
+msgstr ""
+
+#: numpy.array:88 of
+msgid "Return a new array setting values to one."
+msgstr ""
+
+#: numpy.array:89 of
+msgid ":obj:`zeros`"
+msgstr ""
+
+#: numpy.array:90 of
+msgid "Return a new array setting values to zero."
+msgstr ""
+
+#: numpy.array:91 of
+msgid ":obj:`full`"
+msgstr ""
+
+#: numpy.array:92 of
+msgid "Return a new array of given shape filled with value."
+msgstr ""
+
+#: numpy.array:96 numpy.transpose:51 of
+msgid "Notes"
+msgstr ""
+
+#: numpy.array:97 of
+msgid ""
+"When order is 'A' and ``object`` is an array in neither 'C' nor 'F' "
+"order, and a copy is forced by a change in dtype, then the order of the "
+"result is not necessarily 'C' as expected. This is likely a bug."
+msgstr ""
+
+#: numpy.array:103 numpy.transpose:57 of
+msgid "Examples"
+msgstr ""
+
+#: numpy.array:107 of
+msgid "Upcasting:"
+msgstr ""
+
+#: numpy.array:112 of
+msgid "More than one dimension:"
+msgstr ""
+
+#: numpy.array:118 of
+msgid "Minimum dimensions 2:"
+msgstr ""
+
+#: numpy.array:123 of
+msgid "Type provided:"
+msgstr ""
+
+#: numpy.array:128 of
+msgid "Data-type consisting of more than one element:"
+msgstr ""
+
+#: numpy.array:134 of
+msgid "Creating an array from sub-classes:"
+msgstr ""
+
+#: numpy.transpose:2 of
+msgid "Returns an array with axes transposed."
+msgstr ""
+
+#: numpy.transpose:4 of
+msgid ""
+"For a 1-D array, this returns an unchanged view of the original array, as"
+" a transposed vector is simply the same vector. To convert a 1-D array "
+"into a 2-D column vector, an additional dimension must be added, e.g., "
+"``np.atleast2d(a).T`` achieves this, as does ``a[:, np.newaxis]``. For a "
+"2-D array, this is the standard matrix transpose. For an n-D array, if "
+"axes are given, their order indicates how the axes are permuted (see "
+"Examples). If axes are not provided, then ``transpose(a).shape == "
+"a.shape[::-1]``."
+msgstr ""
+
+#: numpy.transpose:16 of
+msgid "**a**"
+msgstr ""
+
+#: numpy.transpose:17 of
+msgid "Input array."
+msgstr ""
+
+#: numpy.transpose:19 of
+msgid "**axes**"
+msgstr ""
+
+#: numpy.transpose:-1 of
+msgid "tuple or list of ints, optional"
+msgstr ""
+
+#: numpy.transpose:20 of
+msgid ""
+"If specified, it must be a tuple or list which contains a permutation of "
+"[0,1,...,N-1] where N is the number of axes of `a`. The `i`'th axis of "
+"the returned array will correspond to the axis numbered ``axes[i]`` of "
+"the input. If not specified, defaults to ``range(a.ndim)[::-1]``, which "
+"reverses the order of the axes."
+msgstr ""
+
+#: numpy.transpose:30 of
+msgid "**p**"
+msgstr ""
+
+#: numpy.transpose:31 of
+msgid "`a` with its axes permuted. A view is returned whenever possible."
+msgstr ""
+
+#: numpy.transpose:42 of
+msgid ":obj:`ndarray.transpose`"
+msgstr ""
+
+#: numpy.transpose:43 of
+msgid "Equivalent method."
+msgstr ""
+
+#: numpy.transpose:44 of
+msgid ":obj:`moveaxis`"
+msgstr ""
+
+#: numpy.transpose:45 of
+msgid "Move axes of an array to new positions."
+msgstr ""
+
+#: numpy.transpose:46 of
+msgid ":obj:`argsort`"
+msgstr ""
+
+#: numpy.transpose:47 of
+msgid "Return the indices that would sort an array."
+msgstr ""
+
+#: numpy.transpose:52 of
+msgid ""
+"Use ``transpose(a, argsort(axes))`` to invert the transposition of "
+"tensors when using the `axes` keyword argument."
+msgstr ""
+

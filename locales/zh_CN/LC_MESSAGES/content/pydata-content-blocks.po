@@ -1,0 +1,371 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023
+# This file is distributed under the same license as the Sphinx Book Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Book Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 15:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../content/pydata-content-blocks.md:1
+msgid "PyData Theme Elements"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:3
+msgid ""
+"This is a collection of content blocks with special support from this "
+"theme's parent theme, [the PyData Sphinx Theme](https://pydata-sphinx-"
+"theme.readthedocs.io/en/latest/user_guide/theme-elements.html)"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:6
+msgid ""
+"There are a few elements that are unique or particularly important to "
+"this theme. Some of these are triggered with configuration or Markdown "
+"syntax that is unique to the theme, and we cover them below."
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:9
+msgid "Mathematics"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:11
+msgid ""
+"Most Sphinx sites support math, but it is particularly important for "
+"scientific computing, so we illustrate support here as well."
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:13
+msgid ""
+"Here is an inline equation: {math}`X_{0:5} = (X_0, X_1, X_2, X_3, X_4)` "
+"and {math}`another` and {math}`x^2 x^3 x^4` another. And here's one to "
+"test vertical height {math}`\\frac{\\partial^2 f}{\\partial \\phi^2}`. "
+"Here is a block-level equation:"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:16
+msgid ""
+"\\nabla^2 f =\n"
+"\\frac{1}{r^2} \\frac{\\partial}{\\partial r}\n"
+"\\left( r^2 \\frac{\\partial f}{\\partial r} \\right) +\n"
+"\\frac{1}{r^2 \\sin \\theta} \\frac{\\partial f}{\\partial \\theta}\n"
+"\\left( \\sin \\theta \\, \\frac{\\partial f}{\\partial \\theta} \\right)"
+" +\n"
+"\\frac{1}{r^2 \\sin^2\\theta} \\frac{\\partial^2 f}{\\partial \\phi^2}"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:27
+msgid "And here is a really long equation with a label!"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:29
+msgid ""
+"\\nabla^2 f =\n"
+"\\frac{1}{r^2} \\frac{\\partial}{\\partial r}\n"
+"\\left( r^2 \\frac{\\partial f}{\\partial r} \\right) +\n"
+"\\frac{1}{r^2 \\sin \\theta} \\frac{\\partial f}{\\partial \\theta}\n"
+"\\left( \\sin \\theta \\, \\frac{\\partial f}{\\partial \\theta} \\right)"
+" +\n"
+"\\frac{1}{r^2 \\sin^2\\theta} \\frac{\\partial^2 f}{\\partial \\phi^2}\n"
+"\\nabla^2 f =\n"
+"\\frac{1}{r^2} \\frac{\\partial}{\\partial r}\n"
+"\\left( r^2 \\frac{\\partial f}{\\partial r} \\right) +\n"
+"\\frac{1}{r^2 \\sin \\theta} \\frac{\\partial f}{\\partial \\theta}\n"
+"\\left( \\sin \\theta \\, \\frac{\\partial f}{\\partial \\theta} \\right)"
+" +\n"
+"\\frac{1}{r^2 \\sin^2\\theta} \\frac{\\partial^2 f}{\\partial \\phi^2}"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:46
+msgid ""
+"You can add a link to equations like the one above {eq}`My label` and "
+"{eq}`My label 2`."
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:48
+msgid "Code blocks"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:50
+msgid ""
+"Code block styling is inspired by [GitHub's code block "
+"style](https://primer.style/components/markdown) and also has support for"
+" Code Block captions/titles. See [the Sphinx documentation on code "
+"blocks](https://www.sphinx-"
+"doc.org/en/master/usage/restructuredtext/directives.html#directive-code-"
+"block) for more information."
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:59
+msgid ""
+"You can also provide captions with code blocks, which will be displayed "
+"right above the code. For example, the following code:"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md
+msgid "rST"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md
+msgid "Markdown"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:82
+#: ../../content/pydata-content-blocks.md:119
+msgid "results in:"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:84
+#: ../../content/pydata-content-blocks.md:121
+msgid "python.py"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:90
+msgid "You can also display line numbers. For example, the following code:"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:130
+msgid "Inline code"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:132
+msgid ""
+"When used directly, the `code` role just displays the text without syntax"
+" highlighting, as a literal. As mentioned in the [Sphinx "
+"documentation](https://www.sphinx-"
+"doc.org/en/master/usage/restructuredtext/roles.html#inline-code-"
+"highlighting) you can also enable syntax highlighting by defining a "
+"custom role. It will then use the same highlighter as in the `code-block`"
+" directive."
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md
+msgid "rst"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md
+msgid "markdown"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:158
+msgid "In Python you can {python}`import sphinx`."
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:160
+msgid "Code execution"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:162
+msgid ""
+"This theme has support for Jupyter execution libraries so that you can "
+"programmatically update your documentation with each build. For examples,"
+" see [](notebooks.md)."
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:165
+msgid "Admonition sidebars"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:167
+msgid "A sidebar admonition!"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:169
+msgid "I was made with the `{admonition}` directive and a `sidebar` class."
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:172
+msgid "Sidebar title"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:173
+msgid "I was made with the `{sidebar}` directive."
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:176
+msgid ""
+"This theme supports a shorthand way of making **admonitions behave like "
+"sidebars**. This can be a helpful way of highlighting content without "
+"interrupting the vertical flow as much."
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:179
+msgid ""
+"For example, on the right are an \"admonition sidebar\" and a traditional"
+" Sphinx sidebar."
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:181
+msgid ""
+"To make an admonition behave like a sidebar, add the `sidebar` class to "
+"its list of classes. The admonition sidebar in this section was created "
+"with the following Markdown:"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:203
+msgid "Footnotes"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:205
+msgid ""
+"Here's a numeric footnote[^1], another one (preceded by a space) [^2], a "
+"named footnote[^named], and a symbolic one[^*]. All will end up as "
+"numbers in the rendered HTML, but in the source they look like `[^1]`, "
+"`[^2]`, `[^named]` and `[^*]`."
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:216
+msgid "Link shortening for git repository services"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:218
+msgid ""
+"Many projects have links back to their issues / PRs hosted on platforms "
+"like **GitHub** or **GitLab**. Instead of displaying these as raw links, "
+"this theme does some lightweight formatting for these platforms "
+"specifically."
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:221
+msgid ""
+"In **reStructuredText**, URLs are automatically converted to links, so "
+"this works automatically."
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:223
+msgid ""
+"In **MyST Markdown**, by default, you must define a standard Markdown "
+"link and duplicate the URL in the link text. You may skip the need to "
+"manually define the link text by [activating the MyST Linkify "
+"extension](https://myst-"
+"parser.readthedocs.io/en/latest/syntax/optional.html#linkify)."
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:226
+msgid "For example:"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:228
+msgid "**reStructuredText**"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:230
+#: ../../content/pydata-content-blocks.md:239
+msgid "`https://github.com/pydata/pydata-sphinx-theme/pull/1012`"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:231
+#: ../../content/pydata-content-blocks.md:240
+msgid "https://github.com/pydata/pydata-sphinx-theme/pull/1012"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:233
+msgid "**MyST Markdown (default)**"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:235
+msgid ""
+"`[https://github.com/pydata/pydata-sphinx-"
+"theme/pull/1012](https://github.com/pydata/pydata-sphinx-"
+"theme/pull/1012)`"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:236
+msgid ""
+"[https://github.com/pydata/pydata-sphinx-"
+"theme/pull/1012](https://github.com/pydata/pydata-sphinx-theme/pull/1012)"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:238
+msgid ""
+"**MyST Markdown with [MyST Linkify](https://myst-"
+"parser.readthedocs.io/en/latest/syntax/optional.html#linkify)**"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:242
+msgid ""
+"There are a variety of link targets supported, here's a table for "
+"reference:"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:244
+msgid "**GitHub**"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:246
+msgid "`https://github.com`: https://github.com"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:247
+msgid "`https://github.com/pydata`: https://github.com/pydata"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:248
+msgid ""
+"`https://github.com/pydata/pydata-sphinx-theme`: "
+"https://github.com/pydata/pydata-sphinx-theme"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:249
+msgid ""
+"`https://github.com/pydata/pydata-sphinx-theme/pull/1012`: "
+"https://github.com/pydata/pydata-sphinx-theme/pull/1012"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:250
+msgid ""
+"`https://github.com/orgs/pydata/projects/2`: "
+"https://github.com/orgs/pydata/projects/2"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:252
+msgid "**GitLab**"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:254
+msgid "`https://gitlab.com`: https://gitlab.com"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:255
+msgid "`https://gitlab.com/gitlab-org`: https://gitlab.com/gitlab-org"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:256
+msgid ""
+"`https://gitlab.com/gitlab-org/gitlab`: https://gitlab.com/gitlab-"
+"org/gitlab"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:257
+msgid ""
+"`https://gitlab.com/gitlab-org/gitlab/-/issues/375583`: "
+"https://gitlab.com/gitlab-org/gitlab/-/issues/375583"
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:259
+msgid "Links provided with a text body won't be changed."
+msgstr ""
+
+#: ../../content/pydata-content-blocks.md:208
+#: ../../content/pydata-content-blocks.md:210
+#: ../../content/pydata-content-blocks.md:212
+#: ../../content/pydata-content-blocks.md:214
+msgid ""
+"Foo bar foo bar. Foo bar foo bar. Foo bar foo bar. Foo bar foo bar. Foo "
+"bar foo bar. Foo bar foo bar. Foo bar foo bar. Foo bar foo bar. Foo bar "
+"foo bar. Foo bar foo bar. Foo bar foo bar. Foo bar foo bar."
+msgstr ""
+

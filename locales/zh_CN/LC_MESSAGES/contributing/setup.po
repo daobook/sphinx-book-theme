@@ -1,0 +1,246 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023
+# This file is distributed under the same license as the Sphinx Book Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Book Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 15:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../contributing/setup.md:1
+msgid "Set up your development workflow"
+msgstr ""
+
+#: ../../contributing/setup.md:3
+msgid ""
+"The following instructions will help you set up a basic development "
+"environment so that you can begin experimenting with changes. This covers"
+" the basics, and see the other sections of the Contributing Guide for "
+"more details."
+msgstr ""
+
+#: ../../contributing/setup.md:6
+msgid "Set up your development environment"
+msgstr ""
+
+#: ../../contributing/setup.md:8
+msgid ""
+"First we'll install the necessary tools that you can use to begin making "
+"changes. Follow these steps:"
+msgstr ""
+
+#: ../../contributing/setup.md:11
+msgid "Get the source code of this project using git:"
+msgstr ""
+
+#: ../../contributing/setup.md:18
+msgid "Ensure you have Python 3.9 or newer!"
+msgstr ""
+
+#: ../../contributing/setup.md:19
+msgid ""
+"Install `tox`. `tox` is a tool for managing virtual environments for test"
+" suites or common jobs that are run with a repository. It ensures that "
+"your environment is consistent each time you build the docs or run tests."
+msgstr ""
+
+#: ../../contributing/setup.md:26
+msgid ""
+"Install `pre-commit`. We use [pre-commit](https://pre-commit.com) to "
+"ensure that the code meets certain standards any time a commit is made."
+msgstr ""
+
+#: ../../contributing/setup.md:33
+msgid ""
+"Next, [follow the `pre-commit` installation instructions](https://pre-"
+"commit.com/#install)."
+msgstr ""
+
+#: ../../contributing/setup.md:35
+msgid ""
+"Finally, install the local dependencies for pre-commit. Run the following"
+" command in the same folder as the repository:"
+msgstr ""
+
+#: ../../contributing/setup.md:54
+msgid ""
+"The rest of these instructions use `tox` to automate the installation and"
+" commands necessary to do many common things."
+msgstr ""
+
+#: ../../contributing/setup.md:56
+msgid "Build the documentation"
+msgstr ""
+
+#: ../../contributing/setup.md:58
+msgid ""
+"Now that you've installed the necessary tools, try building the "
+"documentation for this theme locally. To do so, run the following `tox` "
+"command:"
+msgstr ""
+
+#: ../../contributing/setup.md:65
+msgid ""
+"This will build the documentation using the latest version of the theme "
+"and put the outputs in `docs/_build/html`. You may then preview them by "
+"opening one of the HTML files."
+msgstr ""
+
+#: ../../contributing/setup.md:68
+msgid "Update the theme's assets (CSS/JS)"
+msgstr ""
+
+#: ../../contributing/setup.md:70
+msgid ""
+"Now that you've previewed the documentation, try making changes to this "
+"theme's assets and see how they affect the documentation builds. This is "
+"an easy way to preview the effect that your changes will make."
+msgstr ""
+
+#: ../../contributing/setup.md:73
+msgid ""
+"First, **make your changes in `src/sphinx_book_theme/assets/`**. This "
+"folder contains all of the SCSS and Javascript that are used in this "
+"site. For example, edit one of the `scss` files to add or modify a rule."
+msgstr ""
+
+#: ../../contributing/setup.md:77
+msgid "Next, **compile the changes**. Run the following command:"
+msgstr ""
+
+#: ../../contributing/setup.md:84
+msgid ""
+"This uses the [Sphinx Theme Builder](https://sphinx-theme-"
+"builder.readthedocs.io/) to compile our SCSS/JS files and bundle them "
+"with our theme at `src/sphinx_book_theme/theme/sphinx_book_theme/static`."
+" These compiled assets are **not included** in our git repository, but "
+"they **are included** in distributions of the theme."
+msgstr ""
+
+#: ../../contributing/setup.md:87
+msgid "Finally, **re-build the documentation** to preview your changes:"
+msgstr ""
+
+#: ../../contributing/setup.md:94
+msgid ""
+"When you open the HTML files for the documentation, your changes should "
+"be reflected."
+msgstr ""
+
+#: ../../contributing/setup.md:96
+msgid "Auto-build the docs when you make changes"
+msgstr ""
+
+#: ../../contributing/setup.md:98
+msgid ""
+"You can bundle both of the steps above into a single command, which also "
+"opens a live server that watches for changes to the theme's assets and "
+"documentation, and automatically compiles changes + re-builds the theme."
+msgstr ""
+
+#: ../../contributing/setup.md:100
+msgid "To do so, use this `tox` command:"
+msgstr ""
+
+#: ../../contributing/setup.md:106
+msgid "This will do the following:"
+msgstr ""
+
+#: ../../contributing/setup.md:108
+msgid ""
+"Generate the theme's documentation (similar to running `tox -e docs-"
+"update`)"
+msgstr ""
+
+#: ../../contributing/setup.md:109
+msgid "Start a development server on an available port `127.0.0.1:xxxx`"
+msgstr ""
+
+#: ../../contributing/setup.md:110
+msgid "Open it in your default browser"
+msgstr ""
+
+#: ../../contributing/setup.md:111
+msgid ""
+"Watch for changes and automagically regenerate the documentation and "
+"auto-reload your browser when a change is made."
+msgstr ""
+
+#: ../../contributing/setup.md:113
+msgid ""
+"With this, you can modify the theme in an editor, and see how those "
+"modifications render on the browser."
+msgstr ""
+
+#: ../../contributing/setup.md:115
+msgid "Run the tests"
+msgstr ""
+
+#: ../../contributing/setup.md:117
+msgid ""
+"Once you've made a change to the theme, you should confirm that the tests"
+" still pass, and potentially add or modify a test for your changes."
+msgstr ""
+
+#: ../../contributing/setup.md:119
+msgid ""
+"To run the test suite with the default `tox` environment, simply run this"
+" command:"
+msgstr ""
+
+#: ../../contributing/setup.md:125
+msgid ""
+"This will run `pytest` against all of the files in `tests/` and display "
+"the result. You can pass arguments to the `pytest` command like so:"
+msgstr ""
+
+#: ../../contributing/setup.md:132
+msgid "Anything passed after `--` will be passed directly to `pytest`."
+msgstr ""
+
+#: ../../contributing/setup.md:135
+msgid "See [](contribute/testing) for more information."
+msgstr ""
+
+#: ../../contributing/setup.md:138
+msgid "The `{example}` directive"
+msgstr ""
+
+#: ../../contributing/setup.md:140
+msgid ""
+"This theme uses the [sphinx-examples](https://github.com/executablebooks"
+"/sphinx-examples) extension to make it easy to quickly show off example "
+"snippets."
+msgstr ""
+
+#: ../../contributing/setup.md:142
+msgid "Basic usage is like so:"
+msgstr ""
+
+#: ../../contributing/setup.md:193
+msgid "Example title"
+msgstr ""
+
+#: ../../contributing/setup.md:219
+msgid "This will be both **rendered** and **shown as source code**."
+msgstr ""
+
+#: ../../contributing/setup.md:150
+msgid ""
+"See [the sphinx-examples documentation](https://ebp-sphinx-"
+"examples.readthedocs.io/en/latest/) for more details."
+msgstr ""
+

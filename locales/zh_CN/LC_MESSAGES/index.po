@@ -22,45 +22,48 @@ msgstr ""
 
 #: ../../index.md:50
 msgid "Topic Areas"
-msgstr ""
+msgstr "主题领域"
 
 #: ../../index.md:63 ../../index.md:67
 msgid "Example pages"
-msgstr ""
+msgstr "示例页面"
 
 #: ../../index.md:23
 msgid ""
 "A Sphinx theme with a clean design, support for interactive content, and "
 "a modern book-like look and feel."
 msgstr ""
+"设计简洁的 Sphinx 主题，支持互动内容，并具有现代书籍般的外观和感觉。"
 
 #: ../../index.md:27
 msgid "[Flexible content layout](reference/special-theme-elements.md)"
-msgstr ""
+msgstr "[灵活的内容布局](reference/special-theme-elements.md)"
 
 #: ../../index.md:28
 msgid ""
 "Inspired by beautiful online books, such as [the Edward Tufte CSS "
 "guide](https://edwardtufte.github.io/tufte-css/)"
 msgstr ""
+"受美丽的在线书籍启发，例如 [Edward Tufte CSS 指南](https://edwardtufte.github.io/tufte-css/)"
 
 #: ../../index.md:30
 msgid "[Visual classes designed for Jupyter Notebooks](reference/notebooks)"
-msgstr ""
+msgstr "[为 Jupyter Notebooks 设计的视觉类](reference/notebooks)"
 
 #: ../../index.md:31
 msgid "Cell inputs, outputs, and interactive functionality are all supported."
-msgstr ""
+msgstr "支持单元格输入、输出和交互功能。"
 
 #: ../../index.md:33
 msgid "[Launch buttons for online interactivity](content/launch)"
-msgstr ""
+msgstr "[在线互动启动按钮](content/launch)"
 
 #: ../../index.md:34
 msgid ""
 "For pages that are built with computational material, connect your site "
 "to an online BinderHub for interactive content."
 msgstr ""
+"对于使用计算材料的页面，将您的网站连接到在线 BinderHub 以实现交互内容。"
 
 #: ../../index.md:36
 msgid ""
@@ -70,11 +73,11 @@ msgstr ""
 
 #: ../../index.md:37
 msgid "To style visual elements and add functionality."
-msgstr ""
+msgstr "用于设计视觉元素并添加功能。"
 
 #: ../../index.md:39
 msgid "International"
-msgstr ""
+msgstr "国际的"
 
 #: ../../index.md:40
 msgid ""
@@ -82,32 +85,35 @@ msgid ""
 "language](https://www.sphinx-doc.org/en/master/usage/configuration.html"
 "#confval-language)."
 msgstr ""
+"主题中集成的所有文本都已翻译为指定的 [Sphinx 语言](https://www.sphinx-doc.org/en/master/usage/configuration.html"
+"#confval-language)."
 
 #: ../../index.md:43
 msgid "This is the default theme in [Jupyter Book](https://jupyterbook.org)."
-msgstr ""
+msgstr "这是 [Jupyter Book](https://jupyterbook.org) 中的默认主题。"
 
 #: ../../index.md:46
 msgid "Topic areas"
-msgstr ""
+msgstr "主题领域"
 
 #: ../../index.md:48
 msgid "The following topic areas will help you understand and use the theme."
-msgstr ""
+msgstr "以下主题领域将帮助您理解和使用该主题。"
 
 #: ../../index.md:65
 msgid "Examples pages demonstrate the visual look of this theme."
-msgstr ""
+msgstr "示例页面展示了此主题的视觉外观。"
 
 #: ../../index.md:81
 msgid "Inspiration"
-msgstr ""
+msgstr "灵感"
 
 #: ../../index.md:83
 msgid ""
 "This theme draws inspiration and borrows design elements from the "
 "following themes:"
 msgstr ""
+"此主题汲取灵感并借鉴了以下主题的设计元素："
 
 #: ../../index.md:85
 msgid "The [PyData Sphinx Theme](https://pydata-sphinx-theme.readthedocs.io/)"

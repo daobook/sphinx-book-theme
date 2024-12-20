@@ -1,0 +1,43 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023
+# This file is distributed under the same license as the Sphinx Book Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Book Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 15:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../components/download.md:2
+msgid "Add a download page button"
+msgstr ""
+
+#: ../../components/download.md:4
+msgid ""
+"You can add a button allowing users to download the currently viewed page"
+" in several formats: `raw source`, `pdf` or `ipynb` if one was generated "
+"as part of the build. To include this button, use the following "
+"configuration:"
+msgstr ""
+
+#: ../../components/download.md:16
+msgid ""
+"This theme over-rides the Sphinx default for `html_sourcelink_suffix` to "
+"be `''` instead of `.txt`. This is because most users of this theme want "
+"to download source files of the pages themselves, which do not begin with"
+" `.txt`. If you wish to add a different source suffix, manually specify "
+"`html_sourcelink_suffix` in `conf.py`."
+msgstr ""
+

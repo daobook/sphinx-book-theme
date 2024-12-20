@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023
+# This file is distributed under the same license as the Sphinx Book Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Book Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 15:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../sections/footer.md:1
+msgid "Page footer"
+msgstr ""
+
+#: ../../sections/footer.md:3
+msgid ""
+"The page footer spans the entire width of the page, and is only visible "
+"once you scroll to the end of the article's content."
+msgstr ""
+
+#: ../../sections/footer.md:5
+msgid ""
+"By default, it is empty and not visible. However, there are two "
+"configuration points where you can add items to your footer:"
+msgstr ""
+
+#: ../../sections/footer.md:8
+msgid ""
+"`html_theme_options[\"footer_start\"]` accepts a list of HTML templates "
+"that will be placed at the beginning (left on most screens) of the "
+"footer."
+msgstr ""
+
+#: ../../sections/footer.md:10
+msgid ""
+"`html_theme_options[\"footer_end\"]` accepts a list of HTML templates "
+"that will be placed at the end (right on most screens) of the footer."
+msgstr ""
+
+#: ../../sections/footer.md:12
+msgid ""
+"For example, the configuration below assumes there is a template at "
+"`_templates/test.html`. It adds the `_templates` folder to Sphinx's "
+"templates path, and adds the template to both the start and end section "
+"of the footer."
+msgstr ""
+

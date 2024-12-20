@@ -1,0 +1,321 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023
+# This file is distributed under the same license as the Sphinx Book Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Book Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 15:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../reference/kitchen-sink/api.rst:8
+msgid "API documentation"
+msgstr ""
+
+#: ../../reference/kitchen-sink/api.rst:10
+msgid ""
+"Using Sphinx's ``sphinx.ext.autodoc`` plugin, it is possible to auto-"
+"generate documentation of a Python module."
+msgstr ""
+
+#: ../../reference/kitchen-sink/api.rst:13
+msgid ""
+"Avoid having in-function-signature type annotations with autodoc, by "
+"setting the following options:"
+msgstr ""
+
+#: datetime:1 of
+msgid "Fast implementation of the datetime type."
+msgstr ""
+
+#: datetime.date:2 of
+msgid "date(year, month, day) --> date object"
+msgstr ""
+
+#: datetime.date.ctime:2 datetime.datetime.ctime:2 of
+msgid "Return ctime() style string."
+msgstr ""
+
+#: datetime.date.fromisocalendar:2 of
+msgid ""
+"int, int, int -> Construct a date from the ISO year, week number and "
+"weekday."
+msgstr ""
+
+#: datetime.date.fromisocalendar:4 of
+msgid "This is the inverse of the date.isocalendar() function"
+msgstr ""
+
+#: datetime.date.fromisoformat:2 of
+msgid "str -> Construct a date from a string in ISO 8601 format."
+msgstr ""
+
+#: datetime.date.fromordinal:2 of
+msgid "int -> date corresponding to a proleptic Gregorian ordinal."
+msgstr ""
+
+#: datetime.date.fromtimestamp:2 of
+msgid "Create a date from a POSIX timestamp."
+msgstr ""
+
+#: datetime.date.fromtimestamp:4 of
+msgid ""
+"The timestamp is a number, e.g. created via time.time(), that is "
+"interpreted as local time."
+msgstr ""
+
+#: datetime.date.isocalendar:2 of
+msgid "Return a named tuple containing ISO year, week number, and weekday."
+msgstr ""
+
+#: datetime.date.isoformat:2 of
+msgid "Return string in ISO 8601 format, YYYY-MM-DD."
+msgstr ""
+
+#: datetime.date.isoweekday:2 of
+msgid ""
+"Return the day of the week represented by the date. Monday == 1 ... "
+"Sunday == 7"
+msgstr ""
+
+#: datetime.date.replace:2 of
+msgid "Return date with new specified fields."
+msgstr ""
+
+#: datetime.date.strftime:2 datetime.time.strftime:2 of
+msgid "format -> strftime() style string."
+msgstr ""
+
+#: datetime.date.timetuple:2 datetime.datetime.timetuple:2 of
+msgid "Return time tuple, compatible with time.localtime()."
+msgstr ""
+
+#: datetime.date.today:2 of
+msgid ""
+"Current date or datetime:  same as "
+"self.__class__.fromtimestamp(time.time())."
+msgstr ""
+
+#: datetime.date.toordinal:2 of
+msgid "Return proleptic Gregorian ordinal.  January 1 of year 1 is day 1."
+msgstr ""
+
+#: datetime.date.weekday:2 of
+msgid ""
+"Return the day of the week represented by the date. Monday == 0 ... "
+"Sunday == 6"
+msgstr ""
+
+#: datetime.datetime:2 of
+msgid ""
+"The year, month and day arguments are required. tzinfo may be None, or an"
+" instance of a tzinfo subclass. The remaining arguments may be ints."
+msgstr ""
+
+#: datetime.datetime.astimezone:2 of
+msgid "tz -> convert to local time in new timezone tz"
+msgstr ""
+
+#: datetime.datetime.combine:2 of
+msgid "date, time -> datetime with same date and time fields"
+msgstr ""
+
+#: datetime.datetime.date:2 of
+msgid "Return date object with same year, month and day."
+msgstr ""
+
+#: datetime.datetime.dst:2 datetime.time.dst:2 of
+msgid "Return self.tzinfo.dst(self)."
+msgstr ""
+
+#: datetime.datetime.fromisoformat:2 of
+msgid "string -> datetime from a string in most ISO 8601 formats"
+msgstr ""
+
+#: datetime.datetime.fromtimestamp:2 of
+msgid "timestamp[, tz] -> tz's local time from POSIX timestamp."
+msgstr ""
+
+#: datetime.datetime.isoformat:2 of
+msgid ""
+"[sep] -> string in ISO 8601 format, YYYY-MM-"
+"DDT[HH[:MM[:SS[.mmm[uuu]]]]][+HH:MM]. sep is used to separate the year "
+"from the time, and defaults to 'T'. The optional argument timespec "
+"specifies the number of additional terms of the time to include. Valid "
+"options are 'auto', 'hours', 'minutes', 'seconds', 'milliseconds' and "
+"'microseconds'."
+msgstr ""
+
+#: datetime.datetime.now:2 of
+msgid "Returns new datetime object representing current time local to tz."
+msgstr ""
+
+#: datetime.datetime.now:4 of
+msgid "tz"
+msgstr ""
+
+#: datetime.datetime.now:5 of
+msgid "Timezone object."
+msgstr ""
+
+#: datetime.datetime.now:7 of
+msgid "If no tz is specified, uses local timezone."
+msgstr ""
+
+#: datetime.datetime.replace:2 of
+msgid "Return datetime with new specified fields."
+msgstr ""
+
+#: datetime.datetime.strptime:2 of
+msgid ""
+"string, format -> new datetime parsed from a string (like "
+"time.strptime())."
+msgstr ""
+
+#: datetime.datetime.time:2 of
+msgid "Return time object with same time but with tzinfo=None."
+msgstr ""
+
+#: datetime.datetime.timestamp:2 of
+msgid "Return POSIX timestamp as float."
+msgstr ""
+
+#: datetime.datetime.timetz:2 of
+msgid "Return time object with same time and tzinfo."
+msgstr ""
+
+#: datetime.datetime.tzname:2 datetime.time.tzname:2 of
+msgid "Return self.tzinfo.tzname(self)."
+msgstr ""
+
+#: datetime.datetime.utcfromtimestamp:2 of
+msgid "Construct a naive UTC datetime from a POSIX timestamp."
+msgstr ""
+
+#: datetime.datetime.utcnow:2 of
+msgid "Return a new datetime representing UTC day and time."
+msgstr ""
+
+#: datetime.datetime.utcoffset:2 datetime.time.utcoffset:2 of
+msgid "Return self.tzinfo.utcoffset(self)."
+msgstr ""
+
+#: datetime.datetime.utctimetuple:2 of
+msgid "Return UTC time tuple, compatible with time.localtime()."
+msgstr ""
+
+#: datetime.time:2 of
+msgid ""
+"time([hour[, minute[, second[, microsecond[, tzinfo]]]]]) --> a time "
+"object"
+msgstr ""
+
+#: datetime.time:4 of
+msgid ""
+"All arguments are optional. tzinfo may be None, or an instance of a "
+"tzinfo subclass. The remaining arguments may be ints."
+msgstr ""
+
+#: datetime.time.fromisoformat:2 of
+msgid "string -> time from a string in ISO 8601 format"
+msgstr ""
+
+#: datetime.time.isoformat:2 of
+msgid "Return string in ISO 8601 format, [HH[:MM[:SS[.mmm[uuu]]]]][+HH:MM]."
+msgstr ""
+
+#: datetime.time.isoformat:4 of
+msgid ""
+"The optional argument timespec specifies the number of additional terms "
+"of the time to include. Valid options are 'auto', 'hours', 'minutes', "
+"'seconds', 'milliseconds' and 'microseconds'."
+msgstr ""
+
+#: datetime.time.replace:2 of
+msgid "Return time with new specified fields."
+msgstr ""
+
+#: datetime.timedelta:2 of
+msgid "Difference between two datetime values."
+msgstr ""
+
+#: datetime.timedelta:4 of
+msgid ""
+"timedelta(days=0, seconds=0, microseconds=0, milliseconds=0, minutes=0, "
+"hours=0, weeks=0)"
+msgstr ""
+
+#: datetime.timedelta:6 of
+msgid ""
+"All arguments are optional and default to 0. Arguments may be integers or"
+" floats, and may be positive or negative."
+msgstr ""
+
+#: ../../../docstring datetime.timedelta.days:2 of
+msgid "Number of days."
+msgstr ""
+
+#: ../../../docstring datetime.timedelta.microseconds:2 of
+msgid "Number of microseconds (>= 0 and less than 1 second)."
+msgstr ""
+
+#: ../../../docstring datetime.timedelta.seconds:2 of
+msgid "Number of seconds (>= 0 and less than 1 day)."
+msgstr ""
+
+#: datetime.timedelta.total_seconds:2 of
+msgid "Total seconds in the duration."
+msgstr ""
+
+#: datetime.timezone:2 of
+msgid "Fixed offset from UTC implementation of tzinfo."
+msgstr ""
+
+#: datetime.timezone.dst:2 of
+msgid "Return None."
+msgstr ""
+
+#: datetime.timezone.fromutc:2 datetime.tzinfo.fromutc:2 of
+msgid "datetime in UTC -> datetime in local time."
+msgstr ""
+
+#: datetime.timezone.tzname:2 of
+msgid ""
+"If name is specified when timezone is created, returns the name.  "
+"Otherwise returns offset as 'UTC(+|-)HH:MM'."
+msgstr ""
+
+#: datetime.timezone.utcoffset:2 of
+msgid "Return fixed offset."
+msgstr ""
+
+#: datetime.tzinfo:2 of
+msgid "Abstract base class for time zone info objects."
+msgstr ""
+
+#: datetime.tzinfo.dst:2 of
+msgid "datetime -> DST offset as timedelta positive east of UTC."
+msgstr ""
+
+#: datetime.tzinfo.tzname:2 of
+msgid "datetime -> string name of time zone."
+msgstr ""
+
+#: datetime.tzinfo.utcoffset:2 of
+msgid ""
+"datetime -> timedelta showing offset from UTC, negative values indicating"
+" West of UTC"
+msgstr ""
+

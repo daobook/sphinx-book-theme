@@ -1,0 +1,150 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023
+# This file is distributed under the same license as the Sphinx Book Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Book Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 15:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../components/source-files.md:2
+msgid "Buttons that link to source files"
+msgstr ""
+
+#: ../../components/source-files.md:4
+msgid ""
+"There are a collection of buttons that you can use to link back to your "
+"source repository. This lets users browse the repository, or take actions"
+" like suggest an edit or open an issue."
+msgstr ""
+
+#: ../../components/source-files.md:9
+msgid "Set your source repository"
+msgstr ""
+
+#: ../../components/source-files.md:11
+msgid ""
+"You need to define a **source repository** for this functionality to "
+"work. This is the online space where your code / documentation is hosted."
+" In each case, they require the following configuration to exist:"
+msgstr ""
+
+#: ../../components/source-files.md:23
+msgid "Three providers are supported:"
+msgstr ""
+
+#: ../../components/source-files.md:25
+msgid ""
+"**GitHub**: For example, `https://github.com/executablebooks/sphinx-book-"
+"theme`. This includes custom URLs for self-hosted GitHub."
+msgstr ""
+
+#: ../../components/source-files.md:27
+msgid ""
+"**GitLab**: For example, `https://gitlab.com/gitlab-org/gitlab`. This "
+"includes custom URLs for self-hosted GitLab."
+msgstr ""
+
+#: ../../components/source-files.md:29
+msgid ""
+"**BitBucket**: For example, "
+"`https://opensource.ncsa.illinois.edu/bitbucket/scm/u3d/3dutilities`."
+msgstr ""
+
+#: ../../components/source-files.md:31
+msgid ""
+"In each case, we **assume the final two URL items are the `org/repo` "
+"pair**."
+msgstr ""
+
+#: ../../components/source-files.md:33
+msgid "Manually specify the provider"
+msgstr ""
+
+#: ../../components/source-files.md:35
+msgid ""
+"If your provider URL is more complex (e.g., if you're self-hosting your "
+"provider), you can manually specify the provider with the following "
+"configuration:"
+msgstr ""
+
+#: ../../components/source-files.md:46
+msgid ""
+"Once this is provided, you may add source buttons by following the "
+"following sections."
+msgstr ""
+
+#: ../../components/source-files.md:49
+msgid "Add a button to the page source"
+msgstr ""
+
+#: ../../components/source-files.md:51
+msgid ""
+"Show the raw source of the page on the provider you've proivded. To add a"
+" button to the page source, first [configure your source repository"
+"](source-buttons:repository) and then add:"
+msgstr ""
+
+#: ../../components/source-files.md:62
+msgid ""
+"Then configure the **repository branch** to use for your source. By "
+"default it is `main`, but if you'd like to change this, use the following"
+" configuration:"
+msgstr ""
+
+#: ../../components/source-files.md:73
+msgid ""
+"Finally, **configure the relative path to your documentation**. By "
+"default, this is the root of the repository, but if your documentation is"
+" hosted in a sub-folder, use the following configuration:"
+msgstr ""
+
+#: ../../components/source-files.md:84
+msgid "Add a button to suggest edits"
+msgstr ""
+
+#: ../../components/source-files.md:86
+msgid ""
+"Allow users to edit the page text directly on the provider and submit a "
+"pull request to update the documentation. To add a button to edit the "
+"page, first [configure your source repository](source-buttons:repository)"
+" and then add:"
+msgstr ""
+
+#: ../../components/source-files.md:97
+msgid ""
+"Then follow the [branch and relative path instructions in the source file"
+" section](source-buttons:source)."
+msgstr ""
+
+#: ../../components/source-files.md:101
+msgid "Add a link to your repository"
+msgstr ""
+
+#: ../../components/source-files.md:103
+msgid "To add a link to your repository, add the following configuration:"
+msgstr ""
+
+#: ../../components/source-files.md:113
+msgid "Add a button to open issues"
+msgstr ""
+
+#: ../../components/source-files.md:115
+msgid ""
+"To add a button to open an issue about the current page, use the "
+"following configuration:"
+msgstr ""
+

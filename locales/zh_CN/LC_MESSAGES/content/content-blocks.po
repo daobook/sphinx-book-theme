@@ -1,0 +1,346 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023
+# This file is distributed under the same license as the Sphinx Book Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Book Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 15:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../content/content-blocks.md:15
+msgid "Special content blocks"
+msgstr ""
+
+#: ../../content/content-blocks.md:17
+msgid "There are a few content blocks that are unique to this theme."
+msgstr ""
+
+#: ../../content/content-blocks.md:20
+msgid "Quotations and epigraphs"
+msgstr ""
+
+#: ../../content/content-blocks.md:22
+msgid "Here is what quotations and epigraphs look like in `sphinx-book-theme`:"
+msgstr ""
+
+#: ../../content/content-blocks.md:39
+msgid "Default markdown quotes"
+msgstr ""
+
+#: ../../content/content-blocks.md:70 ../../content/content-blocks.md:86
+#: ../../content/content-blocks.md:102
+msgid ""
+"Here's my quote, it's pretty neat. I wonder how many lines I can create "
+"with a single stream-of-consciousness quote. I could try to add a list of"
+" ideas to talk about. I suppose I could just keep going on forever, but "
+"I'll stop here."
+msgstr ""
+
+#: ../../content/content-blocks.md:33
+msgid ""
+"Sometimes you'd like to draw more attention to a quote. To do so, use the"
+" `{epigraph}` directive. Below is an epigraph, click the button to the "
+"right of it to show the code that was used to generate it:"
+msgstr ""
+
+#: ../../content/content-blocks.md:52
+msgid "A basic epigraph"
+msgstr ""
+
+#: ../../content/content-blocks.md:48
+msgid ""
+"You can also add an attribution to epigraphs by adding a blank line, "
+"followed by a line that starts with `--`. This will be rendered like so:"
+msgstr ""
+
+#: ../../content/content-blocks.md:66
+msgid "Epigraphs with attribution"
+msgstr ""
+
+#: ../../content/content-blocks.md:108
+msgid "Jo the Jovyan, *[the jupyter book docs](https://jupyterbook.org)*"
+msgstr ""
+
+#: ../../content/content-blocks.md:65
+msgid "Sidenotes and marginnotes"
+msgstr ""
+
+#: ../../content/content-blocks.md:67
+msgid ""
+"This theme has support for [Tufte-style margin / side "
+"notes](https://edwardtufte.github.io/tufte-css/), with a UX similar to "
+"[pandoc-sidenote](https://github.com/jez/pandoc-sidenote)."
+msgstr ""
+
+#: ../../content/content-blocks.md:69
+msgid ""
+"Sidenotes are numbered, and behave like footnotes, except they live in "
+"the margin and don’t force the reader to jump their eye to the bottom of "
+"the page. For example, here is a sidenote[^ex]. On narrow screens, "
+"sidenotes are hidden until a user clicks the number. If you're on a "
+"mobile device, try clicking the sidenote number above."
+msgstr ""
+
+#: ../../content/content-blocks.md:78
+msgid ""
+"Marginnotes are not numbered, but behave the same way as sidenotes. On "
+"mobile devices you'll see a symbol that will show the marginnote when "
+"clicked[^exmn]. For example, there's a marginnote in the previous "
+"sentence, and you should see a symbol show to display it on mobile "
+"screens."
+msgstr ""
+
+#: ../../content/content-blocks.md:85
+msgid ""
+"Sidenotes and marginnotes are inline content - you cannot use block-level"
+" content inside of these notes. If you'd like to use block-level content "
+"in the margins, see [](margin:block)."
+msgstr ""
+
+#: ../../content/content-blocks.md:89
+msgid "Activate sidenotes and marginnotes"
+msgstr ""
+
+#: ../../content/content-blocks.md:91
+msgid ""
+"The theme activates sidenotes and marginnotes by over-riding footnote "
+"syntax to instead exist in the margin."
+msgstr ""
+
+#: ../../content/content-blocks.md:93
+msgid ""
+"To convert your footnotes to *instead* be sidenotes/marginnotes, use this"
+" configuration:"
+msgstr ""
+
+#: ../../content/content-blocks.md:103
+msgid "This will turn your **footnotes** into **sidenotes** or **marginnotes**."
+msgstr ""
+
+#: ../../content/content-blocks.md:105
+msgid "Create a sidenote"
+msgstr ""
+
+#: ../../content/content-blocks.md:107
+msgid "The following sentence defines a sidenote and its respective content:"
+msgstr ""
+
+#: ../../content/content-blocks.md:111 ../../content/content-blocks.md:125
+#: ../../content/content-blocks.md:146 ../../content/content-blocks.md:174
+#: ../../content/content-blocks.md:184 ../../content/content-blocks.md:200
+#: ../../content/content-blocks.md:265 ../../content/content-blocks.md:286
+msgid "**Result**"
+msgstr ""
+
+#: ../../content/content-blocks.md:113
+msgid "Here's my sentence and a sidenote[^sn1]."
+msgstr ""
+
+#: ../../content/content-blocks.md:117 ../../content/content-blocks.md:131
+#: ../../content/content-blocks.md:152 ../../content/content-blocks.md:160
+#: ../../content/content-blocks.md:191 ../../content/content-blocks.md:211
+#: ../../content/content-blocks.md:254 ../../content/content-blocks.md:277
+msgid "**Source**"
+msgstr ""
+
+#: ../../content/content-blocks.md:118
+msgid "Create a marginnote"
+msgstr ""
+
+#: ../../content/content-blocks.md:120
+msgid ""
+"Marginnotes are defined by adding `{-}` at the beginning of the content "
+"block. The following syntax defines a marginnote:"
+msgstr ""
+
+#: ../../content/content-blocks.md:127
+msgid "Here's my sentence and a marginnote[^mn1]."
+msgstr ""
+
+#: ../../content/content-blocks.md:133
+msgid "Block margin content with the `{margin}` directive"
+msgstr ""
+
+#: ../../content/content-blocks.md:135
+msgid ""
+"The `{margin}` directive allows you to create block-level margin content "
+"with an optional title. It is a wrapper around the Sphinx `{sidebar}` "
+"directive, and largely does its magic via CSS classes (see below)."
+msgstr ""
+
+#: ../../content/content-blocks.md:139
+msgid ""
+"If you'd like in-line margin content with numbered references, see "
+"[](margin:sidenote)."
+msgstr ""
+
+#: ../../content/content-blocks.md:142
+msgid "Here's how you can use the `{margin}` directive:"
+msgstr ""
+
+#: ../../content/content-blocks.md:153
+msgid "Figure captions in the margin"
+msgstr ""
+
+#: ../../content/content-blocks.md:155
+msgid ""
+"You can configure figures to use the margin for captions. Here is a "
+"figure with a caption to the right."
+msgstr ""
+
+#: ../../content/content-blocks.md:176 ../../content/content-blocks.md:202
+msgid "My figure text"
+msgstr ""
+
+#: ../../content/content-blocks.md:183
+msgid ""
+"And here is my figure caption, if you look to the left, you can see that "
+"COOL is in big red letters. But you probably already noticed that, really"
+" I am just taking up space to see how the margin caption looks like when "
+"it is really long :-)."
+msgstr ""
+
+#: ../../content/content-blocks.md:172
+msgid ""
+"We can reference the figure with {ref}`this reference <myfig5>`. Or a "
+"numbered reference like {numref}`myfig5`."
+msgstr ""
+
+#: ../../content/content-blocks.md:175
+msgid "CSS classes for custom margin content"
+msgstr ""
+
+#: ../../content/content-blocks.md:177
+msgid ""
+"You may also directly add CSS classes to elements on your page in order "
+"to make them behave like margin content. To do so, add the `margin` CSS "
+"class to any element on the page. Many Sphinx directives allow you to "
+"directly add classes. For example, here's the syntax to add a `margin` "
+"class to a `{note}` directive:"
+msgstr ""
+
+#: ../../content/content-blocks.md:188
+msgid "This note will be in the margin!"
+msgstr ""
+
+#: ../../content/content-blocks.md:193
+msgid ""
+"This works for most elements on the page, but in general this works best "
+"for \"parent containers\" that are the top-most element of a bundle of "
+"content. For example, you can also put the whole figure in the margin if "
+"you like. Here is a figure with a caption below. We'll add a note below "
+"to create some vertical space to see better."
+msgstr ""
+
+#: ../../content/content-blocks.md:208
+msgid "And here is my figure caption"
+msgstr ""
+
+#: ../../content/content-blocks.md:212
+msgid ""
+"We can reference the figure with {ref}`myfig4`. Or a numbered reference "
+"like {numref}`myfig4`."
+msgstr ""
+
+#: ../../content/content-blocks.md:216
+msgid "Content examples in the margin"
+msgstr ""
+
+#: ../../content/content-blocks.md:218
+msgid "Margin content can include all kinds of things, such as code blocks:"
+msgstr ""
+
+#: ../../content/content-blocks.md:245
+msgid "Sidebars"
+msgstr ""
+
+#: ../../content/content-blocks.md:247
+msgid ""
+"Sidebars exist in-line with your text, but allow the rest of the page to "
+"flow around them, rather than moving to the right margin."
+msgstr ""
+
+#: ../../content/content-blocks.md:250
+msgid "To add content sidebars, use this syntax:"
+msgstr ""
+
+#: ../../content/content-blocks.md:269
+msgid "Here is my sidebar content, it is pretty cool!"
+msgstr ""
+
+#: ../../content/content-blocks.md:271
+msgid "![](../images/cool.jpg)"
+msgstr ""
+
+#: ../../content/content-blocks.md:263
+msgid ""
+"Note how the content wraps around the sidebar to the right. However, the "
+"sidebar text will still be in line with your content. There are certain "
+"kinds of elements, such as \"note\" blocks and code cells, that may clash"
+" with your sidebar. If this happens, try using a `{margin}` instead."
+msgstr ""
+
+#: ../../content/content-blocks.md:268
+msgid "Full-width content"
+msgstr ""
+
+#: ../../content/content-blocks.md:270
+msgid ""
+"Full-width content extends into the right margin, making it stand out "
+"against the rest of your book's content. To add full-width content to "
+"your page, add the class `full-width` to any of the elements in your "
+"documentation. For example, you can add a `full-width` tag to a note "
+"element like this:"
+msgstr ""
+
+#: ../../content/content-blocks.md:290
+msgid "This content will be full-width"
+msgstr ""
+
+#: ../../content/content-blocks.md:284
+msgid "A note for ipynb users"
+msgstr ""
+
+#: ../../content/content-blocks.md:285
+msgid ""
+"If you are using a Jupyter Notebook as inputs to your documentation using"
+" the [MyST-NB extension](https://myst-nb.readthedocs.io/en/latest/), you "
+"can trigger this behavior with a code cell by adding a `full-width` tag "
+"to the cell."
+msgstr ""
+
+#: ../../content/content-blocks.md:74
+msgid "Here's my sidenote text!"
+msgstr ""
+
+#: ../../content/content-blocks.md:76
+msgid ""
+"On narrow screens, this text won't show up unless you click the "
+"superscript number!"
+msgstr ""
+
+#: ../../content/content-blocks.md:82
+msgid "{-} This is a margin note. Notice there isn’t a number preceding the note."
+msgstr ""
+
+#: ../../content/content-blocks.md:115
+msgid "And here's my sidenote content."
+msgstr ""
+
+#: ../../content/content-blocks.md:129
+msgid "{-} And here's my marginnote content."
+msgstr ""
+
