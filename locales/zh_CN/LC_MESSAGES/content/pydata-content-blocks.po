@@ -99,10 +99,11 @@ msgid ""
 "You can add a link to equations like the one above {eq}`My label` and "
 "{eq}`My label 2`."
 msgstr ""
+"你可以添加指向上述方程的链接，例如 {eq}`My label` 和 {eq}`My label 2`。"
 
 #: ../../content/pydata-content-blocks.md:48
 msgid "Code blocks"
-msgstr ""
+msgstr "代码块"
 
 #: ../../content/pydata-content-blocks.md:50
 msgid ""
@@ -113,12 +114,15 @@ msgid ""
 "doc.org/en/master/usage/restructuredtext/directives.html#directive-code-"
 "block) for more information."
 msgstr ""
+"代码块样式灵感源自 [GitHub 的代码块样式](https://primer.style/components/markdown)，并且还支持代码块的标题/说明。"
+"更多信息请参阅 [Sphinx 关于代码块的文档](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-code-block)。"
 
 #: ../../content/pydata-content-blocks.md:59
 msgid ""
 "You can also provide captions with code blocks, which will be displayed "
 "right above the code. For example, the following code:"
 msgstr ""
+"你还可以为代码块提供说明，这些说明将显示在代码的正上方。例如，以下代码："
 
 #: ../../content/pydata-content-blocks.md
 msgid "rST"
@@ -140,11 +144,11 @@ msgstr ""
 
 #: ../../content/pydata-content-blocks.md:90
 msgid "You can also display line numbers. For example, the following code:"
-msgstr ""
+msgstr "你还可以显示行号。例如，以下代码："
 
 #: ../../content/pydata-content-blocks.md:130
 msgid "Inline code"
-msgstr ""
+msgstr "内联代码"
 
 #: ../../content/pydata-content-blocks.md:132
 msgid ""
@@ -156,6 +160,9 @@ msgid ""
 "custom role. It will then use the same highlighter as in the `code-block`"
 " directive."
 msgstr ""
+"直接使用时，`code` 角色仅以字面形式显示文本，不进行语法高亮。"
+"如 [Sphinx 文档](https://www.sphinx-doc.org/en/master/usage/restructuredtext/roles.html#inline-code-highlighting) 中所述，"
+"你还可以通过定义自定义角色来启用语法高亮。之后，它将使用与 `code-block` 指令相同的语法高亮器。"
 
 #: ../../content/pydata-content-blocks.md
 msgid "rst"
@@ -167,11 +174,11 @@ msgstr ""
 
 #: ../../content/pydata-content-blocks.md:158
 msgid "In Python you can {python}`import sphinx`."
-msgstr ""
+msgstr "在 Python 中，你可以 {python}`import sphinx`。"
 
 #: ../../content/pydata-content-blocks.md:160
 msgid "Code execution"
-msgstr ""
+msgstr "代码执行"
 
 #: ../../content/pydata-content-blocks.md:162
 msgid ""
@@ -179,10 +186,11 @@ msgid ""
 "programmatically update your documentation with each build. For examples,"
 " see [](notebooks.md)."
 msgstr ""
+"此主题支持 Jupyter 执行库，因此你可以在每次构建时以编程方式更新文档。例如，请参阅 [](notebooks.md)。"
 
 #: ../../content/pydata-content-blocks.md:165
 msgid "Admonition sidebars"
-msgstr ""
+msgstr "告诫侧边栏"
 
 #: ../../content/pydata-content-blocks.md:167
 msgid "A sidebar admonition!"
@@ -190,15 +198,15 @@ msgstr ""
 
 #: ../../content/pydata-content-blocks.md:169
 msgid "I was made with the `{admonition}` directive and a `sidebar` class."
-msgstr ""
+msgstr "我是用 `{admonition}` 指令和 `sidebar` 类创建的。"
 
 #: ../../content/pydata-content-blocks.md:172
 msgid "Sidebar title"
-msgstr ""
+msgstr "侧边栏标题"
 
 #: ../../content/pydata-content-blocks.md:173
 msgid "I was made with the `{sidebar}` directive."
-msgstr ""
+msgstr "我是用 `{sidebar}` 指令创建的。"
 
 #: ../../content/pydata-content-blocks.md:176
 msgid ""
@@ -206,12 +214,14 @@ msgid ""
 "sidebars**. This can be a helpful way of highlighting content without "
 "interrupting the vertical flow as much."
 msgstr ""
+"此主题支持一种简便的方式，使 **提示框表现得像侧边栏**。这是一种在不显著打断垂直阅读流程的情况下，突出显示内容的有用方法。"
 
 #: ../../content/pydata-content-blocks.md:179
 msgid ""
 "For example, on the right are an \"admonition sidebar\" and a traditional"
 " Sphinx sidebar."
 msgstr ""
+"例如，在右侧是“提示框侧边栏”和传统的 Sphinx 侧边栏。"
 
 #: ../../content/pydata-content-blocks.md:181
 msgid ""
@@ -219,10 +229,11 @@ msgid ""
 "its list of classes. The admonition sidebar in this section was created "
 "with the following Markdown:"
 msgstr ""
+"要让提示框表现得像侧边栏，请在其类列表中添加 `sidebar` 类。本节中的提示框侧边栏是使用以下 Markdown 创建的："
 
 #: ../../content/pydata-content-blocks.md:203
 msgid "Footnotes"
-msgstr ""
+msgstr "脚注"
 
 #: ../../content/pydata-content-blocks.md:205
 msgid ""
@@ -231,10 +242,12 @@ msgid ""
 "numbers in the rendered HTML, but in the source they look like `[^1]`, "
 "`[^2]`, `[^named]` and `[^*]`."
 msgstr ""
+"这里是数字脚注[^1]，另一个（前面有空格）[^2]，命名脚注[^named]，以及符号脚注[^*]。"
+"所有这些在渲染后的 HTML 中都会显示为数字，但在源代码中它们分别看起来像 `[^1]`、`[^2]`、`[^named]` 和 `[^*]`。"
 
 #: ../../content/pydata-content-blocks.md:216
 msgid "Link shortening for git repository services"
-msgstr ""
+msgstr "为 Git 仓库服务提供的链接缩短功能"
 
 #: ../../content/pydata-content-blocks.md:218
 msgid ""
@@ -243,12 +256,15 @@ msgid ""
 "this theme does some lightweight formatting for these platforms "
 "specifically."
 msgstr ""
+"许多项目都有指向托管在 **GitHub** 或 **GitLab** 等平台上的问题/PR的链接。"
+"与直接显示这些原始链接不同，此主题针对这些平台进行了一些轻量级的格式化处理。"
 
 #: ../../content/pydata-content-blocks.md:221
 msgid ""
 "In **reStructuredText**, URLs are automatically converted to links, so "
 "this works automatically."
 msgstr ""
+"在 **reStructuredText** 中，URL 会自动转换为链接，因此这是自动生效的。"
 
 #: ../../content/pydata-content-blocks.md:223
 msgid ""
@@ -258,10 +274,12 @@ msgid ""
 "extension](https://myst-"
 "parser.readthedocs.io/en/latest/syntax/optional.html#linkify)."
 msgstr ""
+"在 **MyST Markdown** 中，默认情况下，你必须定义标准的 Markdown 链接，并在链接文本中重复 URL。"
+"可以通过[激活 MyST Linkify 扩展](https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#linkify)来跳过手动定义链接文本的需求。"
 
 #: ../../content/pydata-content-blocks.md:226
 msgid "For example:"
-msgstr ""
+msgstr "示例："
 
 #: ../../content/pydata-content-blocks.md:228
 msgid "**reStructuredText**"

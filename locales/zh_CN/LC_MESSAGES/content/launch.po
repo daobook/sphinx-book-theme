@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../content/launch.md:2
 msgid "Launch buttons for interactivity"
-msgstr ""
+msgstr "用于交互的启动按钮"
 
 #: ../../content/launch.md:4
 msgid ""
@@ -31,12 +31,15 @@ msgid ""
 "JupyterHub that runs in the cloud, or by making your page interactive "
 "using Thebe."
 msgstr ""
+"您可以自动添加按钮，让用户与您的书籍内容进行互动。"
+"这可以通过引导他们访问在云端运行的 BinderHub 或 JupyterHub，或者通过使用 Thebe 使您的页面具有互动性来实现。"
 
 #: ../../content/launch.md:8
 msgid ""
 "To use either Binder or JupyterHub links, you'll first need to configure "
 "your documentation's repository url:"
 msgstr ""
+"要使用 Binder 或 JupyterHub 链接，您首先需要配置文档仓库的 URL："
 
 #: ../../content/launch.md:29
 msgid "Binder / BinderHub"
@@ -44,7 +47,7 @@ msgstr ""
 
 #: ../../content/launch.md:31
 msgid "To add Binder links to your page, add the following configuration:"
-msgstr ""
+msgstr "要在您的页面添加Binder链接，请添加以下配置："
 
 #: ../../content/launch.md:43
 msgid "JupyterHub"
@@ -52,7 +55,7 @@ msgstr ""
 
 #: ../../content/launch.md:45
 msgid "To add JupyterHub links to your page, add the following configuration:"
-msgstr ""
+msgstr "要在您的页面添加JupyterHub链接，请添加以下配置："
 
 #: ../../content/launch.md:57
 msgid "Google Colab"
@@ -60,7 +63,7 @@ msgstr ""
 
 #: ../../content/launch.md:59
 msgid "To add Google Colab links to your page, add the following configuration:"
-msgstr ""
+msgstr "要在您的页面添加Google Colab链接，请添加以下配置："
 
 #: ../../content/launch.md:70
 msgid "Deepnote"
@@ -71,16 +74,18 @@ msgid ""
 "To add [Deepnote](https://deepnote.com) links to your page, add the "
 "following configuration:"
 msgstr ""
+"要在您的页面中添加 [Deepnote](https://deepnote.com) 链接，请添加以下配置："
 
 #: ../../content/launch.md:85
 msgid ""
 "This will create a new Deepnote project every time you click the launch "
 "button."
 msgstr ""
+"“每次点击启动按钮时，这将创建新的 Deepnote 项目。”"
 
 #: ../../content/launch.md:89
 msgid "Live code cells with Thebe"
-msgstr ""
+msgstr "使用 Thebe 活代码单元格"
 
 #: ../../content/launch.md:91
 msgid ""
@@ -90,6 +95,9 @@ msgid ""
 "your code cells into *interactive* code cells. This allows users to run "
 "the code on your page without leaving the page."
 msgstr ""
+"[Thebe](http://thebe.readthedocs.org/) 将您的静态代码块转换为*交互式*代码块，这些代码块由 Jupyter 内核驱动。"
+"它通过在后台请求 BinderHub 内核，并将您的所有代码单元转换为*交互式*代码单元来实现这一点。"
+"这使得用户可以在不离开页面的情况下运行您页面上的代码。"
 
 #: ../../content/launch.md:97
 msgid ""
@@ -98,24 +106,29 @@ msgid ""
 "documentation. You can install `sphinx-thebe` from `pip`, then activate "
 "it by putting it in your `conf.py` extensions list:"
 msgstr ""
+"您可以使用 Sphinx 扩展 [`sphinx-thebe`](https://sphinx-thebe.readthedocs.io/en/latest/) 为您的文档添加实时代码功能。"
+"您可以通过 `pip` 安装 `sphinx-thebe`，然后通过将其添加到 `conf.py` 的扩展列表中来激活它："
 
 #: ../../content/launch.md:110
 msgid ""
 "If you'd like to activate UI elements for `sphinx-thebe` in the `sphinx-"
 "book-theme`, add the following theme configuration:"
 msgstr ""
+"如果您希望在 `sphinx-book-theme` 中激活 `sphinx-thebe` 的用户界面元素，请添加以下主题配置："
 
 #: ../../content/launch.md:123
 msgid ""
 "This will add a custom launch button and some UI elements will be added "
 "for Thebe."
 msgstr ""
+"这将添加自定义启动按钮，并为 Thebe 添加一些用户界面元素。"
 
 #: ../../content/launch.md:125
 msgid ""
 "If you also specify a `repository_url` with your theme configuration, "
 "`sphinx-thebe` will use this repository for its environment:"
 msgstr ""
+"如果您在主题配置中同时指定了 `repository_url`，`sphinx-thebe` 将使用此仓库作为其环境："
 
 #: ../../content/launch.md:137
 msgid ""
@@ -125,24 +138,27 @@ msgid ""
 "://sphinx-thebe.readthedocs.io/en/latest/) documentation for what you can"
 " configure."
 msgstr ""
+"您还可以通过 `thebe_config` 字典手动自定义 Thebe。"
+"这将覆盖从 `html_theme_options` 配置中提取的任何配置。有关可配置的内容，请参阅 [`sphinx-thebe`](https://sphinx-thebe.readthedocs.io/en/latest/) 文档。"
 
 #: ../../content/launch.md:143
 msgid "Configure a relative path to your source file"
-msgstr ""
+msgstr "配置到源文件的相对路径"
 
 #: ../../content/launch.md:145
 msgid ""
 "To configure a relative path to your documentation, add the following "
 "configuration:"
 msgstr ""
+"要配置到文档的相对路径，请添加以下配置："
 
 #: ../../content/launch.md:155
 msgid "Control the user interface that is opened"
-msgstr ""
+msgstr "控制打开的用户界面"
 
 #: ../../content/launch.md:157
 msgid ""
 "You can control the interface that is opened when somebody clicks on a "
 "launch button. To do so, add the following configuration:"
 msgstr ""
-
+"您可以控制当用户点击启动按钮时打开的界面。为此，请添加以下配置："
