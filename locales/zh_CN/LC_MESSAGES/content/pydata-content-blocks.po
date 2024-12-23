@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../content/pydata-content-blocks.md:1
 msgid "PyData Theme Elements"
-msgstr ""
+msgstr "PyData 主题元素"
 
 #: ../../content/pydata-content-blocks.md:3
 msgid ""
@@ -30,6 +30,7 @@ msgid ""
 "theme's parent theme, [the PyData Sphinx Theme](https://pydata-sphinx-"
 "theme.readthedocs.io/en/latest/user_guide/theme-elements.html)"
 msgstr ""
+"这是一组内容块，由该主题的父主题 [PyData Sphinx 主题](https://pydata-sphinx-theme.readthedocs.io/en/latest/user_guide/theme-elements.html) 提供特殊支持。"
 
 #: ../../content/pydata-content-blocks.md:6
 msgid ""
@@ -37,16 +38,18 @@ msgid ""
 "this theme. Some of these are triggered with configuration or Markdown "
 "syntax that is unique to the theme, and we cover them below."
 msgstr ""
+"这个主题有一些独特或特别重要的元素。其中一些元素通过该主题独有的配置或 Markdown 语法触发，我们将在下面介绍它们。"
 
 #: ../../content/pydata-content-blocks.md:9
 msgid "Mathematics"
-msgstr ""
+msgstr "数学"
 
 #: ../../content/pydata-content-blocks.md:11
 msgid ""
 "Most Sphinx sites support math, but it is particularly important for "
 "scientific computing, so we illustrate support here as well."
 msgstr ""
+"大多数 Sphinx 站点都支持数学公式，但对于科学计算来说，这一点尤为重要，因此我们在这里也展示了相关支持。"
 
 #: ../../content/pydata-content-blocks.md:13
 msgid ""
@@ -55,6 +58,8 @@ msgid ""
 "test vertical height {math}`\\frac{\\partial^2 f}{\\partial \\phi^2}`. "
 "Here is a block-level equation:"
 msgstr ""
+"以下是行内公式：{math}`X_{0:5} = (X_0, X_1, X_2, X_3, X_4)` 以及 {math}`another` 和 {math}`x^2 x^3 x^4` 另一个。"
+"这里还有测试垂直高度的公式：{math}`\\frac{\\partial^2 f}{\\partial \\phi^2}`。以下是块级公式："
 
 #: ../../content/pydata-content-blocks.md:16
 msgid ""
@@ -69,7 +74,7 @@ msgstr ""
 
 #: ../../content/pydata-content-blocks.md:27
 msgid "And here is a really long equation with a label!"
-msgstr ""
+msgstr "这里是带有标签的非常长的公式！"
 
 #: ../../content/pydata-content-blocks.md:29
 msgid ""
