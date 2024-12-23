@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../components/icon-links.md:1
 msgid "Icon links and badges"
-msgstr ""
+msgstr "图标链接和徽章"
 
 #: ../../components/icon-links.md:3
 msgid ""
@@ -31,4 +31,5 @@ msgid ""
 "[shields.io badge](https://shields.io). See the {external:ref}`PyData "
 "Icon Links documentation <icon-links>` for how to configure this."
 msgstr ""
-
+"您可以在主侧边栏中添加一组图标链接和徽章。例如，可以包含指向您的 GitHub 仓库或 [shields.io 徽章](https://shields.io) 的链接。"
+"有关如何配置此功能的详细信息，请参阅 {external:ref}`PyData 图标链接文档 <icon-links>`。"

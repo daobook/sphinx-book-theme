@@ -22,19 +22,21 @@ msgstr ""
 
 #: ../../sections/footer.md:1
 msgid "Page footer"
-msgstr ""
+msgstr "页面页脚"
 
 #: ../../sections/footer.md:3
 msgid ""
 "The page footer spans the entire width of the page, and is only visible "
 "once you scroll to the end of the article's content."
 msgstr ""
+"页面页脚横跨整个页面宽度，并且仅在滚动到文章内容末尾时可见。"
 
 #: ../../sections/footer.md:5
 msgid ""
 "By default, it is empty and not visible. However, there are two "
 "configuration points where you can add items to your footer:"
 msgstr ""
+"默认情况下，它是空的且不可见。不过，有两个配置点可以让你向页脚添加内容："
 
 #: ../../sections/footer.md:8
 msgid ""
@@ -42,12 +44,14 @@ msgid ""
 "that will be placed at the beginning (left on most screens) of the "
 "footer."
 msgstr ""
+"`html_theme_options[\"footer_start\"]` 接受 HTML 模板列表，这些模板将放置在页脚的开头（大多数屏幕的左侧）。"
 
 #: ../../sections/footer.md:10
 msgid ""
 "`html_theme_options[\"footer_end\"]` accepts a list of HTML templates "
 "that will be placed at the end (right on most screens) of the footer."
 msgstr ""
+"`html_theme_options[\"footer_end\"]` 接受 HTML 模板列表，这些模板将放置在页脚的末尾（大多数屏幕的右侧）。"
 
 #: ../../sections/footer.md:12
 msgid ""
@@ -56,4 +60,4 @@ msgid ""
 "templates path, and adds the template to both the start and end section "
 "of the footer."
 msgstr ""
-
+"例如，下面的配置假设在 `_templates/test.html` 处有模板。它将 `_templates` 文件夹添加到Sphinx的模板路径中，并将该模板添加到页脚的开始和结束部分。"

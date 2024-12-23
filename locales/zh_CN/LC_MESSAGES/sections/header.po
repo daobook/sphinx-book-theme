@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../sections/header.md:1
 msgid "Header and navbar"
-msgstr ""
+msgstr "页眉和导航栏"
 
 #: ../../sections/header.md:3
 msgid ""
@@ -33,14 +33,18 @@ msgid ""
 "bar) to add your own header components. If any of this configuration is "
 "set, then your header will show at the top of the page."
 msgstr ""
+"默认情况下，此主题不包含任何页眉内容，它仅有一个侧边栏和一个主内容窗口。"
+"但是，您可以使用 [PyData Sphinx Theme 的页眉配置](https://pydata-sphinx-"
+"theme.readthedocs.io/en/stable/user_guide/layout.html#header-navigation-bar) 来添加您自己的页眉组件。"
+"如果设置了任何这些配置，则页眉将显示在页面顶部。"
 
 #: ../../sections/header.md:7
 msgid "Add components to the header navbar"
-msgstr ""
+msgstr "向页眉导航栏添加组件"
 
 #: ../../sections/header.md:9
 msgid "There are three configuration options you can use in `html_theme_options`:"
-msgstr ""
+msgstr "您可以在 `html_theme_options` 中使用以下三个配置选项："
 
 #: ../../sections/header.md:11
 msgid ""
@@ -48,6 +52,7 @@ msgid ""
 "**Visible on all screen sizes**. Use this for adding a logo that you want"
 " to persist over time."
 msgstr ""
+"**`navbar_start`**: 在页眉的开头添加组件。**在所有屏幕尺寸上可见**。使用此选项添加您希望始终显示的徽标。"
 
 #: ../../sections/header.md:13
 msgid ""
@@ -55,26 +60,29 @@ msgid ""
 "the left if no `navbar_start` is defined. **Moved to the sizebar on "
 "mobile**. Use this for extra navigation content to external pages."
 msgstr ""
+"**`navbar_center`**: 在页眉的中心添加组件，如果未定义 `navbar_start`，则添加到左侧。**在移动设备上移至侧边栏**。使用此选项添加指向外部页面的额外导航内容。"
 
 #: ../../sections/header.md:15
 msgid ""
 "**`navbar_end`**: Adds components to the end of the header. **Moved to "
 "the sizebar on mobile**. Use this for extra social links or buttons."
 msgstr ""
+"**`navbar_end`**: 在页眉的末尾添加组件。**在移动设备上移至侧边栏**。使用此选项添加额外的社交链接或按钮。"
 
 #: ../../sections/header.md:17
 msgid "An example"
-msgstr ""
+msgstr "示例"
 
 #: ../../sections/header.md:19
 msgid "For example, you can add a button to the header like so:"
-msgstr ""
+msgstr "例如，您可以像这样在页眉中添加按钮："
 
 #: ../../sections/header.md:21
 msgid ""
 "**Create a HTML template**. In `_templates/mybutton.html`, put the "
 "following text:"
 msgstr ""
+"**创建 HTML 模板**。在 `_templates/mybutton.html` 中，输入以下文本："
 
 #: ../../sections/header.md:27
 msgid ""
@@ -82,30 +90,33 @@ msgid ""
 ".sphinx-doc.org/en/master/usage/configuration.html#confval-"
 "templates_path)."
 msgstr ""
+"确保 `_templates` 在你的[模板路径](https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-templates_path)中。"
 
 #: ../../sections/header.md:29
 msgid "**Add the following to `conf.py`**:"
-msgstr ""
+msgstr "**将以下内容添加到 `conf.py` 中** ："
 
 #: ../../sections/header.md:37
 msgid ""
 "Your header should now be visible, and the `mybutton.html` content should"
 " now show up in the upper-right."
 msgstr ""
+"**现在，你的页眉应该可见，并且 `mybutton.html` 的内容应该显示在右上角。**"
 
 #: ../../sections/header.md:39
 msgid "Override the entire header"
-msgstr ""
+msgstr "**覆盖整个页眉**"
 
 #: ../../sections/header.md:40
 msgid ""
 "Alternatively, you can over-ride the entire header by defining a file at "
 "`_templates/sections/header.html`."
 msgstr ""
+"**或者，你可以通过在 `_templates/sections/header.html` 定义文件来覆盖整个页眉。**"
 
 #: ../../sections/header.md:43
 msgid "Style the header"
-msgstr ""
+msgstr "**为页眉添加样式**"
 
 #: ../../sections/header.md:45
 msgid ""
@@ -113,4 +124,4 @@ msgid ""
 " you should [add custom styles to the theme](../components/custom-css.md)"
 " in order to achieve the look and feel you want."
 msgstr ""
-
+"**请注意，默认情况下页眉几乎没有应用任何样式。因此，你应该[为主题添加自定义样式](../components/custom-css.md)，以实现你想要的外观和感觉。**"

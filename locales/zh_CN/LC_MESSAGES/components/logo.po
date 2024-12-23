@@ -22,11 +22,11 @@ msgstr ""
 
 #: ../../components/logo.md:3
 msgid "Logo and branding"
-msgstr ""
+msgstr "logo与品牌"
 
 #: ../../components/logo.md:5
 msgid "You can customize the logo, title, and favicon of your site."
-msgstr ""
+msgstr "您可以自定义网站的logo、标题和网站图标。"
 
 #: ../../components/logo.md:7
 msgid ""
@@ -34,4 +34,4 @@ msgid ""
 "<user_guide/branding>` for how to customize the logo and title. This "
 "theme re-uses the same configuration."
 msgstr ""
-
+"请参阅 {external:doc}`PyData Sphinx 主题品牌文档 <user_guide/branding>`，了解如何自定义 logo 和标题。该主题复用了相同的配置。"

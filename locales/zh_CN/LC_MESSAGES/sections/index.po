@@ -22,11 +22,11 @@ msgstr ""
 
 #: ../../sections/index.md:1
 msgid "Layout and major sections"
-msgstr ""
+msgstr "布局和主要分区"
 
 #: ../../sections/index.md:3
 msgid ""
 "These sections describe how to add content to the major sections of the "
 "site."
 msgstr ""
-
+"这些分区描述了如何将内容添加到站点的主分区。"

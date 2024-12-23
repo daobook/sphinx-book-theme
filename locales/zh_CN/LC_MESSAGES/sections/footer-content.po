@@ -22,49 +22,52 @@ msgstr ""
 
 #: ../../sections/footer-content.md:1
 msgid "Content footer"
-msgstr ""
+msgstr "内容页脚"
 
 #: ../../sections/footer-content.md:3
 msgid ""
 "There is a content footer that spans the width of the page, and is "
 "visible when you scroll to the bottom of the content."
 msgstr ""
+"内容页脚横跨页面宽度，当你滚动到内容底部时可见。"
 
 #: ../../sections/footer-content.md:5
 msgid "By default, the content footer has the following items:"
-msgstr ""
+msgstr "默认情况下，内容页脚包含以下项目："
 
 #: ../../sections/footer-content.md:7
 msgid "`author.html`: Display the author of the page, if present."
-msgstr ""
+msgstr "`author.html`：如果存在，显示页面的作者。"
 
 #: ../../sections/footer-content.md:8
 msgid "`copyright.html`: Display copyright information about the website."
-msgstr ""
+msgstr "`copyright.html`：显示网站的版权信息。"
 
 #: ../../sections/footer-content.md:9
 msgid "`last-updated.html`: Display the latest date that the website was updated."
-msgstr ""
+msgstr "`last-updated.html`：显示网站最近更新的日期。"
 
 #: ../../sections/footer-content.md:10
 msgid ""
 "`extra-footer.html`: A placeholder for arbitrary HTML you may add (see "
 "[](content-footer:extra-footer))."
 msgstr ""
+"`extra-footer.html`：用于添加任意 HTML 内容的占位符（参见[](content-footer:extra-footer))。"
 
 #: ../../sections/footer-content.md:13
 msgid "Add extra HTML to your content footer"
-msgstr ""
+msgstr "向内容页脚添加额外的HTML"
 
 #: ../../sections/footer-content.md:15
 msgid ""
 "You may add custom HTML to the content footer via `conf.py`. This is a "
 "shortcut in case you wish to avoid defining your own HTML template."
 msgstr ""
+"你可以通过 `conf.py` 向内容页脚添加自定义HTML。这是一种快捷方式，以防你希望避免定义自己的HTML模板。"
 
 #: ../../sections/footer-content.md:18
 msgid ""
 "To do so, use the `extra_footer` configuration and provide any HTML that "
 "you wish. For example:"
 msgstr ""
-
+"要实现这一点，请使用 `extra_footer` 配置并提供你希望的任何HTML。例如："

@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../sections/announcements.md:1
 msgid "Announcement banners"
-msgstr ""
+msgstr "公告横幅"
 
 #: ../../sections/announcements.md:3
 msgid ""
@@ -32,16 +32,19 @@ msgid ""
 "attention to certain messages but in a way that doesn't distract from "
 "reading as the person scrolls down."
 msgstr ""
+"您可以提供显示在“公告”横幅中的文本。一旦用户向下滚动，横幅就会消失，但会使用对比色以更加醒目。"
+"这可以用来吸引人们对某些信息的注意，但不会在用户滚动阅读时造成干扰。"
 
 #: ../../sections/announcements.md:7
 msgid ""
 "To add an announcement message to your documentation, use the following "
 "configuration:"
 msgstr ""
+"要在您的文档中添加公告信息，请使用以下配置："
 
 #: ../../sections/announcements.md:17
 msgid ""
 "The value of `announcement` will be inserted in the top of your page. "
 "This can take arbitrary HTML, for example:"
 msgstr ""
-
+"`announcement` 的值将被插入到页面的顶部。它可以包含任意 HTML，例如："

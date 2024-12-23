@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../components/custom-css.md:1
 msgid "Add your own CSS rules"
-msgstr ""
+msgstr "添加您自己的 CSS 规则"
 
 #: ../../components/custom-css.md:3
 msgid ""
@@ -31,6 +31,7 @@ msgid ""
 "Docs](https://docs.readthedocs.io/en/stable/guides/adding-custom-"
 "css.html)."
 msgstr ""
+"要进一步自定义您网站的外观，您可以自定义 CSS 样式表，如 [ReadTheDocs 文档](https://docs.readthedocs.io/en/stable/guides/adding-custom-css.html) 中所述。"
 
 #: ../../components/custom-css.md:6
 msgid ""
@@ -38,8 +39,9 @@ msgid ""
 " CSS file to change the color of the top-level headers might look like "
 "this."
 msgstr ""
+"首先，创建 CSS 文件并将其放置在 `_static/custom.css` 中。用于更改顶级标题颜色的示例 CSS 文件可能如下所示："
 
 #: ../../components/custom-css.md:15
 msgid "You also need these two lines in your `conf.py` file"
-msgstr ""
+msgstr "您还需要在 `conf.py` 文件中添加以下两行代码："
 

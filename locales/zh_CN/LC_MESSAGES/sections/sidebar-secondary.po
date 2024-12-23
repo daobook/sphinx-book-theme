@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../sections/sidebar-secondary.md:1
 msgid "Secondary sidebar and table of contents"
-msgstr ""
+msgstr "辅助侧边栏和目录"
 
 #: ../../sections/sidebar-secondary.md:3
 msgid ""
@@ -31,24 +31,26 @@ msgid ""
 "default, from the right side of the page). This page describes ways to "
 "control and customize the secondary sidebar."
 msgstr ""
+"辅助侧边栏包含有关当前页面的信息。它从页面顶部（在标题中）开始，并向下延伸（默认情况下，从页面的右侧开始）。本页介绍控制和自定义辅助侧边栏的方法。"
 
 #: ../../sections/sidebar-secondary.md:7
 msgid "Rename the in-page Table of Contents"
-msgstr ""
+msgstr "重命名页面内的目录"
 
 #: ../../sections/sidebar-secondary.md:9
 msgid ""
 "You can rename the title of the in-page table of contents, in the right "
 "sidebar:"
 msgstr ""
+"您可以重命名右侧边栏中页面内目录的标题："
 
 #: ../../sections/sidebar-secondary.md:17
 msgid "The default value of the title is `Contents`."
-msgstr ""
+msgstr "标题的默认值为 `Contents`。"
 
 #: ../../sections/sidebar-secondary.md:19
 msgid "Show more levels of the in-page TOC by default"
-msgstr ""
+msgstr "默认显示更多级别的页面内目录"
 
 #: ../../sections/sidebar-secondary.md:21
 msgid ""
@@ -56,16 +58,18 @@ msgid ""
 "page table of contents, and deeper levels are only shown when they are "
 "part of an active section (when it is scrolled on screen)."
 msgstr ""
+"通常，页面内目录中仅显示页面的二级标题，更深层次的标题仅在它们属于活动部分时（即滚动到屏幕上时）显示。"
 
 #: ../../sections/sidebar-secondary.md:23
 msgid ""
 "You can show deeper levels by default by using the following "
 "configuration, indicating how many levels should be displayed:"
 msgstr ""
+"您可以通过使用以下配置来默认显示更深层次的目录，指示应显示多少级别："
 
 #: ../../sections/sidebar-secondary.md:31
 msgid ""
 "All headings up to and including the level specified will now be shown "
 "regardless of what is displayed on the page."
 msgstr ""
-
+"现在，无论页面上显示什么内容，指定级别及以下的所有标题都将显示。"

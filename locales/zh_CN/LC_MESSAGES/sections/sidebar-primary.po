@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../sections/sidebar-primary.md:1
 msgid "Primary sidebar and navigation"
-msgstr ""
+msgstr "主侧边栏和导航"
 
 #: ../../sections/sidebar-primary.md:3
 msgid ""
@@ -30,16 +30,18 @@ msgid ""
 "default it is on the left side of the site. This page describes ways that"
 " you can control and customize the primary sidebar."
 msgstr ""
+"主侧边栏通常包含网站导航和 logo。默认情况下，它位于网站的左侧。本页介绍了一些控制和自定义主侧边栏的方法。"
 
 #: ../../sections/sidebar-primary.md:8
 msgid "Control the left sidebar items"
-msgstr ""
+msgstr "控制左侧边栏项目"
 
 #: ../../sections/sidebar-primary.md:10
 msgid ""
 "You can control what kind of content goes underneath the logo and name of"
 " your website in the top left."
 msgstr ""
+"您可以控制网站左上角 logo 和名称下方显示的内容类型。"
 
 #: ../../sections/sidebar-primary.md:12
 msgid ""
@@ -48,18 +50,22 @@ msgid ""
 "elements as values. Any files that match a key will have the "
 "corresponding sidebar elements placed in that page's sidebar."
 msgstr ""
+"为此，请在您的 `conf.py` 文件中使用 `html_sidebars` 变量。"
+"该变量接受字典，其中键为文件名模式，值为侧边栏元素列表。任何匹配键的文件将在该页面的侧边栏中放置相应的侧边栏元素。"
 
 #: ../../sections/sidebar-primary.md:14
 msgid ""
 "For example, the following configuration would include *only the footer* "
 "on pages under the `posts/` folder:"
 msgstr ""
+"例如，以下配置将仅在 `posts/` 文件夹下的页面中包含 *页脚*："
 
 #: ../../sections/sidebar-primary.md:22
 msgid ""
 "You can also use `**` to apply a set of sidebars to **all** pages of your"
 " book. For example:"
 msgstr ""
+"还可以使用 `**` 将一组侧边栏应用于您书籍的 **所有** 页面。例如："
 
 #: ../../sections/sidebar-primary.md:30
 msgid ""
@@ -67,48 +73,52 @@ msgid ""
 "doc.org/en/master/usage/configuration.html#confval-html_sidebars) for "
 "more information."
 msgstr ""
+"更多信息，请参阅 [Sphinx HTML 侧边栏文档](https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_sidebars)。"
 
 #: ../../sections/sidebar-primary.md:32
 msgid "Default sidebar elements"
-msgstr ""
+msgstr "默认侧边栏元素"
 
 #: ../../sections/sidebar-primary.md:34
 msgid ""
 "By default, this theme comes with these theme-specific sidebar elements "
 "enabled on all pages:"
 msgstr ""
+"默认情况下，此主题在所有页面中启用了以下特定于主题的侧边栏元素："
 
 #: ../../sections/sidebar-primary.md:36
 msgid "`navbar-logo.html`: Displays the logo and site title."
-msgstr ""
+msgstr "`navbar-logo.html`：显示 logo 和网站标题。"
 
 #: ../../sections/sidebar-primary.md:37
 msgid "`icon-links.html`: Displays [icon links](icon-links)"
-msgstr ""
+msgstr "`icon-links.html`: 显示[图标链接](icon-links)"
 
 #: ../../sections/sidebar-primary.md:38
 msgid ""
 "`search-button-field.html`: A bootstrap-based search bar (from the "
 "[PyData Sphinx Theme](https://pydata-sphinx-theme.readthedocs.io/))"
 msgstr ""
+"`search-button-field.html`: 基于 Bootstrap 的搜索栏（来自 [PyData Sphinx Theme](https://pydata-sphinx-theme.readthedocs.io/)）"
 
 #: ../../sections/sidebar-primary.md:39
 msgid "`sbt-sidebar-nav.html`: A bootstrap-based navigation menu for your book."
-msgstr ""
+msgstr "`sbt-sidebar-nav.html`: 基于 Bootstrap 的导航菜单，适用于您的书籍。"
 
 #: ../../sections/sidebar-primary.md:41
 msgid "Add a header to your Table of Contents"
-msgstr ""
+msgstr "为目录添加标题"
 
 #: ../../sections/sidebar-primary.md:43
 msgid ""
 "If you'd like to add a header above a section of TOC links, use "
 "`:caption: My header text` in your `toctree` directive for that section."
 msgstr ""
+"如果您想在目录链接部分的上方添加标题，请在该部分的 `toctree` 指令中使用 `:caption: 我的标题文本`。"
 
 #: ../../sections/sidebar-primary.md:48
 msgid "Add the home page to your table of contents"
-msgstr ""
+msgstr "将首页添加到您的目录中"
 
 #: ../../sections/sidebar-primary.md:50
 msgid ""
@@ -116,54 +126,60 @@ msgid ""
 "you add to a `toctree`. You can also configure the theme to show the "
 "**landing page** of the theme in your navigation bar as well."
 msgstr ""
+"默认情况下，您的目录将从您添加到 `toctree` 的第一个文件开始。您还可以配置主题，以在导航栏中显示主题的 **首页**。"
 
 #: ../../sections/sidebar-primary.md:52
 msgid ""
 "To add the landing page of your site to the table of contents, use the "
 "following configuration:"
 msgstr ""
+"要将您网站的首页添加到目录中，请使用以下配置："
 
 #: ../../sections/sidebar-primary.md:63
 msgid "Control the depth of the left sidebar lists to expand"
-msgstr ""
+msgstr "控制左侧边栏列表展开的深度"
 
 #: ../../sections/sidebar-primary.md:65
 msgid ""
 "You can control the level of toc items in the left sidebar to remain "
 "expanded, using the following configuration in `conf.py`:"
 msgstr ""
+"您可以通过在 `conf.py` 中使用以下配置来控制左侧边栏中目录项的展开级别："
 
 #: ../../sections/sidebar-primary.md:76
 msgid ""
 "The default value is `1`, which shows only top-level sections of the "
 "documentation (and is used in this documentation)."
 msgstr ""
+"默认值为 `1`，它仅显示文档的顶级部分（并在本文档中使用）。"
 
 #: ../../sections/sidebar-primary.md:80
 msgid "Control the maximum depth of the left sidebar lists"
-msgstr ""
+msgstr "控制左侧边栏列表的最大深度"
 
 #: ../../sections/sidebar-primary.md:82
 msgid ""
 "You can control the level of toc items included in the left sidebar, "
 "using the following configuration in `conf.py`:"
 msgstr ""
+"您可以通过在 `conf.py` 中使用以下配置来控制左侧边栏中包含的目录项级别："
 
 #: ../../sections/sidebar-primary.md:93
 msgid "The default value is `4`."
-msgstr ""
+msgstr "默认值是 `4`。"
 
 #: ../../sections/sidebar-primary.md:96
 msgid "Turn off expandable left sidebar lists"
-msgstr ""
+msgstr "关闭可展开的左侧边栏列表"
 
 #: ../../sections/sidebar-primary.md:98
 msgid ""
 "You can turn off the sidebar expanding, using the following configuration"
 " in `conf.py`:"
 msgstr ""
+"您可以通过在 `conf.py` 中使用以下配置来关闭边栏的展开功能："
 
 #: ../../sections/sidebar-primary.md:109
 msgid "The default value is `False`, which allows the navbar to be expanded."
-msgstr ""
+msgstr "默认值为 `False`，允许导航栏展开。"
 

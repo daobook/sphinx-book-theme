@@ -22,13 +22,14 @@ msgstr ""
 
 #: ../../../ARCHITECTURE.md:2
 msgid "Architecture of the repository"
-msgstr ""
+msgstr "项目结构"
 
 #: ../../../ARCHITECTURE.md:4
 msgid ""
 "This is a short overview of the general architecture and structure of the"
 " repository, to help you orient yourself."
 msgstr ""
+"这是关于仓库的总体架构和结构的简要概述，以帮助您定位自己。"
 
 #: ../../../ARCHITECTURE.md:6
 msgid ""
@@ -38,6 +39,8 @@ msgid ""
 "/filesystem-layout/) recommended by it. See below for some more specific "
 "sections"
 msgstr ""
+"此主题使用 [sphinx-theme-builder](https://sphinx-theme-builder.readthedocs.io/en/latest/) 作为其构建后端，"
+"并遵循其推荐的 [文件系统布局](https://sphinx-theme-builder.readthedocs.io/en/latest/filesystem-layout/)。请参见下面的一些更具体的部分"
 
 #: ../../../ARCHITECTURE.md:8
 msgid "目录"

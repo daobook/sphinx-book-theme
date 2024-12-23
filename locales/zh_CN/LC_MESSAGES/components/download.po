@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../components/download.md:2
 msgid "Add a download page button"
-msgstr ""
+msgstr "添加下载页面按钮"
 
 #: ../../components/download.md:4
 msgid ""
@@ -31,6 +31,7 @@ msgid ""
 "as part of the build. To include this button, use the following "
 "configuration:"
 msgstr ""
+"您可以添加按钮，允许用户以多种格式下载当前查看的页面：`原始源代码`、`PDF` 或 `ipynb`（如果作为构建的一部分生成了该格式）。要包含此按钮，请使用以下配置："
 
 #: ../../components/download.md:16
 msgid ""
@@ -40,4 +41,6 @@ msgid ""
 " `.txt`. If you wish to add a different source suffix, manually specify "
 "`html_sourcelink_suffix` in `conf.py`."
 msgstr ""
-
+"该主题覆盖了 Sphinx 默认的 `html_sourcelink_suffix` 设置，将其改为 `''` 而不是 `.txt`。"
+"这是因为该主题的大多数用户希望下载页面本身的源文件，而这些文件通常不以 `.txt` 开头。"
+"如果您希望添加不同的源文件后缀，请在 `conf.py` 中手动指定 `html_sourcelink_suffix`。"

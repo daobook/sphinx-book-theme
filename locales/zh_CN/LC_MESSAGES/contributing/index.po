@@ -22,17 +22,18 @@ msgstr ""
 
 #: ../../contributing/index.md:11
 msgid "Contributing Guide"
-msgstr ""
+msgstr "贡献指南"
 
 #: ../../contributing/index.md:1
 msgid "Contributing guide"
-msgstr ""
+msgstr "贡献指南"
 
 #: ../../contributing/index.md:3
 msgid ""
 "Thank you for being interested in contributing to the `sphinx-book-"
 "theme`! You are awesome ✨."
 msgstr ""
+"感谢您对为 `sphinx-book-theme` 做出贡献感兴趣！您太棒了✨。"
 
 #: ../../contributing/index.md:6
 msgid ""
@@ -41,10 +42,12 @@ msgid ""
 "contains information about our conventions around coding style, pull "
 "request workflow, commit messages and more."
 msgstr ""
+"本项目遵循可执行图书项目的[贡献指南](https://executablebooks.org/en/latest/contribute)。"
+"其中包含有关我们的编码风格、拉取请求工作流程、提交消息等约定的信息。"
 
 #: ../../contributing/index.md:9
 msgid ""
 "The rest of these sections contain information about developing the "
 "`sphinx-book-theme` specifically."
 msgstr ""
-
+"这些部分的其余内容包含有关特定开发 `sphinx-book-theme` 的信息。"

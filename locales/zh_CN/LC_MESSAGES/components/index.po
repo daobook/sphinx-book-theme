@@ -22,11 +22,11 @@ msgstr ""
 
 #: ../../components/index.md:1
 msgid "Component customization"
-msgstr ""
+msgstr "组件定制"
 
 #: ../../components/index.md:3
 msgid ""
 "Components are specific UI elements that you can control with "
 "configuration."
 msgstr ""
-
+"组件是您可以通过配置控制的特定 UI 元素。"
