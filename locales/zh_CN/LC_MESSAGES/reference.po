@@ -1,0 +1,218 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025
+# This file is distributed under the same license as the Sphinx Book Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Book Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-18 13:40+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../reference.md:2
+msgid "Reference of theme options"
+msgstr ""
+
+#: ../../reference.md:4
+msgid ""
+"The following theme-specific options are available via "
+"`html_theme_options`."
+msgstr ""
+
+#: ../../reference.md:6
+msgid "See the PyData Theme as well"
+msgstr ""
+
+#: ../../reference.md:7
+#, python-brace-format
+msgid ""
+"These are **in addition to** all of the {external:doc}`options available "
+"in the PyData Sphinx Theme <user_guide/index>`."
+msgstr ""
+
+#: ../../reference.md:13
+msgid "Key"
+msgstr ""
+
+#: ../../reference.md:14
+msgid "Type"
+msgstr ""
+
+#: ../../reference.md:15
+msgid "Description"
+msgstr ""
+
+#: ../../reference.md:16
+msgid "`path_to_docs`"
+msgstr ""
+
+#: ../../reference.md:17 ../../reference.md:20 ../../reference.md:23
+msgid "string"
+msgstr ""
+
+#: ../../reference.md:18
+msgid ""
+"Path to the documentation, relative to the repository root (e.g. "
+"`docs/`). See [](customize:source-files)."
+msgstr ""
+
+#: ../../reference.md:19
+msgid "`repository_url`"
+msgstr ""
+
+#: ../../reference.md:21
+msgid ""
+"URL of the repository for the documentation (e.g. the GitHub repository "
+"URL). See [](source-files:repository)."
+msgstr ""
+
+#: ../../reference.md:22
+msgid "`repository_branch`"
+msgstr ""
+
+#: ../../reference.md:24
+msgid ""
+"Branch of the repository for the documentation (e.g., `master`, `main`, "
+"`docs`). See [](source-files:repository)."
+msgstr ""
+
+#: ../../reference.md:25
+msgid "`use_issues_button`"
+msgstr ""
+
+#: ../../reference.md:26 ../../reference.md:29 ../../reference.md:32
+#: ../../reference.md:35 ../../reference.md:38 ../../reference.md:41
+#: ../../reference.md:50
+msgid "bool"
+msgstr ""
+
+#: ../../reference.md:27
+msgid ""
+"Add an button in the header with a link to issues for the repository "
+"(used in conjunction with `repository_url` and `repository_branch`). See"
+"  [](source-files:repository)."
+msgstr ""
+
+#: ../../reference.md:28
+msgid "`use_download_button`"
+msgstr ""
+
+#: ../../reference.md:30
+msgid ""
+"Add a button in the header to download the source file of the page. See "
+"[](customize:source-files)."
+msgstr ""
+
+#: ../../reference.md:31
+msgid "`use_fullscreen_button`"
+msgstr ""
+
+#: ../../reference.md:33
+msgid "Add a button in the header to trigger full-screen mode."
+msgstr ""
+
+#: ../../reference.md:34
+msgid "`use_repository_button`"
+msgstr ""
+
+#: ../../reference.md:36
+msgid ""
+"Add a button in the header that links to the repository of the "
+"documentation.See [](source-files:repository)."
+msgstr ""
+
+#: ../../reference.md:37
+msgid "`launch_buttons`"
+msgstr ""
+
+#: ../../reference.md:39
+msgid ""
+"Include Binder launch buttons for pages that were built from Jupyter "
+"Notebooks. See [](customize:launch)."
+msgstr ""
+
+#: ../../reference.md:40
+msgid "`home_page_in_toc`"
+msgstr ""
+
+#: ../../reference.md:42
+msgid ""
+"Whether to put the home page in the Navigation Bar (at the top). See "
+"[](sidebar-primary:home-page)."
+msgstr ""
+
+#: ../../reference.md:43
+msgid "`show_navbar_depth`"
+msgstr ""
+
+#: ../../reference.md:44 ../../reference.md:47
+msgid "int"
+msgstr ""
+
+#: ../../reference.md:45
+msgid ""
+"Show children in the navigation bar down to the depth listed here. See "
+"[](sidebar:show-navbar-depth)."
+msgstr ""
+
+#: ../../reference.md:46
+msgid "`max_navbar_depth`"
+msgstr ""
+
+#: ../../reference.md:48
+msgid ""
+"The maximum number of levels to show in the navbar. See [](sidebar:max-"
+"navbar-depth). (4 is default)"
+msgstr ""
+
+#: ../../reference.md:49
+msgid "`collapse_navbar`"
+msgstr ""
+
+#: ../../reference.md:51
+msgid ""
+"Whether to collapse the navbar, stopping the tree from being expanded. "
+"See [](sidebar:max-navbar-depth), (False is default)"
+msgstr ""
+
+#: ../../reference.md:52
+msgid "`extra_navbar`"
+msgstr ""
+
+#: ../../reference.md:53 ../../reference.md:56 ../../reference.md:59
+msgid "str"
+msgstr ""
+
+#: ../../reference.md:54
+msgid ""
+"Extra HTML to add below the sidebar footer. See [](content-footer:extra-"
+"footer)."
+msgstr ""
+
+#: ../../reference.md:55
+msgid "`extra_footer`"
+msgstr ""
+
+#: ../../reference.md:57
+msgid "Extra HTML to add in the footer of each page."
+msgstr ""
+
+#: ../../reference.md:58
+msgid "`toc_title`"
+msgstr ""
+
+#: ../../reference.md:60
+msgid "The text to be displayed with the in-page TOC (`Contents` is default)"
+msgstr ""
+

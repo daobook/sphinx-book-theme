@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sphinx Book Theme \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-20 15:57+0800\n"
+"POT-Creation-Date: 2025-09-18 13:40+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.16.0\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../reference/kitchen-sink/generic.rst:11
 msgid "Generic items"
@@ -148,12 +148,14 @@ msgid "Math"
 msgstr ""
 
 #: ../../reference/kitchen-sink/generic.rst:88
+#, python-brace-format
 msgid ""
 "This is a test. Here is an equation: :math:`X_{0:5} = (X_0, X_1, X_2, "
 "X_3, X_4)`. Here is another:"
 msgstr ""
 
 #: ../../reference/kitchen-sink/generic.rst:92
+#, python-brace-format
 msgid ""
 "\\nabla^2 f =\n"
 "\\frac{1}{r^2} \\frac{\\partial}{\\partial r}\n"
@@ -388,6 +390,15 @@ msgstr ""
 msgid ""
 ":download:`This long long long long long long long long long long long "
 "long long long long download link should wrap white-spaces "
-"<https://source.unsplash.com/200x200/daily?cute+puppy>`"
+"<https://jupyter.org/assets/logos/rectanglelogo-greytext-orangebody-"
+"greymoons.svg>`"
 msgstr ""
+
+#~ msgid ""
+#~ ":download:`This long long long long long"
+#~ " long long long long long long "
+#~ "long long long long download link "
+#~ "should wrap white-spaces "
+#~ "<https://source.unsplash.com/200x200/daily?cute+puppy>`"
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sphinx Book Theme \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-20 15:57+0800\n"
+"POT-Creation-Date: 2025-09-18 13:40+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.16.0\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../reference/api-numpy.md:1
 msgid "NumPy docstrings"
@@ -89,119 +89,101 @@ msgid ""
 " our np.info() function does."
 msgstr ""
 
-#: numpy:40 of
-msgid "To search for documents containing a keyword, do::"
-msgstr ""
-
-#: numpy:45 of
-msgid ""
-"General-purpose documents like a glossary and help on the basic concepts "
-"of numpy are available under the ``doc`` sub-module::"
-msgstr ""
-
-#: numpy:53 of
+#: numpy:41 of
 msgid "Available subpackages"
 msgstr ""
 
-#: numpy:54 of
+#: numpy:42 of
 msgid "lib"
 msgstr ""
 
-#: numpy:55 of
+#: numpy:43 of
 msgid "Basic functions used by several sub-packages."
 msgstr ""
 
-#: numpy:56 of
+#: numpy:44 of
 msgid "random"
 msgstr ""
 
-#: numpy:57 of
+#: numpy:45 of
 msgid "Core Random Tools"
 msgstr ""
 
-#: numpy:58 of
+#: numpy:46 of
 msgid "linalg"
 msgstr ""
 
-#: numpy:59 of
+#: numpy:47 of
 msgid "Core Linear Algebra Tools"
 msgstr ""
 
-#: numpy:60 of
+#: numpy:48 of
 msgid "fft"
 msgstr ""
 
-#: numpy:61 of
+#: numpy:49 of
 msgid "Core FFT routines"
 msgstr ""
 
-#: numpy:62 of
+#: numpy:50 of
 msgid "polynomial"
 msgstr ""
 
-#: numpy:63 of
+#: numpy:51 of
 msgid "Polynomial tools"
 msgstr ""
 
-#: numpy:64 of
+#: numpy:52 of
 msgid "testing"
 msgstr ""
 
-#: numpy:65 of
+#: numpy:53 of
 msgid "NumPy testing tools"
 msgstr ""
 
-#: numpy:66 of
+#: numpy:54 of
 msgid "distutils"
 msgstr ""
 
-#: numpy:67 of
+#: numpy:55 of
 msgid ""
 "Enhancements to distutils with support for Fortran compilers support and "
-"more  (for Python <= 3.11)."
+"more (for Python <= 3.11)"
 msgstr ""
 
-#: numpy:71 of
+#: numpy:59 of
 msgid "Utilities"
 msgstr ""
 
-#: numpy:72 of
+#: numpy:60 of
 msgid "test"
 msgstr ""
 
-#: numpy:73 of
+#: numpy:61 of
 msgid "Run numpy unittests"
 msgstr ""
 
-#: numpy:74 of
+#: numpy:62 of
 msgid "show_config"
 msgstr ""
 
-#: numpy:75 of
+#: numpy:63 of
 msgid "Show numpy build configuration"
 msgstr ""
 
-#: numpy:76 of
-msgid "matlib"
-msgstr ""
-
-#: numpy:77 of
-msgid "Make everything matrices."
-msgstr ""
-
-#: numpy:78 of
+#: numpy:64 of
 msgid "__version__"
 msgstr ""
 
-#: numpy:79 of
+#: numpy:65 of
 msgid "NumPy version string"
 msgstr ""
 
-#: numpy:82 of
+#: numpy:68 of
 msgid "Viewing documentation using IPython"
 msgstr ""
 
-#: numpy:84 of
+#: numpy:70 of
 #, python-format
 msgid ""
 "Start IPython and import `numpy` usually under the alias ``np``: `import "
@@ -214,11 +196,11 @@ msgid ""
 "view the source code)."
 msgstr ""
 
-#: numpy:94 of
+#: numpy:80 of
 msgid "Copies vs. in-place operation"
 msgstr ""
 
-#: numpy:95 of
+#: numpy:81 of
 msgid ""
 "Most of the functions in `numpy` return a copy of the array argument "
 "(e.g., `np.sort`).  In-place versions of these functions are often "
@@ -274,21 +256,25 @@ msgstr ""
 
 #: numpy.array:19 of
 msgid ""
-"If true (default), then the object is copied.  Otherwise, a copy will "
-"only be made if ``__array__`` returns a copy, if obj is a nested "
+"If ``True`` (default), then the array data is copied. If ``None``, a copy"
+" will only be made if ``__array__`` returns a copy, if obj is a nested "
 "sequence, or if a copy is needed to satisfy any of the other requirements"
-" (``dtype``, ``order``, etc.)."
+" (``dtype``, ``order``, etc.). Note that any copy of the data is shallow,"
+" i.e., for arrays with object dtype, the new array will point to the same"
+" objects. See Examples for `ndarray.copy`. For ``False`` it raises a "
+"``ValueError`` if a copy cannot be avoided. Default: ``True``."
 msgstr ""
 
-#: numpy.array:24 of
+#: numpy.array:28 of
 msgid "**order**"
 msgstr ""
 
 #: numpy.array:-1 of
+#, python-brace-format
 msgid "{'K', 'A', 'C', 'F'}, optional"
 msgstr ""
 
-#: numpy.array:25 of
+#: numpy.array:29 of
 msgid ""
 "Specify the memory layout of the array. If object is not an array, the "
 "newly created array will be in C order (row major) unless 'F' is "
@@ -296,72 +282,72 @@ msgid ""
 "object is an array the following holds."
 msgstr ""
 
-#: numpy.array:31 of
+#: numpy.array:35 of
 msgid "order"
 msgstr ""
 
-#: numpy.array:31 of
+#: numpy.array:35 of
 msgid "no copy"
 msgstr ""
 
-#: numpy.array:31 of
+#: numpy.array:35 of
 msgid "copy=True"
 msgstr ""
 
-#: numpy.array:33 of
+#: numpy.array:37 of
 msgid "'K'"
 msgstr ""
 
-#: numpy.array:33 numpy.array:34 of
+#: numpy.array:37 numpy.array:38 of
 msgid "unchanged"
 msgstr ""
 
-#: numpy.array:33 of
+#: numpy.array:37 of
 msgid "F & C order preserved, otherwise most similar order"
 msgstr ""
 
-#: numpy.array:34 of
+#: numpy.array:38 of
 msgid "'A'"
 msgstr ""
 
-#: numpy.array:34 of
+#: numpy.array:38 of
 msgid "F order if input is F and not C, otherwise C order"
 msgstr ""
 
-#: numpy.array:35 of
+#: numpy.array:39 of
 msgid "'C'"
 msgstr ""
 
-#: numpy.array:35 of
+#: numpy.array:39 of
 msgid "C order"
 msgstr ""
 
-#: numpy.array:36 of
+#: numpy.array:40 of
 msgid "'F'"
 msgstr ""
 
-#: numpy.array:36 of
+#: numpy.array:40 of
 msgid "F order"
 msgstr ""
 
-#: numpy.array:39 of
+#: numpy.array:43 of
 msgid ""
-"When ``copy=False`` and a copy is made for other reasons, the result is "
+"When ``copy=None`` and a copy is made for other reasons, the result is "
 "the same as if ``copy=True``, with some exceptions for 'A', see the Notes"
 " section. The default order is 'K'."
 msgstr ""
 
-#: numpy.array:43 of
+#: numpy.array:47 of
 msgid "**subok**"
 msgstr ""
 
-#: numpy.array:44 of
+#: numpy.array:48 of
 msgid ""
 "If True, then sub-classes will be passed-through, otherwise the returned "
 "array will be forced to be a base-class array (default)."
 msgstr ""
 
-#: numpy.array:47 of
+#: numpy.array:51 of
 msgid "**ndmin**"
 msgstr ""
 
@@ -369,14 +355,14 @@ msgstr ""
 msgid "int, optional"
 msgstr ""
 
-#: numpy.array:48 of
+#: numpy.array:52 of
 msgid ""
 "Specifies the minimum number of dimensions that the resulting array "
 "should have.  Ones will be prepended to the shape as needed to meet this "
 "requirement."
 msgstr ""
 
-#: numpy.array:52 of
+#: numpy.array:56 of
 msgid "**like**"
 msgstr ""
 
@@ -384,7 +370,7 @@ msgstr ""
 msgid "array_like, optional"
 msgstr ""
 
-#: numpy.array:53 of
+#: numpy.array:57 of
 msgid ""
 "Reference object to allow the creation of arrays which are not NumPy "
 "arrays. If an array-like passed in as ``like`` supports the "
@@ -397,7 +383,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: numpy.array:65 of
+#: numpy.array:69 of
 msgid "**out**"
 msgstr ""
 
@@ -405,110 +391,118 @@ msgstr ""
 msgid "ndarray"
 msgstr ""
 
-#: numpy.array:66 of
+#: numpy.array:70 of
 msgid "An array object satisfying the specified requirements."
 msgstr ""
 
-#: numpy.array:77 of
+#: numpy.array:81 of
 msgid ":obj:`empty_like`"
 msgstr ""
 
-#: numpy.array:78 of
+#: numpy.array:82 of
 msgid "Return an empty array with shape and type of input."
 msgstr ""
 
-#: numpy.array:79 of
+#: numpy.array:83 of
 msgid ":obj:`ones_like`"
 msgstr ""
 
-#: numpy.array:80 of
+#: numpy.array:84 of
 msgid "Return an array of ones with shape and type of input."
 msgstr ""
 
-#: numpy.array:81 of
+#: numpy.array:85 of
 msgid ":obj:`zeros_like`"
 msgstr ""
 
-#: numpy.array:82 of
+#: numpy.array:86 of
 msgid "Return an array of zeros with shape and type of input."
 msgstr ""
 
-#: numpy.array:83 of
+#: numpy.array:87 of
 msgid ":obj:`full_like`"
 msgstr ""
 
-#: numpy.array:84 of
+#: numpy.array:88 of
 msgid "Return a new array with shape of input filled with value."
 msgstr ""
 
-#: numpy.array:85 of
+#: numpy.array:89 of
 msgid ":obj:`empty`"
 msgstr ""
 
-#: numpy.array:86 of
+#: numpy.array:90 of
 msgid "Return a new uninitialized array."
 msgstr ""
 
-#: numpy.array:87 of
+#: numpy.array:91 of
 msgid ":obj:`ones`"
 msgstr ""
 
-#: numpy.array:88 of
+#: numpy.array:92 of
 msgid "Return a new array setting values to one."
 msgstr ""
 
-#: numpy.array:89 of
+#: numpy.array:93 of
 msgid ":obj:`zeros`"
 msgstr ""
 
-#: numpy.array:90 of
+#: numpy.array:94 of
 msgid "Return a new array setting values to zero."
 msgstr ""
 
-#: numpy.array:91 of
+#: numpy.array:95 of
 msgid ":obj:`full`"
 msgstr ""
 
-#: numpy.array:92 of
+#: numpy.array:96 of
 msgid "Return a new array of given shape filled with value."
 msgstr ""
 
-#: numpy.array:96 numpy.transpose:51 of
+#: numpy.array:97 of
+msgid ":obj:`copy`"
+msgstr ""
+
+#: numpy.array:98 of
+msgid "Return an array copy of the given object."
+msgstr ""
+
+#: numpy.array:102 numpy.transpose:52 of
 msgid "Notes"
 msgstr ""
 
-#: numpy.array:97 of
+#: numpy.array:103 of
 msgid ""
 "When order is 'A' and ``object`` is an array in neither 'C' nor 'F' "
 "order, and a copy is forced by a change in dtype, then the order of the "
 "result is not necessarily 'C' as expected. This is likely a bug."
 msgstr ""
 
-#: numpy.array:103 numpy.transpose:57 of
+#: numpy.array:109 numpy.transpose:58 of
 msgid "Examples"
 msgstr ""
 
-#: numpy.array:107 of
+#: numpy.array:114 of
 msgid "Upcasting:"
 msgstr ""
 
-#: numpy.array:112 of
+#: numpy.array:119 of
 msgid "More than one dimension:"
 msgstr ""
 
-#: numpy.array:118 of
+#: numpy.array:125 of
 msgid "Minimum dimensions 2:"
 msgstr ""
 
-#: numpy.array:123 of
+#: numpy.array:130 of
 msgid "Type provided:"
 msgstr ""
 
-#: numpy.array:128 of
+#: numpy.array:135 of
 msgid "Data-type consisting of more than one element:"
 msgstr ""
 
-#: numpy.array:134 of
+#: numpy.array:141 of
 msgid "Creating an array from sub-classes:"
 msgstr ""
 
@@ -521,8 +515,8 @@ msgid ""
 "For a 1-D array, this returns an unchanged view of the original array, as"
 " a transposed vector is simply the same vector. To convert a 1-D array "
 "into a 2-D column vector, an additional dimension must be added, e.g., "
-"``np.atleast2d(a).T`` achieves this, as does ``a[:, np.newaxis]``. For a "
-"2-D array, this is the standard matrix transpose. For an n-D array, if "
+"``np.atleast_2d(a).T`` achieves this, as does ``a[:, np.newaxis]``. For a"
+" 2-D array, this is the standard matrix transpose. For an n-D array, if "
 "axes are given, their order indicates how the axes are permuted (see "
 "Examples). If axes are not provided, then ``transpose(a).shape == "
 "a.shape[::-1]``."
@@ -547,47 +541,120 @@ msgstr ""
 #: numpy.transpose:20 of
 msgid ""
 "If specified, it must be a tuple or list which contains a permutation of "
-"[0,1,...,N-1] where N is the number of axes of `a`. The `i`'th axis of "
-"the returned array will correspond to the axis numbered ``axes[i]`` of "
-"the input. If not specified, defaults to ``range(a.ndim)[::-1]``, which "
-"reverses the order of the axes."
-msgstr ""
-
-#: numpy.transpose:30 of
-msgid "**p**"
+"[0, 1, ..., N-1] where N is the number of axes of `a`. Negative indices "
+"can also be used to specify axes. The i-th axis of the returned array "
+"will correspond to the axis numbered ``axes[i]`` of the input. If not "
+"specified, defaults to ``range(a.ndim)[::-1]``, which reverses the order "
+"of the axes."
 msgstr ""
 
 #: numpy.transpose:31 of
+msgid "**p**"
+msgstr ""
+
+#: numpy.transpose:32 of
 msgid "`a` with its axes permuted. A view is returned whenever possible."
 msgstr ""
 
-#: numpy.transpose:42 of
+#: numpy.transpose:43 of
 msgid ":obj:`ndarray.transpose`"
 msgstr ""
 
-#: numpy.transpose:43 of
+#: numpy.transpose:44 of
 msgid "Equivalent method."
 msgstr ""
 
-#: numpy.transpose:44 of
+#: numpy.transpose:45 of
 msgid ":obj:`moveaxis`"
 msgstr ""
 
-#: numpy.transpose:45 of
+#: numpy.transpose:46 of
 msgid "Move axes of an array to new positions."
 msgstr ""
 
-#: numpy.transpose:46 of
+#: numpy.transpose:47 of
 msgid ":obj:`argsort`"
 msgstr ""
 
-#: numpy.transpose:47 of
+#: numpy.transpose:48 of
 msgid "Return the indices that would sort an array."
 msgstr ""
 
-#: numpy.transpose:52 of
+#: numpy.transpose:53 of
 msgid ""
 "Use ``transpose(a, argsort(axes))`` to invert the transposition of "
 "tensors when using the `axes` keyword argument."
 msgstr ""
+
+#~ msgid "To search for documents containing a keyword, do::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "General-purpose documents like a "
+#~ "glossary and help on the basic "
+#~ "concepts of numpy are available under"
+#~ " the ``doc`` sub-module::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Enhancements to distutils with support "
+#~ "for Fortran compilers support and more"
+#~ "  (for Python <= 3.11)."
+#~ msgstr ""
+
+#~ msgid "matlib"
+#~ msgstr ""
+
+#~ msgid "Make everything matrices."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If true (default), then the object "
+#~ "is copied.  Otherwise, a copy will "
+#~ "only be made if ``__array__`` returns"
+#~ " a copy, if obj is a nested "
+#~ "sequence, or if a copy is needed"
+#~ " to satisfy any of the other "
+#~ "requirements (``dtype``, ``order``, etc.)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When ``copy=False`` and a copy is "
+#~ "made for other reasons, the result "
+#~ "is the same as if ``copy=True``, "
+#~ "with some exceptions for 'A', see "
+#~ "the Notes section. The default order "
+#~ "is 'K'."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For a 1-D array, this returns an"
+#~ " unchanged view of the original "
+#~ "array, as a transposed vector is "
+#~ "simply the same vector. To convert "
+#~ "a 1-D array into a 2-D column "
+#~ "vector, an additional dimension must be"
+#~ " added, e.g., ``np.atleast2d(a).T`` achieves "
+#~ "this, as does ``a[:, np.newaxis]``. For"
+#~ " a 2-D array, this is the "
+#~ "standard matrix transpose. For an n-D"
+#~ " array, if axes are given, their "
+#~ "order indicates how the axes are "
+#~ "permuted (see Examples). If axes are "
+#~ "not provided, then ``transpose(a).shape == "
+#~ "a.shape[::-1]``."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If specified, it must be a tuple"
+#~ " or list which contains a permutation"
+#~ " of [0,1,...,N-1] where N is the "
+#~ "number of axes of `a`. The `i`'th"
+#~ " axis of the returned array will "
+#~ "correspond to the axis numbered "
+#~ "``axes[i]`` of the input. If not "
+#~ "specified, defaults to ``range(a.ndim)[::-1]``, "
+#~ "which reverses the order of the "
+#~ "axes."
+#~ msgstr ""
 

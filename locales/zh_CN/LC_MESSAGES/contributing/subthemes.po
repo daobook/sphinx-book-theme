@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../contributing/subthemes.md:1
 msgid "Creating sub-themes"
-msgstr ""
+msgstr "创建子主题"
 
 #: ../../contributing/subthemes.md:3
 msgid ""
@@ -30,6 +30,8 @@ msgid ""
 "the same functionality but modify the style and behavior a bit. This page"
 " has a few helpful tips for doing so."
 msgstr ""
+"您可以由此创建子主题，从而实现大部分相同的功能，但对样式和行为稍作修改。"
+"此页面提供了一些有用的提示来帮助您完成操作。"
 
 #: ../../contributing/subthemes.md:7
 msgid ""
@@ -38,10 +40,12 @@ msgid ""
 "we won't make breaking changes here, so be sure to test your sub-theme "
 "against the latest branch and / or pin your versions!!"
 msgstr ""
+"创建子主题需要高级的 Sphinx 技能，并且这并非本主题明确支持的功能。"
+"无法保证在此处不会做出破坏性的更改，因此请务必针对最新分支测试您的子主题，并且/或者固定您的版本！！"
 
 #: ../../contributing/subthemes.md:11
 msgid "Hashing your assets"
-msgstr ""
+msgstr "哈希处理 assets"
 
 #: ../../contributing/subthemes.md:13
 msgid ""
@@ -51,14 +55,17 @@ msgid ""
 "if you wish - to do so, look at the function signature of "
 "`hash_html_assets`."
 msgstr ""
+"此主题定义了名为 `hash_html_assets` 的函数，该函数可用于为您的样式文件生成哈希值，"
+"并更新 Sphinx 链接以在其中包含  `?digest=` 参数。如果您愿意，"
+"可以在子主题中重复使用此函数——要这样做，请查看 `hash_html_assets` 函数的参数签名。"
 
 #: ../../contributing/subthemes.md:16
 msgid "For example, here's a Python snippet that reuses this function:"
-msgstr ""
+msgstr "例如，这里有使用了该函数的 Python 代码片段："
 
 #: ../../contributing/subthemes.md:30
 msgid "Defining your own CSS"
-msgstr ""
+msgstr "自定义 CSS"
 
 #: ../../contributing/subthemes.md:32
 msgid ""
@@ -68,4 +75,7 @@ msgid ""
 "folder, similar to this theme. Then, you can import this theme's CSS "
 "with:"
 msgstr ""
-
+"如果您想为您的子主题定义新的 CSS 样式表，请务必同时导入该主题的 CSS 文件。"
+"作为最佳实践，您应该将子主题的 CSS 样式表放在 `STATIC_PATH/styles/` 文件夹中，"
+"与本主题的设置类似。"
+"然后，您可以使用以下方式导入该主题的 CSS 文件："

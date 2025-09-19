@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sphinx Book Theme \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-20 15:57+0800\n"
+"POT-Creation-Date: 2025-09-18 13:40+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.16.0\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../reference/notebooks.md:15
 msgid "Jupyter notebooks"
@@ -44,88 +44,92 @@ msgid ""
 "it will be executed when you initialize Thebe."
 msgstr ""
 
-#: ../../reference/notebooks.md:34
+#: ../../reference/notebooks.md:36
 msgid "Hide inputs"
 msgstr ""
 
-#: ../../reference/notebooks.md:50
+#: ../../reference/notebooks.md:53
 msgid "Hide outputs"
 msgstr ""
 
-#: ../../reference/notebooks.md:66
+#: ../../reference/notebooks.md:70
 msgid "Hide markdown"
 msgstr ""
 
-#: ../../reference/notebooks.md:70
+#: ../../reference/notebooks.md:74
 msgid "This is a hidden markdown cell"
 msgstr ""
 
-#: ../../reference/notebooks.md:72
+#: ../../reference/notebooks.md:76
 msgid "It should be hidden!"
 msgstr ""
 
-#: ../../reference/notebooks.md:76
+#: ../../reference/notebooks.md:80
 msgid "And here's a toggleable note"
 msgstr ""
 
-#: ../../reference/notebooks.md:78
+#: ../../reference/notebooks.md:82
 msgid "With a body!"
 msgstr ""
 
-#: ../../reference/notebooks.md:83
+#: ../../reference/notebooks.md:87
 msgid "Hide both inputs and outputs"
 msgstr ""
 
-#: ../../reference/notebooks.md:98
+#: ../../reference/notebooks.md:103
 msgid "Hide the whole cell"
 msgstr ""
 
-#: ../../reference/notebooks.md:113
+#: ../../reference/notebooks.md:119
 msgid "Enriched outputs"
 msgstr ""
 
-#: ../../reference/notebooks.md:115
+#: ../../reference/notebooks.md:121
 msgid "Math"
 msgstr ""
 
-#: ../../reference/notebooks.md:119
-msgid ""
-"\\displaystyle \\sum_{i=0}^n i^2 = "
-"rac{(n^2+n)(2n+1)}{6}"
+#: ../../reference/notebooks.md:125
+#, python-brace-format
+msgid "\\displaystyle \\sum_{i=0}^n i^2 = \\frac{(n^2+n)(2n+1)}{6}"
 msgstr ""
 
-#: ../../reference/notebooks.md:123
+#: ../../reference/notebooks.md:129
 msgid "Pandas DataFrames"
 msgstr ""
 
-#: ../../reference/notebooks.md:133
+#: ../../reference/notebooks.md:139
 msgid ""
 "Styled DataFrames (see [the Pandas Styling "
 "docs](https://pandas.pydata.org/pandas-"
 "docs/stable/user_guide/style.html))."
 msgstr ""
 
-#: ../../reference/notebooks.md:169
+#: ../../reference/notebooks.md:176
 msgid "Interactive outputs"
 msgstr ""
 
-#: ../../reference/notebooks.md:171
+#: ../../reference/notebooks.md:178
 msgid "Folium"
 msgstr ""
 
-#: ../../reference/notebooks.md:210
+#: ../../reference/notebooks.md:217
 msgid "Stdout"
 msgstr ""
 
-#: ../../reference/notebooks.md:217
+#: ../../reference/notebooks.md:224
 msgid "Formatting code cells"
 msgstr ""
 
-#: ../../reference/notebooks.md:219
+#: ../../reference/notebooks.md:226
 msgid "Scrolling cell outputs"
 msgstr ""
 
-#: ../../reference/notebooks.md:227
+#: ../../reference/notebooks.md:234
 msgid "Scrolling cell inputs"
 msgstr ""
+
+#~ msgid ""
+#~ "\\displaystyle \\sum_{i=0}^n i^2 = "
+#~ "rac{(n^2+n)(2n+1)}{6}"
+#~ msgstr ""
 
